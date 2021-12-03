@@ -26,7 +26,14 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Reference Include="OrbServerSDK">
+      <HintPath>..\OrbServerSDK.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Remoting" />
     <Reference Include="System.Web" />
+    <Reference Include="UOArchitectInterface">
+      <HintPath>..\UOArchitectInterface.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
   <ItemGroup>
