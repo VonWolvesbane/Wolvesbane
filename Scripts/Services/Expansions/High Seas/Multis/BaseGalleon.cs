@@ -530,7 +530,6 @@ namespace Server.Multis
 
         public virtual void OnTakenDamage(Mobile damager, int damage)
         {
-			/*
             m_Hits -= damage;
 
             //TODO: Damage packets?
@@ -551,7 +550,6 @@ namespace Server.Multis
                 m_Hits = MaxHits;
 
             ComputeDamage();
-			*/
         }
 
         private void ComputeDamage()
@@ -581,26 +579,113 @@ namespace Server.Multis
             SetFacingComponents(Facing, Facing, true);
         }
 
-        public void AutoAddCannons(Mobile captain)
-        {
-			/*
-            bool heavy = Utility.RandomBool();
-            foreach (Item item in m_CannonTiles)
-            {
-                if (item.Map != Map.Internal && !item.Deleted)
-                {
-                    if(heavy)
-                        TryAddCannon(captain, item.Location, new HeavyShipCannon(this), null);
-                    else
-                        TryAddCannon(captain, item.Location, new LightShipCannon(this), null);
-                }
-            }
-			*/
-        }
+		public void AutoAddCannons(Mobile captain)
+		{
+			bool heavy = Utility.RandomBool();
+			foreach (Item item in m_CannonTiles)
+			{
+				if (item.Map != Map.Internal && !item.Deleted)
+				{
+					if (heavy)
+						TryAddCannon(captain, item.Location, new HeavyShipCannon(this), null);
+					else
+						TryAddCannon(captain, item.Location, new LightShipCannon(this), null);
+				}
+			}
+		}
 
-		// removed cannon logic
+		public bool TryAddCannon(Mobile from, Point3D pnt, ShipCannonDeed deed)
+		{
+			BaseCannon item;
+			switch (deed.CannonType)
+			{
+				default:
+				case CannonType.Light: item = new LightShipCannon(this); break;
+				case CannonType.Heavy: item = new HeavyShipCannon(this); break;
+			}
 
-        public override void OnLocationChange(Point3D old)
+			return TryAddCannon(from, pnt, item, deed);
+		}
+
+		public bool TryAddCannon(Mobile from, Point3D pnt, BaseCannon cannon, ShipCannonDeed deed)
+		{
+			if (cannon == null)
+				return false;
+
+			if (IsValidCannonSpot(ref pnt, from))
+			{
+				cannon.MoveToWorld(pnt, this.Map);
+				m_Cannons.Add((Item)cannon);
+				UpdateCannonID(cannon);
+				cannon.Position = GetCannonPosition(pnt);
+				cannon.DoAreaMessage(1116074, 10, from); //~1_NAME~ deploys a ship cannon.
+
+				if (deed != null && from.AccessLevel == AccessLevel.Player)
+					deed.Delete();
+
+				return true;
+			}
+			cannon.Delete();
+			return false;
+		}
+
+		public void RemoveCannon(BaseCannon cannon)
+		{
+			if (m_Cannons.Contains(cannon))
+				m_Cannons.Remove(cannon);
+		}
+
+		public bool IsValidCannonSpot(ref Point3D pnt, Mobile from)
+		{
+			if (this.Map == null || this.Map == Map.Internal)
+				return false;
+
+			//Lets see if a cannon exists here
+			foreach (Item cannon in m_Cannons)
+			{
+				if (cannon.X == pnt.X && cannon.Y == pnt.Y)
+				{
+					if (from != null)
+						from.SendLocalizedMessage(1116075); //There is already a weapon deployed here.
+
+					return false;
+				}
+			}
+
+			//Now we can check for a valid cannon tile ID
+			foreach (Item item in m_CannonTiles)
+			{
+				if (item.X == pnt.X && item.Y == pnt.Y)
+				{
+					pnt.Z = item.Z + TileData.ItemTable[item.ItemID & TileData.MaxItemValue].CalcHeight;
+					IPooledEnumerable eable = this.Map.GetMobilesInRange(pnt, 0);
+
+					//Lets check for mobiles
+					foreach (Mobile mob in eable)
+					{
+						if (!mob.Hidden && mob.AccessLevel == AccessLevel.Player)
+						{
+							if (from != null)
+								from.SendMessage("The weapon pad must be clear of obstructions to place a cannon.");
+
+							eable.Free();
+							return false;
+						}
+					}
+
+					eable.Free();
+					return true;
+				}
+			}
+
+			if (from != null)
+				from.SendLocalizedMessage(1116626); //You must use this on a ship weapon pad.
+
+			return false;
+		}
+
+
+		public override void OnLocationChange(Point3D old)
         {
             base.OnLocationChange(old);
 
@@ -941,9 +1026,70 @@ namespace Server.Multis
             }
         }
 
-		// remove all cannon stuff 
+		public void UpdateCannonIDs()
+		{
+			m_Cannons.ForEach(c => {
+				UpdateCannonID(c as BaseCannon);
+			});
+		}
 
-        protected HoldItem AddHoldTile(HoldItem item)
+		public void UpdateCannonID(BaseCannon cannon)
+		{
+			if (cannon == null)
+				return;
+
+			int type = cannon is LightShipCannon ? 0 : 1;
+
+			switch (this.Facing)
+			{
+				default:
+				case Direction.South:
+				case Direction.North:
+					{
+						if (cannon.X == X)
+							cannon.ItemID = m_CannonIDs[GetValueForDirection(this.Facing)][type];
+						else if (cannon.X < X)
+							cannon.ItemID = m_CannonIDs[GetValueForDirection(Direction.West)][type];
+						else
+							cannon.ItemID = m_CannonIDs[GetValueForDirection(Direction.East)][type];
+						break;
+					}
+				case Direction.West:
+				case Direction.East:
+					{
+						if (cannon.Y == Y)
+							cannon.ItemID = m_CannonIDs[GetValueForDirection(this.Facing)][type];
+						else if (cannon.Y < Y)
+							cannon.ItemID = m_CannonIDs[GetValueForDirection(Direction.North)][type];
+						else
+							cannon.ItemID = m_CannonIDs[GetValueForDirection(Direction.South)][type];
+						break;
+					}
+			}
+		}
+
+		private int[][] m_CannonIDs = new int[][]
+		{ 
+                      //Light  Heavy
+            new int[] { 16918, 16922 }, //South
+            new int[] { 16919, 16923 }, //West
+            new int[] { 16920, 16924 }, //North
+            new int[] { 16921, 16925 }, //East
+        };
+
+		public virtual ShipPosition GetCannonPosition(Point3D pnt)
+		{
+			return ShipPosition.Bow;
+		}
+
+		protected Static AddCannonTile(Static st)
+		{
+			st.Name = "weapon pad";
+			m_CannonTiles.Add((Item)st);
+			return st;
+		}
+
+		protected HoldItem AddHoldTile(HoldItem item)
         {
             item.Name = "cargo hold";
             m_HoldTiles.Add((Item)item);

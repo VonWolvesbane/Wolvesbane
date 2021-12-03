@@ -38,7 +38,7 @@ namespace Server.Multis
 	}
 
 
-	public abstract class BaseBoat : BaseMulti, IMount
+	public abstract partial class BaseBoat : BaseMulti, IMount
 	{
 		#region Statics
 
