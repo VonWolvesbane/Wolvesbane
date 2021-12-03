@@ -157,11 +157,11 @@ namespace Server.Mobiles
         {
             get
             {
-                return (int)PointsSystem.RisingTide.GetPoints(Player);
+				return (int)0; // PointsSystem.RisingTide.GetPoints(Player);
             }
             set
             {
-                PointsSystem.RisingTide.SetPoints(Player, value);
+                // PointsSystem.RisingTide.SetPoints(Player, value);
             }
         }
 
@@ -170,11 +170,11 @@ namespace Server.Mobiles
         {
             get
             {
-                return (int)PointsSystem.FellowshipData.GetPoints(Player);
+				return (int)0; // PointsSystem.FellowshipData.GetPoints(Player);
             }
             set
             {
-                PointsSystem.FellowshipData.SetPoints(Player, value);
+                // PointsSystem.FellowshipData.SetPoints(Player, value);
             }
         }
 

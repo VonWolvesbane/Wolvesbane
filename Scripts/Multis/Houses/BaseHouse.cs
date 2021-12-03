@@ -959,7 +959,7 @@ namespace Server.Multis
             IPooledEnumerable eable = Map.GetItemsInBounds(rect);
 
             foreach (Item item in eable)
-                if (item.Movable && IsInside(item))
+                if (item.Movable && IsHouseRegion(item))
                     list.Add(item);
 
             eable.Free();
@@ -975,7 +975,7 @@ namespace Server.Multis
             List<Mobile> list = new List<Mobile>();
 
             foreach (Mobile mobile in Region.GetMobiles())
-                if (IsInside(mobile))
+                if (IsHouseRegion(mobile))
                     list.Add(mobile);
 
             return list;
@@ -1017,23 +1017,26 @@ namespace Server.Multis
 
         public static bool CheckLockedDown(Item item)
         {
-            BaseHouse house = FindHouseAt(item);
+			//			BaseHouse house = FindHouseAt( item );
+			BaseHouse house = GetHouseRegion(item);
 
-            return house != null && house.IsLockedDown(item);
+			return house != null && house.IsLockedDown(item);
         }
 
         public static bool CheckSecured(Item item)
         {
-            BaseHouse house = FindHouseAt(item);
+			//			BaseHouse house = FindHouseAt( item );
+			BaseHouse house = GetHouseRegion(item);
 
-            return house != null && house.IsSecure(item);
+			return house != null && house.IsSecure(item);
         }
 
         public static bool CheckLockedDownOrSecured(Item item)
         {
-            BaseHouse house = FindHouseAt(item);
+			//			BaseHouse house = FindHouseAt( item );
+			BaseHouse house = GetHouseRegion(item);
 
-            return house != null && (house.IsSecure(item) || house.IsLockedDown(item));
+			return house != null && (house.IsSecure(item) || house.IsLockedDown(item));
         }
 
         public static List<BaseHouse> GetHouses(Mobile m)
@@ -1166,7 +1169,63 @@ namespace Server.Multis
             return null;
         }
 
-        public bool IsInside(Mobile m)
+		public bool IsHouseRegion(Mobile m)
+		{
+			if (m == null || m.Deleted || m.Map != this.Map)
+				return false;
+
+			return IsHouseRegion(m.Location, m.Map);
+		}
+
+		public bool IsHouseRegion(Item item)
+		{
+			if (item == null || item.Deleted || item.Map != this.Map)
+				return false;
+
+			return IsHouseRegion(item.Location, item.Map);
+		}
+
+		public virtual bool IsHouseRegion(Point3D p, Map map)
+		{
+			return Region != null && Region.Map == map && Region.Contains(p);
+		}
+		public static BaseHouse GetHouseRegion(Mobile m)
+		{
+			if (m == null || m.Deleted || m.Map == null)
+				return null;
+
+			return GetHouseRegion(m.Location, m.Map);
+		}
+
+		public static BaseHouse GetHouseRegion(Item item)
+		{
+			if (item == null || item.Deleted || item.Map == null)
+				return null;
+
+			return GetHouseRegion(item.Location, item.Map);
+		}
+
+		public static BaseHouse GetHouseRegion(Point3D p, Map map)
+		{
+			Region reg = Region.Find(p, map);
+			BaseHouse house = null;
+			if (reg is HouseRegion)
+			{
+				HouseRegion hreg = reg as HouseRegion;
+				house = hreg.House;
+			}
+			return house;
+		}
+
+		public static BaseHouse GetHouseRegion(Point3D loc, Map map, int height)
+		{
+			if (map == null || map == Map.Internal)
+				return null;
+
+			return GetHouseRegion(loc, map);
+		}
+
+		public bool IsInside(Mobile m)
         {
             if (m == null || m.Deleted || m.Map != Map)
                 return false;
@@ -4110,7 +4169,12 @@ namespace Server.Multis
         [CommandProperty(AccessLevel.GameMaster)]
         public int Price { get; set; }
 
-        public bool IsFriend(Mobile m)
+		public virtual Deeds.HouseDeed GetDeed()
+		{
+			return null;
+		}
+
+		public bool IsFriend(Mobile m)
         {
             if (m == null || Friends == null)
                 return false;

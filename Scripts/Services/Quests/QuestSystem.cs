@@ -18,8 +18,22 @@ namespace Server.Engines.Quests
             EventSink.OnKilledBy += OnKilledBy;
             EventSink.Login += OnLogin;
         }
+		public static readonly Type[] QuestTypes = new Type[]
+		{
+			typeof(Doom.TheSummoningQuest),
+			typeof(Necro.DarkTidesQuest),
+			typeof(Haven.UzeraanTurmoilQuest),
+			typeof(Collector.CollectorQuest),
+			typeof(Hag.WitchApprenticeQuest),
+			typeof(Naturalist.StudyOfSolenQuest),
+			typeof(Matriarch.SolenMatriarchQuest),
+			typeof(Ambitious.AmbitiousQueenQuest),
+			typeof(Ninja.EminosUndertakingQuest),
+			typeof(Samurai.HaochisTrialsQuest),
+			typeof(Zento.TerribleHatchlingsQuest)
+		};
 
-        private PlayerMobile m_From;
+		private PlayerMobile m_From;
         private ArrayList m_Objectives;
         private ArrayList m_Conversations;
 
@@ -40,7 +54,7 @@ namespace Server.Engines.Quests
         public abstract bool IsTutorial { get; }
         public abstract TimeSpan RestartDelay { get; }
 
-        public PlayerMobile From
+		public PlayerMobile From
         {
             get
             {

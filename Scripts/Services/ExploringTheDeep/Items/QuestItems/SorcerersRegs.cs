@@ -83,7 +83,7 @@ namespace Server.Items
             list.Add(1072351); // Quest Item
         }
 
-        public override int Lifespan => 3600;
+        public override int m_Lifespan => 3600;
         public override bool UseSeconds => false;
 
         public PerfectBlackPearl(Serial serial)
@@ -185,7 +185,7 @@ namespace Server.Items
             list.Add(1072351); // Quest Item
         }
 
-        public override int Lifespan => 3600;
+        public override int m_Lifespan => 3600;
         public override bool UseSeconds => false;
 
         public BurstingBrimstone(Serial serial)
@@ -287,7 +287,7 @@ namespace Server.Items
             list.Add(1072351); // Quest Item
         }
 
-        public override int Lifespan => 3600;
+        public override int m_Lifespan => 3600;
         public override bool UseSeconds => false;
 
         public BrightDaemonBlood(Serial serial)
@@ -389,7 +389,7 @@ namespace Server.Items
             list.Add(1072351); // Quest Item
         }
 
-        public override int Lifespan => 3600;
+        public override int m_Lifespan => 3600;
         public override bool UseSeconds => false;
 
         public MightyMandrake(Serial serial)
@@ -490,7 +490,7 @@ namespace Server.Items
             list.Add(1072351); // Quest Item
         }
 
-        public override int Lifespan => 3600;
+        public override int m_Lifespan => 3600;
         public override bool UseSeconds => false;
 
         public BurlyBone(Serial serial)

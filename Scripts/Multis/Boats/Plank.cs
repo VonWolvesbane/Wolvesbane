@@ -273,7 +273,7 @@ namespace Server.Items
             if (Boat == null)
                 return;
 
-            Boat.Refresh(from);
+            Boat.Refresh();
 
             if (BaseBoat.IsDriving(from))
             {

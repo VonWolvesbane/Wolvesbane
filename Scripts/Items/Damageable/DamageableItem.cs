@@ -254,7 +254,13 @@ namespace Server.Items
         {
         }
 
-        public virtual bool CheckReflect(Spell spell, IDamageable caster)
+		// Credzba backward compatibility
+		public virtual bool CheckReflect(int spellCircle, IDamageable caster)
+		{
+			return false;
+		}
+
+		public virtual bool CheckReflect(Spell spell, IDamageable caster)
         {
             return false;
         }

@@ -47,7 +47,7 @@ namespace Server.Gumps
 
         public List<BaseGump> Children { get; set; }
 
-        public BaseGump(PlayerMobile user, int x = 50, int y = 50, BaseGump parent = null)
+        public BaseGump(Mobile user, int x = 50, int y = 50, BaseGump parent = null)
             : base(x, y)
         {
             if (user == null)
@@ -55,7 +55,7 @@ namespace Server.Gumps
 
             Children = new List<BaseGump>();
 
-            User = user;
+			User = user as PlayerMobile;
             Parent = parent;
         }
 
@@ -186,8 +186,10 @@ namespace Server.Gumps
         {
         }
 
+		public NetState m_Netstate;
         public sealed override void OnResponse(NetState state, RelayInfo info)
         {
+			m_Netstate = state;
             OnResponse(info);
 
             if (info.ButtonID == 0)

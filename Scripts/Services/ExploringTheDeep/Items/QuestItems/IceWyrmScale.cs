@@ -29,7 +29,7 @@ namespace Server.Items
             list.Add(1072351); // Quest Item
         }
 
-        public override int Lifespan => 3600;
+        public override int m_Lifespan => 3600;
 
         public IceWyrmScale(Serial serial)
             : base(serial)

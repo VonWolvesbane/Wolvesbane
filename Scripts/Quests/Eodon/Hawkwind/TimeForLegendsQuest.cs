@@ -57,7 +57,7 @@ namespace Server.Engines.Quests.TimeLord
         private static readonly Type[] _Targets =
         {
             typeof(Semidar), typeof(Mephitis), typeof(Rikktor), typeof(LordOaks), typeof(Neira), typeof(Barracoon), typeof(Serado), typeof(Meraktus), typeof(Ilhenir),
-            typeof(Twaulo), typeof(AbyssalInfernal), typeof(PrimevalLich), typeof(CorgulTheSoulBinder), typeof(CorgulTheSoulBinder) /*dragon turtle*/,
+            typeof(Twaulo), typeof(AbyssalInfernal), typeof(PrimevalLich), //typeof(CorgulTheSoulBinder), typeof(CorgulTheSoulBinder) /*dragon turtle*/,
             typeof(DreadHorn), typeof(Travesty), typeof(ChiefParoxysmus), typeof(LadyMelisande), typeof(MonstrousInterredGrizzle), typeof(ShimmeringEffusion)
         };
 

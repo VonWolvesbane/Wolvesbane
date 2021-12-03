@@ -27,7 +27,7 @@ namespace Server.Items
         {
         }
 
-        public override int Lifespan => 604800;
+        public override int m_Lifespan => 604800;
         public override bool UseSeconds => false;
 
         public override void AddItemSocketProperties(ObjectPropertyList list)

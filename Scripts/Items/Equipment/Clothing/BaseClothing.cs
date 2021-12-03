@@ -386,8 +386,33 @@ namespace Server.Items
                 return 50;
             }
         }
+		public override bool AllowSecureTrade(Mobile from, Mobile to, Mobile newOwner, bool accepted)
+		{
+			if (!Ethics.Ethic.CheckTrade(from, to, newOwner, this))
+				return false;
 
-        public override bool CanEquip(Mobile from)
+			return base.AllowSecureTrade(from, to, newOwner, accepted);
+		}
+
+		public virtual Race RequiredRace
+		{
+			get
+			{
+				return null;
+			}
+		}
+
+		#region Stygian Abyss
+		public virtual bool CanBeWornByGargoyles
+		{
+			get
+			{
+				return false;
+			}
+		}
+		#endregion
+
+		public override bool CanEquip(Mobile from)
         {
             if (from.IsPlayer())
             {

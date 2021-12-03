@@ -1458,7 +1458,8 @@ namespace Server
 			{
 				lock (((ICollection)m_ConsoleColors).SyncRoot)
 				{
-					Console.ForegroundColor = m_ConsoleColors.Pop();
+					if (m_ConsoleColors.Count > 0)
+						Console.ForegroundColor = m_ConsoleColors.Pop();
 				}
 			}
 			catch (Exception e)

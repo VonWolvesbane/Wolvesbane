@@ -39,7 +39,7 @@ namespace Server.Gumps
         {
             double bonus = 0.0;
 
-            if (!Imbuing.CheckSoulForge(User, 2, out bonus))
+            if (!Imbuing.CheckSoulForge(User, 2))
                 return;
 
             ImbuingContext context = Imbuing.GetContext(User);
@@ -73,7 +73,7 @@ namespace Server.Gumps
             context.Imbue_ModVal = weight;
 
             // Current Mod Weight
-            m_TotalItemWeight = Imbuing.GetTotalWeight(m_Item, m_ID, false, true);
+            m_TotalItemWeight = Imbuing.GetTotalWeight(m_Item, m_ID);
             m_TotalProps = Imbuing.GetTotalMods(m_Item, m_ID);
 
             if (maxInt <= 1)
@@ -162,9 +162,10 @@ namespace Server.Gumps
 
             // ===== CALCULATE DIFFICULTY =====
             int truePropWeight = (int)((propWeight / (double)weight) * 100);
-            int trueTotalWeight = Imbuing.GetTotalWeight(m_Item, -1, true, true);
+            int trueTotalWeight = Imbuing.GetTotalWeight(m_Item, -1);
 
-            double suc = Imbuing.GetSuccessChance(User, m_Item, trueTotalWeight, truePropWeight, bonus);
+			double dif;
+            double suc = Imbuing.GetSuccessChance(User, m_Item, trueTotalWeight, truePropWeight, out dif);
 
             AddHtmlLocalized(300, 300, 250, 20, 1044057, 0xFFFFFF, false, false); // Success Chance:
             AddLabel(420, 300, GetSuccessChanceHue(suc), string.Format("{0}%", suc.ToString("0.0")));
@@ -349,7 +350,22 @@ namespace Server.Gumps
             }
         }
 
-        public static void SendGumpDelayed(PlayerMobile pm)
+		private static readonly SkillName[][] m_SkillGroups = new SkillName[][]
+{
+			new SkillName[] { SkillName.Fencing, SkillName.Macing, SkillName.Swords, SkillName.Musicianship, SkillName.Magery },
+			new SkillName[] { SkillName.Wrestling, SkillName.AnimalTaming, SkillName.SpiritSpeak, SkillName.Tactics, SkillName.Provocation },
+			new SkillName[] { SkillName.Focus, SkillName.Parry, SkillName.Stealth, SkillName.Meditation, SkillName.AnimalLore, SkillName.Discordance },
+			new SkillName[] { SkillName.Mysticism, SkillName.Bushido, SkillName.Necromancy, SkillName.Veterinary, SkillName.Stealing, SkillName.EvalInt, SkillName.Anatomy },
+			new SkillName[] { SkillName.Peacemaking, SkillName.Ninjitsu, SkillName.Chivalry, SkillName.Archery, SkillName.MagicResist, SkillName.Healing, SkillName.Throwing }
+};
+
+		public static SkillName[] GetSkillGroup(SkillName skill)
+		{
+			return m_SkillGroups.FirstOrDefault(list => list.Any(sk => sk == skill));
+		}
+
+
+		public static void SendGumpDelayed(Mobile pm)
         {
             Timer.DelayCall(TimeSpan.FromSeconds(1.5), () =>
             {
@@ -360,7 +376,7 @@ namespace Server.Gumps
         // =========== Check if Choosen Attribute Replaces Another =================
         public static TextDefinition WhatReplacesWhat(int id, Item item)
         {
-            if (Imbuing.GetValueForID(item, id) > 0)
+            if (Imbuing.GetValueForMod(item, id) > 0)
             {
                 return ItemPropertyInfo.GetAttributeName(id);
             }
@@ -414,7 +430,7 @@ namespace Server.Gumps
                 if (id >= 151 && id <= 183)
                 {
                     AosSkillBonuses bonuses = jewel.SkillBonuses;
-                    SkillName[] group = Imbuing.GetSkillGroup((SkillName)ItemPropertyInfo.GetAttribute(id));
+                    SkillName[] group = GetSkillGroup((SkillName)ItemPropertyInfo.GetAttribute(id));
 
                     for (int i = 0; i < 5; i++)
                     {

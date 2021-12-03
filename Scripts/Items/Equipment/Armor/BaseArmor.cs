@@ -62,7 +62,9 @@ namespace Server.Items
         private int m_HitPoints;
         private Mobile m_Crafter;
         private ItemQuality m_Quality;
-        private CraftResource m_Resource;
+		private ArmorDurabilityLevel m_Durability;
+		internal ArmorProtectionLevel ProtectionLevel { get; set; }
+		private CraftResource m_Resource;
         private bool m_Identified, m_PlayerConstructed;
         private int m_PhysicalBonus, m_FireBonus, m_ColdBonus, m_PoisonBonus, m_EnergyBonus;
 
@@ -102,13 +104,14 @@ namespace Server.Items
         public virtual bool AllowFemaleWearer => true;
 
         public abstract AMT MaterialType { get; }
+		public virtual int RevertArmorBase { get; }
 
-        public virtual AMA DefMedAllowance => AMA.None;
+		public virtual AMA DefMedAllowance => AMA.None;
         public virtual AMA AosMedAllowance => DefMedAllowance;
 
-        public virtual int AosStrBonus => 0;
-        public virtual int AosDexBonus => 0;
-        public virtual int AosIntBonus => 0;
+        //public virtual int StrBonus => 0;
+        //public virtual int DexBonus => 0;
+        //public virtual int IntBonus => 0;
 
         public virtual int StrReq => 0;
         public virtual int DexReq => 0;
@@ -213,7 +216,7 @@ namespace Server.Items
             }
         }
 
-        public int ArmorBase
+        public virtual int ArmorBase
         {
             get
             {
@@ -601,11 +604,11 @@ namespace Server.Items
         }
 
         [CommandProperty(AccessLevel.GameMaster)]
-        public int StrBonus
+        public virtual int StrBonus
         {
             get
             {
-                return (m_StrBonus == -1 ? AosStrBonus : m_StrBonus);
+                return (m_StrBonus == -1 ? 0 : m_StrBonus);
             }
             set
             {
@@ -615,11 +618,11 @@ namespace Server.Items
         }
 
         [CommandProperty(AccessLevel.GameMaster)]
-        public int DexBonus
+        public virtual int DexBonus
         {
             get
             {
-                return (m_DexBonus == -1 ? AosDexBonus : m_DexBonus);
+                return (m_DexBonus == -1 ? 0 : m_DexBonus);
             }
             set
             {
@@ -629,11 +632,11 @@ namespace Server.Items
         }
 
         [CommandProperty(AccessLevel.GameMaster)]
-        public int IntBonus
+        public virtual int IntBonus
         {
             get
             {
-                return (m_IntBonus == -1 ? AosIntBonus : m_IntBonus);
+                return (m_IntBonus == -1 ? 0 : m_IntBonus);
             }
             set
             {
@@ -652,7 +655,7 @@ namespace Server.Items
                     return 125;
                 }
 
-                return m_StrReq == -1 ? StrReq : m_StrReq;
+                return m_StrReq == -1 ? 0 : m_StrReq;
             }
             set
             {
@@ -666,7 +669,7 @@ namespace Server.Items
         {
             get
             {
-                return (m_DexReq == -1 ? DexReq : m_DexReq);
+                return (m_DexReq == -1 ? 0 : m_DexReq);
             }
             set
             {
@@ -680,7 +683,7 @@ namespace Server.Items
         {
             get
             {
-                return (m_IntReq == -1 ? IntReq : m_IntReq);
+                return (m_IntReq == -1 ? 0 : m_IntReq);
             }
             set
             {
@@ -829,7 +832,23 @@ namespace Server.Items
             }
         }
 
-        public virtual int ArtifactRarity => 0;
+		[CommandProperty(AccessLevel.GameMaster)]
+		public ArmorDurabilityLevel Durability
+		{
+			get
+			{
+				return m_Durability;
+			}
+			set
+			{
+				UnscaleDurability();
+				m_Durability = value;
+				ScaleDurability();
+				InvalidateProperties();
+			}
+		}
+
+		public virtual int ArtifactRarity => 0;
 
         public override bool DisplayWeight
         {
@@ -1850,8 +1869,23 @@ namespace Server.Items
             m_AosWeaponAttributes = new AosWeaponAttributes(this);
             m_TalismanProtection = new TalismanAttribute();
         }
+		public virtual Race RequiredRace
+		{
+			get
+			{
+				return null;
+			}
+		}
 
-        public override bool CanEquip(Mobile from)
+		public virtual bool CanBeWornByGargoyles
+		{
+			get
+			{
+				return false;
+			}
+		}
+
+		public override bool CanEquip(Mobile from)
         {
             if (from.IsPlayer())
             {

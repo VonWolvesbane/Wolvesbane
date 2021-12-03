@@ -456,7 +456,7 @@ namespace Server.Engines.Craft
 
             index = AddCraft(typeof(RuneCarvingKnife), 1011081, 1072915, 70.0, 120.0, typeof(IronIngot), 1044036, 9, 1044037);
             AddRes(index, typeof(DreadHornMane), 1032682, 1, 1053098);
-            AddRes(index, typeof(Putrefaction), 1032678, 10, 1053098);
+            AddRes(index, typeof(Putrefication), 1032678, 10, 1053098);
             AddRes(index, typeof(Muculent), 1032680, 10, 1053098);
             AddRecipe(index, (int)SmithRecipes.RuneCarvingKnife);
             ForceNonExceptional(index);
@@ -478,7 +478,7 @@ namespace Server.Engines.Craft
             index = AddCraft(typeof(LuminousRuneBlade), 1011081, 1072922, 70.0, 120.0, typeof(IronIngot), 1044036, 15, 1044037);
             AddRes(index, typeof(GrizzledBones), 1032684, 1, 1053098);
             AddRes(index, typeof(Corruption), 1032676, 10, 1053098);
-            AddRes(index, typeof(Putrefaction), 1032678, 10, 1053098);
+            AddRes(index, typeof(Putrefication), 1032678, 10, 1053098);
             AddRecipe(index, (int)SmithRecipes.LuminousRuneBlade);
             ForceNonExceptional(index);
 
@@ -741,20 +741,20 @@ namespace Server.Engines.Craft
 
             #region High Seas Cannons
 
-            index = AddCraft(typeof(Cannonball), 1116354, 1116029, 10.0, 60.0, typeof(IronIngot), 1044036, 12, 1044037);
-            SetUseAllRes(index, true);
+            //index = AddCraft(typeof(Cannonball), 1116354, 1116029, 10.0, 60.0, typeof(IronIngot), 1044036, 12, 1044037);
+            //SetUseAllRes(index, true);
 
-            index = AddCraft(typeof(Grapeshot), 1116354, 1116030, 15.0, 70.0, typeof(IronIngot), 1044036, 12, 1044037);
-            AddRes(index, typeof(Cloth), 1044286, 2, 1044287);
-            SetUseAllRes(index, true);
+            //index = AddCraft(typeof(Grapeshot), 1116354, 1116030, 15.0, 70.0, typeof(IronIngot), 1044036, 12, 1044037);
+            //AddRes(index, typeof(Cloth), 1044286, 2, 1044287);
+            //SetUseAllRes(index, true);
 
-            index = AddCraft(typeof(LightShipCannonDeed), 1116354, 1095790, 65.0, 120.0, typeof(IronIngot), 1044036, 900, 1044037);
-            AddRes(index, typeof(Board), 1044041, 50, 1044351);
-            AddSkill(index, SkillName.Carpentry, 65.0, 100.0);
+            //index = AddCraft(typeof(LightShipCannonDeed), 1116354, 1095790, 65.0, 120.0, typeof(IronIngot), 1044036, 900, 1044037);
+            //AddRes(index, typeof(Board), 1044041, 50, 1044351);
+            //AddSkill(index, SkillName.Carpentry, 65.0, 100.0);
 
-            index = AddCraft(typeof(HeavyShipCannonDeed), 1116354, 1095794, 70.0, 120.0, typeof(IronIngot), 1044036, 1800, 1044037);
-            AddRes(index, typeof(Board), 1044041, 75, 1044351);
-            AddSkill(index, SkillName.Carpentry, 70.0, 100.0);
+            //index = AddCraft(typeof(HeavyShipCannonDeed), 1116354, 1095794, 70.0, 120.0, typeof(IronIngot), 1044036, 1800, 1044037);
+            //AddRes(index, typeof(Board), 1044041, 75, 1044351);
+            //AddSkill(index, SkillName.Carpentry, 70.0, 100.0);
 
             #endregion
 

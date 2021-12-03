@@ -783,7 +783,7 @@ namespace Server.Engines.Points
                             }
                         }
 
-                        int weight = item is BaseWeapon && !((BaseWeapon)item).DImodded ? Imbuing.GetTotalWeight(item, 12, false, true) : Imbuing.GetTotalWeight(item, -1, false, true);
+                        int weight = item is BaseWeapon && !((BaseWeapon)item).DImodded ? Imbuing.GetTotalWeight(item, 12) : Imbuing.GetTotalWeight(item, -1);
 
                         if (weight > 0)
                         {

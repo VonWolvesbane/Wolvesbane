@@ -1104,5 +1104,12 @@ namespace Server.Items
                     break;
             }
         }
-    }
+		//daat99 OWTLR start - runic storage
+		public virtual Type GetCraftableType()
+		{
+			return null;
+		}
+		//daat99 OWTLR end - runic storage 
+
+	}
 }

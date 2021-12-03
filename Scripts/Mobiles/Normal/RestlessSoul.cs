@@ -1,4 +1,6 @@
 using Server.ContextMenus;
+using Server.Engines.Quests;
+using Server.Engines.Quests.Haven;
 using System.Collections.Generic;
 
 namespace Server.Mobiles
@@ -81,8 +83,24 @@ namespace Server.Mobiles
         {
             return 0xFD;
         }
+		public override bool IsEnemy(Mobile m)
+		{
+			PlayerMobile player = m as PlayerMobile;
 
-        public override void Serialize(GenericWriter writer)
+			if (player != null && this.Map == Map.Trammel && this.X >= 5199 && this.X <= 5271 && this.Y >= 1812 && this.Y <= 1865) // Schmendrick's cave
+			{
+				QuestSystem qs = player.Quest;
+
+				if (qs is UzeraanTurmoilQuest && qs.IsObjectiveInProgress(typeof(FindSchmendrickObjective)))
+				{
+					return false;
+				}
+			}
+
+			return base.IsEnemy(m);
+		}
+
+		public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);
             writer.Write(0);

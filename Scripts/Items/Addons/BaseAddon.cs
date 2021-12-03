@@ -257,9 +257,15 @@ namespace Server.Items
 
         public static bool CheckHouse(Mobile from, Point3D p, Map map, int height, ref BaseHouse house)
         {
-            house = BaseHouse.FindHouseAt(p, map, height);
+			//house = BaseHouse.FindHouseAt(p, map, height);
+			Region reg = Region.Find(p, map);
+			if (reg is Regions.HouseRegion)
+			{
+				Regions.HouseRegion hreg = reg as Regions.HouseRegion;
+				house = hreg.House;
+			}
 
-            if (house == null || (from != null && !house.IsCoOwner(from)))
+			if (house == null || (from != null && !house.IsCoOwner(from)))
             {
                 return false;
             }

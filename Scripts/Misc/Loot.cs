@@ -250,7 +250,7 @@ namespace Server
         public static Type[] StatueTypes => m_StatueTypes;
 
         #region Spell Scrolls
-        private static readonly Type[] m_MageryScrollTypes = new[]
+        public static readonly Type[] m_MageryScrollTypes = new[]
         {
             typeof(ReactiveArmorScroll), typeof(ClumsyScroll), typeof(CreateFoodScroll), typeof(FeeblemindScroll),
             typeof(HealScroll), typeof(MagicArrowScroll), typeof(NightSightScroll), typeof(WeakenScroll), typeof(AgilityScroll),

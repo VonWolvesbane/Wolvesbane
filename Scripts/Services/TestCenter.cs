@@ -304,7 +304,7 @@ namespace Server.Misc
             bag.DropItem(new LardOfParoxysmus(200));
             bag.DropItem(new CapturedEssence(200));
             bag.DropItem(new LuminescentFungi(200));
-            bag.DropItem(new Putrefaction(200));
+            bag.DropItem(new Putrefication(200));
             bag.DropItem(new Blight(200));
             bag.DropItem(new LardOfParoxysmus(200));
             bag.DropItem(new Taint(200));
@@ -343,10 +343,10 @@ namespace Server.Misc
             PlaceItemIn(bag, 94, 90, new RunicDovetailSaw(CraftResource.YewWood, 30000));
             PlaceItemIn(bag, 104, 90, new RunicDovetailSaw(CraftResource.Heartwood, 30000));
 
-            PlaceItemIn(bag, 54, 107, new RunicFletcherTool(CraftResource.OakWood, 30000));
-            PlaceItemIn(bag, 64, 107, new RunicFletcherTool(CraftResource.AshWood, 30000));
-            PlaceItemIn(bag, 74, 107, new RunicFletcherTool(CraftResource.YewWood, 30000));
-            PlaceItemIn(bag, 84, 107, new RunicFletcherTool(CraftResource.Heartwood, 30000));
+            PlaceItemIn(bag, 54, 107, new RunicFletcherTools(CraftResource.OakWood, 30000));
+            PlaceItemIn(bag, 64, 107, new RunicFletcherTools(CraftResource.AshWood, 30000));
+            PlaceItemIn(bag, 74, 107, new RunicFletcherTools(CraftResource.YewWood, 30000));
+            PlaceItemIn(bag, 84, 107, new RunicFletcherTools(CraftResource.Heartwood, 30000));
 
             PlaceItemIn(box, 65, 67, bag);
 

@@ -68,8 +68,27 @@ namespace Server.Mobiles
         }
 
         private DateTime m_NextPickup;
+		private bool m_QuestOverride;
+		[CommandProperty(AccessLevel.GameMaster)]
+		public bool QuestOverride
+		{
+			get { return m_QuestOverride; }
+			set
+			{
+				if (!m_QuestOverride && value)
+				{
+					Timer.DelayCall(TimeSpan.FromSeconds(30), () =>
+					{
+						if (m_QuestOverride)
+							m_QuestOverride = false;
+					});
+				}
 
-        public override void OnThink()
+				m_QuestOverride = value;
+			}
+		}
+
+		public override void OnThink()
         {
             base.OnThink();
 

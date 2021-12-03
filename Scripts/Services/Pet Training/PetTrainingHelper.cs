@@ -117,7 +117,9 @@ namespace Server.Mobiles
 
     public static class PetTrainingHelper
     {
-        public static List<TrainingPoint> TrainingPoints => _TrainingPoints;
+		public static bool Enabled { get { return Core.TOL; } }
+
+		public static List<TrainingPoint> TrainingPoints => _TrainingPoints;
         public static List<TrainingPoint> _TrainingPoints;
 
         public static TrainingDefinition[] Definitions { get; private set; }

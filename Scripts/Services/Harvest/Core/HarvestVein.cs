@@ -12,7 +12,8 @@ namespace Server.Engines.Harvest
 
         public double VeinChance { get; set; }
         public double ChanceToFallback { get; set; }
-        public HarvestResource PrimaryResource { get; set; }
+		public bool IsProspected { get; set; }
+		public HarvestResource PrimaryResource { get; set; }
         public HarvestResource FallbackResource { get; set; }
     }
 }

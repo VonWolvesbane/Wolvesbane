@@ -227,7 +227,7 @@ namespace Server.Mobiles
                     {
                         RunicReforging.GenerateRandomItem(item, null, Utility.RandomMinMax(MinBudget, MaxBudget), 0, ReforgedPrefix.None, ReforgedSuffix.None);
 
-                        if (++failSafe == 25 && Imbuing.GetTotalWeight(item, -1, false, true) == 0)
+                        if (++failSafe == 25 && Imbuing.GetTotalWeight(item) == 0)
                         {
                             item.Delete();
                             success = false;
@@ -235,7 +235,7 @@ namespace Server.Mobiles
                             break;
                         }
                     }
-                    while (Imbuing.GetTotalWeight(item, -1, false, true) == 0);
+                    while (Imbuing.GetTotalWeight(item) == 0);
 
                     if (success)
                     {
@@ -248,7 +248,7 @@ namespace Server.Mobiles
 
         public int GetCostFor(Item item)
         {
-            return (int)((double)Imbuing.GetTotalWeight(item, -1, false, true) * 2.18);
+            return (int)((double)Imbuing.GetTotalWeight(item) * 2.18);
         }
 
         public void TryBuyItem(Mobile from, Item item)

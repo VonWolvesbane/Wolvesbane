@@ -72,7 +72,7 @@ namespace Server.Items
                     typeof(GreenGoblinAlchemist), typeof(GreenGoblin),
                     typeof(GrayGoblinMage), typeof(GrayGoblinKeeper),
                     typeof(GrayGoblin), typeof(GreenGoblinAlchemistRenowned),
-                    typeof(GrayGoblinMageRenowned), typeof(CorgulTheSoulBinder),
+                    typeof(GrayGoblinMageRenowned), 
                     typeof(PirateCrew), typeof(LizardmanWitchdoctor),
                     typeof(OrcFootSoldier), typeof(RatmanAssassin),
                     typeof(OgreBoneCrusher), typeof(TitanRockHunter)

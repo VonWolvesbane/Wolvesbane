@@ -209,38 +209,6 @@ namespace Server.Engines.Harvest
                     }
                 }
 
-                #region High Seas Charydbis
-                if (tool is FishingPole && CharydbisSpawner.SpawnInstance != null && CharydbisSpawner.SpawnInstance.IsSummoned)
-                {
-                    Item oracle = from.Backpack.FindItemByType(typeof(OracleOfTheSea));
-                    FishingPole pole = tool as FishingPole;
-                    CharydbisSpawner sp = CharydbisSpawner.SpawnInstance;
-
-                    if (oracle != null && sp != null)
-                    {
-                        if (from.Map != sp.Map)
-                            from.SendLocalizedMessage(1150861); //Charybdis have never been seen in these waters, try somewhere else.
-
-                        else if (pole.BaitType == typeof(Charydbis) && from.Skills[SkillName.Fishing].Value >= 100)
-                        {
-                            if (sp.Charydbis == null && !sp.HasSpawned && sp.CurrentLocation.Contains(loc))
-                            {
-                                Multis.BaseBoat boat = Multis.BaseBoat.FindBoatAt(from, from.Map);
-                                sp.SpawnCharydbis(from, loc, sp.Map, boat);
-                                sp.HasSpawned = true;
-                                pole.OnFishedHarvest(from, true);
-                                return true;
-                            }
-                            else if (sp.LastLocation.Contains(loc))
-                            {
-                                from.SendLocalizedMessage(1150862); //The charybdis has moved on from this location, consult Oracle Of The Seas again.
-                            }
-                        }
-                        else
-                            from.SendLocalizedMessage(1150858); //You see a few bubbles, but no charybdis.
-                    }
-                }
-                #endregion
             }
 
             return false;

@@ -51,7 +51,8 @@ namespace Server.Mobiles
 
         #region Constant declarations
         public const byte MaxLoops = 10; //maximum number of recursive calls from spawner to itself. this is to prevent stack overflow from xmlspawner scripting
-        private const int ShowBoundsItemId = 14089;             // 14089 Fire Column // 3555 Campfire // 8708 Skull Pole
+		public const string Version = "4.00";
+		private const int ShowBoundsItemId = 14089;             // 14089 Fire Column // 3555 Campfire // 8708 Skull Pole
         private const string SpawnDataSetName = "Spawns";
         private const string SpawnTablePointName = "Points";
         private const int SpawnFitSize = 16;                    // Normal wall/door height for a mobile is 20 to walk through
@@ -207,10 +208,14 @@ namespace Server.Mobiles
         private TimeSpan m_DespawnTime;
 
         private string m_SkillTrigger;
+ 		private bool m_skillTriggerActivated;
         private SkillName m_skill_that_triggered;
-        private bool m_FreeRun = false;     // override for all other triggering modes
-
-        private Map currentmap;
+		private bool m_FreeRun = false;     // override for all other triggering modes
+		private SkillName m_SkillTriggerName;
+		private double m_SkillTriggerMin;
+		private double m_SkillTriggerMax;
+		private int m_SkillTriggerSuccess;
+		private Map currentmap;
 
         public bool m_IsInactivated = false;
         private bool m_SmartSpawning = false;
@@ -644,8 +649,33 @@ namespace Server.Mobiles
                 }
             }
         }
+		public Skill TriggerSkill
+		{
+			get
+			{
+				if (TriggerMob != null && (int)m_skill_that_triggered >= 0)
+				{
+					return TriggerMob.Skills[m_skill_that_triggered];
+				}
+				else
+				{
+					return null;
+				}
+			}
+			set
+			{
+				if (value != null)
+				{
+					m_skill_that_triggered = value.SkillName;
+				}
+				else
+				{
+					m_skill_that_triggered = XmlSpawnerSkillCheck.RegisteredSkill.Invalid;
+				}
+			}
+		}
 
-        public string UniqueId => m_UniqueId;
+		public string UniqueId => m_UniqueId;
 
         // does not perform a defrag, so less accurate but can be used while looping through world object enums
         public int SafeCurrentCount => SafeTotalSpawnedObjects;
@@ -1938,16 +1968,16 @@ namespace Server.Mobiles
             {
                 TypeName = action
             };
-            string substitutedtypeName = BaseXmlSpawner.ApplySubstitution(null, attachedto, action);
-            string typeName = BaseXmlSpawner.ParseObjectType(substitutedtypeName);
+			string substitutedtypeName = BaseXmlSpawner.ApplySubstitution(null, attachedto, trigmob, action);
+			string typeName = BaseXmlSpawner.ParseObjectType(substitutedtypeName);
 
 
             string status_str;
             if (BaseXmlSpawner.IsTypeOrItemKeyword(typeName))
             {
-                BaseXmlSpawner.SpawnTypeKeyword(attachedto, TheSpawn, typeName, substitutedtypeName, trigmob, map, out status_str);
-            }
-            else
+				BaseXmlSpawner.SpawnTypeKeyword(attachedto, TheSpawn, typeName, substitutedtypeName, true, trigmob, loc, map, out status_str);
+			}
+			else
             {
                 // its a regular type descriptor so find out what it is
                 Type type = SpawnerType.GetType(typeName);
@@ -2547,12 +2577,14 @@ namespace Server.Mobiles
                     needs_player_trigger = true;
                     string status_str;
 
-                    if (BaseXmlSpawner.TestMobProperty(this, m, m_PlayerPropertyName, out status_str))
-                    {
-                        has_player_trigger = true;
-                    }
+					if (BaseXmlSpawner.TestMobProperty(this, m, m_PlayerPropertyName, null, out status_str))
+					{
+						has_player_trigger = true;
+					}
+					else
+						has_player_trigger = false;
 
-                    if (!string.IsNullOrEmpty(status_str))
+					if (!string.IsNullOrEmpty(status_str))
                     {
                         this.status_str = status_str;
                     }
@@ -2596,7 +2628,36 @@ namespace Server.Mobiles
             }
         }
 
-        public override bool HandlesOnSpeech => (m_Running && !string.IsNullOrEmpty(m_SpeechTrigger));
+		public bool HandlesOnSkillUse { get { return (m_Running && m_SkillTrigger != null && m_SkillTrigger.Length > 0); } }
+
+		// this is the handler for skill use
+		public void OnSkillUse(Mobile m, Skill skill, bool success)
+		{
+
+			if (m_Running && m_ProximityRange >= 0 && ValidPlayerTrig(m) && CanSpawn && !m_refractActivated && TODInRange)
+			{
+
+				if (!Utility.InRange(m.Location, this.Location, m_ProximityRange))
+					return;
+
+				m_skillTriggerActivated = false;
+
+				// check the skill trigger conditions, Skillname[+/-][,min,max]
+				if (m_SkillTrigger != null && (skill.SkillName == m_SkillTriggerName) &&
+					((m_SkillTriggerMin < 0) || (skill.Value >= m_SkillTriggerMin)) &&
+					((m_SkillTriggerMax < 0) || (skill.Value <= m_SkillTriggerMax)) &&
+					((m_SkillTriggerSuccess == 3) || ((m_SkillTriggerSuccess == 1) && success) || ((m_SkillTriggerSuccess == 2) && !success)))
+				{
+					// have a skill trigger so flag it and test it
+					m_skillTriggerActivated = true;
+
+					CheckTriggers(m, skill, true);
+				}
+			}
+		}
+
+
+		public override bool HandlesOnSpeech => (m_Running && !string.IsNullOrEmpty(m_SpeechTrigger));
 
         public override void OnSpeech(SpeechEventArgs e)
         {
@@ -8384,10 +8445,11 @@ namespace Server.Mobiles
                 }
 
                 // check for string substitions
-                string substitutedtypeName = BaseXmlSpawner.ApplySubstitution(this, this, TheSpawn.TypeName);
+                //string substitutedtypeName = BaseXmlSpawner.ApplySubstitution(this, this, TheSpawn.TypeName);
+				string substitutedtypeName = BaseXmlSpawner.ApplySubstitution(this, this, m_mob_who_triggered, TheSpawn.TypeName);
 
-                // random positioning is the default
-                List<SpawnPositionInfo> spawnpositioning = null;
+				// random positioning is the default
+				List<SpawnPositionInfo> spawnpositioning = null;
 
                 // require valid surfaces by default
                 bool requiresurface = true;
@@ -8457,11 +8519,10 @@ namespace Server.Mobiles
                                     string[] ckeyvalueargs = BaseXmlSpawner.ParseCommaArgs(args[0], 2);
                                     if (ckeyvalueargs.Length > 1)
                                     {
-                                        // dont spawn if it fails the test
-                                        if (!BaseXmlSpawner.CheckPropertyString(this, this, ckeyvalueargs[1], out status_str)) return false;
-
-                                    }
-                                    else
+										// dont spawn if it fails the test
+										if (!BaseXmlSpawner.CheckPropertyString(this, this, ckeyvalueargs[1], m_mob_who_triggered, out this.status_str)) return false;
+									}
+									else
                                     {
                                         status_str = "invalid #CONDITION specification: " + args[0];
                                     }
@@ -8492,10 +8553,10 @@ namespace Server.Mobiles
                 {
                     string status_str = null;
 
-                    bool completedtypespawn = BaseXmlSpawner.SpawnTypeKeyword(this, TheSpawn, typeName, substitutedtypeName,
-                        m_mob_who_triggered, Map, out status_str, loops);
+					bool completedtypespawn = BaseXmlSpawner.SpawnTypeKeyword(this, TheSpawn, typeName, substitutedtypeName, requiresurface, spawnpositioning,
+						m_mob_who_triggered, this.Location, this.Map, new XmlGumpCallback(SpawnerGumpCallback), out status_str, loops);
 
-                    if (status_str != null)
+					if (status_str != null)
                     {
                         this.status_str = status_str;
                     }

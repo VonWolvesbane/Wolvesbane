@@ -17,6 +17,7 @@ namespace Server
 
 		public int Header { get; set; }
 		public string HeaderArgs { get; set; }
+		public static bool Enabled { get; set; }
 
 		public ObjectPropertyList(IEntity e)
 			: base(0xD6)

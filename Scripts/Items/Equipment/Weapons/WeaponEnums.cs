@@ -11,8 +11,37 @@ namespace Server.Items
         Ranged,		// Bow, Crossbows
         Fists		// Fists
     }
+	public enum WeaponDamageLevel
+	{
+		Regular,
+		Ruin,
+		Might,
+		Force,
+		Power,
+		Vanq
+	}
 
-    public enum WeaponAnimation
+	public enum WeaponAccuracyLevel
+	{
+		Regular,
+		Accurate,
+		Surpassingly,
+		Eminently,
+		Exceedingly,
+		Supremely
+	}
+
+	public enum WeaponDurabilityLevel
+	{
+		Regular,
+		Durable,
+		Substantial,
+		Massive,
+		Fortified,
+		Indestructible
+	}
+
+	public enum WeaponAnimation
     {
         Slash1H = 9,
         Pierce1H = 10,

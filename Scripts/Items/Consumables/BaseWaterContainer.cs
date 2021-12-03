@@ -59,11 +59,11 @@ namespace Server.Items
             }
         }
 
-        public override void OnAosSingleClick(Mobile from)
+        public override void OnSingleClick(Mobile from)
         {
             if (IsEmpty)
             {
-                base.OnAosSingleClick(from);
+                base.OnSingleClick(from);
             }
             else
             {

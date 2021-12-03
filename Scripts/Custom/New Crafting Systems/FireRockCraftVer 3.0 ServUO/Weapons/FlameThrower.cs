@@ -1,0 +1,60 @@
+/* Created by Hammerhand*/
+
+using System;
+using Server.Network;
+using Server.Items;
+
+namespace Server.Items
+{
+	public class FlameThrower : BaseRanged
+	{
+        public override int Hue { get { return 1359; } }
+		public override int EffectID{ get{ return 0xF42; } }
+		public override Type AmmoType{ get{ return typeof( FlamingArrow ); } }
+		public override Item Ammo{ get{ return new FlamingArrow(); } }
+
+		public override WeaponAbility PrimaryAbility{ get{ return WeaponAbility.ArmorIgnore; } }
+		public override WeaponAbility SecondaryAbility{ get{ return WeaponAbility.MovingShot; } }
+
+		public override int StrengthReq{ get{ return 45; } }
+		public override int MinDamage{ get{ return 19; } }
+		public override int MaxDamage{ get{ return 27; } }
+        public override float Speed { get { return 4.25f; } }
+
+		public override int DefMaxRange{ get{ return 10; } }
+
+		public override int InitMinHits{ get{ return 31; } }
+		public override int InitMaxHits{ get{ return 70; } }
+
+		public override WeaponAnimation DefAnimation{ get{ return WeaponAnimation.ShootBow; } }
+
+		[Constructable]
+		public FlameThrower() : base( 0x26C2 )
+		{
+            Name = "Flame Thrower";
+			Weight = 5.0;
+
+            WeaponAttributes.HitFireArea = Utility.RandomMinMax(20, 45);
+            Attributes.AttackChance = Utility.RandomMinMax(8, 30);
+		}
+
+        public FlameThrower(Serial serial)
+            : base(serial)
+		{
+		}
+
+		public override void Serialize( GenericWriter writer )
+		{
+			base.Serialize( writer );
+
+			writer.Write( (int) 0 ); // version
+		}
+
+		public override void Deserialize( GenericReader reader )
+		{
+			base.Deserialize( reader );
+
+			int version = reader.ReadInt();
+		}
+	}
+}

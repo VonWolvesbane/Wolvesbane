@@ -20,7 +20,7 @@ namespace Server.Items
             list.Add(1072351); // Quest Item
         }
 
-        public override int Lifespan => 18000;
+        public override int m_Lifespan => 18000;
 
         public PowerCore(Serial serial)
             : base(serial)

@@ -34,7 +34,7 @@ namespace Server.Items
             m_Type = type;
         }
 
-        public override int Lifespan => 300;
+        public override int m_Lifespan => 300;
 
         public override void OnDoubleClick(Mobile from)
         {

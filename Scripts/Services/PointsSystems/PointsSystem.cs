@@ -356,11 +356,9 @@ namespace Server.Engines.Points
         public static KhaldunData Khaldun { get; set; }
         public static DoomData TreasuresOfDoom { get; set; }
         public static SorcerersDungeonData SorcerersDungeon { get; set; }
-        public static RisingTide RisingTide { get; set; }
         public static DoomGauntlet DoomGauntlet { get; set; }
         public static TreasuresOfTokuno TreasuresOfTokuno { get; set; }
         public static VirtueArtifactsSystem VirtueArtifacts { get; set; }
-        public static FellowshipData FellowshipData { get; set; }
         public static JollyRogerData JollyRogerData { get; set; }
 
         public static void Configure()
@@ -387,11 +385,11 @@ namespace Server.Engines.Points
             Khaldun = new KhaldunData();
             TreasuresOfDoom = new DoomData();
             SorcerersDungeon = new SorcerersDungeonData();
-            RisingTide = new RisingTide();
+            //RisingTide = new RisingTide();
             DoomGauntlet = new DoomGauntlet();
             TreasuresOfTokuno = new TreasuresOfTokuno();
             VirtueArtifacts = new VirtueArtifactsSystem();
-            FellowshipData = new FellowshipData();
+            //FellowshipData = new FellowshipData();
             JollyRogerData = new JollyRogerData();
         }
 

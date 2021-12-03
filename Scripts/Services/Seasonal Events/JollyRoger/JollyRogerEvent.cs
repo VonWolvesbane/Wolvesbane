@@ -150,10 +150,10 @@ namespace Server.Engines.JollyRoger
                 WeakEntityCollection.Add(EntityName, item);
             }
 
-            if (CastleAddon.Instance == null)
+            if (JollyRodger_CastleAddon.Instance == null)
             {
-                CastleAddon.Instance = new CastleAddon();
-                CastleAddon.Instance.MoveToWorld(new Point3D(994, 1140, 43), map);
+                JollyRodger_CastleAddon.Instance = new JollyRodger_CastleAddon();
+                JollyRodger_CastleAddon.Instance.MoveToWorld(new Point3D(994, 1140, 43), map);
             }
 
             if (map.FindItem<DarkWoodDoor>(new Point3D(981, 1131, 65)) == null)
@@ -515,10 +515,10 @@ namespace Server.Engines.JollyRoger
             }
 
             /* Ilshenar Remove */
-            if (CastleAddon.Instance != null)
+            if (JollyRodger_CastleAddon.Instance != null)
             {
-                CastleAddon.Instance.Delete();
-                CastleAddon.Instance = null;
+                JollyRodger_CastleAddon.Instance.Delete();
+                JollyRodger_CastleAddon.Instance = null;
             }            
 
             if (HawkwindSpeak.Instance != null)

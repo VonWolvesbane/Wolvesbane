@@ -24,7 +24,7 @@ namespace Server.Events.Halloween
             typeof(GypsyWagonLamp),
             typeof(TrayOfCandyApples),
             typeof(TrayOfPumpkinSpiceCider),
-            typeof(FlamingScarecrow)
+            typeof(Server.Items.FlamingScarecrow)
         };
 
         private static readonly Type[] m_Treats =

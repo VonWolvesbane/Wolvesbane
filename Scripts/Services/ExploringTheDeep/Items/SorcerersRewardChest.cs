@@ -52,7 +52,7 @@ namespace Server.Items
             LootType = LootType.Blessed;
         }
 
-        public override int Lifespan => 3600;
+        public override int m_Lifespan => 3600;
         public override bool UseSeconds => false;
 
         public override void GetProperties(ObjectPropertyList list)

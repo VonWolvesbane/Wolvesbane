@@ -244,10 +244,10 @@ namespace Server.Engines.Craft
             AddRes(index, typeof(Charcoal), 1116303, 1, 1044253);
             SetUseAllRes(index, true);
 
-            index = AddCraft(typeof(FuseCord), 1116351, 1116305, 55.0, 105.0, typeof(DarkYarn), 1023615, 1, 1044253);
-            AddRes(index, typeof(BlackPowder), 1095826, 1, 1044253);
-            AddRes(index, typeof(Potash), 1116319, 1, 1044253);
-            SetNeedWater(index, true);
+            //index = AddCraft(typeof(FuseCord), 1116351, 1116305, 55.0, 105.0, typeof(DarkYarn), 1023615, 1, 1044253);
+            //AddRes(index, typeof(BlackPowder), 1095826, 1, 1044253);
+            //AddRes(index, typeof(Potash), 1116319, 1, 1044253);
+            //SetNeedWater(index, true);
 
             // Strange Brew         
             index = AddCraft(typeof(SmokeBomb), 1116353, 1030248, 90.0, 120.0, typeof(Eggs), 1044477, 1, 1044253);

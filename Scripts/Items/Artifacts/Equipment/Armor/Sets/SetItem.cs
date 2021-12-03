@@ -29,10 +29,11 @@ namespace Server
         Bestial,
         Virtuoso,
         Aloron,
-        Darden
-    }
+        Darden,
+		Alien
+	}
 
-    public interface ISetItem
+	public interface ISetItem
     {
         SetItem SetID { get; }
         int Pieces { get; }

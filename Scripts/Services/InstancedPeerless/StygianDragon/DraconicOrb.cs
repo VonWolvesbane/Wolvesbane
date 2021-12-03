@@ -13,7 +13,7 @@
             Hue = 0x80F;
         }
 
-        public override int Lifespan => 43200;
+        public override int m_Lifespan => 43200;
 
         public DraconicOrb(Serial serial)
             : base(serial)

@@ -175,7 +175,32 @@ namespace Server.Mobiles
             return false;
         }
 
-        public static void TryPackOpen(BaseCreature animal, Mobile from)
+		public static void CombineBackpacks(BaseCreature animal)
+		{
+			if (Core.AOS)
+				return;
+
+			if (animal.IsBonded || animal.IsDeadPet)
+				return;
+
+			Container pack = animal.Backpack;
+
+			if (pack != null)
+			{
+				Container newPack = new Backpack();
+
+				for (int i = pack.Items.Count - 1; i >= 0; --i)
+				{
+					if (i >= pack.Items.Count)
+						continue;
+
+					newPack.DropItem(pack.Items[i]);
+				}
+
+				pack.DropItem(newPack);
+			}
+		}
+		public static void TryPackOpen(BaseCreature animal, Mobile from)
         {
             if (animal.IsDeadPet)
                 return;

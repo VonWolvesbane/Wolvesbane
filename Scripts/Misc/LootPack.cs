@@ -375,7 +375,7 @@ namespace Server
             new LootPackItem(typeof(Blight), 1),
             new LootPackItem(typeof(Scourge), 1),
             new LootPackItem(typeof(Taint), 1),
-            new LootPackItem(typeof(Putrefaction), 1),
+            new LootPackItem(typeof(Putrefication), 1),
             new LootPackItem(typeof(Corruption), 1),
             new LootPackItem(typeof(Muculent), 1)
         };

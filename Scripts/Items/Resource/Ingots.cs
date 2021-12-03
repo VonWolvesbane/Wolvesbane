@@ -475,4 +475,184 @@ namespace Server.Items
             int version = reader.ReadInt();
         }
     }
+
+	// dat stuff
+	[FlipableAttribute(0x1BF2, 0x1BEF)]
+	public class BlazeIngot : BaseIngot
+	{
+		[Constructable]
+		public BlazeIngot()
+			: this(1)
+		{
+		}
+
+		[Constructable]
+		public BlazeIngot(int amount)
+			: base(CraftResource.Blaze, amount)
+		{
+			Name = "Blaze Ingots"; //daat99 OWLTR - resource name
+		}
+
+		public BlazeIngot(Serial serial)
+			: base(serial)
+		{
+		}
+
+		public override void Serialize(GenericWriter writer)
+		{
+			base.Serialize(writer);
+
+			writer.Write((int)0); // version
+		}
+
+		public override void Deserialize(GenericReader reader)
+		{
+			base.Deserialize(reader);
+
+			int version = reader.ReadInt();
+		}
+	}
+	[FlipableAttribute(0x1BF2, 0x1BEF)]
+	public class IceIngot : BaseIngot
+	{
+		[Constructable]
+		public IceIngot()
+			: this(1)
+		{
+		}
+
+		[Constructable]
+		public IceIngot(int amount)
+			: base(CraftResource.Ice, amount)
+		{
+			Name = "Ice Ingots"; //daat99 OWLTR - resource name
+		}
+
+		public IceIngot(Serial serial)
+			: base(serial)
+		{
+		}
+
+		public override void Serialize(GenericWriter writer)
+		{
+			base.Serialize(writer);
+
+			writer.Write((int)0); // version
+		}
+
+		public override void Deserialize(GenericReader reader)
+		{
+			base.Deserialize(reader);
+
+			int version = reader.ReadInt();
+		}
+	}
+	[FlipableAttribute(0x1BF2, 0x1BEF)]
+	public class ToxicIngot : BaseIngot
+	{
+		[Constructable]
+		public ToxicIngot()
+			: this(1)
+		{
+		}
+
+		[Constructable]
+		public ToxicIngot(int amount)
+			: base(CraftResource.Toxic, amount)
+		{
+			Name = "Toxic Ingots"; //daat99 OWLTR - resource name
+		}
+
+		public ToxicIngot(Serial serial)
+			: base(serial)
+		{
+		}
+
+		public override void Serialize(GenericWriter writer)
+		{
+			base.Serialize(writer);
+
+			writer.Write((int)0); // version
+		}
+
+		public override void Deserialize(GenericReader reader)
+		{
+			base.Deserialize(reader);
+
+			int version = reader.ReadInt();
+		}
+	}
+	[FlipableAttribute(0x1BF2, 0x1BEF)]
+	public class ElectrumIngot : BaseIngot
+	{
+		[Constructable]
+		public ElectrumIngot()
+			: this(1)
+		{
+		}
+
+		[Constructable]
+		public ElectrumIngot(int amount)
+			: base(CraftResource.Electrum, amount)
+		{
+			Name = "Electrum Ingots"; //daat99 OWLTR - resource name
+		}
+
+		public ElectrumIngot(Serial serial)
+			: base(serial)
+		{
+		}
+
+		public override void Serialize(GenericWriter writer)
+		{
+			base.Serialize(writer);
+
+			writer.Write((int)0); // version
+		}
+
+		public override void Deserialize(GenericReader reader)
+		{
+			base.Deserialize(reader);
+
+			int version = reader.ReadInt();
+		}
+	}
+	[FlipableAttribute(0x1BF2, 0x1BEF)]
+	public class PlatinumIngot : BaseIngot
+	{
+		[Constructable]
+		public PlatinumIngot()
+			: this(1)
+		{
+		}
+
+		[Constructable]
+		public PlatinumIngot(int amount)
+			: base(CraftResource.Platinum, amount)
+		{
+			Name = "Platinum Ingots"; //daat99 OWLTR - resource name
+		}
+
+		public PlatinumIngot(Serial serial)
+			: base(serial)
+		{
+		}
+
+		public override void Serialize(GenericWriter writer)
+		{
+			base.Serialize(writer);
+
+			writer.Write((int)0); // version
+		}
+
+		public override void Deserialize(GenericReader reader)
+		{
+			base.Deserialize(reader);
+
+			int version = reader.ReadInt();
+		}
+	}
+
+	// dat stuff
+
 }

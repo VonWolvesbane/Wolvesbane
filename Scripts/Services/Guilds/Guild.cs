@@ -694,9 +694,11 @@ namespace Server.Guilds
         {
             args.Guild = new Guild(args.Id);
         }
-        #endregion
+		#endregion
 
-        public static readonly int RegistrationFee = 25000;
+		public static bool NewGuildSystem { get { return Core.SE; } }
+
+		public static readonly int RegistrationFee = 25000;
         public static readonly int AbbrevLimit = 4;
         public static readonly int NameLimit = 40;
         public static readonly int MajorityPercentage = 66;
@@ -1770,7 +1772,25 @@ namespace Server.Guilds
         [CommandProperty(AccessLevel.GameMaster)]
         public string Charter { get; set; }
 
-        [CommandProperty(AccessLevel.GameMaster)]
+		private GuildType m_Type;
+
+		[CommandProperty(AccessLevel.GameMaster)]
+		public override GuildType Type
+		{
+			get { return m_Type; }
+			set
+			{
+				if (m_Type != value)
+				{
+					m_Type = value;
+					m_TypeLastChange = DateTime.UtcNow;
+
+					InvalidateMemberProperties();
+				}
+			}
+		}
+
+		[CommandProperty(AccessLevel.GameMaster)]
         public DateTime LastFealty { get; private set; }
 
         public List<Guild> Allies { get; private set; }

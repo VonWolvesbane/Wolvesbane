@@ -9,7 +9,7 @@ namespace Server.Items
     public class ClockworkMechanism : BaseDecayingItem
     {
         public override bool HiddenQuestItemHue => true;
-        public override int Lifespan => 3600;
+        public override int m_Lifespan => 3600;
         public override bool UseSeconds => false;
 
         private int m_CreatureDef;

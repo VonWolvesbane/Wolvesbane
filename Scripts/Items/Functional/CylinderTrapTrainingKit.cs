@@ -38,10 +38,6 @@ namespace Server.Items
             from.SendGump(new PuzzleGump(from, this, solution, 0));
         }
 
-        public override void DoDamage(Mobile to)
-        {
-        }
-
         public override void OnDoubleClick(Mobile m)
         {
             if (m.InRange(GetWorldLocation(), 1))

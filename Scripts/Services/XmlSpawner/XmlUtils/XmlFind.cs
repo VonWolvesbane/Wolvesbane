@@ -1,6 +1,7 @@
 using Server.Accounting;
 using Server.Commands;
 using Server.Commands.Generic;
+using Server.Engines.XmlSpawner2;
 using Server.Gumps;
 using Server.Items;
 using Server.Multis;
@@ -88,34 +89,37 @@ namespace Server.Mobiles
 
         public class SearchCriteria
         {
-            public bool Dosearchtype;
-            public bool Dosearchname;
-            public bool Dosearchrange;
-            public bool Dosearchregion;
-            public bool Dosearchspawnentry;
-            public bool Dosearchspawntype;
-            public bool Dosearchcondition;
-            public bool Dosearchfel;
-            public bool Dosearchtram;
-            public bool Dosearchmal;
-            public bool Dosearchilsh;
-            public bool Dosearchtok;
-            public bool Dosearchter;
-            public bool Dosearchint;
-            public bool Dosearchnull;
-            public bool Dosearcherr;
-            public bool Dosearchage;
-            public bool Dohidevalidint = false;
-            public bool Searchagedirection;
-            public double Searchage;
-            public int Searchrange;
-            public string Searchregion;
-            public string Searchcondition;
-            public string Searchtype;
-            public string Searchname;
-            public string Searchspawnentry;
+			public bool Dosearchtype;
+			public bool Dosearchname;
+			public bool Dosearchrange;
+			public bool Dosearchregion;
+			public bool Dosearchspawnentry;
+			public bool Dosearchspawntype;
+			public bool Dosearchcondition;
+			public bool Dosearchfel;
+			public bool Dosearchtram;
+			public bool Dosearchmal;
+			public bool Dosearchilsh;
+			public bool Dosearchtok;
+			public bool Dosearchter;
+			public bool Dosearchint;
+			public bool Dosearchnull;
+			public bool Dosearcherr;
+			public bool Dosearchage;
+			public bool Dosearchwithattach;
+			public bool Dosearchattach;
+			public bool Dohidevalidint = false;
+			public bool Searchagedirection;
+			public double Searchage;
+			public int Searchrange;
+			public string Searchregion;
+			public string Searchcondition;
+			public string Searchtype;
+			public string Searchattachtype;
+			public string Searchname;
+			public string Searchspawnentry;
 
-            public Map Currentmap;
+			public Map Currentmap;
             public Point3D Currentloc;
 
             public SearchCriteria(bool dotype, bool doname, bool dorange, bool doregion, bool doentry, bool doentrytype, bool docondition, bool dofel, bool dotram,
@@ -259,7 +263,14 @@ namespace Server.Mobiles
             return false;
         }
 
-        private static bool TestAge(object o, double age, bool direction)
+		private static bool TestAttach(object o)
+		{
+			if (XmlAttach.FindAttachments(o) != null) return true;
+
+			return false;
+		}
+
+		private static bool TestAge(object o, double age, bool direction)
         {
             if (age <= 0) return true;
 
@@ -338,8 +349,8 @@ namespace Server.Mobiles
                 // boat stuffs
                 if (i is Static && i.Name != null && (i.Name.ToLower() == "weapon pad" || i.Name.ToLower() == "deck"))
                     return true;
-                if (i is GalleonHold || i is MooringLine || i is HoldItem || i is BaseDockedBoat || i is Rudder || i is RudderHandle || i is ShipWheel || i is BaseBoat || i is Plank || i is TillerMan || i is Hold || i is IShipCannon || i is DeckItem || i is WeaponPad)
-                    return true;
+                if (i is GalleonHold || i is MooringLine || i is HoldItem || i is BaseDockedBoat || i is Rudder || i is RudderHandle || i is ShipWheel || i is BaseBoat || i is Plank || i is TillerMan || i is Hold  || i is DeckItem || i is WeaponPad) //|| i is IShipCannon
+					return true;
 
                 // Ignores shadowguard addons that are internalized while not in use
                 if (i is AddonComponent component)
@@ -365,378 +376,445 @@ namespace Server.Mobiles
             return false;
         }
 
-        public static ArrayList Search(SearchCriteria criteria, out string status_str)
-        {
-            status_str = null;
-            ArrayList newarray = new ArrayList();
-            ArrayList ignoreList = new ArrayList();
+		public static ArrayList Search(SearchCriteria criteria, out string status_str)
+		{
+			status_str = null;
+			ArrayList newarray = new ArrayList();
+			ArrayList ignoreList = new ArrayList();
 
-            if (criteria == null)
-            {
-                status_str = "Empty search criteria";
-                return newarray;
-            }
+			if (criteria == null)
+			{
+				status_str = "Empty search criteria";
+				return newarray;
+			}
 
-            Type targetType = null;
+			Type targetType = null;
+			Type targetattachType = null;
 
-            Map tokunomap = null;
-            try
-            {
-                tokunomap = Map.Parse("Tokuno");
-            }
-            catch (Exception e) { Diagnostics.ExceptionLogging.LogException(e); }
+			Map tokunomap = null;
+			try
+			{
+				tokunomap = Map.Parse("Tokuno");
+			}
+			catch { }
 
-            // if the type is specified then get the search type
-            if (criteria.Dosearchtype && criteria.Searchtype != null)
-            {
-                targetType = SpawnerType.GetType(criteria.Searchtype);
-                if (targetType == null)
-                {
-                    status_str = "Invalid type: " + criteria.Searchtype;
-                    return newarray;
-                }
-            }
+			// if the type is specified then get the search type
+			if (criteria.Dosearchtype && criteria.Searchtype != null)
+			{
+				targetType = SpawnerType.GetType(criteria.Searchtype);
+				if (targetType == null)
+				{
+					status_str = "Invalid type: " + criteria.Searchtype;
+					return newarray;
+				}
+			}
 
-            // do the search through items
+			// if the attachment type is specified then get the search type
+			if (criteria.Dosearchattach && criteria.Searchattachtype != null && criteria.Searchattachtype.Length > 0)
+			{
+				targetattachType = SpawnerType.GetType(criteria.Searchattachtype);
+				if (targetattachType == null)
+				{
+					status_str = "Invalid type: " + criteria.Searchattachtype;
+					return newarray;
+				}
+			}
 
-            // make a copy so that we dont get enumeration errors if World.Items.Values changes while searching
-            ArrayList itemarray = null;
+			// do the search through items
 
-            ICollection itemvalues = World.Items.Values;
+			if (!criteria.Dosearchattach)
+			{
+				// make a copy so that we dont get enumeration errors if World.Items.Values changes while searching
+				ArrayList itemarray = null;
 
-            lock (itemvalues.SyncRoot)
-            {
-                try
-                {
-                    itemarray = new ArrayList(itemvalues);
-                }
-                catch (SystemException e) { status_str = "Unable to search World.Items: " + e.Message; }
-            }
+				ICollection itemvalues = World.Items.Values;
 
-            if (itemarray != null)
-            {
-                foreach (Item i in itemarray)
-                {
-                    bool hastype = false;
-                    bool hasname = false;
-                    bool hasentry = false;
-                    bool hascondition = false;
-                    bool hasrange = false;
-                    bool hasregion = false;
-                    bool hasmap = false;
-                    bool hasspawnerr = false;
-                    bool hasvalidhidden = false;
+				lock (itemvalues.SyncRoot)
+				{
+					try
+					{
+						itemarray = new ArrayList(itemvalues);
+					}
+					catch (SystemException e) { status_str = "Unable to search World.Items: " + e.Message; }
+				}
+
+				if (itemarray != null)
+				{
+					foreach (Item i in itemarray)
+					{
+						bool hastype = false;
+						bool hasname = false;
+						bool hasentry = false;
+						bool hascondition = false;
+						bool hasrange = false;
+						bool hasregion = false;
+						bool hasmap = false;
+						bool hasattach = false;
+						bool hasspawnerr = false;
+						bool hasvalidhidden = false;
 
 
-                    if (i == null || i.Deleted) continue;
+						if (i == null || i.Deleted) continue;
 
-                    // this will deal with items that are not on the internal map but hold valid internal items
-                    if (criteria.Dohidevalidint && i.Map != Map.Internal && i.Map != null)
-                    {
-                        IgnoreManagedInternal(i, ref ignoreList);
-                    }
+						// this will deal with items that are not on the internal map but hold valid internal items
+						if (criteria.Dohidevalidint && i.Map != Map.Internal && i.Map != null)
+						{
+							IgnoreManagedInternal(i, ref ignoreList);
+						}
 
-                    // check for map
-                    if ((i.Map == Map.Felucca && criteria.Dosearchfel) || (i.Map == Map.Trammel && criteria.Dosearchtram) ||
-                        (i.Map == Map.Malas && criteria.Dosearchmal) || (i.Map == Map.Ilshenar && criteria.Dosearchilsh) ||
-                        (i.Map == Map.TerMur && criteria.Dosearchter) || (i.Map == Map.Internal && criteria.Dosearchint) ||
-                        (i.Map == null && criteria.Dosearchnull))
-                    {
-                        hasmap = true;
-                    }
+						// check for map
+						if ((i.Map == Map.Felucca && criteria.Dosearchfel) || (i.Map == Map.Trammel && criteria.Dosearchtram) ||
+							(i.Map == Map.Malas && criteria.Dosearchmal) || (i.Map == Map.Ilshenar && criteria.Dosearchilsh) ||
+							(i.Map == Map.TerMur && criteria.Dosearchter) || (i.Map == Map.Internal && criteria.Dosearchint) ||
+							(i.Map == null && criteria.Dosearchnull))
+						{
+							hasmap = true;
+						}
 
-                    if (tokunomap != null && i.Map == tokunomap && criteria.Dosearchtok)
-                    {
-                        hasmap = true;
-                    }
+						if (tokunomap != null && i.Map == tokunomap && criteria.Dosearchtok)
+						{
+							hasmap = true;
+						}
 
-                    if (!hasmap)
-                        continue;
 
-                    // check for type
-                    if (criteria.Dosearchtype && (i.GetType().IsSubclassOf(targetType) || i.GetType() == targetType))
-                    {
-                        hastype = true;
-                    }
-                    if (criteria.Dosearchtype && !hastype) continue;
+						if (!hasmap) continue;
 
-                    // check for name
-                    if (criteria.Dosearchname && (i.Name != null) && (criteria.Searchname != null) && (i.Name.ToLower().IndexOf(criteria.Searchname.ToLower()) >= 0))
-                    {
-                        hasname = true;
-                    }
-                    if (criteria.Dosearchname && !hasname) continue;
+						// check for type
+						if (criteria.Dosearchtype && (i.GetType().IsSubclassOf(targetType) || i.GetType().Equals(targetType)))
+						{
+							hastype = true;
+						}
+						if (criteria.Dosearchtype && !hastype) continue;
 
-                    // check for valid internal map items
-                    if (criteria.Dohidevalidint && TestValidInternal(i))
-                    {
-                        hasvalidhidden = true;
+						// check for name
+						if (criteria.Dosearchname && (i.Name != null) && (criteria.Searchname != null) && (i.Name.ToLower().IndexOf(criteria.Searchname.ToLower()) >= 0))
+						{
+							hasname = true;
+						}
+						if (criteria.Dosearchname && !hasname) continue;
 
-                        // this will deal with items that are on the internal map and hold valid internal items
-                        IgnoreManagedInternal(i, ref ignoreList);
-                    }
-                    if (criteria.Dohidevalidint && hasvalidhidden) continue;
+						// check for valid internal map items
+						if (criteria.Dohidevalidint && TestValidInternal(i))
+						{
+							hasvalidhidden = true;
 
-                    // check for range
-                    if (criteria.Dosearchrange && TestRange(i, criteria.Searchrange, criteria.Currentmap, criteria.Currentloc))
-                    {
-                        hasrange = true;
-                    }
-                    if (criteria.Dosearchrange && !hasrange) continue;
+							// this will deal with items that are on the internal map and hold valid internal items
+							IgnoreManagedInternal(i, ref ignoreList);
+						}
+						if (criteria.Dohidevalidint && hasvalidhidden) continue;
 
-                    // check for region
-                    if (criteria.Dosearchregion && TestRegion(i, criteria.Searchregion))
-                    {
-                        hasregion = true;
-                    }
-                    if (criteria.Dosearchregion && !hasregion) continue;
+						// check for range
+						if (criteria.Dosearchrange && TestRange(i, criteria.Searchrange, criteria.Currentmap, criteria.Currentloc))
+						{
+							hasrange = true;
+						}
+						if (criteria.Dosearchrange && !hasrange) continue;
 
-                    // check for condition
-                    if (criteria.Dosearchcondition && (criteria.Searchcondition != null))
-                    {
-                        // check the property test
-                        hascondition = BaseXmlSpawner.CheckPropertyString(null, i, criteria.Searchcondition, out status_str);
-                    }
-                    if (criteria.Dosearchcondition && !hascondition) continue;
+						// check for region
+						if (criteria.Dosearchregion && TestRegion(i, criteria.Searchregion))
+						{
+							hasregion = true;
+						}
+						if (criteria.Dosearchregion && !hasregion) continue;
 
-                    // check for entry
-                    if (criteria.Dosearchspawnentry)
-                    {
-                        Type targetentrytype = null;
+						// check for attachments
+						if (criteria.Dosearchwithattach && TestAttach(i))
+						{
+							hasattach = true;
+						}
+						if (criteria.Dosearchwithattach && !hasattach) continue;
 
-                        if (criteria.Dosearchspawntype)
-                        {
-                            targetentrytype = SpawnerType.GetType(criteria.Searchspawnentry.ToLower());
-                        }
+						// check for condition
+						if (criteria.Dosearchcondition && (criteria.Searchcondition != null))
+						{
+							// check the property test
+							hascondition = BaseXmlSpawner.CheckPropertyString(null, i, criteria.Searchcondition, null, out status_str);
+						}
+						if (criteria.Dosearchcondition && !hascondition) continue;
 
-                        if (criteria.Searchspawnentry == null || (targetentrytype == null && criteria.Dosearchspawntype))
-                        {
-                            hasentry = false;
-                        }
-                        else
-                        {
-                            // see what kind of spawner it is
-                            if (i is XmlSpawner spawner)
-                            {
+						// check for entry
+						if (criteria.Dosearchspawnentry)
+						{
+							Type targetentrytype = null;
 
-                                // search the entries of the spawner
-                                foreach (XmlSpawner.SpawnObject so in spawner.m_SpawnObjects)
-                                {
-                                    if (criteria.Dosearchspawntype)
-                                    {
-                                        // search by entry type
-                                        Type type = null;
+							if (criteria.Dosearchspawntype)
+							{
+								targetentrytype = SpawnerType.GetType(criteria.Searchspawnentry.ToLower());
+							}
 
-                                        if (so.TypeName != null)
-                                        {
-                                            string[] args = so.TypeName.Split('/');
-                                            string typestr = null;
-                                            if (args != null && args.Length > 0)
-                                            {
-                                                typestr = args[0];
-                                            }
+							if (criteria.Searchspawnentry == null || (targetentrytype == null && criteria.Dosearchspawntype))
+							{
+								hasentry = false;
+							}
+							else
+							{
+								// see what kind of spawner it is
+								if (i is XmlSpawner)
+								{
 
-                                            type = SpawnerType.GetType(typestr);
-                                        }
+									// search the entries of the spawner
+									foreach (XmlSpawner.SpawnObject so in ((XmlSpawner)i).m_SpawnObjects)
+									{
+										if (criteria.Dosearchspawntype)
+										{
+											// search by entry type
+											Type type = null;
 
-                                        if (type != null && (type == targetentrytype || type.IsSubclassOf(targetentrytype)))
-                                        {
-                                            hasentry = true;
-                                            break;
-                                        }
-                                    }
-                                    else
-                                    {
-                                        // search by entry string
-                                        if (so.TypeName != null && so.TypeName.ToLower().IndexOf(criteria.Searchspawnentry.ToLower()) >= 0)
-                                        {
-                                            hasentry = true;
-                                            break;
-                                        }
-                                    }
-                                }
-                            }
-                            else if (i is Spawner spawner1)
-                            {
-                                // search the entries of the spawner
-                                foreach (SpawnObject obj in spawner1.SpawnObjects)
-                                {
-                                    string so = obj.SpawnName;
+											if (so.TypeName != null)
+											{
+												string[] args = so.TypeName.Split('/');
+												string typestr = null;
+												if (args != null && args.Length > 0)
+												{
+													typestr = args[0];
+												}
 
-                                    if (criteria.Dosearchspawntype)
-                                    {
-                                        // search by entry type
-                                        Type type = null;
+												type = SpawnerType.GetType(typestr);
+											}
 
-                                        if (so != null)
-                                        {
-                                            type = SpawnerType.GetType(so);
-                                        }
+											if (type != null && (type == targetentrytype || type.IsSubclassOf(targetentrytype)))
+											{
+												hasentry = true;
+												break;
+											}
+										}
+										else
+										{
+											// search by entry string
+											if (so.TypeName != null && so.TypeName.ToLower().IndexOf(criteria.Searchspawnentry.ToLower()) >= 0)
+											{
+												hasentry = true;
+												break;
+											}
+										}
+									}
+								}
+								else if (i is Spawner)
+								{
+									// search the entries of the spawner
+									foreach (var obj in ((Spawner)i).SpawnObjects)
+									{
+										string so = obj.SpawnName;
 
-                                        if (type != null && (type == targetentrytype || type.IsSubclassOf(targetentrytype)))
-                                        {
-                                            hasentry = true;
-                                            break;
-                                        }
-                                    }
-                                    else
-                                    {
-                                        if (so != null && so.ToLower().IndexOf(criteria.Searchspawnentry.ToLower()) >= 0)
-                                        {
-                                            hasentry = true;
-                                            break;
-                                        }
-                                    }
-                                }
-                            }
-                            else
-                            {
-                                hasentry = false;
-                            }
-                        }
-                    }
+										if (criteria.Dosearchspawntype)
+										{
+											// search by entry type
+											Type type = null;
 
-                    if (criteria.Dosearchspawnentry && !hasentry)
-                        continue;
+											if (so != null)
+											{
+												type = SpawnerType.GetType(so);
+											}
 
-                    if (criteria.Dosearcherr && i is XmlSpawner hasSpawn && hasSpawn.status_str != null)
-                    {
-                        hasspawnerr = true;
-                    }
+											if (type != null && (type == targetentrytype || type.IsSubclassOf(targetentrytype)))
+											{
+												hasentry = true;
+												break;
+											}
+										}
+										else
+										{
+											if (so != null && so.ToLower().IndexOf(criteria.Searchspawnentry.ToLower()) >= 0)
+											{
+												hasentry = true;
+												break;
+											}
+										}
+									}
+								}
+								else
+								{
+									hasentry = false;
+								}
+							}
+						}
+						if (criteria.Dosearchspawnentry && !hasentry) continue;
 
-                    if (criteria.Dosearcherr && !hasspawnerr)
-                        continue;
+						// check for err
+						if (criteria.Dosearcherr)
+						{
+							// see what kind of spawner it is
+							if (i is XmlSpawner)
+							{
+								// check the status of the spawner
+								if (((XmlSpawner)i).status_str != null)
+								{
+									hasspawnerr = true;
+								}
+							}
+						}
+						if (criteria.Dosearcherr && !hasspawnerr) continue;
 
-                    // satisfied all conditions so add it
-                    newarray.Add(new SearchEntry(i));
-                }
-            }
 
-            // do the search through mobiles
-            if (!criteria.Dosearcherr)
-            {
-                // make a copy so that we dont get enumeration errors if World.Mobiles.Values changes while searching
-                ArrayList mobilearray = null;
-                ICollection mobilevalues = World.Mobiles.Values;
-                lock (mobilevalues.SyncRoot)
-                {
-                    try
-                    {
-                        mobilearray = new ArrayList(mobilevalues);
-                    }
-                    catch (SystemException e) { status_str = "Unable to search World.Mobiles: " + e.Message; }
-                }
+						// satisfied all conditions so add it
+						newarray.Add(new SearchEntry(i));
+					}
+				}
+			}
 
-                if (mobilearray != null)
-                {
-                    foreach (Mobile i in mobilearray)
-                    {
-                        bool hastype = false;
-                        bool hasname = false;
-                        bool hascondition = false;
-                        bool hasrange = false;
-                        bool hasregion = false;
-                        bool hasmap = false;
-                        bool hasage = false;
-                        bool hasvalidhidden = false;
+			// do the search through mobiles
+			if (!criteria.Dosearcherr && !criteria.Dosearchattach)
+			{
+				// make a copy so that we dont get enumeration errors if World.Mobiles.Values changes while searching
+				ArrayList mobilearray = null;
+				ICollection mobilevalues = World.Mobiles.Values;
+				lock (mobilevalues.SyncRoot)
+				{
+					try
+					{
+						mobilearray = new ArrayList(mobilevalues);
+					}
+					catch (SystemException e) { status_str = "Unable to search World.Mobiles: " + e.Message; }
+				}
 
-                        if (i == null || i.Deleted) continue;
+				if (mobilearray != null)
+				{
+					foreach (Mobile i in mobilearray)
+					{
+						bool hastype = false;
+						bool hasname = false;
+						bool hascondition = false;
+						bool hasrange = false;
+						bool hasregion = false;
+						bool hasmap = false;
+						bool hasage = false;
+						bool hasattach = false;
+						bool hasvalidhidden = false;
 
-                        // check for map
-                        if ((i.Map == Map.Felucca && criteria.Dosearchfel) || (i.Map == Map.Trammel && criteria.Dosearchtram) ||
-                            (i.Map == Map.Malas && criteria.Dosearchmal) || (i.Map == Map.Ilshenar && criteria.Dosearchilsh) ||
-                            (i.Map == Map.TerMur && criteria.Dosearchter) || (i.Map == Map.Internal && criteria.Dosearchint) ||
-                            (i.Map == null && criteria.Dosearchnull))
-                        {
-                            hasmap = true;
-                        }
+						if (i == null || i.Deleted) continue;
 
-                        if (tokunomap != null && i.Map == tokunomap && criteria.Dosearchtok)
-                        {
-                            hasmap = true;
-                        }
+						// check for map
+						if ((i.Map == Map.Felucca && criteria.Dosearchfel) || (i.Map == Map.Trammel && criteria.Dosearchtram) ||
+							(i.Map == Map.Malas && criteria.Dosearchmal) || (i.Map == Map.Ilshenar && criteria.Dosearchilsh) ||
+							(i.Map == Map.TerMur && criteria.Dosearchter) || (i.Map == Map.Internal && criteria.Dosearchint) ||
+							(i.Map == null && criteria.Dosearchnull))
+						{
+							hasmap = true;
+						}
 
-                        if (!hasmap) continue;
+						if (tokunomap != null && i.Map == tokunomap && criteria.Dosearchtok)
+						{
+							hasmap = true;
+						}
 
-                        // check for range
-                        if (criteria.Dosearchrange && TestRange(i, criteria.Searchrange, criteria.Currentmap, criteria.Currentloc))
-                        {
-                            hasrange = true;
-                        }
-                        if (criteria.Dosearchrange && !hasrange) continue;
+						if (!hasmap) continue;
 
-                        // check for region
-                        if (criteria.Dosearchregion && TestRegion(i, criteria.Searchregion))
-                        {
-                            hasregion = true;
-                        }
-                        if (criteria.Dosearchregion && !hasregion) continue;
+						// check for range
+						if (criteria.Dosearchrange && TestRange(i, criteria.Searchrange, criteria.Currentmap, criteria.Currentloc))
+						{
+							hasrange = true;
+						}
+						if (criteria.Dosearchrange && !hasrange) continue;
 
-                        // check for valid internal map mobiles
-                        if (criteria.Dohidevalidint && TestValidInternal(i))
-                        {
-                            hasvalidhidden = true;
-                        }
-                        if (criteria.Dohidevalidint && hasvalidhidden) continue;
+						// check for region
+						if (criteria.Dosearchregion && TestRegion(i, criteria.Searchregion))
+						{
+							hasregion = true;
+						}
+						if (criteria.Dosearchregion && !hasregion) continue;
 
-                        // check for age
-                        if (criteria.Dosearchage && TestAge(i, criteria.Searchage, criteria.Searchagedirection))
-                        {
-                            hasage = true;
-                        }
-                        if (criteria.Dosearchage && !hasage) continue;
+						// check for valid internal map mobiles
+						if (criteria.Dohidevalidint && TestValidInternal(i))
+						{
+							hasvalidhidden = true;
+						}
+						if (criteria.Dohidevalidint && hasvalidhidden) continue;
 
-                        // check for type
-                        if (criteria.Dosearchtype && (i.GetType().IsSubclassOf(targetType) || i.GetType() == targetType))
-                        {
-                            hastype = true;
-                        }
-                        if (criteria.Dosearchtype && !hastype) continue;
+						// check for age
+						if (criteria.Dosearchage && TestAge(i, criteria.Searchage, criteria.Searchagedirection))
+						{
+							hasage = true;
+						}
+						if (criteria.Dosearchage && !hasage) continue;
 
-                        // check for name
-                        if (criteria.Dosearchname && (i.Name != null) && (criteria.Searchname != null) && (i.Name.ToLower().IndexOf(criteria.Searchname.ToLower()) >= 0))
-                        {
-                            hasname = true;
-                        }
-                        if (criteria.Dosearchname && !hasname) continue;
+						// check for type
+						if (criteria.Dosearchtype && (i.GetType().IsSubclassOf(targetType) || i.GetType().Equals(targetType)))
+						{
+							hastype = true;
+						}
+						if (criteria.Dosearchtype && !hastype) continue;
 
-                        // check for condition
-                        if (criteria.Dosearchcondition && (criteria.Searchcondition != null))
-                        {
-                            // check the property test
-                            hascondition = BaseXmlSpawner.CheckPropertyString(null, i, criteria.Searchcondition, out status_str);
-                        }
-                        if (criteria.Dosearchcondition && !hascondition) continue;
+						// check for name
+						if (criteria.Dosearchname && (i.Name != null) && (criteria.Searchname != null) && (i.Name.ToLower().IndexOf(criteria.Searchname.ToLower()) >= 0))
+						{
+							hasname = true;
+						}
+						if (criteria.Dosearchname && !hasname) continue;
 
-                        // passed all conditions so add it to the list
+						// check for attachments
+						if (criteria.Dosearchwithattach && TestAttach(i))
+						{
+							hasattach = true;
+						}
+						if (criteria.Dosearchwithattach && !hasattach) continue;
 
-                        newarray.Add(new SearchEntry(i));
-                    }
-                }
-            }
+						// check for condition
+						if (criteria.Dosearchcondition && (criteria.Searchcondition != null))
+						{
+							// check the property test
+							hascondition = BaseXmlSpawner.CheckPropertyString(null, i, criteria.Searchcondition, null, out status_str);
+						}
+						if (criteria.Dosearchcondition && !hascondition) continue;
 
-            ArrayList removelist = new ArrayList();
-            for (int i = 0; i < ignoreList.Count; ++i)
-            {
-                foreach (SearchEntry se in newarray)
-                {
-                    if (se.Object == ignoreList[i])
-                    {
-                        removelist.Add(se);
-                        break;
-                    }
-                }
-            }
+						// passed all conditions so add it to the list
 
-            foreach (SearchEntry se in removelist)
-            {
-                newarray.Remove(se);
-            }
+						newarray.Add(new SearchEntry(i));
+					}
+				}
 
-            return newarray;
-        }
+			}
 
-        [Usage("XmlFind [objecttype] [range]")]
+			// need to keep track of valid internalized XmlSaveItem items
+			if (criteria.Dohidevalidint)
+			{
+				foreach (XmlAttachment i in XmlAttach.Values)
+				{
+					if (i is XmlSaveItem)
+					{
+						XmlSaveItem s = (XmlSaveItem)i;
+						if (s.Container != null)
+						{
+							ignoreList.Add(s.Container);
+						}
+					}
+				}
+			}
+
+			if (criteria.Dosearchattach)
+			{
+
+				foreach (XmlAttachment i in XmlAttach.Values)
+				{
+					// check for type
+					if (i != null && !i.Deleted && (targetattachType == null || i.GetType().IsSubclassOf(targetattachType) || i.GetType().Equals(targetattachType)))
+					{
+						newarray.Add(new SearchEntry(i));
+					}
+				}
+			}
+
+			ArrayList removelist = new ArrayList();
+			for (int i = 0; i < ignoreList.Count; ++i)
+			{
+				foreach (SearchEntry se in newarray)
+				{
+					if (se.Object == ignoreList[i])
+					{
+						removelist.Add(se);
+						break;
+					}
+				}
+			}
+
+			foreach (SearchEntry se in removelist)
+			{
+				newarray.Remove(se);
+			}
+
+			return newarray;
+		}
+
+		[Usage("XmlFind [objecttype] [range]")]
         [Description("Finds objects in the world")]
         public static void XmlFind_OnCommand(CommandEventArgs e)
         {

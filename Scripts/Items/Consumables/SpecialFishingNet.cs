@@ -442,9 +442,9 @@ namespace Server.Items
         {
             BaseCreature toSpawn;
 
-            if (0.125 > Utility.RandomDouble())
-                toSpawn = new Osiredon(from);
-            else
+            //if (0.125 > Utility.RandomDouble())
+            //    toSpawn = new Osiredon(from);
+            //else
                 toSpawn = new Leviathan(from);
 
             Spawn(p, map, toSpawn);

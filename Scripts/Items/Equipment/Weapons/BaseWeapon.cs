@@ -95,7 +95,7 @@ namespace Server.Items
             set { _OwnerName = value; InvalidateProperties(); }
         }
 
-        /* Weapon internals work differently now (Mar 13 2003)
+		/* Weapon internals work differently now (Mar 13 2003)
         *
         * The attributes defined below default to -1.
         * If the value is -1, the corresponding virtual 'Aos/Old' property is used.
@@ -111,9 +111,13 @@ namespace Server.Items
         *  - MaxRange
         */
 
-        #region Var declarations
-        // Instance values. These values are unique to each weapon.
-        private ItemQuality m_Quality;
+		#region Var declarations
+		// Instance values. These values are unique to each weapon.
+		internal WeaponDamageLevel DamageLevel { get; set; }
+		internal WeaponAccuracyLevel AccuracyLevel { get; set; }
+		internal WeaponDurabilityLevel DurabilityLevel { get; set; }
+
+		private ItemQuality m_Quality;
         private Mobile m_Crafter;
         private Poison m_Poison;
         private int m_PoisonCharges;
@@ -770,8 +774,15 @@ namespace Server.Items
 
             return false;
         }
+		public virtual Race RequiredRace { get { return null; } }
+		//On OSI, there are no weapons with race requirements, this is for custom stuff
 
-        public override bool CanEquip(Mobile from)
+
+		#region SA
+		public virtual bool CanBeWornByGargoyles { get { return false; } }
+		#endregion
+
+		public override bool CanEquip(Mobile from)
         {
             if (from.IsPlayer())
             {

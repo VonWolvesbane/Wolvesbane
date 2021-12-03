@@ -48,7 +48,7 @@ namespace Server.Mobiles
 
     #region Enums
     [Flags]
-    public enum PlayerFlag
+    public enum PlayerFlag : long
     {
         None = 0x00000000,
         Glassblowing = 0x00000001,
@@ -79,10 +79,12 @@ namespace Server.Mobiles
         Unused = 0x08000000,
         ToggleCutTopiaries = 0x10000000,
         HasValiantStatReward = 0x20000000,
-        RefuseTrades = 0x40000000,
-    }
+		RefuseTrades = 0x40000000,
+		DisabledPvpWarning = 0x80000000,
+		FireRockMining = 0x00004000,
+	}
 
-    [Flags]
+	[Flags]
     public enum ExtendedPlayerFlag
     {
         Unused = 0x00000001,
@@ -126,8 +128,39 @@ namespace Server.Mobiles
             Instances = new List<PlayerMobile>(0x1000);
         }
 
-        #region Mount Blocking
-        public void SetMountBlock(BlockMountType type, TimeSpan duration, bool dismount)
+		#region FS:ATS Edtis
+		private DateTime m_NextTamingBulkOrder;
+		private bool m_Bioenginer;
+
+		[CommandProperty(AccessLevel.GameMaster)]
+		public TimeSpan NextTamingBulkOrder
+		{
+			get
+			{
+				TimeSpan ts = m_NextTamingBulkOrder - DateTime.UtcNow;
+
+				if (ts < TimeSpan.Zero)
+					ts = TimeSpan.Zero;
+
+				return ts;
+			}
+			set
+			{
+				try { m_NextTamingBulkOrder = DateTime.UtcNow + value; }
+				catch { }
+			}
+		}
+
+		[CommandProperty(AccessLevel.GameMaster)]
+		public bool Bioenginer
+		{
+			get { return m_Bioenginer; }
+			set { m_Bioenginer = value; }
+		}
+		#endregion
+
+		#region Mount Blocking
+		public void SetMountBlock(BlockMountType type, TimeSpan duration, bool dismount)
         {
             if (dismount)
             {
@@ -240,6 +273,7 @@ namespace Server.Mobiles
         [CommandProperty(AccessLevel.GameMaster)]
         public bool NextEnhanceSuccess { get { return m_NextEnhanceSuccess; } set { m_NextEnhanceSuccess = value; } }
 
+
         private int m_GuildMessageHue, m_AllianceMessageHue;
 
         private List<Mobile> m_AutoStabled;
@@ -247,9 +281,16 @@ namespace Server.Mobiles
         private List<Mobile> m_RecentlyReported;
 
         public bool UseSummoningRite { get; set; }
+		#region Guantlet Points
+		private double m_GauntletPoints;
 
-        #region Points System
-        private PointsSystemProps _PointsSystemProps;
+		[CommandProperty(AccessLevel.Administrator)]
+		public double GauntletPoints { get { return m_GauntletPoints; } set { m_GauntletPoints = value; } }
+		#endregion
+
+
+		#region Points System
+		private PointsSystemProps _PointsSystemProps;
         private BODProps _BODProps;
         private AccountGoldProps _AccountGold;
 
@@ -510,9 +551,14 @@ namespace Server.Mobiles
             get { return GetFlag(ExtendedPlayerFlag.ToggleStoneOnly); }
             set { SetFlag(ExtendedPlayerFlag.ToggleStoneOnly, value); }
         }
+		public bool FireRockMining
+		{
+			get { return GetFlag(PlayerFlag.FireRockMining); }
+			set { SetFlag(PlayerFlag.FireRockMining, value); }
+		}
 
-        #region Plant system
-        [CommandProperty(AccessLevel.GameMaster)]
+		#region Plant system
+		[CommandProperty(AccessLevel.GameMaster)]
         public bool ToggleClippings { get { return GetFlag(PlayerFlag.ToggleClippings); } set { SetFlag(PlayerFlag.ToggleClippings, value); } }
 
         [CommandProperty(AccessLevel.GameMaster)]
@@ -2498,7 +2544,7 @@ namespace Server.Mobiles
 
         public int GetInsuranceCost(Item item)
         {
-            int imbueWeight = Imbuing.GetTotalWeight(item, -1, false, false);
+            int imbueWeight = Imbuing.GetTotalWeight(item);
             int cost = 600; // this handles old items, set items, etc
 
             if (item is IVvVItem vItem && vItem.IsVvVItem)
@@ -3795,7 +3841,11 @@ namespace Server.Mobiles
         private TimeSpan m_ShortTermElapse;
         private TimeSpan m_LongTermElapse;
         private DateTime m_SessionStart;
-        private DateTime m_SavagePaintExpiration;
+		private DateTime m_NextSmithBulkOrder;
+		private DateTime m_NextTailorBulkOrder;
+		private DateTime m_NextFletchingBulkOrder;
+		private DateTime m_NextCarpenterBulkOrder;
+		private DateTime m_SavagePaintExpiration;
         private SkillName m_Learning = (SkillName)(-1);
 
         public SkillName Learning { get { return m_Learning; } set { m_Learning = value; } }
@@ -3941,8 +3991,14 @@ namespace Server.Mobiles
             m_PermaFlags = new List<Mobile>();
             m_AntiMacroTable = new Hashtable();
             m_RecentlyReported = new List<Mobile>();
+			
+			this.m_BOBFilter = new Engines.BulkOrders.BOBFilter();
 
-            m_GameTime = TimeSpan.Zero;
+			#region FS:ATS Edits
+			m_TamingBOBFilter = new Engines.BulkOrders.TamingBOBFilter();
+			#endregion
+
+			m_GameTime = TimeSpan.Zero;
             m_ShortTermElapse = TimeSpan.FromHours(8.0);
             m_LongTermElapse = TimeSpan.FromHours(40.0);
 
@@ -4217,9 +4273,20 @@ namespace Server.Mobiles
             }
         }
 
-        public BOBFilter BOBFilter => BulkOrderSystem.GetBOBFilter(this);
+		private Engines.BulkOrders.BOBFilter m_BOBFilter;
 
-        public override void Deserialize(GenericReader reader)
+		public BOBFilter BOBFilter => BulkOrderSystem.GetBOBFilter(this);
+
+		#region FS:ATS Edits
+		private Engines.BulkOrders.TamingBOBFilter m_TamingBOBFilter;
+
+		public Engines.BulkOrders.TamingBOBFilter TamingBOBFilter
+		{
+			get { return m_TamingBOBFilter; }
+		}
+		#endregion
+
+		public override void Deserialize(GenericReader reader)
         {
             base.Deserialize(reader);
 
@@ -5119,8 +5186,19 @@ namespace Server.Mobiles
             }
         }
 
-        #region Quests
-        private QuestSystem m_Quest;
+		#region Ethics
+		private Server.Ethics.Player m_EthicPlayer;
+
+		[CommandProperty(AccessLevel.GameMaster)]
+		public Server.Ethics.Player EthicPlayer { get { return m_EthicPlayer; } set { m_EthicPlayer = value; } }
+		#endregion
+
+		#region Factions
+		public Factions.PlayerState FactionPlayerState { get; set; }
+		#endregion
+
+		#region Quests
+		private QuestSystem m_Quest;
         private List<QuestRestartInfo> m_DoneQuests;
         private SolenFriendship m_SolenFriendship;
 

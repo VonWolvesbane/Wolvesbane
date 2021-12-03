@@ -13,7 +13,7 @@ namespace Server.Items
         }
 
         public override int LabelNumber => 1074346;// dryad's curse
-        public override int Lifespan => 600;
+        public override int m_Lifespan => 600;
         public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);

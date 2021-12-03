@@ -1609,10 +1609,10 @@ namespace Server.Engines.BulkOrders
             switch (type)
             {
                 default:
-                case 0: return new RunicFletcherTool(CraftResource.OakWood, 45);
-                case 1: return new RunicFletcherTool(CraftResource.AshWood, 35);
-                case 2: return new RunicFletcherTool(CraftResource.YewWood, 25);
-                case 3: return new RunicFletcherTool(CraftResource.Heartwood, 15);
+                case 0: return new RunicFletcherTools(CraftResource.OakWood, 45);
+                case 1: return new RunicFletcherTools(CraftResource.AshWood, 35);
+                case 2: return new RunicFletcherTools(CraftResource.YewWood, 25);
+                case 3: return new RunicFletcherTools(CraftResource.Heartwood, 15);
             }
         }
 

@@ -8,7 +8,7 @@ namespace Server.Engines.Quests.RitualQuest
     public class DreamSerpentScale : BaseDecayingItem
     {
         public override int LabelNumber => 1151167;  // Dream Serpent Scales
-        public override int Lifespan => 86400;
+        public override int m_Lifespan => 86400;
         public override bool HiddenQuestItemHue => true;
 
         public DreamSerpentScale()
@@ -54,7 +54,7 @@ namespace Server.Engines.Quests.RitualQuest
     public class DreamSerpentCharm : BaseDecayingItem
     {
         public override int LabelNumber => 1151187;  // Dream Serpent Charm
-        public override int Lifespan => 86400;
+        public override int m_Lifespan => 86400;
 
         public DreamSerpentCharm()
             : base(6463)
@@ -147,7 +147,7 @@ namespace Server.Engines.Quests.RitualQuest
     public class SoulbinderTear : BaseDecayingItem
     {
         public override int LabelNumber => 1151170;  // Soulbinder's Tears
-        public override int Lifespan => 86400;
+        public override int m_Lifespan => 86400;
         public override bool HiddenQuestItemHue => true;
 
         public SoulbinderTear()
@@ -193,7 +193,7 @@ namespace Server.Engines.Quests.RitualQuest
     public class PristineCrystalLotus : BaseDecayingItem
     {
         public override int LabelNumber => 1151169;  // Pristine Crystal Lotus
-        public override int Lifespan => 86400;
+        public override int m_Lifespan => 86400;
         public override bool HiddenQuestItemHue => true;
 
         public PristineCrystalLotus()

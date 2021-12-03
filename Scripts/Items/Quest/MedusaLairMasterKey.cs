@@ -2,7 +2,7 @@ namespace Server.Items
 {
     public class MedusaKey : MasterKey
     {
-        public override int Lifespan => 600;
+        public override int m_Lifespan => 600;
         public override int LabelNumber => 1112303;  // Medusa's Lair
 
         public MedusaKey()

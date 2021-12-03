@@ -2,10 +2,10 @@ using Server.Engines.Craft;
 
 namespace Server.Items
 {
-    public class RunicFletcherTool : BaseRunicTool
+    public partial class RunicFletcherTools : BaseRunicTool
     {
         [Constructable]
-        public RunicFletcherTool(CraftResource resource)
+        public RunicFletcherTools(CraftResource resource)
             : base(resource, 0x1022)
         {
             Weight = 2.0;
@@ -13,14 +13,14 @@ namespace Server.Items
         }
 
         [Constructable]
-        public RunicFletcherTool(CraftResource resource, int uses)
+        public RunicFletcherTools(CraftResource resource, int uses)
             : base(resource, uses, 0x1022)
         {
             Weight = 2.0;
             Hue = CraftResources.GetHue(resource);
         }
 
-        public RunicFletcherTool(Serial serial)
+        public RunicFletcherTools(Serial serial)
             : base(serial)
         {
         }

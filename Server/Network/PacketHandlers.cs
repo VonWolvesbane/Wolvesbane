@@ -36,6 +36,7 @@ namespace Server.Network
 	public static class PacketHandlers
 	{
 		private static readonly PacketHandler[] m_Handlers;
+		private static readonly PacketHandler[] m_6017Handlers;
 
 		private static readonly PacketHandler[] m_ExtendedHandlersLow;
 		private static readonly Dictionary<int, PacketHandler> m_ExtendedHandlersHigh;
@@ -165,6 +166,15 @@ namespace Server.Network
 		public static PacketHandler GetHandler(int packetID)
 		{
 			return m_Handlers[packetID];
+		}
+		public static void Register6017(int packetID, int length, bool ingame, OnPacketReceive onReceive)
+		{
+			m_6017Handlers[packetID] = new PacketHandler(packetID, length, ingame, onReceive);
+		}
+
+		public static PacketHandler Get6017Handler(int packetID)
+		{
+			return m_6017Handlers[packetID];
 		}
 
 		public static void RegisterExtended(int packetID, bool ingame, OnPacketReceive onReceive)
@@ -1595,7 +1605,7 @@ namespace Server.Network
 			{
 				if (Utility.InUpdateRange(m.Location, ti.GetWorldLocation()))
 				{
-					ti.OnAosSingleClick(m);
+					ti.OnSingleClick(m);
 				}
 			}
 			else if (target is Mobile tm)

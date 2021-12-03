@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
-
+using CustomsFramework;
 using Server.Accounting;
 using Server.Commands;
 using Server.ContextMenus;
@@ -16,6 +16,8 @@ using Server.Mobiles;
 using Server.Network;
 using Server.Prompts;
 using Server.Targeting;
+using System.Linq;
+
 #endregion
 
 namespace Server
@@ -552,6 +554,56 @@ namespace Server
 			}
 
 			throw new ArgumentException();
+		}
+		#endregion
+		#region Customs Framework
+		private List<BaseModule> m_Modules = new List<BaseModule>();
+
+		[CommandProperty(AccessLevel.Developer)]
+		public List<BaseModule> Modules { get { return m_Modules; } set { m_Modules = value; } }
+
+		//public List<BaseModule> Modules { get; private set; }
+
+		public BaseModule GetModule(string name)
+		{
+			return Modules.FirstOrDefault(mod => mod.Name == name);
+		}
+
+		public BaseModule GetModule(Type type)
+		{
+			return Modules.FirstOrDefault(mod => mod.GetType() == type);
+		}
+
+		public List<BaseModule> GetModules(string name)
+		{
+			return Modules.Where(mod => mod.Name == name).ToList();
+		}
+
+		public List<BaseModule> SearchModules(string search)
+		{
+			var keywords = search.ToLower().Split(' ');
+			var modules = new List<BaseModule>();
+
+			foreach (BaseModule mod in Modules)
+			{
+				bool match = true;
+				string name = mod.Name.ToLower();
+
+				foreach (string keyword in keywords)
+				{
+					if (name.IndexOf(keyword, StringComparison.Ordinal) == -1)
+					{
+						match = false;
+					}
+				}
+
+				if (match)
+				{
+					modules.Add(mod);
+				}
+			}
+
+			return modules;
 		}
 		#endregion
 
@@ -1125,6 +1177,22 @@ namespace Server
 
 		public object Party { get => m_Party; set => m_Party = value; }
 		public List<SkillMod> SkillMods => m_SkillMods;
+
+		private int m_VirtualArmorMod;
+		[CommandProperty(AccessLevel.GameMaster)]
+		public int VirtualArmorMod
+		{
+			get { return m_VirtualArmorMod; }
+			set
+			{
+				if (m_VirtualArmorMod != value)
+				{
+					m_VirtualArmorMod = value;
+
+					Delta(MobileDelta.Armor);
+				}
+			}
+		}
 
 		/// <summary>
 		///     Overridable. Virtual event invoked when <paramref name="skill" /> changes in some way.

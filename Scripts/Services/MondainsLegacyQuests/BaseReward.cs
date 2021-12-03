@@ -89,19 +89,19 @@ namespace Server.Engines.Quests
 
             if (ran <= 0.0001)
             {
-                return new RunicFletcherTool(CraftResource.Heartwood, 15);
+                return new RunicFletcherTools(CraftResource.Heartwood, 15);
             }
             else if (ran <= 0.0005)
             {
-                return new RunicFletcherTool(CraftResource.YewWood, 25);
+                return new RunicFletcherTools(CraftResource.YewWood, 25);
             }
             else if (ran <= 0.0025)
             {
-                return new RunicFletcherTool(CraftResource.AshWood, 35);
+                return new RunicFletcherTools(CraftResource.AshWood, 35);
             }
             else if (ran <= 0.005)
             {
-                return new RunicFletcherTool(CraftResource.OakWood, 45);
+                return new RunicFletcherTools(CraftResource.OakWood, 45);
             }
 
             return null;

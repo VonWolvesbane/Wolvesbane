@@ -21,7 +21,7 @@ namespace Server.Engines.Craft
         {
             typeof(CapturedEssence), typeof(EyeOfTheTravesty), typeof(DiseasedBark),  typeof(LardOfParoxysmus), typeof(GrizzledBones), typeof(DreadHornMane),
 
-            typeof(Blight), typeof(Corruption), typeof(Muculent), typeof(Scourge), typeof(Putrefaction), typeof(Taint),
+            typeof(Blight), typeof(Corruption), typeof(Muculent), typeof(Scourge), typeof(Putrefication), typeof(Taint),
 
             // Tailoring
             typeof(MidnightBracers), typeof(CrimsonCincture), typeof(GargishCrimsonCincture), typeof(LeurociansMempoOfFortune), typeof(TheScholarsHalo),

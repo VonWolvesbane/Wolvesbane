@@ -43,10 +43,19 @@ namespace Server.Items
         Urali,
         Sakkhra,
         Shatter,
-        FearEssence
-    }
+        FearEssence,
+		#region FS:ATS Edits
+		PetResurrect,
+		PetShrink,
+		PetHeal,
+		PetGreaterHeal,
+		PetCure,
+		PetGreaterCure,
+		#endregion
 
-    public abstract class BasePotion : Item, ICraftable, ICommodity
+	}
+
+	public abstract class BasePotion : Item, ICraftable, ICommodity
     {
         private PotionEffect m_PotionEffect;
 

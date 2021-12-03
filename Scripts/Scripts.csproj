@@ -22,9 +22,20 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Server\Server.csproj" />
+    <ProjectReference Include="..\Ultima\Ultima.csproj" />
   </ItemGroup>
 
   <ItemGroup>
     <Reference Include="System.Web" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Custom\Mobiles\AI\" />
+    <Folder Include="Custom\Tested\" />
+    <Folder Include="Mobiles\Bosses\Charybdis\" />
+    <Folder Include="Multis\Boats\Galleons\Network\" />
+    <Folder Include="Multis\Boats\Gumps\" />
+    <Folder Include="Services\LootGeneration\Imbuing\Core\" />
+    <Folder Include="Services\Seasonal Events\ForsakenFoes\" />
   </ItemGroup>
 </Project>

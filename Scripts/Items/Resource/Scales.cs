@@ -286,4 +286,98 @@ namespace Server.Items
             int version = reader.ReadInt();
         }
     }
+	public class CopperScales : BaseScales
+	{
+		[Constructable]
+		public CopperScales() : this(1)
+		{
+		}
+
+		[Constructable]
+		public CopperScales(int amount) : base(CraftResource.CopperScales, amount)
+		{
+			Name = "Copper Scales"; //daat99 OWLTR - custom resource name
+		}
+
+		public CopperScales(Serial serial) : base(serial)
+		{
+		}
+
+		public override void Serialize(GenericWriter writer)
+		{
+			base.Serialize(writer);
+
+			writer.Write((int)0); // version
+		}
+
+		public override void Deserialize(GenericReader reader)
+		{
+			base.Deserialize(reader);
+
+			int version = reader.ReadInt();
+		}
+	}
+	public class SilverScales : BaseScales
+	{
+		[Constructable]
+		public SilverScales() : this(1)
+		{
+		}
+
+		[Constructable]
+		public SilverScales(int amount) : base(CraftResource.SilverScales, amount)
+		{
+			Name = "Silver Scales"; //daat99 OWLTR - custom resource name
+		}
+
+		public SilverScales(Serial serial) : base(serial)
+		{
+		}
+
+		public override void Serialize(GenericWriter writer)
+		{
+			base.Serialize(writer);
+
+			writer.Write((int)0); // version
+		}
+
+		public override void Deserialize(GenericReader reader)
+		{
+			base.Deserialize(reader);
+
+			int version = reader.ReadInt();
+		}
+	}
+	public class GoldScales : BaseScales
+	{
+		[Constructable]
+		public GoldScales() : this(1)
+		{
+		}
+
+		[Constructable]
+		public GoldScales(int amount) : base(CraftResource.GoldScales, amount)
+		{
+			Name = "Gold Scales"; //daat99 OWLTR - custom resource name
+		}
+
+		public GoldScales(Serial serial) : base(serial)
+		{
+		}
+
+		public override void Serialize(GenericWriter writer)
+		{
+			base.Serialize(writer);
+
+			writer.Write((int)0); // version
+		}
+
+		public override void Deserialize(GenericReader reader)
+		{
+			base.Deserialize(reader);
+
+			int version = reader.ReadInt();
+		}
+	}
+
 }

@@ -1,6 +1,26 @@
 namespace Server.Items
 {
-    public enum ArmorBodyType
+	public enum ArmorDurabilityLevel
+	{
+		Regular,
+		Durable,
+		Substantial,
+		Massive,
+		Fortified,
+		Indestructible
+	}
+
+	public enum ArmorProtectionLevel
+	{
+		Regular,
+		Defense,
+		Guarding,
+		Hardening,
+		Fortification,
+		Invulnerability,
+	}
+
+	public enum ArmorBodyType
     {
         Gorget,
         Gloves,
@@ -20,7 +40,16 @@ namespace Server.Items
         Spined,
         Horned,
         Barbed,
-        Ringmail,
+		//daat99 OWLTR start
+		Polar,
+		Synthetic,
+		BlazeL,
+		Daemonic,
+		Shadow,
+		Frost,
+		Ethereal,
+		//daat99 OWLTR end
+		Ringmail,
         Chainmail,
         Plate,
         Dragon,

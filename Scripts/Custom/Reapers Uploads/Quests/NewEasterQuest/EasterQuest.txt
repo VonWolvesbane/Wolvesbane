@@ -1,0 +1,20 @@
+Old Mining Camp  2651 547 0
+  Have them to talk to Jack the easter bunny first-then
+on to the Easter Child
+Both of these can be placed in the same area
+The Lazy Rabbit can spawn here Old Mining Camp  2651 547 0
+East of the mining camp at Mt. Kendall
+6 chocolate dust is needed to turn into Jack
+these are stackable and must be to turn in.
+
+*If you wish to change this area go into
+the Easter Child Gump, this is where you will
+find the location given.
+--------------------------------------------------
+Random Reward Item
+BunnyTrailDecoAddonDeed
+Dyed Easter Egg
+Easter Marshmellow Peep
+Easter Stuffed Lamb
+Large Chocolate Easter Bunny
+Reeses Peanut Butter Egg

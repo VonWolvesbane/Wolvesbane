@@ -1,0 +1,8 @@
+C:\Wolvesbane UO Server\Ultima\obj\Release\Ultima.csproj.AssemblyReference.cache
+C:\Wolvesbane UO Server\Ultima\obj\Release\Ultima.csproj.CoreCompileInputs.cache
+C:\Wolvesbane UO Server\Ultima\obj\Release\Ultima.dll
+C:\Wolvesbane UO Server\Ultima.dll
+C:\Users\credz\Documents\Projects\Wolvesbane UO Server\Ultima\obj\Release\Ultima.csproj.AssemblyReference.cache
+C:\Users\credz\Documents\Projects\Wolvesbane UO Server\Ultima\obj\Release\Ultima.csproj.CoreCompileInputs.cache
+C:\Users\credz\Documents\Projects\Wolvesbane UO Server\Ultima\obj\Release\Ultima.dll
+C:\Users\credz\Documents\Projects\Wolvesbane UO Server\Ultima.dll

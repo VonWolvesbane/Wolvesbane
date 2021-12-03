@@ -932,22 +932,22 @@ namespace Server.Items
     }
 
     [TypeAlias("Server.Items.Putrefication")]
-    public class Putrefaction : Item, ICommodity
+    public class Putrefication : Item, ICommodity
     {
         [Constructable]
-        public Putrefaction()
+        public Putrefication()
             : this(1)
         {
         }
 
         [Constructable]
-        public Putrefaction(int amountFrom, int amountTo)
+        public Putrefication(int amountFrom, int amountTo)
             : this(Utility.RandomMinMax(amountFrom, amountTo))
         {
         }
 
         [Constructable]
-        public Putrefaction(int amount)
+        public Putrefication(int amount)
             : base(0x3186)
         {
             Stackable = true;
@@ -955,7 +955,7 @@ namespace Server.Items
             Hue = 883;
         }
 
-        public Putrefaction(Serial serial)
+        public Putrefication(Serial serial)
             : base(serial)
         {
         }
