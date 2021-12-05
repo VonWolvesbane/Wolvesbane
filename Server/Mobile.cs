@@ -811,6 +811,7 @@ namespace Server
 
 		private const int WarmodeCatchCount = 4;
 		// Allow four warmode changes in 0.5 seconds, any more will be delay for two seconds
+		public virtual bool ViewOPL { get { return ObjectPropertyList.Enabled; } }
 
 		[CommandProperty(AccessLevel.Decorator)]
 		public Race Race

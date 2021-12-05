@@ -64,7 +64,13 @@ namespace Server.Regions
             new Rectangle2D(4529, 2296, 45, 112),
         };
 
-        public SeaMarketRegion(Map map)
+		public SeaMarketRegion(Map map)
+			: base("Sea Market", map, Region.DefaultPriority, m_Bounds)
+		{
+			GoLocation = new Point3D(4550, 2317, -2);
+		}
+
+		public SeaMarketRegion(System.Xml.XmlElement xml, Map map, Region parent)
             : base("Sea Market", map, Region.DefaultPriority, m_Bounds)
         {
             GoLocation = new Point3D(4550, 2317, -2);

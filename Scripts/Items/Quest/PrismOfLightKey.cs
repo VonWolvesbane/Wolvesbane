@@ -12,7 +12,7 @@ namespace Server.Items
         {
         }
 
-        public override int m_Lifespan => 480;
+        public override int Lifespan => 480;
         public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);

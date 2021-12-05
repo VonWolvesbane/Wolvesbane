@@ -14,9 +14,16 @@ namespace Server.Regions
             new Rectangle2D(650, 1350, 100, 50)
         };
 
-        public TokunoDocksRegion() : base("Tokuno Docks", Map.Tokuno, Region.DefaultPriority, m_Bounds)
+        public TokunoDocksRegion() 
+			: base("Tokuno Docks", Map.Tokuno, Region.DefaultPriority, m_Bounds)
         {
             m_Region = this;
         }
-    }
+		public TokunoDocksRegion(System.Xml.XmlElement xml, Map map, Region parent)
+			: base("Tokuno Docks", map, Region.DefaultPriority, m_Bounds)
+		{
+			GoLocation = new Point3D(4550, 2317, -2);
+		}
+
+	}
 }

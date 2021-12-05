@@ -8,17 +8,24 @@ namespace Server.Items
         public override int LabelNumber => 1032216;  // elven glasses
         public CraftSystem RepairSystem => DefTinkering.CraftSystem;
 
-        private bool _ElvesOnly;
+
+		public AosWeaponAttributes m_AosWeaponAttributes;
+		[CommandProperty(AccessLevel.GameMaster)]
+		public AosWeaponAttributes WeaponAttributes => this.m_AosWeaponAttributes;
+
+
+		[Constructable]
+		public ElvenGlasses()
+			: base(0x2FB8)
+		{
+			this.Weight = 2;
+			this.m_AosWeaponAttributes = new AosWeaponAttributes(this);
+		}
+
+		private bool _ElvesOnly;
 
         [CommandProperty(AccessLevel.GameMaster)]
         public bool ElfOnly { get { return _ElvesOnly; } set { _ElvesOnly = value; } }
-
-        [Constructable]
-        public ElvenGlasses()
-            : base(0x2FB8)
-        {
-            Weight = 2;
-        }
 
         public ElvenGlasses(Serial serial)
             : base(serial)
@@ -37,23 +44,47 @@ namespace Server.Items
         public override CraftResource DefaultResource => CraftResource.RegularLeather;
         public override ArmorMeditationAllowance DefMedAllowance => ArmorMeditationAllowance.All;
 
-        public override void Serialize(GenericWriter writer)
-        {
-            base.Serialize(writer);
-            writer.Write(2); // version
 
-            writer.Write(_ElvesOnly);
-        }
 
-        public override void Deserialize(GenericReader reader)
-        {
-            base.Deserialize(reader);
-            int version = reader.ReadInt();
+		public override void Serialize(GenericWriter writer)
+		{
+			base.Serialize(writer);
 
-            if (version > 1)
-            {
-                _ElvesOnly = reader.ReadBool();
-            }
-        }
-    }
+			writer.Write((int)0); // version
+
+			SaveFlag flags = SaveFlag.None;
+
+			SetSaveFlag(ref flags, SaveFlag.WeaponAttributes, !this.WeaponAttributes.IsEmpty);
+
+			writer.Write((int)flags);
+
+			if (GetSaveFlag(flags, SaveFlag.WeaponAttributes))
+				this.WeaponAttributes.Serialize(writer);
+		}
+
+		public override void Deserialize(GenericReader reader)
+		{
+			base.Deserialize(reader);
+
+			int version = reader.ReadInt();
+
+			SaveFlag flags = (SaveFlag)reader.ReadInt();
+
+			if (GetSaveFlag(flags, SaveFlag.WeaponAttributes))
+				this.m_AosWeaponAttributes = new AosWeaponAttributes(this, reader);
+			else
+				this.m_AosWeaponAttributes = new AosWeaponAttributes(this);
+		}
+
+		private static void SetSaveFlag(ref SaveFlag flags, SaveFlag toSet, bool setIf)
+		{
+			if (setIf)
+				flags |= toSet;
+		}
+
+		private static bool GetSaveFlag(SaveFlag flags, SaveFlag toGet)
+		{
+			return ((flags & toGet) != 0);
+		}
+	}
 }

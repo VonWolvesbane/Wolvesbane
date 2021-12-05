@@ -1,4 +1,3 @@
-using System;
 using Server.Targeting;
 
 namespace Server.Items
@@ -6,17 +5,17 @@ namespace Server.Items
     public class ExoticToolkit : BaseDecayingItem
     {
         [Constructable]
-        public ExoticToolkit() 
+        public ExoticToolkit()
             : base(0x1EB9)
         {
-            this.Hue = 2500;
-            this.Weight = 1;
+            Hue = 2500;
+            Weight = 1;
         }
 
-        public override int m_Lifespan { get { return 604800; } }
-        public override bool UseSeconds { get { return false; } }
+        public override int Lifespan => 604800;
+        public override bool UseSeconds => false;
 
-        public override int LabelNumber { get { return 1153866; } } // Exotic Toolkit
+        public override int LabelNumber => 1153866;  // Exotic Toolkit
 
         public ExoticToolkit(Serial serial)
             : base(serial)
@@ -54,15 +53,15 @@ namespace Server.Items
                         {
                             ((ExodusNexus)addon.Addon).OpenGump(from);
                         }
-                    }                        
+                    }
                 }
             }
-        }        
+        }
 
         public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);
-            writer.Write((int)0); // version
+            writer.Write(0); // version
         }
 
         public override void Deserialize(GenericReader reader)

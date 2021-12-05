@@ -1,14 +1,13 @@
-using System;
 using Server.Engines.PartySystem;
+using Server.Mobiles;
 using Server.Targeting;
 using System.Linq;
-using Server.Mobiles;
 
 namespace Server.Items
 {
     public class ExodusSummoningRite : BaseDecayingItem
     {
-        public override int LabelNumber { get { return 1153498; } } // exodus summoning rite 
+        public override int LabelNumber => 1153498;  // exodus summoning rite 
 
         [Constructable]
         public ExodusSummoningRite() : base(0x2258)
@@ -18,8 +17,8 @@ namespace Server.Items
             LootType = LootType.Regular;
         }
 
-        public override int m_Lifespan { get { return 604800; } }
-        public override bool UseSeconds { get { return false; } }
+        public override int Lifespan => 604800;
+        public override bool UseSeconds => false;
 
         public ExodusSummoningRite(Serial serial) : base(serial)
         {
@@ -51,7 +50,7 @@ namespace Server.Items
 
         public class RiteTarget : Target
         {
-            private Item m_Deed;
+            private readonly Item m_Deed;
 
             public RiteTarget(Item deed) : base(2, true, TargetFlags.None)
             {
@@ -101,7 +100,7 @@ namespace Server.Items
         public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);
-            writer.Write((int)0); // version
+            writer.Write(0); // version
         }
 
         public override void Deserialize(GenericReader reader)

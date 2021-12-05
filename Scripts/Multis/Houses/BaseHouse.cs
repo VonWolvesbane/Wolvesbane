@@ -16,7 +16,7 @@ using System.Linq;
 
 namespace Server.Multis
 {
-    public abstract class BaseHouse : BaseMulti
+    public abstract partial class BaseHouse : BaseMulti
     {
         public static int AccountHouseLimit { get; } = Config.Get("Housing.AccountHouseLimit", 1);
 

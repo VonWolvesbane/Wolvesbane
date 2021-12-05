@@ -1,55 +1,35 @@
-using System;
-using Server;
 using Server.Gumps;
 using Server.Network;
+using System;
 
 namespace Server.Items
 {
     public class UnderworldPuzzleItem : BaseDecayingItem
     {
-        public static readonly int MaxAttempts = 8;
+        public UnderworldPuzzleSolution Solution { get; }
+        public UnderworldPuzzleSolution CurrentSolution { get; set; }
 
-        private UnderworldPuzzleSolution m_Solution;
-        private UnderworldPuzzleSolution m_CurrentSolution;
-        private int m_Attempts;
-
-        public UnderworldPuzzleSolution Solution { get { return m_Solution; } }
-        public UnderworldPuzzleSolution CurrentSolution { get { return m_CurrentSolution; } set { m_CurrentSolution = value; } }
-
-        public override int LabelNumber { get { return 1113379; } } // Puzzle Board
+        public override int LabelNumber => 1113379;  // Puzzle Board
 
         [CommandProperty(AccessLevel.GameMaster)]
-        public int Attempts
-        {
-            get { return m_Attempts; }
-            set
-            {
-                m_Attempts = value;
+        public int Attempts { get; set; }
 
-                /*if (m_Solution != null && m_Attempts >= m_Solution.MaxAttempts)
-                {
-                    m_Solution = new UnderworldPuzzleSolution();
-                    m_CurrentSolution = new UnderworldPuzzleSolution(m_Solution.Index);
-                    m_Attempts = 0;
+        public override int Lifespan => 1800;
 
-                    Mobile m = (Mobile)RootParent;
-                    if (m != null)
-                        m.SendMessage("You failed to complete the puzzle board.");
-                }*/
-            }
-        }
-
-        public override int m_Lifespan { get { return 1800; } }
+        public override bool UseSeconds => false;
 
         [Constructable]
         public UnderworldPuzzleItem()
             : base(0x2AAA)
         {
-            Hue = 914;
-            m_Attempts = 0;
+            LootType = LootType.Blessed;
+            Weight = 5.0;
+            Hue = 0x281;
 
-            m_Solution = new UnderworldPuzzleSolution();
-            m_CurrentSolution = new UnderworldPuzzleSolution(m_Solution.Index);
+            Attempts = 0;
+
+            Solution = new UnderworldPuzzleSolution();
+            CurrentSolution = new UnderworldPuzzleSolution(Solution.Index);
         }
 
         public override void OnDoubleClick(Mobile from)
@@ -65,7 +45,10 @@ namespace Server.Items
 
         public bool SubmitSolution(Mobile m, UnderworldPuzzleSolution solution)
         {
-            if (solution.Matches(m_Solution))
+            if (m == null)
+                return false;
+
+            if (solution.Matches(Solution))
             {
                 Item item = Loot.Construct(m_Rewards[Utility.Random(m_Rewards.Length)]);
 
@@ -82,31 +65,32 @@ namespace Server.Items
                 }
 
                 m.PlaySound(0x3D);
-                m.SendLocalizedMessage(1113579); // Correct Code Entered. Crystal Lock Disengaged.
+                m.PrivateOverheadMessage(MessageType.Regular, 0x3B2, 1113579, m.NetState); // Correct Code Entered. Crystal Lock Disengaged.
 
                 Delete();
                 return true;
             }
-
-            return false;
+            else
+            {
+                PrivateOverheadMessage(MessageType.Regular, 0x3B2, 1150177, m.NetState); // Incorrect Code Sequence. Access Denied.
+                return false;
+            }
         }
 
-        private Type[] m_Rewards = new Type[]
-		{
-			typeof(VoidEssence),		typeof(SilverSerpentVenom),	typeof(ScouringToxin),
-			typeof(ToxicVenomSac),		typeof(MouldingBoard),		typeof(DoughBowl),
-			typeof(HornedTotemPole),	typeof(LargeSquarePillow),	typeof(LargeDiamondPillow),
-			typeof(DustyPillow),		typeof(StatuePedestal),		/*typeof(FlouredBreadBoard),*/
+        private readonly Type[] m_Rewards =
+        {
+            typeof(VoidEssence),        typeof(SilverSerpentVenom), typeof(ScouringToxin),
+            typeof(ToxicVenomSac),      typeof(MouldingBoard),      typeof(DoughBowl),
+            typeof(HornedTotemPole),    typeof(LargeSquarePillow),  typeof(LargeDiamondPillow),
+            typeof(DustyPillow),        typeof(StatuePedestal),		typeof(FlouredBreadBoard),
             typeof(LuckyCoin),
-		};
+        };
 
         public override void OnDelete()
         {
             base.OnDelete();
 
-            Mobile m = this.RootParent as Mobile;
-
-            if (m != null)
+            if (RootParent is Mobile m)
                 m.CloseGump(typeof(UnderworldPuzzleGump));
         }
 
@@ -118,7 +102,7 @@ namespace Server.Items
         public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);
-            writer.Write((int)0);
+            writer.Write(0);
         }
 
         public override void Deserialize(GenericReader reader)
@@ -149,8 +133,8 @@ namespace Server.Items
 
     public enum PuzzleColor
     {
-        Red, 
-        Blue, 
+        Red,
+        Blue,
         Green
     }
 
@@ -158,19 +142,14 @@ namespace Server.Items
     {
         public const int Length = 4;
 
-        private PuzzlePiece[] m_Rows = new PuzzlePiece[Length];
-        public PuzzlePiece[] Rows { get { return m_Rows; } }
+        public PuzzlePiece[] Rows { get; } = new PuzzlePiece[Length];
+        public int Index { get; private set; }
+        public int MaxAttempts { get; private set; }
 
-        private int m_Index;
-        private int m_MaxAttempts;
-
-        public int Index { get { return m_Index; } }
-        public int MaxAttempts { get { return m_MaxAttempts; } }
-
-        public PuzzlePiece First { get { return m_Rows[0]; } set { m_Rows[0] = value; } }
-        public PuzzlePiece Second { get { return m_Rows[1]; } set { m_Rows[1] = value; } }
-        public PuzzlePiece Third { get { return m_Rows[2]; } set { m_Rows[2] = value; } }
-        public PuzzlePiece Fourth { get { return m_Rows[3]; } set { m_Rows[3] = value; } }
+        public PuzzlePiece First { get { return Rows[0]; } set { Rows[0] = value; } }
+        public PuzzlePiece Second { get { return Rows[1]; } set { Rows[1] = value; } }
+        public PuzzlePiece Third { get { return Rows[2]; } set { Rows[2] = value; } }
+        public PuzzlePiece Fourth { get { return Rows[3]; } set { Rows[3] = value; } }
 
         public UnderworldPuzzleSolution()
         {
@@ -199,9 +178,9 @@ namespace Server.Items
         {
             int matches = 0;
 
-            for (int i = 0; i < m_Rows.Length; i++)
+            for (int i = 0; i < Rows.Length; i++)
             {
-                if (m_Rows[i] == check.Rows[i])
+                if (Rows[i] == check.Rows[i])
                     matches++;
             }
 
@@ -210,127 +189,127 @@ namespace Server.Items
 
         public void PickRandom()
         {
-            m_Index = Utility.Random(16);
-            switch (m_Index)
+            Index = Utility.Random(16);
+            switch (Index)
             {
                 case 0: //Good To Go
                     First = PuzzlePiece.RedSingle;
                     Second = PuzzlePiece.BlueSingle;
                     Third = PuzzlePiece.RedSingle;
                     Fourth = PuzzlePiece.GreenSingle;
-                    m_MaxAttempts = 6;
+                    MaxAttempts = 6;
                     break;
                 case 1: //Good To Go
                     First = PuzzlePiece.GreenDouble;
                     Second = PuzzlePiece.RedBar;
                     Third = PuzzlePiece.None;
                     Fourth = PuzzlePiece.BlueTriple;
-                    m_MaxAttempts = 6;
+                    MaxAttempts = 6;
                     break;
                 case 2: //Good To Go
                     First = PuzzlePiece.None;
                     Second = PuzzlePiece.None;
                     Third = PuzzlePiece.RedBar;
                     Fourth = PuzzlePiece.RedTriple;
-                    m_MaxAttempts = 4;
+                    MaxAttempts = 4;
                     break;
                 case 3: //Good To Go
                     First = PuzzlePiece.BlueDouble;
                     Second = PuzzlePiece.None;
                     Third = PuzzlePiece.GreenDouble;
                     Fourth = PuzzlePiece.GreenDouble;
-                    m_MaxAttempts = 7;
+                    MaxAttempts = 7;
                     break;
                 case 4: //Good To Go
                     First = PuzzlePiece.BlueSingle;
                     Second = PuzzlePiece.GreenSingle;
                     Third = PuzzlePiece.GreenDouble;
                     Fourth = PuzzlePiece.RedBar;
-                    m_MaxAttempts = 7;
+                    MaxAttempts = 7;
                     break;
                 case 5: //Good To Go
                     First = PuzzlePiece.GreenDouble;
                     Second = PuzzlePiece.BlueBar;
                     Third = PuzzlePiece.RedSingle;
                     Fourth = PuzzlePiece.BlueSingle;
-                    m_MaxAttempts = 8;
+                    MaxAttempts = 8;
                     break;
                 case 6: //Good To Go
                     First = PuzzlePiece.GreenSingle;
                     Second = PuzzlePiece.RedSingle;
                     Third = PuzzlePiece.BlueDouble;
                     Fourth = PuzzlePiece.GreenBar;
-                    m_MaxAttempts = 5;
+                    MaxAttempts = 5;
                     break;
                 case 7: //Good To Go
                     First = PuzzlePiece.BlueDouble;
                     Second = PuzzlePiece.None;
                     Third = PuzzlePiece.BlueTriple;
                     Fourth = PuzzlePiece.None;
-                    m_MaxAttempts = 4;
+                    MaxAttempts = 4;
                     break;
                 case 8: //Good To Go
                     First = PuzzlePiece.GreenSingle;
                     Second = PuzzlePiece.GreenBar;
                     Third = PuzzlePiece.RedDouble;
                     Fourth = PuzzlePiece.RedSingle;
-                    m_MaxAttempts = 7;
+                    MaxAttempts = 7;
                     break;
                 case 9: //Good to Go
                     First = PuzzlePiece.BlueSingle;
                     Second = PuzzlePiece.GreenDouble;
                     Third = PuzzlePiece.None;
                     Fourth = PuzzlePiece.GreenTriple;
-                    m_MaxAttempts = 6;
+                    MaxAttempts = 6;
                     break;
                 case 10: //Good To Go
                     First = PuzzlePiece.BlueSingle;
                     Second = PuzzlePiece.RedSingle;
                     Third = PuzzlePiece.RedTriple;
                     Fourth = PuzzlePiece.None;
-                    m_MaxAttempts = 6;
+                    MaxAttempts = 6;
                     break;
                 case 11: //Good To Go
                     First = PuzzlePiece.GreenSingle;
                     Second = PuzzlePiece.None;
                     Third = PuzzlePiece.GreenTriple;
                     Fourth = PuzzlePiece.GreenDouble;
-                    m_MaxAttempts = 5;
+                    MaxAttempts = 5;
                     break;
                 case 12: //Good to Go
                     First = PuzzlePiece.RedTriple;
                     Second = PuzzlePiece.None;
                     Third = PuzzlePiece.None;
                     Fourth = PuzzlePiece.RedTriple;
-                    m_MaxAttempts = 6;
+                    MaxAttempts = 6;
                     break;
                 case 13: //Good To Go
                     First = PuzzlePiece.None;
                     Second = PuzzlePiece.BlueTriple;
                     Third = PuzzlePiece.GreenSingle;
                     Fourth = PuzzlePiece.BlueDouble;
-                    m_MaxAttempts = 7;
+                    MaxAttempts = 7;
                     break;
                 case 14: //Good To Go
                     First = PuzzlePiece.BlueTriple;
                     Second = PuzzlePiece.None;
                     Third = PuzzlePiece.BlueTriple;
                     Fourth = PuzzlePiece.None;
-                    m_MaxAttempts = 6;
+                    MaxAttempts = 6;
                     break;
                 case 15: //Good to Go
                     First = PuzzlePiece.RedSingle;
                     Second = PuzzlePiece.BlueDouble;
                     Third = PuzzlePiece.RedDouble;
                     Fourth = PuzzlePiece.GreenSingle;
-                    m_MaxAttempts = 6;
+                    MaxAttempts = 6;
                     break;
             }
         }
 
         public void LoadStartSolution(int index)
         {
-            m_Index = index;
+            Index = index;
 
             switch (index)
             {
@@ -436,10 +415,10 @@ namespace Server.Items
 
     public class UnderworldPuzzleGump : Gump
     {
-        private Mobile m_From;
-        private UnderworldPuzzleItem m_Item;
-        private UnderworldPuzzleSolution m_Solution;
-        private UnderworldPuzzleSolution m_CurrentSolution;
+        private readonly Mobile m_From;
+        private readonly UnderworldPuzzleItem m_Item;
+        private readonly UnderworldPuzzleSolution m_Solution;
+        private readonly UnderworldPuzzleSolution m_CurrentSolution;
         private int m_Row;
 
         public UnderworldPuzzleGump(Mobile from, UnderworldPuzzleItem item)
@@ -448,121 +427,120 @@ namespace Server.Items
         }
 
         public UnderworldPuzzleGump(Mobile from, UnderworldPuzzleItem item, int row)
-            : base(45, 45)
-		{
+            : base(5, 30)
+        {
             if (row > 3) row = 3;
             if (row < 0) row = 0;
 
-			m_From = from;
-			m_Item = item;
-			m_Row = row;
-			
-			m_Solution = item.Solution;
-			m_CurrentSolution = item.CurrentSolution;
-			
-			AddBackground(50, 50, 500, 200, 9250);
-			
-			AddImageTiled(85, 210, 17, 150, 9255);
-			AddImageTiled(110, 63, 17, 150, 9255);
-			
-			AddImageTiled(140, 90, 250, 17, 9251);
-			AddImageTiled(60, 125, 350, 17, 9251);
-			AddImageTiled(140, 160, 250, 17, 9251);
-			AddImageTiled(60, 195, 350, 17, 9251);
-			
-			AddBackground(70, 70, 90, 155, 9250);
-			AddBackground(200, 70, 140, 155, 9250);
-			AddBackground(390, 70, 140, 155, 9250);
-			
-			AddBackground(50, 280, 200, 120, 9250);
-			
-			AddImage(0, 0, 10400);
-			AddImage(0, 170, 10401);
-			AddImage(0, 350, 10402);
+            m_From = from;
+            m_Item = item;
+            m_Row = row;
 
-            AddButton(105, 87, row == 0 ? 208 : 209, row == 0 ? 209 : 208, 1, GumpButtonType.Reply, 0);
-            AddButton(105, 122, row == 1 ? 208 : 209, row == 0 ? 209 : 208, 2, GumpButtonType.Reply, 0);
-            AddButton(105, 157, row == 2 ? 208 : 209, row == 0 ? 209 : 208, 3, GumpButtonType.Reply, 0);
-            AddButton(105, 192, row == 3 ? 208 : 209, row == 0 ? 209 : 208, 4, GumpButtonType.Reply, 0);
-			
-			AddPiece(0, true, m_Solution.First);
-			AddPiece(1, true, m_Solution.Second);
-			AddPiece(2, true, m_Solution.Third);
-			AddPiece(3, true, m_Solution.Fourth);
-			
-			AddPiece(0, false, m_CurrentSolution.First);
-			AddPiece(1, false, m_CurrentSolution.Second);
-			AddPiece(2, false, m_CurrentSolution.Third);
-			AddPiece(3, false, m_CurrentSolution.Fourth);
+            m_Solution = item.Solution;
+            m_CurrentSolution = item.CurrentSolution;
+
+            AddBackground( 55, 45, 500, 200, 0x2422 );
+			AddImage( 75, 83, 0x2423 );
+			AddImage( 65, 118, 0x2423 );
+			AddImage( 75, 153, 0x2423 );
+			AddImage( 65, 188, 0x2423 );
+			AddImage( 108, 55, 0x2427 );
+			AddImage( 86, 65, 0x2427 );
+			AddBackground( 75, 65, 86, 153, 0x2422 );
+			AddBackground( 192, 65, 137, 153, 0x2422 );
+			AddBackground( 397, 65, 137, 153, 0x2422 );
+			AddBackground( 55, 270, 195, 110, 0x2422 );
+			AddImage( 205, 77, 0x52 );
+			AddImage( 205, 110, 0x52 );
+			AddImage( 205, 143, 0x52 );
+			AddImage( 410, 77, 0x52 );
+			AddImage( 410, 110, 0x52 );
+			AddImage( 410, 143, 0x52 );
+			AddImage( 5, 5, 0x28C8 );
+
+            AddButton(160, 320, 0xF2, 0xF1, 8, GumpButtonType.Reply, 0); // Cancel
+            AddButton(80, 320, 0xEF, 0xF0, 7, GumpButtonType.Reply, 0); // Apply
+            AddButton(120, 345, 0x7DB, 0x7DB, 0, GumpButtonType.Reply, 0);	// Log out
+
+            AddHtmlLocalized(72, 285, 170, 20, 1150180, false, false); // Command Functions: 
+            AddHtml(200, 285, 100, 20, string.Format("{0}/{1}", m_Item.Attempts, m_Solution.MaxAttempts), false, false);
+
+            if (from.Skills[SkillName.Lockpicking].Base >= 100.0)
+            {
+                int locked = m_Solution.GetMatches(m_CurrentSolution);
+                AddHtmlLocalized(72, 300, 170, 20, 1150179, false, false); // Crystals Locked  : 
+                AddHtml(200, 300, 100, 20, locked.ToString(), false, false);
+            }
+
+            AddButton(108, 82, row == 0 ? 208 : 209, row == 0 ? 209 : 208, 1, GumpButtonType.Reply, 0);
+            AddButton(108, 115, row == 1 ? 208 : 209, row == 0 ? 209 : 208, 2, GumpButtonType.Reply, 0);
+            AddButton(108, 148, row == 2 ? 208 : 209, row == 0 ? 209 : 208, 3, GumpButtonType.Reply, 0);
+            AddButton(108, 181, row == 3 ? 208 : 209, row == 0 ? 209 : 208, 4, GumpButtonType.Reply, 0);
+
+            AddPiece(0, true, m_Solution.First);
+            AddPiece(1, true, m_Solution.Second);
+            AddPiece(2, true, m_Solution.Third);
+            AddPiece(3, true, m_Solution.Fourth);
+
+            AddPiece(0, false, m_CurrentSolution.First);
+            AddPiece(1, false, m_CurrentSolution.Second);
+            AddPiece(2, false, m_CurrentSolution.Third);
+            AddPiece(3, false, m_CurrentSolution.Fourth);
 
             for (int i = 0; i < 4; i++)
             {
                 if (i == row && m_CurrentSolution.Rows[i] != PuzzlePiece.None && m_Item.Attempts < m_Solution.MaxAttempts)
                 {
-                    AddButton(85, 87 + (i * 35), 2650, 2650, 5, GumpButtonType.Reply, 0); //Up
-                    AddButton(125, 87 + (i * 35), 2648, 2648, 6, GumpButtonType.Reply, 0); //Down
+                    AddButton(88, 82 + (i * 33), 2650, 2650, 5, GumpButtonType.Reply, 0); //Up
+                    AddButton(128, 82 + (i * 33), 2648, 2648, 6, GumpButtonType.Reply, 0); //Down
                 }
                 else
                 {
-                    AddImage(85, 87 + (i * 35), 2709);
-                    AddImage(125, 87 + (i * 35), 2709);
+                    AddImage(88, 82 + (i * 33), 2709);
+                    AddImage(128, 82 + (i * 33), 2709);
                 }
             }
 
-			AddButton(85, 87 + (row * 35), 2650, 2650, 5, GumpButtonType.Reply, 0); //Up
-            AddButton(125, 87 + (row * 35), 2648, 2648, 6, GumpButtonType.Reply, 0); //Down
-			
-            AddHtmlLocalized(65, 295, 130, 16, 1150180, false, false); // Command Functions: 
-            AddLabel(200, 295, 0, String.Format("{0}/{1}", m_Item.Attempts, m_Solution.MaxAttempts));
-			
-			if(from.Skills[SkillName.Lockpicking].Base >= 100.0)
-			{
-				int locked = m_Solution.GetMatches(m_CurrentSolution);
-                AddHtmlLocalized(65, 310, 120, 16, 1150179, false, false); // Crystals Locked  : 
-                AddLabel(190, 310, 0, locked.ToString());
-			}
-			
-			AddButton(80, 335, 2124, 2123, 7, GumpButtonType.Reply, 0); // Okay
-			AddButton(160, 335, 2073, 2072, 8, GumpButtonType.Reply, 0); // Cancel
-            AddButton(120, 360, 2011, 2010, 0, GumpButtonType.Reply, 0); // Logout
-		}
+            AddButton(88, 82 + (row * 35), 2650, 2650, 5, GumpButtonType.Reply, 0); //Up
+            AddButton(128, 82 + (row * 35), 2648, 2648, 6, GumpButtonType.Reply, 0); //Down
+        }
 
         private void AddPiece(int row, bool right, PuzzlePiece piece)
-		{
-			int id = GetPuzzlePieceID(piece);
-            int x = right ? 405 : 215;
-            int y = 82 + (35 * row );
+        {
+            int id = GetPuzzlePieceID(piece);
+            int x = right ? 410 : 205;
+            int y = 76 + (33 * row);
 
-			switch(piece)
-			{
-				case PuzzlePiece.None:
-					break;
+            switch (piece)
+            {
+                case PuzzlePiece.None:
+                    break;
                 case PuzzlePiece.RedSingle:
                 case PuzzlePiece.BlueSingle:
                 case PuzzlePiece.GreenSingle:
-					AddImage(x + 40, y, id);
-					break;
+                    AddImage(x + 40, y, id);
+                    break;
                 case PuzzlePiece.RedDouble:
                 case PuzzlePiece.BlueDouble:
                 case PuzzlePiece.GreenDouble:
-					AddImage(x, y, id);
-					AddImage(x + 80, y, id);
-					break;
+                    AddImage(x, y, id);
+                    AddImage(x + 80, y, id);
+                    break;
                 case PuzzlePiece.RedTriple:
                 case PuzzlePiece.BlueTriple:
                 case PuzzlePiece.GreenTriple:
-					AddImage(x, y, id);
-					AddImage(x + 40, y, id);
-					AddImage(x + 80, y, id);
-					break;
+                    AddImage(x, y, id);
+                    AddImage(x + 40, y, id);
+                    AddImage(x + 80, y, id);
+                    break;
                 case PuzzlePiece.RedBar:
                 case PuzzlePiece.BlueBar:
                 case PuzzlePiece.GreenBar:
-					AddImage(x, y, id);
+                    AddImage(x, y, id);
                     break;
-			}
-			
-		}
+            }
+
+        }
 
         public override void OnResponse(NetState sender, RelayInfo info)
         {
@@ -651,22 +629,22 @@ namespace Server.Items
         }
 
         private int GetTotalPieces(PuzzlePiece piece)
-		{
-			switch(piece)
-			{
-				default:
+        {
+            switch (piece)
+            {
+                default:
                     return 0;
-				case PuzzlePiece.RedSingle: case PuzzlePiece.BlueSingle: case PuzzlePiece.GreenSingle: return 1;
-				case PuzzlePiece.RedDouble: case PuzzlePiece.BlueDouble: case PuzzlePiece.GreenDouble: return 2;
-				case PuzzlePiece.RedTriple: case PuzzlePiece.BlueTriple: case PuzzlePiece.GreenTriple: return 3;
-				case PuzzlePiece.RedBar: case PuzzlePiece.BlueBar: case PuzzlePiece.GreenBar: return 4;
-			}
-		}
+                case PuzzlePiece.RedSingle: case PuzzlePiece.BlueSingle: case PuzzlePiece.GreenSingle: return 1;
+                case PuzzlePiece.RedDouble: case PuzzlePiece.BlueDouble: case PuzzlePiece.GreenDouble: return 2;
+                case PuzzlePiece.RedTriple: case PuzzlePiece.BlueTriple: case PuzzlePiece.GreenTriple: return 3;
+                case PuzzlePiece.RedBar: case PuzzlePiece.BlueBar: case PuzzlePiece.GreenBar: return 4;
+            }
+        }
 
         private void SplitPiecesUp(ref PuzzlePiece movingPiece, ref PuzzlePiece movingToPiece)
-		{
-			int movingAmount = GetTotalPieces(movingPiece);
-			int moveToAmount = GetTotalPieces(movingToPiece);
+        {
+            int movingAmount = GetTotalPieces(movingPiece);
+            int moveToAmount = GetTotalPieces(movingToPiece);
 
             if (movingToPiece == PuzzlePiece.None)
             {
@@ -703,26 +681,26 @@ namespace Server.Items
 
                 return;
             }
-			
-			if(movingAmount + moveToAmount > 4)
-			{
-				PuzzlePiece movingTemp = movingPiece;
-				PuzzlePiece movingToTemp = movingToPiece;
-				
-				movingPiece = movingToTemp;
-				movingToPiece = movingTemp;
-				
-				return;
-			}
-			
+
+            if (movingAmount + moveToAmount > 4)
+            {
+                PuzzlePiece movingTemp = movingPiece;
+                PuzzlePiece movingToTemp = movingToPiece;
+
+                movingPiece = movingToTemp;
+                movingToPiece = movingTemp;
+
+                return;
+            }
+
             movingToPiece = CombinePieces(movingPiece, movingToPiece);
             movingPiece = PuzzlePiece.None;
-		}
+        }
 
         private void SplitPiecesDown(ref PuzzlePiece movingPiece, ref PuzzlePiece movingToPiece)
-		{
-			int movingAmount = GetTotalPieces(movingPiece);
-			int moveToAmount = GetTotalPieces(movingToPiece);
+        {
+            int movingAmount = GetTotalPieces(movingPiece);
+            int moveToAmount = GetTotalPieces(movingToPiece);
 
             if (movingToPiece == PuzzlePiece.None)
             {
@@ -756,7 +734,7 @@ namespace Server.Items
                             break;
                     }
                 }
-                     
+
                 return;
             }
 
@@ -796,7 +774,7 @@ namespace Server.Items
 
             movingToPiece = (PuzzlePiece)t;
             movingPiece = PuzzlePiece.None;
-		}
+        }
 
         private PuzzlePiece CombinePieces(PuzzlePiece moving, PuzzlePiece movingInto)
         {

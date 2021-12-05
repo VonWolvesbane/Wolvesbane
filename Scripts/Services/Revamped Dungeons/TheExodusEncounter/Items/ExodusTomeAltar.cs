@@ -1,48 +1,50 @@
-using System;
-using Server.Engines.PartySystem;
-using Server.Gumps;
 using Server.Commands;
-using Server.Network;
-using System.Collections.Generic;
 using Server.ContextMenus;
 using Server.Engines.Exodus;
+using Server.Engines.PartySystem;
+using Server.Gumps;
 using Server.Mobiles;
+using Server.Network;
+using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace Server.Items
 {
     public class ExodusTomeAltar : BaseDecayingItem
     {
-        public override int LabelNumber { get { return 1153602; } } // Exodus Summoning Tome 
+        public override int LabelNumber => 1153602;  // Exodus Summoning Tome 
         public static ExodusTomeAltar Altar { get; set; }
-        public TimeSpan DelayExit { get { return TimeSpan.FromMinutes(10); } }
+        public TimeSpan DelayExit => TimeSpan.FromMinutes(10);
         private Point3D m_TeleportDest = new Point3D(764, 640, 0);
-        public override int m_Lifespan { get { return 420; } }
-        public override bool UseSeconds { get { return false; } }
-        private List<RitualArray> m_Rituals;
+        public override int Lifespan => 420;
+        public override bool UseSeconds => false;
+        private readonly List<RitualArray> m_Rituals;
         private Mobile m_Owner;
         private Item m_ExodusAlterAddon;
 
-        public List<RitualArray> Rituals { get { return m_Rituals; } }
+        public List<RitualArray> Rituals => m_Rituals;
         public Mobile Owner
         {
-            get { return this.m_Owner; }
-            set { this.m_Owner = value; }
+            get { return m_Owner; }
+            set { m_Owner = value; }
         }
 
         [Constructable]
-        public ExodusTomeAltar(Mobile from) 
+        public ExodusTomeAltar(Mobile from)
             : base(0x1C11)
         {
-            this.Hue = 1943;
-            this.Movable = false;
-            this.LootType = LootType.Regular;
-            this.Weight = 0.0;
+            Hue = 1943;
+            Movable = false;
+            LootType = LootType.Regular;
+            Weight = 0.0;
 
-            this.m_Rituals = new List<RitualArray>();
-            this.m_ExodusAlterAddon = new ExodusAlterAddon();
-            this.m_ExodusAlterAddon.Movable = false;
-        }        
+            m_Rituals = new List<RitualArray>();
+            m_ExodusAlterAddon = new ExodusAlterAddon
+            {
+                Movable = false
+            };
+        }
 
         public ExodusTomeAltar(Serial serial) : base(serial)
         {
@@ -50,8 +52,8 @@ namespace Server.Items
 
         private class BeginTheRitual : ContextMenuEntry
         {
-            private Mobile m_Mobile;
-            private ExodusTomeAltar m_altar;
+            private readonly Mobile m_Mobile;
+            private readonly ExodusTomeAltar m_altar;
 
             public BeginTheRitual(ExodusTomeAltar altar, Mobile from) : base(1153608, 2) // Begin the Ritual
             {
@@ -99,8 +101,8 @@ namespace Server.Items
         {
             base.OnAfterDelete();
 
-            if (this.m_ExodusAlterAddon != null)
-                this.m_ExodusAlterAddon.Delete();
+            if (m_ExodusAlterAddon != null)
+                m_ExodusAlterAddon.Delete();
 
             if (Altar != null)
                 Altar = null;
@@ -108,28 +110,28 @@ namespace Server.Items
 
         public override void OnMapChange()
         {
-            if (this.Deleted)
+            if (Deleted)
                 return;
 
-            if (this.m_ExodusAlterAddon != null)
-                this.m_ExodusAlterAddon.Map = this.Map;
+            if (m_ExodusAlterAddon != null)
+                m_ExodusAlterAddon.Map = Map;
         }
 
         public override void OnLocationChange(Point3D oldLoc)
         {
-            if (this.Deleted)
+            if (Deleted)
                 return;
 
-            if (this.m_ExodusAlterAddon != null)
-                this.m_ExodusAlterAddon.Location = new Point3D(this.X - 1, this.Y - 1, this.Z - 18);
+            if (m_ExodusAlterAddon != null)
+                m_ExodusAlterAddon.Location = new Point3D(X - 1, Y - 1, Z - 18);
         }
 
         public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);
-            writer.Write((int)0); // version
+            writer.Write(0); // version
 
-            writer.Write((Item)m_ExodusAlterAddon);
+            writer.Write(m_ExodusAlterAddon);
         }
 
         public override void Deserialize(GenericReader reader)
@@ -187,7 +189,7 @@ namespace Server.Items
 
                 foreach (PartyMemberInfo info in party.Members)
                 {
-                    this.SendBattleground(info.Mobile);
+                    SendBattleground(info.Mobile);
                 }
             }
             else
@@ -203,7 +205,7 @@ namespace Server.Items
                 // teleport party member
                 from.FixedParticles(0x376A, 9, 32, 0x13AF, EffectLayer.Waist);
                 from.PlaySound(0x1FE);
-                from.MoveToWorld(this.m_TeleportDest, Map.Ilshenar);
+                from.MoveToWorld(m_TeleportDest, Map.Ilshenar);
                 BaseCreature.TeleportPets(from, m_TeleportDest, Map.Ilshenar);
 
                 // Robe of Rite Delete
@@ -215,7 +217,7 @@ namespace Server.Items
                 }
 
                 // Altar Delete
-                Timer.DelayCall(TimeSpan.FromSeconds(2), new TimerCallback(Delete));
+                Timer.DelayCall(TimeSpan.FromSeconds(2), Delete);
             }
             else
             {
@@ -235,7 +237,7 @@ namespace Server.Items
     {
         public static void Initialize()
         {
-            CommandSystem.Register("TomeAltarGump", AccessLevel.Administrator, new CommandEventHandler(TomeAltarGump_OnCommand));
+            CommandSystem.Register("TomeAltarGump", AccessLevel.Administrator, TomeAltarGump_OnCommand);
         }
 
         [Usage("TomeAltarGump")]
@@ -251,9 +253,9 @@ namespace Server.Items
 
         public AltarGump(Mobile owner) : base(100, 100)
         {
-            this.Closable = true;
-            this.Disposable = true;
-            this.Dragable = true;
+            Closable = true;
+            Disposable = true;
+            Dragable = true;
 
             AddPage(0);
             AddBackground(0, 0, 447, 195, 5120);
@@ -266,7 +268,8 @@ namespace Server.Items
 
             switch (info.ButtonID)
             {
-                case 0: {
+                case 0:
+                    {
                         //Cancel
                         break;
                     }

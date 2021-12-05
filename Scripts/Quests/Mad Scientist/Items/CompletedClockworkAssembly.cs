@@ -3,9 +3,9 @@
     public class CompletedClockworkAssembly : BaseDecayingItem
     {
         public override int LabelNumber => 1112879;  // completed clockwork assembly
-        public override int m_Lifespan => 600;
+		public override int Lifespan { get { return 600; } }
 
-        [Constructable]
+		[Constructable]
         public CompletedClockworkAssembly()
             : base(0x1EAE)
         {

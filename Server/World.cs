@@ -646,6 +646,7 @@ namespace Server
 				{
 					BinaryFileReader reader = new BinaryFileReader(new BinaryReader(bin));
 
+					Item prevItem;
 					for (int i = 0; i < items.Count; ++i)
 					{
 						ItemEntry entry = items[i];
@@ -664,6 +665,8 @@ namespace Server
 								{
 									throw new Exception(String.Format("***** Bad serialize on {0} *****", item.GetType()));
 								}
+								prevItem = item;
+
 							}
 							catch (Exception e)
 							{

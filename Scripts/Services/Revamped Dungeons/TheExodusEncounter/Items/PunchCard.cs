@@ -1,22 +1,20 @@
-using System;
-
 namespace Server.Items
 {
     public class PunchCard : BaseDecayingItem
     {
         [Constructable]
-        public PunchCard() 
+        public PunchCard()
             : base(0x0FF4)
         {
-            this.LootType = LootType.Regular;
-            this.Hue = Utility.RandomNondyedHue();
-            this.Weight = 2;
+            LootType = LootType.Regular;
+            Hue = Utility.RandomNondyedHue();
+            Weight = 2;
         }
 
-        public override int m_Lifespan { get { return 21600; } }
-        public override bool UseSeconds { get { return false; } }
+        public override int Lifespan => 21600;
+        public override bool UseSeconds => false;
 
-        public override int LabelNumber { get { return 1153867; } } // Punch Card
+        public override int LabelNumber => 1153867;  // Punch Card
 
         public PunchCard(Serial serial)
             : base(serial)
@@ -26,7 +24,7 @@ namespace Server.Items
         public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);
-            writer.Write((int)0); // version
+            writer.Write(0); // version
         }
 
         public override void Deserialize(GenericReader reader)

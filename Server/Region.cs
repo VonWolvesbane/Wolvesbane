@@ -1084,6 +1084,15 @@ namespace Server
 
 			return true;
 		}
+		public virtual bool OnAosSingleClick(Mobile m, object o)
+		{
+			if (m_Parent != null)
+			{
+				return m_Parent.OnAosSingleClick(m, o);
+			}
+
+			return true;
+		}
 
 		public virtual void OnDelete(Item item)
 		{

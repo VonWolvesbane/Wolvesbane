@@ -1,26 +1,24 @@
-using System;
-using Server.Targeting;
-using Server.Multis;
-using Server.Mobiles;
-using Server.Engines.PartySystem;
-using System.Linq;
 using Server.Engines.Exodus;
+using Server.Engines.PartySystem;
+using Server.Mobiles;
+using Server.Targeting;
+using System.Linq;
 
 namespace Server.Items
 {
     public class ExodusSummoningAlter : BaseDecayingItem
     {
-        public override int LabelNumber { get { return 1153502; } } // exodus summoning altar
+        public override int LabelNumber => 1153502;  // exodus summoning altar
 
         [Constructable]
         public ExodusSummoningAlter() : base(0x14F0)
         {
-            this.LootType = LootType.Regular;
-            this.Weight = 1;
+            LootType = LootType.Regular;
+            Weight = 1;
         }
 
-        public override int m_Lifespan { get { return 604800; } }
-        public override bool UseSeconds { get { return false; } }        
+        public override int Lifespan => 604800;
+        public override bool UseSeconds => false;
 
         public ExodusSummoningAlter(Serial serial)
             : base(serial)
@@ -30,7 +28,7 @@ namespace Server.Items
         public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);
-            writer.Write((int)0); // version
+            writer.Write(0); // version
         }
 
         public override void Deserialize(GenericReader reader)
@@ -38,7 +36,7 @@ namespace Server.Items
             base.Deserialize(reader);
             int version = reader.ReadInt();
         }
-        
+
         public override void OnDoubleClick(Mobile from)
         {
             if (!IsChildOf(from.Backpack))
@@ -53,13 +51,13 @@ namespace Server.Items
             {
                 from.SendLocalizedMessage(1153675); // The Summoning Altar must be built upon a shrine, within Trammel or Felucca it matters not...                
                 from.Target = new SummoningTarget(from, this);
-            }                
+            }
         }
 
         public class SummoningTarget : Target
-        {            
-            private Mobile m_Mobile;
-            private Item m_Deed;
+        {
+            private readonly Mobile m_Mobile;
+            private readonly Item m_Deed;
 
             public SummoningTarget(Mobile from, Item deed) : base(2, true, TargetFlags.None)
             {
@@ -69,7 +67,7 @@ namespace Server.Items
 
             public static bool IsValidTile(int itemID)
             {
-                return (itemID >= 0x149F && itemID <= 0x14D6); 
+                return (itemID >= 0x149F && itemID <= 0x14D6);
             }
 
             protected override void OnTarget(Mobile from, object targeted)

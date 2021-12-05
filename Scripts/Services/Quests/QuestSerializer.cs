@@ -18,8 +18,61 @@ namespace Server.Engines.Quests
                 return null;
             }
         }
+		public static void Write(Type type, Type[] referenceTable, GenericWriter writer)
+		{
+			if (type == null)
+			{
+				writer.WriteEncodedInt((int)0x00);
+			}
+			else
+			{
+				for (int i = 0; i < referenceTable.Length; ++i)
+				{
+					if (referenceTable[i] == type)
+					{
+						writer.WriteEncodedInt((int)0x01);
+						writer.WriteEncodedInt((int)i);
+						return;
+					}
+				}
 
-        public static QuestSystem DeserializeQuest(GenericReader reader)
+				writer.WriteEncodedInt((int)0x02);
+				writer.Write(type.FullName);
+			}
+		}
+		public static Type ReadType(Type[] referenceTable, GenericReader reader)
+		{
+			int encoding = reader.ReadEncodedInt();
+
+			switch (encoding)
+			{
+				default:
+				case 0x00: // null
+					{
+						return null;
+					}
+				case 0x01: // indexed
+					{
+						int index = reader.ReadEncodedInt();
+
+						if (index >= 0 && index < referenceTable.Length)
+							return referenceTable[index];
+
+						return null;
+					}
+				case 0x02: // by name
+					{
+						string fullName = reader.ReadString();
+
+						if (fullName == null)
+							return null;
+
+						return ScriptCompiler.FindTypeByFullName(fullName, false);
+					}
+			}
+		}
+
+		public static QuestSystem DeserializeQuest(GenericReader reader)
         {
             int encoding = reader.ReadEncodedInt();
 
@@ -312,7 +365,7 @@ namespace Server.Engines.Quests
             return ReadType((QuestSystem)null, reader);
         }
 
-        private static Type ReadType(QuestSystem qs, GenericReader reader)
+        public static Type ReadType(QuestSystem qs, GenericReader reader)
         {
             string[] referenceTable;
 

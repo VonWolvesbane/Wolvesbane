@@ -10,8 +10,8 @@ namespace Server.Engines.Quests
             : base()
         {
             AddObjective(new SlayObjective(typeof(GargoyleShade), "Gargoyle Shade", 10));
-            AddObjective(new SlayObjective(typeof(EffetePutridGargoyle), "Effete Putrid Gargoyle", 10));
-            AddObjective(new SlayObjective(typeof(EffeteUndeadGargoyle), "Effete Undead Gargoyle", 10));
+            //AddObjective(new SlayObjective(typeof(EffetePutridGargoyle), "Effete Putrid Gargoyle", 10));
+            //AddObjective(new SlayObjective(typeof(EffeteUndeadGargoyle), "Effete Undead Gargoyle", 10));
 
             AddReward(new BaseReward(typeof(NecklaceofDiligence), 1113137));
         }

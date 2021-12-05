@@ -3061,7 +3061,7 @@ namespace Server
 						}
 						else
 						{
-							var minutes = reader.ReadEncodedInt();
+							int minutes = reader.ReadEncodedInt();
 
 							try
 							{

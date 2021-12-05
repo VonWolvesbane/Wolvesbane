@@ -1,4 +1,4 @@
-namespace Server.Items
+namespace Server.Items.DungeonChests
 {
     public class TreasureLevel1 : BaseDungeonChest
     {

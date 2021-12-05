@@ -891,10 +891,63 @@ namespace Server.Mobiles
                 }
             }
         }
-        #endregion
+		#endregion
+		#region Delete Previously Tamed Timer
+		private DeleteTimer m_DeleteTimer;
 
-        #region IEngravable Members
-        private string m_EngravedText;
+		[CommandProperty(AccessLevel.GameMaster)]
+		public TimeSpan DeleteTimeLeft
+		{
+			get
+			{
+				if (m_DeleteTimer != null && m_DeleteTimer.Running)
+				{
+					return m_DeleteTimer.Next - DateTime.UtcNow;
+				}
+
+				return TimeSpan.Zero;
+			}
+		}
+
+		private class DeleteTimer : Timer
+		{
+			private readonly Mobile m;
+
+			public DeleteTimer(Mobile creature, TimeSpan delay)
+				: base(delay)
+			{
+				m = creature;
+				Priority = TimerPriority.OneMinute;
+			}
+
+			protected override void OnTick()
+			{
+				m.Delete();
+			}
+		}
+
+		public void BeginDeleteTimer()
+		{
+			if (!(this is BaseEscortable) && !Summoned && !Deleted && !IsStabled)
+			{
+				StopDeleteTimer();
+				m_DeleteTimer = new DeleteTimer(this, TimeSpan.FromDays(3.0));
+				m_DeleteTimer.Start();
+			}
+		}
+
+		public void StopDeleteTimer()
+		{
+			if (m_DeleteTimer != null)
+			{
+				m_DeleteTimer.Stop();
+				m_DeleteTimer = null;
+			}
+		}
+		#endregion
+
+		#region IEngravable Members
+		private string m_EngravedText;
 
         [CommandProperty(AccessLevel.GameMaster)]
         public string EngravedText
@@ -2221,15 +2274,6 @@ namespace Server.Mobiles
 
         public static readonly TimeSpan DeleteTimeSpan = TimeSpan.FromDays(3);
 
-        public virtual void BeginDeleteTimer()
-        {
-            DeleteTime = DateTime.UtcNow + DeleteTimeSpan;
-        }
-
-        public virtual void StopDeleteTimer()
-        {
-            DeleteTime = DateTime.MinValue;
-        }
 
         public virtual bool CanTransfer(Mobile m)
         {
@@ -3009,187 +3053,233 @@ namespace Server.Mobiles
             GenerateLoot(LootStage.Spawning);
         }
 
-        public override void Serialize(GenericWriter writer)
-        {
-            base.Serialize(writer);
+		public override void Serialize(GenericWriter writer)
+		{
+			base.Serialize(writer);
 
-            writer.Write(32); // version
+			writer.Write(27); // version
 
-            writer.Write(StealPackGenerated);
-            writer.Write(HasBeenStolen);
+			writer.Write(CanMove);
+			writer.Write(_LockDirection);
+			writer.Write(ApproachWait);
+			writer.Write(ApproachRange);
 
-            writer.Write(m_ForceActiveSpeed);
-            writer.Write(m_ForcePassiveSpeed);
+			writer.Write((int)m_CurrentAI);
+			writer.Write((int)m_DefaultAI);
 
-            writer.Write(CanMove);
-            writer.Write(_LockDirection);
-            writer.Write(ApproachWait);
-            writer.Write(ApproachRange);
+			writer.Write(m_iRangePerception);
+			writer.Write(m_iRangeFight);
 
-            writer.Write((int)m_CurrentAI);
-            writer.Write((int)m_DefaultAI);
+			writer.Write(m_iTeam);
 
-            writer.Write(m_iRangePerception);
-            writer.Write(m_iRangeFight);
+			writer.Write(m_dActiveSpeed);
+			writer.Write(m_dPassiveSpeed);
+			writer.Write(m_dCurrentSpeed);
 
-            writer.Write(m_iTeam);
+			writer.Write(m_pHome.X);
+			writer.Write(m_pHome.Y);
+			writer.Write(m_pHome.Z);
 
-            writer.Write(m_dActiveSpeed);
-            writer.Write(m_dPassiveSpeed);
-            writer.Write(m_dCurrentSpeed);
+			// Version 1
+			writer.Write(m_iRangeHome);
 
-            writer.Write(m_pHome.X);
-            writer.Write(m_pHome.Y);
-            writer.Write(m_pHome.Z);
+			int i = 0;
 
-            // Version 1
-            writer.Write(m_iRangeHome);
+			writer.Write(m_arSpellAttack.Count);
 
-            int i = 0;
+			for (i = 0; i < m_arSpellAttack.Count; i++)
+			{
+				writer.Write(m_arSpellAttack[i].ToString());
+			}
 
-            writer.Write(m_arSpellAttack.Count);
+			writer.Write(m_arSpellDefense.Count);
 
-            for (i = 0; i < m_arSpellAttack.Count; i++)
-            {
-                writer.Write(m_arSpellAttack[i].ToString());
-            }
+			for (i = 0; i < m_arSpellDefense.Count; i++)
+			{
+				writer.Write(m_arSpellDefense[i].ToString());
+			}
 
-            writer.Write(m_arSpellDefense.Count);
+			// Version 2
+			writer.Write((int)m_FightMode);
 
-            for (i = 0; i < m_arSpellDefense.Count; i++)
-            {
-                writer.Write(m_arSpellDefense[i].ToString());
-            }
+			writer.Write(m_bControlled);
+			writer.Write(m_ControlMaster);
+			writer.Write(m_ControlTarget is Mobile ? (Mobile)m_ControlTarget : null);
+			writer.Write(m_ControlDest);
+			writer.Write((int)m_ControlOrder);
+			writer.Write(m_dMinTameSkill);
 
-            // Version 2
-            writer.Write((int)m_FightMode);
+			writer.Write(m_bTamable);
+			writer.Write(m_bSummoned);
 
-            writer.Write(m_bControlled);
-            writer.Write(m_ControlMaster);
-            writer.Write(m_ControlTarget is Mobile ? (Mobile)m_ControlTarget : null);
-            writer.Write(m_ControlDest);
-            writer.Write((int)m_ControlOrder);
-            writer.Write(m_dMinTameSkill);
+			if (m_bSummoned)
+			{
+				writer.WriteDeltaTime(m_SummonEnd);
+			}
 
-            writer.Write(m_bTamable);
-            writer.Write(m_bSummoned);
+			writer.Write(m_iControlSlots);
 
-            if (m_bSummoned)
-            {
-                writer.WriteDeltaTime(m_SummonEnd);
-            }
+			// Version 3
+			writer.Write(m_Loyalty);
 
-            writer.Write(m_iControlSlots);
+			// Version 4
+			writer.Write(m_CurrentWayPoint);
 
-            // Version 3
-            writer.Write(m_Loyalty);
+			// Verison 5
+			writer.Write(m_SummonMaster);
 
-            // Version 4
-            writer.Write(m_CurrentWayPoint);
+			// Version 6
+			writer.Write(m_HitsMax);
+			writer.Write(m_StamMax);
+			writer.Write(m_ManaMax);
+			writer.Write(m_DamageMin);
+			writer.Write(m_DamageMax);
 
-            // Verison 5
-            writer.Write(m_SummonMaster);
+			// Version 7
+			writer.Write(m_PhysicalResistance);
+			writer.Write(m_PhysicalDamage);
 
-            // Version 6
-            writer.Write(m_HitsMax);
-            writer.Write(m_StamMax);
-            writer.Write(m_ManaMax);
-            writer.Write(m_DamageMin);
-            writer.Write(m_DamageMax);
+			writer.Write(m_FireResistance);
+			writer.Write(m_FireDamage);
 
-            // Version 7
-            writer.Write(m_PhysicalResistance);
-            writer.Write(m_PhysicalDamage);
+			writer.Write(m_ColdResistance);
+			writer.Write(m_ColdDamage);
 
-            writer.Write(m_FireResistance);
-            writer.Write(m_FireDamage);
+			writer.Write(m_PoisonResistance);
+			writer.Write(m_PoisonDamage);
 
-            writer.Write(m_ColdResistance);
-            writer.Write(m_ColdDamage);
+			writer.Write(m_EnergyResistance);
+			writer.Write(m_EnergyDamage);
 
-            writer.Write(m_PoisonResistance);
-            writer.Write(m_PoisonDamage);
+			// Version 8
+			writer.Write(m_Owners, true);
 
-            writer.Write(m_EnergyResistance);
-            writer.Write(m_EnergyDamage);
+			// Version 10
+			writer.Write(m_IsDeadPet);
+			writer.Write(m_IsBonded);
+			writer.Write(m_BondingBegin);
+			writer.Write(m_OwnerAbandonTime);
 
-            // Version 8
-            writer.Write(m_Owners, true);
+			// Version 11
+			writer.Write(m_HasGeneratedLoot);
 
-            // Version 10
-            writer.Write(m_IsDeadPet);
-            writer.Write(m_IsBonded);
-            writer.Write(m_BondingBegin);
-            writer.Write(m_OwnerAbandonTime);
+			// Version 12
+			writer.Write(m_Paragon);
 
-            // Version 11
-            writer.Write(m_HasGeneratedLoot);
+			// Version 13
+			writer.Write((m_Friends != null && m_Friends.Count > 0));
 
-            // Version 12
-            writer.Write(m_Paragon);
+			if (m_Friends != null && m_Friends.Count > 0)
+			{
+				writer.Write(m_Friends, true);
+			}
 
-            // Version 13
-            writer.Write((m_Friends != null && m_Friends.Count > 0));
+			// Version 14
+			writer.Write(m_RemoveIfUntamed);
+			writer.Write(m_RemoveStep);
 
-            if (m_Friends != null && m_Friends.Count > 0)
-            {
-                writer.Write(m_Friends, true);
-            }
+			// Version 17
+			if (IsStabled || (Controlled && ControlMaster != null))
+			{
+				writer.Write(TimeSpan.Zero);
+			}
+			else
+			{
+				writer.Write(DeleteTimeLeft);
+			}
 
-            // Version 14
-            writer.Write(m_RemoveIfUntamed);
-            writer.Write(m_RemoveStep);
+			// Version 18
+			writer.Write(m_CorpseNameOverride);
 
-            // Version 17
-            if (IsStabled || (Controlled && ControlMaster != null))
-            {
-                writer.Write(DateTime.MinValue);
-            }
-            else
-            {
-                writer.Write(m_DeleteTime);
-            }
+			// Mondain's Legacy version 19
+			writer.Write(m_Allured);
 
-            // Version 18
-            writer.Write(m_CorpseNameOverride);
+			// Version 21 FS:ATS EDITS
+			writer.Write((bool)m_IsMating);
+			writer.Write((int)m_ABPoints);
+			writer.Write((int)m_Exp);
+			writer.Write((int)m_NextLevel);
+			writer.Write((int)m_Level);
+			writer.Write((int)m_MaxLevel);
+			writer.Write((bool)m_AllowMating);
+			writer.Write((bool)m_Evolves);
+			writer.Write((int)m_Gen);
+			writer.Write((DateTime)m_MatingDelay);
+			writer.Write((int)m_Form1);
+			writer.Write((int)m_Form2);
+			writer.Write((int)m_Form3);
+			writer.Write((int)m_Form4);
+			writer.Write((int)m_Form5);
+			writer.Write((int)m_Form6);
+			writer.Write((int)m_Form7);
+			writer.Write((int)m_Form8);
+			writer.Write((int)m_Form9);
+			writer.Write((int)m_Sound1);
+			writer.Write((int)m_Sound2);
+			writer.Write((int)m_Sound3);
+			writer.Write((int)m_Sound4);
+			writer.Write((int)m_Sound5);
+			writer.Write((int)m_Sound6);
+			writer.Write((int)m_Sound7);
+			writer.Write((int)m_Sound8);
+			writer.Write((int)m_Sound9);
+			writer.Write((bool)m_UsesForm1);
+			writer.Write((bool)m_UsesForm2);
+			writer.Write((bool)m_UsesForm3);
+			writer.Write((bool)m_UsesForm4);
+			writer.Write((bool)m_UsesForm5);
+			writer.Write((bool)m_UsesForm6);
+			writer.Write((bool)m_UsesForm7);
+			writer.Write((bool)m_UsesForm8);
+			writer.Write((bool)m_UsesForm9);
+			writer.Write((bool)m_F0);
+			writer.Write((bool)m_F1);
+			writer.Write((bool)m_F2);
+			writer.Write((bool)m_F3);
+			writer.Write((bool)m_F4);
+			writer.Write((bool)m_F5);
+			writer.Write((bool)m_F6);
+			writer.Write((bool)m_F7);
+			writer.Write((bool)m_F8);
+			writer.Write((bool)m_F9);
+			writer.Write((int)m_RoarAttack);
+			writer.Write((int)m_PetPoisonAttack);
+			writer.Write((int)m_FireBreathAttack);
 
-            // Mondain's Legacy version 19
-            writer.Write(m_Allured);
+			// Pet Branding version 22
+			writer.Write(m_EngravedText);
 
-            // Pet Branding version 22
-            writer.Write(m_EngravedText);
+			// Version 24 Pet Training
+			writer.Write(ControlSlotsMin);
+			writer.Write(ControlSlotsMax);
 
-            // Version 24 Pet Training
-            writer.Write(ControlSlotsMin);
-            writer.Write(ControlSlotsMax);
+			writer.Write((int)Mastery);
 
-            writer.Write((int)Mastery);
+			if (_Profile != null)
+			{
+				writer.Write(1);
+				_Profile.Serialize(writer);
+			}
+			else
+			{
+				writer.Write(0);
+			}
 
-            if (_Profile != null)
-            {
-                writer.Write(1);
-                _Profile.Serialize(writer);
-            }
-            else
-            {
-                writer.Write(0);
-            }
+			if (_TrainingProfile != null)
+			{
+				writer.Write(1);
+				_TrainingProfile.Serialize(writer);
+			}
+			else
+			{
+				writer.Write(0);
+			}
 
-            if (_TrainingProfile != null)
-            {
-                writer.Write(1);
-                _TrainingProfile.Serialize(writer);
-            }
-            else
-            {
-                writer.Write(0);
-            }
+			// Version 25 Current Tame Skill
+			writer.Write(m_CurrentTameSkill);
+		}
 
-            // Version 25 Current Tame Skill
-            writer.Write(m_CurrentTameSkill);
-        }
-
-        private static readonly double[] m_StandardActiveSpeeds = new[] { 0.175, 0.1, 0.15, 0.2, 0.25, 0.3, 0.4, 0.5, 0.6, 0.8 };
+		private static readonly double[] m_StandardActiveSpeeds = new[] { 0.175, 0.1, 0.15, 0.2, 0.25, 0.3, 0.4, 0.5, 0.6, 0.8 };
 
         private static readonly double[] m_StandardPassiveSpeeds = new[] { 0.350, 0.2, 0.4, 0.5, 0.6, 0.8, 1.0, 1.2, 1.6, 2.0 };
 
@@ -3469,8 +3559,63 @@ namespace Server.Mobiles
                 ApproachWait = false;
                 ApproachRange = 10;
             }
+			// FS ATS Starts
+			if (version >= 21)
+			{
+				m_IsMating = reader.ReadBool();
+				m_ABPoints = reader.ReadInt();
+				m_Exp = reader.ReadInt();
+				m_NextLevel = reader.ReadInt();
+				m_Level = reader.ReadInt();
+				m_MaxLevel = reader.ReadInt();
+				m_AllowMating = reader.ReadBool();
+				m_Evolves = reader.ReadBool();
+				m_Gen = reader.ReadInt();
+				m_MatingDelay = reader.ReadDateTime();
+				m_Form1 = reader.ReadInt();
+				m_Form2 = reader.ReadInt();
+				m_Form3 = reader.ReadInt();
+				m_Form4 = reader.ReadInt();
+				m_Form5 = reader.ReadInt();
+				m_Form6 = reader.ReadInt();
+				m_Form7 = reader.ReadInt();
+				m_Form8 = reader.ReadInt();
+				m_Form9 = reader.ReadInt();
+				m_Sound1 = reader.ReadInt();
+				m_Sound2 = reader.ReadInt();
+				m_Sound3 = reader.ReadInt();
+				m_Sound4 = reader.ReadInt();
+				m_Sound5 = reader.ReadInt();
+				m_Sound6 = reader.ReadInt();
+				m_Sound7 = reader.ReadInt();
+				m_Sound8 = reader.ReadInt();
+				m_Sound9 = reader.ReadInt();
+				m_UsesForm1 = reader.ReadBool();
+				m_UsesForm2 = reader.ReadBool();
+				m_UsesForm3 = reader.ReadBool();
+				m_UsesForm4 = reader.ReadBool();
+				m_UsesForm5 = reader.ReadBool();
+				m_UsesForm6 = reader.ReadBool();
+				m_UsesForm7 = reader.ReadBool();
+				m_UsesForm8 = reader.ReadBool();
+				m_UsesForm9 = reader.ReadBool();
+				m_F0 = reader.ReadBool();
+				m_F1 = reader.ReadBool();
+				m_F2 = reader.ReadBool();
+				m_F3 = reader.ReadBool();
+				m_F4 = reader.ReadBool();
+				m_F5 = reader.ReadBool();
+				m_F6 = reader.ReadBool();
+				m_F7 = reader.ReadBool();
+				m_F8 = reader.ReadBool();
+				m_F9 = reader.ReadBool();
+				m_RoarAttack = reader.ReadInt();
+				m_PetPoisonAttack = reader.ReadInt();
+				m_FireBreathAttack = reader.ReadInt();
+			}
+			// FS ATS Ends
 
-            if (version >= 22)
+			if (version >= 22)
             {
                 m_EngravedText = reader.ReadString();
             }

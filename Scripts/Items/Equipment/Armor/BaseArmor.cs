@@ -63,6 +63,7 @@ namespace Server.Items
         private Mobile m_Crafter;
         private ItemQuality m_Quality;
 		private ArmorDurabilityLevel m_Durability;
+
 		internal ArmorProtectionLevel ProtectionLevel { get; set; }
 		private CraftResource m_Resource;
         private bool m_Identified, m_PlayerConstructed;
@@ -997,13 +998,16 @@ namespace Server.Items
         public virtual int BasePoisonResistance => 0;
         public virtual int BaseEnergyResistance => 0;
 
-        public override int PhysicalResistance => BasePhysicalResistance + m_PhysicalBonus;
-        public override int FireResistance => BaseFireResistance + m_FireBonus;
-        public override int ColdResistance => BaseColdResistance + m_ColdBonus;
-        public override int PoisonResistance => BasePoisonResistance + m_PoisonBonus;
-        public override int EnergyResistance => BaseEnergyResistance + m_EnergyBonus;
+		//daat99 OWLTR start
+		private int m_PhysicalResistance = -1, m_FireResistance = -1, m_ColdResistance = -1, m_PoisonResistance = -1, m_EnergyResistance = -1;
+		public override int PhysicalResistance { get { return ((m_PhysicalResistance != -1) ? m_PhysicalResistance : (BasePhysicalResistance + GetProtOffset() + GetResourceAttrs(Resource).ArmorPhysicalResist + m_PhysicalBonus)); } }
+		public override int FireResistance { get { return ((m_FireResistance != -1) ? m_FireResistance : (BaseFireResistance + GetProtOffset() + GetResourceAttrs(Resource).ArmorFireResist + m_FireBonus)); } }
+		public override int ColdResistance { get { return ((m_ColdResistance != -1) ? m_ColdResistance : (BaseColdResistance + GetProtOffset() + GetResourceAttrs(Resource).ArmorColdResist + m_ColdBonus)); } }
+		public override int PoisonResistance { get { return ((m_PoisonResistance != -1) ? m_PoisonResistance : (BasePoisonResistance + GetProtOffset() + GetResourceAttrs(Resource).ArmorPoisonResist + m_PoisonBonus)); } }
+		public override int EnergyResistance { get { return ((m_EnergyResistance != -1) ? m_EnergyResistance : (BaseEnergyResistance + GetProtOffset() + GetResourceAttrs(Resource).ArmorEnergyResist + m_EnergyBonus)); } }
+		//daat99 OWLTR end
 
-        public virtual int InitMinHits => 0;
+		public virtual int InitMinHits => 0;
         public virtual int InitMaxHits => 0;
 
         [CommandProperty(AccessLevel.GameMaster)]
@@ -1037,8 +1041,13 @@ namespace Server.Items
                 }
             }
         }
+		public int GetProtOffset()
+		{
+			return 0;
+		}
 
-        public void UnscaleDurability()
+
+		public void UnscaleDurability()
         {
             int scale = 100 + GetDurabilityBonus();
 
@@ -1241,22 +1250,22 @@ namespace Server.Items
         {
         }
 
-        private static void SetSaveFlag(ref SaveFlag flags, SaveFlag toSet, bool setIf)
+        public static void SetSaveFlag(ref SaveFlag flags, SaveFlag toSet, bool setIf)
         {
             if (setIf)
                 flags |= toSet;
         }
 
-        private static bool GetSaveFlag(SaveFlag flags, SaveFlag toGet)
+        public static bool GetSaveFlag(SaveFlag flags, SaveFlag toGet)
         {
             return ((flags & toGet) != 0);
         }
 
         [Flags]
-        private enum SaveFlag
+        public enum SaveFlag
         {
             None = 0x00000000,
-            Attributes = 0x00000001,
+            WeaponAttributes = 0x00000001,
             ArmorAttributes = 0x00000002,
             PhysicalBonus = 0x00000004,
             FireBonus = 0x00000008,
@@ -1268,8 +1277,8 @@ namespace Server.Items
             HitPoints = 0x00000200,
             Crafter = 0x00000400,
             Quality = 0x00000800,
-            Empty1 = 0x00001000,
-            Empty2 = 0x00002000,
+			Durability = 0x00001000,
+			Protection = 0x00002000,
             Resource = 0x00004000,
             BaseArmor = 0x00008000,
             StrBonus = 0x00010000,
@@ -1331,517 +1340,698 @@ namespace Server.Items
                 m_AosWeaponAttributes = new AosWeaponAttributes(item);
         }
 
-        public override void Serialize(GenericWriter writer)
-        {
-            base.Serialize(writer);
+		public override void Serialize(GenericWriter writer)
+		{
+			base.Serialize(writer);
 
-            writer.Write(16); // version
+			writer.Write((int)14); // version
 
-            // Version 16 - Removed Pre-AOS Armor Properties
-            // Version 14 - removed VvV Item (handled in VvV System) and BlockRepair (Handled as negative attribute)
+			// Version 14 - removed VvV Item (handled in VvV System) and BlockRepair (Handled as negative attribute)
 
-            writer.Write(_Owner);
-            writer.Write(_OwnerName);
-
-            //Version 11
-            writer.Write(m_RefinedPhysical);
-            writer.Write(m_RefinedFire);
-            writer.Write(m_RefinedCold);
-            writer.Write(m_RefinedPoison);
-            writer.Write(m_RefinedEnergy);
-
-            //Version 10
-            writer.Write(m_IsImbued);
-
-            // Version 9
-            #region Runic Reforging
-            writer.Write((int)m_ReforgedPrefix);
-            writer.Write((int)m_ReforgedSuffix);
-            writer.Write((int)m_ItemPower);
-            #endregion
-
-            #region Stygian Abyss
-            writer.Write(m_GorgonLenseCharges);
-            writer.Write((int)m_GorgonLenseType);
-
-            writer.Write(m_PhysNonImbuing);
-            writer.Write(m_FireNonImbuing);
-            writer.Write(m_ColdNonImbuing);
-            writer.Write(m_PoisonNonImbuing);
-            writer.Write(m_EnergyNonImbuing);
-
-            // Version 8
-            writer.Write(m_TimesImbued);
-
-            #endregion
-
-            writer.Write(m_BlessedBy);
-
-            SetFlag sflags = SetFlag.None;
-
-            SetSaveFlag(ref sflags, SetFlag.Attributes, !m_SetAttributes.IsEmpty);
-            SetSaveFlag(ref sflags, SetFlag.SkillBonuses, !m_SetSkillBonuses.IsEmpty);
-            SetSaveFlag(ref sflags, SetFlag.PhysicalBonus, m_SetPhysicalBonus != 0);
-            SetSaveFlag(ref sflags, SetFlag.FireBonus, m_SetFireBonus != 0);
-            SetSaveFlag(ref sflags, SetFlag.ColdBonus, m_SetColdBonus != 0);
-            SetSaveFlag(ref sflags, SetFlag.PoisonBonus, m_SetPoisonBonus != 0);
-            SetSaveFlag(ref sflags, SetFlag.EnergyBonus, m_SetEnergyBonus != 0);
-            SetSaveFlag(ref sflags, SetFlag.Hue, m_SetHue != 0);
-            SetSaveFlag(ref sflags, SetFlag.LastEquipped, m_LastEquipped);
-            SetSaveFlag(ref sflags, SetFlag.SetEquipped, m_SetEquipped);
-            SetSaveFlag(ref sflags, SetFlag.SetSelfRepair, m_SetSelfRepair != 0);
-
-            writer.WriteEncodedInt((int)sflags);
-
-            if (GetSaveFlag(sflags, SetFlag.Attributes))
-                m_SetAttributes.Serialize(writer);
-
-            if (GetSaveFlag(sflags, SetFlag.SkillBonuses))
-                m_SetSkillBonuses.Serialize(writer);
-
-            if (GetSaveFlag(sflags, SetFlag.PhysicalBonus))
-                writer.WriteEncodedInt(m_SetPhysicalBonus);
-
-            if (GetSaveFlag(sflags, SetFlag.FireBonus))
-                writer.WriteEncodedInt(m_SetFireBonus);
-
-            if (GetSaveFlag(sflags, SetFlag.ColdBonus))
-                writer.WriteEncodedInt(m_SetColdBonus);
 
-            if (GetSaveFlag(sflags, SetFlag.PoisonBonus))
-                writer.WriteEncodedInt(m_SetPoisonBonus);
-
-            if (GetSaveFlag(sflags, SetFlag.EnergyBonus))
-                writer.WriteEncodedInt(m_SetEnergyBonus);
-
-            if (GetSaveFlag(sflags, SetFlag.Hue))
-                writer.WriteEncodedInt(m_SetHue);
-
-            if (GetSaveFlag(sflags, SetFlag.LastEquipped))
-                writer.Write(m_LastEquipped);
-
-            if (GetSaveFlag(sflags, SetFlag.SetEquipped))
-                writer.Write(m_SetEquipped);
-
-            if (GetSaveFlag(sflags, SetFlag.SetSelfRepair))
-                writer.WriteEncodedInt(m_SetSelfRepair);
-
-            // Version 7
-            SaveFlag flags = SaveFlag.None;
-
-            SetSaveFlag(ref flags, SaveFlag.xWeaponAttributes, !m_AosWeaponAttributes.IsEmpty);
-            SetSaveFlag(ref flags, SaveFlag.EngravedText, !string.IsNullOrEmpty(_EngravedText));
-            SetSaveFlag(ref flags, SaveFlag.TalismanProtection, !m_TalismanProtection.IsEmpty);
-            SetSaveFlag(ref flags, SaveFlag.NegativeAttributes, !m_NegativeAttributes.IsEmpty);
-            SetSaveFlag(ref flags, SaveFlag.Attributes, !m_AosAttributes.IsEmpty);
-            SetSaveFlag(ref flags, SaveFlag.ArmorAttributes, !m_AosArmorAttributes.IsEmpty);
-            SetSaveFlag(ref flags, SaveFlag.PhysicalBonus, m_PhysicalBonus != 0);
-            SetSaveFlag(ref flags, SaveFlag.FireBonus, m_FireBonus != 0);
-            SetSaveFlag(ref flags, SaveFlag.ColdBonus, m_ColdBonus != 0);
-            SetSaveFlag(ref flags, SaveFlag.PoisonBonus, m_PoisonBonus != 0);
-            SetSaveFlag(ref flags, SaveFlag.EnergyBonus, m_EnergyBonus != 0);
-            SetSaveFlag(ref flags, SaveFlag.Identified, m_Identified != false);
-            SetSaveFlag(ref flags, SaveFlag.MaxHitPoints, m_MaxHitPoints != 0);
-            SetSaveFlag(ref flags, SaveFlag.HitPoints, m_HitPoints != 0);
-            SetSaveFlag(ref flags, SaveFlag.Crafter, m_Crafter != null);
-            SetSaveFlag(ref flags, SaveFlag.Quality, m_Quality != ItemQuality.Normal);
-            SetSaveFlag(ref flags, SaveFlag.Resource, m_Resource != DefaultResource);
-            SetSaveFlag(ref flags, SaveFlag.BaseArmor, m_ArmorBase != -1);
-            SetSaveFlag(ref flags, SaveFlag.StrBonus, m_StrBonus != -1);
-            SetSaveFlag(ref flags, SaveFlag.DexBonus, m_DexBonus != -1);
-            SetSaveFlag(ref flags, SaveFlag.IntBonus, m_IntBonus != -1);
-            SetSaveFlag(ref flags, SaveFlag.StrReq, m_StrReq != -1);
-            SetSaveFlag(ref flags, SaveFlag.DexReq, m_DexReq != -1);
-            SetSaveFlag(ref flags, SaveFlag.IntReq, m_IntReq != -1);
-            SetSaveFlag(ref flags, SaveFlag.MedAllowance, m_Meditate != (AMA)(-1));
-            SetSaveFlag(ref flags, SaveFlag.SkillBonuses, !m_AosSkillBonuses.IsEmpty);
-            SetSaveFlag(ref flags, SaveFlag.PlayerConstructed, m_PlayerConstructed != false);
-            SetSaveFlag(ref flags, SaveFlag.xAbsorptionAttributes, !m_SAAbsorptionAttributes.IsEmpty);
-            SetSaveFlag(ref flags, SaveFlag.Altered, m_Altered);
-
-            writer.WriteEncodedInt((int)flags);
-
-            if (GetSaveFlag(flags, SaveFlag.xWeaponAttributes))
-                m_AosWeaponAttributes.Serialize(writer);
-
-            if (GetSaveFlag(flags, SaveFlag.EngravedText))
-                writer.Write(_EngravedText);
-
-            if (GetSaveFlag(flags, SaveFlag.TalismanProtection))
-                m_TalismanProtection.Serialize(writer);
-
-            if (GetSaveFlag(flags, SaveFlag.NegativeAttributes))
-                m_NegativeAttributes.Serialize(writer);
-
-            if (GetSaveFlag(flags, SaveFlag.Attributes))
-                m_AosAttributes.Serialize(writer);
-
-            if (GetSaveFlag(flags, SaveFlag.ArmorAttributes))
-                m_AosArmorAttributes.Serialize(writer);
-
-            if (GetSaveFlag(flags, SaveFlag.PhysicalBonus))
-                writer.WriteEncodedInt(m_PhysicalBonus);
-
-            if (GetSaveFlag(flags, SaveFlag.FireBonus))
-                writer.WriteEncodedInt(m_FireBonus);
-
-            if (GetSaveFlag(flags, SaveFlag.ColdBonus))
-                writer.WriteEncodedInt(m_ColdBonus);
-
-            if (GetSaveFlag(flags, SaveFlag.PoisonBonus))
-                writer.WriteEncodedInt(m_PoisonBonus);
-
-            if (GetSaveFlag(flags, SaveFlag.EnergyBonus))
-                writer.WriteEncodedInt(m_EnergyBonus);
-
-            if (GetSaveFlag(flags, SaveFlag.MaxHitPoints))
-                writer.WriteEncodedInt(m_MaxHitPoints);
-
-            if (GetSaveFlag(flags, SaveFlag.HitPoints))
-                writer.WriteEncodedInt(m_HitPoints);
-
-            if (GetSaveFlag(flags, SaveFlag.Crafter))
-                writer.Write(m_Crafter);
-
-            if (GetSaveFlag(flags, SaveFlag.Quality))
-                writer.WriteEncodedInt((int)m_Quality);
-
-            if (GetSaveFlag(flags, SaveFlag.Resource))
-                writer.WriteEncodedInt((int)m_Resource);
-
-            if (GetSaveFlag(flags, SaveFlag.BaseArmor))
-                writer.WriteEncodedInt(m_ArmorBase);
-
-            if (GetSaveFlag(flags, SaveFlag.StrBonus))
-                writer.WriteEncodedInt(m_StrBonus);
-
-            if (GetSaveFlag(flags, SaveFlag.DexBonus))
-                writer.WriteEncodedInt(m_DexBonus);
-
-            if (GetSaveFlag(flags, SaveFlag.IntBonus))
-                writer.WriteEncodedInt(m_IntBonus);
-
-            if (GetSaveFlag(flags, SaveFlag.StrReq))
-                writer.WriteEncodedInt(m_StrReq);
-
-            if (GetSaveFlag(flags, SaveFlag.DexReq))
-                writer.WriteEncodedInt(m_DexReq);
-
-            if (GetSaveFlag(flags, SaveFlag.IntReq))
-                writer.WriteEncodedInt(m_IntReq);
-
-            if (GetSaveFlag(flags, SaveFlag.MedAllowance))
-                writer.WriteEncodedInt((int)m_Meditate);
-
-            if (GetSaveFlag(flags, SaveFlag.SkillBonuses))
-                m_AosSkillBonuses.Serialize(writer);
-
-            if (GetSaveFlag(flags, SaveFlag.xAbsorptionAttributes))
-                m_SAAbsorptionAttributes.Serialize(writer);
-        }
-
-        public override void Deserialize(GenericReader reader)
-        {
-            base.Deserialize(reader);
-
-            int version = reader.ReadInt();
-
-            switch (version)
-            {
-                case 16:
-                case 15:
-                case 14:
-                case 13:
-                case 12:
-                    {
-                        if (version == 13)
-                            reader.ReadBool();
-
-                        _Owner = reader.ReadMobile();
-                        _OwnerName = reader.ReadString();
-                        goto case 11;
-                    }
-                case 11:
-                    {
-                        m_RefinedPhysical = reader.ReadInt();
-                        m_RefinedFire = reader.ReadInt();
-                        m_RefinedCold = reader.ReadInt();
-                        m_RefinedPoison = reader.ReadInt();
-                        m_RefinedEnergy = reader.ReadInt();
-                        goto case 10;
-                    }
-                case 10:
-                    {
-                        m_IsImbued = reader.ReadBool();
-                        goto case 9;
-                    }
-                case 9:
-                    {
-                        #region Runic Reforging
-                        m_ReforgedPrefix = (ReforgedPrefix)reader.ReadInt();
-                        m_ReforgedSuffix = (ReforgedSuffix)reader.ReadInt();
-                        m_ItemPower = (ItemPower)reader.ReadInt();
-
-                        if (version == 13 && reader.ReadBool())
-                        {
-                            Timer.DelayCall(TimeSpan.FromSeconds(1), () =>
-                            {
-                                m_NegativeAttributes.NoRepair = 1;
-                            });
-                        }
-                        #endregion
-
-                        #region Stygian Abyss
-                        m_GorgonLenseCharges = reader.ReadInt();
-                        m_GorgonLenseType = (LenseType)reader.ReadInt();
-
-                        m_PhysNonImbuing = reader.ReadInt();
-                        m_FireNonImbuing = reader.ReadInt();
-                        m_ColdNonImbuing = reader.ReadInt();
-                        m_PoisonNonImbuing = reader.ReadInt();
-                        m_EnergyNonImbuing = reader.ReadInt();
-                        goto case 8;
-                    }
-                case 8:
-                    {
-                        m_TimesImbued = reader.ReadInt();
-
-                        #endregion
-
-                        m_BlessedBy = reader.ReadMobile();
-
-                        SetFlag sflags = (SetFlag)reader.ReadEncodedInt();
-
-                        if (GetSaveFlag(sflags, SetFlag.Attributes))
-                            m_SetAttributes = new AosAttributes(this, reader);
-                        else
-                            m_SetAttributes = new AosAttributes(this);
-
-                        if (GetSaveFlag(sflags, SetFlag.ArmorAttributes))
-                            m_SetSelfRepair = (new AosArmorAttributes(this, reader)).SelfRepair;
-
-                        if (GetSaveFlag(sflags, SetFlag.SkillBonuses))
-                            m_SetSkillBonuses = new AosSkillBonuses(this, reader);
-                        else
-                            m_SetSkillBonuses = new AosSkillBonuses(this);
-
-                        if (GetSaveFlag(sflags, SetFlag.PhysicalBonus))
-                            m_SetPhysicalBonus = reader.ReadEncodedInt();
-
-                        if (GetSaveFlag(sflags, SetFlag.FireBonus))
-                            m_SetFireBonus = reader.ReadEncodedInt();
-
-                        if (GetSaveFlag(sflags, SetFlag.ColdBonus))
-                            m_SetColdBonus = reader.ReadEncodedInt();
-
-                        if (GetSaveFlag(sflags, SetFlag.PoisonBonus))
-                            m_SetPoisonBonus = reader.ReadEncodedInt();
-
-                        if (GetSaveFlag(sflags, SetFlag.EnergyBonus))
-                            m_SetEnergyBonus = reader.ReadEncodedInt();
-
-                        if (GetSaveFlag(sflags, SetFlag.Hue))
-                            m_SetHue = reader.ReadEncodedInt();
-
-                        if (GetSaveFlag(sflags, SetFlag.LastEquipped))
-                            m_LastEquipped = reader.ReadBool();
-
-                        if (GetSaveFlag(sflags, SetFlag.SetEquipped))
-                            m_SetEquipped = reader.ReadBool();
-
-                        if (GetSaveFlag(sflags, SetFlag.SetSelfRepair))
-                            m_SetSelfRepair = reader.ReadEncodedInt();
-
-                        goto case 5;
-                    }
-                case 7:
-                case 6:
-                case 5:
-                    {
-                        SaveFlag flags = (SaveFlag)reader.ReadEncodedInt();
-
-                        if (version > 14)
-                        {
-                            if (GetSaveFlag(flags, SaveFlag.xWeaponAttributes))
-                                m_AosWeaponAttributes = new AosWeaponAttributes(this, reader);
-                            else
-                                m_AosWeaponAttributes = new AosWeaponAttributes(this);
-                        }
-
-                        if (GetSaveFlag(flags, SaveFlag.EngravedText))
-                            _EngravedText = reader.ReadString();
-
-                        if (GetSaveFlag(flags, SaveFlag.TalismanProtection))
-                            m_TalismanProtection = new TalismanAttribute(reader);
-                        else
-                            m_TalismanProtection = new TalismanAttribute();
-
-                        if (GetSaveFlag(flags, SaveFlag.NegativeAttributes))
-                            m_NegativeAttributes = new NegativeAttributes(this, reader);
-                        else
-                            m_NegativeAttributes = new NegativeAttributes(this);
-
-                        if (GetSaveFlag(flags, SaveFlag.Attributes))
-                            m_AosAttributes = new AosAttributes(this, reader);
-                        else
-                            m_AosAttributes = new AosAttributes(this);
-
-                        if (GetSaveFlag(flags, SaveFlag.ArmorAttributes))
-                            m_AosArmorAttributes = new AosArmorAttributes(this, reader);
-                        else
-                            m_AosArmorAttributes = new AosArmorAttributes(this);
-
-                        if (GetSaveFlag(flags, SaveFlag.PhysicalBonus))
-                            m_PhysicalBonus = reader.ReadEncodedInt();
-
-                        if (GetSaveFlag(flags, SaveFlag.FireBonus))
-                            m_FireBonus = reader.ReadEncodedInt();
-
-                        if (GetSaveFlag(flags, SaveFlag.ColdBonus))
-                            m_ColdBonus = reader.ReadEncodedInt();
-
-                        if (GetSaveFlag(flags, SaveFlag.PoisonBonus))
-                            m_PoisonBonus = reader.ReadEncodedInt();
-
-                        if (GetSaveFlag(flags, SaveFlag.EnergyBonus))
-                            m_EnergyBonus = reader.ReadEncodedInt();
-
-                        if (GetSaveFlag(flags, SaveFlag.Identified))
-                            m_Identified = (version >= 7 || reader.ReadBool());
-
-                        if (GetSaveFlag(flags, SaveFlag.MaxHitPoints))
-                            m_MaxHitPoints = reader.ReadEncodedInt();
-
-                        if (GetSaveFlag(flags, SaveFlag.HitPoints))
-                            m_HitPoints = reader.ReadEncodedInt();
-
-                        if (GetSaveFlag(flags, SaveFlag.Crafter))
-                            m_Crafter = reader.ReadMobile();
-
-                        if (GetSaveFlag(flags, SaveFlag.Quality))
-                            m_Quality = (ItemQuality)reader.ReadEncodedInt();
-                        else
-                            m_Quality = ItemQuality.Normal;
-
-                        if (version == 5 && m_Quality == ItemQuality.Low)
-                            m_Quality = ItemQuality.Normal;
-
-                        if (version < 16 && GetSaveFlag(flags, SaveFlag.Empty1))
-                        {
-                            reader.ReadEncodedInt();
-                        }
-
-                        if (version < 16 && GetSaveFlag(flags, SaveFlag.Empty2))
-                        {
-                            reader.ReadEncodedInt();
-                        }
-
-                        if (GetSaveFlag(flags, SaveFlag.Resource))
-                            m_Resource = (CraftResource)reader.ReadEncodedInt();
-                        else
-                            m_Resource = DefaultResource;
-
-                        if (m_Resource == CraftResource.None)
-                            m_Resource = DefaultResource;
-
-                        if (GetSaveFlag(flags, SaveFlag.BaseArmor))
-                            m_ArmorBase = reader.ReadEncodedInt();
-                        else
-                            m_ArmorBase = -1;
-
-                        if (GetSaveFlag(flags, SaveFlag.StrBonus))
-                            m_StrBonus = reader.ReadEncodedInt();
-                        else
-                            m_StrBonus = -1;
-
-                        if (GetSaveFlag(flags, SaveFlag.DexBonus))
-                            m_DexBonus = reader.ReadEncodedInt();
-                        else
-                            m_DexBonus = -1;
-
-                        if (GetSaveFlag(flags, SaveFlag.IntBonus))
-                            m_IntBonus = reader.ReadEncodedInt();
-                        else
-                            m_IntBonus = -1;
-
-                        if (GetSaveFlag(flags, SaveFlag.StrReq))
-                            m_StrReq = reader.ReadEncodedInt();
-                        else
-                            m_StrReq = -1;
-
-                        if (GetSaveFlag(flags, SaveFlag.DexReq))
-                            m_DexReq = reader.ReadEncodedInt();
-                        else
-                            m_DexReq = -1;
-
-                        if (GetSaveFlag(flags, SaveFlag.IntReq))
-                            m_IntReq = reader.ReadEncodedInt();
-                        else
-                            m_IntReq = -1;
-
-                        if (GetSaveFlag(flags, SaveFlag.MedAllowance))
-                            m_Meditate = (AMA)reader.ReadEncodedInt();
-                        else
-                            m_Meditate = (AMA)(-1);
-
-                        if (GetSaveFlag(flags, SaveFlag.SkillBonuses))
-                            m_AosSkillBonuses = new AosSkillBonuses(this, reader);
-
-                        if (GetSaveFlag(flags, SaveFlag.PlayerConstructed))
-                            m_PlayerConstructed = true;
-
-                        if (version > 7 && GetSaveFlag(flags, SaveFlag.xAbsorptionAttributes))
-                            m_SAAbsorptionAttributes = new SAAbsorptionAttributes(this, reader);
-                        else
-                            m_SAAbsorptionAttributes = new SAAbsorptionAttributes(this);
-
-                        if (GetSaveFlag(flags, SaveFlag.Altered))
-                            m_Altered = true;
-
-                        break;
-                    }
-            }
-
-            if (m_SetAttributes == null)
-                m_SetAttributes = new AosAttributes(this);
-
-            if (m_SetSkillBonuses == null)
-                m_SetSkillBonuses = new AosSkillBonuses(this);
-
-            if (m_AosSkillBonuses == null)
-                m_AosSkillBonuses = new AosSkillBonuses(this);
-
-            if (m_AosWeaponAttributes == null)
-                m_AosWeaponAttributes = new AosWeaponAttributes(this);
-
-            if (Parent is Mobile)
-                m_AosSkillBonuses.AddTo((Mobile)Parent);
-
-            int strBonus = ComputeStatBonus(StatType.Str);
-            int dexBonus = ComputeStatBonus(StatType.Dex);
-            int intBonus = ComputeStatBonus(StatType.Int);
-
-            if (Parent is Mobile && (strBonus != 0 || dexBonus != 0 || intBonus != 0))
-            {
-                Mobile m = (Mobile)Parent;
-
-                string modName = Serial.ToString();
-
-                if (strBonus != 0)
-                    m.AddStatMod(new StatMod(StatType.Str, modName + "Str", strBonus, TimeSpan.Zero));
-
-                if (dexBonus != 0)
-                    m.AddStatMod(new StatMod(StatType.Dex, modName + "Dex", dexBonus, TimeSpan.Zero));
-
-                if (intBonus != 0)
-                    m.AddStatMod(new StatMod(StatType.Int, modName + "Int", intBonus, TimeSpan.Zero));
-            }
-
-            if (Parent is Mobile)
-                ((Mobile)Parent).CheckStatTimers();
-        }
-
-        public virtual CraftResource DefaultResource => CraftResource.Iron;
+			//daat99 OWLTR start - increase version from 12 to 13 and save resistance 
+			//version 13
+			writer.WriteEncodedInt((int)PhysicalResistance);
+			writer.WriteEncodedInt((int)FireResistance);
+			writer.WriteEncodedInt((int)ColdResistance);
+			writer.WriteEncodedInt((int)PoisonResistance);
+			writer.WriteEncodedInt((int)EnergyResistance);
+			//end version 13
+			//daat99 OWLTR end
+
+			writer.Write(_Owner);
+			writer.Write(_OwnerName);
+
+			//Version 11
+			writer.Write(m_RefinedPhysical);
+			writer.Write(m_RefinedFire);
+			writer.Write(m_RefinedCold);
+			writer.Write(m_RefinedPoison);
+			writer.Write(m_RefinedEnergy);
+
+			//Version 10
+			writer.Write((bool)m_IsImbued);
+
+			// Version 9
+			#region Runic Reforging
+			writer.Write((int)m_ReforgedPrefix);
+			writer.Write((int)m_ReforgedSuffix);
+			writer.Write((int)m_ItemPower);
+			#endregion
+
+			#region Stygian Abyss
+			writer.Write(m_GorgonLenseCharges);
+			writer.Write((int)m_GorgonLenseType);
+
+			writer.Write(m_PhysNonImbuing);
+			writer.Write(m_FireNonImbuing);
+			writer.Write(m_ColdNonImbuing);
+			writer.Write(m_PoisonNonImbuing);
+			writer.Write(m_EnergyNonImbuing);
+
+			// Version 8
+			writer.Write((int)m_TimesImbued);
+
+			#endregion
+
+			writer.Write((Mobile)m_BlessedBy);
+
+			SetFlag sflags = SetFlag.None;
+
+			SetSaveFlag(ref sflags, SetFlag.Attributes, !m_SetAttributes.IsEmpty);
+			SetSaveFlag(ref sflags, SetFlag.SkillBonuses, !m_SetSkillBonuses.IsEmpty);
+			SetSaveFlag(ref sflags, SetFlag.PhysicalBonus, m_SetPhysicalBonus != 0);
+			SetSaveFlag(ref sflags, SetFlag.FireBonus, m_SetFireBonus != 0);
+			SetSaveFlag(ref sflags, SetFlag.ColdBonus, m_SetColdBonus != 0);
+			SetSaveFlag(ref sflags, SetFlag.PoisonBonus, m_SetPoisonBonus != 0);
+			SetSaveFlag(ref sflags, SetFlag.EnergyBonus, m_SetEnergyBonus != 0);
+			SetSaveFlag(ref sflags, SetFlag.Hue, m_SetHue != 0);
+			SetSaveFlag(ref sflags, SetFlag.LastEquipped, m_LastEquipped);
+			SetSaveFlag(ref sflags, SetFlag.SetEquipped, m_SetEquipped);
+			SetSaveFlag(ref sflags, SetFlag.SetSelfRepair, m_SetSelfRepair != 0);
+
+			writer.WriteEncodedInt((int)sflags);
+
+			if (GetSaveFlag(sflags, SetFlag.Attributes))
+				m_SetAttributes.Serialize(writer);
+
+			if (GetSaveFlag(sflags, SetFlag.SkillBonuses))
+				m_SetSkillBonuses.Serialize(writer);
+
+			if (GetSaveFlag(sflags, SetFlag.PhysicalBonus))
+				writer.WriteEncodedInt((int)m_SetPhysicalBonus);
+
+			if (GetSaveFlag(sflags, SetFlag.FireBonus))
+				writer.WriteEncodedInt((int)m_SetFireBonus);
+
+			if (GetSaveFlag(sflags, SetFlag.ColdBonus))
+				writer.WriteEncodedInt((int)m_SetColdBonus);
+
+			if (GetSaveFlag(sflags, SetFlag.PoisonBonus))
+				writer.WriteEncodedInt((int)m_SetPoisonBonus);
+
+			if (GetSaveFlag(sflags, SetFlag.EnergyBonus))
+				writer.WriteEncodedInt((int)m_SetEnergyBonus);
+
+			if (GetSaveFlag(sflags, SetFlag.Hue))
+				writer.WriteEncodedInt((int)m_SetHue);
+
+			if (GetSaveFlag(sflags, SetFlag.LastEquipped))
+				writer.Write((bool)m_LastEquipped);
+
+			if (GetSaveFlag(sflags, SetFlag.SetEquipped))
+				writer.Write((bool)m_SetEquipped);
+
+			if (GetSaveFlag(sflags, SetFlag.SetSelfRepair))
+				writer.WriteEncodedInt((int)m_SetSelfRepair);
+
+			// Version 7
+			SaveFlag flags = SaveFlag.None;
+
+			SetSaveFlag(ref flags, SaveFlag.EngravedText, !String.IsNullOrEmpty(_EngravedText));
+			SetSaveFlag(ref flags, SaveFlag.TalismanProtection, !m_TalismanProtection.IsEmpty);
+			SetSaveFlag(ref flags, SaveFlag.NegativeAttributes, !m_NegativeAttributes.IsEmpty);
+			SetSaveFlag(ref flags, SaveFlag.WeaponAttributes, !m_AosAttributes.IsEmpty);
+			SetSaveFlag(ref flags, SaveFlag.ArmorAttributes, !m_AosArmorAttributes.IsEmpty);
+			SetSaveFlag(ref flags, SaveFlag.PhysicalBonus, m_PhysicalBonus != 0);
+			SetSaveFlag(ref flags, SaveFlag.FireBonus, m_FireBonus != 0);
+			SetSaveFlag(ref flags, SaveFlag.ColdBonus, m_ColdBonus != 0);
+			SetSaveFlag(ref flags, SaveFlag.PoisonBonus, m_PoisonBonus != 0);
+			SetSaveFlag(ref flags, SaveFlag.EnergyBonus, m_EnergyBonus != 0);
+			SetSaveFlag(ref flags, SaveFlag.Identified, m_Identified != false);
+			SetSaveFlag(ref flags, SaveFlag.MaxHitPoints, m_MaxHitPoints != 0);
+			SetSaveFlag(ref flags, SaveFlag.HitPoints, m_HitPoints != 0);
+			SetSaveFlag(ref flags, SaveFlag.Crafter, m_Crafter != null);
+			SetSaveFlag(ref flags, SaveFlag.Quality, m_Quality != ItemQuality.Normal);
+			SetSaveFlag(ref flags, SaveFlag.Durability, m_Durability != ArmorDurabilityLevel.Regular);
+			SetSaveFlag(ref flags, SaveFlag.Protection, ProtectionLevel != ArmorProtectionLevel.Regular);
+			SetSaveFlag(ref flags, SaveFlag.Resource, m_Resource != DefaultResource);
+			SetSaveFlag(ref flags, SaveFlag.BaseArmor, m_ArmorBase != -1);
+			SetSaveFlag(ref flags, SaveFlag.StrBonus, m_StrBonus != -1);
+			SetSaveFlag(ref flags, SaveFlag.DexBonus, m_DexBonus != -1);
+			SetSaveFlag(ref flags, SaveFlag.IntBonus, m_IntBonus != -1);
+			SetSaveFlag(ref flags, SaveFlag.StrReq, m_StrReq != -1);
+			SetSaveFlag(ref flags, SaveFlag.DexReq, m_DexReq != -1);
+			SetSaveFlag(ref flags, SaveFlag.IntReq, m_IntReq != -1);
+			SetSaveFlag(ref flags, SaveFlag.MedAllowance, m_Meditate != (AMA)(-1));
+			SetSaveFlag(ref flags, SaveFlag.SkillBonuses, !m_AosSkillBonuses.IsEmpty);
+			SetSaveFlag(ref flags, SaveFlag.PlayerConstructed, m_PlayerConstructed != false);
+			SetSaveFlag(ref flags, SaveFlag.xAbsorptionAttributes, !m_SAAbsorptionAttributes.IsEmpty);
+			//SetSaveFlag(ref flags, SaveFlag.TimesImbued, m_TimesImbued != 0);
+			SetSaveFlag(ref flags, SaveFlag.Altered, m_Altered);
+
+			writer.WriteEncodedInt((int)flags);
+
+			if (GetSaveFlag(flags, SaveFlag.EngravedText))
+				writer.Write(_EngravedText);
+
+			if (GetSaveFlag(flags, SaveFlag.TalismanProtection))
+				m_TalismanProtection.Serialize(writer);
+
+			if (GetSaveFlag(flags, SaveFlag.NegativeAttributes))
+				m_NegativeAttributes.Serialize(writer);
+
+			if (GetSaveFlag(flags, SaveFlag.WeaponAttributes))
+				m_AosAttributes.Serialize(writer);
+
+			if (GetSaveFlag(flags, SaveFlag.ArmorAttributes))
+				m_AosArmorAttributes.Serialize(writer);
+
+			if (GetSaveFlag(flags, SaveFlag.PhysicalBonus))
+				writer.WriteEncodedInt((int)m_PhysicalBonus);
+
+			if (GetSaveFlag(flags, SaveFlag.FireBonus))
+				writer.WriteEncodedInt((int)m_FireBonus);
+
+			if (GetSaveFlag(flags, SaveFlag.ColdBonus))
+				writer.WriteEncodedInt((int)m_ColdBonus);
+
+			if (GetSaveFlag(flags, SaveFlag.PoisonBonus))
+				writer.WriteEncodedInt((int)m_PoisonBonus);
+
+			if (GetSaveFlag(flags, SaveFlag.EnergyBonus))
+				writer.WriteEncodedInt((int)m_EnergyBonus);
+
+			if (GetSaveFlag(flags, SaveFlag.MaxHitPoints))
+				writer.WriteEncodedInt((int)m_MaxHitPoints);
+
+			if (GetSaveFlag(flags, SaveFlag.HitPoints))
+				writer.WriteEncodedInt((int)m_HitPoints);
+
+			if (GetSaveFlag(flags, SaveFlag.Crafter))
+				writer.Write((Mobile)m_Crafter);
+
+			if (GetSaveFlag(flags, SaveFlag.Quality))
+				writer.WriteEncodedInt((int)m_Quality);
+
+			if (GetSaveFlag(flags, SaveFlag.Durability))
+				writer.WriteEncodedInt((int)m_Durability);
+
+			if (GetSaveFlag(flags, SaveFlag.Protection))
+				writer.WriteEncodedInt((int)ProtectionLevel);
+
+			if (GetSaveFlag(flags, SaveFlag.Resource))
+				writer.WriteEncodedInt((int)m_Resource);
+
+			if (GetSaveFlag(flags, SaveFlag.BaseArmor))
+				writer.WriteEncodedInt((int)m_ArmorBase);
+
+			if (GetSaveFlag(flags, SaveFlag.StrBonus))
+				writer.WriteEncodedInt((int)m_StrBonus);
+
+			if (GetSaveFlag(flags, SaveFlag.DexBonus))
+				writer.WriteEncodedInt((int)m_DexBonus);
+
+			if (GetSaveFlag(flags, SaveFlag.IntBonus))
+				writer.WriteEncodedInt((int)m_IntBonus);
+
+			if (GetSaveFlag(flags, SaveFlag.StrReq))
+				writer.WriteEncodedInt((int)m_StrReq);
+
+			if (GetSaveFlag(flags, SaveFlag.DexReq))
+				writer.WriteEncodedInt((int)m_DexReq);
+
+			if (GetSaveFlag(flags, SaveFlag.IntReq))
+				writer.WriteEncodedInt((int)m_IntReq);
+
+			if (GetSaveFlag(flags, SaveFlag.MedAllowance))
+				writer.WriteEncodedInt((int)m_Meditate);
+
+			if (GetSaveFlag(flags, SaveFlag.SkillBonuses))
+				m_AosSkillBonuses.Serialize(writer);
+
+			if (GetSaveFlag(flags, SaveFlag.xAbsorptionAttributes))
+				m_SAAbsorptionAttributes.Serialize(writer);
+		}
+
+		public override void Deserialize(GenericReader reader)
+		{
+			base.Deserialize(reader);
+
+			int version = reader.ReadInt();
+
+			switch (version)
+			{
+				case 14:
+				case 13:
+					{
+						//daat99 OWLTR start - load resists version 13	
+						m_PhysicalResistance = reader.ReadEncodedInt();
+						m_FireResistance = reader.ReadEncodedInt();
+						m_ColdResistance = reader.ReadEncodedInt();
+						m_PoisonResistance = reader.ReadEncodedInt();
+						m_EnergyResistance = reader.ReadEncodedInt();
+						goto case 12;
+					}
+				//daat99 OWLTR end
+				case 12:
+					{
+						if (version == 13)
+							reader.ReadBool();
+
+						_Owner = reader.ReadMobile();
+						_OwnerName = reader.ReadString();
+						goto case 11;
+					}
+				case 11:
+					{
+						m_RefinedPhysical = reader.ReadInt();
+						m_RefinedFire = reader.ReadInt();
+						m_RefinedCold = reader.ReadInt();
+						m_RefinedPoison = reader.ReadInt();
+						m_RefinedEnergy = reader.ReadInt();
+						goto case 10;
+					}
+				case 10:
+					{
+						m_IsImbued = reader.ReadBool();
+						goto case 9;
+					}
+				case 9:
+					{
+						#region Runic Reforging
+						m_ReforgedPrefix = (ReforgedPrefix)reader.ReadInt();
+						m_ReforgedSuffix = (ReforgedSuffix)reader.ReadInt();
+						m_ItemPower = (ItemPower)reader.ReadInt();
+
+						if (version == 13 && reader.ReadBool())
+						{
+							Timer.DelayCall(TimeSpan.FromSeconds(1), () =>
+							{
+								m_NegativeAttributes.NoRepair = 1;
+							});
+						}
+						#endregion
+
+						#region Stygian Abyss
+						m_GorgonLenseCharges = reader.ReadInt();
+						m_GorgonLenseType = (LenseType)reader.ReadInt();
+
+						m_PhysNonImbuing = reader.ReadInt();
+						m_FireNonImbuing = reader.ReadInt();
+						m_ColdNonImbuing = reader.ReadInt();
+						m_PoisonNonImbuing = reader.ReadInt();
+						m_EnergyNonImbuing = reader.ReadInt();
+						goto case 8;
+					}
+				case 8:
+					{
+						m_TimesImbued = reader.ReadInt();
+
+						#endregion
+
+						m_BlessedBy = reader.ReadMobile();
+
+						SetFlag sflags = (SetFlag)reader.ReadEncodedInt();
+
+						if (GetSaveFlag(sflags, SetFlag.Attributes))
+							m_SetAttributes = new AosAttributes(this, reader);
+						else
+							m_SetAttributes = new AosAttributes(this);
+
+						if (GetSaveFlag(sflags, SetFlag.ArmorAttributes))
+							m_SetSelfRepair = (new AosArmorAttributes(this, reader)).SelfRepair;
+
+						if (GetSaveFlag(sflags, SetFlag.SkillBonuses))
+							m_SetSkillBonuses = new AosSkillBonuses(this, reader);
+						else
+							m_SetSkillBonuses = new AosSkillBonuses(this);
+
+						if (GetSaveFlag(sflags, SetFlag.PhysicalBonus))
+							m_SetPhysicalBonus = reader.ReadEncodedInt();
+
+						if (GetSaveFlag(sflags, SetFlag.FireBonus))
+							m_SetFireBonus = reader.ReadEncodedInt();
+
+						if (GetSaveFlag(sflags, SetFlag.ColdBonus))
+							m_SetColdBonus = reader.ReadEncodedInt();
+
+						if (GetSaveFlag(sflags, SetFlag.PoisonBonus))
+							m_SetPoisonBonus = reader.ReadEncodedInt();
+
+						if (GetSaveFlag(sflags, SetFlag.EnergyBonus))
+							m_SetEnergyBonus = reader.ReadEncodedInt();
+
+						if (GetSaveFlag(sflags, SetFlag.Hue))
+							m_SetHue = reader.ReadEncodedInt();
+
+						if (GetSaveFlag(sflags, SetFlag.LastEquipped))
+							m_LastEquipped = reader.ReadBool();
+
+						if (GetSaveFlag(sflags, SetFlag.SetEquipped))
+							m_SetEquipped = reader.ReadBool();
+
+						if (GetSaveFlag(sflags, SetFlag.SetSelfRepair))
+							m_SetSelfRepair = reader.ReadEncodedInt();
+
+						goto case 5;
+					}
+				case 7:
+				case 6:
+				case 5:
+					{
+						SaveFlag flags = (SaveFlag)reader.ReadEncodedInt();
+
+						if (GetSaveFlag(flags, SaveFlag.EngravedText))
+							_EngravedText = reader.ReadString();
+
+						if (GetSaveFlag(flags, SaveFlag.TalismanProtection))
+							m_TalismanProtection = new TalismanAttribute(reader);
+						else
+							m_TalismanProtection = new TalismanAttribute();
+
+						if (GetSaveFlag(flags, SaveFlag.NegativeAttributes))
+							m_NegativeAttributes = new NegativeAttributes(this, reader);
+						else
+							m_NegativeAttributes = new NegativeAttributes(this);
+
+						if (GetSaveFlag(flags, SaveFlag.WeaponAttributes))
+							m_AosAttributes = new AosAttributes(this, reader);
+						else
+							m_AosAttributes = new AosAttributes(this);
+
+						if (GetSaveFlag(flags, SaveFlag.ArmorAttributes))
+							m_AosArmorAttributes = new AosArmorAttributes(this, reader);
+						else
+							m_AosArmorAttributes = new AosArmorAttributes(this);
+
+						if (GetSaveFlag(flags, SaveFlag.PhysicalBonus))
+							m_PhysicalBonus = reader.ReadEncodedInt();
+
+						if (GetSaveFlag(flags, SaveFlag.FireBonus))
+							m_FireBonus = reader.ReadEncodedInt();
+
+						if (GetSaveFlag(flags, SaveFlag.ColdBonus))
+							m_ColdBonus = reader.ReadEncodedInt();
+
+						if (GetSaveFlag(flags, SaveFlag.PoisonBonus))
+							m_PoisonBonus = reader.ReadEncodedInt();
+
+						if (GetSaveFlag(flags, SaveFlag.EnergyBonus))
+							m_EnergyBonus = reader.ReadEncodedInt();
+
+						if (GetSaveFlag(flags, SaveFlag.Identified))
+							m_Identified = (version >= 7 || reader.ReadBool());
+
+						if (GetSaveFlag(flags, SaveFlag.MaxHitPoints))
+							m_MaxHitPoints = reader.ReadEncodedInt();
+
+						if (GetSaveFlag(flags, SaveFlag.HitPoints))
+							m_HitPoints = reader.ReadEncodedInt();
+
+						if (GetSaveFlag(flags, SaveFlag.Crafter))
+							m_Crafter = reader.ReadMobile();
+
+						if (GetSaveFlag(flags, SaveFlag.Quality))
+							m_Quality = (ItemQuality)reader.ReadEncodedInt();
+						else
+							m_Quality = ItemQuality.Normal;
+
+						if (version == 5 && m_Quality == ItemQuality.Low)
+							m_Quality = ItemQuality.Normal;
+
+						if (GetSaveFlag(flags, SaveFlag.Durability))
+						{
+							m_Durability = (ArmorDurabilityLevel)reader.ReadEncodedInt();
+
+							if (m_Durability > ArmorDurabilityLevel.Indestructible)
+								m_Durability = ArmorDurabilityLevel.Durable;
+						}
+
+						if (GetSaveFlag(flags, SaveFlag.Protection))
+						{
+							ProtectionLevel = (ArmorProtectionLevel)reader.ReadEncodedInt();
+
+							if (ProtectionLevel > ArmorProtectionLevel.Invulnerability)
+								ProtectionLevel = ArmorProtectionLevel.Defense;
+						}
+
+						if (GetSaveFlag(flags, SaveFlag.Resource))
+							m_Resource = (CraftResource)reader.ReadEncodedInt();
+						else
+							m_Resource = DefaultResource;
+
+						if (m_Resource == CraftResource.None)
+							m_Resource = DefaultResource;
+
+						if (GetSaveFlag(flags, SaveFlag.BaseArmor))
+							m_ArmorBase = reader.ReadEncodedInt();
+						else
+							m_ArmorBase = -1;
+
+						if (GetSaveFlag(flags, SaveFlag.StrBonus))
+							m_StrBonus = reader.ReadEncodedInt();
+						else
+							m_StrBonus = -1;
+
+						if (GetSaveFlag(flags, SaveFlag.DexBonus))
+							m_DexBonus = reader.ReadEncodedInt();
+						else
+							m_DexBonus = -1;
+
+						if (GetSaveFlag(flags, SaveFlag.IntBonus))
+							m_IntBonus = reader.ReadEncodedInt();
+						else
+							m_IntBonus = -1;
+
+						if (GetSaveFlag(flags, SaveFlag.StrReq))
+							m_StrReq = reader.ReadEncodedInt();
+						else
+							m_StrReq = -1;
+
+						if (GetSaveFlag(flags, SaveFlag.DexReq))
+							m_DexReq = reader.ReadEncodedInt();
+						else
+							m_DexReq = -1;
+
+						if (GetSaveFlag(flags, SaveFlag.IntReq))
+							m_IntReq = reader.ReadEncodedInt();
+						else
+							m_IntReq = -1;
+
+						if (GetSaveFlag(flags, SaveFlag.MedAllowance))
+							m_Meditate = (AMA)reader.ReadEncodedInt();
+						else
+							m_Meditate = (AMA)(-1);
+
+						if (GetSaveFlag(flags, SaveFlag.SkillBonuses))
+							m_AosSkillBonuses = new AosSkillBonuses(this, reader);
+
+						if (GetSaveFlag(flags, SaveFlag.PlayerConstructed))
+							m_PlayerConstructed = true;
+
+						if (version > 7 && GetSaveFlag(flags, SaveFlag.xAbsorptionAttributes))
+							m_SAAbsorptionAttributes = new SAAbsorptionAttributes(this, reader);
+						else
+							m_SAAbsorptionAttributes = new SAAbsorptionAttributes(this);
+
+						if (GetSaveFlag(flags, SaveFlag.Altered))
+							m_Altered = true;
+
+						break;
+					}
+				case 4:
+					{
+						m_AosAttributes = new AosAttributes(this, reader);
+						m_AosArmorAttributes = new AosArmorAttributes(this, reader);
+						goto case 3;
+					}
+				case 3:
+					{
+						m_PhysicalBonus = reader.ReadInt();
+						m_FireBonus = reader.ReadInt();
+						m_ColdBonus = reader.ReadInt();
+						m_PoisonBonus = reader.ReadInt();
+						m_EnergyBonus = reader.ReadInt();
+						goto case 2;
+					}
+				case 2:
+				case 1:
+					{
+						m_Identified = reader.ReadBool();
+						goto case 0;
+					}
+				case 0:
+					{
+						m_ArmorBase = reader.ReadInt();
+						m_MaxHitPoints = reader.ReadInt();
+						m_HitPoints = reader.ReadInt();
+						m_Crafter = reader.ReadMobile();
+						m_Quality = (ItemQuality)reader.ReadInt();
+						m_Durability = (ArmorDurabilityLevel)reader.ReadInt();
+						ProtectionLevel = (ArmorProtectionLevel)reader.ReadInt();
+
+						AMT mat = (AMT)reader.ReadInt();
+
+						if (m_ArmorBase == RevertArmorBase)
+							m_ArmorBase = -1;
+
+						/*m_BodyPos = (ArmorBodyType)*/
+						reader.ReadInt();
+
+						if (version < 4)
+						{
+							m_AosAttributes = new AosAttributes(this);
+							m_AosArmorAttributes = new AosArmorAttributes(this);
+						}
+
+						if (version < 3 && m_Quality == ItemQuality.Exceptional)
+							DistributeExceptionalBonuses(null, false);
+
+						if (version >= 2)
+						{
+							m_Resource = (CraftResource)reader.ReadInt();
+						}
+						else
+						{
+							OreInfo info;
+
+							switch (reader.ReadInt())
+							{
+								default:
+								case 0:
+									info = OreInfo.Iron;
+									break;
+								case 1:
+									info = OreInfo.DullCopper;
+									break;
+								case 2:
+									info = OreInfo.ShadowIron;
+									break;
+								case 3:
+									info = OreInfo.Copper;
+									break;
+								case 4:
+									info = OreInfo.Bronze;
+									break;
+								case 5:
+									info = OreInfo.Gold;
+									break;
+								case 6:
+									info = OreInfo.Agapite;
+									break;
+								case 7:
+									info = OreInfo.Verite;
+									break;
+								case 8:
+									info = OreInfo.Valorite;
+									break;
+								//daat99 OWLTR start - add custom ores
+								case 9:
+									info = OreInfo.Blaze;
+									break;
+								case 10:
+									info = OreInfo.Ice;
+									break;
+								case 11:
+									info = OreInfo.Toxic;
+									break;
+								case 12:
+									info = OreInfo.Electrum;
+									break;
+								case 13:
+									info = OreInfo.Platinum;
+									break;
+									//daat99 OWLTR end - add custom ores
+							}
+
+							m_Resource = CraftResources.GetFromOreInfo(info, mat);
+						}
+
+						m_StrBonus = reader.ReadInt();
+						m_DexBonus = reader.ReadInt();
+						m_IntBonus = reader.ReadInt();
+						m_StrReq = reader.ReadInt();
+						m_DexReq = reader.ReadInt();
+						m_IntReq = reader.ReadInt();
+
+						m_Meditate = (AMA)reader.ReadInt();
+
+						if (m_Meditate == DefMedAllowance)
+							m_Meditate = (AMA)(-1);
+
+						if (m_Resource == CraftResource.None)
+						{
+							if (mat == ArmorMaterialType.Studded || mat == ArmorMaterialType.Leather)
+								m_Resource = CraftResource.RegularLeather;
+							else if (mat == ArmorMaterialType.Spined)
+								m_Resource = CraftResource.SpinedLeather;
+							else if (mat == ArmorMaterialType.Horned)
+								m_Resource = CraftResource.HornedLeather;
+							else if (mat == ArmorMaterialType.Barbed)
+								m_Resource = CraftResource.BarbedLeather;
+							//daat99 OWLTR start - add custom leather
+							else if (mat == ArmorMaterialType.Polar)
+								m_Resource = CraftResource.PolarLeather;
+							else if (mat == ArmorMaterialType.Synthetic)
+								m_Resource = CraftResource.SyntheticLeather;
+							else if (mat == ArmorMaterialType.BlazeL)
+								m_Resource = CraftResource.BlazeLeather;
+							else if (mat == ArmorMaterialType.Daemonic)
+								m_Resource = CraftResource.DaemonicLeather;
+							else if (mat == ArmorMaterialType.Shadow)
+								m_Resource = CraftResource.ShadowLeather;
+							else if (mat == ArmorMaterialType.Frost)
+								m_Resource = CraftResource.FrostLeather;
+							else if (mat == ArmorMaterialType.Ethereal)
+								m_Resource = CraftResource.EtherealLeather;
+							//daat99 OWLTR end
+							else
+								m_Resource = CraftResource.Iron;
+						}
+
+						if (m_MaxHitPoints == 0 && m_HitPoints == 0)
+							m_HitPoints = m_MaxHitPoints = Utility.RandomMinMax(InitMinHits, InitMaxHits);
+
+						break;
+					}
+			}
+
+			#region Mondain's Legacy Sets
+			if (m_SetAttributes == null)
+				m_SetAttributes = new AosAttributes(this);
+
+			if (m_SetSkillBonuses == null)
+				m_SetSkillBonuses = new AosSkillBonuses(this);
+			#endregion
+
+			if (m_AosSkillBonuses == null)
+				m_AosSkillBonuses = new AosSkillBonuses(this);
+
+			if (Core.AOS && Parent is Mobile)
+				m_AosSkillBonuses.AddTo((Mobile)Parent);
+
+			int strBonus = ComputeStatBonus(StatType.Str);
+			int dexBonus = ComputeStatBonus(StatType.Dex);
+			int intBonus = ComputeStatBonus(StatType.Int);
+
+			if (Parent is Mobile && (strBonus != 0 || dexBonus != 0 || intBonus != 0))
+			{
+				Mobile m = (Mobile)Parent;
+
+				string modName = Serial.ToString();
+
+				if (strBonus != 0)
+					m.AddStatMod(new StatMod(StatType.Str, modName + "Str", strBonus, TimeSpan.Zero));
+
+				if (dexBonus != 0)
+					m.AddStatMod(new StatMod(StatType.Dex, modName + "Dex", dexBonus, TimeSpan.Zero));
+
+				if (intBonus != 0)
+					m.AddStatMod(new StatMod(StatType.Int, modName + "Int", intBonus, TimeSpan.Zero));
+			}
+
+			if (Parent is Mobile)
+				((Mobile)Parent).CheckStatTimers();
+
+			if (version < 7)
+				m_PlayerConstructed = true; // we don't know, so, assume it's crafted
+
+			if (version < 13)
+				ApplyResourceResistances(CraftResource.None);
+		}
+
+		public virtual CraftResource DefaultResource => CraftResource.Iron;
 
         public BaseArmor(int itemID)
             : base(itemID)
