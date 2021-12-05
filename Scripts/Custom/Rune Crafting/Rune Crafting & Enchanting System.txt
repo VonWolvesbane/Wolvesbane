@@ -1,0 +1,22 @@
+	The rune crafting & enchanting system allows scribes to create special enchanting runes and use them to augment weapons, armor, shields, clothing, and jewelry. Each rune adds a different effect to the item, though many runes can enchant every type of equipment, not every rune can. (example: certain runes may only work on weapons while others only work on armor or clothing etc.)
+
+	The base resource of the crafting system is the Rough Stone, it can be mined up (if you followed the directions on how to add them to the ML mining system ) or can be found on certain creatures as loot ( Example: my custom creature the Stone Elemental ).
+	the scribe can then use the Rune Chisel to carve the Rough Stones into blank runes. the the blank runes are then used, along with varius reagents, to create the enchanting runes.
+
+	the skill Inscription is required both for creating the runes and enchanting items with them.
+
+note: 100 Magery is also required to use the Rune Chisel, thought it is very simple to get rid of.
+
+Getting rid of magery requirement:
+
+Go to DefRuneCrafting.cs and Find the line of code:
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+			else if ( !(from is PlayerMobile && from.Skills[SkillName.Magery].Base >= 100.0) )
+				return 1044153; // You don't have the required skill
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+And simply get rid of it
+
+
+
+

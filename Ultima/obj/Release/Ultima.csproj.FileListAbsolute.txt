@@ -1,0 +1,4 @@
+C:\Users\credz\Documents\Projects\Test UO\Ultima\obj\Release\Ultima.csproj.AssemblyReference.cache
+C:\Users\credz\Documents\Projects\Test UO\Ultima\obj\Release\Ultima.csproj.CoreCompileInputs.cache
+C:\Users\credz\Documents\Projects\Test UO\Ultima\obj\Release\Ultima.dll
+C:\Users\credz\Documents\Projects\Test UO\Ultima.dll
