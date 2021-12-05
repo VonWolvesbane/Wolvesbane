@@ -2514,6 +2514,8 @@ namespace Server.Multis
                 return true;
 
             Account acct = one.Account as Account;
+			if (acct == null)
+				return false;
 
             for (int i = 0; i < acct.Length; ++i)
             {
