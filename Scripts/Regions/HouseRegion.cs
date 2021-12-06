@@ -46,7 +46,8 @@ namespace Server.Regions
 
         public static void OnLogin(LoginEventArgs e)
         {
-            BaseHouse house = BaseHouse.FindHouseAt(e.Mobile);
+            // David: Extend login check to courtyards and cellar
+            BaseHouse house = BaseHouse.GetHouseRegion(e.Mobile);
 
             if (house != null && !house.Public && !house.IsFriend(e.Mobile))
                 e.Mobile.Location = house.BanLocation;
@@ -230,7 +231,8 @@ namespace Server.Regions
 
         public override TimeSpan GetLogoutDelay(Mobile m)
         {
-            if (m_House.IsFriend(m) && m_House.IsInside(m))
+            //			if ( m_House.IsFriend( m ) && m_House.IsInside( m ) )
+            if (m_House.IsFriend(m) && m_House.IsHouseRegion(m))
             {
                 for (int i = 0; i < m.Aggressed.Count; ++i)
                 {
@@ -284,8 +286,9 @@ namespace Server.Regions
                     from.SendLocalizedMessage(501320); // Only the house owner may do 
                 }
             }
-			
-            if (!m_House.IsInside(from) || !m_House.IsActive)
+
+            //			if ( !m_House.IsInside( from ) || !m_House.IsActive )
+            if (!m_House.IsHouseRegion(from) || !m_House.IsActive)
                 return;
 
             else if (e.HasKeyword(0x33)) // remove thyself
@@ -368,7 +371,8 @@ namespace Server.Regions
             {
                 if (isOwner)
                 {
-                    from.SendLocalizedMessage(502109); // Owners do not get a strongbox of their own.
+                    m_House.AddStrongBox(from);
+                    //from.SendLocalizedMessage(502109); // Owners do not get a strongbox of their own.
                 }
                 else if (isCoOwner)
                 {

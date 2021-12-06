@@ -1258,8 +1258,10 @@ namespace Server.Items
 			var addon = Addon;
 
 			addon.MoveToWorld(loc, m.Map);
+            //addon.Map = m.Map;
+            //var owner = addon.FindOwner();
 
-			/*if (house is TownHouse)
+            /*if (house is TownHouse)
 			{
 				var th = (TownHouse)house;
 
@@ -1274,7 +1276,7 @@ namespace Server.Items
 				}
 			}*/
 
-			Delete();
+            Delete();
 		}
 
 		protected void OnTargetFail(Mobile m)

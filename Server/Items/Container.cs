@@ -271,7 +271,7 @@ namespace Server.Items
             }
 
 			var parent = Parent;
-
+			
             while (parent != null)
             {
                 if (parent is Container)

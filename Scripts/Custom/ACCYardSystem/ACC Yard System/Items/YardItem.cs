@@ -69,6 +69,10 @@ namespace Server.ACC.YS
             HasMoved = true;
             MoveToWorld(location, from.Map);
 
+            if (Placer == null && house != null)
+            {
+                Placer = house.Owner;
+            }
             if (house == null)
             {
                 FindHouseOfPlacer();
@@ -189,20 +193,30 @@ namespace Server.ACC.YS
                     }
             }
 
-            if (House == null)
+            if (Placer == null && House != null)
+            {
+                Placer = House.Owner;
+            }
+
+            if (Placer != null && House == null)
             {
                 FindHouseOfPlacer();
-                if (House == null)
-                {
-                    Refund();                    
-                }
+            }
+
+            if (House == null || Placer == null)
+            {
+                Delete();
             }
         }
+       
         #endregion
 
         #region Methods
         public void Refund()
         {
+            if (Placer == null)
+                return;
+
             Gold toGive = new Gold(Price);
             if (Placer.BankBox.TryDropItem(Placer, toGive, false))
             {

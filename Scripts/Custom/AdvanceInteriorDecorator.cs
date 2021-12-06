@@ -63,9 +63,16 @@ namespace Server.Items
 
         public static bool InHouse(Mobile from)
         {
-            BaseHouse house = BaseHouse.FindHouseAt(from);
+            //			BaseHouse house = BaseHouse.FindHouseAt( from );
+            Region reg = Region.Find(from.Location, from.Map);
+            BaseHouse house = null;
+            if (reg is HouseRegion)
+            {
+                HouseRegion hreg = reg as HouseRegion;
+                house = hreg.House;
 
-            return (house != null && house.IsFriend(from));
+            }
+            return (house != null && house.IsCoOwner(from));
         }
 
         public static bool CheckUse(InteriorDecorator tool, Mobile from)
@@ -293,7 +300,15 @@ namespace Server.Items
                 }
                 else if (targeted is Item && CheckUse(m_Decorator, from))
                 {
-                    BaseHouse house = BaseHouse.FindHouseAt(from);
+                    //					BaseHouse house = BaseHouse.FindHouseAt( from );
+                    Region reg = Region.Find(from.Location, from.Map);
+                    BaseHouse house = null;
+                    if (reg is HouseRegion)
+                    {
+                        HouseRegion hreg = reg as HouseRegion;
+                        house = hreg.House;
+                    }
+
                     Item item = (Item)targeted;
 
                     bool isDecorableComponent = false;
@@ -349,7 +364,8 @@ namespace Server.Items
                     {
                         from.SendLocalizedMessage(502092); // You must be in your house to do
                     }
-                    else if (item.Parent != null || !house.IsInside(item))
+                    //					else if ( item.Parent != null || !house.IsInside( item ) )
+                    else if (item.Parent != null || !house.IsHouseRegion(item))
                     {
                         from.SendLocalizedMessage(1042270); // That is not in your house.
                     }

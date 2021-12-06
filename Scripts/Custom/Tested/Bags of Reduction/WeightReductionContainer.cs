@@ -374,8 +374,40 @@ namespace Server.Items
             : base(serial)
         {
         }
+		public override bool CheckHold(Mobile m, Item item, bool message, bool checkItems, int plusItems, int plusWeight)
+		{
+			if (!m.IsStaff())
+			{
+				if (IsDecoContainer)
+				{
+					if (message)
+					{
+						SendCantStoreMessage(m, item);
+					}
 
-        public override void Serialize(GenericWriter writer)
+					return false;
+				}
+
+				int maxItems = MaxItems;
+
+				if (checkItems && maxItems != 0 &&
+					(TotalItems + plusItems + item.TotalItems + (item.IsVirtualItem ? 0 : 1)) > maxItems)
+				{
+					if (message)
+					{
+						SendFullItemsMessage(m, item);
+					}
+
+					return false;
+				}
+			}
+			
+			// If weight reduction container, don't for weight
+
+			return true;
+		}
+
+		public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);
 

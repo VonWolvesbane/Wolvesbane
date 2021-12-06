@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 
+using Server;
 using Server.Accounting;
 using Server.ContextMenus;
 using Server.Guilds;
@@ -16,6 +17,10 @@ using Server.Regions;
 using Server.Targeting;
 using Server.Engines.Auction;
 using Server.Engines.NewMagincia;
+
+using System.Net.Mail;
+using Server.Engines.BulkOrders;
+using Server.Engines.Plants;
 
 namespace Server.Multis
 {
@@ -1098,19 +1103,20 @@ namespace Server.Multis
 
         public List<Item> GetItems()
         {
-            if (Map == null || Map == Map.Internal)
+            if (this.Map == null || this.Map == Map.Internal)
                 return new List<Item>();
 
-            Point2D start = new Point2D(X + Components.Min.X, Y + Components.Min.Y);
-            Point2D end = new Point2D(X + Components.Max.X + 1, Y + Components.Max.Y + 1);
+            Point2D start = new Point2D(this.X + Components.Min.X, this.Y + Components.Min.Y);
+            Point2D end = new Point2D(this.X + Components.Max.X + 1, this.Y + Components.Max.Y + 1);
             Rectangle2D rect = new Rectangle2D(start, end);
 
             List<Item> list = new List<Item>();
 
-            IPooledEnumerable eable = Map.GetItemsInBounds(rect);
+            IPooledEnumerable eable = this.Map.GetItemsInBounds(rect);
 
             foreach (Item item in eable)
-                if (item.Movable && IsInside(item))
+                //				if ( item.Movable && IsInside( item ) )
+                if (item.Movable && IsHouseRegion(item))
                     list.Add(item);
 
             eable.Free();
@@ -1120,13 +1126,14 @@ namespace Server.Multis
 
         public List<Mobile> GetMobiles()
         {
-            if (Map == null || Map == Map.Internal)
+            if (this.Map == null || this.Map == Map.Internal)
                 return new List<Mobile>();
 
             List<Mobile> list = new List<Mobile>();
 
             foreach (Mobile mobile in Region.GetMobiles())
-                if (IsInside(mobile))
+                //				if ( IsInside( mobile ) )
+                if (IsHouseRegion(mobile))
                     list.Add(mobile);
 
             return list;
@@ -1169,21 +1176,24 @@ namespace Server.Multis
 
         public static bool CheckLockedDown(Item item)
         {
-            BaseHouse house = FindHouseAt(item);
+            //			BaseHouse house = FindHouseAt( item );
+            BaseHouse house = GetHouseRegion(item);
 
             return (house != null && house.IsLockedDown(item));
         }
 
         public static bool CheckSecured(Item item)
         {
-            BaseHouse house = FindHouseAt(item);
+            //			BaseHouse house = FindHouseAt( item );
+            BaseHouse house = GetHouseRegion(item);
 
             return (house != null && house.IsSecure(item));
         }
 
         public static bool CheckLockedDownOrSecured(Item item)
         {
-            BaseHouse house = FindHouseAt(item);
+            //			BaseHouse house = FindHouseAt( item );
+            BaseHouse house = GetHouseRegion(item);
 
             return (house != null && (house.IsSecure(item) || house.IsLockedDown(item)));
         }
@@ -1212,9 +1222,11 @@ namespace Server.Multis
             return list;
         }
 
+
         public static bool CheckHold(Mobile m, Container cont, Item item, bool message, bool checkItems, int plusItems, int plusWeight)
         {
-            BaseHouse house = FindHouseAt(cont);
+            //			BaseHouse house = FindHouseAt( cont );
+            BaseHouse house = GetHouseRegion(cont);
 
             if (house == null || !house.IsAosRules)
                 return true;
@@ -1235,23 +1247,20 @@ namespace Server.Multis
             if (m.AccessLevel >= AccessLevel.GameMaster)
                 return true; // Staff can access anything
 
-            BaseHouse house = FindHouseAt(item);
+            //			BaseHouse house = FindHouseAt( item );
+            BaseHouse house = GetHouseRegion(item);
 
             if (house == null)
                 return true;
 
             SecureAccessResult res = house.CheckSecureAccess(m, item);
 
-            switch ( res )
+            switch (res)
             {
-                case SecureAccessResult.Insecure:
-                    break;
-                case SecureAccessResult.Accessible:
-                    return true;
-                case SecureAccessResult.Inaccessible:
-                    return false;
+                case SecureAccessResult.Insecure: break;
+                case SecureAccessResult.Accessible: return true;
+                case SecureAccessResult.Inaccessible: return false;
             }
-
             if (house.IsLockedDown(item))
                 return house.IsCoOwner(m) && (item is Container);
 
@@ -1291,6 +1300,65 @@ namespace Server.Multis
 
             return null;
         }
+
+
+
+            public bool IsHouseRegion(Mobile m)
+            {
+                if (m == null || m.Deleted || m.Map != this.Map)
+                    return false;
+
+                return IsHouseRegion(m.Location, m.Map);
+            }
+
+            public bool IsHouseRegion(Item item)
+            {
+                if (item == null || item.Deleted || item.Map != this.Map)
+                    return false;
+
+                return IsHouseRegion(item.Location, item.Map);
+            }
+
+        public virtual bool IsHouseRegion(Point3D p, Map map)
+        {
+            return Region != null && Region.Map == map && Region.Contains(p);
+        }
+        public static BaseHouse GetHouseRegion(Mobile m)
+        {
+            if (m == null || m.Deleted || m.Map == null)
+                return null;
+
+            return GetHouseRegion(m.Location, m.Map);
+        }
+
+        public static BaseHouse GetHouseRegion(Item item)
+        {
+            if (item == null || item.Deleted || item.Map == null)
+                return null;
+
+            return GetHouseRegion(item.Location, item.Map);
+        }
+
+        public static BaseHouse GetHouseRegion(Point3D p, Map map)
+        {
+            Region reg = Region.Find(p, map);
+            BaseHouse house = null;
+            if (reg is HouseRegion)
+            {
+                HouseRegion hreg = reg as HouseRegion;
+                house = hreg.House;
+            }
+            return house;
+        }
+
+        public static BaseHouse GetHouseRegion(Point3D loc, Map map, int height)
+        {
+            if (map == null || map == Map.Internal)
+                return null;
+
+            return GetHouseRegion(loc, map);
+        }
+
 
         public bool IsInside(Mobile m)
         {
@@ -2136,7 +2204,7 @@ namespace Server.Multis
 
         public bool LockDown(Mobile m, Item item, bool checkIsInside)
         {
-            if (!IsFriend(m) || !IsActive)
+            if (!IsCoOwner(m) || !IsActive)
                 return false;
 
             if ((item is BaseAddonContainer || item.Movable) && !IsSecure(item))
@@ -2150,7 +2218,8 @@ namespace Server.Multis
                 {
                     m.SendLocalizedMessage(1005525);//That is not in your house
                 }
-                else if (checkIsInside && !IsInside(item.GetWorldLocation(), item.ItemData.Height))
+                //				else if ( checkIsInside && !IsInside( item.GetWorldLocation(), item.ItemData.Height ) )
+                else if (checkIsInside && !IsHouseRegion(item))
                 {
                     m.SendLocalizedMessage(1005525);//That is not in your house
                 }
@@ -2514,8 +2583,6 @@ namespace Server.Multis
                 return true;
 
             Account acct = one.Account as Account;
-			if (acct == null)
-				return false;
 
             for (int i = 0; i < acct.Length; ++i)
             {
@@ -2566,7 +2633,7 @@ namespace Server.Multis
             if (m_Secures == null || !IsCoOwner(m) || !IsActive)
                 return;
 
-            if (!IsInside(item))
+            if (!IsHouseRegion(item))
             {
                 m.SendLocalizedMessage(1005525); // That is not in your house
             }
@@ -2865,11 +2932,14 @@ namespace Server.Multis
             {
                 from.SendLocalizedMessage(501348); // You cannot eject a friend of the house!
             }
-            else if (targ is PlayerVendor)
+            // Prevent banning house bankers etc
+            else if (targ is PlayerVendor || targ is BaseVendor)
             {
                 from.SendLocalizedMessage(501351); // You cannot eject a vendor.
             }
-            else if (!IsInside(targ))
+            // David: Allow kicking from courtyard (HouseRegion)
+            //			else if ( !IsInside( targ ) )
+            else if (!IsHouseRegion(targ))
             {
                 from.SendLocalizedMessage(501352); // You may not eject someone who is not in your house!
             }
@@ -2897,7 +2967,7 @@ namespace Server.Multis
             {
                 m_Access.Remove(targ);
 
-                if (!HasAccess(targ) && IsInside(targ))
+                if (!HasAccess(targ) && IsHouseRegion(targ))
                 {
                     targ.Location = BanLocation;
                     targ.SendLocalizedMessage(1060734); // Your access to this house has been revoked.
@@ -2925,7 +2995,10 @@ namespace Server.Multis
             if (!IsFriend(from) || m_Bans == null)
                 return;
 
-            if (targ.IsStaff() && from.AccessLevel <= targ.AccessLevel)
+            if (!IsFriend(from) || m_Bans == null)
+                return;
+
+            if (targ.AccessLevel > AccessLevel.Player && from.AccessLevel <= targ.AccessLevel)
             {
                 from.SendLocalizedMessage(501354); // Uh oh...a bigger boot may be required.
             }
@@ -2933,7 +3006,8 @@ namespace Server.Multis
             {
                 from.SendLocalizedMessage(501348); // You cannot eject a friend of the house!
             }
-            else if (targ is PlayerVendor)
+            // Prevent banning house bankers etc
+            else if (targ is PlayerVendor || targ is BaseVendor)
             {
                 from.SendLocalizedMessage(501351); // You cannot eject a vendor.
             }
@@ -2945,7 +3019,9 @@ namespace Server.Multis
             {
                 from.SendLocalizedMessage(501356); // This person is already banned!
             }
-            else if (!IsInside(targ))
+            // David: I Ban Thee should work in courtyards
+            //			else if ( !IsInside( targ ) )
+            else if (!IsHouseRegion(targ))
             {
                 from.SendLocalizedMessage(501352); // You may not eject someone who is not in your house!
             }
@@ -5149,7 +5225,8 @@ namespace Server.Multis
 
         public static ISecurable GetSecurable(Mobile from, Item item)
         {
-            BaseHouse house = BaseHouse.FindHouseAt(item);
+            //			BaseHouse house = BaseHouse.FindHouseAt( item );
+            BaseHouse house = BaseHouse.GetHouseRegion(item);
 
             if (house == null || !house.IsAosRules)
                 return null;
@@ -5212,7 +5289,8 @@ namespace Server.Multis
                 Mobile owner = sec is SecureInfo ? ((SecureInfo)sec).Owner : Owner.From;
 
                 Owner.From.CloseGump(typeof (SetSecureLevelGump));
-                Owner.From.SendGump(new SetSecureLevelGump(owner, sec, BaseHouse.FindHouseAt(m_Item)));
+                //				Owner.From.SendGump( new SetSecureLevelGump( Owner.From, sec, BaseHouse.FindHouseAt( m_Item ) ) );
+                Owner.From.SendGump(new SetSecureLevelGump(Owner.From, sec, BaseHouse.GetHouseRegion(m_Item))); ;
             }
         }
     }
@@ -5235,7 +5313,8 @@ namespace Server.Multis
 
         public override void OnClick()
         {
-            if (Mobile.Alive && BaseHouse.FindHouseAt(Mobile) == House && House.IsOwner(Mobile))
+            //if (Mobile.Alive && BaseHouse.FindHouseAt(Mobile) == House && House.IsOwner(Mobile))
+            if (Mobile.Alive && BaseHouse.GetHouseRegion(Mobile) == House && House.IsOwner(Mobile))
             {
                 if (Mobile.Backpack == null || !Mobile.Backpack.CheckHold(Mobile, Item, false))
                 {
