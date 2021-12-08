@@ -1483,55 +1483,74 @@ namespace Server.Items
 			}
 		}
 
+
+		// Override so I can force animal and owner name before weight 
+		public override void AddWeightProperty(ObjectPropertyList list)
+		{
+			string s = m_MobTypeString;
+
+			int capsbreak = s.IndexOfAny("ABCDEFGHIJKLMNOPQRSTUVWXYZ".ToCharArray(), 1);
+
+			if (capsbreak > -1)
+			{
+				string secondhalf = s.Substring(capsbreak);
+				string firsthalf = s.Substring(0, capsbreak);
+
+				list.Add(1060658, "Name\t{0}, Breed: {1} {2}, Owner: {3}", m_PetName, firsthalf, secondhalf, (m_PetOwner == null) ? "nobody" : m_PetOwner.Name);
+			}
+			else
+			{
+				list.Add(1060658, "Name\t{0}, Breed: {1}, Owner: {2}", m_PetName, m_MobTypeString, (m_PetOwner == null) ? "nobody" : m_PetOwner.Name);
+			}
+
+		}
+
+
 		public override void AddNameProperties( ObjectPropertyList list )
 		{
 			base.AddNameProperties( list );
 
 			if ( m_MobTypeString != null )
 			{
-				if ( m_PetBonded != false )
-					list.Add( 1049608 );
+				string line1 = "";
+				if (m_PetBonded != false)
+					line1 = Solaris.CliLocHandler.CliLoc.LocToString(1049608) + ", ";
 				
-				if ( m_Locked == true )
+				line1 = line1 + "(" + (m_Locked ? "Locked" : "Unlocked") + ")";
+
+				if (m_Gen > 0)
+					line1 = line1 + String.Format(", Generation: {0}", m_Gen);
+
+				if (m_Level > 0)
+					line1 = line1 + String.Format(", Level: {0}/{1}", m_Level, m_MaxLevel);
+				list.Add(line1);
+
+				if (m_MatingDelay > DateTime.Now)
 				{
-					list.Add( 1049644, "Locked" );
+					list.Add(String.Format("Mating Delay Until: {0}", m_MatingDelay));
+				}
+
+				string weightString = "";
+				if (Weight > 0)
+				{
+					int weight = PileWeight + TotalWeight;
+
+					if (weight == 1)
+					{
+						weightString = Solaris.CliLocHandler.CliLoc.LocToString(1072788, weight.ToString()); //Weight: ~1_WEIGHT~ stone
+					}
+					else
+					{
+						weightString = Solaris.CliLocHandler.CliLoc.LocToString(1072789, weight.ToString()); //Weight: ~1_WEIGHT~ stones
+					}
+					list.Add(1060659, "Stats\tStrength {0}, Dexterity {1}, Intelligence {2}, {3}", m_PetStr, m_PetDex, m_PetInt, weightString);
 				}
 				else
 				{
-					list.Add( 1049644, "Unlocked" );
+					list.Add(1060659, "Stats\tStrength {0}, Dexterity {1}, Intelligence {2}", m_PetStr, m_PetDex, m_PetInt);
 				}
-
-				string s = m_MobTypeString;
-
-				int capsbreak = s.IndexOfAny("ABCDEFGHIJKLMNOPQRSTUVWXYZ".ToCharArray(),1);
-
-				if( capsbreak > -1 )
-				{
-					string secondhalf = s.Substring( capsbreak );
- 					string firsthalf = s.Substring(0, capsbreak );
-
-					list.Add( 1060663, "Name\t{0} Breed: {1} {2}", m_PetName, firsthalf, secondhalf );
-				}
-				else
-				{
-					list.Add( 1060663, "Name\t{0} Breed: {1}", m_PetName, m_MobTypeString );
-				}
-
-				list.Add( 1061640, (m_PetOwner == null ) ? "nobody" : m_PetOwner.Name ); // Owner: ~1_OWNER~
-				list.Add( 1060659, "Stats\tStrength {0}, Dexterity {1}, Intelligence {2}", m_PetStr, m_PetDex, m_PetInt );
 				list.Add( 1060660, "Combat Skills\tWrestling {0}, Tactics {1}, Anatomy {2}, Poisoning {3}", m_PetWrestling, m_PetTactics, m_PetAnatomy, m_PetPoisoning );
-				list.Add( 1060661, "Magic Skills\tMagery {0}, Eval Intel {1}, Magic Resist {2}, Meditation {3}", m_PetMagery, m_PetEvalInt, m_PetResist, m_PetMed );
-				
-				if ( m_Level != 0 )
-						
-			    if ( m_IsFemale == true )
-				{
-					list.Add( 1060662, "Level\t{0}, MaxLevel: {1} Gender: Female", m_Level, m_MaxLevel);
-				}
-				else
-				{
-					list.Add( 1060662, "Level\t{0}, MaxLevel: {1} Gender: Male", m_Level, m_MaxLevel);
-				}
+				list.Add( 1060661, "Magic Skills\tMagery {0}, Eval Intel {1}, Magic Resist {2}, Meditation {3}", m_PetMagery, m_PetEvalInt, m_PetResist, m_PetMed );	
 			}
 		}
 
