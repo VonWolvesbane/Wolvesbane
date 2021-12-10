@@ -205,170 +205,173 @@ namespace Server.Items
             }
         }
 
-        public RecipeBookGump(Mobile from, RecipeBook book, int page, List<RecipeScrollDefinition> list)
-            : base(12, 24)
-        {
-            from.CloseGump(typeof(RecipeBookGump));
-            from.CloseGump(typeof(RecipeScrollFilterGump));
+		public RecipeBookGump(Mobile from, RecipeBook book, int page, List<RecipeScrollDefinition> list)
+			: base(12, 24)
+		{
+			from.CloseGump(typeof(RecipeBookGump));
+			from.CloseGump(typeof(RecipeScrollFilterGump));
 
-            m_Book = book;
-            m_Page = page;
+			m_Book = book;
+			m_Page = page;
 
-            if (list == null)
-            {
-                list = new List<RecipeScrollDefinition>();
-                
-                m_Book.Recipes.ForEach(x =>
-                {
-                    if (CheckFilter(x))
-                    {
-                        list.Add(x);
-                    }
-                });
-            }
+			if (list == null)
+			{
+				list = new List<RecipeScrollDefinition>();
 
-            m_List = list;
+				m_Book.Recipes.ForEach(x =>
+				{
+					if (CheckFilter(x))
+					{
+						list.Add(x);
+					}
+				});
+			}
 
-            int index = GetIndexForPage(page);
-            int count = GetCountForIndex(index);
+			m_List = list;
 
-            int tableIndex = 0;
+			int index = GetIndexForPage(page);
+			int count = GetCountForIndex(index);
 
-            PlayerVendor pv = book.RootParent as PlayerVendor;
+			int tableIndex = 0;
 
-            bool canLocked = book.IsLockedDown;
-            bool canDrop = book.IsChildOf(from.Backpack);
-            bool canBuy = (pv != null);
-            bool canPrice = (canDrop || canBuy || canLocked);
+			PlayerVendor pv = book.RootParent as PlayerVendor;
 
-            if (canBuy)
-            {
-                VendorItem vi = pv.GetVendorItem(book);
+			bool canLocked = book.IsLockedDown;
+			bool canDrop = book.IsChildOf(from.Backpack);
+			bool canBuy = (pv != null);
+			bool canPrice = (canDrop || canBuy || canLocked);
 
-                canBuy = (vi != null && !vi.IsForSale);
-            }
+			if (canBuy)
+			{
+				VendorItem vi = pv.GetVendorItem(book);
 
-            int width = 600;
+				canBuy = (vi != null && !vi.IsForSale);
+			}
 
-            if (!canPrice)
-                width = 516;
+			int width = 600;
 
-            X = (624 - width) / 2;
+			if (!canPrice)
+				width = 516;
 
-            AddPage(0);
+			X = (624 - width) / 2;
 
-            AddBackground(10, 10, width, 439, 5054);
-            AddImageTiled(18, 20, width - 17, 420, 2624);
+			AddPage(0);
 
-            if (canPrice)
-            {
-                AddImageTiled(573, 64, 24, 352, 200);
-                AddImageTiled(493, 64, 78, 352, 1416);
-            }
+			AddBackground(10, 10, width, 439, 5054);
+			AddImageTiled(18, 20, width - 17, 420, 2624);
 
-            if (canDrop)
-                AddImageTiled(24, 64, 32, 352, 1416);
+			if (canPrice)
+			{
+				AddImageTiled(573, 64, 24, 352, 200);
+				AddImageTiled(493, 64, 78, 352, 1416);
+			}
 
-            AddImageTiled(58, 64, 36, 352, 200);
-            AddImageTiled(96, 64, 133, 352, 1416);
-            AddImageTiled(231, 64, 80, 352, 200);
-            AddImageTiled(313, 64, 100, 352, 1416);
-            AddImageTiled(415, 64, 76, 352, 200);
+			if (canDrop)
+				AddImageTiled(24, 64, 32, 352, 1416);
 
-            list = list.OrderBy(x => x.ID).ToList();
+			AddImageTiled(58, 64, 36, 352, 200);
+			AddImageTiled(96, 64, 133, 352, 1416);
+			AddImageTiled(231, 64, 80, 352, 200);
+			AddImageTiled(313, 64, 100, 352, 1416);
+			AddImageTiled(415, 64, 76, 352, 200);
 
-            for (int i = index; i < (index + count) && i >= 0 && i < list.Count; ++i)
-            {
-                var recipe = list[i];
+			list = list.OrderBy(x => x.ID).ToList();
 
-                if (!CheckFilter(recipe))
-                    continue;
+			for (int i = index; i < (index + count) && i >= 0 && i < list.Count; ++i)
+			{
+				var recipe = list[i];
 
-                AddImageTiled(24, 94 + (tableIndex * 32), canPrice ? 573 : 489, 2, 2624);
-                
-                ++tableIndex;
-            }
+				if (!CheckFilter(recipe))
+					continue;
 
-            AddAlphaRegion(18, 20, width - 17, 420);
-            AddImage(0, 0, 10460);
-            AddImage(width - 15, 5, 10460);
-            AddImage(0, 429, 10460);
-            AddImage(width - 15, 429, 10460);
+				AddImageTiled(24, 94 + (tableIndex * 32), canPrice ? 573 : 489, 2, 2624);
 
-            AddHtmlLocalized(266, 32, 200, 32, 1158810, LabelColor, false, false); // Recipe Book
+				++tableIndex;
+			}
 
-            AddHtmlLocalized(147, 64, 200, 32, 1062214, LabelColor, false, false); // Item
-            AddHtmlLocalized(246, 64, 200, 32, 1158814, LabelColor, false, false); // Expansion
-            AddHtmlLocalized(336, 64, 200, 32, 1158816, LabelColor, false, false); // Crafting
-            AddHtmlLocalized(429, 64, 100, 32, 1062217, LabelColor, false, false); // Amount
-            
-            AddHtmlLocalized(70, 32, 200, 32, 1062476, LabelColor, false, false); // Set Filter
-            AddButton(35, 32, 4005, 4007, 1, GumpButtonType.Reply, 0);
+			AddAlphaRegion(18, 20, width - 17, 420);
+			AddImage(0, 0, 10460);
+			AddImage(width - 15, 5, 10460);
+			AddImage(0, 429, 10460);
+			AddImage(width - 15, 429, 10460);
 
-            RecipeScrollFilter f = book.Filter;
+			AddHtmlLocalized(266, 32, 200, 32, 1158810, LabelColor, false, false); // Recipe Book
 
-            if (f.IsDefault)
-                AddHtmlLocalized(canPrice ? 470 : 386, 32, 120, 32, 1062475, 16927, false, false); // Using No Filter
-            else if (((PlayerMobile)from).UseOwnFilter)
-                AddHtmlLocalized(canPrice ? 470 : 386, 32, 120, 32, 1062451, 16927, false, false); // Using Your Filter
-            else
-                AddHtmlLocalized(canPrice ? 470 : 386, 32, 120, 32, 1062230, 16927, false, false); // Using Book Filter
+			AddHtmlLocalized(147, 64, 200, 32, 1062214, LabelColor, false, false); // Item
+			AddHtmlLocalized(246, 64, 200, 32, 1158814, LabelColor, false, false); // Expansion
+			AddHtmlLocalized(336, 64, 200, 32, 1158816, LabelColor, false, false); // Crafting
+			AddHtmlLocalized(429, 64, 100, 32, 1062217, LabelColor, false, false); // Amount
 
-            AddButton(375, 416, 4017, 4018, 0, GumpButtonType.Reply, 0);
-            AddHtmlLocalized(410, 416, 120, 20, 1011441, LabelColor, false, false); // EXIT
+			AddHtmlLocalized(70, 32, 200, 32, 1062476, LabelColor, false, false); // Set Filter
+			AddButton(35, 32, 4005, 4007, 1, GumpButtonType.Reply, 0);
 
-            if (canDrop)
-                AddHtmlLocalized(26, 64, 50, 32, 1062212, LabelColor, false, false); // Drop
+			RecipeScrollFilter f = book.Filter;
 
-            if (canPrice)
-            {
-                AddHtmlLocalized(516, 64, 200, 32, 1062218, LabelColor, false, false); // Price
+			if (f.IsDefault)
+				AddHtmlLocalized(canPrice ? 470 : 386, 32, 120, 32, 1062475, 16927, false, false); // Using No Filter
+			else if (((PlayerMobile)from).UseOwnFilter)
+				AddHtmlLocalized(canPrice ? 470 : 386, 32, 120, 32, 1062451, 16927, false, false); // Using Your Filter
+			else
+				AddHtmlLocalized(canPrice ? 470 : 386, 32, 120, 32, 1062230, 16927, false, false); // Using Book Filter
 
-                if (canBuy)
-                    AddHtmlLocalized(576, 64, 200, 32, 1062219, LabelColor, false, false); // Buy
-                else
-                    AddHtmlLocalized(576, 64, 200, 32, 1062227, LabelColor, false, false); // Set
-            }
+			AddButton(375, 416, 4017, 4018, 0, GumpButtonType.Reply, 0);
+			AddHtmlLocalized(410, 416, 120, 20, 1011441, LabelColor, false, false); // EXIT
 
-            tableIndex = 0;
+			if (canDrop)
+				AddHtmlLocalized(26, 64, 50, 32, 1062212, LabelColor, false, false); // Drop
 
-            if (page > 0)
-            {
-                AddButton(75, 416, 4014, 4016, 2, GumpButtonType.Reply, 0);
-                AddHtmlLocalized(110, 416, 150, 20, 1011067, LabelColor, false, false); // Previous page
-            }
+			if (canPrice)
+			{
+				AddHtmlLocalized(516, 64, 200, 32, 1062218, LabelColor, false, false); // Price
 
-            if (GetIndexForPage(page + 1) < list.Count)
-            {
-                AddButton(225, 416, 4005, 4007, 3, GumpButtonType.Reply, 0);
-                AddHtmlLocalized(260, 416, 150, 20, 1011066, LabelColor, false, false); // Next page
-            }
+				if (canBuy)
+					AddHtmlLocalized(576, 64, 200, 32, 1062219, LabelColor, false, false); // Buy
+				else
+					AddHtmlLocalized(576, 64, 200, 32, 1062227, LabelColor, false, false); // Set
+			}
 
-            for (int i = index; i < (index + count) && i >= 0 && i < list.Count; ++i)
-            {
-                var recipe = list[i];
+			tableIndex = 0;
 
-                if (!CheckFilter(recipe))
-                    continue;                
+			if (page > 0)
+			{
+				AddButton(75, 416, 4014, 4016, 2, GumpButtonType.Reply, 0);
+				AddHtmlLocalized(110, 416, 150, 20, 1011067, LabelColor, false, false); // Previous page
+			}
 
-                int y = 96 + (tableIndex++ * 32);
+			if (GetIndexForPage(page + 1) < list.Count)
+			{
+				AddButton(225, 416, 4005, 4007, 3, GumpButtonType.Reply, 0);
+				AddHtmlLocalized(260, 416, 150, 20, 1011066, LabelColor, false, false); // Next page
+			}
 
-                if (recipe.Amount > 0 && (canDrop || canLocked))
-                    AddButton(35, y + 2, 5602, 5606, 4 + (i * 2), GumpButtonType.Reply, 0);                    
+			for (int i = index; i < (index + count) && i >= 0 && i < list.Count; ++i)
+			{
+				var recipe = list[i];
 
-                AddLabel(61, y, 0x480, String.Format("{0}", recipe.ID));
-                AddHtmlLocalized(103, y, 130, 32, Recipe.Recipes[recipe.RecipeID].TextDefinition.Number, "#103221", 0xFFFFFF, false, false); // ~1_val~
-                AddLabel(235, y, 0x480, GetExpansion(recipe.Expansion));
-                AddHtmlLocalized(316, y, 100, 20, GetSkillName(recipe.Skill), "#104409", 0xFFFFFF, false, false); // ~1_val~
-                AddLabel(421, y, 0x480, recipe.Amount.ToString());
+				if (!CheckFilter(recipe))
+					continue;
 
-                if (canDrop || (canBuy && recipe.Price > 0))
-                {
-                    AddButton(579, y + 2, 2117, 2118, 5 + (i * 2), GumpButtonType.Reply, 0);
-                    AddLabel(495, y, 1152, recipe.Price.ToString("N0"));
-                }
-            }
-        }
+				if (!Recipe.Recipes.ContainsKey(recipe.RecipeID))
+					continue;
+
+				int y = 96 + (tableIndex++ * 32);
+
+				if (recipe.Amount > 0 && (canDrop || canLocked))
+					AddButton(35, y + 2, 5602, 5606, 4 + (i * 2), GumpButtonType.Reply, 0);
+
+				AddLabel(61, y, 0x480, String.Format("{0}", recipe.ID));
+				AddHtmlLocalized(103, y, 130, 32, Recipe.Recipes[recipe.RecipeID].TextDefinition.Number, "#103221", 0xFFFFFF, false, false); // ~1_val~
+				AddLabel(235, y, 0x480, GetExpansion(recipe.Expansion));
+				AddHtmlLocalized(316, y, 100, 20, GetSkillName(recipe.Skill), "#104409", 0xFFFFFF, false, false); // ~1_val~
+				AddLabel(421, y, 0x480, recipe.Amount.ToString());
+
+				if (canDrop || (canBuy && recipe.Price > 0))
+				{
+					AddButton(579, y + 2, 2117, 2118, 5 + (i * 2), GumpButtonType.Reply, 0);
+					AddLabel(495, y, 1152, recipe.Price.ToString("N0"));
+				}
+			}
+		}
 
         public override void OnResponse(NetState sender, RelayInfo info)
         {
