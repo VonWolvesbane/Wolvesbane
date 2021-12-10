@@ -68,7 +68,37 @@ namespace Server.Items
                     from.SendMessage("You cannot put self repair on that");
                 }
             }
+            else
+            if (target is BaseJewel)
+            {
+                Item item = (Item)target;
+
+                if (((BaseJewel)item).MaxHitPoints == 0)
+                {
+                    from.SendMessage("That doesn't need self repair!");
+                }
+                else
+                {
+                    if (item.RootParent != from) // Make sure its in their pack or they are wearing it
+                    {
+                        from.SendMessage("You cannot put self repair on that there!"); // You cannot bless that object
+                    }
+                    else
+                    {
+                        ((BaseJewel)item).MaxHitPoints = 0;
+                        from.SendMessage("You magically remove the need to repair....");
+
+                        m_Deed.Delete(); // Delete the deed
+                    }
+                }
+            }
+            else
+            {
+                from.SendMessage("You cannot put self repair on that");
+            }
+
         }
+
 
         public class SelfRepairDeed : Item // Create the item class which is derived from the base item class
         {
