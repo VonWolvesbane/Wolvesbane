@@ -4274,6 +4274,7 @@
     <Compile Include="Items\Tools\WhiteLeatherDyeTub.cs" />
     <Compile Include="Misc\Aggression.cs" />
     <Compile Include="Misc\ArchivedSaves.cs" />
+    <Compile Include="Mobiles\Bosses\Mr.Bones.cs" />
     <Compile Include="Mobiles\Normal\BaseCreature.cs" />
     <Compile Include="Mobiles\Normal\Triton.cs" />
     <Compile Include="Mobiles\Normal\Eowmu.cs" />

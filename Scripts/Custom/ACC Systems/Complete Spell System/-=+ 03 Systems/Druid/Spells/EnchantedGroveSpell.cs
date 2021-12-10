@@ -27,7 +27,7 @@ namespace Server.ACC.CSS.Systems.Druid
             get { return SpellCircle.Eighth; }
         }
 
-		public override double CastDelay{ get{ return 7.0; } }
+		public override double CastDelay{ get{ return 4.0; } }
 		public override double RequiredSkill{ get{ return 95.0; } }
 		public override int RequiredMana{ get{ return 60; } }
 
@@ -64,7 +64,7 @@ namespace Server.ACC.CSS.Systems.Druid
 				grovex=loc.X;
 				grovey=loc.Y;
 				grovez=loc.Z;
-				groveStone.ItemID=0x08E3;
+				groveStone.ItemID=0x1777;
 				groveStone.Name="sacred stone";
 				Point3D stonexyz = new Point3D(grovex,grovey,grovez);
 				groveStone.MoveToWorld( stonexyz, Caster.Map );
@@ -215,12 +215,12 @@ namespace Server.ACC.CSS.Systems.Druid
 				if ( Deleted )
 					return;
 
-				m_Timer = new InternalTimer( this, TimeSpan.FromSeconds( 30.0 ) );
+				m_Timer = new InternalTimer( this, TimeSpan.FromSeconds( 60.0 ) );
 				m_Timer.Start();
 				m_Bless = new BlessTimer( this, m_Caster );
 				m_Bless.Start();
 
-				m_End = DateTime.Now + TimeSpan.FromSeconds( 30.0 );
+				m_End = DateTime.Now + TimeSpan.FromSeconds( 60.0 );
 			}
 
 			public InternalItem( Serial serial ) : base( serial )
