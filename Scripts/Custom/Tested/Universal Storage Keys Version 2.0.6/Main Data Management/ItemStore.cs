@@ -249,7 +249,19 @@ namespace Solaris.ItemStore
                         return;
                     }
 
-                    from.AddToBackpack(item);
+					if (this.Owner is BaseStoreKey)
+					{
+						BaseStoreKey key = this.Owner as BaseStoreKey;
+						Container cont = key.Parent as Container;
+						if (cont == null || cont.TryDropItem(from, item, false) == false)
+						{
+							from.AddToBackpack(item);
+						}
+					}
+					else
+					{
+						from.AddToBackpack(item);
+					}
                 }
             }
             else
