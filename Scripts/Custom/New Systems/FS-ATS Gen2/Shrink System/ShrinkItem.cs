@@ -1518,6 +1518,8 @@ namespace Server.Items
 				
 				line1 = line1 + "(" + (m_Locked ? "Locked" : "Unlocked") + ")";
 
+				line1 = line1 + " Gender: " + (m_IsFemale ? "Female" : "Male");
+
 				if (m_Gen > 0)
 					line1 = line1 + String.Format(", Generation: {0}", m_Gen);
 
