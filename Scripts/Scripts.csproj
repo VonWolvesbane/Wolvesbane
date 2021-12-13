@@ -978,6 +978,8 @@
     <Compile Include="Custom\Addons\WolvesbaneAddons\CoW Wood CabinAddon.cs" />
     <Compile Include="Custom\Addons\WolvesbaneAddons\DockCityAddon.cs" />
     <Compile Include="Custom\Addons\WolvesbaneAddons\DockTownStoneAddon.cs" />
+    <Compile Include="Custom\Addons\WolvesbaneAddons\ExchangeSteviesShirt\StevieShirtExchangerQuestGumps.cs" />
+    <Compile Include="Custom\Addons\WolvesbaneAddons\ExchangeSteviesShirt\StevieShirtExchangerQuest.cs" />
     <Compile Include="Custom\Addons\WolvesbaneAddons\NewTrainingAddon.cs" />
     <Compile Include="Custom\Addons\WolvesbaneAddons\PrivateIslandAddon.cs" />
     <Compile Include="Custom\Addons\WolvesbaneAddons\RockGarden2Addon.cs" />
@@ -2183,6 +2185,7 @@
     <Compile Include="Custom\Reapers Uploads\Ticket TP\TicketMoongate.cs" />
     <Compile Include="Custom\Reapers Uploads\UnlimitedPetLeash.cs" />
     <Compile Include="Custom\Reapers Uploads\[ServUO.com]-CompletelyCustomizableVendor.cs" />
+    <Compile Include="Custom\RoyalGargishTamingSash.cs" />
     <Compile Include="Custom\Tested\AP_EventGate.cs" />
     <Compile Include="Custom\Tested\Goliath\GargishArmsOfEvolution.cs" />
     <Compile Include="Custom\Tested\Goliath\GargishChestOfEvolution.cs" />
@@ -2232,6 +2235,7 @@
     <Compile Include="Custom\Wolvesbane Written\Dogs\Rottweiler.cs" />
     <Compile Include="Custom\Wolvesbane Written\Dogs\Saint Bernard.cs" />
     <Compile Include="Custom\Wolvesbane Written\EvoWolf\BaseChivMountEvo.cs" />
+    <Compile Include="Custom\Wolvesbane Written\EvoWolf\EvoWolfReincarnationDeed.cs" />
     <Compile Include="Custom\Wolvesbane Written\EvoWolf\GuardianWolfEvo.cs" />
     <Compile Include="Custom\Wolvesbane Written\EvoWolf\WolfDust.cs" />
     <Compile Include="Custom\Wolvesbane Written\EvoWolf\WolfEgg.cs" />
@@ -4274,7 +4278,6 @@
     <Compile Include="Items\Tools\WhiteLeatherDyeTub.cs" />
     <Compile Include="Misc\Aggression.cs" />
     <Compile Include="Misc\ArchivedSaves.cs" />
-    <Compile Include="Mobiles\Bosses\Mr.Bones.cs" />
     <Compile Include="Mobiles\Normal\BaseCreature.cs" />
     <Compile Include="Mobiles\Normal\Triton.cs" />
     <Compile Include="Mobiles\Normal\Eowmu.cs" />
