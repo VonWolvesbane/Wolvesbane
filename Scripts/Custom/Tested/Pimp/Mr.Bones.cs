@@ -6,11 +6,11 @@ using Server.Items;
 namespace Server.Mobiles
 
               {
-              [CorpseName( " corpse of the Pimp" )]
-              public class MrBones : BoneDemon
+              [CorpseName( "corpse of the Pimp" )]
+              public class ThePimp : BoneDemon
               {
                                  [Constructable]
-                                    public MrBones() : base()
+                                    public ThePimp() : base()
                             {
                                                Name = "Mr. Bones";
 					       Title = "The Pimp";
@@ -58,7 +58,7 @@ namespace Server.Mobiles
                                  public override bool Unprovokable{ get{ return true; } }
                                  public override Poison HitPoison{ get{ return Poison. Lethal ; } }
 
-public MrBones( Serial serial ) : base( serial )
+public ThePimp( Serial serial ) : base( serial )
                       {
                       }
 

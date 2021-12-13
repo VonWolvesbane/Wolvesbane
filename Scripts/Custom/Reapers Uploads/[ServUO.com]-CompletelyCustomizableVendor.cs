@@ -8,6 +8,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
+using daat99;
 using Server;
 using Server.ContextMenus;
 using Server.Engines.XmlSpawner2;
@@ -2918,8 +2919,9 @@ namespace System.CustomizableVendor
 
             Container bank = buyer.BankBox;
             Container pack = buyer.Backpack;
+			Container masterstorage = MasterStorageUtils.GetMasterStorage(buyer as PlayerMobile);
 
-            if (pack == null || bank == null)
+			if (pack == null || bank == null)
             {
                 return false;
             }
