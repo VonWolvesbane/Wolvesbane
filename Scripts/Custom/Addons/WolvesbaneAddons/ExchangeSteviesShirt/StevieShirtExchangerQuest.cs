@@ -15,6 +15,8 @@ namespace Server.Mobiles
 	[CorpseName("Gargoyle")]
 	public class StevieShirtExchanger : Mobile
 	{
+
+		internal const int RequiredPoints = 5000;
 		public virtual bool IsInvulnerable { get { return true; } }
 		[Constructable]
 		public StevieShirtExchanger()
@@ -94,7 +96,8 @@ namespace Server.Mobiles
 						return;
 					}
 
-					if (Server.Engines.Points.PointsSystem.QueensLoyalty.IsNoble(mobile))
+					double points = Server.Engines.Points.PointsSystem.QueensLoyalty.GetPoints(mobile);
+					if (points > RequiredPoints)
 					{
 						if (!mobile.HasGump(typeof(StevieShirtExchangerQuestGump1)))
 						{
@@ -122,8 +125,8 @@ namespace Server.Mobiles
 			if (mobile.Race == Race.Gargoyle)
 			{
 
-				//double points = Server.Engines.Points.PointsSystem.QueensLoyalty.GetPoints(from);
-				if (Server.Engines.Points.PointsSystem.QueensLoyalty.IsNoble(mobile))
+				double points = Server.Engines.Points.PointsSystem.QueensLoyalty.GetPoints(from);
+				if (points > RequiredPoints)
 				{
 					if (dropped is StevesShirt)
 					{
