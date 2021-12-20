@@ -352,7 +352,22 @@ namespace Xanthos.Evo
 						SetHits( HitsMax + Utility.RandomMinMax( stage.HitsMin, stage.HitsMax ));
 						SetDamage( DamageMin + stage.DamageMin, DamageMax + stage.DamageMax );
 					}
-
+					// at final stage max magic resist
+					if ((m_Stage + 1) == spec.Stages.Length)
+					{
+						double magicResist = Skills[SkillName.MagicResist].Value;
+						double maxResist = -1;
+						for (int index = 0; index < spec.Skills.Length; index++)
+						{
+							if (spec.Skills[index] == SkillName.MagicResist)
+							{
+								maxResist = spec.MaxSkillValues[index];
+								break;
+							}
+						}
+						if (maxResist > magicResist)
+							SetSkill(SkillName.MagicResist, maxResist);
+					}
 					if ( null != stage.DamagesTypes )
 					{
 						for ( int i = 0; i < stage.DamagesTypes.Length; i++ )

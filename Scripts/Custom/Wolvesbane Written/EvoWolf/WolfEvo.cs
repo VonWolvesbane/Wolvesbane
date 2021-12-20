@@ -52,6 +52,10 @@ namespace Xanthos.Evo
 			base.Deserialize(reader);
 
 			int version = reader.ReadInt();
+
+			// Temporary to fix up all existing wolves
+			if (Stage >= 4)
+				SetSkill(SkillName.MagicResist, 200, 200);
 		}
 	}
 }
