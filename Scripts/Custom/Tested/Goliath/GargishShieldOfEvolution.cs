@@ -5,7 +5,7 @@ using Server;
 
 namespace Server.Items
 {
-	public class GargishShieldOfEvolution: MetalKiteShield
+	public class GargishShieldOfEvolution: GargishKiteShield
 	{
 
 		private int mEvolutionPoints = 0;
