@@ -1213,7 +1213,52 @@ namespace Server.Items
         }
     }
 
-    public class BearMask : BaseHat, IRepairable
+	#region Stygian Abyss
+	public class GargishBandana : BaseHat
+	{
+		[Constructable]
+		public GargishBandana()
+			: this(0)
+		{
+		}
+
+		[Constructable]
+		public GargishBandana(int hue)
+			: base(0x1540, hue)
+		{
+
+		}
+
+		public GargishBandana(Serial serial)
+			: base(serial)
+		{
+		}
+
+		public override bool CanBeWornByGargoyles
+		{
+			get
+			{
+				return true;
+			}
+		}
+
+		public override void Serialize(GenericWriter writer)
+		{
+			base.Serialize(writer);
+
+			writer.Write((int)0); // version
+		}
+
+		public override void Deserialize(GenericReader reader)
+		{
+			base.Deserialize(reader);
+
+			int version = reader.ReadInt();
+		}
+	}
+	#endregion
+
+	public class BearMask : BaseHat, IRepairable
     {
         public CraftSystem RepairSystem { get { return DefTailoring.CraftSystem; } }
 
