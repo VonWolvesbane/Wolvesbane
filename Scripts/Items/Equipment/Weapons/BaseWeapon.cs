@@ -277,6 +277,7 @@ namespace Server.Items
         public virtual WeaponAbility PrimaryAbility { get { return null; } }
 		public virtual WeaponAbility SecondaryAbility { get { return null; } }
 
+
 		public virtual int DefMaxRange { get { return 1; } }
 		public virtual int DefHitSound { get { return 0; } }
 		public virtual int DefMissSound { get { return 0; } }
@@ -828,6 +829,7 @@ namespace Server.Items
 
 		public override void OnAfterDuped(Item newItem)
 		{
+
             base.OnAfterDuped(newItem);
 
 			BaseWeapon weap = newItem as BaseWeapon;
@@ -852,6 +854,8 @@ namespace Server.Items
 			#region SA
 			weap.m_SAAbsorptionAttributes = new SAAbsorptionAttributes(newItem, m_SAAbsorptionAttributes);
 			#endregion
+
+			weap.MaxRange = MaxRange; 
 		}
 
 		public virtual void UnscaleDurability()

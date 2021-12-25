@@ -1039,13 +1039,29 @@ namespace Server.Items
             m_SetSkillBonuses = new AosSkillBonuses(this);
             #endregion
         }
+		public virtual void CopyFromArmor(BaseArmor oldArmor)
+		{
+			m_AosClothingAttributes = oldArmor.ArmorAttributes;
 
-        public override void OnAfterDuped(Item newItem)
+			m_AosSkillBonuses = oldArmor.SkillBonuses;
+			m_NegativeAttributes = new NegativeAttributes(this, oldArmor.NegativeAttributes);
+			Resistances.Physical = oldArmor.PhysicalResistance;
+			Resistances.Fire = oldArmor.FireResistance;
+			Resistances.Poison = oldArmor.PoisonResistance;
+			Resistances.Energy = oldArmor.EnergyResistance;
+			Resistances.Cold = oldArmor.ColdResistance;
+			m_AosAttributes = oldArmor.Attributes;
+
+			#region Mondain's Legacy
+			m_SetAttributes = new AosAttributes(this, oldArmor.SetAttributes);
+			m_SetSkillBonuses = new AosSkillBonuses(this, oldArmor.SetSkillBonuses);
+			#endregion
+
+		}
+
+		public override void OnAfterDuped(Item newItem)
         {
             BaseClothing clothing = newItem as BaseClothing;
-
-            if (clothing == null)
-                return;
 
             clothing.m_AosAttributes = new AosAttributes(newItem, m_AosAttributes);
             clothing.m_AosResistances = new AosElementAttributes(newItem, m_AosResistances);
