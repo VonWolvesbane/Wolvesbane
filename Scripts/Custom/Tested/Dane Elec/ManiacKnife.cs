@@ -21,8 +21,7 @@ namespace Server.Items
         {
             Weight = 0.0;
             Name = "Knife of the Maniacal Tailor";
-            Speed = Utility.Random( 50, 75 );
-
+			Speed = Utility.RandomMinMax(200, 300) / 100f;
 
             Hue = 2075;
             Slayer = SlayerName.ElementalBan;
@@ -79,6 +78,10 @@ namespace Server.Items
             base.Deserialize(reader);
 
             int version = reader.ReadInt();
-        }
+
+			// Temp to fix old knives
+			if (Speed > 5)
+				Speed = Utility.RandomMinMax(200, 300) / 100f;
+		}
     }
 }
