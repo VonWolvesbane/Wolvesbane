@@ -1056,7 +1056,6 @@ namespace Server.Items
 			m_SetAttributes = new AosAttributes(this, oldArmor.SetAttributes);
 			m_SetSkillBonuses = new AosSkillBonuses(this, oldArmor.SetSkillBonuses);
 			#endregion
-
 		}
 
 		public override void OnAfterDuped(Item newItem)
@@ -1064,16 +1063,29 @@ namespace Server.Items
             BaseClothing clothing = newItem as BaseClothing;
 
             clothing.m_AosAttributes = new AosAttributes(newItem, m_AosAttributes);
-            clothing.m_AosResistances = new AosElementAttributes(newItem, m_AosResistances);
-            clothing.m_AosSkillBonuses = new AosSkillBonuses(newItem, m_AosSkillBonuses);
+			clothing.m_AosAttributes.BonusStr = ComputeStatBonus(StatType.Str) - clothing.BaseStrBonus;
+			clothing.m_AosAttributes.BonusDex = ComputeStatBonus(StatType.Dex) - clothing.BaseDexBonus;
+			clothing.m_AosAttributes.BonusInt = ComputeStatBonus(StatType.Int) - clothing.BaseIntBonus;
+
+			clothing.m_AosResistances = new AosElementAttributes(newItem, m_AosResistances);
+
+			// Make adjustments off Base resistances
+			clothing.m_AosResistances.Physical = PhysicalResistance - clothing.BasePhysicalResistance;
+			clothing.m_AosResistances.Poison = PoisonResistance - clothing.BasePoisonResistance;
+			clothing.m_AosResistances.Fire = FireResistance - clothing.BaseFireResistance;
+			clothing.m_AosResistances.Cold = ColdResistance - clothing.BaseColdResistance;
+			clothing.m_AosResistances.Energy = EnergyResistance - clothing.BaseEnergyResistance;
+
+			clothing.m_AosSkillBonuses = new AosSkillBonuses(newItem, m_AosSkillBonuses);
             clothing.m_AosClothingAttributes = new AosArmorAttributes(newItem, m_AosClothingAttributes);
+
             clothing.m_SAAbsorptionAttributes = new SAAbsorptionAttributes(newItem, m_SAAbsorptionAttributes);
             clothing.m_NegativeAttributes = new NegativeAttributes(newItem, m_NegativeAttributes);
 
             #region Mondain's Legacy
             clothing.m_SetAttributes = new AosAttributes(newItem, m_SetAttributes);
             clothing.m_SetSkillBonuses = new AosSkillBonuses(newItem, m_SetSkillBonuses);
-            #endregion
+			#endregion
 
             base.OnAfterDuped(newItem);
         }

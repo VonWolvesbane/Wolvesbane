@@ -855,7 +855,7 @@ namespace Server.Items
 			weap.m_SAAbsorptionAttributes = new SAAbsorptionAttributes(newItem, m_SAAbsorptionAttributes);
 			#endregion
 
-			weap.MaxRange = MaxRange; 
+			weap.MaxRange = MaxRange;
 		}
 
 		public virtual void UnscaleDurability()
