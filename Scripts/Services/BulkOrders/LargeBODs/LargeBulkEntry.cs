@@ -560,7 +560,7 @@ namespace Server.Engines.BulkOrders
             if (type != null)
                 realType = ScriptCompiler.FindTypeByFullName(type);
 
-            this.m_Details = new SmallBulkEntry(realType, reader.ReadInt(), reader.ReadInt(), version == 0 ? 0 : reader.ReadInt());
+            this.m_Details = new SmallBulkEntry(realType, reader.ReadInt(), reader.ReadInt(), reader.ReadInt());
         }
 
         public void Serialize(GenericWriter writer)
@@ -571,5 +571,5 @@ namespace Server.Engines.BulkOrders
             writer.Write(this.m_Details.Graphic);
             writer.Write(this.m_Details.Hue);
         }
-    }
+	}
 }

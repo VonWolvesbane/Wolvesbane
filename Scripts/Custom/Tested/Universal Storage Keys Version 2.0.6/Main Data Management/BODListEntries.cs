@@ -632,7 +632,7 @@ namespace Solaris.ItemStore
             _Entries = new LargeBulkEntry[count];
             for (int i = 0; i < count; i++)
             {
-              //  _Entries[i] = new LargeBulkEntry(null,reader);
+				_Entries[i] = new LargeBulkEntry(null,reader, version);
             }
 
             GenerateContentsName();
