@@ -34,7 +34,6 @@ namespace Server.Items
         {
             if (Utility.Random(2) == 1)
             {
-                Console.WriteLine("should be applying gain");
                 ApplyGain();
             }
 
