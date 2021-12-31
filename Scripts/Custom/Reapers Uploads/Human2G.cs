@@ -227,23 +227,24 @@ namespace Server.Items
 						}
 						success = true;
 					}
-
-					if (success)
-					{
-						newItem.Parent = null;
-						if (from.Backpack == null)
-							newItem.MoveToWorld(from.Location, from.Map);
-						else
-							from.Backpack.DropItem(newItem);
-
-						newItem.InvalidateProperties();
-
-						oldItem.Delete();
-						m_Deed.Delete();
-						return;
-					}
 				}
 			}
+			if (success)
+			{
+				newItem.Parent = null;
+				if (from.Backpack == null)
+					newItem.MoveToWorld(from.Location, from.Map);
+				else
+					from.Backpack.DropItem(newItem);
+
+				newItem.InvalidateProperties();
+
+				oldItem.Delete();
+				m_Deed.Delete();
+				return;
+			}
+
+
 			from.SendMessage("You cannot Change that");
 		}
 		
