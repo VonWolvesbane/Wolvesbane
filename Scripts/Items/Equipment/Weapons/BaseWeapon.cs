@@ -825,6 +825,7 @@ namespace Server.Items
                     list.Add(new UnBlessEntry(from, this));
                 }
             }
+
         }
 
 		public override void OnAfterDuped(Item newItem)
@@ -6050,7 +6051,13 @@ namespace Server.Items
             {
                 list.Add(1158861, LastParryChance.ToString()); // Last Parry Chance: ~1_val~%
             }
-        }
+
+			string p = PrimaryAbility.ToString().Split('.').Last();
+			p = System.Text.RegularExpressions.Regex.Replace(p, "[A-Z]", " $0");
+			string s = SecondaryAbility.ToString().Split('.').Last();
+			s = System.Text.RegularExpressions.Regex.Replace(s, "[A-Z]", " $0");
+			list.Add(String.Format("Abilities:{0},{1}", p, s));
+		}
 
         public override void AddItemPowerProperties(ObjectPropertyList list)
         {
