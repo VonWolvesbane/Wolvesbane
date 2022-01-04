@@ -79,7 +79,8 @@ namespace Server.Items
 				}
 				else
 				{
-					m.SendMessage("The maximum number of pets are already in this " + DefaultName);
+					if (message)
+						m.SendMessage("The maximum number of pets are already in this " + DefaultName);
 					return false;
 				}
 
@@ -92,12 +93,14 @@ namespace Server.Items
 				}
 				else
 				{
-					m.SendMessage("Only 1 leash can be put in this " + DefaultName);
+					if (message)
+						m.SendMessage("Only 1 leash can be put in this " + DefaultName);
 					return false;
 				}
 			}
 
-			m.SendMessage("Only Pets or a leash may be put into this " + DefaultName);
+			if (message)
+				m.SendMessage("Only Pets or a leash may be put into this " + DefaultName);
 			return false;
 		}
 

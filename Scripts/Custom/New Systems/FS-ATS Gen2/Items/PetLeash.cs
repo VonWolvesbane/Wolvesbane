@@ -102,97 +102,97 @@ namespace Server.Items
           
          	protected override void OnTarget( Mobile from, object target ) 
          	{ 
-								Container pack = from.Backpack.FindItemByType(typeof(PetBag ) )as Container;
-								
-            	if ( target == from ) 
-               	from.SendMessage( "You cant shrink yourself!" );
+				Container pack = from.Backpack.FindItemByType(typeof(PetBag ) )as Container;
 
-				else if ( target is PlayerMobile )
-				from.SendMessage( "That person gives you a dirty look." );
+				if (target == from)
+					from.SendMessage("You cant shrink yourself!");
 
-				else if ( target is Item )
-				from.SendMessage( "You can only shrink pets that you own" );
+				else if (target is PlayerMobile)
+					from.SendMessage("That person gives you a dirty look.");
 
-				else if ( target is BaseBioCreature && FSATS.EnableBioShrink == false )
-				from.SendMessage( "Unnatural creatures cannot be shrunk" ); 
+				else if (target is Item)
+					from.SendMessage("You can only shrink pets that you own");
 
-				else if ( Server.Spells.SpellHelper.CheckCombat( from ) )
-				from.SendMessage( "You cannot shrink your pet while your fighting." );
+				else if (target is BaseBioCreature && FSATS.EnableBioShrink == false)
+					from.SendMessage("Unnatural creatures cannot be shrunk");
 
-          		else if ( target is BaseCreature ) 
-          		{ 
-          			BaseCreature c = (BaseCreature)target;
+				else if (Server.Spells.SpellHelper.CheckCombat(from))
+					from.SendMessage("You cannot shrink your pet while your fighting.");
+
+				else if (target is BaseCreature)
+				{
+					BaseCreature c = (BaseCreature)target;
 
 					bool packanimal = false;
 					Type typ = c.GetType();
 					string nam = typ.Name;
 
-					foreach ( string ispack in FSATS.PackAnimals )
+					foreach (string ispack in FSATS.PackAnimals)
 					{
-						if ( ispack == nam )
-    						packanimal = true;
+						if (ispack == nam)
+							packanimal = true;
 					}
-	
+
 					/* if ( c.BodyValue == 400 || c.BodyValue == 401 && c.Controlled == false )
 					{
 						from.SendMessage( "That person gives you a dirty look." );
 					} */
-					if ( c.ControlMaster != from && c.Controlled == false )
+					if (c.ControlMaster != from && c.Controlled == false)
 					{
-						from.SendMessage( "This is not your pet." );
+						from.SendMessage("This is not your pet.");
 					}
-					else if ( packanimal == true && (c.Backpack != null && c.Backpack.Items.Count > 0) )
+					else if (packanimal == true && (c.Backpack != null && c.Backpack.Items.Count > 0))
 					{
-						from.SendMessage( "You must unload your pets backpack first." );
+						from.SendMessage("You must unload your pets backpack first.");
 					}
-					else if ( c.IsDeadPet )
-					{ 
-						from.SendMessage( "You cannot shrink the dead." );
-					}	
-					else if ( c.Summoned )
-					{ 
-						from.SendMessage( "You cannot shrink a summoned creature." );
-					}
-					else if ( c.Combatant != null && c.InRange( c.Combatant, 12 ) && c.Map == c.Combatant.Map )
+					else if (c.IsDeadPet)
 					{
-						from.SendMessage( "Your pet is fighting, You cannot shrink it yet." );
+						from.SendMessage("You cannot shrink the dead.");
 					}
-					else if ( c.BodyMod != 0 )
+					else if (c.Summoned)
 					{
-						from.SendMessage( "You cannot shrink your pet while its polymorphed." );
+						from.SendMessage("You cannot shrink a summoned creature.");
 					}
-									
-					else if ( pack == null  )
+					else if (c.Combatant != null && c.InRange(c.Combatant, 12) && c.Map == c.Combatant.Map)
 					{
-							from.SendMessage( "You need the Pet Bag to shrink a pet." );
+						from.SendMessage("Your pet is fighting, You cannot shrink it yet.");
 					}
-					
-					else if ( c.Controlled == true && c.ControlMaster == from)
+					else if (c.BodyMod != 0)
 					{
+						from.SendMessage("You cannot shrink your pet while its polymorphed.");
+					}
 
-						//new edit
+					else if (pack == null)
+					{
+						from.SendMessage("You need the Pet Bag to shrink a pet.");
+					}
 
-						if (pack.TotalItems <= 4)
-						{
-								
+					else if (c.Controlled == true && c.ControlMaster == from)
+					{
 						Type type = c.GetType();
-        				ShrinkItem si = new ShrinkItem();
+						ShrinkItem si = new ShrinkItem();
+						if (!pack.CheckHold(from, si, true, true, 0, 0))
+						{
+							si.Delete();
+							return;
+						}
+
 						si.MobType = type;
 						si.Pet = c;
 						si.PetOwner = from;
 
-						if ( c is BaseMount )
+						if (c is BaseMount)
 						{
 							BaseMount mount = (BaseMount)c;
 							si.MountID = mount.ItemID;
 						}
-						IEntity p1 = new Entity( Serial.Zero, new Point3D( from.X, from.Y, from.Z ), from.Map );
-						IEntity p2 = new Entity( Serial.Zero, new Point3D( from.X, from.Y, from.Z + 50 ), from.Map );
+						IEntity p1 = new Entity(Serial.Zero, new Point3D(from.X, from.Y, from.Z), from.Map);
+						IEntity p2 = new Entity(Serial.Zero, new Point3D(from.X, from.Y, from.Z + 50), from.Map);
 
-						Effects.SendMovingParticles( p2, p1, ShrinkTable.Lookup( c ), 1, 0, true, false, 0, 3, 1153, 1, 0, EffectLayer.Head, 0x100 );
-						from.PlaySound( 492 );
+						Effects.SendMovingParticles(p2, p1, ShrinkTable.Lookup(c), 1, 0, true, false, 0, 3, 1153, 1, 0, EffectLayer.Head, 0x100);
+						from.PlaySound(492);
 
-						c.Controlled = true; 
+						c.Controlled = true;
 						c.ControlMaster = null;
 						c.Internalize();
 
@@ -201,23 +201,19 @@ namespace Server.Items
 						c.IsStabled = true;
 
 						m_Powder.Charges -= 1;
-						if ( m_Powder.Charges == 0 )
-						m_Powder.Delete();
-						
-								pack.DropItem( si );
+						if (m_Powder.Charges == 0)
+							m_Powder.Delete();
 
-							}
-							else
-							{
-								from.SendMessage( "Your pet bag is full." );
-							}
-						//end of new edit
-						
-        				//from.AddToBackpack( si );
-
+						pack.DropItem(si);
 
 					}
-            	}
+					else
+					{
+						from.SendMessage("Your pet bag is full.");
+					}
+					//end of new edit
+				}
+            
          	} 
       	} 
    	} 
