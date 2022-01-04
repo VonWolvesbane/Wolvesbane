@@ -56,19 +56,49 @@ namespace Server.Items
 			maxHeldAmount = reader.ReadInt();
         }
 
-		private bool ItemAddIntoCheck(Mobile from, Item item)
-		{
-			if (item.GetType() != typeof(ShrinkItem))
-			{
-				from.SendMessage("Only Pets may be put into this " + DefaultName);
-				return false;
-			}
-			return true;
-		}
-
 		public override bool CheckHold(Mobile m, Item item, bool message, bool checkItems, int plusItems, int plusWeight)
 		{
-			return ItemAddIntoCheck(m, item) && base.CheckHold(m, item, message, checkItems, plusItems, plusWeight);
+			if (m.IsStaff())
+				return true;
+
+
+			int petCount = 0;
+			int leashCount = 0;
+			foreach (var i in Items)
+			{
+				if (i is PetLeash || i is UnlimitedPetLeash)
+					leashCount += 1;
+				if (i is ShrinkItem)
+					petCount += 1;
+			}
+
+			if (item is ShrinkItem)
+				if (petCount < MaxItems)
+				{
+					return true;
+				}
+				else
+				{
+					m.SendMessage("The maximum number of pets are already in this " + DefaultName);
+					return false;
+				}
+
+			// Note: The 1 pet leash is not counted as an item in the container Max
+			if (item is PetLeash || item is UnlimitedPetLeash)
+			{
+				if (leashCount < 1)
+				{
+					return true;
+				}
+				else
+				{
+					m.SendMessage("Only 1 leash can be put in this " + DefaultName);
+					return false;
+				}
+			}
+
+			m.SendMessage("Only Pets or a leash may be put into this " + DefaultName);
+			return false;
 		}
 
 		public static T SplitItem<T>(T i, int amount) where T : Item
