@@ -79,8 +79,9 @@ namespace Server.Items
          		} 
           
          	protected override void OnTarget( Mobile from, object target ) 
-         	{ 
-            	if ( target == from ) 
+         	{
+
+				if ( target == from ) 
                	from.SendMessage( "You cant shrink yourself!" );
 
 				else if ( target is PlayerMobile )
@@ -141,10 +142,36 @@ namespace Server.Items
 					//{
 					//	from.SendMessage( "Your hold over this pet is not strong enough to shrink it." );
 					//}
+
 					else if ( c.Controlled == true && c.ControlMaster == from)
 					{
 						Type type = c.GetType();
         				ShrinkItem si = new ShrinkItem();
+						Container pack = from.Backpack.FindItemByType(typeof(PetBag)) as Container;
+						if (pack != null)
+						{
+							if (!pack.CheckHold(from, si, false, true, 0, 0))
+							{
+								pack = from.Backpack;
+								if (!pack.CheckHold(from, si, false, true, 0, 0))
+								{
+									from.SendMessage(54, "The pet cannot be placed in you backpack");
+									si.Delete();
+									return;
+								}
+							}
+						}
+						else 
+						{
+							pack = from.Backpack;
+							if (!pack.CheckHold(from, si, false, true, 0, 0))
+							{
+								from.SendMessage(54, "The pet cannot be placed in you backpack");
+								si.Delete();
+								return;
+							}
+						}
+
 						si.MobType = type;
 						si.Pet = c;
 						si.PetOwner = from;
@@ -155,7 +182,8 @@ namespace Server.Items
 							si.MountID = mount.ItemID;
 						}
 
-        				from.AddToBackpack( si );
+						pack.DropItem(si);
+						//from.AddToBackpack( si );
 
 						IEntity p1 = new Entity( Serial.Zero, new Point3D( from.X, from.Y, from.Z ), from.Map );
 						IEntity p2 = new Entity( Serial.Zero, new Point3D( from.X, from.Y, from.Z + 50 ), from.Map );
