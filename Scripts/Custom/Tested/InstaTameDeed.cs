@@ -111,20 +111,45 @@ namespace Server.Items
         {
             if (target is BaseCreature)
             {
-                BaseCreature t = (BaseCreature)target;
+                BaseCreature creature = (BaseCreature)target;
 
-                if (t.ControlMaster != null)
+                if (creature.ControlMaster != null)
                 {
                     from.SendMessage("That pet belongs to someone else!");
                 }
-                else if (t.Tamable == false)
+                else if (creature.Tamable == false)
                 {
                     from.SendMessage("That creature cannot be tamed!");
                 }
-                else
-                {
-                    t.Controlled = true;
-                    t.ControlMaster = from;
+				else if (from.Female && !creature.AllowFemaleTamer)
+				{
+					creature.PrivateOverheadMessage(MessageType.Regular, 0x3B2, 1049653, from.NetState);
+					// That creature can only be tamed by males.
+				}
+				else if (!from.Female && !creature.AllowMaleTamer)
+				{
+					creature.PrivateOverheadMessage(MessageType.Regular, 0x3B2, 1049652, from.NetState);
+					// That creature can only be tamed by females.
+				}
+				else if (from.Race == Race.Elf && !creature.AllowElfTamer)
+				{
+					creature.PrivateOverheadMessage(MessageType.Regular, 0x3B2, 502801, from.NetState);
+					// You can't tame that!
+				}
+				else if (from.Race == Race.Human && !creature.AllowHumanTamer)
+				{
+					creature.PrivateOverheadMessage(MessageType.Regular, 0x3B2, 502801, from.NetState);
+					// You can't tame that!
+				}
+				else if (from.Race == Race.Gargoyle && !creature.AllowGargTamer)
+				{
+					creature.PrivateOverheadMessage(MessageType.Regular, 0x3B2, 502801, from.NetState);
+					// You can't tame that!
+				}
+				else
+				{
+                    creature.Controlled = true;
+                    creature.ControlMaster = from;
                     from.SendMessage("You have instantly tamed your target.");
 
                     if (m_Deed != null)
@@ -133,7 +158,7 @@ namespace Server.Items
                     }
                     if (Obey == true)
                     {
-                        t.MinTameSkill = 0.00;
+                        creature.MinTameSkill = 0.00;
                     }
                 }
 

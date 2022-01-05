@@ -23,11 +23,12 @@ namespace Server.Mobiles
         }
 
         [Constructable]
-        public WolvesbanianImp(string name) : base(AIType.AI_Mage, FightMode.Closest, 10, 1, 0.2, 0.4)
+        public WolvesbanianImp(string name) : base(AIType.AI_NecroMage, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
         	
             Hue = 2850;
 			Body = 0x4A;
+			Name = name;
 
 
 			SetStr(2500, 2555);
@@ -70,7 +71,11 @@ namespace Server.Mobiles
         }
 
         public override bool CanAngerOnTame { get { return true; } }
-        public override void GenerateLoot()
+		public override bool AllowHumanTamer { get { return false; } }
+		public override bool AllowElfTamer { get { return false; } }
+		public override bool AllowGargTamer { get { return true; } }
+
+		public override void GenerateLoot()
         {
             this.AddLoot(LootPack.FilthyRich, 4);
             this.AddLoot(LootPack.Gems, 4);

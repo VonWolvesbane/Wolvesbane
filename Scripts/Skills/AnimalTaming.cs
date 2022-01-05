@@ -159,26 +159,42 @@ namespace Server.SkillHandlers
 						if (!creature.Tamable)
 						{
 							creature.PrivateOverheadMessage(MessageType.Regular, 0x3B2, 1049655, from.NetState);
-								// That creature cannot be tamed.
+							// That creature cannot be tamed.
 						}
 						else if (creature.Controlled)
 						{
 							creature.PrivateOverheadMessage(MessageType.Regular, 0x3B2, 502804, from.NetState);
-								// That animal looks tame already.
+							// That animal looks tame already.
 						}
 						else if (from.Female && !creature.AllowFemaleTamer)
 						{
 							creature.PrivateOverheadMessage(MessageType.Regular, 0x3B2, 1049653, from.NetState);
-								// That creature can only be tamed by males.
+							// That creature can only be tamed by males.
 						}
 						else if (!from.Female && !creature.AllowMaleTamer)
 						{
 							creature.PrivateOverheadMessage(MessageType.Regular, 0x3B2, 1049652, from.NetState);
-								// That creature can only be tamed by females.
+							// That creature can only be tamed by females.
+						}
+						else if (from.Race == Race.Elf && !creature.AllowElfTamer)
+						{
+							creature.PrivateOverheadMessage(MessageType.Regular, 0x3B2, 502801, from.NetState);
+							// You can't tame that!
+						}
+						else if (from.Race == Race.Human && !creature.AllowHumanTamer)
+						{
+							creature.PrivateOverheadMessage(MessageType.Regular, 0x3B2, 502801, from.NetState);
+							// You can't tame that!
+						}
+						else if (from.Race == Race.Gargoyle && !creature.AllowGargTamer)
+						{
+							creature.PrivateOverheadMessage(MessageType.Regular, 0x3B2, 502801, from.NetState); 
+							// You can't tame that!
 						}
 						else if (creature is CuSidhe && from.Race != Race.Elf)
 						{
-							creature.PrivateOverheadMessage(MessageType.Regular, 0x3B2, 502801, from.NetState); // You can't tame that!
+							creature.PrivateOverheadMessage(MessageType.Regular, 0x3B2, 502801, from.NetState); 
+							// You can't tame that!
 						}
 						else if (from.Followers + creature.ControlSlots > from.FollowersMax)
 						{

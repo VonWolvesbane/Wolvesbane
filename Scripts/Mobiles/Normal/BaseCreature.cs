@@ -1398,7 +1398,12 @@ namespace Server.Mobiles
 
         public virtual bool AllowMaleTamer { get { return true; } }
         public virtual bool AllowFemaleTamer { get { return true; } }
-        public virtual bool SubdueBeforeTame { get { return false; } }
+
+		public virtual bool AllowHumanTamer { get { return true; } }
+		public virtual bool AllowElfTamer { get { return true; } }
+		public virtual bool AllowGargTamer { get { return true; } }
+
+		public virtual bool SubdueBeforeTame { get { return false; } }
         public virtual bool StatLossAfterTame { get { return SubdueBeforeTame; } }
         public virtual bool ReduceSpeedWithDamage { get { return true; } }
         public virtual bool IsSubdued { get { return SubdueBeforeTame && (Hits < ((double)HitsMax / 10)); } }
@@ -5047,7 +5052,20 @@ namespace Server.Mobiles
                 m_Mobile = creature;
 
                 Enabled = Enabled && (from.Female ? creature.AllowFemaleTamer : creature.AllowMaleTamer);
-            }
+
+				if (from.Race == Race.Elf)
+				{
+					Enabled = Enabled && creature.AllowElfTamer;
+				}
+				if (from.Race == Race.Human)
+				{
+					Enabled = Enabled && creature.AllowHumanTamer;
+				}
+				if (from.Race == Race.Gargoyle)
+				{
+					Enabled = Enabled && creature.AllowGargTamer;
+				}
+		}
 
             public override void OnClick()
             {
