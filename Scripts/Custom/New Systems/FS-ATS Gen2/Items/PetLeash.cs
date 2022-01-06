@@ -101,8 +101,7 @@ namespace Server.Items
          	} 
           
          	protected override void OnTarget( Mobile from, object target ) 
-         	{ 
-				Container pack = from.Backpack.FindItemByType(typeof(PetBag ) )as Container;
+         	{
 
 				if (target == from)
 					from.SendMessage("You cant shrink yourself!");
@@ -162,17 +161,30 @@ namespace Server.Items
 						from.SendMessage("You cannot shrink your pet while its polymorphed.");
 					}
 
-					else if (pack == null)
-					{
-						from.SendMessage("You need the Pet Bag to shrink a pet.");
-					}
-
 					else if (c.Controlled == true && c.ControlMaster == from)
 					{
 						Type type = c.GetType();
 						ShrinkItem si = new ShrinkItem();
-						if (!pack.CheckHold(from, si, true, true, 0, 0))
+						// Can it be stored in the leashes container (must be PetBag)
+						PetBag pack = m_Powder.Parent as PetBag;
+						if (pack != null)
 						{
+							if (!pack.CheckHold(from, si, false, true, 0, 0))							
+								pack = null;
+						}
+
+						// if it cannot be stored in the container, find a pet bag somewhere
+						if (pack == null)
+						{
+							pack = from.Backpack.FindItemByType(typeof(PetBag)) as PetBag;
+							if (pack != null && !pack.CheckHold(from, si, false, true, 0, 0))
+								pack = null;
+						}
+
+						// if no places to store it, dont shrink pet
+						if (pack == null)
+						{
+							from.SendMessage("You need a Pet Bag with space to shrink a pet.");
 							si.Delete();
 							return;
 						}

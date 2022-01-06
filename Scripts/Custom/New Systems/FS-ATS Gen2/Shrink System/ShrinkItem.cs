@@ -1148,6 +1148,25 @@ namespace Server.Items
 			{
 				if ( m_Mob != null )
 				{
+					PlayerMobile player = from as PlayerMobile;
+					if (player != null && Pet != null)
+					{
+						if (player.Race == Race.Elf && !Pet.AllowElfTamer)
+						{
+							from.SendMessage("You cannot reclaim that pet");
+							return;
+						}
+						else if (player.Race == Race.Human && !Pet.AllowHumanTamer)
+						{
+							from.SendMessage("You cannot reclaim that pet");
+							return;
+						}
+						else if (player.Race == Race.Gargoyle && !Pet.AllowGargTamer)
+						{
+							from.SendMessage("You cannot reclaim that pet");
+							return;
+						}
+					}
 					IEntity p1a = new Entity( Serial.Zero, new Point3D( from.X, from.Y, from.Z ), from.Map );
 					IEntity p2a = new Entity( Serial.Zero, new Point3D( from.X, from.Y, from.Z + 50 ), from.Map );
 
