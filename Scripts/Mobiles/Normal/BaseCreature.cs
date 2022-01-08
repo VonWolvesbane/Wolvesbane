@@ -6772,7 +6772,19 @@ namespace Server.Mobiles
         public override void AddNameProperties(ObjectPropertyList list)
         {
             base.AddNameProperties(list);
-			
+
+			if (Controlled)
+			{
+				if (ControlMaster != null)
+				{
+					list.Add(String.Format("Owner: {0}", ControlMaster.Name));
+				}
+				if (!String.IsNullOrEmpty(EngravedText))
+				{
+					list.Add(1157315, EngravedText); // <BASEFONT COLOR=#668cff>Branded: ~1_VAL~<BASEFONT COLOR=#FFFFFF>
+				}
+			}
+
 			#region FS:ATS Edits
 			if ( this.Tamable == true && FSATS.EnablePetBreeding == true )
 			{
@@ -6798,11 +6810,6 @@ namespace Server.Mobiles
 				}
 			}
 			#endregion
-
-            if (Controlled && !String.IsNullOrEmpty(EngravedText))
-            {
-                list.Add(1157315, EngravedText); // <BASEFONT COLOR=#668cff>Branded: ~1_VAL~<BASEFONT COLOR=#FFFFFF>
-            }
 
             if (Core.ML)
             {
