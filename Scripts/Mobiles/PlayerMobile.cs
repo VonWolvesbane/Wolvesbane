@@ -1710,6 +1710,12 @@ namespace Server.Mobiles
 
 				pm.BedrollLogout = false;
                 pm.BlanketOfDarknessLogout = false;
+				if (pm.Alive &&  pm.LastOnline < (DateTime.UtcNow - TimeSpan.FromMinutes(5)))
+				{
+					pm.Hits = pm.HitsMax;
+					pm.Mana = pm.ManaMax;
+					pm.Stam = pm.StamMax;
+				}
                 pm.LastOnline = DateTime.UtcNow;
 			}
 
