@@ -2201,6 +2201,7 @@
     <Compile Include="Custom\Reapers Uploads\[ServUO.com]-CompletelyCustomizableVendor.cs" />
     <Compile Include="Custom\RoyalGargishTamingSash.cs" />
     <Compile Include="Custom\Tested\AP_EventGate.cs" />
+    <Compile Include="Custom\Tested\RemoveUnwieldlyDeed.cs" />
     <Compile Include="Custom\Tested\Goliath\GargishArmsOfEvolution.cs" />
     <Compile Include="Custom\Tested\Goliath\GargishChestOfEvolution.cs" />
     <Compile Include="Custom\Tested\Goliath\GargishKiltOfEvolution.cs" />
