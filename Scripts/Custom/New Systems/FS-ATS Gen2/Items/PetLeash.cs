@@ -192,6 +192,7 @@ namespace Server.Items
 						si.MobType = type;
 						si.Pet = c;
 						si.PetOwner = from;
+						si.Name = c.Name;
 
 						if (c is BaseMount)
 						{
