@@ -82,7 +82,8 @@ namespace Server.Items
 
 		public virtual void OnChop(Mobile from)
 		{
-			var house = BaseHouse.FindHouseAt(this);
+			//var house = BaseHouse.FindHouseAt(this);
+			var house = BaseHouse.GetHouseRegion(this);
 
 			#region High Seas
 			var boat = BaseBoat.FindBoatAt(from, from.Map);

@@ -529,8 +529,8 @@ namespace Knives.TownHouses
 			c_RentByTime = TimeSpan.Zero;
 			c_RecurRent = true;
 
-			c_MinZ = short.MinValue;
-			c_MaxZ = short.MaxValue;
+			c_MinZ = -127;
+			c_MaxZ = 256;
 
 			Currency = typeof(Gold);
 

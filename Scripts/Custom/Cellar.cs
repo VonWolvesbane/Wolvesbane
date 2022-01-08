@@ -631,7 +631,8 @@ namespace Server.Items
 			return true;
 		}
 
-		public override BaseAddonDeed Deed { get { return new CellarDeed(_Style); } }
+		//public override BaseAddonDeed Deed { get { return new CellarDeed(_Style); } }
+		public override BaseAddonDeed Deed { get { return new CellarDeed(); } }
 
 		[CommandProperty(AccessLevel.Player, AccessLevel.GameMaster)]
 		public CellarStyle Style
