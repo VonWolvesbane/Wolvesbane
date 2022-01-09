@@ -245,7 +245,7 @@ namespace Server.Items
 				targets.AddRange(player.AllFollowers);
 				foreach (Mobile pet in targets)
 				{
-					if (pet is BaseCreature)
+					if (pet is BaseCreature && player.Mount != pet)
 					{
 						leash.DoTarget(from, pet);
 					}
@@ -253,5 +253,15 @@ namespace Server.Items
 			}
 
 		}
+		public override void Serialize(GenericWriter writer)
+		{
+			base.Serialize(writer);
+		}
+
+		public override void Deserialize(GenericReader reader)
+		{
+			base.Deserialize(reader);
+		}
+
 	}
 }
