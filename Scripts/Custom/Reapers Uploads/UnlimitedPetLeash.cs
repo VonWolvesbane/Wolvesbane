@@ -6,108 +6,111 @@ using Server.Network;
 using Server.Menus; 
 using Server.Menus.Questions; 
 using Server.Mobiles; 
-using System.Collections; 
+using System.Collections;
 //Crafter by ReApEr
 
-namespace Server.Items 
-{ 
-   	public class UnlimitedPetLeash : Item 
-   	{ 
-    
-      		[Constructable] 
-      		public UnlimitedPetLeash() : base( 0x1374 ) 
-      		{ 
-						Hue = 1154;
-         		Weight = 1.0;  
-         		Movable = true;
-         		Name="Unlimited PetLeash";   
-      		} 
-			public override void GetProperties(ObjectPropertyList list)
-			{
+namespace Server.Items
+{
+	public class UnlimitedPetLeash : Item
+	{
+
+		[Constructable]
+		public UnlimitedPetLeash() : base(0x1374)
+		{
+			Hue = 1154;
+			Weight = 1.0;
+			Movable = true;
+			Name = "Unlimited PetLeash";
+		}
+		public override void GetProperties(ObjectPropertyList list)
+		{
 			base.GetProperties(list);
-	
+
 			list.Add("Look at me I'm special");
-			}
-      		public UnlimitedPetLeash( Serial serial ) : base( serial ) 
-      		{ 
-      		} 
-      		public override void OnDoubleClick( Mobile from ) 
-      		{ 
+		}
+		public UnlimitedPetLeash(Serial serial) : base(serial)
+		{
+		}
+		public override void OnDoubleClick(Mobile from)
+		{
 
-			if ( !IsChildOf( from.Backpack ) )
+			if (!IsChildOf(from.Backpack))
 			{
-				from.SendLocalizedMessage( 1042001 ); // That must be in your pack for you to use it.
+				from.SendLocalizedMessage(1042001); // That must be in your pack for you to use it.
 			}
-			else if( from.InRange( this.GetWorldLocation(), 1 ) ) 
+			else if (from.InRange(this.GetWorldLocation(), 1))
 			{
 
-        			this.SendLocalizedMessageTo(from, 1010086); 
-           			from.Target = new UnlimitedPetLeashTarget( this );
+				this.SendLocalizedMessageTo(from, 1010086);
+				from.Target = new UnlimitedPetLeashTarget(this);
 
-			} 
-			else 
-			{ 
-				from.SendLocalizedMessage( 500446 ); // That is too far away. 
+			}
+			else
+			{
+				from.SendLocalizedMessage(500446); // That is too far away. 
 			}
 
-      		} 
+		}
 
-      		public override void Serialize( GenericWriter writer ) 
-      		{ 
-         		base.Serialize( writer ); 
+		public override void Serialize(GenericWriter writer)
+		{
+			base.Serialize(writer);
 
-         		writer.Write( (int) 0 ); 
-      		} 
+			writer.Write((int)0);
+		}
 
-      		public override void Deserialize( GenericReader reader ) 
-      		{ 
-         		base.Deserialize( reader ); 
+		public override void Deserialize(GenericReader reader)
+		{
+			base.Deserialize(reader);
 
-         		int version = reader.ReadInt(); 
-      		} 
+			int version = reader.ReadInt();
+		}
 
 
-  		private class UnlimitedPetLeashTarget : Target 
-      		{ 
-         		private Mobile m_Owner; 
-      
-         		private UnlimitedPetLeash m_Powder; 
+		protected class UnlimitedPetLeashTarget : Target
+		{
+			private Mobile m_Owner;
 
-         		public UnlimitedPetLeashTarget( UnlimitedPetLeash charge ) : base ( 10, false, TargetFlags.None ) 
-         		{ 
-            			m_Powder=charge; 
-         		} 
-          
-         	protected override void OnTarget( Mobile from, object target ) 
-         	{
+			private UnlimitedPetLeash m_Powder;
 
-				if ( target == from ) 
-               	from.SendMessage( "You cant shrink yourself!" );
+			public UnlimitedPetLeashTarget(UnlimitedPetLeash charge) : base(10, false, TargetFlags.None)
+			{
+				m_Powder = charge;
+			}
 
-				else if ( target is PlayerMobile )
-				from.SendMessage( "That person gives you a dirty look." );
+			public void DoTarget(Mobile from, object target)
+			{
+				OnTarget(from, target);
+			}
+			protected override void OnTarget(Mobile from, object target)
+			{
+				if (target == from)
+					from.SendMessage("You cant shrink yourself!");
 
-				else if ( target is Item )
-				from.SendMessage( "You can only shrink pets that you own" );
+				else if (target is PlayerMobile)
+					from.SendMessage("That person gives you a dirty look.");
 
-				else if ( target is BaseBioCreature && FSATS.EnableBioShrink == false )
-				from.SendMessage( "Unnatural creatures cannot be shrunk" ); 
+				else if (target is Item)
+					from.SendMessage("You can only shrink pets that you own");
 
-				else if ( Server.Spells.SpellHelper.CheckCombat( from ) )
-				from.SendMessage( "You cannot shrink your pet while your fighting." );
+				else if (target is BaseBioCreature && FSATS.EnableBioShrink == false)
+					from.SendMessage("Unnatural creatures cannot be shrunk");
 
-          		else if ( target is BaseCreature ) 
-          		{ 
-          			BaseCreature c = (BaseCreature)target;
+				else if (Server.Spells.SpellHelper.CheckCombat(from))
+					from.SendMessage("You cannot shrink your pet while your fighting.");
+
+				else if (target is BaseCreature)
+				{
+					BaseCreature c = (BaseCreature)target;
 
 					bool packanimal = false;
 					Type typ = c.GetType();
 					string nam = typ.Name;
 
-					foreach ( string ispack in FSATS.PackAnimals )
+					foreach (string ispack in FSATS.PackAnimals)
 					{
-						if ( ispack == nam )
-    						packanimal = true;
+						if (ispack == nam)
+							packanimal = true;
 					}
 
 					/* if ( c.BodyValue == 400 || c.BodyValue == 401 && c.Controlled == false )
@@ -210,8 +213,45 @@ namespace Server.Items
 
 						c.IsStabled = true;
 					}
-            	}
-         	} 
-      	} 
-   	} 
-} 
+				}
+			}
+		}
+	}
+	public class AutoUnlimitedPetLeash : UnlimitedPetLeash
+	{
+
+		[Constructable]
+		public AutoUnlimitedPetLeash() : base()
+		{
+			Hue = 1254;
+			Weight = 1.0;
+			Movable = true;
+			Name = "Unlimited Automatic PetLeash";
+		}
+		public override void GetProperties(ObjectPropertyList list)
+		{
+			base.GetProperties(list);
+		}
+		public AutoUnlimitedPetLeash(Serial serial) : base(serial)
+		{
+		}
+		public override void OnDoubleClick(Mobile from)
+		{
+			PlayerMobile player = from as PlayerMobile;
+			if (player != null)
+			{
+				UnlimitedPetLeashTarget leash = new UnlimitedPetLeashTarget(this);
+				System.Collections.Generic.List<Mobile> targets = new System.Collections.Generic.List<Mobile>();
+				targets.AddRange(player.AllFollowers);
+				foreach (Mobile pet in targets)
+				{
+					if (pet is BaseCreature)
+					{
+						leash.DoTarget(from, pet);
+					}
+				}
+			}
+
+		}
+	}
+}

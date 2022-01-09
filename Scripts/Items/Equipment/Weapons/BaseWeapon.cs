@@ -319,6 +319,11 @@ namespace Server.Items
         public virtual bool CanRepair { get { return m_NegativeAttributes.NoRepair == 0; } }
 		public virtual bool CanAlter { get { return true; } }
 
+		public void RemoveUnwieldly()
+		{
+			m_NegativeAttributes.Unwieldly = 0;
+		}
+
 		public override int PhysicalResistance { get { return m_AosWeaponAttributes.ResistPhysicalBonus; } }
 		public override int FireResistance { get { return m_AosWeaponAttributes.ResistFireBonus; } }
 		public override int ColdResistance { get { return m_AosWeaponAttributes.ResistColdBonus; } }

@@ -254,10 +254,16 @@ namespace Server.Items
             }
             set 
             { 
-            }
+				//return m_NegativeAttributes = value;
+			}
         }
+		
+		public void RemoveUnwieldly()
+		{
+			m_NegativeAttributes.Unwieldly = 0;
+		}
 
-        [CommandProperty(AccessLevel.GameMaster)]
+		[CommandProperty(AccessLevel.GameMaster)]
         public CraftResource Resource
         {
             get

@@ -89,7 +89,7 @@ namespace Server.Items
       	} 
 
 
-		private class LeashTarget : Target 
+		public class LeashTarget : Target 
       	{ 
          	private Mobile m_Owner; 
       
@@ -98,9 +98,13 @@ namespace Server.Items
          	public LeashTarget( PetLeash charge ) : base ( 10, false, TargetFlags.None ) 
          	{ 
             	m_Powder=charge; 
-         	} 
-          
-         	protected override void OnTarget( Mobile from, object target ) 
+         	}
+			public void DoTarget(Mobile from, object target)
+			{
+				OnTarget(from, target);
+			}
+
+			protected override void OnTarget( Mobile from, object target ) 
          	{
 
 				if (target == from)
@@ -229,5 +233,42 @@ namespace Server.Items
             
          	} 
       	} 
-   	} 
+   	}
+	public class AutoPetLeash : PetLeash
+	{
+
+		[Constructable]
+		public AutoPetLeash() : base()
+		{
+			Hue = 1254;
+			Weight = 1.0;
+			Movable = true;
+			Name = "Automatic PetLeash";
+		}
+		public override void GetProperties(ObjectPropertyList list)
+		{
+			base.GetProperties(list);
+		}
+		public AutoPetLeash(Serial serial) : base(serial)
+		{
+		}
+		public override void OnDoubleClick(Mobile from)
+		{
+			PlayerMobile player = from as PlayerMobile;
+			if (player != null)
+			{
+				LeashTarget leash = new LeashTarget(this);
+				System.Collections.Generic.List<Mobile> targets = new System.Collections.Generic.List<Mobile>();
+				targets.AddRange(player.AllFollowers);
+				foreach (Mobile pet in targets)
+				{
+					if (pet is BaseCreature && this.Charges > 0)
+					{
+						leash.DoTarget(from, pet);
+					}
+				}
+			}
+
+		}
+	}
 }
