@@ -110,8 +110,29 @@ namespace Server.Items
                 from.SendLocalizedMessage(1042001); // That must be in your pack for you to use it.
                 return;
             }
-
-            if (obj is IArcaneEquip && obj is Item)
+			PetLeash leash = obj as PetLeash;
+			if (leash != null)
+			{
+				if (leash.Charges < leash.MaxCharges)
+				{
+					// Diamonds charge at 1 to 1 rate
+					int ConversionRate = 1;
+					int charges = Math.Min(leash.MaxCharges - leash.Charges, (int)(this.Amount / ConversionRate));
+					if (charges > 0)
+					{
+						leash.Charges += charges;
+						if (this.Amount > (charges * ConversionRate))
+						{
+							this.Amount -= (charges * ConversionRate);
+						}
+						else
+						{
+							this.Delete();
+						}
+					}
+				}
+			}
+			else if (obj is IArcaneEquip && obj is Item)
             {
                 Item item = (Item)obj;
                 CraftResource resource = CraftResource.None;
@@ -221,7 +242,7 @@ namespace Server.Items
             }
             else
             {
-                from.SendMessage("You can only use this on exceptionally crafted robes, thigh boots, cloaks, or leather gloves.");
+                from.SendMessage("You can only use this on PetLeashs, exceptionally crafted robes, thigh boots, cloaks, or leather gloves.");
             }
         }
 
