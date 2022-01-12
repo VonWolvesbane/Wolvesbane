@@ -66,6 +66,10 @@ namespace Server.Items
 						case BloodyKatana katana:
 							newItem = Activator.CreateInstance(typeof(GlassSword)) as BaseWeapon;
 							break;
+						case WarHammer hammer:
+							newItem = Activator.CreateInstance(typeof(GargishWarHammer)) as BaseWeapon;
+							break;
+
 					}
 					if (newItem != null)
 					{
