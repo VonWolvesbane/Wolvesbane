@@ -2339,8 +2339,11 @@ namespace Server.Mobiles
         {
             int oldHits = Hits;
 
-            if (Core.AOS && Controlled && from is BaseCreature && !((BaseCreature)from).Controlled && !((BaseCreature)from).Summoned)
-                amount = (int)(amount * ((BaseCreature)from).BonusPetDamageScalar);
+			if (Core.AOS && Controlled && from is BaseCreature && !((BaseCreature)from).Controlled && !((BaseCreature)from).Summoned)
+			{
+				amount = (int)(amount * ((BaseCreature)from).BonusPetDamageScalar);
+				amount = Math.Min(amount, (int)(HitsMax * .75)); // dont allow BonusPetDamage to exceed 75% of MaxHits
+			}
 
             amount = base.Damage(amount, from, informMount, checkDisrupt);
 
