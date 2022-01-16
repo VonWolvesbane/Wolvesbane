@@ -622,6 +622,10 @@ namespace VitaNex
 			{
 				action.Method.Invoke(null, null);
 			}
+			catch(System.Reflection.TargetException e)
+			{
+				ToConsole("{0} at {1}:", e.GetType(), Trace(action));
+			}
 			catch (Exception e)
 			{
 				if (handler == null)
