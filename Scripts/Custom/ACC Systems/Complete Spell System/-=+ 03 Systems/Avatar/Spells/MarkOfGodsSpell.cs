@@ -37,6 +37,12 @@ namespace Server.ACC.CSS.Systems.Avatar
 
 		public override bool CheckCast()
 		{
+			if (SpellHelper.CheckHousingOwner(Caster.Account, this.Caster.Location, this.Caster.Map)) // Can't mark inside someone elses house
+			{
+				this.Caster.SendLocalizedMessage(501942); // That location is blocked.
+				return false;
+			}
+
 			if ( !base.CheckCast() )
 				return false;
 
@@ -52,7 +58,7 @@ namespace Server.ACC.CSS.Systems.Avatar
 			else if ( !SpellHelper.CheckTravel( Caster, TravelCheckType.Mark ) )
 			{
 			}
-			else if ( SpellHelper.CheckMulti( Caster.Location, Caster.Map, !Core.AOS ) )
+			else if (SpellHelper.CheckHousingOwner(Caster.Account, this.Caster.Location, this.Caster.Map)) // cant mark in someones house
 			{
 				Caster.SendLocalizedMessage( 501942 ); // That location is blocked.
 			}

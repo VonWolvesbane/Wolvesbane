@@ -33,7 +33,13 @@ namespace Server.Spells.Sixth
 
         public override bool CheckCast()
         {
-            if (!base.CheckCast())
+			if (SpellHelper.CheckHousingOwner(Caster.Account, this.Caster.Location, this.Caster.Map)) // Can't mark inside someone elses house
+			{
+				this.Caster.SendLocalizedMessage(501942); // That location is blocked.
+				return false;
+			}
+
+			if (!base.CheckCast())
                 return false;
 
             return SpellHelper.CheckTravel(this.Caster, TravelCheckType.Mark);
@@ -48,9 +54,13 @@ namespace Server.Spells.Sixth
             else if (!SpellHelper.CheckTravel(this.Caster, TravelCheckType.Mark))
             {
             }
-            else if (SpellHelper.CheckMulti(this.Caster.Location, this.Caster.Map, !Core.AOS))
-            {
-                this.Caster.SendLocalizedMessage(501942); // That location is blocked.
+			else if (SpellHelper.CheckMulti(this.Caster.Location, this.Caster.Map, !Core.AOS))
+			{
+				this.Caster.SendLocalizedMessage(501942); // That location is blocked.
+			}
+			else if (SpellHelper.CheckHousingOwner(Caster.Account, this.Caster.Location, this.Caster.Map)) // Can't mark inside someone elses house
+			{
+				this.Caster.SendLocalizedMessage(501942); // That location is blocked.
             }
             else if (!rune.IsChildOf(this.Caster.Backpack))
             {

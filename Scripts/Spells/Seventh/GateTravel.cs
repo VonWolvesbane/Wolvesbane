@@ -67,75 +67,75 @@ namespace Server.Spells.Seventh
 
         public void Effect(Point3D loc, Map map, bool checkMulti, bool isboatkey = false)
         {
-            if (Factions.Sigil.ExistsOn(Caster))
-            {
-                Caster.SendLocalizedMessage(1061632); // You can't do that while carrying the sigil.
-            }
-            else if (map == null || (!Core.AOS && Caster.Map != map))
-            {
-                Caster.SendLocalizedMessage(1005570); // You can not gate to another facet.
-            }
-            else if (!SpellHelper.CheckTravel(Caster, TravelCheckType.GateFrom))
-            {
-            }
-            else if (!SpellHelper.CheckTravel(Caster, map, loc, TravelCheckType.GateTo))
-            {
-            }
-            else if (map == Map.Felucca && Caster is PlayerMobile && ((PlayerMobile)Caster).Young)
-            {
-                Caster.SendLocalizedMessage(1049543); // You decide against traveling to Felucca while you are still young.
-            }
-            else if (SpellHelper.RestrictRedTravel && Caster.Murderer && map.Rules != MapRules.FeluccaRules && !Siege.SiegeShard)
-            {
-                Caster.SendLocalizedMessage(1019004); // You are not allowed to travel there.
-            }
-            else if (Caster.Criminal)
-            {
-                Caster.SendLocalizedMessage(1005561, "", 0x22); // Thou'rt a criminal and cannot escape so easily.
-            }
-            else if (SpellHelper.CheckCombat(Caster))
-            {
-                Caster.SendLocalizedMessage(1005564, "", 0x22); // Wouldst thou flee during the heat of battle??
-            }
-            else if (!map.CanSpawnMobile(loc.X, loc.Y, loc.Z) && !isboatkey)
-            {
-                Caster.SendLocalizedMessage(501942); // That location is blocked.
-            }
-            else if ((checkMulti && SpellHelper.CheckMulti(loc, map)) && !isboatkey)
-            {
-                Caster.SendLocalizedMessage(501942); // That location is blocked.
-            }
-            else if (Core.SE && (GateExistsAt(map, loc) || GateExistsAt(Caster.Map, Caster.Location))) // SE restricted stacking gates
-            {
-                Caster.SendLocalizedMessage(1071242); // There is already a gate there.
-            }
-            else if (Server.Engines.CityLoyalty.CityTradeSystem.HasTrade(Caster))
-            {
-                Caster.SendLocalizedMessage(1151733); // You cannot do that while carrying a Trade Order.
-            }
-            else if (CheckSequence())
-            {
-                Timer.DelayCall(TimeSpan.FromSeconds(1), () =>
-                {
-                    Caster.SendLocalizedMessage(501024); // You open a magical gate to another location
+			if (Factions.Sigil.ExistsOn(Caster))
+			{
+				Caster.SendLocalizedMessage(1061632); // You can't do that while carrying the sigil.
+			}
+			else if (map == null || (!Core.AOS && Caster.Map != map))
+			{
+				Caster.SendLocalizedMessage(1005570); // You can not gate to another facet.
+			}
+			else if (!SpellHelper.CheckTravel(Caster, TravelCheckType.GateFrom))
+			{
+			}
+			else if (!SpellHelper.CheckTravel(Caster, map, loc, TravelCheckType.GateTo))
+			{
+			}
+			else if (map == Map.Felucca && Caster is PlayerMobile && ((PlayerMobile)Caster).Young)
+			{
+				Caster.SendLocalizedMessage(1049543); // You decide against traveling to Felucca while you are still young.
+			}
+			else if (SpellHelper.RestrictRedTravel && Caster.Murderer && map.Rules != MapRules.FeluccaRules && !Siege.SiegeShard)
+			{
+				Caster.SendLocalizedMessage(1019004); // You are not allowed to travel there.
+			}
+			else if (Caster.Criminal)
+			{
+				Caster.SendLocalizedMessage(1005561, "", 0x22); // Thou'rt a criminal and cannot escape so easily.
+			}
+			else if (SpellHelper.CheckCombat(Caster))
+			{
+				Caster.SendLocalizedMessage(1005564, "", 0x22); // Wouldst thou flee during the heat of battle??
+			}
+			else if (!map.CanSpawnMobile(loc.X, loc.Y, loc.Z) && !isboatkey)
+			{
+				Caster.SendLocalizedMessage(501942); // That location is blocked.
+			}
+			else if ((checkMulti && SpellHelper.CheckHousingOwner(Caster.Account, loc, map)) && !isboatkey)
+			{
+				Caster.SendLocalizedMessage(501942); // That location is blocked.
+			}
+			else if (Core.SE && (GateExistsAt(map, loc) || GateExistsAt(Caster.Map, Caster.Location))) // SE restricted stacking gates
+			{
+				Caster.SendLocalizedMessage(1071242); // There is already a gate there.
+			}
+			else if (Server.Engines.CityLoyalty.CityTradeSystem.HasTrade(Caster))
+			{
+				Caster.SendLocalizedMessage(1151733); // You cannot do that while carrying a Trade Order.
+			}
+			else if (CheckSequence())
+			{
+				Timer.DelayCall(TimeSpan.FromSeconds(1), () =>
+				{
+					Caster.SendLocalizedMessage(501024); // You open a magical gate to another location
 
-                    Effects.PlaySound(Caster.Location, Caster.Map, 0x20E);
+					Effects.PlaySound(Caster.Location, Caster.Map, 0x20E);
 
-                    InternalItem firstGate = new InternalItem(loc, map);
-                    firstGate.MoveToWorld(Caster.Location, Caster.Map);
+					InternalItem firstGate = new InternalItem(loc, map);
+					firstGate.MoveToWorld(Caster.Location, Caster.Map);
 
-                    Effects.PlaySound(loc, map, 0x20E);
+					Effects.PlaySound(loc, map, 0x20E);
 
-                    InternalItem secondGate = new InternalItem(Caster.Location, Caster.Map);
-                    secondGate.MoveToWorld(loc, map);
+					InternalItem secondGate = new InternalItem(Caster.Location, Caster.Map);
+					secondGate.MoveToWorld(loc, map);
 
-                    firstGate.LinkedGate = secondGate;
-                    secondGate.LinkedGate = firstGate;
+					firstGate.LinkedGate = secondGate;
+					secondGate.LinkedGate = firstGate;
 
-                    firstGate.BoatGate = BaseBoat.FindBoatAt(firstGate, firstGate.Map) != null;
-                    secondGate.BoatGate = BaseBoat.FindBoatAt(secondGate, secondGate.Map) != null;
-                });
-            }
+					firstGate.BoatGate = BaseBoat.FindBoatAt(firstGate, firstGate.Map) != null;
+					secondGate.BoatGate = BaseBoat.FindBoatAt(secondGate, secondGate.Map) != null;
+				});
+			}
 
             FinishSequence();
         }

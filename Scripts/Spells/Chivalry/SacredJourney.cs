@@ -146,9 +146,9 @@ namespace Server.Spells.Chivalry
             {
                 Caster.SendLocalizedMessage(501942); // That location is blocked.
             }
-            else if ((checkMulti && SpellHelper.CheckMulti(loc, map)) && !isboatkey)
-            {
-                Caster.SendLocalizedMessage(501942); // That location is blocked.
+			else if ((checkMulti && SpellHelper.CheckHousingOwner(Caster.Account, loc, map)) && !isboatkey)
+			{
+				Caster.SendLocalizedMessage(501942); // That location is blocked.
             }
             else if (m_Book != null && m_Book.CurCharges <= 0)
             {

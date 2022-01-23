@@ -72,6 +72,8 @@ namespace Server.ACC.CSS.Systems.Ranger
 
 		public void Effect( Point3D loc, Map map, bool checkMulti )
 		{
+			bool isboatkey = false; // should be passed in like recall / mark
+
 			if ( map == null || (!Core.AOS && Caster.Map != map) )
 			{
 				Caster.SendLocalizedMessage( 1005569 ); // You can not recall to another facet.
@@ -102,7 +104,7 @@ namespace Server.ACC.CSS.Systems.Ranger
 			{
 				Caster.SendLocalizedMessage( 501942 ); // That location is blocked.
 			}
-			else if ( (checkMulti && SpellHelper.CheckMulti( loc, map )) )
+			else if ((checkMulti && SpellHelper.CheckHousingOwner(Caster.Account, loc, map)) && !isboatkey)
 			{
 				Caster.SendLocalizedMessage( 501942 ); // That location is blocked.
 			}

@@ -156,7 +156,7 @@ namespace Server.Items
             bool setDesc = false;
             if (Core.AOS)
             {
-                m_House = BaseHouse.FindHouseAt(m);
+				m_House = BaseHouse.FindHouseAt(m);
 
                 if (m_House == null)
                 {
@@ -165,29 +165,46 @@ namespace Server.Items
                 }
                 else
                 {
-                    HouseSign sign = m_House.Sign;
+					Accounting.IAccount houseOwner = m_House.Owner.Account;
+					if (houseOwner == m.Account)
+					{
+						m_Target = m.Location;
+						m_TargetMap = m.Map;
+						HouseSign sign = m_House.Sign;
+						if (sign != null)
+							m_Description = sign.Name;
+						else 
+						{
+							m_Description = m.Name + "'s house";
+						}
+						setDesc = true;
+					}
+					else
+					{
+						HouseSign sign = m_House.Sign;
 
-                    if (sign != null)
-                        m_Description = sign.Name;
-                    else
-                        m_Description = null;
+						if (sign != null)
+							m_Description = sign.Name;
+						else
+							m_Description = null;
 
-                    if (m_Description == null || (m_Description = m_Description.Trim()).Length == 0)
-                        m_Description = "an unnamed house";
+						if (m_Description == null || (m_Description = m_Description.Trim()).Length == 0)
+							m_Description = "an unnamed house";
 
-                    setDesc = true;
+						setDesc = true;
 
-                    int x = m_House.BanLocation.X;
-                    int y = m_House.BanLocation.Y + 2;
-                    int z = m_House.BanLocation.Z;
+						int x = m_House.BanLocation.X;
+						int y = m_House.BanLocation.Y + 2;
+						int z = m_House.BanLocation.Z;
 
-                    Map map = m_House.Map;
+						Map map = m_House.Map;
 
-                    if (map != null && !map.CanFit(x, y, z, 16, false, false))
-                        z = map.GetAverageZ(x, y);
+						if (map != null && !map.CanFit(x, y, z, 16, false, false))
+							z = map.GetAverageZ(x, y);
 
-                    m_Target = new Point3D(x, y, z);
-                    m_TargetMap = map;
+						m_Target = new Point3D(x, y, z);
+						m_TargetMap = map;
+					}
                 }
             }
             else

@@ -170,7 +170,7 @@ namespace Server.Spells.Fourth
             {
                 this.Caster.SendLocalizedMessage(501025); // Something is blocking the location.
             }
-            else if ((checkMulti && SpellHelper.CheckMulti(loc, map)) && !isboatkey)
+            else if ( (checkMulti && SpellHelper.CheckHousingOwner(Caster.Account, loc, map)) && !isboatkey)
             {
                 this.Caster.SendLocalizedMessage(501025); // Something is blocking the location.
             }

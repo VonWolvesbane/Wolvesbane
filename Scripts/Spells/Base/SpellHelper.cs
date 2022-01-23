@@ -191,8 +191,20 @@ namespace Server.Spells
 			
             return false;
         }
+		internal static bool CheckHousingOwner(Accounting.IAccount account, Point3D loc, Map map)
+		{
+			BaseHouse house = BaseHouse.FindHouseAt(loc, map, 0);
+			if (house != null)
+			{
+				var houseAccount = house.Owner.Account;
+				if (account == houseAccount)
+					return false; // allow recalling
+			}
 
-        public static void Turn(Mobile from, object to)
+			return SpellHelper.CheckMulti(loc, map, true, 0); ;
+		}
+
+		public static void Turn(Mobile from, object to)
         {
             IPoint3D target = to as IPoint3D;
             int d = -1;

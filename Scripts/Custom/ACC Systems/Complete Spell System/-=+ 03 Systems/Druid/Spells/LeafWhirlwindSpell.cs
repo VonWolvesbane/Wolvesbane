@@ -47,6 +47,7 @@ namespace Server.ACC.CSS.Systems.Druid
 
 		public void Target( RecallRune rune )
 		{
+			bool isboatkey = false; // should be passed in like recall / mark
 			if ( !Caster.CanSee( rune ) )
 			{
 				Caster.SendLocalizedMessage( 500237 ); // Target can not be seen.
@@ -54,7 +55,7 @@ namespace Server.ACC.CSS.Systems.Druid
 			else if ( !SpellHelper.CheckTravel( Caster, TravelCheckType.Mark ) )
 			{
 			}
-			else if ( SpellHelper.CheckMulti( Caster.Location, Caster.Map, !Core.AOS ) )
+			else if ((SpellHelper.CheckHousingOwner(Caster.Account, rune.Location, rune.Map)) && !isboatkey)
 			{
 				Caster.SendLocalizedMessage( 501942 ); // That location is blocked.
 			}
