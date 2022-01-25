@@ -593,7 +593,7 @@ namespace Server.Gumps
             }
         }
 
-        public static readonly string FilePath = Path.Combine("Saves/Misc", "Persistence.bin");
+        public static readonly string FilePath = Path.Combine("Saves", "Misc", "Persistence.bin");
         private static bool _HasRan;
 
         public static void Configure()

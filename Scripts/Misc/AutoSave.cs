@@ -107,12 +107,12 @@ namespace Server.Misc
             if (m_Backups.Length == 0)
                 return false;
 
-            string root = Path.Combine(Core.BaseDirectory, "Backups/Automatic");
+            string root = Path.Combine(Core.BaseDirectory, "Backups", "Automatic");
 
             if (!Directory.Exists(root))
                 Directory.CreateDirectory(root);
 
-            string tempRoot = Path.Combine(Core.BaseDirectory, "Backups/Temp");
+            string tempRoot = Path.Combine(Core.BaseDirectory, "Backups", "Temp");
 
             if (Directory.Exists(tempRoot))
                 Directory.Delete(tempRoot, true);

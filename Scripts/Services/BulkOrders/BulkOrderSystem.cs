@@ -661,7 +661,7 @@ namespace Server.Engines.BulkOrders
         {
         }
 
-        public static string FilePath = Path.Combine("Saves/CraftContext", "BODs.bin");
+        public static string FilePath = Path.Combine("Saves", "CraftContext", "BODs.bin");
 
         public static void Configure()
         {

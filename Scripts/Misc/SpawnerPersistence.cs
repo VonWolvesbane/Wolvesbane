@@ -40,7 +40,7 @@ namespace Server
             LifeStealers    = 0x00000100,
         }
 
-        public static string FilePath = Path.Combine("Saves/Misc", "SpawnerPresistence.bin");
+        public static string FilePath = Path.Combine("Saves", "Misc", "SpawnerPresistence.bin");
 
         private static bool _FirstRun = true;
 
@@ -308,7 +308,7 @@ namespace Server
                 ToConsole("No region -Khaldun- Found!", ConsoleColor.Red);
             }
 
-            Decorate.GenerateFromFile("deco", Path.Combine("Data/Decoration/Trammel", "khaldun.cfg"), Map.Trammel);
+            Decorate.GenerateFromFile("deco", Path.Combine("Data", "Decoration", "Trammel", "khaldun.cfg"), Map.Trammel);
 
             var entAddon = new KhaldunEntranceAddon();
             entAddon.MoveToWorld(new Point3D(6013, 3785, 18), Map.Trammel);

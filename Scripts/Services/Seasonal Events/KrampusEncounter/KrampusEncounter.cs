@@ -16,7 +16,7 @@ namespace Server.Engines.SeasonalEvents
     [PropertyObject]
     public class KrampusEncounter
     {
-        public static string FilePath = Path.Combine("Saves/Misc", "KrampusEncounter.bin");
+        public static string FilePath = Path.Combine("Saves", "Misc", "KrampusEncounter.bin");
 
         public static bool Enabled { get { return SeasonalEventSystem.IsActive(EventType.KrampusEncounter); } }
         public static KrampusEncounter Encounter { get; set; }

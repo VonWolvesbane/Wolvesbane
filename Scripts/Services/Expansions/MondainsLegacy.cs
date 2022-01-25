@@ -264,7 +264,7 @@ namespace Server
             try
             {
                 XmlDocument doc = new XmlDocument();
-                doc.Load(Path.Combine(Core.BaseDirectory, "Data/Mondain's Legacy/Settings.xml"));
+                doc.Load(Path.Combine(Core.BaseDirectory, "Data", "Mondain's Legacy", "Settings.xml"));
 
                 XmlElement root = doc["Settings"];
 
@@ -316,7 +316,7 @@ namespace Server
             try
             {
                 XmlDocument doc = new XmlDocument();
-                doc.Load(Path.Combine(Core.BaseDirectory, "Data/Mondain's Legacy/Settings.xml"));
+                doc.Load(Path.Combine(Core.BaseDirectory, "Data", "Mondain's Legacy", "Settings.xml"));
 
                 XmlElement root = doc["Settings"];
 

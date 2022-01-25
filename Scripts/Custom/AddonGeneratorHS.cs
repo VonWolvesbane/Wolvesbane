@@ -587,9 +587,9 @@ namespace {namespace}
             string path = null;
 
             if (m_CustomOutputDirectory != null)
-                path = Path.Combine(m_CustomOutputDirectory, string.Format(@"TheBox\{0}Addon.cs", name));
+                path = Path.Combine(m_CustomOutputDirectory, "TheBox", string.Format(@"{0}Addon.cs", name));
             else
-                path = Path.Combine(Core.BaseDirectory, string.Format(@"TheBox\{0}Addon.cs", name));
+                path = Path.Combine(Core.BaseDirectory, "TheBox", string.Format(@"{0}Addon.cs", name));
 
             fail = false;
 

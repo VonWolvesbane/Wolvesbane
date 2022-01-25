@@ -27,7 +27,7 @@ namespace Arya.Auction
 				// Create the log writer
 				try
 				{
-					string folder = Path.Combine( Core.BaseDirectory, @"Logs\Auction" );
+					string folder = Path.Combine( Core.BaseDirectory, "Logs", "Auction" );
 
 					if ( ! Directory.Exists( folder ) )
 						Directory.CreateDirectory( folder );

@@ -37,7 +37,7 @@ namespace Server.Engines.UOStore
 
     public static class UltimaStore
     {
-        public static readonly string FilePath = Path.Combine("Saves/Misc", "UltimaStore.bin");
+        public static readonly string FilePath = Path.Combine("Saves", "Misc", "UltimaStore.bin");
 
         public static bool Enabled { get { return Configuration.Enabled; } set { Configuration.Enabled = value; } }
 

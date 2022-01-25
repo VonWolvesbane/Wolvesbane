@@ -1170,7 +1170,7 @@ namespace Server
 			Utility.PopColor();
 
 			XmlDocument doc = new XmlDocument();
-			doc.Load(Path.Combine(Core.BaseDirectory, "Data/Regions.xml"));
+			doc.Load(Path.Combine(Core.BaseDirectory, "Data", "Regions.xml"));
 
 			XmlElement root = doc["ServerRegions"];
 

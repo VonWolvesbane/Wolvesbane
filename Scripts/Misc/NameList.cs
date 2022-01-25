@@ -23,7 +23,7 @@ namespace Server
         {
             m_Table = new Dictionary<string, NameList>(StringComparer.OrdinalIgnoreCase);
 
-            string filePath = Path.Combine(Core.BaseDirectory, "Data/names.xml");
+            string filePath = Path.Combine(Core.BaseDirectory, "Data", "names.xml");
 
             if (!File.Exists(filePath))
                 return;

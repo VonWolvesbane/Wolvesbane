@@ -35,20 +35,20 @@ namespace Server
 		public static bool Loaded { get { return m_Loaded; } }
 		public static bool Loading { get { return m_Loading; } }
 
-		public static readonly string MobileIndexPath = Path.Combine("Saves/Mobiles/", "Mobiles.idx");
-		public static readonly string MobileTypesPath = Path.Combine("Saves/Mobiles/", "Mobiles.tdb");
-		public static readonly string MobileDataPath = Path.Combine("Saves/Mobiles/", "Mobiles.bin");
+		public static readonly string MobileIndexPath = Path.Combine("Saves", "Mobiles", "Mobiles.idx");
+		public static readonly string MobileTypesPath = Path.Combine("Saves", "Mobiles", "Mobiles.tdb");
+		public static readonly string MobileDataPath = Path.Combine("Saves", "Mobiles", "Mobiles.bin");
 
-		public static readonly string ItemIndexPath = Path.Combine("Saves/Items/", "Items.idx");
-		public static readonly string ItemTypesPath = Path.Combine("Saves/Items/", "Items.tdb");
-		public static readonly string ItemDataPath = Path.Combine("Saves/Items/", "Items.bin");
+		public static readonly string ItemIndexPath = Path.Combine("Saves", "Items", "Items.idx");
+		public static readonly string ItemTypesPath = Path.Combine("Saves", "Items", "Items.tdb");
+		public static readonly string ItemDataPath = Path.Combine("Saves", "Items", "Items.bin");
 
-		public static readonly string GuildIndexPath = Path.Combine("Saves/Guilds/", "Guilds.idx");
-		public static readonly string GuildDataPath = Path.Combine("Saves/Guilds/", "Guilds.bin");
+		public static readonly string GuildIndexPath = Path.Combine("Saves", "Guilds", "Guilds.idx");
+		public static readonly string GuildDataPath = Path.Combine("Saves", "Guilds", "Guilds.bin");
 
-		public static readonly string DataIndexPath = Path.Combine("Saves/Customs/", "SaveData.idx");
-		public static readonly string DataTypesPath = Path.Combine("Saves/Customs/", "SaveData.tdb");
-		public static readonly string DataBinaryPath = Path.Combine("Saves/Customs/", "SaveData.bin");
+		public static readonly string DataIndexPath = Path.Combine("Saves", "Customs", "SaveData.idx");
+		public static readonly string DataTypesPath = Path.Combine("Saves", "Customs", "SaveData.tdb");
+		public static readonly string DataBinaryPath = Path.Combine("Saves", "Customs", "SaveData.bin");
 
 		public static void NotifyDiskWriteComplete()
 		{

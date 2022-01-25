@@ -24,7 +24,7 @@ namespace Server
 		{
 			var list = new List<string>();
 
-			var path = Path.Combine(Core.BaseDirectory, "Data/Assemblies.cfg");
+			var path = Path.Combine(Core.BaseDirectory, "Data", "Assemblies.cfg");
 
 			if (File.Exists(path))
 			{
@@ -329,7 +329,7 @@ namespace Server
 					Utility.PopColor();
 				}
 
-				var scriptRoot = Path.GetFullPath(Path.Combine(Core.BaseDirectory, "Scripts" + Path.DirectorySeparatorChar));
+				var scriptRoot = Path.GetFullPath(Path.Combine(Core.BaseDirectory, "Scripts") + Path.DirectorySeparatorChar);
 				var scriptRootUri = new Uri(scriptRoot);
 
 				Utility.PushColor(ConsoleColor.Yellow);
@@ -400,11 +400,11 @@ namespace Server
 
 		public static string GetUnusedPath(string name)
 		{
-			var path = Path.Combine(Core.BaseDirectory, String.Format("Scripts/Output/{0}.dll", name));
+			var path = Path.Combine(Core.BaseDirectory, "Scripts", "Output", String.Format("{0}.dll", name));
 
 			for (var i = 2; File.Exists(path) && i <= 1000; ++i)
 			{
-				path = Path.Combine(Core.BaseDirectory, String.Format("Scripts/Output/{0}.{1}.dll", name, i));
+				path = Path.Combine(Core.BaseDirectory, "Scripts", "Output", String.Format("{0}.{1}.dll", name, i));
 			}
 
 			return path;
@@ -414,7 +414,7 @@ namespace Server
 		{
 			try
 			{
-				var files = Directory.GetFiles(Path.Combine(Core.BaseDirectory, "Scripts/Output"), mask);
+				var files = Directory.GetFiles(Path.Combine(Core.BaseDirectory, "Scripts", "Output"), mask);
 
 				foreach (var file in files)
 				{

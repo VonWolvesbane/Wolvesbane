@@ -50,7 +50,7 @@ namespace Server.Engines.Points
 
     public abstract class PointsSystem
     {
-        public static string FilePath = Path.Combine("Saves/PointsSystem", "Persistence.bin");
+        public static string FilePath = Path.Combine("Saves", "PointsSystem", "Persistence.bin");
 
         public List<PointsEntry> PlayerTable { get; set; }
 

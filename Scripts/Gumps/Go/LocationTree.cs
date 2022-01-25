@@ -15,7 +15,7 @@ namespace Server.Gumps
             this.m_LastBranch = new Dictionary<Mobile, ParentNode>();
             this.m_Map = map;
 
-            string path = Path.Combine("Data/Locations/", fileName);
+            string path = Path.Combine("Data", "Locations", fileName);
 
             if (File.Exists(path))
             {

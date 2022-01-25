@@ -43,10 +43,10 @@ namespace VitaNex.Build
 			"System.Windows.Forms.dll", "System.Xml.dll"
 		};
 
-		private static volatile string _DefaultInputPath = IOUtility.GetSafeDirectoryPath(Core.BaseDirectory + "/Scripts");
+		private static volatile string _DefaultInputPath = Path.Combine(Core.BaseDirectory, "Scripts");
 
 		private static volatile string _DefaultOutputPath =
-			IOUtility.GetSafeDirectoryPath(Core.BaseDirectory + "/Scripts/Output");
+			Path.Combine(Core.BaseDirectory, "Scripts", "Output");
 
 		public static string DefaultInputPath
 		{

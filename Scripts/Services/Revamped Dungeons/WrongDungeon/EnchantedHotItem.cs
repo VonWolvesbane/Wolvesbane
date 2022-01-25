@@ -9,7 +9,7 @@ namespace Server.Items
 {
     public static class EnchantedHotItem
     {
-        public static string FilePath = Path.Combine("Saves/Misc", "EnchantedHotItem.bin");
+        public static string FilePath = Path.Combine("Saves", "Misc", "EnchantedHotItem.bin");
 
         public static void Configure()
         {

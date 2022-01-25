@@ -3540,7 +3540,7 @@ public static void _TraceEnd(int index)
 		public static void LoadSettings(AssignSettingsHandler settingshandler, string section)
 		{
 			// Check if the file exists
-			string path = Path.Combine(Core.BaseDirectory, "Data/xmlspawner.cfg");
+			string path = Path.Combine(Core.BaseDirectory, "Data", "xmlspawner.cfg");
 
 			if (!File.Exists(path))
 			{
@@ -5582,7 +5582,7 @@ public static void _TraceEnd(int index)
 			if (e.Arguments.Length >= 1)
 			{
 				string filename = e.GetString(0);
-				string filePath = Path.Combine("Saves/Spawners", filename);
+				string filePath = Path.Combine("Saves", "Spawners", filename);
 				if (File.Exists(filePath))
 				{
 					XmlDocument doc = new XmlDocument();
@@ -5723,7 +5723,7 @@ public static void _TraceEnd(int index)
 				/*
 				// I'm not sure what the default location for .msf files is
 				string filename = e.GetString( 0 );
-				string filePath = Path.Combine( "Data/Megaspawner", filename );
+				string filePath = Path.Combine( "Data", "Megaspawner", filename );
 				*/
 				string filePath = e.GetString(0);
 				if (File.Exists(filePath))

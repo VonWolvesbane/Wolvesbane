@@ -9,7 +9,7 @@ namespace Server.Engines.VoidPool
 {
     public class VoidPoolStats
     {
-        public static string FilePath = Path.Combine("Saves/VoidPoolStats", "VoidPoolStats.bin");
+        public static string FilePath = Path.Combine("Saves", "VoidPoolStats", "VoidPoolStats.bin");
 
         public static List<VoidPoolStats> Stats { get; set; }
 

@@ -366,12 +366,13 @@ namespace Server.Engines.XmlSpawner2
 
 			CleanUp();
 
-			if (!Directory.Exists("Saves/Attachments"))
-				Directory.CreateDirectory("Saves/Attachments");
+			var dir = Path.Combine("Saves", "Attachments");
+			if (!Directory.Exists(dir))
+				Directory.CreateDirectory(dir);
 
-			string filePath = Path.Combine("Saves/Attachments", "Attachments.bin");        // the attachment serializations
-			string imaPath = Path.Combine("Saves/Attachments", "Attachments.ima");         // the item/mob attachment tables
-			string fpiPath = Path.Combine("Saves/Attachments", "Attachments.fpi");        // the file position indices
+			string filePath = Path.Combine(dir, "Attachments.bin");        // the attachment serializations
+			string imaPath = Path.Combine(dir, "Attachments.ima");         // the item/mob attachment tables
+			string fpiPath = Path.Combine(dir, "Attachments.fpi");        // the file position indices
 
 			BinaryFileWriter writer = null;
 			BinaryFileWriter imawriter = null;
@@ -519,9 +520,10 @@ namespace Server.Engines.XmlSpawner2
 
 		public static void Load()
 		{
-			string filePath = Path.Combine("Saves/Attachments", "Attachments.bin");    // the attachment serializations
-			string imaPath = Path.Combine("Saves/Attachments", "Attachments.ima");     // the item/mob attachment tables
-			string fpiPath = Path.Combine("Saves/Attachments", "Attachments.fpi");     // the file position indices
+			var dir = Path.Combine("Saves", "Attachments");
+			string filePath = Path.Combine(dir, "Attachments.bin");    // the attachment serializations
+			string imaPath = Path.Combine(dir, "Attachments.ima");     // the item/mob attachment tables
+			string fpiPath = Path.Combine(dir, "Attachments.fpi");     // the file position indices
 
 			if (!File.Exists(filePath))
 			{

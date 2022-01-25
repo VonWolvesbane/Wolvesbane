@@ -36,7 +36,7 @@ namespace VitaNex
 			_INITQueue = new Queue<Tuple<string, string>>();
 			_INITHandlers = new Dictionary<string, Action<string>>();
 
-			var basePath = IOUtility.GetSafeDirectoryPath(Core.BaseDirectory + "/VitaNexCore");
+			var basePath = Path.Combine(Core.BaseDirectory, "VitaNexCore");
 
 			if (!Directory.Exists(basePath))
 			{
@@ -45,7 +45,7 @@ namespace VitaNex
 
 			BaseDirectory = IOUtility.EnsureDirectory(basePath);
 
-			var first = IOUtility.GetSafeFilePath(BaseDirectory + "/FirstBoot.vnc", true);
+			var first = Path.Combine(BaseDirectory.ToString(), "FirstBoot.vnc");
 
 			if (!File.Exists(first))
 			{
@@ -60,7 +60,7 @@ namespace VitaNex
 							 "file before starting the application.");
 			}
 
-			var root = FindRootDirectory(Core.BaseDirectory + "/Scripts/VitaNex");
+			var root = FindRootDirectory(Path.Combine(Core.BaseDirectory, "Scripts", "VitaNex"));
 
 			if (root != null && root.Exists)
 			{
@@ -160,7 +160,8 @@ namespace VitaNex
 
 			var corePath = IOUtility.GetSafeDirectoryPath(Core.BaseDirectory);
 			var rootPath = IOUtility.GetSafeDirectoryPath(root.FullName.Replace(corePath, String.Empty));
-
+			if (rootPath[0] == Path.DirectorySeparatorChar )
+				rootPath = "." + rootPath;
 			root = new DirectoryInfo(rootPath);
 #endif
 

@@ -17,7 +17,7 @@ namespace Server.Engines.VendorSearching
 {
 	public class VendorSearch
 	{
-        public static string FilePath = Path.Combine("Saves/Misc", "VendorSearch.bin");
+        public static string FilePath = Path.Combine("Saves", "Misc", "VendorSearch.bin");
         public static Ultima.StringList StringList { get; private set; }
 
         public static List<VendorItem> DoSearch(Mobile m, SearchCriteria criteria)

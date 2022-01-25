@@ -2038,7 +2038,7 @@ namespace Server.Items
         {
             m_Table = new Dictionary<int, ContainerData>();
 
-            string path = Path.Combine(Core.BaseDirectory, "Data/containers.cfg");
+            string path = Path.Combine(Core.BaseDirectory, "Data", "containers.cfg");
 
             if (!File.Exists(path))
             {

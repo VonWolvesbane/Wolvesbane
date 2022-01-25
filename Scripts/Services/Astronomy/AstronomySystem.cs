@@ -19,7 +19,7 @@ namespace Server.Engines.Astronomy
     public static class AstronomySystem
     {
         public static bool Enabled = Core.EJ;
-        public static string FilePath = Path.Combine("Saves/Misc", "Astronomy.bin");
+        public static string FilePath = Path.Combine("Saves", "Misc", "Astronomy.bin");
 
         public static readonly int MaxConstellations = 1000;
         public static readonly int MaxRA = 24; // zero based 0 - 24, 1 per increment

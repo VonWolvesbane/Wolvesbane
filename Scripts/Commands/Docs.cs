@@ -295,7 +295,7 @@ namespace Server.Commands
 
 		private static StreamWriter GetWriter(string root, string name)
 		{
-			return new StreamWriter(Path.Combine(Path.Combine(m_RootDirectory, root), name));
+			return new StreamWriter(Path.Combine(m_RootDirectory, root, name));
 		}
 
 		private static StreamWriter GetWriter(string path)
@@ -1542,7 +1542,7 @@ namespace Server.Commands
 		{
 			var list = new List<BodyEntry>();
 
-			var path = Path.Combine(Core.BaseDirectory, "Data/models.txt");
+			var path = Path.Combine(Core.BaseDirectory, "Data", "models.txt");
 
 			if (File.Exists(path))
 			{

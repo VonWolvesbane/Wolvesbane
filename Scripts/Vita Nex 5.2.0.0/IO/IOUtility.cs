@@ -153,31 +153,17 @@ namespace VitaNex.IO
 		/// <returns>The parsed path string with syntax errors removed.</returns>
 		public static string GetSafeDirectoryPath(string initialPath)
 		{
-			if (initialPath.LastIndexOf('.') >= 0)
+
+			string drive = "";
+			if (initialPath[1] == ':')
 			{
-				var file = Path.GetFileName(initialPath);
-
-				if (!String.IsNullOrWhiteSpace(file))
-				{
-					initialPath = initialPath.Replace(file, String.Empty);
-				}
+				drive = initialPath.Substring(0, 2);
+				initialPath = initialPath.Substring(2);
 			}
-
 			var sb = new StringBuilder();
+			var split = initialPath.Split(new[] { '\\', '/' }, StringSplitOptions.RemoveEmptyEntries);
 
-			var split = initialPath.Split(new[] {'\\', '/'}, StringSplitOptions.RemoveEmptyEntries);
-
-			foreach (var t in split)
-			{
-				sb.AppendFormat("{0}{1}", t, PathSeparator);
-			}
-
-			if (Core.Unix && sb[0] != PathSeparator)
-			{
-				sb.Insert(0, PathSeparator);
-			}
-
-			return sb.ToString();
+			return drive + PathSeparator + Path.Combine(split);
 		}
 
 		public static string GetUnusedDirectoryPath(string path, string name)

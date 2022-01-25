@@ -40,7 +40,7 @@ namespace Server.Engines.SeasonalEvents
 
 	public class SeasonalEventSystem
 	{
-        public static string FilePath = Path.Combine("Saves/Misc", "SeasonalEvents.bin");
+        public static string FilePath = Path.Combine("Saves", "Misc", "SeasonalEvents.bin");
 
         public static List<SeasonalEventEntry> Entries { get; set; }
 
