@@ -162,7 +162,7 @@ namespace Server.Gumps
                     seeky += _Store.StoreEntries[seekindex].Height;
 
                     //if a new column is needed
-                    if (seeky >= _ListingHeight || _Store.StoreEntries[seekindex] is ColumnSeparationEntry)
+                    if ((seeky >= _ListingHeight || _Store.StoreEntries[seekindex] is ColumnSeparationEntry))
                     {
                         //determine the biggest column height
                         biggestcolumnheight = Math.Max(biggestcolumnheight,seeky);
@@ -171,7 +171,7 @@ namespace Server.Gumps
                         seekx += 1;
 
                         //if a new page is needed, and it's not the last entry in the list
-                        if (seekx >= _Store.DisplayColumns && seekindex < _Store.StoreEntries.Count - 1)
+                        if ( !(_Store.StoreEntries[seekindex] is ColumnSeparationEntry) && seekx >= _Store.DisplayColumns && seekindex < _Store.StoreEntries.Count - 1)
                         {
                             seekx = 0;
                             seekpage++;

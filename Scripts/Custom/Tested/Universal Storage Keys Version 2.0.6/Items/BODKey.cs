@@ -27,7 +27,6 @@ namespace Server.Items
                 entry.Add(new ListEntry(typeof(SmallSmithBOD), typeof(SmallBODListEntry), "Sm. Blacksmith", 0x2258, 0x44E));
                 entry.Add(new ListEntry(typeof(SmallTailorBOD), typeof(SmallBODListEntry), "Sm. Tailor", 0x2258, 0x483));
                 entry.Add(new ListEntry(typeof(SmallTinkerBOD), typeof(SmallBODListEntry), "Sm. Tinkering", 0x2258, 1109));
-                entry.Add(new ListEntry(typeof(SmallTamingBOD), typeof(SmallMobileBulkEntry), "Sm. Taming", 0x14EF, 0x1CA));
 
                 entry.Add(new ColumnSeparationEntry());
 
@@ -39,7 +38,6 @@ namespace Server.Items
                 entry.Add(new ListEntry(typeof(LargeSmithBOD), typeof(LargeBODListEntry), "Lg. Blacksmith", 0x2258, 0x44E));
                 entry.Add(new ListEntry(typeof(LargeTailorBOD), typeof(LargeBODListEntry), "Lg. Tailor", 0x2258, 0x483));
                 entry.Add(new ListEntry(typeof(LargeTinkerBOD), typeof(LargeBODListEntry), "Lg. Tinkering", 0x2258, 1109));
-                entry.Add(new ListEntry(typeof(LargeTamingBOD), typeof(LargeMobileBulkEntry), "Lg. Taming", 0x2258, 0x1CA));
 
                 return entry;
             }
