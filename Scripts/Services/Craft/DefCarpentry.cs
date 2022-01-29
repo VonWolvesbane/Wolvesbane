@@ -486,11 +486,11 @@ namespace Server.Engines.Craft
                 AddRes(index, typeof(StaffOfTheMagi), 1061600, 1, 1044253);
                 AddRecipe(index, (int)CarpRecipes.KotlBlackRod);
 
-                index = AddCraft(typeof(GargishKotlBlackRod), 1044566, 1156994, 100.0, 160.0, typeof(Board), 1044041, 20, 1044351);
+                /*index = AddCraft(typeof(GargishKotlBlackRod), 1044566, 1156994, 100.0, 160.0, typeof(Board), 1044041, 20, 1044351);
                 AddRes(index, typeof(BlackrockMoonstone), 1156993, 1, 1156992);
                 AddRes(index, typeof(StaffOfTheMagi), 1061600, 1, 1044253);
                 AddRecipe(index, (int)CarpRecipes.KotlBlackRod);
-                
+                */
             }
 
             // Armor
