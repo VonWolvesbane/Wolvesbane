@@ -486,11 +486,11 @@ namespace Server.Engines.Craft
                 AddRes(index, typeof(StaffOfTheMagi), 1061600, 1, 1044253);
                 AddRecipe(index, (int)CarpRecipes.KotlBlackRod);
 
-                /*index = AddCraft(typeof(GargishKotlBlackRod), 1044566, 1156994, 100.0, 160.0, typeof(Board), 1044041, 20, 1044351);
+                index = AddCraft(typeof(GargishKotlBlackRod), 1044566, 1156994, 100.0, 160.0, typeof(Board), 1044041, 20, 1044351);
                 AddRes(index, typeof(BlackrockMoonstone), 1156993, 1, 1156992);
                 AddRes(index, typeof(StaffOfTheMagi), 1061600, 1, 1044253);
                 AddRecipe(index, (int)CarpRecipes.KotlBlackRod);
-                */
+                
             }
 
             // Armor
@@ -973,21 +973,21 @@ namespace Server.Engines.Craft
             AddRes(index, typeof(IronIngot), 1044036, 150, 1044037);
 
             // Training
-            //index = AddCraft(typeof(TrainingDummyEastDeed), 1044297, 1044335, 68.4, 93.4, typeof(Board), 1044041, 55, 1044351);
-            //AddSkill(index, SkillName.Tailoring, 50.0, 55.0);
-            //AddRes(index, typeof(Cloth), 1044286, 60, 1044287);
+            index = AddCraft(typeof(TrainingDummyEastDeed), 1044297, 1044335, 68.4, 93.4, typeof(Board), 1044041, 55, 1044351);
+            AddSkill(index, SkillName.Tailoring, 50.0, 55.0);
+            AddRes(index, typeof(Cloth), 1044286, 60, 1044287);
 
-            //index = AddCraft(typeof(TrainingDummySouthDeed), 1044297, 1044336, 68.4, 93.4, typeof(Board), 1044041, 55, 1044351);
-            //AddSkill(index, SkillName.Tailoring, 50.0, 55.0);
-            //AddRes(index, typeof(Cloth), 1044286, 60, 1044287);
+            index = AddCraft(typeof(TrainingDummySouthDeed), 1044297, 1044336, 68.4, 93.4, typeof(Board), 1044041, 55, 1044351);
+            AddSkill(index, SkillName.Tailoring, 50.0, 55.0);
+            AddRes(index, typeof(Cloth), 1044286, 60, 1044287);
 
-            //index = AddCraft(typeof(PickpocketDipEastDeed), 1044297, 1044337, 73.6, 98.6, typeof(Board), 1044041, 65, 1044351);
-            //AddSkill(index, SkillName.Tailoring, 50.0, 55.0);
-            //AddRes(index, typeof(Cloth), 1044286, 60, 1044287);
+            index = AddCraft(typeof(PickpocketDipEastDeed), 1044297, 1044337, 73.6, 98.6, typeof(Board), 1044041, 65, 1044351);
+            AddSkill(index, SkillName.Tailoring, 50.0, 55.0);
+           AddRes(index, typeof(Cloth), 1044286, 60, 1044287);
 
-            //index = AddCraft(typeof(PickpocketDipSouthDeed), 1044297, 1044338, 73.6, 98.6, typeof(Board), 1044041, 65, 1044351);
-            //AddSkill(index, SkillName.Tailoring, 50.0, 55.0);
-            //AddRes(index, typeof(Cloth), 1044286, 60, 1044287);	
+            index = AddCraft(typeof(PickpocketDipSouthDeed), 1044297, 1044338, 73.6, 98.6, typeof(Board), 1044041, 65, 1044351);
+            AddSkill(index, SkillName.Tailoring, 50.0, 55.0);
+            AddRes(index, typeof(Cloth), 1044286, 60, 1044287);	
 
             AddCraft(typeof(WeaversSpool), "Tools", "Weavers Spool", 75.0, 110.0, typeof(Board), 1044041, 7, 1044351);
             AddCraft(typeof(BeerBreweringTools), "Tools", "Beer Brewing Tools", 75.0, 110.0, typeof(Board), 1044041, 7, 1044351);
