@@ -307,7 +307,12 @@ namespace Server.Engines.Craft
             AddRecipe(index, (int)CookRecipes.GingerbreadCookie);
             SetNeedOven(index, true);
 
-            index = AddCraft(typeof(ThreeTieredCake), 1044497, 1154465, 60.0, 110.0, typeof(CakeMix), 1044471, 3, 1044253);
+			index = AddCraft(typeof(ValentineCookies), 1044497, "Valentine's Day Cookies", 95.0, 105.0, typeof(CookieMix), 1044474, 1, 1044253);
+			AddRes(index, typeof(Ruby), "Ruby", 6, 1044253);
+			SetNeedOven(index, true);
+
+
+			index = AddCraft(typeof(ThreeTieredCake), 1044497, 1154465, 60.0, 110.0, typeof(CakeMix), 1044471, 3, 1044253);
             AddRecipe(index, (int)CookRecipes.ThreeTieredCake);
             SetNeedOven(index, true);
             #endregion

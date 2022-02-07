@@ -2871,6 +2871,7 @@
     <Compile Include="Custom\Wolvesbane Written\From Kat\Linked Gates.cs" />
     <Compile Include="Custom\Wolvesbane Written\From Kat\Linked Teleporters.cs" />
     <Compile Include="Custom\Wolvesbane Written\From Kat\TameIt.cs" />
+    <Compile Include="Custom\Wolvesbane Written\Holiday Items\Valentines\ValentinesCookies.cs" />
     <Compile Include="Custom\Wolvesbane Written\Item100Moongate.cs" />
     <Compile Include="Custom\Wolvesbane Written\Item120Moongate.cs" />
     <Compile Include="Custom\Wolvesbane Written\Le%27VelEyetem.cs" />
