@@ -71,193 +71,178 @@ namespace Server.Items
 				m_RegenStamRune = runeaug;
 			}
 
-		 	protected override void OnTarget( Mobile from, object targeted ) 
-		 	{ 
-			 int DestroyChance = Utility.Random( 5 );
-			 int augment = Utility.Random( 3 ) + 1; 
+			protected override void OnTarget(Mobile from, object targeted)
+			{
+				int DestroyChance = Utility.Random(5);
+				int augment = Utility.Random(3) + 1;
 
-                   	    if ( targeted is Item  )  // protects from crash if targeting a Mobile. 
-			    {
-				Item item = (Item) targeted;
- 
-			    	if ( targeted is BaseWeapon ) 
-				{ 
-			       		BaseWeapon Weapon = targeted as BaseWeapon; 
+				if (targeted is Item)  // protects from crash if targeting a Mobile. 
+				{
+					Item item = (Item)targeted;
 
-					if ( !from.InRange( ((Item)targeted).GetWorldLocation(), 3 ) ) 
-					{ 
-			          		from.SendLocalizedMessage( 500446 ); // That is too far away. 
-		       			}
+					if (targeted is BaseWeapon)
+					{
+						BaseWeapon Weapon = targeted as BaseWeapon;
 
-					else if (( ((Item)targeted).Parent != null ) && ( ((Item)targeted).Parent is Mobile ) ) 
-			       		{ 
-			          		from.SendMessage( "You cannot enhance that in it's current location." ); 
-		       			}
-
-					else
-		       			{
-						if ( DestroyChance > 0 ) // Success
+						if (!from.InRange(((Item)targeted).GetWorldLocation(), 3))
 						{
-							Weapon.Attributes.RegenStam += augment; 
-							from.SendMessage( "The Rune enhances your weapon." );
-				                  	from.PlaySound( 0x1F5 );
-			        	          	m_RegenStamRune.Delete();
-			          		}
+							from.SendLocalizedMessage(500446); // That is too far away. 
+						}
 
-						else // Fail
+						else if ((((Item)targeted).Parent != null) && (((Item)targeted).Parent is Mobile))
 						{
-					  		from.SendMessage( "You have failed to enhance the weapon!" );
-							from.SendMessage( "The weapon is damaged beyond repair!" );
-							from.PlaySound( 42 );
-						  	Weapon.Delete();
-							m_RegenStamRune.Delete();
-				  		}
+							from.SendMessage("You cannot enhance that in it's current location.");
+						}
+
+						else
+						{
+							if (DestroyChance > 0) // Success
+							{
+								Weapon.Attributes.RegenStam += augment;
+								from.SendMessage("The Rune enhances your weapon.");
+								from.PlaySound(0x1F5);
+								m_RegenStamRune.Delete();
+							}
+
+							else // Fail
+							{
+								RuneTargetExtensions.RuneEffect.ReduceDurability(Weapon, from);
+								m_RegenStamRune.Delete();
+							}
+						}
+					}
+
+					else if (targeted is BaseArmor)
+					{
+						BaseArmor Armor = targeted as BaseArmor;
+
+						if (!from.InRange(((Item)targeted).GetWorldLocation(), 1))
+						{
+							from.SendLocalizedMessage(500446); // That is too far away. 
+						}
+
+						else if ((((Item)targeted).Parent != null) && (((Item)targeted).Parent is Mobile))
+						{
+							from.SendMessage("You cannot enhance that in it's current location.");
+						}
+
+						else
+						{
+							if (DestroyChance > 0) // Success
+							{
+								Armor.Attributes.RegenStam += augment; from.SendMessage("The RegenStam Rune enhances your armor.");
+								from.PlaySound(0x1F5);
+								m_RegenStamRune.Delete();
+							}
+
+							else // Fail
+							{
+								RuneTargetExtensions.RuneEffect.ReduceDurability(Armor, from);
+								m_RegenStamRune.Delete();
+							}
+						}
+					}
+
+					else if (targeted is BaseShield)
+					{
+						BaseShield Shield = targeted as BaseShield;
+
+						if (!from.InRange(((Item)targeted).GetWorldLocation(), 1))
+						{
+							from.SendLocalizedMessage(500446); // That is too far away. 
+						}
+
+						else if ((((Item)targeted).Parent != null) && (((Item)targeted).Parent is Mobile))
+						{
+							from.SendMessage("You cannot enhance that in it's current location.");
+						}
+
+						else
+						{
+							if (DestroyChance > 0) // Success
+							{
+								Shield.Attributes.RegenStam += augment; from.SendMessage("The RegenStam Rune enhances your shield.");
+								from.PlaySound(0x1F5);
+								m_RegenStamRune.Delete();
+							}
+
+							else // Fail
+							{
+								RuneTargetExtensions.RuneEffect.ReduceDurability(Shield, from);
+								m_RegenStamRune.Delete();
+							}
+						}
+					}
+
+					else if (targeted is BaseClothing)
+					{
+						BaseClothing Clothing = targeted as BaseClothing;
+
+						if (!from.InRange(((Item)targeted).GetWorldLocation(), 1))
+						{
+							from.SendLocalizedMessage(500446); // That is too far away. 
+						}
+
+						else if ((((Item)targeted).Parent != null) && (((Item)targeted).Parent is Mobile))
+						{
+							from.SendMessage("You cannot enhance that in it's current location.");
+						}
+
+						else
+						{
+							if (DestroyChance > 2) // Success
+							{
+								Clothing.Attributes.RegenStam += augment;
+								from.SendMessage("The RegenStam Rune enhances your clothing.");
+								from.PlaySound(0x1F5);
+								m_RegenStamRune.Delete();
+							}
+
+							else // Fail
+							{
+								RuneTargetExtensions.RuneEffect.ReduceDurability(Clothing, from);
+								m_RegenStamRune.Delete();
+							}
+						}
+					}
+
+					else if (targeted is BaseJewel)
+					{
+						BaseJewel Jewel = targeted as BaseJewel;
+
+						if (!from.InRange(((Item)targeted).GetWorldLocation(), 1))
+						{
+							from.SendLocalizedMessage(500446); // That is too far away. 
+						}
+
+						else if ((((Item)targeted).Parent != null) && (((Item)targeted).Parent is Mobile))
+						{
+							from.SendMessage("You cannot enhance that in it's current location.");
+						}
+
+						else
+						{
+							if (DestroyChance > 1) // Success
+							{
+								Jewel.Attributes.RegenStam += augment;
+								from.SendMessage("The RegenStam Rune enhances your jewelry.");
+								from.PlaySound(0x1F5);
+								m_RegenStamRune.Delete();
+							}
+
+							else // Fail
+							{
+								RuneTargetExtensions.RuneEffect.ReduceDurability(Jewel, from);
+								m_RegenStamRune.Delete();
+							}
+						}
 					}
 				}
-
-			    	else if ( targeted is BaseArmor ) 
-				{ 
-			       		BaseArmor Armor = targeted as BaseArmor; 
-
-					if ( !from.InRange( ((Item)targeted).GetWorldLocation(), 1 ) ) 
-					{ 
-			          		from.SendLocalizedMessage( 500446 ); // That is too far away. 
-		       			}
-
-					else if (( ((Item)targeted).Parent != null ) && ( ((Item)targeted).Parent is Mobile ) ) 
-			       		{ 
-			          		from.SendMessage( "You cannot enhance that in it's current location." ); 
-		       			}
-
-		       			else
-		       			{
-						if ( DestroyChance > 0 ) // Success
-						{
-							Armor.Attributes.RegenStam += augment; from.SendMessage( "The RegenStam Rune enhances your armor." );
-				                  	from.PlaySound( 0x1F5 );
-			        	          	m_RegenStamRune.Delete();
-			          		}
-
-						else // Fail
-						{
-					  		from.SendMessage( "You have failed to enhance the armor!" );
-							from.SendMessage( "The armor is damaged beyond repair!" );
-							from.PlaySound( 42 );
-							Armor.Delete();
-							m_RegenStamRune.Delete();
-				  		}
-					}
+				else
+				{
+					from.SendMessage("You cannot enhance that.");
 				}
-
-			    	else if ( targeted is BaseShield ) 
-				{ 
-			       		BaseShield Shield = targeted as BaseShield; 
-
-					if ( !from.InRange( ((Item)targeted).GetWorldLocation(), 1 ) ) 
-					{ 
-			          		from.SendLocalizedMessage( 500446 ); // That is too far away. 
-		       			}
-
-					else if (( ((Item)targeted).Parent != null ) && ( ((Item)targeted).Parent is Mobile ) ) 
-			       		{ 
-			          		from.SendMessage( "You cannot enhance that in it's current location." ); 
-		       			}
-
-					else
-		       			{
-						if ( DestroyChance > 0 ) // Success
-						{
-							Shield.Attributes.RegenStam += augment; from.SendMessage( "The RegenStam Rune enhances your shield." );
-				                  	from.PlaySound( 0x1F5 );
-			        	          	m_RegenStamRune.Delete();
-			          		}
-
-						else // Fail
-						{
-					  		from.SendMessage( "You have failed to enhance the shield!" );
-							from.SendMessage( "The shield is damaged beyond repair!" );
-							from.PlaySound( 42 );
-						  	Shield.Delete();
-							m_RegenStamRune.Delete();
-				  		}
-					}
-				}
-
-			    	else if ( targeted is BaseClothing ) 
-				{ 
-			       		BaseClothing Clothing = targeted as BaseClothing; 
-
-					if ( !from.InRange( ((Item)targeted).GetWorldLocation(), 1 ) ) 
-					{ 
-			          		from.SendLocalizedMessage( 500446 ); // That is too far away. 
-		       			}
-
-					else if (( ((Item)targeted).Parent != null ) && ( ((Item)targeted).Parent is Mobile ) ) 
-			       		{ 
-			          		from.SendMessage( "You cannot enhance that in it's current location." ); 
-		       			}
-
-					else
-		       			{
-						if ( DestroyChance > 0 ) // Success
-						{
-							Clothing.Attributes.RegenStam += augment; 
-							from.SendMessage( "The RegenStam Rune enhances your clothing." );
-				                  	from.PlaySound( 0x1F5 );
-			        	          	m_RegenStamRune.Delete();
-			          		}
-
-						else // Fail
-						{
-					  		from.SendMessage( "You have failed to enhance the clothing!" );
-							from.SendMessage( "The clothing is damaged beyond repair!" );
-							from.PlaySound( 88 );
-						  	Clothing.Delete();
-							m_RegenStamRune.Delete();
-				  		}
-					}
-				}
-
-			    	else if ( targeted is BaseJewel ) 
-				{ 
-			       		BaseJewel Jewel = targeted as BaseJewel; 
-
-					if ( !from.InRange( ((Item)targeted).GetWorldLocation(), 1 ) ) 
-					{ 
-			          		from.SendLocalizedMessage( 500446 ); // That is too far away. 
-		       			}
-
-					else if (( ((Item)targeted).Parent != null ) && ( ((Item)targeted).Parent is Mobile ) ) 
-			       		{ 
-			          		from.SendMessage( "You cannot enhance that in it's current location." ); 
-		       			}
-
-					else
-		       			{
-						if ( DestroyChance > 0 ) // Success
-						{
-							Jewel.Attributes.RegenStam+= augment;
-							from.SendMessage( "The RegenStam Rune enhances your jewelry." );
-				                  	from.PlaySound( 0x1F5 );
-			        	          	m_RegenStamRune.Delete();
-			          		}
-
-						else // Fail
-						{
-					  		from.SendMessage( "You have failed to enhance the jewelery!" );
-							from.SendMessage( "The jewelery is damaged beyond repair!" );
-							from.PlaySound( 62 );
-						  	Jewel.Delete();
-							m_RegenStamRune.Delete();
-				  		}
-					}
-				}
-				}
-		    		else 
-		    		{ 
-		       			from.SendMessage( "You cannot enhance that." );
-		    		} 
-		  	}
+			}
 		
 		}
 

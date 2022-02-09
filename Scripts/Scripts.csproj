@@ -2200,6 +2200,7 @@
     <Compile Include="Custom\Reapers Uploads\UnlimitedPetLeash.cs" />
     <Compile Include="Custom\Reapers Uploads\[ServUO.com]-CompletelyCustomizableVendor.cs" />
     <Compile Include="Custom\RoyalGargishTamingSash.cs" />
+    <Compile Include="Custom\Rune Crafting\Runes\RuneTargetExt.cs" />
     <Compile Include="Custom\Tested\AP_EventGate.cs" />
     <Compile Include="Custom\Tested\RemoveUnwieldlyDeed.cs" />
     <Compile Include="Custom\Tested\Goliath\GargishArmsOfEvolution.cs" />

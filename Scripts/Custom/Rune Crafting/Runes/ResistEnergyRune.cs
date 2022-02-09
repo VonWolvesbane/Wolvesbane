@@ -60,135 +60,123 @@ namespace Server.Items
 		        { 
 		        	from.SendLocalizedMessage( 500446 ); // That is too far away. 
 		        } 
-		} 
-		
-		private class InternalTarget : Target 
+		}
+
+		private class InternalTarget : Target
 		{
 			private ResistEnergyRune m_ResistEnergyRune;
 
-			public InternalTarget( ResistEnergyRune runeaug ) : base( 1, false, TargetFlags.None )
+			public InternalTarget(ResistEnergyRune runeaug) : base(1, false, TargetFlags.None)
 			{
 				m_ResistEnergyRune = runeaug;
 			}
 
-		 	protected override void OnTarget( Mobile from, object targeted ) 
-		 	{ 
-				int DestroyChance = Utility.Random( 5 );
-				int augmentper = Utility.Random( 8 ) + 1;
+			protected override void OnTarget(Mobile from, object targeted)
+			{
+				int DestroyChance = Utility.Random(5);
+				int augmentper = Utility.Random(8) + 1;
 
-                   	    if ( targeted is Item  )  // protects from crash if targeting a Mobile. 
-			    {
-				Item item = (Item) targeted;
- 
-				if ( !from.InRange( ((Item)targeted).GetWorldLocation(), 3 ) ) 
-				{ 
-			          	from.SendLocalizedMessage( 500446 ); // That is too far away. 
-		       		}
+				if (targeted is Item)  // protects from crash if targeting a Mobile. 
+				{
+					Item item = (Item)targeted;
 
-				else if (( ((Item)targeted).Parent != null ) && ( ((Item)targeted).Parent is Mobile ) ) 
-			       	{ 
-			          	from.SendMessage( "You cannot enhance that in it's current location." ); 
-		       		}
+					if (!from.InRange(((Item)targeted).GetWorldLocation(), 3))
+					{
+						from.SendLocalizedMessage(500446); // That is too far away. 
+					}
+
+					else if ((((Item)targeted).Parent != null) && (((Item)targeted).Parent is Mobile))
+					{
+						from.SendMessage("You cannot enhance that in it's current location.");
+					}
 
 
-			    	else if ( targeted is BaseWeapon ) 
-				{ 
-			       		BaseWeapon Weapon = targeted as BaseWeapon; 
-		       			{
-						if ( DestroyChance > 0 ) // Success
+					else if (targeted is BaseWeapon)
+					{
+						BaseWeapon Weapon = targeted as BaseWeapon;
 						{
-							Weapon.WeaponAttributes.ResistEnergyBonus += augmentper; 
-							from.SendMessage( "The Rune enhances your weapon." );
-				                  	from.PlaySound( 0x1F5 );
-			        	          	m_ResistEnergyRune.Delete();
-			          		}
+							if (DestroyChance > 0) // Success
+							{
+								Weapon.WeaponAttributes.ResistEnergyBonus += augmentper;
+								from.SendMessage("The Rune enhances your weapon.");
+								from.PlaySound(0x1F5);
+								m_ResistEnergyRune.Delete();
+							}
 
-						else // Fail
+							else // Fail
+							{
+								RuneTargetExtensions.RuneEffect.ReduceDurability(Weapon, from);
+								m_ResistEnergyRune.Delete();
+							}
+						}
+					}
+
+					else if (targeted is BaseArmor)
+					{
+						BaseArmor Armor = targeted as BaseArmor;
 						{
-					  		from.SendMessage( "You have failed to enhance the weapon!" );
-							from.SendMessage( "The weapon is damaged beyond repair!" );
-							from.PlaySound( 42 );
-						  	Weapon.Delete();
-							m_ResistEnergyRune.Delete();
-				  		}
+							if (DestroyChance > 0) // Success
+							{
+								Armor.EnergyBonus += augmentper;
+								from.SendMessage("The Rune enhances your armor.");
+								from.PlaySound(0x1F5);
+								m_ResistEnergyRune.Delete();
+							}
+
+							else // Fail
+							{
+								RuneTargetExtensions.RuneEffect.ReduceDurability(Armor, from);
+								m_ResistEnergyRune.Delete();
+							}
+						}
+					}
+
+					else if (targeted is BaseShield)
+					{
+						BaseShield Shield = targeted as BaseShield;
+						{
+							if (DestroyChance > 2) // Success
+							{
+								Shield.EnergyBonus += augmentper;
+								from.SendMessage("The Rune enhances your shield.");
+								from.PlaySound(0x1F5);
+								m_ResistEnergyRune.Delete();
+							}
+
+							else // Fail
+							{
+								RuneTargetExtensions.RuneEffect.ReduceDurability(Shield, from);
+								m_ResistEnergyRune.Delete();
+							}
+						}
+					}
+
+					else if (targeted is BaseJewel)
+					{
+						BaseJewel Jewel = targeted as BaseJewel;
+						{
+							if (DestroyChance > 1) // Success
+							{
+								Jewel.Resistances.Energy += augmentper;
+								from.SendMessage("The Rune ennhances your jewelry.");
+								from.PlaySound(0x1F5);
+								m_ResistEnergyRune.Delete();
+							}
+
+							else // Fail
+							{
+								RuneTargetExtensions.RuneEffect.ReduceDurability(Jewel, from);
+								m_ResistEnergyRune.Delete();
+							}
+						}
 					}
 				}
-
-			    	else if ( targeted is BaseArmor ) 
-				{ 
-			       		BaseArmor Armor = targeted as BaseArmor; 
-		       			{
-						if ( DestroyChance > 0 ) // Success
-						{
-							Armor.EnergyBonus += augmentper; 
-							from.SendMessage( "The Rune enhances your armor." );
-				                  	from.PlaySound( 0x1F5 );
-			        	          	m_ResistEnergyRune.Delete();
-			          		}
-
-						else // Fail
-						{
-					  		from.SendMessage( "You have failed to enhance the armor!" );
-							from.SendMessage( "The armor is damaged beyond repair!" );
-							from.PlaySound( 42 );
-							Armor.Delete();
-							m_ResistEnergyRune.Delete();
-				  		}
-					}
+				else
+				{
+					from.SendMessage("You cannot enhance that.");
 				}
+			}
 
-			    	else if ( targeted is BaseShield ) 
-				{ 
-			       		BaseShield Shield = targeted as BaseShield; 
-		       			{
-						if ( DestroyChance > 0 ) // Success
-						{
-							Shield.EnergyBonus += augmentper; 
-							from.SendMessage( "The Rune enhances your shield." );
-				                  	from.PlaySound( 0x1F5 );
-			        	          	m_ResistEnergyRune.Delete();
-			          		}
-
-						else // Fail
-						{
-					  		from.SendMessage( "You have failed to enhance the shield!" );
-							from.SendMessage( "The shield is damaged beyond repair!" );
-							from.PlaySound( 42 );
-						  	Shield.Delete();
-							m_ResistEnergyRune.Delete();
-				  		}
-					}
-				}
-
-			    	else if ( targeted is BaseJewel ) 
-				{ 
-			       		BaseJewel Jewel = targeted as BaseJewel; 
-		       			{
-						if ( DestroyChance > 0 ) // Success
-						{
-							Jewel.Resistances.Energy += augmentper; 
-							from.SendMessage( "The Rune ennhances your jewelry." );
-				                  	from.PlaySound( 0x1F5 );
-			        	          	m_ResistEnergyRune.Delete();
-			          		}
-
-						else // Fail
-						{
-					  		from.SendMessage( "You have failed to enhance the jewelery!" );
-							from.SendMessage( "The jewelery is damaged beyond repair!" );
-							from.PlaySound( 62 );
-						  	Jewel.Delete();
-							m_ResistEnergyRune.Delete();
-				  		}
-					}
-				}
-				}
-		    		else 
-		    		{ 
-		       			from.SendMessage( "You cannot enhance that." );
-		    		} 
-		  	}
-		
 		}
 
 		public override bool DisplayLootType{ get{ return false; } }  // ha ha!

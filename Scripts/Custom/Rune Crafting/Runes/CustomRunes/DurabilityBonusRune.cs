@@ -111,9 +111,8 @@ namespace Server.Items
 			          		}
 						else // Fail
 						{
-					  		from.SendMessage( "You have failed to enhance the item, and it is damage beyond repair!" );
+					  		from.SendMessage( "You have failed to enhance the item!" );
 							from.PlaySound( 42 );
-						  	item.Delete();
 							m_DurabilityBonusRune.Delete();
 				  		}
 					}

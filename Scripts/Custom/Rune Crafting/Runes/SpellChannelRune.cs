@@ -108,21 +108,10 @@ namespace Server.Items
 
 						else // Fail
 						{
-					  		from.SendMessage( "You have failed to enhance the weapon!" );
-							m_SpellChannelRune.Delete();
-							from.PlaySound( 42 );
-							if ( NewNameHere < 1 ) // this is the random interger we made, for a seperate success chance to determine
-							{			 // if the item to break with the rune or not. see line 139 for example without.
-							 from.SendMessage( "The weapon is damaged beyond repair!" ); 
-						  	 Weapon.Delete();
+								RuneTargetExtensions.RuneEffect.ReduceDurability(Weapon, from);
+								m_SpellChannelRune.Delete();
 							}
-							else
-							{
- 							 from.SendMessage( "The rune crumbles in the attempt, but the weapon survives." );
-							}
-							
-				  		}
-					}
+						}
 				}
 
 			    	else if ( targeted is BaseShield ) 
@@ -139,11 +128,8 @@ namespace Server.Items
 
 						else // Fail
 						{
-					  		from.SendMessage( "You have failed to enhance the shield!" );
-							from.SendMessage( "The shield is damaged beyond repair!" );  // see how this "fail" is structered it will always 
-							from.PlaySound( 42 );					     // break the item if you fail the rune to change
-						  	Shield.Delete();					     // do what i did above. for Each Layer Defined.
-							m_SpellChannelRune.Delete();
+								RuneTargetExtensions.RuneEffect.ReduceDurability(Shield, from);
+								m_SpellChannelRune.Delete();
 				  		}
 					}
 				}

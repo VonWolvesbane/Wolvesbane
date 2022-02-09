@@ -103,11 +103,8 @@ namespace Server.Items
 
 						else // Fail
 						{
-					  		from.SendMessage( "You have failed to enhance the weapon!" );
-							from.SendMessage( "The weapon is damaged beyond repair!" );
-							from.PlaySound( 42 );
-						  	Weapon.Delete();
-							m_BonusManaRune.Delete();
+								RuneTargetExtensions.RuneEffect.ReduceDurability(Weapon, from);
+								m_BonusManaRune.Delete();
 				  		}
 					}
 				}
@@ -126,11 +123,8 @@ namespace Server.Items
 
 						else // Fail
 						{
-					  		from.SendMessage( "You have failed to enhance the armor!" );
-							from.SendMessage( "The armor is damaged beyond repair!" );
-							from.PlaySound( 42 );
-							Armor.Delete();
-							m_BonusManaRune.Delete();
+								RuneTargetExtensions.RuneEffect.ReduceDurability(Armor, from);
+								m_BonusManaRune.Delete();
 				  		}
 					}
 				}
@@ -149,11 +143,8 @@ namespace Server.Items
 
 						else // Fail
 						{
-					  		from.SendMessage( "You have failed to enhance the shield!" );
-							from.SendMessage( "The shield is damaged beyond repair!" );
-							from.PlaySound( 42 );
-						  	Shield.Delete();
-							m_BonusManaRune.Delete();
+								RuneTargetExtensions.RuneEffect.ReduceDurability(Shield, from);
+								m_BonusManaRune.Delete();
 				  		}
 					}
 				}
@@ -162,7 +153,7 @@ namespace Server.Items
 				{ 
 			       		BaseClothing Clothing = targeted as BaseClothing; 
 		       			{		               	 
-						if ( DestroyChance > 0 ) // Success
+						if ( DestroyChance > 2 ) // Success
 						{
 							Clothing.Attributes.BonusMana += augment; 
 							from.SendMessage( "The Rune enhances your clothing." );
@@ -172,11 +163,8 @@ namespace Server.Items
 
 						else // Fail
 						{
-					  		from.SendMessage( "You have failed to enhance the clothing!" );
-							from.SendMessage( "The clothing is damaged beyond repair!" );
-							from.PlaySound( 88 );
-						  	Clothing.Delete();
-							m_BonusManaRune.Delete();
+								RuneTargetExtensions.RuneEffect.ReduceDurability(Clothing, from);
+								m_BonusManaRune.Delete();
 				  		}
 					}
 				}
@@ -185,7 +173,7 @@ namespace Server.Items
 				{ 
 			       		BaseJewel Jewel = targeted as BaseJewel; 
 		       			{
-						if ( DestroyChance > 0 ) // Success
+						if ( DestroyChance > 1 ) // Success
 						{
 							Jewel.Attributes.BonusMana += augment; 
 							from.SendMessage( "The Rune enhances your jewelry." );
@@ -195,11 +183,8 @@ namespace Server.Items
 
 						else // Fail
 						{
-					  		from.SendMessage( "You have failed to enhance the jewelery!" );
-							from.SendMessage( "The jewelery is damaged beyond repair!" );
-							from.PlaySound( 62 );
-						  	Jewel.Delete();
-							m_BonusManaRune.Delete();
+								RuneTargetExtensions.RuneEffect.ReduceDurability(Jewel, from);
+								m_BonusManaRune.Delete();
 				  		}
 					}
 				}

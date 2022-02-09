@@ -53,7 +53,6 @@ namespace Server.Items
 				{
 					from.SendMessage( "The rune transforms into a glow, and is now ready to be used." );
 					from.Target = new InternalTarget( this );
-					Delete();
 				}
 		        } 
 
@@ -105,11 +104,8 @@ namespace Server.Items
 
 						else // Fail
 						{
-					  		from.SendMessage( "You have failed to enhance the weapon!" );
-							from.SendMessage( "The weapon is damaged beyond repair!" );
-							from.PlaySound( 42 );
-						  	Weapon.Delete();
-							m_SelfRepairRune.Delete();
+								RuneTargetExtensions.RuneEffect.ReduceDurability(Weapon, from); 
+								m_SelfRepairRune.Delete();
 				  		}
 					}
 				}
@@ -128,11 +124,8 @@ namespace Server.Items
 
 						else // Fail
 						{
-					  		from.SendMessage( "You have failed to enhance the armor!" );
-							from.SendMessage( "The armor is damaged beyond repair!" );
-							from.PlaySound( 42 );
-							Armor.Delete();
-							m_SelfRepairRune.Delete();
+								RuneTargetExtensions.RuneEffect.ReduceDurability(Armor, from);
+								m_SelfRepairRune.Delete();
 				  		}
 					}
 				}
@@ -151,11 +144,8 @@ namespace Server.Items
 
 						else // Fail
 						{
-					  		from.SendMessage( "You have failed to enhance the shield!" );
-							from.SendMessage( "The shield is damaged beyond repair!" );
-							from.PlaySound( 42 );
-						  	Shield.Delete();
-							m_SelfRepairRune.Delete();
+								RuneTargetExtensions.RuneEffect.ReduceDurability(Shield, from);
+								m_SelfRepairRune.Delete();
 				  		}
 					}
 				}

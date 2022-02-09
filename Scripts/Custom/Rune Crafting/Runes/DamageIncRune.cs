@@ -53,7 +53,6 @@ namespace Server.Items
 				{
 					from.SendMessage( "Select the item to enhance." );
 					from.Target = new InternalTarget( this );
-					Delete();
 				}
 		        } 
 
@@ -65,11 +64,11 @@ namespace Server.Items
 		
 		private class InternalTarget : Target 
 		{
-			private DamageIncRune m_DamageIncRune;
+			private DamageIncRune m_Rune;
 
 			public InternalTarget( DamageIncRune runeaug ) : base( 1, false, TargetFlags.None )
 			{
-				m_DamageIncRune = runeaug;
+				m_Rune = runeaug;
 			}
 
 		 	protected override void OnTarget( Mobile from, object targeted ) 
@@ -100,16 +99,13 @@ namespace Server.Items
 							Weapon.Attributes.WeaponDamage += augmentper; 
 							from.SendMessage( "The Rune enhances your weapon." );
 				                  	from.PlaySound( 0x1F5 );
-			        	          	m_DamageIncRune.Delete();
+			        	          	m_Rune.Delete();
 			          		}
 
 						else // Fail
 						{
-					  		from.SendMessage( "You have failed to enhance the weapon!" );
-							from.SendMessage( "The weapon is damaged beyond repair!" );
-							from.PlaySound( 42 );
-						  	Weapon.Delete();
-							m_DamageIncRune.Delete();
+								RuneTargetExtensions.RuneEffect.ReduceDurability(Weapon, from);
+								m_Rune.Delete();
 				  		}
 					}
 				}
@@ -123,16 +119,13 @@ namespace Server.Items
 							Armor.Attributes.WeaponDamage += augmentper; 
 							from.SendMessage( "The Rune enhances your armor." );
 				                  	from.PlaySound( 0x1F5 );
-			        	          	m_DamageIncRune.Delete();
+			        	          	m_Rune.Delete();
 			          		}
 
 						else // Fail
 						{
-					  		from.SendMessage( "You have failed to enhance the armor!" );
-							from.SendMessage( "The armor is damaged beyond repair!" );
-							from.PlaySound( 42 );
-							Armor.Delete();
-							m_DamageIncRune.Delete();
+								RuneTargetExtensions.RuneEffect.ReduceDurability(Armor, from);
+								m_Rune.Delete();
 				  		}
 					}
 				}
@@ -146,16 +139,13 @@ namespace Server.Items
 							Shield.Attributes.WeaponDamage += augmentper; 
 							from.SendMessage( "The Rune enhances your shield." );
 				                  	from.PlaySound( 0x1F5 );
-			        	          	m_DamageIncRune.Delete();
+			        	          	m_Rune.Delete();
 			          		}
 
 						else // Fail
 						{
-					  		from.SendMessage( "You have failed to enhance the shield!" );
-							from.SendMessage( "The shield is damaged beyond repair!" );
-							from.PlaySound( 42 );
-						  	Shield.Delete();
-							m_DamageIncRune.Delete();
+								RuneTargetExtensions.RuneEffect.ReduceDurability(Shield, from);
+								m_Rune.Delete();
 				  		}
 					}
 				}
@@ -164,21 +154,18 @@ namespace Server.Items
 				{ 
 			       		BaseClothing Clothing = targeted as BaseClothing; 
 		       			{
-						if ( DestroyChance > 0 ) // Success
+						if ( DestroyChance > 2 ) // Success
 						{
 							Clothing.Attributes.WeaponDamage += augmentper; 
 							from.SendMessage( "The Rune enhances your clothing." );
 				                  	from.PlaySound( 0x1F5 );
-			        	          	m_DamageIncRune.Delete();
+			        	          	m_Rune.Delete();
 			          		}
 
 						else // Fail
 						{
-					  		from.SendMessage( "You have failed to enhance the clothing!" );
-							from.SendMessage( "The clothing is damaged beyond repair!" );
-							from.PlaySound( 88 );
-						  	Clothing.Delete();
-							m_DamageIncRune.Delete();
+								RuneTargetExtensions.RuneEffect.ReduceDurability(Clothing, from);
+								m_Rune.Delete();
 				  		}
 					}
 				}
@@ -187,21 +174,18 @@ namespace Server.Items
 				{ 
 			       		BaseJewel Jewel = targeted as BaseJewel; 
 		       			{
-						if ( DestroyChance > 0 ) // Success
+						if ( DestroyChance > 1 ) // Success
 						{
 							Jewel.Attributes.WeaponDamage += augmentper; 
 							from.SendMessage( "The Rune enhances your jewelry." );
 				                  	from.PlaySound( 0x1F5 );
-			        	          	m_DamageIncRune.Delete();
+			        	          	m_Rune.Delete();
 			          		}
 
 						else // Fail
 						{
-					  		from.SendMessage( "You have failed to enhance the jewelery!" );
-							from.SendMessage( "The jewelery is damaged beyond repair!" );
-							from.PlaySound( 62 );
-						  	Jewel.Delete();
-							m_DamageIncRune.Delete();
+								RuneTargetExtensions.RuneEffect.ReduceDurability(Jewel, from);
+								m_Rune.Delete();
 				  		}
 					}
 				}

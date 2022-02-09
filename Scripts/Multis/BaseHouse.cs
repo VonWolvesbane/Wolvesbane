@@ -2583,12 +2583,14 @@ namespace Server.Multis
                 return true;
 
             Account acct = one.Account as Account;
-
-            for (int i = 0; i < acct.Length; ++i)
-            {
-                if (acct[i] != null && acct[i] == two)
-                    return true;
-            }
+			if (acct != null)
+			{
+				for (int i = 0; i < acct.Length; ++i)
+				{
+					if (acct[i] != null && acct[i] == two)
+						return true;
+				}
+			}
 
             return false;
         }

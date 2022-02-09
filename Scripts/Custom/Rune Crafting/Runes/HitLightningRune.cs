@@ -53,7 +53,6 @@ namespace Server.Items
 				{
 					from.SendMessage( "Select the item to enhance." );
 					from.Target = new InternalTarget( this );
-					Delete();
 				}
 		        } 
 
@@ -105,11 +104,8 @@ namespace Server.Items
 
 						else // Fail
 						{
-					  		from.SendMessage( "You have failed to enhance the weapon!" );
-							from.SendMessage( "The weapon is damaged beyond repair!" );
-							from.PlaySound( 42 );
-						  	Weapon.Delete();
-							m_HitLightningRune.Delete();
+								RuneTargetExtensions.RuneEffect.ReduceDurability(Weapon, from);
+								m_HitLightningRune.Delete();
 				  		}
 					}
 				}

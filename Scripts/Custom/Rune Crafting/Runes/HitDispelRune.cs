@@ -107,11 +107,8 @@ namespace Server.Items
 
 						else // Fail
 						{
-					  		from.SendMessage( "You have failed to enhance the weapon!" );
-							from.SendMessage( "The weapon is damaged beyond repair!" );
-							from.PlaySound( 42 );
-						  	Weapon.Delete();
-							m_HitDispelRune.Delete();
+								RuneTargetExtensions.RuneEffect.ReduceDurability(Weapon, from);
+								m_HitDispelRune.Delete();
 				  		}
 					}
 				}

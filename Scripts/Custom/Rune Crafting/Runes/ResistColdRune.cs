@@ -105,11 +105,8 @@ namespace Server.Items
 
 						else // Fail
 						{
-					  		from.SendMessage( "You have failed to enhance the weapon!" );
-							from.SendMessage( "The weapon is damaged beyond repair!" );
-							from.PlaySound( 42 );
-						  	Weapon.Delete();
-							m_ResistColdRune.Delete();
+								RuneTargetExtensions.RuneEffect.ReduceDurability(Weapon, from);
+								m_ResistColdRune.Delete();
 				  		}
 					}
 				}
@@ -128,11 +125,8 @@ namespace Server.Items
 
 						else // Fail
 						{
-					  		from.SendMessage( "You have failed to enhance the armor!" );
-							from.SendMessage( "The armor is damaged beyond repair!" );
-							from.PlaySound( 42 );
-							Armor.Delete();
-							m_ResistColdRune.Delete();
+								RuneTargetExtensions.RuneEffect.ReduceDurability(Armor, from);
+								m_ResistColdRune.Delete();
 				  		}
 					}
 				}
@@ -141,7 +135,7 @@ namespace Server.Items
 				{ 
 			       		BaseShield Shield = targeted as BaseShield; 
 		       			{
-						if ( DestroyChance > 0 ) // Success
+						if ( DestroyChance > 2 ) // Success
 						{
 							Shield.ColdBonus += augmentper; 
 							from.SendMessage( "The Rune enhances your shield." );
@@ -151,11 +145,8 @@ namespace Server.Items
 
 						else // Fail
 						{
-					  		from.SendMessage( "You have failed to enhance the shield!" );
-							from.SendMessage( "The shield is damaged beyond repair!" );
-							from.PlaySound( 42 );
-						  	Shield.Delete();
-							m_ResistColdRune.Delete();
+								RuneTargetExtensions.RuneEffect.ReduceDurability(Shield, from);
+								m_ResistColdRune.Delete();
 				  		}
 					}
 				}
@@ -164,7 +155,7 @@ namespace Server.Items
 				{ 
 			       		BaseJewel Jewel = targeted as BaseJewel; 
 		       			{
-						if ( DestroyChance > 0 ) // Success
+						if ( DestroyChance > 1 ) // Success
 						{;
 							Jewel.Resistances.Cold += augmentper; 
 							from.SendMessage( "The Rune ennhances your jewelry." );
@@ -174,11 +165,8 @@ namespace Server.Items
 
 						else // Fail
 						{
-					  		from.SendMessage( "You have failed to enhance the jewelery!" );
-							from.SendMessage( "The jewelery is damaged beyond repair!" );
-							from.PlaySound( 62 );
-						  	Jewel.Delete();
-							m_ResistColdRune.Delete();
+								RuneTargetExtensions.RuneEffect.ReduceDurability(Jewel, from);
+								m_ResistColdRune.Delete();
 				  		}
 					}
 				}
