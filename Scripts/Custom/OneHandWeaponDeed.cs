@@ -39,26 +39,31 @@ namespace Server.Items
 
 		public void OnTarget( Mobile from, object obj )
 		{
-			if ( !IsChildOf( from.Backpack ) )
+			if (!IsChildOf(from.Backpack))
 			{
-				from.SendLocalizedMessage( 1042001 ); // That must be in your pack for you to use it.
+				from.SendLocalizedMessage(1042001); // That must be in your pack for you to use it.
 			}
-			else if ( obj is BaseWeapon )
+			else if (obj is CupidsBow)
+			{
+				from.SendMessage("That item cannot be made 1 handed");
+				Effects.SendBoltEffect(from);
+			}
+			else if (obj is BaseWeapon)
 			{
 				Item weapon = (Item)obj;
 
-				if ( weapon.RootParent != from )
+				if (weapon.RootParent != from)
 				{
 					from.SendMessage("The weapon must be in your back.");
 				}
-				else if(weapon.Layer == Layer.TwoHanded)
+				else if (weapon.Layer == Layer.TwoHanded)
 				{
 					weapon.Layer = Layer.FirstValid;
 					weapon.LootType = LootType.Blessed;
-					from.SendMessage("Your weapon is now one handed!" );
+					from.SendMessage("Your weapon is now one handed!");
 					this.Delete();
 				}
-				else if(weapon.Layer == Layer.FirstValid)
+				else if (weapon.Layer == Layer.FirstValid)
 				{
 					from.SendMessage("That is already one handed");
 				}
