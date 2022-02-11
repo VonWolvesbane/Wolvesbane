@@ -14,206 +14,206 @@ namespace Server.Items
 	public class DefenceChanceRune : Item
 	{
 		[Constructable]
-		public DefenceChanceRune() : base( 0x1F14 )
+		public DefenceChanceRune() : base(0x1F14)
 		{
 			Weight = 0.2;  // ?
 			Name = "Defence Chance Rune";
 			Hue = 2584;
 		}
 
-		public override void OnDoubleClick( Mobile from ) 
+		public override void OnDoubleClick(Mobile from)
 		{
 			double minSkill = 70.0;
-		 
+
 			PlayerMobile pm = from as PlayerMobile;
-		
-			if ( !IsChildOf( from.Backpack ) )
+
+			if (!IsChildOf(from.Backpack))
 			{
-				from.SendLocalizedMessage( 1042001 ); // That must be in your pack for you to use it.
+				from.SendLocalizedMessage(1042001); // That must be in your pack for you to use it.
 			}
 
-			else if ( pm == null || from.Skills[SkillName.Inscribe].Base < 70.0 )
+			else if (pm == null || from.Skills[SkillName.Inscribe].Base < 70.0)
 			{
-				from.SendMessage( "You are not skilled enough to attempt this enhancement." );
+				from.SendMessage("You are not skilled enough to attempt this enhancement.");
 			}
 
-		        else if( from.InRange( this.GetWorldLocation(), 1 ) ) 
-		        {
+			else if (from.InRange(this.GetWorldLocation(), 1))
+			{
 				double maxSkill = minSkill + 40.0;
 
-				if ( !from.CheckSkill( SkillName.Inscribe, minSkill, maxSkill ) )
+				if (!from.CheckSkill(SkillName.Inscribe, minSkill, maxSkill))
 				{
-					from.SendMessage( "The rune shatters, releasing the magic energy." );
-					from.PlaySound( 65 );
-					from.PlaySound( 0x1F8 );
+					from.SendMessage("The rune shatters, releasing the magic energy.");
+					from.PlaySound(65);
+					from.PlaySound(0x1F8);
 					Delete();
 					return;
 				}
 				else
 				{
-					from.SendMessage( "Select the item to enhance." );
-					from.Target = new InternalTarget( this );
+					from.SendMessage("Select the item to enhance.");
+					from.Target = new InternalTarget(this);
 				}
-		        } 
+			}
 
-		        else 
-		        { 
-		        	from.SendLocalizedMessage( 500446 ); // That is too far away. 
-		        } 
-		} 
-		
-		private class InternalTarget : Target 
+			else
+			{
+				from.SendLocalizedMessage(500446); // That is too far away. 
+			}
+		}
+
+		private class InternalTarget : Target
 		{
 			private DefenceChanceRune m_DefenceChanceRune;
 
-			public InternalTarget( DefenceChanceRune runeaug ) : base( 1, false, TargetFlags.None )
+			public InternalTarget(DefenceChanceRune runeaug) : base(1, false, TargetFlags.None)
 			{
 				m_DefenceChanceRune = runeaug;
 			}
 
-		 	protected override void OnTarget( Mobile from, object targeted ) 
-		 	{ 
-				int DestroyChance = Utility.Random( 5 );
-				int augmentper = Utility.Random( 8 ) + 1; 
+			protected override void OnTarget(Mobile from, object targeted)
+			{
+				int DestroyChance = Utility.Random(5);
+				int augmentper = Utility.Random(8) + 1;
 
-                    	    if ( targeted is Item  )  // protects from crash if targeting a Mobile. 
-			    {
-				Item item = (Item) targeted;
+				if (targeted is Item)  // protects from crash if targeting a Mobile. 
+				{
+					Item item = (Item)targeted;
 
-				if ( !from.InRange( ((Item)targeted).GetWorldLocation(), 3 ) ) 
-				{ 
-			          	from.SendLocalizedMessage( 500446 ); // That is too far away. 
-		       		}
+					if (!from.InRange(((Item)targeted).GetWorldLocation(), 3))
+					{
+						from.SendLocalizedMessage(500446); // That is too far away. 
+					}
 
-				else if (( ((Item)targeted).Parent != null ) && ( ((Item)targeted).Parent is Mobile ) ) 
-			       	{ 
-			          	from.SendMessage( "You cannot enhance that in it's current location." ); 
-		       		}
+					else if ((((Item)targeted).Parent != null) && (((Item)targeted).Parent is Mobile))
+					{
+						from.SendMessage("You cannot enhance that in it's current location.");
+					}
 
-			    	if ( targeted is BaseWeapon ) 
-				{ 
-			       		BaseWeapon Weapon = targeted as BaseWeapon; 				
-		       			{						
-						if ( DestroyChance > 0 ) // Success
+					if (targeted is BaseWeapon)
+					{
+						BaseWeapon Weapon = targeted as BaseWeapon;
 						{
-							Weapon.Attributes.DefendChance += augmentper; 
-							from.SendMessage( "The Rune enhances your weapon." );
-				                  	from.PlaySound( 0x1F5 );
-			        	          	m_DefenceChanceRune.Delete();
-			          		}
+							if (DestroyChance > 0) // Success
+							{
+								Weapon.Attributes.DefendChance += augmentper;
+								from.SendMessage("The Rune enhances your weapon.");
+								from.PlaySound(0x1F5);
+								m_DefenceChanceRune.Delete();
+							}
 
-						else // Fail
-						{
+							else // Fail
+							{
 								RuneTargetExtensions.RuneEffect.ReduceDurability(Weapon, from);
 								m_DefenceChanceRune.Delete();
-				  		}
+							}
+						}
 					}
-				}
 
-			    	else if ( targeted is BaseArmor ) 
-				{ 
-			       		BaseArmor Armor = targeted as BaseArmor; 
-		       			{             	  
-						if ( DestroyChance > 0 ) // Success
-						{
-							Armor.Attributes.DefendChance += augmentper; 
-							from.SendMessage( "The Rune enhances your armor." );
-				                  	from.PlaySound( 0x1F5 );
-			        	          	m_DefenceChanceRune.Delete();
-			          		}
 
-						else // Fail
+					else if (targeted is BaseShield)
+					{
+						BaseShield Shield = targeted as BaseShield;
 						{
-								RuneTargetExtensions.RuneEffect.ReduceDurability(Armor, from);
+							if (DestroyChance > 0) // Success
+							{
+								Shield.Attributes.DefendChance += augmentper;
+								from.SendMessage("The Rune enhances your shield.");
+								from.PlaySound(0x1F5);
 								m_DefenceChanceRune.Delete();
-				  		}
-					}
-				}
+							}
 
-			    	else if ( targeted is BaseShield ) 
-				{ 
-			       		BaseShield Shield = targeted as BaseShield; 
-		       			{
-						if ( DestroyChance > 0 ) // Success
-						{
-							Shield.Attributes.DefendChance += augmentper; 
-							from.SendMessage( "The Rune enhances your shield." );
-				                  	from.PlaySound( 0x1F5 );
-			        	          	m_DefenceChanceRune.Delete();
-			          		}
-
-						else // Fail
-						{
+							else // Fail
+							{
 								RuneTargetExtensions.RuneEffect.ReduceDurability(Shield, from);
 								m_DefenceChanceRune.Delete();
-				  		}
+							}
+						}
 					}
-				}
-
-			    	else if ( targeted is BaseClothing ) 
-				{ 
-			       		BaseClothing Clothing = targeted as BaseClothing; 
-		       			{		               	  
-						if ( DestroyChance > 2 ) // Success
+					else if (targeted is BaseArmor)
+					{
+						BaseArmor Armor = targeted as BaseArmor;
 						{
-							Clothing.Attributes.DefendChance += augmentper; 
-							from.SendMessage( "The Rune enhances your clothing." );
-				                  	from.PlaySound( 0x1F5 );
-			        	          	m_DefenceChanceRune.Delete();
-			          		}
+							if (DestroyChance > 0) // Success
+							{
+								Armor.Attributes.DefendChance += augmentper;
+								from.SendMessage("The Rune enhances your armor.");
+								from.PlaySound(0x1F5);
+								m_DefenceChanceRune.Delete();
+							}
 
-						else // Fail
+							else // Fail
+							{
+								RuneTargetExtensions.RuneEffect.ReduceDurability(Armor, from);
+								m_DefenceChanceRune.Delete();
+							}
+						}
+					}
+
+					else if (targeted is BaseClothing)
+					{
+						BaseClothing Clothing = targeted as BaseClothing;
 						{
+							if (DestroyChance > 2) // Success
+							{
+								Clothing.Attributes.DefendChance += augmentper;
+								from.SendMessage("The Rune enhances your clothing.");
+								from.PlaySound(0x1F5);
+								m_DefenceChanceRune.Delete();
+							}
+
+							else // Fail
+							{
 								RuneTargetExtensions.RuneEffect.ReduceDurability(Clothing, from);
 								m_DefenceChanceRune.Delete();
-				  		}
+							}
+						}
 					}
-				}
 
-			    	else if ( targeted is BaseJewel ) 
-				{ 
-			       		BaseJewel Jewel = targeted as BaseJewel; 
-		       			{
-						if ( DestroyChance > 1 ) // Success
+					else if (targeted is BaseJewel)
+					{
+						BaseJewel Jewel = targeted as BaseJewel;
 						{
-							Jewel.Attributes.DefendChance += augmentper; 
-							from.SendMessage( "The Rune enhances your jewelry." );
-				                  	from.PlaySound( 0x1F5 );
-			        	          	m_DefenceChanceRune.Delete();
-			          		}
+							if (DestroyChance > 1) // Success
+							{
+								Jewel.Attributes.DefendChance += augmentper;
+								from.SendMessage("The Rune enhances your jewelry.");
+								from.PlaySound(0x1F5);
+								m_DefenceChanceRune.Delete();
+							}
 
-						else // Fail
-						{
+							else // Fail
+							{
 								RuneTargetExtensions.RuneEffect.ReduceDurability(Jewel, from);
 								m_DefenceChanceRune.Delete();
-				  		}
+							}
+						}
 					}
 				}
+				else
+				{
+					from.SendMessage("You cannot enhance that.");
 				}
-		    		else 
-		    		{ 
-		       			from.SendMessage( "You cannot enhance that." );
-		    		} 
-		  	}
-		
+			}
+
 		}
 
-		public override bool DisplayLootType{ get{ return false; } }  // ha ha!
+		public override bool DisplayLootType { get { return false; } }  // ha ha!
 
-		public DefenceChanceRune( Serial serial ) : base( serial )
+		public DefenceChanceRune(Serial serial) : base(serial)
 		{
 		}
 
-		public override void Serialize( GenericWriter writer )
+		public override void Serialize(GenericWriter writer)
 		{
-			base.Serialize( writer );
+			base.Serialize(writer);
 
-			writer.Write( (int) 0 ); // version
+			writer.Write((int)0); // version
 		}
 
-		public override void Deserialize( GenericReader reader )
+		public override void Deserialize(GenericReader reader)
 		{
-			base.Deserialize( reader );
+			base.Deserialize(reader);
 
 			int version = reader.ReadInt();
 		}

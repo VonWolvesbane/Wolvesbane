@@ -15,6 +15,8 @@ namespace RuneTargetExtensions
 
 			from.PlaySound(42);
 
+			if (item.MaxHitPoints > 1)
+				item.MaxHitPoints--;
 			item.HitPoints -= 1;
 			if (item.HitPoints > 0)
 			{
@@ -37,6 +39,8 @@ namespace RuneTargetExtensions
 
 			from.PlaySound(42);
 
+			if (item.MaxHitPoints > 1)
+				item.MaxHitPoints--;
 			item.HitPoints -= 1;
 			if (item.HitPoints > 0)
 			{
@@ -60,6 +64,8 @@ namespace RuneTargetExtensions
 
 			from.PlaySound(42);
 
+			if (item.MaxHitPoints > 1)
+				item.MaxHitPoints--;
 			item.HitPoints -= 1;
 			if (item.HitPoints > 0)
 			{

@@ -110,25 +110,6 @@ namespace Server.Items
 					}
 				}
 
-			    	else if ( targeted is BaseArmor ) 
-				{ 
-			       		BaseArmor Armor = targeted as BaseArmor; 
-		       			{
-						if ( DestroyChance > 0 ) // Success
-						{
-							Armor.Attributes.NightSight = 1; 
-							from.SendMessage( "The Rune enhances your armor." );
-				                  	from.PlaySound( 0x1F5 );
-			        	          	m_NightSightRune.Delete();
-			          		}
-
-						else // Fail
-						{
-								RuneTargetExtensions.RuneEffect.ReduceDurability(Armor, from);
-								m_NightSightRune.Delete();
-				  		}
-					}
-				}
 
 			    	else if ( targeted is BaseShield ) 
 				{ 
@@ -149,8 +130,27 @@ namespace Server.Items
 				  		}
 					}
 				}
+					else if (targeted is BaseArmor)
+					{
+						BaseArmor Armor = targeted as BaseArmor;
+						{
+							if (DestroyChance > 0) // Success
+							{
+								Armor.Attributes.NightSight = 1;
+								from.SendMessage("The Rune enhances your armor.");
+								from.PlaySound(0x1F5);
+								m_NightSightRune.Delete();
+							}
 
-			    	else if ( targeted is BaseClothing ) 
+							else // Fail
+							{
+								RuneTargetExtensions.RuneEffect.ReduceDurability(Armor, from);
+								m_NightSightRune.Delete();
+							}
+						}
+					}
+
+					else if ( targeted is BaseClothing ) 
 				{ 
 			       		BaseClothing Clothing = targeted as BaseClothing; 
 		       			{

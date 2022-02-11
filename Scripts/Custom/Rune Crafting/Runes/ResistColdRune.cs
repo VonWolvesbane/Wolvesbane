@@ -60,123 +60,124 @@ namespace Server.Items
 		        { 
 		        	from.SendLocalizedMessage( 500446 ); // That is too far away. 
 		        } 
-		} 
-		
-		private class InternalTarget : Target 
+		}
+
+		private class InternalTarget : Target
 		{
 			private ResistColdRune m_ResistColdRune;
 
-			public InternalTarget( ResistColdRune runeaug ) : base( 1, false, TargetFlags.None )
+			public InternalTarget(ResistColdRune runeaug) : base(1, false, TargetFlags.None)
 			{
 				m_ResistColdRune = runeaug;
 			}
 
-		 	protected override void OnTarget( Mobile from, object targeted ) 
-		 	{ 
-				int DestroyChance = Utility.Random( 5 );
-				int augmentper = Utility.Random( 7 ) + 1;
+			protected override void OnTarget(Mobile from, object targeted)
+			{
+				int DestroyChance = Utility.Random(5);
+				int augmentper = Utility.Random(7) + 1;
 
-                   	    if ( targeted is Item  )  // protects from crash if targeting a Mobile. 
-			    {
-				Item item = (Item) targeted;
- 
-				if ( !from.InRange( ((Item)targeted).GetWorldLocation(), 3 ) ) 
-				{ 
-			          	from.SendLocalizedMessage( 500446 ); // That is too far away. 
-		       		}
+				if (targeted is Item)  // protects from crash if targeting a Mobile. 
+				{
+					Item item = (Item)targeted;
 
-				else if (( ((Item)targeted).Parent != null ) && ( ((Item)targeted).Parent is Mobile ) ) 
-			       	{ 
-			          	from.SendMessage( "You cannot enhance that in it's current location." ); 
-		       		}
+					if (!from.InRange(((Item)targeted).GetWorldLocation(), 3))
+					{
+						from.SendLocalizedMessage(500446); // That is too far away. 
+					}
 
-			    	if ( targeted is BaseWeapon ) 
-				{ 
-			       		BaseWeapon Weapon = targeted as BaseWeapon; 
-		       			{
+					else if ((((Item)targeted).Parent != null) && (((Item)targeted).Parent is Mobile))
+					{
+						from.SendMessage("You cannot enhance that in it's current location.");
+					}
 
-						if ( DestroyChance > 0 ) // Success
+					if (targeted is BaseWeapon)
+					{
+						BaseWeapon Weapon = targeted as BaseWeapon;
 						{
-							Weapon.WeaponAttributes.ResistColdBonus += augmentper; 
-							from.SendMessage( "The Rune enhances your weapon." );
-				                  	from.PlaySound( 0x1F5 );
-			        	          	m_ResistColdRune.Delete();
-			          		}
 
-						else // Fail
-						{
+							if (DestroyChance > 0) // Success
+							{
+								Weapon.WeaponAttributes.ResistColdBonus += augmentper;
+								from.SendMessage("The Rune enhances your weapon.");
+								from.PlaySound(0x1F5);
+								m_ResistColdRune.Delete();
+							}
+
+							else // Fail
+							{
 								RuneTargetExtensions.RuneEffect.ReduceDurability(Weapon, from);
 								m_ResistColdRune.Delete();
-				  		}
+							}
+						}
 					}
-				}
 
-			    	else if ( targeted is BaseArmor ) 
-				{ 
-			       		BaseArmor Armor = targeted as BaseArmor; 
-		       			{
-						if ( DestroyChance > 0 ) // Success
+					else if (targeted is BaseArmor)
+					{
+						BaseArmor Armor = targeted as BaseArmor;
 						{
-							Armor.ColdBonus += augmentper; 
-							from.SendMessage( "The Rune enhances your armor." );
-				                  	from.PlaySound( 0x1F5 );
-			        	          	m_ResistColdRune.Delete();
-			          		}
+							if (DestroyChance > 0) // Success
+							{
+								Armor.ColdBonus += augmentper;
+								from.SendMessage("The Rune enhances your armor.");
+								from.PlaySound(0x1F5);
+								m_ResistColdRune.Delete();
+							}
 
-						else // Fail
-						{
+							else // Fail
+							{
 								RuneTargetExtensions.RuneEffect.ReduceDurability(Armor, from);
 								m_ResistColdRune.Delete();
-				  		}
+							}
+						}
 					}
-				}
 
-			    	else if ( targeted is BaseShield ) 
-				{ 
-			       		BaseShield Shield = targeted as BaseShield; 
-		       			{
-						if ( DestroyChance > 2 ) // Success
+					else if (targeted is BaseShield)
+					{
+						BaseShield Shield = targeted as BaseShield;
 						{
-							Shield.ColdBonus += augmentper; 
-							from.SendMessage( "The Rune enhances your shield." );
-				                  	from.PlaySound( 0x1F5 );
-			        	          	m_ResistColdRune.Delete();
-			          		}
+							if (DestroyChance > 2) // Success
+							{
+								Shield.ColdBonus += augmentper;
+								from.SendMessage("The Rune enhances your shield.");
+								from.PlaySound(0x1F5);
+								m_ResistColdRune.Delete();
+							}
 
-						else // Fail
-						{
+							else // Fail
+							{
 								RuneTargetExtensions.RuneEffect.ReduceDurability(Shield, from);
 								m_ResistColdRune.Delete();
-				  		}
+							}
+						}
 					}
-				}
 
-			    	else if ( targeted is BaseJewel ) 
-				{ 
-			       		BaseJewel Jewel = targeted as BaseJewel; 
-		       			{
-						if ( DestroyChance > 1 ) // Success
-						{;
-							Jewel.Resistances.Cold += augmentper; 
-							from.SendMessage( "The Rune ennhances your jewelry." );
-				                  	from.PlaySound( 0x1F5 );
-			        	          	m_ResistColdRune.Delete();
-			          		}
-
-						else // Fail
+					else if (targeted is BaseJewel)
+					{
+						BaseJewel Jewel = targeted as BaseJewel;
 						{
+							if (DestroyChance > 1) // Success
+							{
+								;
+								Jewel.Resistances.Cold += augmentper;
+								from.SendMessage("The Rune ennhances your jewelry.");
+								from.PlaySound(0x1F5);
+								m_ResistColdRune.Delete();
+							}
+
+							else // Fail
+							{
 								RuneTargetExtensions.RuneEffect.ReduceDurability(Jewel, from);
 								m_ResistColdRune.Delete();
-				  		}
+							}
+						}
 					}
 				}
+				else
+				{
+					from.SendMessage("You cannot enhance that.");
 				}
-		    		else 
-		    		{ 
-		       			from.SendMessage( "You cannot enhance that." );
-		    		} 
-		  	}
-		
+			}
+
 		}
 
 		public override bool DisplayLootType{ get{ return false; } }  // ha ha!
