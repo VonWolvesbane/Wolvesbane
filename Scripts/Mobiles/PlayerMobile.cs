@@ -3815,7 +3815,10 @@ namespace Server.Mobiles
 
                 for (int i = 0; i < ilist.Count; i++)
                 {
-                    Backpack.AddItem(ilist[i]);
+					Item item = (Item)ilist[i];
+					Container cont = item.Parent as Container;
+					if (!(cont.LootType == LootType.Blessed || cont.Insured))
+						Backpack.AddItem(item);
                 }
             }
 
