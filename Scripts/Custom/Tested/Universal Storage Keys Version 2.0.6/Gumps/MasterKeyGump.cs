@@ -202,10 +202,20 @@ namespace Server.Gumps
                 }
                 Item key = _Key.RemoveKey(buttonid - 1);
 
-                if (key != null)
-                {
-                    _Owner.AddToBackpack(key);
-                }
+				///
+				if (key != null)
+				{
+					Container cont = _Key.Parent as Container;
+					if (cont == null || cont.TryDropItem(_Owner, key, false) == false)
+					{
+						_Owner.AddToBackpack(key);
+					}
+				}
+				///
+				//if (key != null)
+                //{
+                //    _Owner.AddToBackpack(key);
+                //}
                 _Owner.CloseGump(typeof(ItemStoreGump));
                 _Owner.CloseGump(typeof(ListEntryGump));
 

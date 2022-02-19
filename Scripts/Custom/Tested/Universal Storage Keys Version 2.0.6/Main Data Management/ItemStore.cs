@@ -212,42 +212,42 @@ namespace Solaris.ItemStore
                 return;
             }
 
-            if (entry.Amount > 0)
-            {
-                //check if they can afford a commodity deed
-                if (makedeed && resend && !Banker.Withdraw(from,5))
-                {
-                    from.SendMessage("you must have at least 5 gold in your bank to extract the resource into a commodity deed");
-                    return;
-                }
+			if (entry.Amount > 0)
+			{
+				//check if they can afford a commodity deed
+				if (makedeed && resend && !Banker.Withdraw(from, 5))
+				{
+					from.SendMessage("you must have at least 5 gold in your bank to extract the resource into a commodity deed");
+					return;
+				}
 
-                if (BaseStoreKey.EmptyContents && entry.RequiresRecipient)
-                {
-                    Item recipient = entry.FindRecipient(from);
+				if (BaseStoreKey.EmptyContents && entry.RequiresRecipient)
+				{
+					Item recipient = entry.FindRecipient(from);
 
-                    if (recipient != null)
-                    {
-                        if (entry.WithdrawTo(ref WithdrawAmount,recipient) == null)
-                        {
-                            from.SendMessage("Cannot withdraw that for some reason!");
-                            return;
-                        }
-                    }
-                    else
-                    {
-                        from.SendMessage("You do not have a container to store that.");
-                        return;
-                    }
-                }
-                else
-                {
-                    Item item = entry.Withdraw(ref WithdrawAmount,makedeed);
+					if (recipient != null)
+					{
+						if (entry.WithdrawTo(ref WithdrawAmount, recipient) == null)
+						{
+							from.SendMessage("Cannot withdraw that for some reason!");
+							return;
+						}
+					}
+					else
+					{
+						from.SendMessage("You do not have a container to store that.");
+						return;
+					}
+				}
+				else
+				{
+					Item item = entry.Withdraw(ref WithdrawAmount, makedeed);
 
-                    if (item == null)
-                    {
-                        from.SendMessage("there was an error creating that item.  Please page a GM!");
-                        return;
-                    }
+					if (item == null)
+					{
+						from.SendMessage("there was an error creating that item.  Please page a GM!");
+						return;
+					}
 
 					if (this.Owner is BaseStoreKey)
 					{
@@ -259,15 +259,24 @@ namespace Solaris.ItemStore
 						}
 					}
 					else
+					if (this.Owner is MasterItemStoreKey)
 					{
-						from.AddToBackpack(item);
+						MasterItemStoreKey key = this.Owner as MasterItemStoreKey;
+						Container cont = key.Parent as Container;
+						if (cont == null || cont.TryDropItem(from, item, false) == false)
+						{
+							from.AddToBackpack(item);
+						}
 					}
-                }
-            }
-            else
-            {
-                from.SendMessage("you don't have any of that");
-            }
+					else
+						from.AddToBackpack(item);
+
+				}
+			}
+			else
+			{
+				from.SendMessage("you don't have any of that");
+			}
         }
 
         //code to begin adding a item, accessed by the gump
