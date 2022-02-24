@@ -55,7 +55,10 @@ namespace Xanthos.Evo
 
 			// Temporary to fix up all existing wolves
 			if (Stage >= 4)
+			{
 				SetSkill(SkillName.MagicResist, 200, 200);
+				SetResistance(ResistanceType.Fire, 150);
+			}
 		}
 	}
 }
