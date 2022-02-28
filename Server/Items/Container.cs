@@ -163,8 +163,10 @@ namespace Server.Items
                 }
             }
         }
+		[CommandProperty(AccessLevel.GameMaster)]
+		public virtual bool CanCastFrom { get { return false; } }
 
-        [CommandProperty(AccessLevel.GameMaster)]
+		[CommandProperty(AccessLevel.GameMaster)]
         public bool LiftOverride { get { return m_LiftOverride; } set { m_LiftOverride = value; } }
 
         public virtual void UpdateContainerData()
