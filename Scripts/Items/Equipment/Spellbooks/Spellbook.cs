@@ -537,20 +537,8 @@ namespace Server.Items
 
 				Spellbook book = list[i];
 
-				bool bookLocationUsable = false;
-				if (book.Parent == from)
-					bookLocationUsable = true;
-
-				Container bag = from.Backpack;
-				if (bag != null && book.Parent == bag)
-					bookLocationUsable = true;
-
-				Container pack2 = book.Parent as Container;
-				if (pack2 != null && pack2.CanCastFrom)
-					bookLocationUsable = true;
-
-				if (!book.Deleted && (bookLocationUsable) &&
-				ValidateSpellbook(book, spellID, type))
+				if (!book.Deleted && (book.Parent == from || (pack != null && book.Parent == pack)) &&
+					ValidateSpellbook(book, spellID, type))
 				{
 					return book;
 				}
@@ -587,19 +575,6 @@ namespace Server.Items
 				{
 					list.Add((Spellbook)item);
 				}
-
-				if (item is BackpackOfSpellbooks)
-				{
-					BackpackOfSpellbooks bag = (BackpackOfSpellbooks)item;
-					foreach (Item item2 in bag.Items)
-					{
-						if (item2 is Spellbook)
-						{
-							list.Add((Spellbook)item2);
-						}
-					}
-				}
-
 			}
 
 			return list;
@@ -1070,18 +1045,9 @@ namespace Server.Items
 
 		public override void OnDoubleClick(Mobile from)
 		{
-			bool bookLocationUsable = false;
-			if (Parent == from)
-				bookLocationUsable = true;
-
 			Container pack = from.Backpack;
-			if (pack != null && Parent == pack)
-				bookLocationUsable = true;
 
-			Container pack2 = Parent as Container;
-			if (pack2 != null && pack2.CanCastFrom)
-				bookLocationUsable = true;
-			if (bookLocationUsable)
+			if (Parent == from || (pack != null && Parent == pack))
 			{
 				DisplayTo(from);
 			}

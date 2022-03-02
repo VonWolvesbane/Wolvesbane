@@ -159,28 +159,15 @@ namespace Server.ACC.CSS
             if (m == null || m.Deleted || m.Backpack == null || school == School.Invalid || type == null)
                 return false;
 
-			foreach (Item i in m.Backpack.Items)
-			{
-				if (i is CSpellbook)
-				{
-					CSpellbook book = (CSpellbook)i;
-					if (book.School == school && book.HasSpell(type))
-						return true;
-				}
-				if (i is BackpackOfSpellbooks)
-				{
-					BackpackOfSpellbooks pack = (BackpackOfSpellbooks)i;
-					foreach(Item i2 in pack.Items)
-					{
-						if (i2 is CSpellbook)
-						{
-							CSpellbook book = (CSpellbook)i2;
-							if (book.School == school && book.HasSpell(type))
-								return true;
-						}
-					}
-				}
-			}
+            foreach (Item i in m.Backpack.Items)
+            {
+                if (i is CSpellbook)
+                {
+                    CSpellbook book = (CSpellbook)i;
+                    if (book.School == school && book.HasSpell(type))
+                        return true;
+                }
+            }
 
             Item layer = m.FindItemOnLayer(Layer.OneHanded);
             if (layer is CSpellbook)
