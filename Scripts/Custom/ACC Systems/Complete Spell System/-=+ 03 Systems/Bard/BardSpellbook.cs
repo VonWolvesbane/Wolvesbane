@@ -29,8 +29,18 @@ namespace Server.ACC.CSS.Systems.Bard
 		{
 			if ( from.AccessLevel == AccessLevel.Player )
 			{
+				bool bookLocationUsable = false;
+				if (Parent == from)
+					bookLocationUsable = true;
+
 				Container pack = from.Backpack;
-				if( !(Parent == from || (pack != null && Parent == pack)) )
+				if (pack != null && Parent == pack)
+					bookLocationUsable = true;
+
+				Container pack2 = Parent as Container;
+				if (pack2 != null && pack2.CanCastFrom)
+					bookLocationUsable = true;
+				if (!bookLocationUsable)
 				{
 					from.SendMessage( "The spellbook must be in your backpack [and not in a container within] to open." );
 					return;
