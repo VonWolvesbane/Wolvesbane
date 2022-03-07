@@ -975,7 +975,6 @@
     <Compile Include="Custom\Addons\CryptPieces\DungeonDeco.cs" />
     <Compile Include="Custom\Addons\WolvesbaneAddons\allaccessPit2Addon.cs" />
     <Compile Include="Custom\Addons\WolvesbaneAddons\allaccessPitAddon.cs" />
-    <Compile Include="Custom\Addons\WolvesbaneAddons\BackpackOfSpellbooks.cs" />
     <Compile Include="Custom\Addons\WolvesbaneAddons\CoW Wood CabinAddon.cs" />
     <Compile Include="Custom\Addons\WolvesbaneAddons\DockCityAddon.cs" />
     <Compile Include="Custom\Addons\WolvesbaneAddons\DockTownStoneAddon.cs" />
