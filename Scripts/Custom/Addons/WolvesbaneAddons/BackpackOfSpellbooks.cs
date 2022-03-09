@@ -10,6 +10,7 @@ namespace Server.Items
 		[Constructable]
 		public BackpackOfSpellbooks() : base()
 		{
+			LootType = LootType.Blessed;
 		}
 		public BackpackOfSpellbooks(Serial serial) : base(serial) { }
 		public override bool CanCastFrom { get { return true; } }
