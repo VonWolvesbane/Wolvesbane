@@ -1277,7 +1277,11 @@ namespace Server.Mobiles
 		private static void OnLogin(LoginEventArgs e)
 		{
 			Mobile from = e.Mobile;
-            World.Broadcast(0, true, from.Name + " has joined the world of Wolvesbane");
+
+			if (from.AccessLevel < Server.AccessLevel.Counselor)
+			{
+				World.Broadcast(0, true, from.Name + " has joined the world of Wolvesbane");
+			}
             CheckAtrophies(from);
 
 			if (AccountHandler.LockdownLevel > AccessLevel.VIP)
