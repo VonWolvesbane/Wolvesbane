@@ -1674,7 +1674,10 @@ namespace Server.Mobiles
 		private static void OnLogout(LogoutEventArgs e)
 		{
             Mobile from = e.Mobile;
-            World.Broadcast(0, true, from.Name + " has left the world of Wolvesbane");
+			if (from.AccessLevel < Server.AccessLevel.Counselor)
+			{
+				World.Broadcast(0, true, from.Name + " has left the world of Wolvesbane");
+			}
             CheckAtrophies(from);
 
             PlayerMobile pm = e.Mobile as PlayerMobile;
