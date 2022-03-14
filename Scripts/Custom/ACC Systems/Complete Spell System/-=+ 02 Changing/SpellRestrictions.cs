@@ -34,6 +34,17 @@ namespace Server.ACC.CSS
 				item = (Item)pack.Items[i];
 				if( item is CSpellbook && CheckRestrictions( caster, ((CSpellbook)item).School ) )
 					return true;
+				if (item is BackpackOfSpellbooks)
+				{
+					BackpackOfSpellbooks bag = (BackpackOfSpellbooks)item;
+					foreach (Item item2 in bag.Items)
+					{
+						if (item2 is CSpellbook && CheckRestrictions(caster, ((CSpellbook)item2).School))
+						{
+							return true;
+						}
+					}
+				}
 			}
 
 			return false;
