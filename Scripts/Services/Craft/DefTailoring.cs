@@ -353,8 +353,13 @@ namespace Server.Engines.Craft
             AddCraft(typeof(BodySash), 1015283, 1025441, 4.1, 29.1, typeof(Cloth), 1044455, 4, 1044287);
             AddCraft(typeof(HalfApron), 1015283, 1025435, 20.7, 45.7, typeof(Cloth), 1044455, 6, 1044287);
             AddCraft(typeof(FullApron), 1015283, 1025437, 29.0, 54.0, typeof(Cloth), 1044455, 10, 1044287);
+			index = AddCraft(typeof(BackpackOfSpellbooks), 1015283, "Spellbook Backpack", 110.0, 150.0, typeof(LichBrain), "Ancient Lich Brain", 1, "You do not have enough brain to make that");
+			AddSkill(index, SkillName.Magery, 110.0, 150.0);
+			AddSkill(index, SkillName.Imbuing, 110.0, 150.0);
+			AddRes(index, typeof(DaemonicLeather), "Daemonic Leather", 100, "You need more Daemonic Leather");
 
-            if (Core.SE)
+
+			if (Core.SE)
             {
                 index = AddCraft(typeof(Obi), 1015283, 1030219, 20.0, 45.0, typeof(Cloth), 1044455, 6, 1044287);
             }
