@@ -526,7 +526,12 @@ namespace Server.Mobiles
                 m_Mount = mount;
             }
 
-            public override bool ClearHandsOnCast { get { return false; } }
+			public override TimeSpan GetCastDelay()
+			{
+				return TimeSpan.Zero;
+			}
+			
+			public override bool ClearHandsOnCast { get { return false; } }
             public override bool RevealOnCast { get { return false; } }
             public override double CastDelayFastScalar { get { return 0; } }
 
