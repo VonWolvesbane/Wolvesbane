@@ -47,9 +47,13 @@ namespace VitaNex.Modules.Discord
 	
 		private static void OnWorldBroadcast(WorldBroadcastEventArgs e)
 		{
-			if (CMOptions.HandleBroadcast)
+			// only broadcast to discord VIP and player access level msgs
+			if (e.Access < AccessLevel.Counselor)
 			{
-				SendMessage(e.Text);
+				if (CMOptions.HandleBroadcast)
+				{
+					SendMessage(e.Text);
+				}
 			}
 		}
 	
