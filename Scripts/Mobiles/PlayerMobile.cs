@@ -3819,14 +3819,22 @@ namespace Server.Mobiles
             if (Core.AOS && Backpack != null && !Backpack.Deleted)
             {
                 var ilist = Backpack.FindItemsByType<Item>(FindItems_Callback);
-
-                for (int i = 0; i < ilist.Count; i++)
-                {
-					Item item = (Item)ilist[i];
-					Container cont = item.Parent as Container;
-					if (!(cont.LootType == LootType.Blessed || cont.Insured))
-						Backpack.AddItem(item);
-                }
+				if (ilist != null)
+				{
+					for (int i = 0; i < ilist.Count; i++)
+					{
+						Item item = (Item)ilist[i];
+						if (item != null)
+						{
+							Container cont = item.Parent as Container;
+							if (cont != null)
+							{
+								if (!(cont.LootType == LootType.Blessed || cont.Insured))
+									Backpack.AddItem(item);
+							}
+						}
+					}
+				}
             }
 
             m_EquipSnapshot = new List<Item>(Items);
