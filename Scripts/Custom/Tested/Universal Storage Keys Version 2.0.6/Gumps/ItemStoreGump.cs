@@ -171,8 +171,9 @@ namespace Server.Gumps
                         seekx += 1;
 
                         //if a new page is needed, and it's not the last entry in the list
-                        if ( !(_Store.StoreEntries[seekindex] is ColumnSeparationEntry) && seekx >= _Store.DisplayColumns && seekindex < _Store.StoreEntries.Count - 1)
-                        {
+                        //if ( !(_Store.StoreEntries[seekindex] is ColumnSeparationEntry) && seekx >= _Store.DisplayColumns && seekindex < _Store.StoreEntries.Count - 1)
+						if (seekx >= _Store.DisplayColumns && seekindex < _Store.StoreEntries.Count - 1)
+							{
                             seekx = 0;
                             seekpage++;
                         }
@@ -307,22 +308,24 @@ namespace Server.Gumps
             if (_Page > 0)
             {
                 AddButton(20,_Y,0x15E3,0x15E7,_Store.StoreEntries.Count * 2 + 4,GumpButtonType.Reply,0);
-            }
-            else
-            {
-                AddImage(20,_Y,0x25EA);
-            }
-            AddLabel(40,_Y,88,"Previous Page");
+				AddLabel(40, _Y, 88, "Previous Page");
+			}
+            //else
+            //{
+            //    AddImage(20,_Y,0x25EA);
+            //}
+            
 
             if (_Page < _MaxPages - 1)
             {
                 AddButton(_Width - 40,_Y,0x15E1,0x15E5,_Store.StoreEntries.Count * 2 + 5,GumpButtonType.Reply,0);
-            }
-            else
-            {
-                AddImage(_Width - 40,_Y,0x25E6);
-            }
-            AddLabel(_Width - 120,_Y,88,"Next Page");
+				AddLabel(_Width - 120, _Y, 88, "Next Page");
+			}
+            //else
+            //{
+            //    AddImage(_Width - 40,_Y,0x25E6);
+            //}
+            
 
             AddLabel(_Width / 2 - 10,_Y,88,String.Format("({0}/{1})",_Page + 1,_MaxPages));
         }
