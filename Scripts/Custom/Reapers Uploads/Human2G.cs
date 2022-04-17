@@ -64,7 +64,7 @@ namespace Server.Items
 							newItem = Activator.CreateInstance(typeof(DreadSword)) as BaseWeapon;
 							break;
 						case BloodyKatana katana:
-							newItem = Activator.CreateInstance(typeof(GlassSword)) as BaseWeapon;
+							newItem = Activator.CreateInstance(typeof(GargishKatana)) as BaseWeapon;
 							break;
 						case WarHammer hammer:
 							newItem = Activator.CreateInstance(typeof(GargishWarHammer)) as BaseWeapon;
@@ -77,10 +77,6 @@ namespace Server.Items
 						newWeapon.Altered = true;
 
 						CopyAttributes(newWeapon, source);
-						if (from.Backpack == null)
-							newItem.MoveToWorld(from.Location, from.Map);
-						else
-							from.Backpack.DropItem(newWeapon);
 
 						newWeapon.InvalidateProperties();
 						success = true;
@@ -235,6 +231,12 @@ namespace Server.Items
 			}
 			if (success)
 			{
+				XmlLevelItem xmlAttachment = (XmlLevelItem)XmlAttach.FindAttachment(oldItem, typeof(XmlLevelItem));
+				if (xmlAttachment != null)
+				{
+					XmlAttach.AttachTo(newItem, xmlAttachment);
+				}
+
 				newItem.Parent = null;
 				if (from.Backpack == null)
 					newItem.MoveToWorld(from.Location, from.Map);
@@ -243,6 +245,7 @@ namespace Server.Items
 
 				newItem.InvalidateProperties();
 
+				from.Backpack.RemoveItem(oldItem);
 				oldItem.Delete();
 				m_Deed.Delete();
 				return;
