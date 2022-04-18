@@ -9,7 +9,7 @@ namespace Server.Items
 
         [Constructable]
         public BarbedWhip()
-            : base(0xA28B)
+            : base(0xA289)
         {
             Weight = 5.0;
         }

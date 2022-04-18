@@ -5,11 +5,11 @@ namespace Server.Items
 {
     public class SpikedWhip : BaseSword
     {
-        public override int LabelNumber { get { return 1125643; } } // Bladed Whip
+        public override int LabelNumber { get { return 1125642; } } // Spiked Whip
 
         [Constructable]
         public SpikedWhip()
-            : base(0xA28B)
+            : base(0xA28A)
         {
             Weight = 5.0;
         }
