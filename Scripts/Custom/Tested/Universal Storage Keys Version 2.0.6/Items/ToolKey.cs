@@ -35,14 +35,16 @@ namespace Server.Items
                 entry.Add(new ToolEntry(typeof(MortarPestle),"Alchemy",0,30,0,0));
                 entry.Add(new ToolEntry(typeof(ScribesPen),"Inscription",0,30,0,0));
                 entry.Add(new ToolEntry(typeof(Skillet),new Type[] { typeof(FlourSifter),typeof(RollingPin) },"Cooking",0,30,0,0));
-                entry.Add(new ColumnSeparationEntry());
                 entry.Add(new ToolEntry(typeof(MalletAndChisel),"Stone Crafting",0,30,0,0));
-                entry.Add(new ToolEntry(typeof(Shovel),new Type[] { typeof(SturdyShovel),typeof(Pickaxe),typeof(SturdyPickaxe) },"Mining",0,35,-10,-10));
-                entry.Add(new ToolEntry(typeof(Hatchet),"Lumberjacking",0,30,-5,0));
-                entry.Add(new ToolEntry(typeof(GargoylesPickaxe),"Gargoyle's Pickaxe",0,30,-5,-5));
-                entry.Add(new ToolEntry(typeof(ProspectorsTool),"Prospector's Tool",0,30,0,0));
+				entry.Add(new ToolEntry(typeof(Blowpipe), "Glassblowing", 0, 40, 0, 0));
+				entry.Add(new ToolEntry(typeof(ProspectorsTool), "Prospector's Tool", 0, 30, 0, 0));
+				entry.Add(new ToolEntry(typeof(Shovel),new Type[] { typeof(SturdyShovel),typeof(Pickaxe),typeof(SturdyPickaxe) },"Mining",0,35,-10,-10));
+				entry.Add(new ColumnSeparationEntry());
+				entry.Add(new ToolEntry(typeof(Hatchet), "Lumberjacking", 0, 30, -5, 0));
+				entry.Add(new ToolEntry(typeof(GargoylesPickaxe), "Gargoyle's Pickaxe", 0, 30, -5, -5));
+				entry.Add(new ToolEntry(typeof(GargoylesKnife), "Gargoyle's Knife", 0, 30, -5, -5));
+				entry.Add(new ToolEntry(typeof(GargoylesAxe), "Gargoyle's Axe", 0, 30, -5, -5));
                 entry.Add(new ToolEntry(typeof(MapmakersPen),"Cartography",0,30,0,0));
-                entry.Add(new ToolEntry(typeof(Blowpipe),"Glassblowing",0,40,0,0));
                 entry.Add(new ToolEntry(typeof(TaxidermyKit),"Taxidermy",0,30,0,0));
 
                 return entry;
