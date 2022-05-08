@@ -66,85 +66,85 @@ namespace Server.Items
 			var dirt = new CellarStyleInfo(CellarStyle.Dirt, "Dirt");
 			dirt.SetFloor(12788, 12789, 12790, 12791, 12792, 12793, 12794, 12795);
 			dirt.SetWall(3215, 3216, 3217, 3218);
-			dirt.SetStairs(17621, 2212);
+			dirt.SetStairs(16046, 2201);
 			Styles.Add(dirt);
 
 			var grass = new CellarStyleInfo(CellarStyle.Grass, "Grass");
 			grass.SetFloor(6013, 6014, 6015, 6016, 6017);
 			grass.SetWall(3215, 3216, 3217, 3218);
-			grass.SetStairs(17621, 2213);
+			grass.SetStairs(16046, 2201);
 			Styles.Add(grass);
 
 			var dungeon = new CellarStyleInfo(CellarStyle.Dungeon, "Dungeon");
 			dungeon.SetFloor(1339, 1340, 1341, 1342, 1343);
 			dungeon.SetWall(1955);
-			dungeon.SetStairs(17621, 1956);
+			dungeon.SetStairs(16046, 2201);
 			Styles.Add(dungeon);
 
 			var flags = new CellarStyleInfo(CellarStyle.FlagStone, "Flagstone");
 			flags.SetFloor(1276, 1277, 1278, 1279);
 			flags.SetWall(1872);
-			flags.SetStairs(17621, 1873);
+			flags.SetStairs(16046, 2201);
 			Styles.Add(flags);
 
 			var sandFlags = new CellarStyleInfo(CellarStyle.SandFlagStone, "Sand Flagstone");
 			sandFlags.SetFloor(1327, 1328, 1329, 1330);
 			sandFlags.SetWall(1900);
-			sandFlags.SetStairs(17621, 1901);
+			sandFlags.SetStairs(16046, 2201);
 			Styles.Add(sandFlags);
 
 			var sand = new CellarStyleInfo(CellarStyle.SandStone, "Sand Stone");
 			sand.SetFloor(1181, 1182, 1183, 1184);
 			sand.SetWall(1900);
-			sand.SetStairs(17621, 1901);
+			sand.SetStairs(16046, 2201);
 			Styles.Add(sand);
 
 			var stone = new CellarStyleInfo(CellarStyle.Stone, "Stone");
 			stone.SetFloor(1305, 1306, 1307, 1308);
 			stone.SetWall(1822);
-			stone.SetStairs(17621, 1823);
+			stone.SetStairs(16046, 2201);
 			Styles.Add(stone);
 
 			var darkStone = new CellarStyleInfo(CellarStyle.DarkStone, "Dark Stone");
 			darkStone.SetFloor(1313, 1314, 1315, 1316);
 			darkStone.SetWall(1928);
-			darkStone.SetStairs(17621, 1929);
+			darkStone.SetStairs(16046, 2201);
 			Styles.Add(darkStone);
 
 			var marble = new CellarStyleInfo(CellarStyle.Marble, "Marble");
 			marble.SetFloor(1297, 1298, 1299, 1300);
 			marble.SetWall(1801);
-			marble.SetStairs(17621, 1802);
+			marble.SetStairs(16046, 2201);
 			Styles.Add(marble);
 
 			var brick = new CellarStyleInfo(CellarStyle.Brick, "Brick");
 			brick.SetFloor(1250, 1251, 1252, 1253, 1254, 1255, 1256, 1257);
 			brick.SetWall(1822);
-			brick.SetStairs(17621, 1823);
+			brick.SetStairs(16046, 2201);
 			Styles.Add(brick);
 
 			var timber = new CellarStyleInfo(CellarStyle.Timber, "Timber");
 			timber.SetFloor(1193, 1194, 1195, 1196);
 			timber.SetWall(1848);
-			timber.SetStairs(17621, 1849);
+			timber.SetStairs(16046, 2201);
 			Styles.Add(timber);
 
 			var crystal = new CellarStyleInfo(CellarStyle.Crystal, "Crystal");
 			crystal.SetFloor(13751, 13752, 13753, 13754, 13755, 13756, 13757);
 			crystal.SetWall(13778);
-			crystal.SetStairs(17621, 13780);
+			crystal.SetStairs(16046, 2201);
 			Styles.Add(crystal);
 
 			var jade = new CellarStyleInfo(CellarStyle.Jade, "Jade");
 			jade.SetFloor(16815, 16815, 16816, 16817);
 			jade.SetWall(19207);
-			jade.SetStairs(17621, 19205);
+			jade.SetStairs(16046, 2201);
 			Styles.Add(jade);
 
 			var blood = new CellarStyleInfo(CellarStyle.Blood, "Blood");
 			blood.SetFloor(2760);
 			blood.SetWall(8700);
-			blood.SetStairs(17621, 1979);
+			blood.SetStairs(16046, 2201);
 			Styles.Add(blood);
 		}
 
