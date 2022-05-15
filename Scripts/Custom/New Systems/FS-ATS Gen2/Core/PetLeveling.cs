@@ -14,7 +14,7 @@ namespace Server
 			{
 				if ( from.IsBonded == true )
 				{
-					if ( Utility.Random( 100 ) < 5 )
+					if ( Utility.Random( 100 ) < 0 ) // disable stat loss
 					{
 						int strloss = from.Str / 20;
 						int dexloss = from.Dex / 20;
@@ -83,7 +83,7 @@ namespace Server
 			{
 				if ( from.IsBonded == true )
 				{
-					if ( Utility.Random( 100 ) < 25 )
+					if ( Utility.Random( 100 ) < 0 ) // Disable stat loss
 					{
 						int strloss = from.Str / 20;
 						int dexloss = from.Dex / 20;
