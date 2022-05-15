@@ -85,7 +85,7 @@ namespace Solaris.ItemStore
         //this generates an item from what is stored in the entry.  Note no exception handling
         public override Item GenerateItem()
         {
-            SmallBOD bod = (SmallBOD)Activator.CreateInstance(_Type,new object[] { _AmountCur,_AmountMax,_BODFillType,_Number,_Graphic,_RequireExceptional,_Material });
+            SmallBOD bod = (SmallBOD)Activator.CreateInstance(_Type,new object[] { _AmountCur,_AmountMax,_BODFillType,_Number,_Graphic,_RequireExceptional,_Material,0 });
 
             return bod;
         }
