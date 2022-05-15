@@ -32,6 +32,10 @@ namespace Xanthos.Evo
 				return 100;
 			}
 		}
+		public override WeaponAbility GetWeaponAbility()
+		{
+			return WeaponAbility.ArmorIgnore;
+		}
 
 		//UOSI - removed as of the Oct 2019 merge
 		//public override bool HasBreath{ get{ return true; } }
@@ -64,7 +68,7 @@ namespace Xanthos.Evo
 			if (Stage >= 4)
 			{
 				SetSkill(SkillName.MagicResist, 200, 200);
-				MeleeDamageAbsorb = 100;
+				MeleeDamageAbsorb = 200;
 				SetResistance(ResistanceType.Physical, 200);
 				SetResistance(ResistanceType.Cold, 200);
 				SetResistance(ResistanceType.Poison, 200);
