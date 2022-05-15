@@ -57,10 +57,11 @@ namespace Xanthos.Evo
 			if (Stage >= 4)
 			{
 				SetSkill(SkillName.MagicResist, 200, 200);
-				SetResistance(ResistanceType.Physical, 100);
-				SetResistance(ResistanceType.Cold, 100);
-				SetResistance(ResistanceType.Poison, 100);
-				SetResistance(ResistanceType.Energy, 100);
+				SetResistance(ResistanceType.Physical, 200);
+				SetResistance(ResistanceType.Cold, 200);
+				SetResistance(ResistanceType.Poison, 200);
+				SetResistance(ResistanceType.Energy, 200);
+				SetResistance(ResistanceType.Fire, 200);
 			}
 		}
 	}
