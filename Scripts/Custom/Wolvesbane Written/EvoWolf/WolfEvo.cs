@@ -25,8 +25,15 @@ namespace Xanthos.Evo
 		public override bool AddPointsOnDamage { get { return true; } }
 		public override bool AddPointsOnMelee { get { return true; } }
 		public override Type GetEvoDustType() { return typeof( WolfDust ); }
+		public override double ArmorRating
+		{
+			get
+			{
+				return 100;
+			}
+		}
 
-        //UOSI - removed as of the Oct 2019 merge
+		//UOSI - removed as of the Oct 2019 merge
 		//public override bool HasBreath{ get{ return true; } }
 
 		public WolfEvo( string name ) : base( name, 277, 0x3E91 )
@@ -57,6 +64,7 @@ namespace Xanthos.Evo
 			if (Stage >= 4)
 			{
 				SetSkill(SkillName.MagicResist, 200, 200);
+				MeleeDamageAbsorb = 100;
 				SetResistance(ResistanceType.Physical, 200);
 				SetResistance(ResistanceType.Cold, 200);
 				SetResistance(ResistanceType.Poison, 200);
