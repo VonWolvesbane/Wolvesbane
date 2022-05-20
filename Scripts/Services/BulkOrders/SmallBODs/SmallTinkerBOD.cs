@@ -101,8 +101,20 @@ namespace Server.Engines.BulkOrders
             GraphicHue = hue;
             GemType = gemType;
         }
-
-        public SmallTinkerBOD(Serial serial)
+		public SmallTinkerBOD(int amountCur, int amountMax, Type type, int number, int graphic, bool reqExceptional, BulkMaterialType mat, int hue)
+		{
+			Hue = 1109;
+			AmountMax = amountMax;
+			AmountCur = amountCur;
+			Type = type;
+			Number = number;
+			Graphic = graphic;
+			RequireExceptional = reqExceptional;
+			Material = mat;
+			GraphicHue = hue;
+			GemType = GemType.None;
+		}
+		public SmallTinkerBOD(Serial serial)
             : base(serial)
         {
         }

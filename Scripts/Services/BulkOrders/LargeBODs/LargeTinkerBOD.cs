@@ -88,9 +88,19 @@ namespace Server.Engines.BulkOrders
             {
                 AssignGemType();
             }
-        }
+		}
 
-        public LargeTinkerBOD(int amountMax, bool reqExceptional, BulkMaterialType mat, LargeBulkEntry[] entries, GemType gemType)
+	public LargeTinkerBOD(int amountMax, bool reqExceptional, BulkMaterialType mat, LargeBulkEntry[] entries)
+	{
+		Hue = 1109;
+		AmountMax = amountMax;
+		Entries = entries;
+		RequireExceptional = reqExceptional;
+		Material = mat;
+		_GemType = GemType.None;
+	}
+
+	public LargeTinkerBOD(int amountMax, bool reqExceptional, BulkMaterialType mat, LargeBulkEntry[] entries, GemType gemType)
         {
             Hue = 1109;
             AmountMax = amountMax;
