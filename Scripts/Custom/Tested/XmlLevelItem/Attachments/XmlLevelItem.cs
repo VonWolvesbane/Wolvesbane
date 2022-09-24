@@ -33,7 +33,17 @@ namespace Server.Engines.XmlSpawner2
         {
         }
 
-        [Attachable]
+		public XmlLevelItem(XmlLevelItem other)
+		{
+			Name = other.Name;
+			MaxLevel = other.MaxLevel;
+
+			Points = other.Points;
+			Level = other.Level;
+			Experience = other.Experience;
+		}
+
+		[Attachable]
         public XmlLevelItem()
             : this(125)
         {
