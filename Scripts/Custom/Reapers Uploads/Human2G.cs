@@ -23,6 +23,12 @@ namespace Server.Items
 			if (destWeapon == null || sourceWeapon == null)
 				return;
 
+			destWeapon.MaxDamage = sourceWeapon.MaxDamage;
+			destWeapon.MinDamage = sourceWeapon.MinDamage;
+			XmlLevelItem levelItem = (XmlLevelItem)XmlAttach.FindAttachment(sourceWeapon, typeof(XmlLevelItem));
+			if (levelItem != null)
+				XmlAttach.AttachTo(destWeapon, new XmlLevelItem(levelItem));
+
 			if (sourceWeapon.PlayerConstructed)
 			{
 				destWeapon.PlayerConstructed = true;
