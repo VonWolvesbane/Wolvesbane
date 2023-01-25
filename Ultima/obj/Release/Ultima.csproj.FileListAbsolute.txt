@@ -6,3 +6,6 @@ C:\Users\credz\Documents\Projects\Wolvesbane\Ultima\obj\Release\Ultima.csproj.As
 C:\Users\credz\Documents\Projects\Wolvesbane\Ultima\obj\Release\Ultima.csproj.CoreCompileInputs.cache
 C:\Users\credz\Documents\Projects\Wolvesbane\Ultima\obj\Release\Ultima.dll
 C:\Users\credz\Documents\Projects\Wolvesbane\Ultima.dll
+C:\Users\Administrator\Desktop\Wolvesbane\Ultima\obj\Release\Ultima.csprojAssemblyReference.cache
+C:\Users\Administrator\Desktop\Wolvesbane\Ultima\obj\Release\Ultima.dll
+C:\Users\Administrator\Desktop\Wolvesbane\Ultima.dll
