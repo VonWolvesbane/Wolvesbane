@@ -39,12 +39,26 @@ namespace RuneTargetExtensions
 
 			from.PlaySound(42);
 
+			if (item.HitPoints < item.MaxHitPoints)
+			{
+				from.SendMessage("The weapon is damaged beyond repair!");
+				item.Delete();
+				return false;
+			}
+
 			if (item.MaxHitPoints > 1)
-				item.MaxHitPoints--;
+			{
+				item.MaxHitPoints = 1;
+			}
+
 			item.HitPoints -= 1;
 			if (item.HitPoints > 0)
 			{
 				from.SendMessage("The weapon is damaged!");
+				if (item.HitPoints > item.MaxHitPoints)
+				{
+					item.HitPoints = item.MaxHitPoints;
+				}
 			}
 			else
 			{
