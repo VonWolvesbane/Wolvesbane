@@ -201,7 +201,7 @@ namespace Server
 		public static readonly int BioMinDam = 45;
 
 		//Bio Creatures Max Damage Cap
-		public static readonly int BioMaxDam = 55;
+		public static readonly int BioMaxDam = 355;
 
 		//Bio Creatures PhysResist Cap
 		public static readonly int BioPhys = 90;
