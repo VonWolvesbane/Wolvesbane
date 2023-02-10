@@ -12,8 +12,8 @@ namespace Server.Items
 		public override int AosMinDamage{ get{ return 20; } }
 		public override int OldMaxDamage{ get{ return 40; } }
 		public override int AosMaxDamage{ get{ return 40; } }
-		public override WeaponAbility PrimaryAbility{ get{ return WeaponAbility.ShadowStrike; } }
-		public override WeaponAbility SecondaryAbility{ get{ return WeaponAbility.ArmorIgnore; } }
+		//public override WeaponAbility PrimaryAbility{ get{ return WeaponAbility.ShadowStrike; } }
+		//public override WeaponAbility SecondaryAbility{ get{ return WeaponAbility.ArmorIgnore; } }
 
 		public override int DefMaxRange{ get{ return 5; } }
 
@@ -44,6 +44,7 @@ namespace Server.Items
       Attributes.WeaponSpeed = 20;
       LootType = LootType.Regular;
      Slayer = SlayerName.Repond ;
+			
 		}
 
 		public DASickle( Serial serial ) : base( serial )
