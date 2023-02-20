@@ -1789,6 +1789,7 @@
     <Compile Include="Custom\Reapers Uploads\Champions\TKOAK1.cs" />
     <Compile Include="Custom\Reapers Uploads\easter bunny\EasterBunny.cs" />
     <Compile Include="Custom\Reapers Uploads\easter bunny\easteregg1.cs" />
+    <Compile Include="Custom\Reapers Uploads\FairyTame.cs" />
     <Compile Include="Custom\Reapers Uploads\GetLore.cs" />
     <Compile Include="Custom\Reapers Uploads\HABHairToken.cs" />
     <Compile Include="Custom\Reapers Uploads\HellSet\Armor\ArmsOfHell.cs" />
@@ -2198,7 +2199,10 @@
     <Compile Include="Custom\Reapers Uploads\Talkingsigns.cs" />
     <Compile Include="Custom\Reapers Uploads\Ticket TP\Ticket.cs" />
     <Compile Include="Custom\Reapers Uploads\Ticket TP\TicketMoongate.cs" />
+    <Compile Include="Custom\Reapers Uploads\timedtrainer2h.cs" />
+    <Compile Include="Custom\Reapers Uploads\TimedTrainingElementalDeed2h.cs" />
     <Compile Include="Custom\Reapers Uploads\UnlimitedPetLeash.cs" />
+    <Compile Include="Custom\Reapers Uploads\WeaponRangeDeed.cs" />
     <Compile Include="Custom\Reapers Uploads\[ServUO.com]-CompletelyCustomizableVendor.cs" />
     <Compile Include="Custom\RoyalGargishTamingSash.cs" />
     <Compile Include="Custom\Rune Crafting\Runes\RuneTargetExt.cs" />
@@ -4156,6 +4160,7 @@
     <Compile Include="Items\Decorative\SilverSaplingReplica.cs" />
     <Compile Include="Items\Decorative\ValentineBear.cs" />
     <Compile Include="Items\Functional\StrangeContraption.cs" />
+    <Compile Include="Items\Quest\RewardBooks.cs" />
     <Compile Include="Items\Resource\FocusingGemOfVirtueBane.cs" />
     <Compile Include="Items\Functional\SerpentsJawbone.cs" />
     <Compile Include="Items\Internal\ItemSockets\Caddellite.cs" />
@@ -16346,6 +16351,7 @@
     <Content Include="Services\Revamped Dungeons\Shame Revamped\Read Me.txt" />
     <Content Include="Services\RunicReforging\ReadMe.txt" />
     <Content Include="Services\UltimaStore\ReadMe.txt" />
+    <Content Include="Staff Runebook\Rune Accounts.xml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Server\Server.csproj">
