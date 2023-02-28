@@ -101,6 +101,7 @@ namespace Server.Mobiles
 				{
 					case 0: PackItem( new EmptyDNAVial() ); break;
 					case 1: PackItem( new EmptyDNAVialSet() ); break;
+					case 2: PackItem(new BioTool()); break;
 				}
 			}
 		}

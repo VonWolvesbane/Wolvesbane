@@ -13,7 +13,7 @@ namespace Server.Items
 
                           Weight = 1;
                           Name = "Necroloricatus";
-                          Hue = 0;
+                          Hue = 1579;
 
 	
               Layer = Layer.InnerTorso;

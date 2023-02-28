@@ -15,6 +15,7 @@ namespace Server.Items
                       public Necroacidus() 
                       {
                                         Weight = 1;
+			Hue = 1579;
                                        
                                         Name = "Necroacidus";
                                        
@@ -26,8 +27,10 @@ namespace Server.Items
                                         WeaponAttributes.HitLowerDefend = 50;
                                         WeaponAttributes.HitHarm = 50;
                                         WeaponAttributes.SelfRepair = 10;
-                                         Attributes.WeaponDamage = 200;
+			Attributes.SpellChanneling = 1;
+			Attributes.WeaponDamage = 200;
                                         Attributes.WeaponSpeed = 100;
+			
               
                                     }
               
