@@ -1064,6 +1064,11 @@
     <Compile Include="Custom\EVO System\BaseEvoSpec.cs" />
     <Compile Include="Custom\EVO System\BaseMountEvo.cs" />
     <Compile Include="Custom\EVO System\Commands.cs" />
+    <Compile Include="Custom\EVO System\Deamon\DeamonEvoDust.cs" />
+    <Compile Include="Custom\EVO System\Deamon\DeamonEvoEgg.cs" />
+    <Compile Include="Custom\EVO System\Deamon\DeamonEvoSpec.cs" />
+    <Compile Include="Custom\EVO System\Deamon\DeamonEvo.cs" />
+    <Compile Include="Custom\EVO System\Deamon\GuardianDeamonEvo.cs" />
     <Compile Include="Custom\EVO System\Dragon\DragonEvo.cs" />
     <Compile Include="Custom\EVO System\Dragon\DragonEvoDust.cs" />
     <Compile Include="Custom\EVO System\Dragon\DragonEvoEgg.cs" />

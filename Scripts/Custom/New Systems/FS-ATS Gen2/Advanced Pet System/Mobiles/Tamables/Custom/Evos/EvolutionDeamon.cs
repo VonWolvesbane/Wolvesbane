@@ -3,13 +3,13 @@ using Server.Mobiles;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a demon corpse" )]
+	[CorpseName( "a deamon corpse" )]
 	public class EvolutionDeamon : BaseCreature
 	{
 		[Constructable]
 		public EvolutionDeamon() : base( AIType.AI_Mage, FightMode.Closest, 10, 1, 0.2, 0.4 )
 		{
-			Name = "a demon baby";
+			Name = "a deamon baby";
 			Body = 317;
 			Hue = Utility.RandomRedHue();
 			BaseSoundID = 624;
