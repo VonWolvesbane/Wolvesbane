@@ -180,25 +180,25 @@ namespace Server
 		***********************************************/
 
 		//Bio Creatures STR Cap
-		public static readonly int BioSTR = 5000;
+		public static readonly int BioSTR = 7000;
 
 		//Bio Creatures DEX Cap
-		public static readonly int BioDEX = 3000;
+		public static readonly int BioDEX = 5000;
 
 		//Bio Creatures INT Cap
-		public static readonly int BioINT = 5000;
+		public static readonly int BioINT = 7000;
 
 		//Bio Creatures HITS Cap
-		public static readonly int BioHITS = 5000;
+		public static readonly int BioHITS = 15000;
 
 		//Bio Creatures STAM Cap
-		public static readonly int BioSTAM = 5000;
+		public static readonly int BioSTAM = 15000;
 
 		//Bio Creatures MANA Cap
-		public static readonly int BioMANA = 5000;
+		public static readonly int BioMANA = 25000;
 
 		//Bio Creatures Min Damage Cap
-		public static readonly int BioMinDam = 45;
+		public static readonly int BioMinDam = 145;
 
 		//Bio Creatures Max Damage Cap
 		public static readonly int BioMaxDam = 355;
@@ -216,7 +216,7 @@ namespace Server
 		public static readonly int BioEnergy = 90;
 
 		//Bio Creatures PhysPoison Cap
-		public static readonly int BioPoison = 90;
+		public static readonly int BioPoison = 95;
 
 		//Bio Creatures V Armor Cap
 		public static readonly int BioVArmor = 75;
