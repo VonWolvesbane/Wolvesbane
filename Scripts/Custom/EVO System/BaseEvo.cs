@@ -140,8 +140,8 @@ namespace Xanthos.Evo
 			}
 		}
 
-		//public BaseEvo( string name, AIType ai, double dActiveSpeed ) : base( ai, FightMode.Closest, 10, 1, dActiveSpeed, 0.4 )
-		public BaseEvo( string name, int bodyID, int itemID ) : base(name, bodyID, itemID, AIType.AI_Mage, FightMode.Closest, 10, 1, 0.2, 0.1 )
+		public BaseEvo( string name, AIType ai, double dActiveSpeed ) : base( ai, FightMode.Closest, 10, 1, dActiveSpeed, 0.4 )
+		//public BaseEvo( string name, int bodyID, int itemID ) : base(name, bodyID, itemID, AIType.AI_Mage, FightMode.Closest, 10, 1, 0.2, 0.1 )
 		{
 			Name = name;
 			Init();
