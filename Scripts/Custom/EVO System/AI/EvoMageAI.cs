@@ -37,6 +37,7 @@ namespace Xanthos.Evo
 		}
 
 		public override bool DoOrderGuard()
+		{
 					if (m_Mobile.IsDeadPet)
 			{
 				return true;
