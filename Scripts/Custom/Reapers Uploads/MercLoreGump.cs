@@ -12,6 +12,9 @@ using System.Reflection;
 using Server.Targeting;
 using Server.ContextMenus;
 using Server.HuePickers;
+using Xanthos.Interfaces;
+using Xanthos.ShrinkSystem;
+using Xanthos.Evo;
 
 namespace Server.Gumps
 {
@@ -207,6 +210,12 @@ namespace Server.Gumps
 				AddHtml( 220, 150, 160, 18, "<basefont color = #FFD57A>Tithing Points</basefont>", false, false ); // Tithing Points
 				AddHtml( 357, 150, 160, 18, String.Format( "<basefont color = #FFFFFF>{0}</basefont>", c.TithingPoints ), false, false );
 				
+				IEvoCreature evo = c as IEvoCreature;
+				if (c is IEvoCreature)
+				{
+				AddHtml( 220, 168, 160, 18, "<basefont color = #FFD57A>Evoloution points</basefont>", false, false );
+				AddHtml( 357, 168, 160, 18, String.Format( "<basefont color = #FFFFFF>{0}</basefont>", evo.Ep ), false, false );
+				}
 				
 				AddHtml( 220, 220, 160, 18, "<basefont color = #FFD57A>Resistances</basefont>", false, false ); // Resistances
 
