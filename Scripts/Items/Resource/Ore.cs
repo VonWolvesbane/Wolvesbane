@@ -120,9 +120,9 @@ namespace Server.Items
         {
             double rand = Utility.RandomDouble();
 
-            if (rand < 0.12)
-                return 0x19B7;
-            else if (rand < 0.18)
+            //if (rand < 0.12)
+               // return 0x19B7;
+            /*else*/ if (rand < 0.18)
                 return 0x19B8;
             else if (rand < 0.25)
                 return 0x19BA;
@@ -292,8 +292,8 @@ namespace Server.Items
 
                     if (ore.ItemID == 0x19B9)
                         worth *= 8;
-                    else if (ore.ItemID == 0x19B7)
-                        worth *= 2;
+                    //else if (ore.ItemID == 0x19B7)
+                    //    worth *= 2;
                     else
                         worth *= 4;
 
@@ -301,8 +301,8 @@ namespace Server.Items
 
                     if (m_Ore.ItemID == 0x19B9)
                         sourceWorth *= 8;
-                    else if (m_Ore.ItemID == 0x19B7)
-                        sourceWorth *= 2;
+                    //else if (m_Ore.ItemID == 0x19B7)
+                    //    sourceWorth *= 2;
                     else
                         sourceWorth *= 4;
 
@@ -313,11 +313,11 @@ namespace Server.Items
 
                     if (ore.DefaultWeight != m_Ore.DefaultWeight)
                     {
-                        if (ore.ItemID == 0x19B7 || m_Ore.ItemID == 0x19B7)
+                       /* if (ore.ItemID == 0x19B7 || m_Ore.ItemID == 0x19B7)
                         {
                             newID = 0x19B7;
                         }
-                        else if (ore.ItemID == 0x19B9)
+                        else */ if (ore.ItemID == 0x19B9)
                         {
                             newID = m_Ore.ItemID;
                             plusWeight = ore.Amount * 2;
@@ -328,7 +328,7 @@ namespace Server.Items
                         }
                     }
 
-                    if ((ore.ItemID == 0x19B9 && worth > 120000) || ((ore.ItemID == 0x19B8 || ore.ItemID == 0x19BA) && worth > 60000) || (ore.ItemID == 0x19B7 && worth > 30000))
+                    if ((ore.ItemID == 0x19B9 && worth > 120000) || ((ore.ItemID == 0x19B8 || ore.ItemID == 0x19BA) && worth > 60000)/* || (ore.ItemID == 0x19B7 && worth > 30000)*/)
                     {
                         from.SendLocalizedMessage(1062844); // There is too much ore to combine.
                         return;
@@ -343,8 +343,8 @@ namespace Server.Items
 
                     if (ore.ItemID == 0x19B9)
                         ore.Amount = worth / 8;
-                    else if (ore.ItemID == 0x19B7)
-                        ore.Amount = worth / 2;
+                   // else if (ore.ItemID == 0x19B7)
+                   //     ore.Amount = worth / 2;
                     else
                         ore.Amount = worth / 4;
 
@@ -395,11 +395,11 @@ namespace Server.Items
                         return;
                     }
 
-                    if (m_Ore.ItemID == 0x19B7 && m_Ore.Amount < 2)
+                   /* if (m_Ore.ItemID == 0x19B7 && m_Ore.Amount < 2)
                     {
                         from.SendLocalizedMessage(501987); // There is not enough metal-bearing ore in this pile to make an ingot.
                         return;
-                    }
+                    } */
 
                     if (talisman || from.CheckTargetSkill(SkillName.Mining, targeted, minSkill, maxSkill))
                     {
@@ -416,14 +416,14 @@ namespace Server.Items
 
                             int ingotAmount;
 
-                            if (m_Ore.ItemID == 0x19B7)
+                           /* if (m_Ore.ItemID == 0x19B7)
                             {
                                 ingotAmount = toConsume / 2;
 
                                 if (toConsume % 2 != 0)
                                     --toConsume;
-                            }
-                            else if (m_Ore.ItemID == 0x19B9)
+                            } 
+                            else */ if (m_Ore.ItemID == 0x19B9)
                             {
                                 ingotAmount = toConsume * 2;
                             }
@@ -459,8 +459,8 @@ namespace Server.Items
                         {
                             if (m_Ore.ItemID == 0x19B9)
                                 m_Ore.ItemID = 0x19B8;
-                            else
-                                m_Ore.ItemID = 0x19B7;
+                           // else
+                           //     m_Ore.ItemID = 0x19B7;
                         }
                         else
                         {

@@ -17,9 +17,10 @@ using Server.Network;
 using Server.Regions;
 using Server.Spells;
 using Server.Targets;
-using server.Mobiles;
+using Server.Mobiles;
 
 using MoveImpl = Server.Movement.MovementImpl;
+using Server;
 
 namespace Xanthos.Evo
 {
