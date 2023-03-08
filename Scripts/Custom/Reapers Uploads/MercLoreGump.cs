@@ -150,7 +150,7 @@ namespace Server.Gumps
 			if ( page == MercLorePage.Stats )
 			{
 				// Background Setup
-				AddBackground( 0, 0, 455, 372, 9390 );
+				AddBackground( 0, 0, 455, 372, 9270 );
 				//AddAlphaRegion( 10, 10, 430, 352 );
 				
 				//Middle Display
@@ -177,7 +177,10 @@ namespace Server.Gumps
 				AddHtmlLocalized( 20, 148, 160, 18, 3000112, LabelColor, false, false ); // Intelligence
 				AddHtml( 167, 148, 35, 18, FormatStat( c.Int ), false, false );
 				
-				AddHtml( 20, 220, 160, 18, "<basefont color = #FFD57A>Damage</basefont>", false, false ); // Damage
+				AddHtml( 20, 202, 160, 18, "<basefont color = #FFD57A>Damage</basefont>", false, false ); // Damage
+				
+				AddHtmlLocalized( 20, 220, 160, 18, 1076750, LabelColor, false, false ); // Base Damage
+				AddHtml( 167, 220, 35, 18, FormatDamage(c.DamageMin, c.DamageMax), false, false);
 
 				AddHtmlLocalized( 20, 238, 160, 18, 1061646, LabelColor, false, false ); // Physical
 				AddHtml( 167, 238, 35, 18, FormatElement( c.PhysicalDamage ), false, false );
@@ -234,7 +237,7 @@ namespace Server.Gumps
 			{
 
 				// Background Setup
-				AddBackground( 0, 0, 455, 372, 9390 );
+				AddBackground( 0, 0, 455, 372, 9270 );
 				//AddAlphaRegion( 10, 10, 435, 352 );
 				
 				
