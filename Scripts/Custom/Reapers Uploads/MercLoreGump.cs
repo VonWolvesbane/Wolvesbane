@@ -180,7 +180,7 @@ namespace Server.Gumps
 				AddHtml( 20, 202, 160, 18, "<basefont color = #FFD57A>Damage</basefont>", false, false ); // Damage
 				
 				AddHtmlLocalized( 20, 220, 160, 18, 1076750, LabelColor, false, false ); // Base Damage
-				AddHtml( 167, 220, 35, 18, FormatDamage(c.DamageMin, c.DamageMax), false, false);
+				AddHtml( 165, 220, 35, 18, FormatDamage(c.DamageMin, c.DamageMax), false, false);
 
 				AddHtmlLocalized( 20, 238, 160, 18, 1061646, LabelColor, false, false ); // Physical
 				AddHtml( 167, 238, 35, 18, FormatElement( c.PhysicalDamage ), false, false );
