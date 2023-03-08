@@ -87,7 +87,7 @@ namespace Server.Mobiles
         {
             base.OnDeath(c);
 
-            switch (Utility.Random(10))
+            switch (Utility.Random(25))
             {
                     case 0: c.DropItem(new MinersPickaxe()); break;
                 case 1: c.DropItem(new LegsofExpertMining()); break;

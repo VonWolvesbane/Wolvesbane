@@ -16,8 +16,8 @@ namespace Server.Items
             SkillBonuses.SetValues(0, SkillName.Mining, 20.0);
             SkillBonuses.SetValues(1, SkillName.Blacksmith, 20.0);
             WeaponAttributes.SelfRepair = 100;
-            //this.UsesRemaining = 50;
-            //this.ShowUsesRemaining = true;
+            this.UsesRemaining = 150;
+            this.ShowUsesRemaining = true;
         }
 
         public MinersPickaxe(Serial serial)
