@@ -257,7 +257,7 @@ namespace Server.Mobiles
 				if ( OWLTROptionsManager.IsEnabled(OWLTROptionsManager.OPTIONS_ENUM.RECIPE_CRAFT) )
 					m.AddToBackpack( new ResourceRecipe() );
 				
-				switch ( Utility.Random( 13 )) // select which skill to use in the ps
+				switch ( Utility.Random( 14 )) // select which skill to use in the ps
 				{ 
 					case 0: m.AddToBackpack( new PowerScroll( SkillName.Blacksmith, level ) ); break; // give blacksmith ps acording to the ps level we selected before
 					case 1: m.AddToBackpack( new PowerScroll( SkillName.Tailoring, level ) ); break;  
@@ -273,6 +273,7 @@ namespace Server.Mobiles
 					case 11: m.AddToBackpack( new PowerScroll( SkillName.Lockpicking, level ) ); break; 
 					case 12: m.AddToBackpack( new PowerScroll( SkillName.Fishing, level ) ); break; 
 					case 13: m.AddToBackpack( new PowerScroll( SkillName.ItemID, level ) ); break;
+					case 14: m.AddToBackpack(new PowerScroll(SkillName.Imbuing, level)); break;
 				} 		
 				m.SendLocalizedMessage( 1049524 ); // You have received a scroll of power!
 				if (Utility.Random(5) == 2) //Select random number between 0-4 and if it's 2 continue

@@ -19,7 +19,8 @@ namespace Server.Engines.MiniChamps
         EnslavedGoblins,
         SkeletalDragon,
         LavaCaldera,
-        MeraktusTheTormented
+        MeraktusTheTormented,
+			Boss
     }
 
     public class MiniChampTypeInfo
@@ -385,7 +386,32 @@ namespace Server.Engines.MiniChamps
                     new MiniChampTypeInfo(1, typeof(Meraktus))
                 )
             ),
-        };
+
+			new MiniChampInfo // Boss
+            (
+				null,
+				new MiniChampLevelInfo // Level 1
+                (
+					new MiniChampTypeInfo(20, typeof(ThePillager))
+				),
+				new MiniChampLevelInfo // Level 2
+                (
+					new MiniChampTypeInfo(15, typeof(Kashmir))
+				),
+				new MiniChampLevelInfo // Level 3
+                (
+					new MiniChampTypeInfo(15, typeof(KageMaru))
+				),
+				new MiniChampLevelInfo // Level 4
+                (
+					new MiniChampTypeInfo(5, typeof(Caveman))
+				),
+				new MiniChampLevelInfo // Champion
+                (
+					new MiniChampTypeInfo(1, typeof(Malacoda))
+				)
+			),
+		};
 
         public static MiniChampInfo GetInfo(MiniChampType type)
         {
