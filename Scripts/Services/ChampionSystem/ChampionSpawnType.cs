@@ -26,7 +26,8 @@ namespace Server.Engines.CannedEvil
         Crafter,
         //daat99 OWLTR end - MotA champ
 		//Custom 
-		Keeper
+		Keeper,
+		Boss
 		//Custom
     }
 
@@ -198,9 +199,19 @@ namespace Server.Engines.CannedEvil
 				new Type[]{ typeof( AncientPanther ), typeof( ProtectorWolf ) },										// Level 2
 				new Type[]{ typeof( GTiger ), typeof( GLion ) },														// Level 3
 				new Type[]{ typeof( GCuSidhe ), typeof( GRevenantLion ) }												// Level 4
-			} )				
+			} ),
 			//ustom Champion Keeper of Knowledge
 			
+			//Custom Boss Champ
+			new ChampionSpawnInfo( "The Lord of Bosses", typeof(Malacoda), new string[]{ "Indestructable", "Unwavering", "Insane" } , new Type[][]
+			{																											// The Keeper
+				new Type[]{ typeof( Kashmir )},														// Level 1
+				new Type[]{ typeof( ThePillager ) },										// Level 2
+				new Type[]{ typeof( Caveman ), typeof( SabertoothedTiger) },														// Level 3
+				new Type[]{ typeof( DaneElec ) }												// Level 4
+			} )				
+			//ustom Boss Champ
+
         };
 
         public static ChampionSpawnInfo GetInfo(ChampionSpawnType type)
