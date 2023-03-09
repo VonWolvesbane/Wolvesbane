@@ -13,7 +13,7 @@ using Server.Targeting;
 using Server.ContextMenus;
 using Server.HuePickers;
 using Xanthos.Interfaces;
-using Xanthos.ShrinkSystem;
+//using Xanthos.ShrinkSystem;
 using Xanthos.Evo;
 
 namespace Server.Gumps

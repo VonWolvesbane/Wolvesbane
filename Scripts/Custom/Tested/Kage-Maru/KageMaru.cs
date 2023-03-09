@@ -15,6 +15,7 @@ namespace Server.Mobiles
                                                Name = "Kage-Maru";
 					       Title = "The Tenth Generation";
                                                Hue = 1107;
+			
                                                //Body = 9; // Uncomment these lines and input values
                                                //BaseSoundID = 357; // To use your own custom body and sound.
                                                SetStr( 5000 );
@@ -37,7 +38,7 @@ namespace Server.Mobiles
                                                Karma = - 25000;
                                                VirtualArmor = 70;
      
-                                                 switch ( Utility.Random( 35 ))
+                                                 switch ( Utility.Random( 65 ))
 			         {
 				
 				case 0: PackItem( new KageMaruChest() ); break;
@@ -57,8 +58,9 @@ namespace Server.Mobiles
                                  public override bool BardImmune{ get{ return true; } }
                                  public override bool Unprovokable{ get{ return true; } }
                                  public override Poison HitPoison{ get{ return Poison. Lethal ; } }
+		public override bool AlwaysMurderer { get { return true; } }
 
-public KageMaru( Serial serial ) : base( serial )
+		public KageMaru( Serial serial ) : base( serial )
                       {
                       }
 
