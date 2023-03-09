@@ -11,7 +11,7 @@ using System;
 using Server;
 using Server.Items;
 
-namespace DarkTigerTrophyE
+namespace Server.Items
 {
 	public class DarkTigerTrophyEAddon : BaseAddon
 	{

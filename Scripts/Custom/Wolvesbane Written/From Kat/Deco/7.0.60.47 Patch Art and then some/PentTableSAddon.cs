@@ -11,16 +11,18 @@ using System;
 using Server;
 using Server.Items;
 
-namespace PentTableS
+namespace Server.Items
 {
-	public class PentTableSAddon : BaseAddon
+	public class PentTableSAddon : BaseAddon 
 	{
-        private static int[,] m_AddOnSimpleComponents = new int[,] {
-			  {40677, 0, 0, 0}// 1	
-		};
+		
+		//private static int[,] m_AddOnSimpleComponents = new int[,] {
+			  //{40677, 0, 0, 0}// 1	
+		//};
 
- 
-            
+		
+		
+
 		public override BaseAddonDeed Deed
 		{
 			get
@@ -33,18 +35,39 @@ namespace PentTableS
 		public PentTableSAddon()
 		{
 
-            for (int i = 0; i < m_AddOnSimpleComponents.Length / 4; i++)
-                AddComponent( new AddonComponent( m_AddOnSimpleComponents[i,0] ), m_AddOnSimpleComponents[i,1], m_AddOnSimpleComponents[i,2], m_AddOnSimpleComponents[i,3] );
+		AddComplexComponent((BaseAddon)this, 40677, 0, 0, 0, 0, 0, "Pentagram Table", 1);// 1
+																						 //for (int i = 0; i < m_AddOnSimpleComponents.Length / 4; i++)
+																						 //AddComponent( new AddonComponent( m_AddOnSimpleComponents[i,0] ), m_AddOnSimpleComponents[i,1], m_AddOnSimpleComponents[i,2], m_AddOnSimpleComponents[i,3] );
 
 
-		}
+	}
 
 		public PentTableSAddon( Serial serial ) : base( serial )
 		{
 		}
+	private static void AddComplexComponent(BaseAddon addon, int item, int xoffset, int yoffset, int zoffset, int hue, int lightsource)
+	{
+		AddComplexComponent(addon, item, xoffset, yoffset, zoffset, hue, lightsource, null, 1);
+	}
+	private static void AddComplexComponent(BaseAddon addon, int item, int xoffset, int yoffset, int zoffset, int hue, int lightsource, string name, int amount)
+	{
+		AddonComponent ac;
+		ac = new AddonComponent(item);
+		if (name != null && name.Length > 0)
+			ac.Name = name;
+		if (hue != 0)
+			ac.Hue = hue;
+		if (amount > 1)
+		{
+			ac.Stackable = false;
+			ac.Amount = amount;
+		}
+		if (lightsource != -1)
+			ac.Light = (LightType)lightsource;
+		addon.AddComponent(ac, xoffset, yoffset, zoffset);
+	}
 
-
-		public override void Serialize( GenericWriter writer )
+	public override void Serialize( GenericWriter writer )
 		{
 			base.Serialize( writer );
 			writer.Write( 0 ); // Version
@@ -70,7 +93,7 @@ namespace PentTableS
 		[Constructable]
 		public PentTableSAddonDeed()
 		{
-			Name = "PentTableS";
+			Name = "Pentagram Table S";
 		}
 
 		public PentTableSAddonDeed( Serial serial ) : base( serial )

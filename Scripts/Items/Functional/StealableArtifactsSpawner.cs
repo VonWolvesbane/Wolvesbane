@@ -211,7 +211,12 @@ namespace Server.Items
             new StealableEntry(Map.Malas, new Point3D(168, 1609, 0), 9216, 13824, typeof(AcademicBooksArtifact)),
             new StealableEntry(Map.Malas, new Point3D(165, 1650, 0), 9216, 13824, typeof(AcademicBooksArtifact)),
             new StealableEntry(Map.Malas, new Point3D(85, 1644, 20), 9216, 13824, typeof(AcademicBooksArtifact)),
-        };
+
+			// Wolvesbane Exclusive
+            new StealableEntry(Map.Wolvesbane, new Point3D(5324, 735, 0), 9216, 13824, typeof(PentTableSAddon)),
+			new StealableEntry(Map.Wolvesbane, new Point3D(5303, 737, 0), 9216, 13824, typeof(DarkTigerTrophyEAddon)),
+
+		};
 
         private static Type[] m_TypesOfEntries = null;
         private static StealableArtifactsSpawner m_Instance;
