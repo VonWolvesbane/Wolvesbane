@@ -126,7 +126,7 @@ namespace Server.Mobiles
 
 			}
 
-			//public void GiveCraftPowerScroll() //Generate power scroll routine and add to pack
+			public void GiveCraftPowerScroll() //Generate power scroll routine and add to pack
 			{
 				List<Mobile> toGive = new List<Mobile>(); //no idea :(
 
@@ -139,16 +139,16 @@ namespace Server.Mobiles
 						toGive.Add(info.Attacker);
 				}
 
-				list = Aggressed; //I think it add list of players it attacked
-				for (int i = 0; i < list.Count; ++i)
+				List<DamageStore> rights = GetLootingRights();
+				for (int i = rights.Count - 1; i >= 0; --i)
 				{
-					AggressorInfo info = list[i];
+					DamageStore ds = rights[i];
 
-					if (info.Defender.Player && info.Defender.Alive && (DateTime.Now - info.LastCombatTime) < TimeSpan.FromSeconds(30.0) && !toGive.Contains(info.Defender))
-						toGive.Add(info.Defender);
+					if (ds.m_HasRight)
+						toGive.Add(ds.m_Mobile);
 				}
-				if (toGive.Count == 0)//if nobody attacked it and it didn't attack anybody then break operation and no ps MUAH
-					return;
+					if (toGive.Count == 0)//if nobody attacked it and it didn't attack anybody then break operation and no ps MUAH
+						return;
 
 				// Randomize //absolutly no idea
 				for (int i = 0; i < toGive.Count; ++i)
@@ -229,7 +229,7 @@ namespace Server.Mobiles
 
 
 
-				} } }
+				 } }
 		
 	public override bool HasBreath{ get{ return true ; } }
 	public override int BreathFireDamage{ get{ return 20; } }
