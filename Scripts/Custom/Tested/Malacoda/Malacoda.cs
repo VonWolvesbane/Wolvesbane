@@ -2,7 +2,7 @@
 
 using System;
 using System.Collections.Generic;
-using daat99;
+//using daat99;
 using Server.Items;
 
 namespace Server.Mobiles
@@ -138,8 +138,8 @@ namespace Server.Mobiles
 					if (info.Attacker.Player && info.Attacker.Alive && (DateTime.Now - info.LastCombatTime) < TimeSpan.FromSeconds(30.0) && !toGive.Contains(info.Attacker))
 						toGive.Add(info.Attacker);
 				}
-
-				List<DamageStore> rights = GetLootingRights();
+				
+			List<DamageStore> rights = GetLootingRights();
 				for (int i = rights.Count - 1; i >= 0; --i)
 				{
 					DamageStore ds = rights[i];
@@ -186,8 +186,8 @@ namespace Server.Mobiles
 					else
 						level = 115;
 
-					if (OWLTROptionsManager.IsEnabled(OWLTROptionsManager.OPTIONS_ENUM.RECIPE_CRAFT))
-						m.AddToBackpack(new ResourceRecipe());
+					//if (OWLTROptionsManager.IsEnabled(OWLTROptionsManager.OPTIONS_ENUM.RECIPE_CRAFT))
+						//m.AddToBackpack(new ResourceRecipe());
 
 					switch (Utility.Random(16)) // select which skill to use in the ps
 					{
@@ -226,27 +226,15 @@ namespace Server.Mobiles
 
 					}
 					m.SendLocalizedMessage(1049524); // You have received a scroll of power!
-
-
-
-				 } }
+				 } 
+			}
 		
-	public override bool HasBreath{ get{ return true ; } }
-	public override int BreathFireDamage{ get{ return 20; } }
-	public override int BreathColdDamage{ get{ return 20; } }
 			
-//      public override bool IsScaryToPets{ get{ return true; } }
-	public override bool AutoDispel{ get{ return true; } }
+		public override bool AutoDispel{ get{ return true; } }
         public override bool BardImmune{ get{ return true; } }
         public override bool Unprovokable{ get{ return true; } }
         public override Poison HitPoison{ get{ return Poison. Lethal ; } }
         public override bool AlwaysMurderer{ get{ return true; } }
-//	public override bool IsScaredOfScaryThings{ get{ return false; } }
-
-
-
-
-
 
 		public override void AlterMeleeDamageFrom( Mobile from, ref int damage )
 		{
@@ -258,119 +246,23 @@ namespace Server.Mobiles
 					damage = 0; // Immune to pets and provoked creatures
 			}
 		}
-		/*private class TeleportTimer : Timer
-		{
-			private Mobile m_Owner;
 
-			private static int[] m_Offsets = new int[]
-			{
-				-1, -1,
-				-1,  0,
-				-1,  1,
-				0, -1,
-				0,  1,
-				1, -1,
-				1,  0,
-				1,  1
-			};
 
-			public TeleportTimer( Mobile owner ) : base( TimeSpan.FromSeconds( 1.0 ), TimeSpan.FromSeconds( 1.1 ) )
-			{
-				m_Owner = owner;
-			}
-
-			protected override void OnTick()
-			{
-				if ( m_Owner.Deleted )
-				{
-					Stop();
-					return;
-				}
-
-				Map map = m_Owner.Map;
-
-				if ( map == null )
-					return;
-
-				if ( 0.5 < Utility.RandomDouble() )
-					return;
-
-				Mobile toTeleport = null;
-
-				foreach ( Mobile m in m_Owner.GetMobilesInRange( 16 ) )
-				{
-					if ( m != m_Owner && m.Player && m_Owner.CanBeHarmful( m ) && m_Owner.CanSee( m ) )
-					{
-						toTeleport = m;
-						break;
-					}
-				}
-
-				if ( toTeleport != null )
-				{
-					int offset = Utility.Random( 8 ) * 2;
-
-					Point3D to = m_Owner.Location;
-
-					for ( int i = 0; i < m_Offsets.Length; i += 2 )
-					{
-						int x = m_Owner.X + m_Offsets[(offset + i) % m_Offsets.Length];
-						int y = m_Owner.Y + m_Offsets[(offset + i + 1) % m_Offsets.Length];
-
-						if ( map.CanSpawnMobile( x, y, m_Owner.Z ) )
-						{
-							to = new Point3D( x, y, m_Owner.Z );
-							break;
-						}
-						else
-						{
-							int z = map.GetAverageZ( x, y );
-
-							if ( map.CanSpawnMobile( x, y, z ) )
-							{
-								to = new Point3D( x, y, z );
-								break;
-							}
-						}
-					}
-
-					Mobile m = toTeleport;
-
-					Point3D from = m.Location;
-
-					m.Location = to;
-
-					Server.Spells.SpellHelper.Turn( m_Owner, toTeleport );
-					Server.Spells.SpellHelper.Turn( toTeleport, m_Owner );
-
-					m.ProcessDelta();
-
-					Effects.SendLocationParticles( EffectItem.Create( from, m.Map, EffectItem.DefaultDuration ), 0x3728, 10, 10, 2023 );
-					Effects.SendLocationParticles( EffectItem.Create(   to, m.Map, EffectItem.DefaultDuration ), 0x3728, 10, 10, 5023 );
-
-					m.PlaySound( 0x1FE );
-
-					m_Owner.Combatant = toTeleport;
-				}
-			}
-		}
-		*/
-
-public Malacoda( Serial serial ) : base( serial )
+		public Malacoda( Serial serial ) : base( serial )
                       {
                       }
 
 	
-  public override void Serialize( GenericWriter writer )
+		public override void Serialize( GenericWriter writer )
                       {
-                                        base.Serialize( writer );
-                                        writer.Write( (int) 0 );
+                         base.Serialize( writer );
+                         writer.Write( (int) 0 );
                       }
 
         public override void Deserialize( GenericReader reader )
                       {
-                                        base.Deserialize( reader );
-                                        int version = reader.ReadInt();
+                         base.Deserialize( reader );
+                        int version = reader.ReadInt();
                       }
     }
 }
