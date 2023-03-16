@@ -49,7 +49,6 @@ namespace Server
 			"SLWarHorse",
 			"TBWarHorse",
 			"FactionWarHorse",
-			"BBC",
 			"DaemonEvo",
 			"GolemEvo",
 			"LionEvo",
@@ -118,6 +117,8 @@ namespace Server
 
 		// Enable Bio Shrink
 		public static readonly bool EnableBioShrink = false;
+
+		
 
 		/***********************************************
 		************************************************

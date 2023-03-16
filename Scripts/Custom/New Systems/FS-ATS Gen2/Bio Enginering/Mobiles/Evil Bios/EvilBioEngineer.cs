@@ -97,7 +97,7 @@ namespace Server.Mobiles
 
 			if ( Utility.Random( 100 ) < 25 )
 			{
-				switch ( Utility.Random( 2 ))
+				switch ( Utility.Random( 3 ))
 				{
 					case 0: PackItem( new EmptyDNAVial() ); break;
 					case 1: PackItem( new EmptyDNAVialSet() ); break;
