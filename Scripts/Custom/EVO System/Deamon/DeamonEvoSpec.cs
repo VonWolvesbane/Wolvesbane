@@ -201,9 +201,10 @@ namespace Xanthos.Evo
 			MinDamages = new int[5] { 100, 75, 75, 75, 75 };
 			MaxDamages = new int[5] { 100, 75, 75, 75, 75 };
 
-			ResistanceTypes = null;
-			MinResistances = null;
-			MaxResistances = null;	
+			ResistanceTypes = new ResistanceType[5] { ResistanceType.Physical, ResistanceType.Fire, ResistanceType.Cold,
+														ResistanceType.Poison, ResistanceType.Energy };
+			MinResistances = new int[5] { 100, 100, 100, 100, 100 };
+			MaxResistances = new int[5] { 100, 100, 100, 100, 100 };
 
 			DamageMin = 50; DamageMax = 50; HitsMin= 1350; HitsMax = 1400;
 			StrMin = 1250; StrMax = 1250; DexMin = 125; DexMax = 35; IntMin = 125; IntMax = 125;

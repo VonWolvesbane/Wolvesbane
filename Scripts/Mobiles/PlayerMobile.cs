@@ -4301,6 +4301,8 @@ namespace Server.Mobiles
 
 		public PlayerMobile()
 		{
+			Bioenginer = false;
+
 			Instances.Add(this);
 
 			m_AutoStabled = new List<Mobile>();
@@ -4629,7 +4631,7 @@ namespace Server.Mobiles
 			get{ return m_TamingBOBFilter; }
 		}
 		#endregion
-		
+
 		public override void Deserialize(GenericReader reader)
 		{
 			base.Deserialize(reader);
@@ -4638,45 +4640,43 @@ namespace Server.Mobiles
 
 			switch (version)
 			{
-                case 41:
-                    NextGemOfSalvationUse = reader.ReadDateTime();
-                    goto case 40;
-                case 40:
-                    m_ExtendedFlags = (ExtendedPlayerFlag)reader.ReadInt();
-				    goto case 39;
-                case 39:
-                    RewardStableSlots = reader.ReadInt();
-                    goto case 38;
-                case 38: // Siege Blessed Item
-                    _BlessedItem = reader.ReadItem();
-                    goto case 37;
-                    // Version 37 - new BOD System
+				case 41:
+					NextGemOfSalvationUse = reader.ReadDateTime();
+					goto case 40;
+				case 40:
+					m_ExtendedFlags = (ExtendedPlayerFlag)reader.ReadInt();
+					goto case 39;
+				case 39:
+					RewardStableSlots = reader.ReadInt();
+					goto case 38;
+				case 38: // Siege Blessed Item
+					_BlessedItem = reader.ReadItem();
+					goto case 36;
+				// Version 37 - new BOD System
 				case 37:
-				case 36:
-					{
-						m_ExploringTheDeepQuest = (ExploringTheDeepQuestChain)reader.ReadInt();
-						goto case 35;
-					}
+				case 36: goto case 35;
 				case 35:
 					{
-						m_TamingBOBFilter = new Engines.BulkOrders.TamingBOBFilter( reader );
+						m_TamingBOBFilter = new Engines.BulkOrders.TamingBOBFilter(reader);
 						goto case 34;
 					}
-                case 34:
+				case 34:
 					{
 						m_Bioenginer = reader.ReadBool();
 						NextTamingBulkOrder = reader.ReadTimeSpan();
 						goto case 33;
 					}
-                case 33:
+				case 33:
 					{
 						NextFletcherBulkOrder = reader.ReadTimeSpan();
 						NextCarpenterBulkOrder = reader.ReadTimeSpan();
-						goto case 32;
+						goto case 31;
 					}
-                case 32: goto case 31;
+				case 32: //goto case 31;
 				case 31:
 					{
+						m_ExploringTheDeepQuest = (ExploringTheDeepQuestChain)reader.ReadInt();    ///// <<<<<< I have moved it here. and filled case 36 with goto case 35; 
+
 						DisplayGuildTitle = version > 31 && reader.ReadBool();
 						m_FameKarmaTitle = reader.ReadString();
 						m_PaperdollSkillTitle = reader.ReadString();
@@ -4687,7 +4687,7 @@ namespace Server.Mobiles
 						m_CurrentVeteranTitle = reader.ReadInt();
 						goto case 30;
 					}
-                case 30: goto case 29;
+				case 30: goto case 29;
 				case 29:
 					{
 						m_GauntletPoints = reader.ReadDouble();

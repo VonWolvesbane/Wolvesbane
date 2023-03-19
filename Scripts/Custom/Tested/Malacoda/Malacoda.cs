@@ -126,7 +126,7 @@ namespace Server.Mobiles
 
 			}
 
-			public void GiveCraftPowerScroll() //Generate power scroll routine and add to pack
+			//public void GiveCraftPowerScroll() //Generate power scroll routine and add to pack
 			{
 				List<Mobile> toGive = new List<Mobile>(); //no idea :(
 
@@ -138,8 +138,8 @@ namespace Server.Mobiles
 					if (info.Attacker.Player && info.Attacker.Alive && (DateTime.Now - info.LastCombatTime) < TimeSpan.FromSeconds(30.0) && !toGive.Contains(info.Attacker))
 						toGive.Add(info.Attacker);
 				}
-				
-			List<DamageStore> rights = GetLootingRights();
+
+				List<DamageStore> rights = GetLootingRights();
 				for (int i = rights.Count - 1; i >= 0; --i)
 				{
 					DamageStore ds = rights[i];
@@ -147,8 +147,8 @@ namespace Server.Mobiles
 					if (ds.m_HasRight)
 						toGive.Add(ds.m_Mobile);
 				}
-					if (toGive.Count == 0)//if nobody attacked it and it didn't attack anybody then break operation and no ps MUAH
-						return;
+				if (toGive.Count == 0)//if nobody attacked it and it didn't attack anybody then break operation and no ps MUAH
+					return;
 
 				// Randomize //absolutly no idea
 				for (int i = 0; i < toGive.Count; ++i)
@@ -187,7 +187,7 @@ namespace Server.Mobiles
 						level = 115;
 
 					//if (OWLTROptionsManager.IsEnabled(OWLTROptionsManager.OPTIONS_ENUM.RECIPE_CRAFT))
-						//m.AddToBackpack(new ResourceRecipe());
+					//m.AddToBackpack(new ResourceRecipe());
 
 					switch (Utility.Random(16)) // select which skill to use in the ps
 					{
@@ -226,8 +226,8 @@ namespace Server.Mobiles
 
 					}
 					m.SendLocalizedMessage(1049524); // You have received a scroll of power!
-				 } 
-			}
+				}
+			} }
 		
 			
 		public override bool AutoDispel{ get{ return true; } }
