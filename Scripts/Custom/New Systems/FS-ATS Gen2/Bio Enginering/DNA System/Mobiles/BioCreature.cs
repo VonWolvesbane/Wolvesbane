@@ -149,7 +149,7 @@ namespace Server.Mobiles
 
 			if ((ControlMaster != from && this != from) || IsDeadPet)
 				return false;
-			else if (this.BodyValue == 400 || this.BodyValue == 401 || this.BodyValue == 605 || this.BodyValue == 606)
+			else if (this.BodyValue == 400 || this.BodyValue == 401 || this.BodyValue == 605 || this.BodyValue == 606 || this.BodyValue == 744)
 				return true;
 
 
@@ -159,7 +159,7 @@ namespace Server.Mobiles
 		{
 			if ((ControlMaster != from && this != from) || IsDeadPet)
 				return false;
-			else if (this.BodyValue == 400 || this.BodyValue == 401 || this.BodyValue == 605 || this.BodyValue == 606)
+			else if (this.BodyValue == 400 || this.BodyValue == 401 || this.BodyValue == 605 || this.BodyValue == 606 || this.BodyValue == 744)
 				return true;
 
 
@@ -172,7 +172,7 @@ namespace Server.Mobiles
 
 			if ((ControlMaster != from && this != from) || IsDeadPet)
 				return false;
-			else if (this.BodyValue == 400 || this.BodyValue == 401 || this.BodyValue == 605 || this.BodyValue == 606)
+			else if (this.BodyValue == 400 || this.BodyValue == 401 || this.BodyValue == 605 || this.BodyValue == 606 || this.BodyValue == 744)
 				return true;
 
 			else
