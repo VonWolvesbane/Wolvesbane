@@ -144,7 +144,41 @@ namespace Server.Mobiles
 
 			AddItem( pack );
 		}
+		public override bool AllowEquipFrom(Mobile from)
+		{
 
+			if ((ControlMaster != from && this != from) || IsDeadPet)
+				return false;
+			else if (this.BodyValue == 400 || this.BodyValue == 401 || this.BodyValue == 605 || this.BodyValue == 606)
+				return true;
+
+
+			return base.AllowEquipFrom(from);
+		}
+		public override bool CheckNonlocalLift(Mobile from, Item item)
+		{
+			if ((ControlMaster != from && this != from) || IsDeadPet)
+				return false;
+			else if (this.BodyValue == 400 || this.BodyValue == 401 || this.BodyValue == 605 || this.BodyValue == 606)
+				return true;
+
+
+			return base.CheckNonlocalLift(from, item);
+			return PackAnimal.CheckAccess(this, from);
+		}
+
+		public override bool CheckNonlocalDrop(Mobile from, Item item, Item target)
+		{
+
+			if ((ControlMaster != from && this != from) || IsDeadPet)
+				return false;
+			else if (this.BodyValue == 400 || this.BodyValue == 401 || this.BodyValue == 605 || this.BodyValue == 606)
+				return true;
+
+			else
+				return true;
+			return PackAnimal.CheckAccess(this, from);
+		}
 		public override bool OnDragDrop( Mobile from, Item item )
 		{
 			if ( CheckFeed( from, item ) )
@@ -189,7 +223,7 @@ namespace Server.Mobiles
 			return base.IsSnoop( from );
 		}
 
-		public override bool CheckNonlocalDrop( Mobile from, Item item, Item target )
+		/*public override bool CheckNonlocalDrop( Mobile from, Item item, Item target )
 		{
 			return PackAnimal.CheckAccess( this, from );
 		}
@@ -198,7 +232,7 @@ namespace Server.Mobiles
 		{
 			return PackAnimal.CheckAccess( this, from );
 		}
-
+		*/
 		public override void GetContextMenuEntries( Mobile from, List<ContextMenuEntry> list )
 		{
 			base.GetContextMenuEntries( from, list );

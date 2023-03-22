@@ -5471,10 +5471,12 @@ namespace Server.Mobiles
         public virtual void AddCustomContextEntries(Mobile from, List<ContextMenuEntry> list)
         {
             #region FS:ATS Edits
-            if (this is BaseBioCreature || this is BioCreature || this is BioMount)
+            /* if (this is BaseBioCreature || this is BioCreature || this is BioMount || this is BBC ) //Took out this portion to test if it fixes leveling
             {
-            }
-            else if (from.Alive && this.Alive && this.Controlled == true && this.Summoned == false && FSATS.EnablePetLeveling == true)
+				
+			}
+
+            else */ if (from.Alive && this.Alive && this.Controlled == true && this.Summoned == false && FSATS.EnablePetLeveling == true)
             {
                 bool nolevel = false;
                 Type typ = this.GetType();
@@ -8591,15 +8593,32 @@ namespace Server.Mobiles
 
 					this.NextLevel = nextlevel;
 				}
+				
 
 				if ( this.MaxLevel == 0 )
 				{
 					this.MaxLevel = Utility.RandomMinMax( 10, 30 );
 				}
 			}
+			else if (this.Tamable ==false )
+			{
+				if (this.NextLevel == 0)
+				{
+					int totalstats = this.Str + this.Dex + this.Int + this.HitsMax + this.StamMax + this.ManaMax + this.PhysicalResistance + this.FireResistance + this.ColdResistance + this.EnergyResistance + this.PoisonResistance + this.DamageMin + this.DamageMax + this.VirtualArmor;
+					int nextlevel = totalstats * 15;
+
+					this.NextLevel = nextlevel;
+				}
+
+
+				if (this.MaxLevel == 0)
+				{
+					this.MaxLevel = Utility.RandomMinMax(10, 30);
+				}
+			}
 			//FS:ATS END (modified by Regnak)
 
-            if (HasAura && tc >= m_NextAura)
+			if (HasAura && tc >= m_NextAura)
             {
                 AuraDamage();
                 m_NextAura = tc + (int)AuraInterval.TotalMilliseconds;

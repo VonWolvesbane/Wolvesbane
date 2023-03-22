@@ -191,10 +191,10 @@ namespace Server
 
 			int expgainmin, expgainmax;
 
-			if ( attacker is BaseBioCreature || attacker is BioCreature || attacker is BioMount )
+			/*if ( attacker is BaseBioCreature || attacker is BioCreature || attacker is BioMount )
 			{
 			}
-			else if ( defender is BaseCreature )
+			else*/ if ( defender is BaseCreature )
 			{
 				if ( attacker.Controlled == true && attacker.ControlMaster != null && attacker.Summoned == false )
 				{
