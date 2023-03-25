@@ -1,0 +1,352 @@
+﻿
+
+IMPORTANT: 
+This guide is designed to be compatible with shards using ServUO with this update;
+https://github.com/ServUO/ServUO/commit/9a7bec664b97c90684a69b056e6f8644df6a5142
+
+
+
+
+
+
+
+
+
+
+EDIT: Server/Map.cs
+
+
+UNCOMMENT >>>
+//#define Map_InternalProtection
+
+
+
+
+
+REPLACE >>>
+public sealed class Map
+
+WITH >>>
+public class Map
+
+
+
+
+
+REPLACE >>>
+public void OnEnter(Mobile m)
+
+WITH >>>
+public virtual void OnEnter(Mobile m)
+
+
+
+
+
+REPLACE >>>
+public void OnEnter(Item item)
+
+WITH >>>
+public virtual void OnEnter(Item item)
+
+
+
+
+
+REPLACE >>>
+public void OnLeave(Mobile m)
+
+WITH >>>
+public virtual void OnLeave(Mobile m)
+
+
+
+
+
+REPLACE >>>
+public void OnLeave(Item item)
+
+WITH >>>
+public virtual void OnLeave(Item item)
+
+
+
+
+
+REPLACE >>>
+public void OnMove(Point3D oldLocation, Mobile m)
+
+WITH >>>
+public virtual void OnMove(Point3D oldLocation, Mobile m)
+
+
+
+
+
+REPLACE >>>
+public void OnMove(Point3D oldLocation, Item item)
+
+WITH >>>
+public virtual void OnMove(Point3D oldLocation, Item item)
+
+
+
+
+
+
+
+
+
+
+EDIT: Server/EventSink.cs
+
+
+REPLACE >>>
+public class CreatureDeathEventArgs : EventArgs
+{
+	public Mobile Mobile { get; private set; }
+	public Mobile Killer { get; private set; }
+	public Container Corpse { get; private set; }
+
+	public bool ClearCorpse { get; set; }
+
+	public CreatureDeathEventArgs(Mobile creature)
+		: this(creature, creature.LastKiller, creature.Corpse)
+	{ }
+
+	public CreatureDeathEventArgs(Mobile mobile)
+	{
+		Mobile = mobile;
+		Killer = killer;
+		Corpse = corpse;
+	}
+}
+
+WITH >>>
+public class CreatureDeathEventArgs : EventArgs
+{
+	public Mobile Creature { get; private set; }
+	public Mobile Killer { get; private set; }
+	public Container Corpse { get; private set; }
+
+	public List<Item> ForcedLoot { get; private set; }
+
+	public bool PreventDefault { get; set; }
+	public bool PreventDelete { get; set; }
+	public bool ClearCorpse { get; set; }
+
+	public CreatureDeathEventArgs(Mobile creature)
+		: this(creature, creature.LastKiller, creature.Corpse)
+	{ }
+
+	public CreatureDeathEventArgs(Mobile creature, Mobile killer, Container corpse)
+	{
+		Creature = creature;
+		Killer = killer;
+		Corpse = corpse;
+
+		ForcedLoot = new List<Item>();
+	}
+
+	public void ClearLoot(bool free)
+	{
+		if (free)
+		{
+			ForcedLoot.Clear();
+			ForcedLoot.TrimExcess();
+		}
+		else
+		{
+			ForcedLoot = new List<Item>();
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+EDIT: Scripts/Mobiles/Normal/BaseCreature.cs
+
+
+FIND >>>
+public override void OnDeath(Container c)
+
+REPLACE >>>
+if (e.ClearCorpse)
+{
+    var i = c.Items.Count;
+
+    while (--i >= 0)
+    {
+        if (i < c.Items.Count)
+        {
+            c.Items[i].Delete();
+        }
+    }
+}
+
+WITH >>>
+if (!c.Deleted)
+{
+	int i;
+
+	if (e.ClearCorpse)
+	{
+		i = c.Items.Count;
+
+		while (--i >= 0)
+		{
+			if (i >= c.Items.Count)
+			{
+				continue;
+			}
+			
+			var o = c.Items[i];
+
+			if (o != null && !o.Deleted)
+			{
+				o.Delete();
+			}
+		}
+	}
+
+	i = e.ForcedLoot.Count;
+
+	while (--i >= 0)
+	{
+		if (i >= e.ForcedLoot.Count)
+		{
+			continue;
+		}
+
+		var o = e.ForcedLoot[i];
+
+		if (o != null && !o.Deleted)
+		{
+			c.DropItem(o);
+		}
+	}
+
+	e.ClearLoot(false);
+}
+else
+{
+	var i = e.ForcedLoot.Count;
+
+	while (--i >= 0)
+	{
+		if (i >= e.ForcedLoot.Count)
+		{
+			continue;
+		}
+
+		var o = e.ForcedLoot[i];
+
+		if (o != null && !o.Deleted)
+		{
+			o.Delete();
+		}
+	}
+
+	e.ClearLoot(true);
+}
+
+
+
+
+
+AFTER >>>
+base.OnDeath(c);
+
+INSERT >>>
+if (e.PreventDefault)
+{
+	return;
+}
+
+
+
+
+
+REPLACE >>>
+if (DeleteCorpseOnDeath)
+
+WITH >>>
+if (DeleteCorpseOnDeath && !e.PreventDelete)
+
+
+
+
+
+
+
+
+
+
+EDIT: Scripts/Items/Internal/Moongate.cs
+
+
+FIND >>>
+public virtual void UseGate(Mobile m)
+
+BEFORE >>>
+else if (this.m_TargetMap != null && this.m_TargetMap != Map.Internal)
+
+INSERT >>>
+else if (TargetMap is VitaNex.InstanceMaps.InstanceMap)
+{
+	m.SendLocalizedMessage(1019004); // You are not allowed to travel there.
+}
+
+
+
+
+
+
+
+
+
+
+EDIT: Scripts/Spells/Necromancy/Exorcism.cs
+
+
+FIND >>>
+private bool IsValidTarget(Mobile m)
+
+AFTER >>>
+Map map = m.Map;
+
+INSERT >>>
+if (map is VitaNex.InstanceMaps.InstanceMap)
+{
+	return false;
+}
+
+
+
+
+
+
+
+
+
+
+EDIT: Scripts/Spells/Base/SpellHelper.cs
+
+
+BEFORE >>>
+if (caster != null && caster.IsPlayer())
+
+INSERT >>>
+if (caster != null && caster.Player && caster.IsPlayer() && map is VitaNex.InstanceMaps.InstanceMap &&
+	(type.AnyFlags(TravelCheckType.GateFrom, TravelCheckType.GateTo, TravelCheckType.RecallTo, TravelCheckType.Mark)))
+{
+	SendInvalidMessage(caster, type);
+	return false;
+}

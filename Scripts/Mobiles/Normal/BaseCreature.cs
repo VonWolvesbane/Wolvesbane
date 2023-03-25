@@ -587,7 +587,36 @@ namespace Server.Mobiles
 
         public const int MaxLoyalty = 100;
 
-        private bool _LockDirection;
+		#region Invasions
+		private Server.Invasions.Invasion _Invasion;
+
+		[CommandProperty(AccessLevel.GameMaster)]
+		public Server.Invasions.Invasion Invasion
+		{
+			get { return _Invasion; }
+			set
+			{
+				if (_Invasion == value)
+				{
+					return;
+				}
+
+				if (_Invasion != null)
+				{
+					_Invasion.Invaders.Remove(this);
+				}
+
+				_Invasion = value;
+
+				if (_Invasion != null)
+				{
+					_Invasion.Invaders.Update(this);
+				}
+			}
+		}
+		#endregion
+
+		private bool _LockDirection;
 
         [CommandProperty(AccessLevel.GameMaster)]
         public bool LockDirection
@@ -2769,8 +2798,12 @@ namespace Server.Mobiles
             {
                 Timer.DelayCall(TimeSpan.FromSeconds(10), ((PlayerMobile)@from).RecoverAmmo);
             }
+			if (Invasion != null)
+			{
+				Invasion.HandleDamage(this, from, amount);
+			}
 
-            base.OnDamage(amount, from, willKill);
+			base.OnDamage(amount, from, willKill);
         }
 
         public virtual void OnDamagedBySpell(Mobile from)
@@ -6881,10 +6914,10 @@ namespace Server.Mobiles
         public virtual double TreasureMapChance { get { return TreasureMap.LootChance; } }
         public virtual int TreasureMapLevel { get { return -1; } }
 
-        public virtual bool IgnoreYoungProtection { get { return false; } }
-		
+		public virtual bool IgnoreYoungProtection { get { return Invasion != null; } }
+
 		//daat99 OWLTR start - On Before (Re) Tame methods
-        public virtual void OnBeforeTame()
+		public virtual void OnBeforeTame()
         {
         }
 		
@@ -7395,8 +7428,11 @@ namespace Server.Mobiles
             else
             {
                 LootingRights = null;
-
-                if (!Summoned && !m_NoKillAwards)
+				if (Invasion != null)
+				{
+					Invasion.HandleKill(this, LastKiller);
+				}
+				if (!Summoned && !m_NoKillAwards)
                 {
                     int totalFame = Fame / 100;
                     int totalKarma = -Karma / 100;

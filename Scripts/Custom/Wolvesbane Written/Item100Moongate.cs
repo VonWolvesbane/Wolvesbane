@@ -99,7 +99,7 @@ namespace Server.Items
 
             if (m is PlayerMobile)
             {
-                m.AddToBackpack(new SkillCodex(7,100));
+                m.AddToBackpack(new SkillsCodex(7, 100));
             }
 
             if (m.IsPlayer() || !m.Hidden)

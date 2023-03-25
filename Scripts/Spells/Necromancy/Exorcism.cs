@@ -181,8 +181,11 @@ namespace Server.Spells.Necromancy
 
             Corpse c = m.Corpse as Corpse;
             Map map = m.Map;
-
-            if (c != null && !c.Deleted && map != null && c.Map == map)
+			if (map is VitaNex.InstanceMaps.InstanceMap)
+			{
+				return false;
+			}
+			if (c != null && !c.Deleted && map != null && c.Map == map)
             {
                 if (SpellHelper.IsAnyT2A(map, c.Location) && SpellHelper.IsAnyT2A(map, m.Location))
                     return false;	//Same Map, both in T2A, ie, same 'sub server'.

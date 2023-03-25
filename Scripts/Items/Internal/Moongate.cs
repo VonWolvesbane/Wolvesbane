@@ -128,6 +128,10 @@ namespace Server.Items
 			{
 				m.SendLocalizedMessage(1071955); // You cannot teleport while dragging an object.
 			}
+			else if (TargetMap is VitaNex.InstanceMaps.InstanceMap)
+			{
+				m.SendLocalizedMessage(1019004); // You are not allowed to travel there.
+			}
 			else if (TargetMap != null && TargetMap != Map.Internal)
 			{
 				OnGateUsed(m);

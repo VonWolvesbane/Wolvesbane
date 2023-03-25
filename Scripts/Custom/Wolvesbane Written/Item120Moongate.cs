@@ -101,7 +101,7 @@ namespace Server.Items
 
             if (m is PlayerMobile)
             {
-                m.AddToBackpack(new SkillCodex (3, 120, true, SkillCodexMode.Fixed, SkillCodexFlags.Both));
+                m.AddToBackpack(new SkillsCodex (3, 120, true, SkillCodexMode.Fixed, SkillCodexFlags.Both));
                 
                 
 

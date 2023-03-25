@@ -870,8 +870,13 @@ namespace Server.Spells
 
                 return false;
             }
-
-            if (caster != null && caster.IsPlayer())
+			if (caster != null && caster.Player && caster.IsPlayer() && map is VitaNex.InstanceMaps.InstanceMap &&
+			(type.AnyFlags(TravelCheckType.GateFrom, TravelCheckType.GateTo, TravelCheckType.RecallTo, TravelCheckType.Mark)))
+			{
+				SendInvalidMessage(caster, type);
+				return false;
+			}
+			if (caster != null && caster.IsPlayer())
             {
 				// Jail region
 				if (caster.Region.IsPartOf<Regions.Jail>())

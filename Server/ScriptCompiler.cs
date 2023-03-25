@@ -68,9 +68,9 @@ namespace Server
 				AppendCompilerOption(ref sb, "/d:TRACE");
 			}
 
-#if MONO
-			AppendCompilerOption( ref sb, "/d:MONO" );
-#endif
+//#if MONO
+			AppendCompilerOption(ref sb, "/langversion:7.3");
+//#endif
 
 			if (Core.Is64Bit)
 			{

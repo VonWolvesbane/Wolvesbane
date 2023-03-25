@@ -13,6 +13,17 @@ namespace Server.Items
 			LootType = LootType.Blessed;
 		}
 		public BackpackOfSpellbooks(Serial serial) : base(serial) { }
+		public override void Serialize(GenericWriter writer)
+		{
+			base.Serialize(writer);
+			writer.Write((int)0); // version
+		}
+
+		public override void Deserialize(GenericReader reader)
+		{
+			base.Deserialize(reader);
+			int version = reader.ReadInt();
+		}
 		public override bool CanCastFrom { get { return true; } }
 
 		public override bool OnDragDropInto(Mobile from, Item item, Point3D p)
