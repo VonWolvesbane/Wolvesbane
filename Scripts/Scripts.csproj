@@ -1901,6 +1901,7 @@
     <Compile Include="Custom\Reapers Uploads\PetArcherAIDeed.cs" />
     <Compile Include="Custom\Reapers Uploads\PetDamageDeed1.cs" />
     <Compile Include="Custom\Reapers Uploads\PetSexChangeDeed.cs" />
+    <Compile Include="Custom\Reapers Uploads\PetWarsScroll.cs" />
     <Compile Include="Custom\Reapers Uploads\Quests\ArrianasQuest\gumps\ArrianasGump.cs" />
     <Compile Include="Custom\Reapers Uploads\Quests\ArrianasQuest\gumps\AuntieJuneGump.cs" />
     <Compile Include="Custom\Reapers Uploads\Quests\ArrianasQuest\gumps\GrandpaTamGump.cs" />
