@@ -200,24 +200,24 @@ namespace Server.Items
 				baby.AI = AIType.AI_Mage;
 				else if ( this.AI == 2 )
 				baby.AI = AIType.AI_Melee;
-			
-				baby.Str = this.Str;
-				baby.Dex = this.Dex;
-				baby.Int = this.Int;
-				baby.HitsMaxSeed = this.Hits;
-				baby.StamMaxSeed = this.Stam;
-				baby.ManaMaxSeed = this.Mana;
-				baby.PhysicalResistanceSeed = this.Phys;
-				baby.FireResistSeed = this.Fire;
-				baby.ColdResistSeed = this.Cold;
-				baby.EnergyResistSeed = this.Nrgy;
-				baby.PoisonResistSeed = this.Pois;
-				baby.DamageMin = this.Dmin;
-				baby.DamageMax = this.Dmax;
-				//baby.MaxLevel = this.Mlev;
+
+				baby.Str = this.m_Str;
+				baby.Dex = this.m_Dex;
+				baby.Int = this.m_Int;
+				baby.HitsMaxSeed = this.m_Hits;
+				baby.StamMaxSeed = this.m_Stam;
+				baby.ManaMaxSeed = this.m_Mana;
+				baby.PhysicalResistanceSeed = this.m_Phys;
+				baby.FireResistSeed = this.m_Fire;
+				baby.ColdResistSeed = this.m_Cold;
+				baby.EnergyResistSeed = this.m_Nrgy;
+				baby.PoisonResistSeed = this.m_Pois;
+				baby.DamageMin = this.m_Dmin;
+				baby.DamageMax = this.m_Dmax;
+				baby.MaxLevel = this.m_Mlev;
 				baby.Location = from.Location;
 				baby.Map = from.Map;
-				World.AddMobile( baby );
+				World.AddMobile(baby);
 
 				from.SendMessage( "You Claimed your petwars pet." );
 				this.Delete();

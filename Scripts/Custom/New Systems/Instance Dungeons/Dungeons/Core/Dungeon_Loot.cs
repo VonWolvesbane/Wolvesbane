@@ -9,6 +9,10 @@
 //        #        The MIT License (MIT)          #
 #endregion
 
+#if ServUO58
+#define ServUOX
+#endif
+
 #region References
 using System;
 using System.Collections.Generic;
@@ -468,14 +472,19 @@ namespace VitaNex.Dungeons
 
 		protected virtual void MutateLootItem(Item item)
 		{
-			/*if (Core.SA)
+#if ServUOX
+			if (Core.SA)
 			{
 				var budget = Utility.RandomMinMax(LootBudgetMin, LootBudgetMax);
 				var artifact = Utility.RandomDouble() < LootArtifactChance;
 
 				RunicReforging.GenerateRandomItem(item, null, budget, 0, 0, 0, MapParent, artifact);
+
+				return;
 			}
-			else */if (Core.AOS)
+#endif
+			
+			if (Core.AOS)
 			{
 				var tot = Utility.RandomMinMax(LootPropsMin, LootPropsMax);
 				var min = LootIntensityMin;
@@ -501,8 +510,12 @@ namespace VitaNex.Dungeons
 				{
 					BaseRunicTool.ApplyAttributesTo((Spellbook)item, tot, min, max);
 				}
+
+				return;
 			}
-			else if (item is BaseWeapon)
+
+#if !ServUO58
+			if (item is BaseWeapon)
 			{
 				var weapon = (BaseWeapon)item;
 
@@ -517,6 +530,7 @@ namespace VitaNex.Dungeons
 				armor.ProtectionLevel = (ArmorProtectionLevel)Utility.Random(6);
 				armor.Durability = (ArmorDurabilityLevel)Utility.Random(6);
 			}
+#endif
 		}
 
 		public virtual void OnCorpseCreated(Mobile dead, Container c)

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<accounts count="340">
+<accounts count="362">
 	<account>
 		<username>admin</username>
 		<newCryptPassword>03-6B-6C-C4-94-35-CC-28-55-B4-26-36-AC-2B-07-F9-65-6F-5E-46</newCryptPassword>
 		<accessLevel>Owner</accessLevel>
 		<flags>2</flags>
 		<created>2019-11-12T16:37:35.2139089Z</created>
-		<lastLogin>2023-03-08T14:15:44.0544786Z</lastLogin>
-		<totalGameTime>P84DT23H8M1.4001226S</totalGameTime>
+		<lastLogin>2023-03-26T17:29:34.8704953Z</lastLogin>
+		<totalGameTime>P89DT5H55M57.57422S</totalGameTime>
 		<chars>
 			<char index="0">111</char>
 			<char index="1">147226</char>
@@ -28,7 +28,7 @@
 			<tag name="VS_LAST_VOTE_WEBSITE">4/20/2021 10:45:49 PM</tag>
 			<tag name="numRewardsChosen">1</tag>
 		</tags>
-		<addressList count="514">
+		<addressList count="526">
 			<ip>66.211.84.27</ip>
 			<ip>66.211.77.247</ip>
 			<ip>66.211.75.174</ip>
@@ -543,6 +543,18 @@
 			<ip>66.211.84.124</ip>
 			<ip>166.170.22.70</ip>
 			<ip>66.211.76.19</ip>
+			<ip>208.99.228.159</ip>
+			<ip>208.99.228.212</ip>
+			<ip>66.211.82.97</ip>
+			<ip>66.211.77.28</ip>
+			<ip>66.211.76.51</ip>
+			<ip>66.211.76.77</ip>
+			<ip>66.211.82.171</ip>
+			<ip>66.211.82.16</ip>
+			<ip>66.211.77.171</ip>
+			<ip>66.211.84.17</ip>
+			<ip>12.226.71.130</ip>
+			<ip>66.211.77.101</ip>
 		</addressList>
 		<totalCurrency>0.0013720749999999997</totalCurrency>
 		<sovereigns>0</sovereigns>
@@ -553,8 +565,8 @@
 		<accessLevel>Owner</accessLevel>
 		<flags>2</flags>
 		<created>2019-11-13T15:43:48.1218864Z</created>
-		<lastLogin>2023-02-02T20:28:35.1718178Z</lastLogin>
-		<totalGameTime>P160DT17H11M11.756244S</totalGameTime>
+		<lastLogin>2023-03-19T17:51:47.200022Z</lastLogin>
+		<totalGameTime>P167DT23H42M45.6395919S</totalGameTime>
 		<chars>
 			<char index="0">24157</char>
 			<char index="1">81021</char>
@@ -581,7 +593,7 @@
 			<ip>47.50.18.82</ip>
 			<ip>66.66.8.110</ip>
 		</addressList>
-		<totalCurrency>1.0291435459999996</totalCurrency>
+		<totalCurrency>1.4418639819999997</totalCurrency>
 		<sovereigns>0</sovereigns>
 	</account>
 	<account>
@@ -589,8 +601,8 @@
 		<newCryptPassword>87-C3-DF-B9-84-7A-E4-81-C0-7C-D5-CF-81-75-D3-F8-A2-18-39-8E</newCryptPassword>
 		<flags>2</flags>
 		<created>2019-11-13T18:32:52.9921055Z</created>
-		<lastLogin>2023-02-02T15:56:39.4609459Z</lastLogin>
-		<totalGameTime>P23DT23H46M37.8727394S</totalGameTime>
+		<lastLogin>2023-02-25T21:51:46.6371345Z</lastLogin>
+		<totalGameTime>P24DT25M48.0126522S</totalGameTime>
 		<chars>
 			<char index="0">42916</char>
 			<char index="1">48036</char>
@@ -626,8 +638,8 @@
 		<newCryptPassword>07-37-0F-48-8C-FB-9E-9C-B0-33-6B-EA-D1-E7-C5-DD-3D-FA-42-BF</newCryptPassword>
 		<flags>2</flags>
 		<created>2019-11-15T12:58:32.5886903Z</created>
-		<lastLogin>2023-03-08T14:15:55.5979327Z</lastLogin>
-		<totalGameTime>P40DT23H30M7.9257508S</totalGameTime>
+		<lastLogin>2023-03-22T14:04:09.8157781Z</lastLogin>
+		<totalGameTime>P44DT19H31M40.6026096S</totalGameTime>
 		<chars>
 			<char index="0">93423</char>
 			<char index="1">188922</char>
@@ -649,7 +661,7 @@
 			<tag name="numRewardsChosen">5</tag>
 			<tag name="VS_LAST_VOTE_SIRCHADE">7/29/2021 1:30:11 PM</tag>
 		</tags>
-		<addressList count="224">
+		<addressList count="237">
 			<ip>66.211.77.134</ip>
 			<ip>66.211.77.217</ip>
 			<ip>66.211.84.182</ip>
@@ -874,8 +886,21 @@
 			<ip>66.211.76.65</ip>
 			<ip>66.211.76.19</ip>
 			<ip>208.99.228.44</ip>
+			<ip>66.211.76.77</ip>
+			<ip>66.211.82.171</ip>
+			<ip>66.211.77.171</ip>
+			<ip>66.211.84.240</ip>
+			<ip>66.211.84.17</ip>
+			<ip>66.211.84.127</ip>
+			<ip>12.226.71.130</ip>
+			<ip>66.211.75.169</ip>
+			<ip>66.211.84.40</ip>
+			<ip>66.211.77.101</ip>
+			<ip>66.211.82.20</ip>
+			<ip>66.211.76.70</ip>
+			<ip>66.211.75.29</ip>
 		</addressList>
-		<totalCurrency>0.00062573200000000774</totalCurrency>
+		<totalCurrency>0.00062533200000000784</totalCurrency>
 		<sovereigns>10000</sovereigns>
 	</account>
 	<account>
@@ -931,8 +956,8 @@
 		<newCryptPassword>18-14-F9-5C-6C-FA-F0-4E-3A-DC-88-DE-F8-ED-8E-53-A0-25-01-A0</newCryptPassword>
 		<flags>2</flags>
 		<created>2019-12-08T19:57:11.3278204Z</created>
-		<lastLogin>2021-12-13T08:58:34.9847981Z</lastLogin>
-		<totalGameTime>P15DT8H38M58.3688528S</totalGameTime>
+		<lastLogin>2023-03-08T22:07:46.4268175Z</lastLogin>
+		<totalGameTime>P15DT12H53M40.2259201S</totalGameTime>
 		<chars>
 			<char index="0">44613</char>
 			<char index="1">81385</char>
@@ -955,7 +980,7 @@
 			<tag name="VS_LAST_VOTE_NEW FORUMS">3/29/2020 10:08:06 AM</tag>
 			<tag name="VS_LAST_VOTE_MMOHUB">3/17/2020 4:17:04 AM</tag>
 		</tags>
-		<addressList count="22">
+		<addressList count="23">
 			<ip>176.27.215.169</ip>
 			<ip>188.172.220.71</ip>
 			<ip>94.0.181.221</ip>
@@ -978,8 +1003,9 @@
 			<ip>90.215.169.23</ip>
 			<ip>81.159.239.195</ip>
 			<ip>109.150.238.115</ip>
+			<ip>109.149.97.198</ip>
 		</addressList>
-		<totalCurrency>0.012855928999999947</totalCurrency>
+		<totalCurrency>0.012776078999999947</totalCurrency>
 		<sovereigns>0</sovereigns>
 	</account>
 	<account>
@@ -1057,8 +1083,8 @@
 		<accessLevel>Owner</accessLevel>
 		<flags>2</flags>
 		<created>2019-12-27T21:11:39.6948431Z</created>
-		<lastLogin>2023-01-26T16:52:23.8936992Z</lastLogin>
-		<totalGameTime>P25DT3H14M8.0641128S</totalGameTime>
+		<lastLogin>2023-03-16T19:21:47.6418591Z</lastLogin>
+		<totalGameTime>P25DT23H5M55.8051616S</totalGameTime>
 		<chars>
 			<char index="0">71871</char>
 		</chars>
@@ -1077,7 +1103,7 @@
 			<tag name="VS_LAST_VOTE_MMOHUB">3/20/2020 3:38:20 PM</tag>
 			<tag name="VS_LAST_VOTE_WEBSITE">9/20/2020 9:12:49 AM</tag>
 		</tags>
-		<addressList count="36">
+		<addressList count="38">
 			<ip>81.129.229.153</ip>
 			<ip>86.137.86.150</ip>
 			<ip>94.0.181.221</ip>
@@ -1114,6 +1140,8 @@
 			<ip>109.150.238.115</ip>
 			<ip>86.158.54.12</ip>
 			<ip>86.157.85.172</ip>
+			<ip>86.175.249.238</ip>
+			<ip>109.149.97.198</ip>
 		</addressList>
 		<totalCurrency>0.95046735</totalCurrency>
 		<sovereigns>0</sovereigns>
@@ -1156,8 +1184,8 @@
 		<newCryptPassword>C6-B4-75-09-86-50-15-57-79-7A-98-1E-4C-54-83-51-08-15-92-8D</newCryptPassword>
 		<flags>2</flags>
 		<created>2020-01-11T19:48:04.0962925Z</created>
-		<lastLogin>2023-01-15T19:38:02.335657Z</lastLogin>
-		<totalGameTime>P33DT15H36M23.5336831S</totalGameTime>
+		<lastLogin>2023-03-17T20:28:12.3535458Z</lastLogin>
+		<totalGameTime>P33DT15H55M47.425544S</totalGameTime>
 		<chars>
 			<char index="1">55942</char>
 		</chars>
@@ -1191,7 +1219,7 @@
 			<tag name="VS_LAST_VOTE_NEW FORUMS">9/6/2020 7:36:18 AM</tag>
 			<tag name="VS_LAST_VOTE_SHARD PORTAL">10/11/2021 11:13:18 AM</tag>
 		</tags>
-		<addressList count="105">
+		<addressList count="106">
 			<ip>51.179.117.56</ip>
 			<ip>37.160.39.105</ip>
 			<ip>109.116.212.22</ip>
@@ -1297,6 +1325,7 @@
 			<ip>37.77.127.85</ip>
 			<ip>81.56.58.158</ip>
 			<ip>37.161.216.206</ip>
+			<ip>37.161.133.40</ip>
 		</addressList>
 		<totalCurrency>0.0038317349999995066</totalCurrency>
 		<sovereigns>0</sovereigns>
@@ -1382,142 +1411,45 @@
 		<newCryptPassword>B1-F9-34-8C-DF-C2-82-52-07-F0-63-FC-5D-2F-A9-38-FB-D1-CD-57</newCryptPassword>
 		<flags>2</flags>
 		<created>2023-01-24T23:13:28.9968236Z</created>
-		<lastLogin>2023-02-03T13:09:47.8193432Z</lastLogin>
-		<totalGameTime>P8DT20H54M29.9243007S</totalGameTime>
+		<lastLogin>2023-03-22T10:27:49.8347605Z</lastLogin>
+		<totalGameTime>P45DT20H44M33.435039S</totalGameTime>
 		<chars>
 			<char index="0">81400</char>
 			<char index="1">82150</char>
-			<char index="2">60803</char>
-			<char index="3">92330</char>
-			<char index="4">94712</char>
-			<char index="5">95402</char>
-			<char index="6">95987</char>
+			<char index="2">6444</char>
+			<char index="3">27917</char>
+			<char index="4">22766</char>
 		</chars>
 		<comments>
 			<comment addedBy="System" lastModified="2023-02-01T15:35:13.0766816Z">Character #3 0x14768 "Wulfgar" deleted by 76.69.185.199</comment>
+			<comment addedBy="System" lastModified="2023-02-04T09:24:38.373644Z">Character #4 0x168AA "McSmithy" deleted by 76.69.185.199</comment>
+			<comment addedBy="System" lastModified="2023-02-12T13:33:20.4555467Z">Character #4 0x12803 "Moradin" deleted by 76.69.185.199</comment>
+			<comment addedBy="System" lastModified="2023-02-12T13:33:24.4868087Z">Character #7 0x176F3 "Tyveks" deleted by 76.69.185.199</comment>
+			<comment addedBy="System" lastModified="2023-02-12T13:33:28.2524473Z">Character #6 0x174AA "Tyvek" deleted by 76.69.185.199</comment>
+			<comment addedBy="System" lastModified="2023-02-12T13:33:48.9087117Z">Character #5 0x171F8 "Tinkerman" deleted by 76.69.185.199</comment>
+			<comment addedBy="System" lastModified="2023-02-12T13:34:04.2524911Z">Character #3 0xED83 "McSmithi" deleted by 76.69.185.199</comment>
+			<comment addedBy="System" lastModified="2023-02-28T20:23:10.5386755Z">Character #4 0x1B8BF "Tyvek" deleted by 76.69.185.199</comment>
+			<comment addedBy="System" lastModified="2023-02-28T20:23:19.9918219Z">Character #5 0x1CF0D "Ty" deleted by 76.69.185.199</comment>
+			<comment addedBy="System" lastModified="2023-03-12T12:47:32.4425865Z">Character #6 0x14C9 "Bobby" deleted by 76.69.185.199</comment>
 		</comments>
 		<tags>
-			<tag name="VS_LAST_VOTE_TOP 100 ARENA">1/24/2023 6:34:04 PM</tag>
-			<tag name="VS_LAST_VOTE_SHARD PORTAL">1/24/2023 6:34:39 PM</tag>
-			<tag name="VS_LAST_VOTE_G TOP 100">1/24/2023 6:34:49 PM</tag>
-			<tag name="VS_LAST_VOTE_UOGATEWAY">1/24/2023 6:35:07 PM</tag>
-			<tag name="VS_LAST_VOTE_XTREME TOP 100">1/24/2023 6:35:19 PM</tag>
-			<tag name="VS_LAST_VOTE_TOP G">1/24/2023 6:35:47 PM</tag>
-			<tag name="VS_LAST_VOTE_UO PORTAL">1/24/2023 6:36:23 PM</tag>
-			<tag name="VS_LAST_VOTE_MMOHUB">1/24/2023 6:36:43 PM</tag>
-			<tag name="VS_LAST_VOTE_PAYPAL">1/29/2023 7:52:33 AM</tag>
-			<tag name="VS_LAST_VOTE_DONATION INFO">1/29/2023 7:52:29 AM</tag>
+			<tag name="VS_LAST_VOTE_TOP 100 ARENA">3/19/2023 10:06:11 AM</tag>
+			<tag name="VS_LAST_VOTE_SHARD PORTAL">3/19/2023 10:06:12 AM</tag>
+			<tag name="VS_LAST_VOTE_G TOP 100">3/19/2023 10:06:10 AM</tag>
+			<tag name="VS_LAST_VOTE_UOGATEWAY">3/19/2023 10:06:09 AM</tag>
+			<tag name="VS_LAST_VOTE_XTREME TOP 100">3/19/2023 10:06:08 AM</tag>
+			<tag name="VS_LAST_VOTE_TOP G">3/19/2023 10:06:06 AM</tag>
+			<tag name="VS_LAST_VOTE_UO PORTAL">3/19/2023 10:06:04 AM</tag>
+			<tag name="VS_LAST_VOTE_MMOHUB">3/19/2023 10:06:03 AM</tag>
+			<tag name="VS_LAST_VOTE_PAYPAL">3/14/2023 12:46:43 PM</tag>
+			<tag name="VS_LAST_VOTE_DONATION INFO">2/4/2023 11:36:59 AM</tag>
+			<tag name="VS_LAST_VOTE_WEBSITE">2/19/2023 8:02:30 AM</tag>
+			<tag name="numRewardsChosen">2</tag>
 		</tags>
 		<addressList count="1">
 			<ip>76.69.185.199</ip>
 		</addressList>
-		<totalCurrency>0.066015519000000328</totalCurrency>
-		<sovereigns>0</sovereigns>
-	</account>
-	<account>
-		<username>gunayozerrr</username>
-		<newCryptPassword>9B-42-76-63-B2-5F-87-3E-7C-7A-D4-A4-33-1A-44-70-35-05-31-09</newCryptPassword>
-		<flags>2</flags>
-		<created>2020-04-12T12:23:17.5155238Z</created>
-		<lastLogin>2022-03-18T02:52:12.0979535Z</lastLogin>
-		<totalGameTime>P21DT18H3M8.8454992S</totalGameTime>
-		<chars>
-			<char index="0">11258</char>
-			<char index="1">25080</char>
-		</chars>
-		<tags>
-			<tag name="numRewardsChosen">1</tag>
-			<tag name="DiamondHoopEarringsRecieved">true</tag>
-			<tag name="VS_LAST_VOTE_PAYPAL">9/14/2021 5:02:20 PM</tag>
-		</tags>
-		<addressList count="85">
-			<ip>95.7.76.213</ip>
-			<ip>94.123.196.51</ip>
-			<ip>94.123.198.207</ip>
-			<ip>88.237.0.193</ip>
-			<ip>94.123.192.204</ip>
-			<ip>94.123.193.17</ip>
-			<ip>95.13.67.208</ip>
-			<ip>178.241.211.140</ip>
-			<ip>178.245.48.164</ip>
-			<ip>94.123.204.5</ip>
-			<ip>178.245.44.34</ip>
-			<ip>88.243.172.171</ip>
-			<ip>94.123.202.123</ip>
-			<ip>95.15.166.128</ip>
-			<ip>78.164.233.63</ip>
-			<ip>78.180.155.194</ip>
-			<ip>94.123.197.149</ip>
-			<ip>78.175.146.245</ip>
-			<ip>95.13.93.148</ip>
-			<ip>78.176.74.41</ip>
-			<ip>95.8.81.213</ip>
-			<ip>178.241.200.79</ip>
-			<ip>78.179.177.20</ip>
-			<ip>95.12.143.31</ip>
-			<ip>85.101.117.145</ip>
-			<ip>95.13.149.214</ip>
-			<ip>88.227.171.244</ip>
-			<ip>95.15.161.73</ip>
-			<ip>78.175.9.57</ip>
-			<ip>95.13.70.111</ip>
-			<ip>95.13.87.39</ip>
-			<ip>78.162.166.101</ip>
-			<ip>178.241.219.129</ip>
-			<ip>95.13.92.238</ip>
-			<ip>85.98.244.97</ip>
-			<ip>78.163.11.231</ip>
-			<ip>88.233.198.90</ip>
-			<ip>95.13.77.42</ip>
-			<ip>95.13.95.97</ip>
-			<ip>88.231.42.82</ip>
-			<ip>78.175.145.128</ip>
-			<ip>78.169.124.74</ip>
-			<ip>78.172.142.102</ip>
-			<ip>78.176.187.187</ip>
-			<ip>95.13.251.186</ip>
-			<ip>78.175.9.187</ip>
-			<ip>85.98.80.195</ip>
-			<ip>78.191.240.242</ip>
-			<ip>95.13.72.131</ip>
-			<ip>95.13.67.136</ip>
-			<ip>88.242.6.6</ip>
-			<ip>78.162.166.112</ip>
-			<ip>78.176.187.138</ip>
-			<ip>78.188.2.14</ip>
-			<ip>85.98.254.108</ip>
-			<ip>88.224.72.67</ip>
-			<ip>95.13.68.27</ip>
-			<ip>88.254.158.157</ip>
-			<ip>78.175.191.25</ip>
-			<ip>95.15.160.26</ip>
-			<ip>85.101.118.126</ip>
-			<ip>85.98.71.130</ip>
-			<ip>95.7.111.149</ip>
-			<ip>95.13.79.117</ip>
-			<ip>95.15.165.62</ip>
-			<ip>95.15.139.157</ip>
-			<ip>78.178.188.3</ip>
-			<ip>78.162.166.23</ip>
-			<ip>95.13.94.16</ip>
-			<ip>85.98.71.181</ip>
-			<ip>95.13.91.255</ip>
-			<ip>88.246.228.34</ip>
-			<ip>78.185.151.68</ip>
-			<ip>85.107.151.190</ip>
-			<ip>88.225.251.85</ip>
-			<ip>95.15.164.235</ip>
-			<ip>78.171.12.120</ip>
-			<ip>78.171.12.3</ip>
-			<ip>95.13.144.171</ip>
-			<ip>88.235.130.120</ip>
-			<ip>78.181.103.206</ip>
-			<ip>78.173.170.90</ip>
-			<ip>85.101.116.254</ip>
-			<ip>95.13.70.48</ip>
-			<ip>78.191.247.98</ip>
-		</addressList>
-		<totalCurrency>0.00068903999999999136</totalCurrency>
+		<totalCurrency>0.00016830400000080874</totalCurrency>
 		<sovereigns>0</sovereigns>
 	</account>
 	<account>
@@ -1563,25 +1495,12 @@
 		<sovereigns>0</sovereigns>
 	</account>
 	<account>
-		<username>DudeJBob1</username>
-		<newCryptPassword>17-AB-43-5E-02-CF-A3-A0-EE-59-6A-2D-4E-FB-D2-3F-B2-69-32-BD</newCryptPassword>
-		<created>2023-02-02T07:46:39.6528477Z</created>
-		<lastLogin>2023-02-02T07:46:39.6528477Z</lastLogin>
-		<totalGameTime>PT0S</totalGameTime>
-		<chars />
-		<addressList count="1">
-			<ip>184.53.16.165</ip>
-		</addressList>
-		<totalCurrency>0</totalCurrency>
-		<sovereigns>0</sovereigns>
-	</account>
-	<account>
 		<username>rafcioli</username>
 		<newCryptPassword>31-9C-78-3F-14-E1-5C-0F-0C-B9-51-6F-DF-E6-6D-20-EA-1D-EE-B6</newCryptPassword>
 		<flags>2</flags>
 		<created>2020-04-26T14:29:16.5299362Z</created>
-		<lastLogin>2023-01-30T19:26:48.6779631Z</lastLogin>
-		<totalGameTime>P14DT18H2M41.4968065S</totalGameTime>
+		<lastLogin>2023-02-24T15:37:31.7903999Z</lastLogin>
+		<totalGameTime>P14DT18H4M42.7624905S</totalGameTime>
 		<chars>
 			<char index="0">11929</char>
 		</chars>
@@ -1677,8 +1596,8 @@
 		<newCryptPassword>5E-96-E4-DD-07-D7-04-79-63-80-52-DB-D8-60-47-FF-D6-82-7D-15</newCryptPassword>
 		<flags>2</flags>
 		<created>2020-05-25T11:32:40.0725965Z</created>
-		<lastLogin>2023-02-03T10:15:47.92249Z</lastLogin>
-		<totalGameTime>P13DT4H31M18.6407113S</totalGameTime>
+		<lastLogin>2023-03-20T22:49:57.7153272Z</lastLogin>
+		<totalGameTime>P15DT16H26M38.3023474S</totalGameTime>
 		<chars>
 			<char index="0">131853</char>
 			<char index="1">3244</char>
@@ -1703,13 +1622,14 @@
 			<tag name="VS_LAST_VOTE_SIRCHADE">1/24/2023 4:51:51 PM</tag>
 			<tag name="VS_LAST_VOTE_MMOHUB">1/27/2023 6:21:26 PM</tag>
 			<tag name="VS_LAST_VOTE_NEW FORUMS">8/11/2020 9:21:19 AM</tag>
-			<tag name="VS_LAST_VOTE_TOP 100 ARENA">2/1/2023 6:05:16 PM</tag>
-			<tag name="VS_LAST_VOTE_G TOP 100">2/1/2023 6:05:15 PM</tag>
-			<tag name="VS_LAST_VOTE_UOGATEWAY">2/1/2023 6:05:14 PM</tag>
-			<tag name="VS_LAST_VOTE_XTREME TOP 100">2/1/2023 6:05:12 PM</tag>
-			<tag name="VS_LAST_VOTE_TOP G">2/1/2023 6:05:11 PM</tag>
-			<tag name="VS_LAST_VOTE_UO PORTAL">2/1/2023 6:05:09 PM</tag>
-			<tag name="VS_LAST_VOTE_SHARD PORTAL">2/1/2023 6:05:22 PM</tag>
+			<tag name="VS_LAST_VOTE_TOP 100 ARENA">2/5/2023 10:14:11 AM</tag>
+			<tag name="VS_LAST_VOTE_G TOP 100">2/5/2023 10:14:08 AM</tag>
+			<tag name="VS_LAST_VOTE_UOGATEWAY">2/5/2023 10:14:07 AM</tag>
+			<tag name="VS_LAST_VOTE_XTREME TOP 100">2/5/2023 10:14:04 AM</tag>
+			<tag name="VS_LAST_VOTE_TOP G">2/5/2023 10:14:02 AM</tag>
+			<tag name="VS_LAST_VOTE_UO PORTAL">2/5/2023 10:13:59 AM</tag>
+			<tag name="VS_LAST_VOTE_SHARD PORTAL">2/5/2023 10:14:12 AM</tag>
+			<tag name="motd">false</tag>
 		</tags>
 		<addressList count="20">
 			<ip>82.61.190.94</ip>
@@ -1733,7 +1653,7 @@
 			<ip>37.101.215.103</ip>
 			<ip>151.50.146.72</ip>
 		</addressList>
-		<totalCurrency>0.020667921000000016</totalCurrency>
+		<totalCurrency>0.020650191000000043</totalCurrency>
 		<sovereigns>0</sovereigns>
 	</account>
 	<account>
@@ -1741,8 +1661,8 @@
 		<newCryptPassword>0D-78-F7-7B-84-2F-55-20-A7-F9-09-FC-41-CB-AD-DA-59-07-9F-F0</newCryptPassword>
 		<flags>2</flags>
 		<created>2020-12-15T04:42:15.3234166Z</created>
-		<lastLogin>2023-02-03T03:32:53.7351111Z</lastLogin>
-		<totalGameTime>P215DT14H31M19.3734889S</totalGameTime>
+		<lastLogin>2023-03-22T02:31:31.7586105Z</lastLogin>
+		<totalGameTime>P228DT4H39M41.7176228S</totalGameTime>
 		<chars>
 			<char index="0">17089</char>
 			<char index="1">43930</char>
@@ -1772,7 +1692,7 @@
 		</comments>
 		<tags>
 			<tag name="VS_LAST_VOTE_PAYPAL">1/18/2023 10:32:13 PM</tag>
-			<tag name="VS_LAST_VOTE_DONATION INFO">1/7/2023 11:27:27 AM</tag>
+			<tag name="VS_LAST_VOTE_DONATION INFO">2/12/2023 11:39:10 PM</tag>
 			<tag name="VS_LAST_VOTE_UO PORTAL">2/19/2022 8:41:09 PM</tag>
 			<tag name="VS_LAST_VOTE_TOP G">2/19/2022 8:41:01 PM</tag>
 			<tag name="VS_LAST_VOTE_XTREME TOP 100">2/19/2022 8:41:00 PM</tag>
@@ -1786,7 +1706,7 @@
 			<tag name="VS_LAST_VOTE_SHARD PORTAL">2/19/2022 8:40:48 PM</tag>
 			<tag name="numRewardsChosen">5</tag>
 		</tags>
-		<addressList count="21">
+		<addressList count="22">
 			<ip>73.112.123.201</ip>
 			<ip>72.78.78.154</ip>
 			<ip>207.190.29.94</ip>
@@ -1808,8 +1728,9 @@
 			<ip>97.100.101.137</ip>
 			<ip>207.190.17.39</ip>
 			<ip>207.190.17.68</ip>
+			<ip>50.230.203.98</ip>
 		</addressList>
-		<totalCurrency>0.0046226249999999523</totalCurrency>
+		<totalCurrency>0.031538257999999916</totalCurrency>
 		<sovereigns>0</sovereigns>
 	</account>
 	<account>
@@ -1817,8 +1738,8 @@
 		<newCryptPassword>98-97-F3-8A-B1-D5-A3-54-A2-C7-24-65-7C-3B-11-32-AC-AF-2D-C9</newCryptPassword>
 		<flags>2</flags>
 		<created>2020-06-23T03:11:50.9274622Z</created>
-		<lastLogin>2023-01-08T05:57:35.491346Z</lastLogin>
-		<totalGameTime>P24DT1H27M15.9844154S</totalGameTime>
+		<lastLogin>2023-03-12T03:41:48.1765504Z</lastLogin>
+		<totalGameTime>P24DT1H32M54.7360303S</totalGameTime>
 		<chars>
 			<char index="0">13540</char>
 			<char index="2">16073</char>
@@ -1853,7 +1774,7 @@
 			<tag name="numRewardsChosen">22</tag>
 			<tag name="VS_LAST_VOTE_SHARD PORTAL">5/7/2022 1:36:47 PM</tag>
 		</tags>
-		<addressList count="51">
+		<addressList count="52">
 			<ip>71.231.234.33</ip>
 			<ip>173.160.147.117</ip>
 			<ip>107.127.18.225</ip>
@@ -1905,6 +1826,7 @@
 			<ip>107.122.85.193</ip>
 			<ip>107.122.86.209</ip>
 			<ip>73.239.138.43</ip>
+			<ip>73.140.141.25</ip>
 		</addressList>
 		<totalCurrency>0.10215968400000003</totalCurrency>
 		<sovereigns>0</sovereigns>
@@ -2123,8 +2045,8 @@
 		<newCryptPassword>7B-48-6B-4C-C7-51-C7-D6-26-47-6A-34-B7-0A-7E-E1-83-7F-A0-2A</newCryptPassword>
 		<flags>2</flags>
 		<created>2020-08-13T17:08:13.273611Z</created>
-		<lastLogin>2023-01-17T07:56:39.2124282Z</lastLogin>
-		<totalGameTime>P80DT16H52M5.6243053S</totalGameTime>
+		<lastLogin>2023-03-19T08:24:56.2672829Z</lastLogin>
+		<totalGameTime>P80DT16H53M53.5271509S</totalGameTime>
 		<chars>
 			<char index="0">8752</char>
 		</chars>
@@ -2154,7 +2076,7 @@
 			<tag name="VS_LAST_VOTE_WEBSITE">2/16/2021 4:35:31 AM</tag>
 			<tag name="DiamondHoopEarringsRecieved">true</tag>
 		</tags>
-		<addressList count="24">
+		<addressList count="25">
 			<ip>93.146.108.5</ip>
 			<ip>130.25.216.206</ip>
 			<ip>2.39.52.147</ip>
@@ -2179,6 +2101,7 @@
 			<ip>93.149.192.17</ip>
 			<ip>47.53.105.203</ip>
 			<ip>5.94.223.196</ip>
+			<ip>2.37.83.162</ip>
 		</addressList>
 		<totalCurrency>0.0061786450000000078</totalCurrency>
 		<sovereigns>0</sovereigns>
@@ -2227,8 +2150,8 @@
 		<newCryptPassword>69-33-CF-8B-4B-6C-64-70-A7-34-50-99-D6-DC-69-79-48-91-CE-AC</newCryptPassword>
 		<flags>2</flags>
 		<created>2021-03-21T22:44:45.6611528Z</created>
-		<lastLogin>2022-09-29T12:37:35.981968Z</lastLogin>
-		<totalGameTime>P3DT9H54M37.7081007S</totalGameTime>
+		<lastLogin>2023-02-19T00:38:03.1025659Z</lastLogin>
+		<totalGameTime>P3DT10H33M36.2365731S</totalGameTime>
 		<chars>
 			<char index="0">80795</char>
 			<char index="1">26592</char>
@@ -2254,15 +2177,15 @@
 			<comment addedBy="System" lastModified="2021-11-28T00:04:40.9381741Z">Character #4 0xB241 "Hel Ifiknow" deleted by 73.27.118.181</comment>
 		</comments>
 		<tags>
-			<tag name="VS_LAST_VOTE_G TOP 100">9/29/2022 8:37:57 AM</tag>
-			<tag name="VS_LAST_VOTE_UOGATEWAY">9/29/2022 8:37:55 AM</tag>
-			<tag name="VS_LAST_VOTE_XTREME TOP 100">9/29/2022 8:37:54 AM</tag>
-			<tag name="VS_LAST_VOTE_TOP G">9/29/2022 8:37:53 AM</tag>
-			<tag name="VS_LAST_VOTE_UO PORTAL">9/29/2022 8:37:49 AM</tag>
-			<tag name="VS_LAST_VOTE_MMOHUB">9/29/2022 8:37:40 AM</tag>
-			<tag name="VS_LAST_VOTE_TOP 100 ARENA">9/29/2022 8:38:00 AM</tag>
+			<tag name="VS_LAST_VOTE_G TOP 100">2/18/2023 7:38:24 PM</tag>
+			<tag name="VS_LAST_VOTE_UOGATEWAY">2/18/2023 7:38:25 PM</tag>
+			<tag name="VS_LAST_VOTE_XTREME TOP 100">2/18/2023 7:38:30 PM</tag>
+			<tag name="VS_LAST_VOTE_TOP G">2/18/2023 7:38:35 PM</tag>
+			<tag name="VS_LAST_VOTE_UO PORTAL">2/18/2023 7:38:30 PM</tag>
+			<tag name="VS_LAST_VOTE_MMOHUB">2/18/2023 7:38:39 PM</tag>
+			<tag name="VS_LAST_VOTE_TOP 100 ARENA">2/18/2023 7:38:19 PM</tag>
 			<tag name="numRewardsChosen">14</tag>
-			<tag name="VS_LAST_VOTE_SHARD PORTAL">9/29/2022 8:37:58 AM</tag>
+			<tag name="VS_LAST_VOTE_SHARD PORTAL">2/18/2023 7:38:13 PM</tag>
 		</tags>
 		<addressList count="2">
 			<ip>73.27.118.181</ip>
@@ -2276,8 +2199,8 @@
 		<newCryptPassword>B6-89-55-2F-43-FE-DE-53-28-27-36-54-FE-01-B9-B1-7A-BA-3F-55</newCryptPassword>
 		<flags>2</flags>
 		<created>2021-09-29T22:41:12.0719058Z</created>
-		<lastLogin>2023-01-26T10:27:40.1759167Z</lastLogin>
-		<totalGameTime>P65DT19H49M37.1536388S</totalGameTime>
+		<lastLogin>2023-02-20T04:01:32.4315948Z</lastLogin>
+		<totalGameTime>P65DT19H59M45.8566256S</totalGameTime>
 		<chars>
 			<char index="0">30361</char>
 			<char index="1">13395</char>
@@ -2309,17 +2232,17 @@
 		</comments>
 		<tags>
 			<tag name="VS_LAST_VOTE_PAYPAL">1/17/2023 10:14:46 PM</tag>
-			<tag name="VS_LAST_VOTE_UO PORTAL">1/26/2023 5:28:29 AM</tag>
-			<tag name="VS_LAST_VOTE_TOP G">1/26/2023 5:28:39 AM</tag>
-			<tag name="VS_LAST_VOTE_XTREME TOP 100">1/26/2023 5:29:10 AM</tag>
-			<tag name="VS_LAST_VOTE_UOGATEWAY">1/26/2023 5:29:32 AM</tag>
-			<tag name="VS_LAST_VOTE_G TOP 100">1/26/2023 5:29:44 AM</tag>
-			<tag name="VS_LAST_VOTE_TOP 100 ARENA">1/26/2023 5:30:04 AM</tag>
-			<tag name="VS_LAST_VOTE_MMOHUB">1/26/2023 5:28:15 AM</tag>
-			<tag name="VS_LAST_VOTE_SHARD PORTAL">1/26/2023 5:30:24 AM</tag>
+			<tag name="VS_LAST_VOTE_UO PORTAL">2/19/2023 10:52:02 PM</tag>
+			<tag name="VS_LAST_VOTE_TOP G">2/19/2023 10:52:13 PM</tag>
+			<tag name="VS_LAST_VOTE_XTREME TOP 100">2/19/2023 10:52:44 PM</tag>
+			<tag name="VS_LAST_VOTE_UOGATEWAY">2/19/2023 10:53:33 PM</tag>
+			<tag name="VS_LAST_VOTE_G TOP 100">2/19/2023 10:53:50 PM</tag>
+			<tag name="VS_LAST_VOTE_TOP 100 ARENA">2/19/2023 10:54:11 PM</tag>
+			<tag name="VS_LAST_VOTE_MMOHUB">2/19/2023 10:51:35 PM</tag>
+			<tag name="VS_LAST_VOTE_SHARD PORTAL">2/19/2023 10:54:44 PM</tag>
 			<tag name="numRewardsChosen">11</tag>
 		</tags>
-		<addressList count="26">
+		<addressList count="27">
 			<ip>67.6.143.85</ip>
 			<ip>67.6.200.96</ip>
 			<ip>71.36.201.109</ip>
@@ -2346,6 +2269,7 @@
 			<ip>71.36.206.68</ip>
 			<ip>71.36.199.93</ip>
 			<ip>67.6.212.75</ip>
+			<ip>67.6.132.169</ip>
 		</addressList>
 		<totalCurrency>0.017720087999999683</totalCurrency>
 		<sovereigns>0</sovereigns>
@@ -2382,8 +2306,8 @@
 		<newCryptPassword>28-45-6A-4B-10-C1-F6-D4-76-98-5E-D0-EB-01-4F-BE-AB-23-59-E1</newCryptPassword>
 		<flags>2</flags>
 		<created>2021-04-18T01:01:29.8624558Z</created>
-		<lastLogin>2023-02-01T02:56:55.7350137Z</lastLogin>
-		<totalGameTime>P76DT4H30M11.7531198S</totalGameTime>
+		<lastLogin>2023-03-08T14:27:03.7018709Z</lastLogin>
+		<totalGameTime>P76DT4H30M34.4641305S</totalGameTime>
 		<chars>
 			<char index="0">140410</char>
 			<char index="1">126707</char>
@@ -2442,11 +2366,12 @@
 		<newCryptPassword>B9-56-BF-57-35-28-4E-60-A3-A0-6D-02-90-27-05-34-8E-79-B1-60</newCryptPassword>
 		<flags>2</flags>
 		<created>2020-10-28T18:18:40.2462249Z</created>
-		<lastLogin>2023-02-02T16:42:52.1120587Z</lastLogin>
-		<totalGameTime>P12DT3H41M6.4470137S</totalGameTime>
+		<lastLogin>2023-03-21T17:02:30.343933Z</lastLogin>
+		<totalGameTime>P13DT15H53M34.813005S</totalGameTime>
 		<chars>
 			<char index="0">356</char>
 			<char index="1">30685</char>
+			<char index="2">91321</char>
 			<char index="3">45137</char>
 			<char index="6">58555</char>
 		</chars>
@@ -2460,18 +2385,18 @@
 			<comment addedBy="System" lastModified="2023-01-29T09:37:28.5572638Z">Character #6 0x1278D "thelos" deleted by 95.250.110.111</comment>
 		</comments>
 		<tags>
-			<tag name="VS_LAST_VOTE_UO PORTAL">11/25/2021 1:16:51 PM</tag>
-			<tag name="VS_LAST_VOTE_UOGATEWAY">11/25/2021 1:16:43 PM</tag>
-			<tag name="VS_LAST_VOTE_TOP 100 ARENA">11/25/2021 1:16:37 PM</tag>
-			<tag name="VS_LAST_VOTE_G TOP 100">11/25/2021 1:16:40 PM</tag>
-			<tag name="VS_LAST_VOTE_XTREME TOP 100">11/25/2021 1:16:45 PM</tag>
-			<tag name="VS_LAST_VOTE_TOP G">11/25/2021 1:16:48 PM</tag>
+			<tag name="VS_LAST_VOTE_UO PORTAL">3/21/2023 7:08:43 PM</tag>
+			<tag name="VS_LAST_VOTE_UOGATEWAY">3/21/2023 7:08:55 PM</tag>
+			<tag name="VS_LAST_VOTE_TOP 100 ARENA">3/21/2023 7:09:00 PM</tag>
+			<tag name="VS_LAST_VOTE_G TOP 100">3/21/2023 7:08:58 PM</tag>
+			<tag name="VS_LAST_VOTE_XTREME TOP 100">3/21/2023 7:08:53 PM</tag>
+			<tag name="VS_LAST_VOTE_TOP G">3/21/2023 7:08:49 PM</tag>
 			<tag name="VS_LAST_VOTE_PAYPAL">1/20/2023 2:39:02 PM</tag>
 			<tag name="numRewardsChosen">17</tag>
-			<tag name="VS_LAST_VOTE_SHARD PORTAL">11/25/2021 1:16:29 PM</tag>
+			<tag name="VS_LAST_VOTE_SHARD PORTAL">3/21/2023 7:09:03 PM</tag>
 			<tag name="VS_LAST_VOTE_MMOHUB">11/25/2021 1:16:55 PM</tag>
 		</tags>
-		<addressList count="17">
+		<addressList count="18">
 			<ip>79.36.165.12</ip>
 			<ip>79.36.162.188</ip>
 			<ip>82.55.162.6</ip>
@@ -2489,8 +2414,9 @@
 			<ip>95.234.161.157</ip>
 			<ip>95.246.171.74</ip>
 			<ip>95.250.110.111</ip>
+			<ip>79.13.166.11</ip>
 		</addressList>
-		<totalCurrency>4.2054999999999671E-05</totalCurrency>
+		<totalCurrency>0.00042072599999999963</totalCurrency>
 		<sovereigns>0</sovereigns>
 	</account>
 	<account>
@@ -2607,8 +2533,8 @@
 		<newCryptPassword>DB-AE-F7-AD-97-45-92-E8-85-F8-23-16-E1-74-9E-84-AF-C0-7B-15</newCryptPassword>
 		<flags>2</flags>
 		<created>2020-12-05T17:24:16.6548784Z</created>
-		<lastLogin>2023-02-02T20:02:39.3148677Z</lastLogin>
-		<totalGameTime>P18DT10H50M42.1393938S</totalGameTime>
+		<lastLogin>2023-03-19T07:41:52.6402094Z</lastLogin>
+		<totalGameTime>P18DT10H54M17.5870582S</totalGameTime>
 		<chars>
 			<char index="0">93137</char>
 			<char index="1">138247</char>
@@ -2674,8 +2600,8 @@
 		<username>Ichiwolf1</username>
 		<newCryptPassword>21-14-3A-A1-6D-7D-B3-26-5E-10-F2-78-41-0F-E6-80-31-29-E8-53</newCryptPassword>
 		<created>2020-12-06T19:45:21.0168877Z</created>
-		<lastLogin>2023-02-02T19:57:42.7518515Z</lastLogin>
-		<totalGameTime>PT18H30M54.089371S</totalGameTime>
+		<lastLogin>2023-03-19T07:42:20.4922108Z</lastLogin>
+		<totalGameTime>PT18H33M12.7293362S</totalGameTime>
 		<chars>
 			<char index="0">132442</char>
 			<char index="1">151260</char>
@@ -2731,8 +2657,8 @@
 		<newCryptPassword>05-A8-C9-92-93-E5-3F-84-07-80-99-CC-6B-03-51-0C-8C-EB-30-45</newCryptPassword>
 		<flags>2</flags>
 		<created>2020-12-12T13:50:44.7579787Z</created>
-		<lastLogin>2023-01-24T08:11:28.7131143Z</lastLogin>
-		<totalGameTime>P20DT15H37M51.4676307S</totalGameTime>
+		<lastLogin>2023-03-19T08:26:38.7113219Z</lastLogin>
+		<totalGameTime>P20DT15H39M39.6689199S</totalGameTime>
 		<chars>
 			<char index="0">13234</char>
 		</chars>
@@ -2861,8 +2787,8 @@
 		<newCryptPassword>5B-05-C3-0E-4B-72-1D-FD-B8-E1-C5-15-2D-9E-E1-ED-54-05-63-CC</newCryptPassword>
 		<flags>2</flags>
 		<created>2020-12-29T13:07:34.2445624Z</created>
-		<lastLogin>2023-01-31T16:37:36.8790024Z</lastLogin>
-		<totalGameTime>P38DT16H40M31.739303S</totalGameTime>
+		<lastLogin>2023-03-19T18:17:16.6106969Z</lastLogin>
+		<totalGameTime>P38DT18H39M49.3239845S</totalGameTime>
 		<chars>
 			<char index="0">24569</char>
 			<char index="1">182614</char>
@@ -2884,7 +2810,7 @@
 			<comment addedBy="System" lastModified="2021-02-16T00:21:21.6975519Z">Character #6 0x26487 "pokkkkkk" deleted by 193.165.97.158</comment>
 		</comments>
 		<tags>
-			<tag name="VS_LAST_VOTE_PAYPAL">4/16/2022 3:28:10 AM</tag>
+			<tag name="VS_LAST_VOTE_PAYPAL">3/5/2023 10:38:48 AM</tag>
 			<tag name="VS_LAST_VOTE_DONATION INFO">1/10/2021 2:51:44 PM</tag>
 			<tag name="VS_LAST_VOTE_UO PORTAL">12/3/2022 4:56:46 PM</tag>
 			<tag name="VS_LAST_VOTE_MMOHUB">12/3/2022 4:53:01 PM</tag>
@@ -2897,7 +2823,7 @@
 			<tag name="DiamondHoopEarringsRecieved">true</tag>
 			<tag name="numRewardsChosen">1</tag>
 		</tags>
-		<addressList count="36">
+		<addressList count="38">
 			<ip>193.165.236.106</ip>
 			<ip>178.255.168.117</ip>
 			<ip>92.62.233.246</ip>
@@ -2934,6 +2860,8 @@
 			<ip>193.165.96.22</ip>
 			<ip>193.165.97.195</ip>
 			<ip>193.165.97.21</ip>
+			<ip>193.165.96.149</ip>
+			<ip>193.165.97.188</ip>
 		</addressList>
 		<totalCurrency>0.045412217000000185</totalCurrency>
 		<sovereigns>0</sovereigns>
@@ -2943,16 +2871,15 @@
 		<newCryptPassword>94-9D-F7-6F-E0-93-71-73-F5-4F-EC-C7-FC-A4-70-68-71-84-E9-14</newCryptPassword>
 		<flags>2</flags>
 		<created>2021-07-05T19:19:52.154364Z</created>
-		<lastLogin>2023-02-03T13:06:45.0063116Z</lastLogin>
-		<totalGameTime>P42DT8H51M18.9504966S</totalGameTime>
+		<lastLogin>2023-03-22T12:25:52.6786179Z</lastLogin>
+		<totalGameTime>P59DT14H47M38.7542458S</totalGameTime>
 		<chars>
-			<char index="0">108501</char>
+			<char index="0">1541</char>
 			<char index="1">194400</char>
-			<char index="2">32962</char>
+			<char index="2">76808</char>
 			<char index="3">65060</char>
-			<char index="4">35100</char>
-			<char index="5">35339</char>
-			<char index="6">75238</char>
+			<char index="4">20498</char>
+			<char index="5">119206</char>
 		</chars>
 		<comments>
 			<comment addedBy="System" lastModified="2021-07-14T20:05:35.2859383Z">Character #1 0x720C "Eseban Pigon" deleted by 148.64.42.224</comment>
@@ -2965,29 +2892,35 @@
 			<comment addedBy="System" lastModified="2022-04-09T13:42:12.5070368Z">Character #3 0x7FFC "Vlad the Goof" deleted by 148.64.42.224</comment>
 			<comment addedBy="System" lastModified="2022-04-09T13:45:22.2022577Z">Character #5 0x13DB1 "Cry Baby" deleted by 148.64.42.224</comment>
 			<comment addedBy="System" lastModified="2023-01-27T14:05:53.7210973Z">Character #3 0x1AB0C "Barack" deleted by 148.64.42.224</comment>
+			<comment addedBy="System" lastModified="2023-02-05T16:01:46.863309Z">Character #1 0x1A7D5 "Aggnuu" deleted by 148.64.42.224</comment>
+			<comment addedBy="System" lastModified="2023-02-05T16:03:00.1914987Z">Character #3 0x80C2 "Mas Pingon" deleted by 148.64.42.224</comment>
+			<comment addedBy="System" lastModified="2023-02-15T04:44:07.7025938Z">Character #5 0x891C "Stevie" deleted by 148.64.42.224</comment>
+			<comment addedBy="System" lastModified="2023-03-01T03:05:27.5855186Z">Character #7 0x125E6 "Atuk-Lar" deleted by 69.39.43.240</comment>
+			<comment addedBy="System" lastModified="2023-03-01T03:07:54.2466801Z">Character #6 0x8A0B "Stevie Gee" deleted by 69.39.43.240</comment>
 		</comments>
 		<tags>
-			<tag name="VS_LAST_VOTE_TOP 100 ARENA">1/12/2023 2:44:01 PM</tag>
-			<tag name="VS_LAST_VOTE_G TOP 100">1/12/2023 2:45:12 PM</tag>
-			<tag name="VS_LAST_VOTE_UOGATEWAY">1/12/2023 2:46:16 PM</tag>
-			<tag name="VS_LAST_VOTE_TOP G">1/12/2023 2:41:17 PM</tag>
-			<tag name="VS_LAST_VOTE_XTREME TOP 100">1/12/2023 2:43:18 PM</tag>
-			<tag name="VS_LAST_VOTE_UO PORTAL">1/12/2023 2:40:33 PM</tag>
+			<tag name="VS_LAST_VOTE_TOP 100 ARENA">3/21/2023 3:23:46 PM</tag>
+			<tag name="VS_LAST_VOTE_G TOP 100">3/21/2023 3:23:42 PM</tag>
+			<tag name="VS_LAST_VOTE_UOGATEWAY">3/21/2023 3:23:36 PM</tag>
+			<tag name="VS_LAST_VOTE_TOP G">3/21/2023 3:23:22 PM</tag>
+			<tag name="VS_LAST_VOTE_XTREME TOP 100">3/21/2023 3:23:28 PM</tag>
+			<tag name="VS_LAST_VOTE_UO PORTAL">3/21/2023 3:23:19 PM</tag>
 			<tag name="VS_LAST_VOTE_DONATION INFO">1/9/2023 5:53:02 PM</tag>
-			<tag name="VS_LAST_VOTE_PAYPAL">1/30/2023 4:15:59 PM</tag>
-			<tag name="VS_LAST_VOTE_MMOHUB">1/12/2023 2:42:39 PM</tag>
-			<tag name="numRewardsChosen">10</tag>
-			<tag name="VS_LAST_VOTE_SHARD PORTAL">1/12/2023 2:43:46 PM</tag>
+			<tag name="VS_LAST_VOTE_PAYPAL">2/28/2023 4:50:19 PM</tag>
+			<tag name="VS_LAST_VOTE_MMOHUB">3/21/2023 3:23:13 PM</tag>
+			<tag name="numRewardsChosen">15</tag>
+			<tag name="VS_LAST_VOTE_SHARD PORTAL">3/21/2023 3:23:49 PM</tag>
 		</tags>
-		<addressList count="6">
+		<addressList count="7">
 			<ip>148.64.42.224</ip>
 			<ip>69.9.44.137</ip>
 			<ip>149.28.240.23</ip>
 			<ip>69.9.44.136</ip>
 			<ip>69.9.44.234</ip>
 			<ip>69.9.44.133</ip>
+			<ip>69.39.43.240</ip>
 		</addressList>
-		<totalCurrency>0.0017156160000001541</totalCurrency>
+		<totalCurrency>0.037982503000000119</totalCurrency>
 		<sovereigns>0</sovereigns>
 	</account>
 	<account>
@@ -2995,8 +2928,8 @@
 		<newCryptPassword>E4-33-3A-A1-77-56-11-37-6C-06-03-72-2A-0E-9A-CD-FF-91-2B-64</newCryptPassword>
 		<flags>2</flags>
 		<created>2021-01-02T03:35:31.2876844Z</created>
-		<lastLogin>2023-01-27T13:31:19.7787159Z</lastLogin>
-		<totalGameTime>P14DT17H16M38.0547663S</totalGameTime>
+		<lastLogin>2023-02-27T02:20:41.0764161Z</lastLogin>
+		<totalGameTime>P14DT21H41M46.1752264S</totalGameTime>
 		<chars>
 			<char index="0">39092</char>
 			<char index="3">201184</char>
@@ -3030,15 +2963,16 @@
 			<tag name="VS_LAST_VOTE_TOP 100 ARENA">2/9/2021 1:45:02 AM</tag>
 			<tag name="numRewardsChosen">4</tag>
 		</tags>
-		<addressList count="6">
+		<addressList count="7">
 			<ip>23.114.3.43</ip>
 			<ip>198.8.81.234</ip>
 			<ip>69.107.151.174</ip>
 			<ip>166.88.172.83</ip>
 			<ip>166.88.131.216</ip>
 			<ip>67.149.159.233</ip>
+			<ip>50.4.112.90</ip>
 		</addressList>
-		<totalCurrency>0.0055948009999999739</totalCurrency>
+		<totalCurrency>0.0055918009999999735</totalCurrency>
 		<sovereigns>0</sovereigns>
 	</account>
 	<account>
@@ -3144,8 +3078,8 @@
 		<newCryptPassword>A4-B5-DD-A0-8C-76-14-CC-3E-83-CB-88-11-D4-C4-47-35-F7-93-DD</newCryptPassword>
 		<flags>2</flags>
 		<created>2021-02-02T01:17:58.7594783Z</created>
-		<lastLogin>2023-01-04T14:58:02.3452529Z</lastLogin>
-		<totalGameTime>P20DT19H19M28.7583096S</totalGameTime>
+		<lastLogin>2023-03-06T14:42:56.1241792Z</lastLogin>
+		<totalGameTime>P20DT19H19M49.3208408S</totalGameTime>
 		<chars>
 			<char index="0">113297</char>
 			<char index="1">40986</char>
@@ -3460,8 +3394,8 @@
 		<newCryptPassword>D1-4D-DE-66-72-9F-9A-EB-E1-74-07-3D-D6-02-F7-C8-62-21-1A-F8</newCryptPassword>
 		<flags>2</flags>
 		<created>2021-02-16T09:57:58.6542353Z</created>
-		<lastLogin>2023-01-29T06:26:03.1200678Z</lastLogin>
-		<totalGameTime>P174DT9H43M35.3534952S</totalGameTime>
+		<lastLogin>2023-02-09T13:44:22.8556376Z</lastLogin>
+		<totalGameTime>P174DT9H44M11.0253892S</totalGameTime>
 		<chars>
 			<char index="0">29621</char>
 			<char index="1">86115</char>
@@ -3770,8 +3704,8 @@
 		<newCryptPassword>DF-24-DD-23-CE-4F-DE-98-EF-98-15-7A-C2-48-D7-DF-B8-73-BD-22</newCryptPassword>
 		<flags>2</flags>
 		<created>2021-03-05T21:01:43.6493074Z</created>
-		<lastLogin>2022-06-11T15:27:29.7164111Z</lastLogin>
-		<totalGameTime>P23DT9H47M59.4581541S</totalGameTime>
+		<lastLogin>2023-02-12T01:50:29.8773504Z</lastLogin>
+		<totalGameTime>P23DT13H35M58.5160052S</totalGameTime>
 		<chars>
 			<char index="1">171656</char>
 		</chars>
@@ -3783,23 +3717,24 @@
 			<comment addedBy="System" lastModified="2021-04-11T08:36:50.3030773Z">Character #4 0x11B64 "Zee Max" deleted by 73.185.14.178</comment>
 		</comments>
 		<tags>
-			<tag name="VS_LAST_VOTE_MMOHUB">6/10/2022 11:11:13 PM</tag>
+			<tag name="VS_LAST_VOTE_MMOHUB">2/11/2023 3:30:52 AM</tag>
 			<tag name="VS_LAST_VOTE_DONATION INFO">3/30/2021 12:53:24 PM</tag>
 			<tag name="VS_LAST_VOTE_PAYPAL">7/29/2021 1:24:53 AM</tag>
-			<tag name="VS_LAST_VOTE_WEBSITE">3/30/2021 8:23:16 PM</tag>
-			<tag name="VS_LAST_VOTE_UO PORTAL">6/10/2022 11:11:18 PM</tag>
-			<tag name="VS_LAST_VOTE_XTREME TOP 100">6/10/2022 11:11:20 PM</tag>
-			<tag name="VS_LAST_VOTE_TOP G">6/10/2022 11:11:19 PM</tag>
+			<tag name="VS_LAST_VOTE_WEBSITE">2/11/2023 3:32:44 AM</tag>
+			<tag name="VS_LAST_VOTE_UO PORTAL">2/11/2023 3:30:56 AM</tag>
+			<tag name="VS_LAST_VOTE_XTREME TOP 100">2/11/2023 3:31:05 AM</tag>
+			<tag name="VS_LAST_VOTE_TOP G">2/11/2023 3:31:01 AM</tag>
 			<tag name="numRewardsChosen">27</tag>
-			<tag name="VS_LAST_VOTE_TOP 100 ARENA">6/10/2022 11:11:22 PM</tag>
-			<tag name="VS_LAST_VOTE_UOGATEWAY">6/10/2022 11:11:21 PM</tag>
-			<tag name="VS_LAST_VOTE_G TOP 100">6/10/2022 11:11:22 PM</tag>
-			<tag name="VS_LAST_VOTE_SHARD PORTAL">6/10/2022 11:11:24 PM</tag>
+			<tag name="VS_LAST_VOTE_TOP 100 ARENA">2/11/2023 3:31:13 AM</tag>
+			<tag name="VS_LAST_VOTE_UOGATEWAY">2/11/2023 3:31:08 AM</tag>
+			<tag name="VS_LAST_VOTE_G TOP 100">2/11/2023 3:31:10 AM</tag>
+			<tag name="VS_LAST_VOTE_SHARD PORTAL">2/11/2023 3:31:16 AM</tag>
 		</tags>
-		<addressList count="3">
+		<addressList count="4">
 			<ip>73.185.14.178</ip>
 			<ip>98.255.234.52</ip>
 			<ip>107.217.145.50</ip>
+			<ip>76.127.76.64</ip>
 		</addressList>
 		<totalCurrency>0.0050697990000000762</totalCurrency>
 		<sovereigns>0</sovereigns>
@@ -3837,8 +3772,8 @@
 		<newCryptPassword>92-E0-1A-67-48-71-55-C7-4C-99-2C-14-91-30-E0-44-CE-30-90-75</newCryptPassword>
 		<flags>2</flags>
 		<created>2021-03-22T00:58:54.3066021Z</created>
-		<lastLogin>2022-11-22T00:21:50.8295775Z</lastLogin>
-		<totalGameTime>P51DT17H54M20.7450651S</totalGameTime>
+		<lastLogin>2023-02-19T00:56:04.3153957Z</lastLogin>
+		<totalGameTime>P51DT18H4M34.9331091S</totalGameTime>
 		<chars>
 			<char index="0">91571</char>
 			<char index="1">16990</char>
@@ -3865,17 +3800,17 @@
 			<comment addedBy="System" lastModified="2021-09-09T17:39:49.8618448Z">Character #3 0x6F9E "Laila Loggeran" deleted by 73.27.118.181</comment>
 		</comments>
 		<tags>
-			<tag name="VS_LAST_VOTE_TOP 100 ARENA">11/21/2022 7:22:07 PM</tag>
-			<tag name="VS_LAST_VOTE_MMOHUB">11/21/2022 7:22:21 PM</tag>
-			<tag name="VS_LAST_VOTE_UO PORTAL">11/21/2022 7:22:20 PM</tag>
-			<tag name="VS_LAST_VOTE_TOP G">11/21/2022 7:22:14 PM</tag>
-			<tag name="VS_LAST_VOTE_G TOP 100">11/21/2022 7:22:11 PM</tag>
-			<tag name="VS_LAST_VOTE_UOGATEWAY">11/21/2022 7:22:12 PM</tag>
-			<tag name="VS_LAST_VOTE_XTREME TOP 100">11/21/2022 7:22:13 PM</tag>
+			<tag name="VS_LAST_VOTE_TOP 100 ARENA">2/18/2023 7:56:35 PM</tag>
+			<tag name="VS_LAST_VOTE_MMOHUB">2/18/2023 7:56:57 PM</tag>
+			<tag name="VS_LAST_VOTE_UO PORTAL">2/18/2023 7:57:08 PM</tag>
+			<tag name="VS_LAST_VOTE_TOP G">2/18/2023 7:56:52 PM</tag>
+			<tag name="VS_LAST_VOTE_G TOP 100">2/18/2023 7:56:40 PM</tag>
+			<tag name="VS_LAST_VOTE_UOGATEWAY">2/18/2023 7:57:14 PM</tag>
+			<tag name="VS_LAST_VOTE_XTREME TOP 100">2/18/2023 7:56:46 PM</tag>
 			<tag name="numRewardsChosen">27</tag>
 			<tag name="VS_LAST_VOTE_DONATION INFO">9/9/2021 9:08:09 PM</tag>
 			<tag name="VS_LAST_VOTE_PAYPAL">12/6/2021 6:59:10 PM</tag>
-			<tag name="VS_LAST_VOTE_SHARD PORTAL">11/21/2022 7:22:00 PM</tag>
+			<tag name="VS_LAST_VOTE_SHARD PORTAL">2/18/2023 7:56:10 PM</tag>
 		</tags>
 		<addressList count="2">
 			<ip>73.27.118.181</ip>
@@ -3889,8 +3824,8 @@
 		<newCryptPassword>81-BA-EE-47-ED-76-80-46-AE-E4-CB-3A-1F-D4-EB-06-FA-56-69-F6</newCryptPassword>
 		<flags>2</flags>
 		<created>2021-03-23T00:26:45.1019682Z</created>
-		<lastLogin>2022-10-24T20:36:26.259679Z</lastLogin>
-		<totalGameTime>P50DT3H15M3.2213082S</totalGameTime>
+		<lastLogin>2023-02-19T01:00:49.2219115Z</lastLogin>
+		<totalGameTime>P50DT4H2M34.6441419S</totalGameTime>
 		<chars>
 			<char index="0">32175</char>
 			<char index="1">87262</char>
@@ -3960,24 +3895,24 @@
 			<comment addedBy="System" lastModified="2022-01-29T01:49:16.0613931Z">Character #4 0xBFE1 "Archeneau" deleted by 73.27.118.181</comment>
 		</comments>
 		<tags>
-			<tag name="VS_LAST_VOTE_TOP 100 ARENA">10/24/2022 6:25:05 PM</tag>
+			<tag name="VS_LAST_VOTE_TOP 100 ARENA">2/18/2023 8:01:03 PM</tag>
 			<tag name="VS_LAST_VOTE_PAYPAL">1/23/2022 6:25:04 PM</tag>
 			<tag name="VS_LAST_VOTE_DONATION INFO">4/11/2021 6:05:42 PM</tag>
-			<tag name="VS_LAST_VOTE_MMOHUB">10/24/2022 6:25:42 PM</tag>
-			<tag name="VS_LAST_VOTE_UO PORTAL">10/24/2022 6:25:11 PM</tag>
-			<tag name="VS_LAST_VOTE_TOP G">10/24/2022 6:25:10 PM</tag>
+			<tag name="VS_LAST_VOTE_MMOHUB">2/18/2023 8:01:27 PM</tag>
+			<tag name="VS_LAST_VOTE_UO PORTAL">2/18/2023 8:01:16 PM</tag>
+			<tag name="VS_LAST_VOTE_TOP G">2/18/2023 8:01:17 PM</tag>
 			<tag name="VS_LAST_VOTE_XTREME TOP 100">10/24/2022 6:25:09 PM</tag>
-			<tag name="VS_LAST_VOTE_UOGATEWAY">10/24/2022 6:25:08 PM</tag>
-			<tag name="VS_LAST_VOTE_G TOP 100">10/24/2022 6:25:07 PM</tag>
+			<tag name="VS_LAST_VOTE_UOGATEWAY">2/18/2023 8:01:21 PM</tag>
+			<tag name="VS_LAST_VOTE_G TOP 100">2/18/2023 8:01:10 PM</tag>
 			<tag name="numRewardsChosen">22</tag>
-			<tag name="VS_LAST_VOTE_SHARD PORTAL">10/24/2022 6:25:02 PM</tag>
+			<tag name="VS_LAST_VOTE_SHARD PORTAL">2/18/2023 8:01:02 PM</tag>
 		</tags>
 		<addressList count="3">
 			<ip>73.27.118.181</ip>
 			<ip>66.211.75.73</ip>
 			<ip>73.62.16.76</ip>
 		</addressList>
-		<totalCurrency>0.032532741000048208</totalCurrency>
+		<totalCurrency>0.0325305410000482</totalCurrency>
 		<sovereigns>0</sovereigns>
 	</account>
 	<account>
@@ -4110,8 +4045,8 @@
 		<newCryptPassword>AD-46-77-58-6A-6E-65-E9-41-3A-28-39-36-BA-67-CC-E0-11-51-58</newCryptPassword>
 		<flags>2</flags>
 		<created>2021-04-25T02:56:14.8101633Z</created>
-		<lastLogin>2023-01-30T14:57:50.9287125Z</lastLogin>
-		<totalGameTime>P23DT9H34M48.8440046S</totalGameTime>
+		<lastLogin>2023-02-27T19:49:27.0165954Z</lastLogin>
+		<totalGameTime>P23DT10H46M57.226967S</totalGameTime>
 		<chars>
 			<char index="0">33224</char>
 			<char index="3">108831</char>
@@ -4152,7 +4087,7 @@
 			<tag name="VS_LAST_VOTE_WEBSITE">5/27/2021 7:11:24 PM</tag>
 			<tag name="VS_LAST_VOTE_DONATION INFO">12/29/2021 12:28:48 PM</tag>
 			<tag name="VS_LAST_VOTE_PAYPAL">10/25/2022 8:46:53 PM</tag>
-			<tag name="numRewardsChosen">33</tag>
+			<tag name="numRewardsChosen">34</tag>
 			<tag name="GoldenFleeceRecieved">true</tag>
 		</tags>
 		<addressList count="8">
@@ -4310,8 +4245,8 @@
 		<newCryptPassword>1F-A9-37-C6-30-7A-63-02-15-61-A9-66-BE-5C-9A-1A-28-3A-7F-7F</newCryptPassword>
 		<flags>2</flags>
 		<created>2021-05-11T00:49:27.1238857Z</created>
-		<lastLogin>2023-01-31T17:33:13.3110706Z</lastLogin>
-		<totalGameTime>P3DT18H28M32.8926991S</totalGameTime>
+		<lastLogin>2023-03-18T20:06:34.5608836Z</lastLogin>
+		<totalGameTime>P3DT18H28M53.2236739S</totalGameTime>
 		<chars>
 			<char index="0">25808</char>
 			<char index="2">141626</char>
@@ -4412,14 +4347,14 @@
 		<newCryptPassword>64-A2-74-3D-26-38-94-25-8E-B6-51-0E-B0-81-5A-F8-DE-8B-3B-F1</newCryptPassword>
 		<flags>2</flags>
 		<created>2021-05-19T22:02:10.3281132Z</created>
-		<lastLogin>2023-02-03T11:27:53.6540647Z</lastLogin>
-		<totalGameTime>P94DT4H33M11.0179181S</totalGameTime>
+		<lastLogin>2023-03-21T22:44:49.9443195Z</lastLogin>
+		<totalGameTime>P98DT10H13M49.6527293S</totalGameTime>
 		<chars>
 			<char index="0">23496</char>
 			<char index="1">11740</char>
-			<char index="2">56508</char>
+			<char index="2">38321</char>
 			<char index="3">26956</char>
-			<char index="4">48723</char>
+			<char index="4">38794</char>
 			<char index="5">52497</char>
 		</chars>
 		<comments>
@@ -4447,19 +4382,22 @@
 			<comment addedBy="System" lastModified="2023-01-08T14:25:00.3776325Z">Character #5 0x7E7F "Zorro" deleted by 97.85.245.63</comment>
 			<comment addedBy="System" lastModified="2023-01-08T14:44:28.9263333Z">Character #6 0xA2B4 "Ultra Maga King" deleted by 97.85.245.63</comment>
 			<comment addedBy="System" lastModified="2023-01-10T15:05:40.4376738Z">Character #3 0x9E23 "Imhotep" deleted by 97.85.245.63</comment>
+			<comment addedBy="System" lastModified="2023-02-17T20:06:02.8644101Z">Character #3 0xDCBC "Imohtep" deleted by 97.85.240.248</comment>
+			<comment addedBy="System" lastModified="2023-02-17T20:15:54.1308409Z">Character #5 0xBE53 "Zorro" deleted by 97.85.240.248</comment>
 		</comments>
 		<tags>
 			<tag name="VS_LAST_VOTE_DONATION INFO">5/19/2022 10:21:51 AM</tag>
 			<tag name="VS_LAST_VOTE_PAYPAL">11/20/2022 4:17:29 PM</tag>
-			<tag name="VS_LAST_VOTE_TOP 100 ARENA">2/2/2023 10:16:22 AM</tag>
-			<tag name="VS_LAST_VOTE_MMOHUB">2/2/2023 10:15:57 AM</tag>
-			<tag name="VS_LAST_VOTE_UO PORTAL">2/2/2023 10:16:03 AM</tag>
-			<tag name="VS_LAST_VOTE_TOP G">2/2/2023 10:16:07 AM</tag>
-			<tag name="VS_LAST_VOTE_XTREME TOP 100">2/2/2023 10:16:10 AM</tag>
-			<tag name="VS_LAST_VOTE_UOGATEWAY">2/2/2023 10:16:14 AM</tag>
-			<tag name="VS_LAST_VOTE_G TOP 100">2/2/2023 10:16:18 AM</tag>
+			<tag name="VS_LAST_VOTE_TOP 100 ARENA">3/21/2023 4:01:40 PM</tag>
+			<tag name="VS_LAST_VOTE_MMOHUB">3/21/2023 4:01:16 PM</tag>
+			<tag name="VS_LAST_VOTE_UO PORTAL">3/21/2023 4:01:20 PM</tag>
+			<tag name="VS_LAST_VOTE_TOP G">3/21/2023 4:01:24 PM</tag>
+			<tag name="VS_LAST_VOTE_XTREME TOP 100">3/21/2023 4:01:28 PM</tag>
+			<tag name="VS_LAST_VOTE_UOGATEWAY">3/21/2023 4:01:32 PM</tag>
+			<tag name="VS_LAST_VOTE_G TOP 100">3/21/2023 4:01:36 PM</tag>
 			<tag name="VS_LAST_VOTE_WEBSITE">9/4/2021 9:03:37 AM</tag>
-			<tag name="VS_LAST_VOTE_SHARD PORTAL">2/2/2023 10:16:27 AM</tag>
+			<tag name="VS_LAST_VOTE_SHARD PORTAL">3/21/2023 4:01:44 PM</tag>
+			<tag name="numRewardsChosen">4</tag>
 		</tags>
 		<addressList count="7">
 			<ip>75.129.228.50</ip>
@@ -4470,7 +4408,7 @@
 			<ip>97.85.245.63</ip>
 			<ip>97.85.240.248</ip>
 		</addressList>
-		<totalCurrency>0.22714847400001456</totalCurrency>
+		<totalCurrency>0.042416098000014453</totalCurrency>
 		<sovereigns>0</sovereigns>
 	</account>
 	<account>
@@ -4567,8 +4505,8 @@
 		<username>sirkewl2</username>
 		<newCryptPassword>DF-3F-E3-1B-73-26-AE-B4-D8-2D-01-E8-A2-85-1F-BB-E1-C0-40-3C</newCryptPassword>
 		<created>2021-12-14T14:58:24.3276988Z</created>
-		<lastLogin>2021-12-14T19:33:33.1603629Z</lastLogin>
-		<totalGameTime>PT1H28M35.3332312S</totalGameTime>
+		<lastLogin>2023-02-05T03:29:32.2884816Z</lastLogin>
+		<totalGameTime>PT1H40M15.6870408S</totalGameTime>
 		<chars>
 			<char index="0">83077</char>
 			<char index="1">84279</char>
@@ -4581,6 +4519,7 @@
 		<tags>
 			<tag name="VS_LAST_VOTE_DONATION INFO">12/14/2021 3:46:30 PM</tag>
 			<tag name="VS_LAST_VOTE_PAYPAL">12/14/2021 3:46:33 PM</tag>
+			<tag name="numRewardsChosen">1</tag>
 		</tags>
 		<addressList count="1">
 			<ip>172.10.83.46</ip>
@@ -4745,32 +4684,6 @@
 		<sovereigns>0</sovereigns>
 	</account>
 	<account>
-		<username>donna2</username>
-		<newCryptPassword>6D-9A-E8-F3-BC-69-F6-6B-C2-EA-C8-D9-61-7B-6F-22-44-AD-D9-8D</newCryptPassword>
-		<flags>2</flags>
-		<created>2021-06-29T00:12:11.6953189Z</created>
-		<lastLogin>2022-06-18T14:10:07.3917232Z</lastLogin>
-		<totalGameTime>P12DT20H39M7.3332166S</totalGameTime>
-		<chars>
-			<char index="0">34811</char>
-			<char index="1">214353</char>
-		</chars>
-		<comments>
-			<comment addedBy="System" lastModified="2021-08-09T12:55:53.5958919Z">Character #1 0x2D627 "Ariel" deleted by 75.178.1.179</comment>
-			<comment addedBy="System" lastModified="2022-01-23T00:55:26.8852085Z">Character #1 0x31CC4 "Wistoria" deleted by 75.178.1.179</comment>
-			<comment addedBy="System" lastModified="2022-01-23T00:55:41.9166169Z">Character #3 0x1F5CC "venus" deleted by 75.178.1.179</comment>
-		</comments>
-		<tags>
-			<tag name="numRewardsChosen">7</tag>
-			<tag name="VS_LAST_VOTE_WEBSITE">8/10/2021 4:19:48 PM</tag>
-		</tags>
-		<addressList count="1">
-			<ip>75.178.1.179</ip>
-		</addressList>
-		<totalCurrency>0.0011027530000000049</totalCurrency>
-		<sovereigns>0</sovereigns>
-	</account>
-	<account>
 		<username>kf5q</username>
 		<newCryptPassword>2B-8E-1A-81-E1-35-CD-F9-50-FE-F1-83-10-AD-F8-5D-0B-BB-C1-AF</newCryptPassword>
 		<flags>3</flags>
@@ -4855,14 +4768,17 @@
 		<newCryptPassword>9E-39-1A-88-C4-72-3C-0F-5F-1F-DA-F7-A9-8B-F2-6E-8B-9A-C6-36</newCryptPassword>
 		<flags>2</flags>
 		<created>2021-07-17T00:37:46.1117397Z</created>
-		<lastLogin>2023-02-03T03:07:32.6897085Z</lastLogin>
-		<totalGameTime>P1DT11H3M59.1182492S</totalGameTime>
+		<lastLogin>2023-03-16T14:03:50.6913088Z</lastLogin>
+		<totalGameTime>P1DT20H48M32.5688213S</totalGameTime>
 		<chars>
-			<char index="0">96261</char>
+			<char index="0">46331</char>
 			<char index="1">108985</char>
 			<char index="2">11321</char>
 			<char index="3">55522</char>
 		</chars>
+		<comments>
+			<comment addedBy="System" lastModified="2023-02-08T01:16:25.2536071Z">Character #1 0x17805 "Xander" deleted by 148.64.42.224</comment>
+		</comments>
 		<tags>
 			<tag name="VS_LAST_VOTE_UO PORTAL">8/6/2021 10:12:01 PM</tag>
 			<tag name="VS_LAST_VOTE_TOP G">8/6/2021 10:11:59 PM</tag>
@@ -4873,10 +4789,11 @@
 			<tag name="VS_LAST_VOTE_TOP 100 ARENA">8/6/2021 10:11:51 PM</tag>
 			<tag name="numRewardsChosen">13</tag>
 		</tags>
-		<addressList count="1">
+		<addressList count="2">
 			<ip>148.64.42.224</ip>
+			<ip>69.39.43.240</ip>
 		</addressList>
-		<totalCurrency>3.4243999999999993E-05</totalCurrency>
+		<totalCurrency>0.023418947000000016</totalCurrency>
 		<sovereigns>0</sovereigns>
 	</account>
 	<account>
@@ -5024,27 +4941,27 @@
 		<newCryptPassword>16-F3-22-18-C6-7C-92-2D-F5-7C-44-B6-70-6B-2C-39-8E-D9-2B-F8</newCryptPassword>
 		<flags>2</flags>
 		<created>2021-08-03T16:39:36.0201607Z</created>
-		<lastLogin>2023-02-01T10:09:49.2542828Z</lastLogin>
-		<totalGameTime>P4DT19H20M45.6425617S</totalGameTime>
+		<lastLogin>2023-03-21T04:07:31.0798263Z</lastLogin>
+		<totalGameTime>P4DT21H36M10.0902649S</totalGameTime>
 		<chars>
 			<char index="0">32048</char>
 		</chars>
 		<tags>
-			<tag name="VS_LAST_VOTE_UO PORTAL">2/1/2023 5:10:04 AM</tag>
+			<tag name="VS_LAST_VOTE_UO PORTAL">3/9/2023 10:47:10 PM</tag>
 			<tag name="numRewardsChosen">30</tag>
 			<tag name="VS_LAST_VOTE_SIRCHADE">9/13/2021 1:30:11 AM</tag>
-			<tag name="VS_LAST_VOTE_TOP G">2/1/2023 5:10:03 AM</tag>
-			<tag name="VS_LAST_VOTE_XTREME TOP 100">2/1/2023 5:10:02 AM</tag>
-			<tag name="VS_LAST_VOTE_G TOP 100">2/1/2023 5:10:00 AM</tag>
-			<tag name="VS_LAST_VOTE_TOP 100 ARENA">2/1/2023 5:09:58 AM</tag>
-			<tag name="VS_LAST_VOTE_UOGATEWAY">2/1/2023 5:10:01 AM</tag>
-			<tag name="VS_LAST_VOTE_MMOHUB">2/1/2023 5:10:05 AM</tag>
-			<tag name="VS_LAST_VOTE_SHARD PORTAL">2/1/2023 5:09:54 AM</tag>
+			<tag name="VS_LAST_VOTE_TOP G">3/21/2023 12:18:31 AM</tag>
+			<tag name="VS_LAST_VOTE_XTREME TOP 100">3/21/2023 12:18:24 AM</tag>
+			<tag name="VS_LAST_VOTE_G TOP 100">3/21/2023 12:17:05 AM</tag>
+			<tag name="VS_LAST_VOTE_TOP 100 ARENA">3/21/2023 12:08:26 AM</tag>
+			<tag name="VS_LAST_VOTE_UOGATEWAY">3/21/2023 12:18:14 AM</tag>
+			<tag name="VS_LAST_VOTE_MMOHUB">3/9/2023 10:47:11 PM</tag>
+			<tag name="VS_LAST_VOTE_SHARD PORTAL">3/21/2023 12:07:53 AM</tag>
 			<tag name="VS_LAST_VOTE_PAYPAL">12/14/2022 10:26:28 PM</tag>
 			<tag name="VS_LAST_VOTE_DONATION INFO">12/14/2022 10:26:16 PM</tag>
 			<tag name="VS_LAST_VOTE_WEBSITE">11/11/2022 12:38:44 AM</tag>
 		</tags>
-		<addressList count="203">
+		<addressList count="220">
 			<ip>109.242.233.101</ip>
 			<ip>109.242.235.54</ip>
 			<ip>109.242.234.89</ip>
@@ -5248,8 +5165,25 @@
 			<ip>188.73.239.229</ip>
 			<ip>188.73.237.205</ip>
 			<ip>188.73.237.181</ip>
+			<ip>188.73.239.133</ip>
+			<ip>188.73.237.13</ip>
+			<ip>188.73.238.61</ip>
+			<ip>188.73.236.181</ip>
+			<ip>188.73.236.109</ip>
+			<ip>188.73.239.253</ip>
+			<ip>188.73.239.37</ip>
+			<ip>188.73.237.157</ip>
+			<ip>188.73.238.157</ip>
+			<ip>188.73.239.157</ip>
+			<ip>188.73.237.109</ip>
+			<ip>37.6.0.183</ip>
+			<ip>37.6.1.87</ip>
+			<ip>37.6.3.108</ip>
+			<ip>109.242.136.14</ip>
+			<ip>109.242.136.182</ip>
+			<ip>188.73.236.128</ip>
 		</addressList>
-		<totalCurrency>9.60019999999995E-05</totalCurrency>
+		<totalCurrency>8.9359999999999456E-05</totalCurrency>
 		<sovereigns>0</sovereigns>
 	</account>
 	<account>
@@ -5283,8 +5217,8 @@
 		<newCryptPassword>B7-5A-8B-BC-89-89-86-A2-A9-67-ED-39-D5-40-FA-D8-C8-CA-AB-DA</newCryptPassword>
 		<flags>2</flags>
 		<created>2021-08-11T15:46:20.7072837Z</created>
-		<lastLogin>2022-08-03T21:18:56.1138939Z</lastLogin>
-		<totalGameTime>P12DT2H39M24.3891974S</totalGameTime>
+		<lastLogin>2023-03-16T13:19:13.5706023Z</lastLogin>
+		<totalGameTime>P12DT3H13M56.080052S</totalGameTime>
 		<chars>
 			<char index="3">38454</char>
 		</chars>
@@ -5310,7 +5244,7 @@
 			<tag name="VS_LAST_VOTE_TOP G">9/23/2021 11:03:21 PM</tag>
 			<tag name="VS_LAST_VOTE_G TOP 100">10/1/2021 3:18:19 PM</tag>
 		</tags>
-		<addressList count="13">
+		<addressList count="14">
 			<ip>162.40.2.68</ip>
 			<ip>74.190.96.254</ip>
 			<ip>208.97.24.79</ip>
@@ -5324,6 +5258,7 @@
 			<ip>74.190.97.141</ip>
 			<ip>98.252.222.164</ip>
 			<ip>38.146.83.163</ip>
+			<ip>50.96.147.227</ip>
 		</addressList>
 		<totalCurrency>0.010489948999999806</totalCurrency>
 		<sovereigns>0</sovereigns>
@@ -5381,8 +5316,8 @@
 		<newCryptPassword>96-47-23-84-FE-F5-F3-25-E6-A8-16-3A-3A-9B-41-A1-35-C1-05-99</newCryptPassword>
 		<flags>2</flags>
 		<created>2021-08-21T18:01:44.1310497Z</created>
-		<lastLogin>2023-02-03T04:36:02.8052592Z</lastLogin>
-		<totalGameTime>P63DT9H59M5.2390264S</totalGameTime>
+		<lastLogin>2023-03-17T17:00:35.2036112Z</lastLogin>
+		<totalGameTime>P63DT10H17M8.2812369S</totalGameTime>
 		<chars>
 			<char index="1">179280</char>
 		</chars>
@@ -5410,7 +5345,7 @@
 			<tag name="VS_LAST_VOTE_UO PORTAL">2/2/2023 4:02:54 AM</tag>
 			<tag name="VS_LAST_VOTE_DONATION INFO">1/6/2022 8:29:01 AM</tag>
 		</tags>
-		<addressList count="30">
+		<addressList count="31">
 			<ip>66.24.252.213</ip>
 			<ip>107.126.50.147</ip>
 			<ip>107.126.50.16</ip>
@@ -5441,6 +5376,7 @@
 			<ip>174.130.86.227</ip>
 			<ip>184.53.16.136</ip>
 			<ip>184.53.16.165</ip>
+			<ip>65.240.5.122</ip>
 		</addressList>
 		<totalCurrency>0.0071201080000011076</totalCurrency>
 		<sovereigns>0</sovereigns>
@@ -5530,8 +5466,8 @@
 		<newCryptPassword>0D-7D-E2-82-8D-30-7E-1B-62-B5-1C-47-EC-CB-E2-9F-6F-46-A6-D8</newCryptPassword>
 		<flags>2</flags>
 		<created>2021-08-30T16:22:01.6993991Z</created>
-		<lastLogin>2022-11-06T15:32:31.7311468Z</lastLogin>
-		<totalGameTime>P3DT21H7M24.1640987S</totalGameTime>
+		<lastLogin>2023-03-16T19:49:12.7587875Z</lastLogin>
+		<totalGameTime>P3DT21H11M35.0096053S</totalGameTime>
 		<chars>
 			<char index="0">42823</char>
 			<char index="1">42860</char>
@@ -5552,7 +5488,7 @@
 			<tag name="VS_LAST_VOTE_SHARD PORTAL">10/23/2021 10:25:50 AM</tag>
 			<tag name="numRewardsChosen">3</tag>
 		</tags>
-		<addressList count="18">
+		<addressList count="20">
 			<ip>81.152.43.114</ip>
 			<ip>86.182.7.253</ip>
 			<ip>86.136.63.105</ip>
@@ -5571,6 +5507,8 @@
 			<ip>86.150.91.98</ip>
 			<ip>86.137.38.3</ip>
 			<ip>86.136.202.184</ip>
+			<ip>109.148.46.169</ip>
+			<ip>86.136.63.20</ip>
 		</addressList>
 		<totalCurrency>0.1262967920000001</totalCurrency>
 		<sovereigns>0</sovereigns>
@@ -5580,8 +5518,8 @@
 		<newCryptPassword>CC-20-34-46-CA-B7-36-48-A7-19-3E-90-DB-64-9A-40-44-BA-89-94</newCryptPassword>
 		<flags>2</flags>
 		<created>2021-09-14T04:13:23.8164741Z</created>
-		<lastLogin>2022-06-11T23:35:23.602571Z</lastLogin>
-		<totalGameTime>P11DT6H58M52.7058078S</totalGameTime>
+		<lastLogin>2023-02-10T18:56:33.7486873Z</lastLogin>
+		<totalGameTime>P11DT7H4M22.5498195S</totalGameTime>
 		<chars>
 			<char index="0">23453</char>
 			<char index="1">101905</char>
@@ -5600,13 +5538,14 @@
 			<tag name="VS_LAST_VOTE_UOGATEWAY">9/17/2021 9:37:45 AM</tag>
 			<tag name="VS_LAST_VOTE_G TOP 100">9/17/2021 9:37:45 AM</tag>
 			<tag name="VS_LAST_VOTE_TOP 100 ARENA">9/17/2021 9:37:44 AM</tag>
-			<tag name="VS_LAST_VOTE_PAYPAL">4/18/2022 4:15:03 AM</tag>
+			<tag name="VS_LAST_VOTE_PAYPAL">2/10/2023 2:00:25 PM</tag>
 			<tag name="VS_LAST_VOTE_DONATION INFO">10/3/2021 5:10:38 AM</tag>
 			<tag name="VS_LAST_VOTE_SIRCHADE">4/16/2022 4:17:16 AM</tag>
 			<tag name="numRewardsChosen">8</tag>
 		</tags>
-		<addressList count="1">
+		<addressList count="2">
 			<ip>98.238.93.72</ip>
+			<ip>76.101.111.150</ip>
 		</addressList>
 		<totalCurrency>0.03216751400000005</totalCurrency>
 		<sovereigns>0</sovereigns>
@@ -6330,8 +6269,8 @@
 		<username>sirkewl1</username>
 		<newCryptPassword>D1-43-D3-2F-3E-7E-08-4F-59-B8-22-A6-02-A6-61-A8-15-52-4A-05</newCryptPassword>
 		<created>2021-12-14T04:27:04.131204Z</created>
-		<lastLogin>2021-12-16T01:37:00.1124176Z</lastLogin>
-		<totalGameTime>PT6H30M50.0166417S</totalGameTime>
+		<lastLogin>2023-02-05T04:09:54.7907812Z</lastLogin>
+		<totalGameTime>PT7H12M34.0196323S</totalGameTime>
 		<chars>
 			<char index="0">79981</char>
 			<char index="1">80026</char>
@@ -6341,10 +6280,13 @@
 			<char index="5">92870</char>
 			<char index="6">92968</char>
 		</chars>
+		<tags>
+			<tag name="numRewardsChosen">1</tag>
+		</tags>
 		<addressList count="1">
 			<ip>172.10.83.46</ip>
 		</addressList>
-		<totalCurrency>0.00016244500000000018</totalCurrency>
+		<totalCurrency>0.00015779500000000015</totalCurrency>
 		<sovereigns>0</sovereigns>
 	</account>
 	<account>
@@ -6368,8 +6310,8 @@
 		<newCryptPassword>17-67-58-06-DA-F3-BD-3C-F7-48-43-10-49-0C-50-16-38-4B-30-BC</newCryptPassword>
 		<flags>2</flags>
 		<created>2021-12-16T03:01:35.679392Z</created>
-		<lastLogin>2023-01-18T04:31:40.4439402Z</lastLogin>
-		<totalGameTime>P19DT22H53M55.1267399S</totalGameTime>
+		<lastLogin>2023-02-15T16:10:25.9238672Z</lastLogin>
+		<totalGameTime>P20DT16H58M31.9361327S</totalGameTime>
 		<chars>
 			<char index="0">78051</char>
 		</chars>
@@ -6450,8 +6392,8 @@
 		<newCryptPassword>25-D0-53-12-0E-F5-B3-C2-D2-45-B6-B8-46-29-0D-3A-C2-55-27-28</newCryptPassword>
 		<flags>2</flags>
 		<created>2021-12-17T13:01:37.6210124Z</created>
-		<lastLogin>2023-02-01T10:03:44.3008303Z</lastLogin>
-		<totalGameTime>P51DT7H1M8.3011433S</totalGameTime>
+		<lastLogin>2023-03-19T12:48:22.2446347Z</lastLogin>
+		<totalGameTime>P51DT9H9M3.4704763S</totalGameTime>
 		<chars>
 			<char index="0">76734</char>
 			<char index="1">176063</char>
@@ -6468,8 +6410,8 @@
 		<tags>
 			<tag name="VS_LAST_VOTE_DONATION INFO">12/17/2021 9:01:14 AM</tag>
 			<tag name="VS_LAST_VOTE_SHARD PORTAL">7/28/2022 3:13:02 PM</tag>
-			<tag name="VS_LAST_VOTE_PAYPAL">10/12/2022 11:44:26 AM</tag>
-			<tag name="numRewardsChosen">23</tag>
+			<tag name="VS_LAST_VOTE_PAYPAL">2/16/2023 5:24:52 AM</tag>
+			<tag name="numRewardsChosen">27</tag>
 			<tag name="VS_LAST_VOTE_TOP G">7/28/2022 3:13:02 PM</tag>
 			<tag name="VS_LAST_VOTE_MMOHUB">7/28/2022 3:13:02 PM</tag>
 			<tag name="VS_LAST_VOTE_WEBSITE">1/20/2022 6:01:01 AM</tag>
@@ -6480,7 +6422,7 @@
 			<tag name="VS_LAST_VOTE_XTREME TOP 100">7/28/2022 3:13:02 PM</tag>
 			<tag name="VS_LAST_VOTE_UO PORTAL">7/28/2022 3:13:02 PM</tag>
 		</tags>
-		<addressList count="50">
+		<addressList count="56">
 			<ip>187.75.10.108</ip>
 			<ip>177.76.201.208</ip>
 			<ip>177.118.186.222</ip>
@@ -6531,8 +6473,14 @@
 			<ip>177.76.8.134</ip>
 			<ip>177.76.8.166</ip>
 			<ip>191.205.137.200</ip>
+			<ip>177.103.9.40</ip>
+			<ip>179.93.28.48</ip>
+			<ip>179.93.28.33</ip>
+			<ip>179.93.28.234</ip>
+			<ip>177.170.90.217</ip>
+			<ip>187.56.47.189</ip>
 		</addressList>
-		<totalCurrency>0.24852686199999996</totalCurrency>
+		<totalCurrency>0.24798108699999996</totalCurrency>
 		<sovereigns>0</sovereigns>
 	</account>
 	<account>
@@ -6837,8 +6785,8 @@
 		<newCryptPassword>1D-A6-D2-78-29-3E-A6-3C-7B-F4-26-6C-07-72-DF-67-66-6E-E5-6B</newCryptPassword>
 		<flags>2</flags>
 		<created>2022-01-02T12:16:31.0488886Z</created>
-		<lastLogin>2023-02-02T21:33:08.463328Z</lastLogin>
-		<totalGameTime>P4DT10H9M54.6512393S</totalGameTime>
+		<lastLogin>2023-03-14T23:37:30.4442577Z</lastLogin>
+		<totalGameTime>P4DT10H38M24.2633024S</totalGameTime>
 		<chars>
 			<char index="0">10552</char>
 			<char index="1">119363</char>
@@ -6862,7 +6810,7 @@
 			<ip>172.58.157.2</ip>
 			<ip>172.58.248.226</ip>
 		</addressList>
-		<totalCurrency>2.6047000000000007E-05</totalCurrency>
+		<totalCurrency>2.5927000000000008E-05</totalCurrency>
 		<sovereigns>0</sovereigns>
 	</account>
 	<account>
@@ -8138,8 +8086,8 @@
 		<newCryptPassword>DE-FD-4D-B1-76-B6-7D-29-67-2D-6C-FA-E2-85-0B-84-A2-59-39-58</newCryptPassword>
 		<flags>2</flags>
 		<created>2022-05-07T14:23:15.4942282Z</created>
-		<lastLogin>2023-01-29T15:23:15.0079613Z</lastLogin>
-		<totalGameTime>P4DT7H47M7.7546618S</totalGameTime>
+		<lastLogin>2023-03-18T12:20:01.2153385Z</lastLogin>
+		<totalGameTime>P4DT7H53M38.772838S</totalGameTime>
 		<chars>
 			<char index="2">9258</char>
 		</chars>
@@ -8148,20 +8096,20 @@
 			<comment addedBy="System" lastModified="2022-05-16T08:46:25.2691847Z">Character #2 0x7B8 "Sam" deleted by 39.171.136.197</comment>
 		</comments>
 		<tags>
-			<tag name="VS_LAST_VOTE_MMOHUB">1/29/2023 10:24:08 AM</tag>
+			<tag name="VS_LAST_VOTE_MMOHUB">3/18/2023 8:21:11 AM</tag>
 			<tag name="VS_LAST_VOTE_DONATION INFO">5/14/2022 12:07:40 PM</tag>
 			<tag name="VS_LAST_VOTE_PAYPAL">5/14/2022 12:08:10 PM</tag>
-			<tag name="VS_LAST_VOTE_UO PORTAL">1/29/2023 10:24:08 AM</tag>
-			<tag name="VS_LAST_VOTE_TOP G">1/29/2023 10:24:07 AM</tag>
-			<tag name="VS_LAST_VOTE_XTREME TOP 100">1/29/2023 10:24:06 AM</tag>
-			<tag name="VS_LAST_VOTE_UOGATEWAY">1/29/2023 10:24:06 AM</tag>
-			<tag name="VS_LAST_VOTE_G TOP 100">1/29/2023 10:24:05 AM</tag>
-			<tag name="VS_LAST_VOTE_TOP 100 ARENA">1/29/2023 10:24:05 AM</tag>
-			<tag name="VS_LAST_VOTE_SHARD PORTAL">1/29/2023 10:24:35 AM</tag>
+			<tag name="VS_LAST_VOTE_UO PORTAL">3/18/2023 8:21:11 AM</tag>
+			<tag name="VS_LAST_VOTE_TOP G">3/18/2023 8:21:10 AM</tag>
+			<tag name="VS_LAST_VOTE_XTREME TOP 100">3/18/2023 8:21:09 AM</tag>
+			<tag name="VS_LAST_VOTE_UOGATEWAY">3/18/2023 8:21:09 AM</tag>
+			<tag name="VS_LAST_VOTE_G TOP 100">3/18/2023 8:21:08 AM</tag>
+			<tag name="VS_LAST_VOTE_TOP 100 ARENA">3/18/2023 8:21:08 AM</tag>
+			<tag name="VS_LAST_VOTE_SHARD PORTAL">3/18/2023 8:21:15 AM</tag>
 			<tag name="VS_LAST_VOTE_WEBSITE">5/17/2022 8:07:10 AM</tag>
 			<tag name="numRewardsChosen">13</tag>
 		</tags>
-		<addressList count="10">
+		<addressList count="12">
 			<ip>39.171.137.7</ip>
 			<ip>39.171.137.106</ip>
 			<ip>39.171.136.197</ip>
@@ -8172,6 +8120,8 @@
 			<ip>39.171.140.188</ip>
 			<ip>39.171.140.58</ip>
 			<ip>39.171.140.136</ip>
+			<ip>39.171.141.243</ip>
+			<ip>39.171.140.203</ip>
 		</addressList>
 		<totalCurrency>9.9999999878246527E-10</totalCurrency>
 		<sovereigns>0</sovereigns>
@@ -8196,8 +8146,8 @@
 		<newCryptPassword>84-D0-95-04-1E-C1-7C-CD-26-53-A4-D7-D5-11-01-34-40-78-B2-01</newCryptPassword>
 		<flags>2</flags>
 		<created>2022-05-08T16:12:36.6172198Z</created>
-		<lastLogin>2023-01-29T15:25:10.1330073Z</lastLogin>
-		<totalGameTime>P1DT15H24M56.4994291S</totalGameTime>
+		<lastLogin>2023-03-18T12:05:13.175161Z</lastLogin>
+		<totalGameTime>P1DT15H38M28.1583246S</totalGameTime>
 		<chars>
 			<char index="0">38126</char>
 		</chars>
@@ -8205,17 +8155,17 @@
 			<comment addedBy="System" lastModified="2022-05-19T08:19:52.8888727Z">Character #2 0xEED7 "Linda" deleted by 39.171.137.225</comment>
 		</comments>
 		<tags>
-			<tag name="VS_LAST_VOTE_MMOHUB">1/29/2023 10:25:29 AM</tag>
-			<tag name="VS_LAST_VOTE_UO PORTAL">1/29/2023 10:25:28 AM</tag>
-			<tag name="VS_LAST_VOTE_TOP G">1/29/2023 10:25:28 AM</tag>
-			<tag name="VS_LAST_VOTE_XTREME TOP 100">1/29/2023 10:25:27 AM</tag>
-			<tag name="VS_LAST_VOTE_UOGATEWAY">1/29/2023 10:25:26 AM</tag>
-			<tag name="VS_LAST_VOTE_G TOP 100">1/29/2023 10:25:26 AM</tag>
-			<tag name="VS_LAST_VOTE_TOP 100 ARENA">1/29/2023 10:25:25 AM</tag>
-			<tag name="VS_LAST_VOTE_SHARD PORTAL">1/29/2023 10:25:37 AM</tag>
+			<tag name="VS_LAST_VOTE_MMOHUB">3/18/2023 8:08:34 AM</tag>
+			<tag name="VS_LAST_VOTE_UO PORTAL">3/18/2023 8:08:33 AM</tag>
+			<tag name="VS_LAST_VOTE_TOP G">3/18/2023 8:08:32 AM</tag>
+			<tag name="VS_LAST_VOTE_XTREME TOP 100">3/18/2023 8:08:32 AM</tag>
+			<tag name="VS_LAST_VOTE_UOGATEWAY">3/18/2023 8:08:31 AM</tag>
+			<tag name="VS_LAST_VOTE_G TOP 100">3/18/2023 8:08:31 AM</tag>
+			<tag name="VS_LAST_VOTE_TOP 100 ARENA">3/18/2023 8:08:30 AM</tag>
+			<tag name="VS_LAST_VOTE_SHARD PORTAL">3/18/2023 8:08:40 AM</tag>
 			<tag name="numRewardsChosen">13</tag>
 		</tags>
-		<addressList count="9">
+		<addressList count="11">
 			<ip>39.171.137.7</ip>
 			<ip>39.171.136.197</ip>
 			<ip>39.171.137.225</ip>
@@ -8225,6 +8175,8 @@
 			<ip>39.171.140.188</ip>
 			<ip>39.171.140.58</ip>
 			<ip>39.171.140.136</ip>
+			<ip>39.171.141.243</ip>
+			<ip>39.171.140.203</ip>
 		</addressList>
 		<totalCurrency>1.6263032587282567E-19</totalCurrency>
 		<sovereigns>0</sovereigns>
@@ -8234,8 +8186,8 @@
 		<newCryptPassword>3B-1A-21-0C-23-28-72-2B-27-30-90-38-7E-F2-26-38-8B-A1-6E-4C</newCryptPassword>
 		<flags>2</flags>
 		<created>2022-05-10T10:39:33.904092Z</created>
-		<lastLogin>2022-12-28T06:39:24.6736466Z</lastLogin>
-		<totalGameTime>P4DT9H37M38.8463235S</totalGameTime>
+		<lastLogin>2023-03-21T17:08:34.8330448Z</lastLogin>
+		<totalGameTime>P4DT10H13M24.0046575S</totalGameTime>
 		<chars>
 			<char index="0">348</char>
 		</chars>
@@ -8243,11 +8195,11 @@
 			<comment addedBy="System" lastModified="2022-09-08T12:13:11.7352382Z">Character #2 0x303C "Twolefthandnik" deleted by 84.130.248.6</comment>
 		</comments>
 		<tags>
-			<tag name="VS_LAST_VOTE_DONATION INFO">8/31/2022 10:18:20 PM</tag>
+			<tag name="VS_LAST_VOTE_DONATION INFO">3/21/2023 1:17:09 PM</tag>
 			<tag name="numRewardsChosen">1</tag>
 			<tag name="DiamondHoopEarringsRecieved">true</tag>
 		</tags>
-		<addressList count="22">
+		<addressList count="24">
 			<ip>84.130.244.77</ip>
 			<ip>84.142.185.61</ip>
 			<ip>84.142.186.176</ip>
@@ -8270,8 +8222,10 @@
 			<ip>84.130.250.215</ip>
 			<ip>84.130.252.184</ip>
 			<ip>84.130.241.58</ip>
+			<ip>84.130.244.229</ip>
+			<ip>84.142.182.5</ip>
 		</addressList>
-		<totalCurrency>0.016169109000000029</totalCurrency>
+		<totalCurrency>0.016168110000000027</totalCurrency>
 		<sovereigns>0</sovereigns>
 	</account>
 	<account>
@@ -8398,8 +8352,8 @@
 		<newCryptPassword>7E-08-EC-4F-05-77-1A-98-10-F6-0E-6E-CD-BF-07-A2-82-EF-07-76</newCryptPassword>
 		<flags>2</flags>
 		<created>2022-05-14T13:23:03.1101995Z</created>
-		<lastLogin>2023-01-29T15:26:02.648648Z</lastLogin>
-		<totalGameTime>P11DT23H29M55.5688865S</totalGameTime>
+		<lastLogin>2023-03-18T12:16:45.3782705Z</lastLogin>
+		<totalGameTime>P11DT23H44M6.3464603S</totalGameTime>
 		<chars>
 			<char index="0">87166</char>
 			<char index="1">224344</char>
@@ -8412,18 +8366,18 @@
 		<tags>
 			<tag name="VS_LAST_VOTE_PAYPAL">1/5/2023 1:07:12 AM</tag>
 			<tag name="VS_LAST_VOTE_WEBSITE">1/2/2023 12:38:12 PM</tag>
-			<tag name="VS_LAST_VOTE_MMOHUB">1/29/2023 10:26:19 AM</tag>
-			<tag name="VS_LAST_VOTE_UO PORTAL">1/29/2023 10:26:18 AM</tag>
-			<tag name="VS_LAST_VOTE_TOP G">1/29/2023 10:26:18 AM</tag>
-			<tag name="VS_LAST_VOTE_XTREME TOP 100">1/29/2023 10:26:17 AM</tag>
-			<tag name="VS_LAST_VOTE_UOGATEWAY">1/29/2023 10:26:17 AM</tag>
-			<tag name="VS_LAST_VOTE_G TOP 100">1/29/2023 10:26:16 AM</tag>
-			<tag name="VS_LAST_VOTE_TOP 100 ARENA">1/29/2023 10:26:15 AM</tag>
-			<tag name="VS_LAST_VOTE_SHARD PORTAL">1/29/2023 10:26:24 AM</tag>
+			<tag name="VS_LAST_VOTE_MMOHUB">3/18/2023 8:15:35 AM</tag>
+			<tag name="VS_LAST_VOTE_UO PORTAL">3/18/2023 8:15:34 AM</tag>
+			<tag name="VS_LAST_VOTE_TOP G">3/18/2023 8:15:34 AM</tag>
+			<tag name="VS_LAST_VOTE_XTREME TOP 100">3/18/2023 8:15:33 AM</tag>
+			<tag name="VS_LAST_VOTE_UOGATEWAY">3/18/2023 8:15:33 AM</tag>
+			<tag name="VS_LAST_VOTE_G TOP 100">3/18/2023 8:15:32 AM</tag>
+			<tag name="VS_LAST_VOTE_TOP 100 ARENA">3/18/2023 8:15:31 AM</tag>
+			<tag name="VS_LAST_VOTE_SHARD PORTAL">3/18/2023 8:15:43 AM</tag>
 			<tag name="VS_LAST_VOTE_DONATION INFO">1/4/2023 11:26:53 AM</tag>
 			<tag name="numRewardsChosen">13</tag>
 		</tags>
-		<addressList count="16">
+		<addressList count="18">
 			<ip>39.171.137.106</ip>
 			<ip>39.171.136.197</ip>
 			<ip>39.171.137.225</ip>
@@ -8440,6 +8394,8 @@
 			<ip>39.171.140.188</ip>
 			<ip>39.171.140.58</ip>
 			<ip>39.171.140.136</ip>
+			<ip>39.171.141.243</ip>
+			<ip>39.171.140.203</ip>
 		</addressList>
 		<totalCurrency>0.030582204000002</totalCurrency>
 		<sovereigns>0</sovereigns>
@@ -8528,43 +8484,55 @@
 	<account>
 		<username>jakerussell</username>
 		<newCryptPassword>43-60-B1-5F-18-50-9D-EE-E8-D5-3C-8D-7A-7D-CA-7B-AE-00-0B-C3</newCryptPassword>
+		<flags>2</flags>
 		<created>2022-05-24T04:39:27.699299Z</created>
-		<lastLogin>2022-05-27T03:18:36.3928984Z</lastLogin>
-		<totalGameTime>P1DT3H21M22.7027016S</totalGameTime>
+		<lastLogin>2023-03-22T10:39:21.7348406Z</lastLogin>
+		<totalGameTime>P5DT47M8.5489983S</totalGameTime>
 		<chars>
 			<char index="0">67108</char>
+			<char index="1">64166</char>
 		</chars>
 		<tags>
-			<tag name="VS_LAST_VOTE_SHARD PORTAL">5/24/2022 5:16:04 AM</tag>
-			<tag name="VS_LAST_VOTE_TOP 100 ARENA">5/24/2022 5:16:10 AM</tag>
-			<tag name="VS_LAST_VOTE_G TOP 100">5/24/2022 5:16:14 AM</tag>
-			<tag name="VS_LAST_VOTE_UOGATEWAY">5/24/2022 5:16:17 AM</tag>
-			<tag name="VS_LAST_VOTE_XTREME TOP 100">5/24/2022 5:16:20 AM</tag>
-			<tag name="VS_LAST_VOTE_TOP G">5/24/2022 5:16:25 AM</tag>
-			<tag name="VS_LAST_VOTE_UO PORTAL">5/24/2022 5:16:29 AM</tag>
-			<tag name="VS_LAST_VOTE_MMOHUB">5/24/2022 5:16:34 AM</tag>
+			<tag name="VS_LAST_VOTE_SHARD PORTAL">3/15/2023 10:48:43 PM</tag>
+			<tag name="VS_LAST_VOTE_TOP 100 ARENA">3/15/2023 10:48:45 PM</tag>
+			<tag name="VS_LAST_VOTE_G TOP 100">3/15/2023 10:48:51 PM</tag>
+			<tag name="VS_LAST_VOTE_UOGATEWAY">3/15/2023 10:48:40 PM</tag>
+			<tag name="VS_LAST_VOTE_XTREME TOP 100">3/15/2023 10:48:54 PM</tag>
+			<tag name="VS_LAST_VOTE_TOP G">3/15/2023 10:48:37 PM</tag>
+			<tag name="VS_LAST_VOTE_UO PORTAL">3/15/2023 10:48:33 PM</tag>
+			<tag name="VS_LAST_VOTE_MMOHUB">3/15/2023 10:48:29 PM</tag>
 			<tag name="VS_LAST_VOTE_WEBSITE">5/24/2022 11:18:13 AM</tag>
+			<tag name="numRewardsChosen">1</tag>
 		</tags>
-		<addressList count="1">
+		<addressList count="2">
 			<ip>184.147.191.58</ip>
+			<ip>174.89.126.249</ip>
 		</addressList>
-		<totalCurrency>0.0019453460000000004</totalCurrency>
+		<totalCurrency>0.35682929000000024</totalCurrency>
 		<sovereigns>0</sovereigns>
 	</account>
 	<account>
 		<username>limalair</username>
 		<newCryptPassword>94-B8-CA-8E-36-9D-26-13-11-17-E7-6E-84-AC-47-DC-C5-F7-CD-F8</newCryptPassword>
 		<created>2022-05-27T13:48:33.8025594Z</created>
-		<lastLogin>2022-06-14T12:55:40.6007139Z</lastLogin>
-		<totalGameTime>PT2M46.4846484S</totalGameTime>
+		<lastLogin>2023-03-13T04:55:09.0285961Z</lastLogin>
+		<totalGameTime>PT5H53M49.2830544S</totalGameTime>
 		<chars>
-			<char index="0">4640</char>
+			<char index="0">90817</char>
 		</chars>
-		<addressList count="2">
+		<comments>
+			<comment addedBy="System" lastModified="2023-03-12T23:10:29.7518094Z">Character #1 0x1220 "Latlana" deleted by 118.208.220.162</comment>
+		</comments>
+		<tags>
+			<tag name="numRewardsChosen">1</tag>
+		</tags>
+		<addressList count="4">
 			<ip>159.235.194.133</ip>
 			<ip>162.238.153.19</ip>
+			<ip>118.208.220.162</ip>
+			<ip>121.44.91.254</ip>
 		</addressList>
-		<totalCurrency>0</totalCurrency>
+		<totalCurrency>1.9553000000000004E-05</totalCurrency>
 		<sovereigns>0</sovereigns>
 	</account>
 	<account>
@@ -8690,21 +8658,23 @@
 		<newCryptPassword>A0-13-AF-FE-A8-4A-59-9D-90-30-B4-53-89-5D-1E-3C-40-55-84-C7</newCryptPassword>
 		<flags>2</flags>
 		<created>2022-06-09T13:20:53.604Z</created>
-		<lastLogin>2023-01-07T02:01:08.2534722Z</lastLogin>
-		<totalGameTime>P3DT11H27M43.2090961S</totalGameTime>
+		<lastLogin>2023-03-13T22:08:35.1138413Z</lastLogin>
+		<totalGameTime>P3DT17H14M8.9668289S</totalGameTime>
 		<chars>
 			<char index="0">5702</char>
 		</chars>
 		<tags>
 			<tag name="GoldenFleeceRecieved">true</tag>
+			<tag name="numRewardsChosen">1</tag>
 		</tags>
-		<addressList count="4">
+		<addressList count="5">
 			<ip>159.235.194.133</ip>
 			<ip>162.238.153.19</ip>
 			<ip>118.210.102.61</ip>
 			<ip>118.209.255.187</ip>
+			<ip>121.44.91.254</ip>
 		</addressList>
-		<totalCurrency>0.0028339520000000003</totalCurrency>
+		<totalCurrency>0.0014515270000000006</totalCurrency>
 		<sovereigns>0</sovereigns>
 	</account>
 	<account>
@@ -8810,18 +8780,21 @@
 		<username>treg767</username>
 		<newCryptPassword>59-2E-2E-46-EB-8B-DC-29-9E-3E-4C-43-E6-D1-55-E6-AD-88-D4-29</newCryptPassword>
 		<created>2022-06-20T19:13:29.0481777Z</created>
-		<lastLogin>2023-01-07T02:05:16.5974962Z</lastLogin>
-		<totalGameTime>PT5H48M22.6189436S</totalGameTime>
+		<lastLogin>2023-03-13T22:46:46.0960649Z</lastLogin>
+		<totalGameTime>PT10H35M19.8581147S</totalGameTime>
 		<chars>
 			<char index="0">9304</char>
 			<char index="1">7155</char>
+			<char index="2">118930</char>
+			<char index="3">119144</char>
 		</chars>
-		<addressList count="3">
+		<addressList count="4">
 			<ip>162.238.153.19</ip>
 			<ip>118.210.102.61</ip>
 			<ip>118.209.255.187</ip>
+			<ip>121.44.91.254</ip>
 		</addressList>
-		<totalCurrency>0</totalCurrency>
+		<totalCurrency>8.5E-05</totalCurrency>
 		<sovereigns>0</sovereigns>
 	</account>
 	<account>
@@ -9418,8 +9391,8 @@
 		<username>anubis</username>
 		<newCryptPassword>DC-11-9E-C8-D8-94-57-08-99-67-0E-78-1E-C3-E3-2D-C4-13-86-6A</newCryptPassword>
 		<created>2022-09-04T06:08:23.6395577Z</created>
-		<lastLogin>2023-01-15T15:11:24.1048637Z</lastLogin>
-		<totalGameTime>P1DT10H51M39.7022903S</totalGameTime>
+		<lastLogin>2023-03-22T01:48:45.6169199Z</lastLogin>
+		<totalGameTime>P1DT10H56M6.1472523S</totalGameTime>
 		<chars>
 			<char index="0">31665</char>
 		</chars>
@@ -9470,15 +9443,15 @@
 		<newCryptPassword>36-52-C8-11-94-11-10-61-74-0E-E2-C3-C5-F9-BC-55-FE-11-F6-C2</newCryptPassword>
 		<flags>2</flags>
 		<created>2022-09-04T17:51:56.1085709Z</created>
-		<lastLogin>2022-12-29T05:21:45.7285493Z</lastLogin>
-		<totalGameTime>P2DT4H48M52.2978147S</totalGameTime>
+		<lastLogin>2023-03-20T20:49:25.3099012Z</lastLogin>
+		<totalGameTime>P2DT4H56M26.7358942S</totalGameTime>
 		<chars>
 			<char index="0">50498</char>
 		</chars>
 		<tags>
 			<tag name="DiamondHoopEarringsRecieved">true</tag>
 		</tags>
-		<addressList count="18">
+		<addressList count="19">
 			<ip>84.130.243.82</ip>
 			<ip>84.130.247.103</ip>
 			<ip>84.130.247.15</ip>
@@ -9497,6 +9470,7 @@
 			<ip>84.130.240.129</ip>
 			<ip>84.130.241.58</ip>
 			<ip>84.130.242.227</ip>
+			<ip>84.130.244.229</ip>
 		</addressList>
 		<totalCurrency>0.00069023599999999891</totalCurrency>
 		<sovereigns>0</sovereigns>
@@ -9566,31 +9540,53 @@
 		<username>djfarn1</username>
 		<newCryptPassword>06-CF-AB-3B-B9-F9-85-ED-BB-CB-FC-E7-1F-0C-34-3B-6C-91-65-4F</newCryptPassword>
 		<created>2022-09-13T16:46:43.646486Z</created>
-		<lastLogin>2022-09-13T18:08:37.4203681Z</lastLogin>
-		<totalGameTime>PT9H4M6.2406958S</totalGameTime>
+		<lastLogin>2023-03-01T18:16:10.5719636Z</lastLogin>
+		<totalGameTime>P1DT6H11M16.1537952S</totalGameTime>
 		<chars>
 			<char index="0">11438</char>
 			<char index="1">15575</char>
+			<char index="2">20573</char>
+			<char index="3">5362</char>
+			<char index="4">2101</char>
+			<char index="5">20797</char>
 		</chars>
-		<addressList count="1">
+		<tags>
+			<tag name="numRewardsChosen">7</tag>
+			<tag name="VS_LAST_VOTE_MMOHUB">2/28/2023 9:42:28 AM</tag>
+			<tag name="VS_LAST_VOTE_UO PORTAL">2/28/2023 9:42:31 AM</tag>
+			<tag name="VS_LAST_VOTE_TOP G">2/28/2023 9:42:33 AM</tag>
+			<tag name="VS_LAST_VOTE_XTREME TOP 100">2/28/2023 9:42:34 AM</tag>
+			<tag name="VS_LAST_VOTE_UOGATEWAY">2/28/2023 9:42:34 AM</tag>
+			<tag name="VS_LAST_VOTE_G TOP 100">2/28/2023 9:42:41 AM</tag>
+			<tag name="VS_LAST_VOTE_TOP 100 ARENA">2/28/2023 9:42:42 AM</tag>
+			<tag name="VS_LAST_VOTE_SHARD PORTAL">2/28/2023 9:42:43 AM</tag>
+			<tag name="VS_LAST_VOTE_WEBSITE">2/28/2023 11:36:47 AM</tag>
+			<tag name="VS_LAST_VOTE_PAYPAL">3/1/2023 11:42:58 AM</tag>
+		</tags>
+		<addressList count="2">
 			<ip>66.195.110.50</ip>
+			<ip>64.42.152.208</ip>
 		</addressList>
-		<totalCurrency>9.6277E-05</totalCurrency>
+		<totalCurrency>0.00010246800000000001</totalCurrency>
 		<sovereigns>0</sovereigns>
 	</account>
 	<account>
 		<username>djfarn2</username>
 		<newCryptPassword>36-D2-21-E3-0D-4C-CB-DB-14-DF-81-DF-B2-BD-3F-FC-92-06-F4-96</newCryptPassword>
 		<created>2022-09-13T18:20:26.3776314Z</created>
-		<lastLogin>2022-09-13T18:25:25.3778794Z</lastLogin>
-		<totalGameTime>PT1H16M15.1410602S</totalGameTime>
+		<lastLogin>2023-03-01T14:07:00.2501607Z</lastLogin>
+		<totalGameTime>PT1H43M34.3969464S</totalGameTime>
 		<chars>
 			<char index="0">17751</char>
 		</chars>
-		<addressList count="1">
+		<tags>
+			<tag name="numRewardsChosen">3</tag>
+		</tags>
+		<addressList count="2">
 			<ip>66.195.110.50</ip>
+			<ip>64.42.152.208</ip>
 		</addressList>
-		<totalCurrency>4.248E-05</totalCurrency>
+		<totalCurrency>1.3552527156068805E-20</totalCurrency>
 		<sovereigns>0</sovereigns>
 	</account>
 	<account>
@@ -9671,15 +9667,15 @@
 		<newCryptPassword>16-46-AE-01-5C-76-8A-B2-13-BB-DD-E1-57-0E-F2-34-D5-89-59-7A</newCryptPassword>
 		<flags>2</flags>
 		<created>2022-09-28T21:18:40.5409276Z</created>
-		<lastLogin>2023-01-30T02:16:48.8180815Z</lastLogin>
-		<totalGameTime>P9DT13H55M37.9795469S</totalGameTime>
+		<lastLogin>2023-03-05T23:38:34.0456873Z</lastLogin>
+		<totalGameTime>P9DT17H34M3.3648196S</totalGameTime>
 		<chars>
 			<char index="0">5613</char>
 			<char index="1">34874</char>
 			<char index="2">40322</char>
 		</chars>
 		<tags>
-			<tag name="VS_LAST_VOTE_PAYPAL">11/24/2022 5:52:59 PM</tag>
+			<tag name="VS_LAST_VOTE_PAYPAL">3/4/2023 5:18:41 PM</tag>
 			<tag name="VS_LAST_VOTE_DONATION INFO">11/24/2022 5:41:24 PM</tag>
 			<tag name="DiamondHoopEarringsRecieved">true</tag>
 			<tag name="VS_LAST_VOTE_TOP G">10/10/2022 3:22:48 PM</tag>
@@ -9691,10 +9687,11 @@
 			<tag name="VS_LAST_VOTE_XTREME TOP 100">10/10/2022 3:23:27 PM</tag>
 			<tag name="VS_LAST_VOTE_TOP 100 ARENA">10/10/2022 3:24:13 PM</tag>
 		</tags>
-		<addressList count="3">
+		<addressList count="4">
 			<ip>200.219.26.7</ip>
 			<ip>200.219.26.5</ip>
 			<ip>200.219.26.12</ip>
+			<ip>200.219.25.2</ip>
 		</addressList>
 		<totalCurrency>0.16996429900000096</totalCurrency>
 		<sovereigns>0</sovereigns>
@@ -9928,19 +9925,30 @@
 	<account>
 		<username>Red</username>
 		<newCryptPassword>BC-63-5A-CB-BC-6B-60-BC-AB-16-21-B1-68-62-39-31-3C-92-7A-CC</newCryptPassword>
+		<flags>2</flags>
 		<created>2022-11-05T22:33:11.82763Z</created>
-		<lastLogin>2022-11-05T22:50:03.2490491Z</lastLogin>
-		<totalGameTime>PT13M28.8760947S</totalGameTime>
+		<lastLogin>2023-03-15T21:44:59.2450743Z</lastLogin>
+		<totalGameTime>P2DT7H6M45.3609453S</totalGameTime>
 		<chars>
-			<char index="0">5349</char>
+			<char index="0">40822</char>
 			<char index="1">5664</char>
 			<char index="2">5671</char>
 			<char index="3">5694</char>
+			<char index="4">44279</char>
 		</chars>
+		<comments>
+			<comment addedBy="System" lastModified="2023-03-08T23:49:57.0328464Z">Character #1 0x14E5 "Xeria" deleted by 68.200.235.7</comment>
+		</comments>
+		<tags>
+			<tag name="VS_LAST_VOTE_PAYPAL">3/4/2023 5:36:42 PM</tag>
+			<tag name="VS_LAST_VOTE_WEBSITE">3/8/2023 6:09:08 PM</tag>
+			<tag name="numRewardsChosen">1</tag>
+			<tag name="VS_LAST_VOTE_DONATION INFO">3/15/2023 6:02:10 PM</tag>
+		</tags>
 		<addressList count="1">
 			<ip>68.200.235.7</ip>
 		</addressList>
-		<totalCurrency>0</totalCurrency>
+		<totalCurrency>3.2834000000000011E-05</totalCurrency>
 		<sovereigns>0</sovereigns>
 	</account>
 	<account>
@@ -10000,8 +10008,8 @@
 		<newCryptPassword>0E-9D-D9-2B-14-35-66-EE-D1-44-7B-04-AF-1D-E3-93-3D-CC-11-30</newCryptPassword>
 		<flags>2</flags>
 		<created>2022-11-08T18:26:49.4944611Z</created>
-		<lastLogin>2023-02-02T11:23:02.1120701Z</lastLogin>
-		<totalGameTime>P10DT22H46M47.1637186S</totalGameTime>
+		<lastLogin>2023-03-16T13:49:04.429847Z</lastLogin>
+		<totalGameTime>P11DT54M6.3048823S</totalGameTime>
 		<chars>
 			<char index="0">4050</char>
 		</chars>
@@ -10018,7 +10026,7 @@
 			<tag name="VS_LAST_VOTE_PAYPAL">12/1/2022 3:59:32 AM</tag>
 			<tag name="numRewardsChosen">2</tag>
 		</tags>
-		<addressList count="14">
+		<addressList count="18">
 			<ip>132.255.161.152</ip>
 			<ip>143.0.10.225</ip>
 			<ip>143.0.10.194</ip>
@@ -10033,8 +10041,12 @@
 			<ip>143.0.9.107</ip>
 			<ip>143.0.10.201</ip>
 			<ip>143.0.10.157</ip>
+			<ip>143.0.10.254</ip>
+			<ip>143.0.10.158</ip>
+			<ip>132.255.161.252</ip>
+			<ip>143.0.10.142</ip>
 		</addressList>
-		<totalCurrency>0.0032704290000000625</totalCurrency>
+		<totalCurrency>0.0032700290000000627</totalCurrency>
 		<sovereigns>0</sovereigns>
 	</account>
 	<account>
@@ -10072,8 +10084,8 @@
 		<newCryptPassword>B7-99-1B-A3-8E-F8-66-4D-FB-B1-AD-6F-05-12-69-51-4C-EC-3B-1E</newCryptPassword>
 		<flags>2</flags>
 		<created>2022-11-12T22:30:56.421647Z</created>
-		<lastLogin>2023-01-16T04:56:07.0153182Z</lastLogin>
-		<totalGameTime>P11DT10H37M30.9298231S</totalGameTime>
+		<lastLogin>2023-02-05T02:24:52.0308424Z</lastLogin>
+		<totalGameTime>P11DT13H7M51.953737S</totalGameTime>
 		<chars>
 			<char index="0">20947</char>
 		</chars>
@@ -10090,7 +10102,7 @@
 		<addressList count="1">
 			<ip>159.118.20.57</ip>
 		</addressList>
-		<totalCurrency>0.010282840000000073</totalCurrency>
+		<totalCurrency>0.011382840000000073</totalCurrency>
 		<sovereigns>0</sovereigns>
 	</account>
 	<account>
@@ -10158,12 +10170,12 @@
 		<newCryptPassword>6B-94-FC-25-DC-89-89-10-1E-FC-CA-75-15-3E-8C-35-B5-F5-A5-03</newCryptPassword>
 		<flags>2</flags>
 		<created>2022-11-19T17:22:08.6378434Z</created>
-		<lastLogin>2023-01-20T12:47:58.5373176Z</lastLogin>
-		<totalGameTime>P4DT2H19M43.7880601S</totalGameTime>
+		<lastLogin>2023-02-04T14:22:33.591393Z</lastLogin>
+		<totalGameTime>P4DT3H9M16.9904292S</totalGameTime>
 		<chars>
 			<char index="0">15165</char>
 		</chars>
-		<addressList count="11">
+		<addressList count="12">
 			<ip>143.0.10.194</ip>
 			<ip>143.0.10.247</ip>
 			<ip>143.0.9.95</ip>
@@ -10175,8 +10187,9 @@
 			<ip>132.255.162.46</ip>
 			<ip>143.0.10.176</ip>
 			<ip>143.0.9.107</ip>
+			<ip>143.0.10.158</ip>
 		</addressList>
-		<totalCurrency>0.0023712700000000004</totalCurrency>
+		<totalCurrency>0.0023711660000000005</totalCurrency>
 		<sovereigns>0</sovereigns>
 	</account>
 	<account>
@@ -10355,8 +10368,8 @@
 		<newCryptPassword>92-A7-C5-DC-90-F4-C3-C5-20-44-2C-A0-77-BF-64-1E-55-52-09-27</newCryptPassword>
 		<flags>2</flags>
 		<created>2022-11-28T19:17:57.2022956Z</created>
-		<lastLogin>2023-02-03T11:37:26.298145Z</lastLogin>
-		<totalGameTime>P40DT3H42M47.4415099S</totalGameTime>
+		<lastLogin>2023-03-21T19:42:17.6429983Z</lastLogin>
+		<totalGameTime>P70DT22H40M59.8703065S</totalGameTime>
 		<chars>
 			<char index="0">16475</char>
 			<char index="1">76336</char>
@@ -10386,7 +10399,7 @@
 			<tag name="VS_LAST_VOTE_PAYPAL">1/18/2023 2:42:15 PM</tag>
 			<tag name="numRewardsChosen">4</tag>
 		</tags>
-		<addressList count="31">
+		<addressList count="50">
 			<ip>71.36.195.16</ip>
 			<ip>67.6.226.220</ip>
 			<ip>67.6.112.28</ip>
@@ -10418,8 +10431,27 @@
 			<ip>67.6.191.129</ip>
 			<ip>67.6.133.207</ip>
 			<ip>67.6.126.199</ip>
+			<ip>71.36.204.123</ip>
+			<ip>67.6.176.232</ip>
+			<ip>67.6.123.79</ip>
+			<ip>67.6.214.110</ip>
+			<ip>67.6.208.67</ip>
+			<ip>67.6.247.151</ip>
+			<ip>67.6.184.153</ip>
+			<ip>67.6.220.145</ip>
+			<ip>67.6.147.52</ip>
+			<ip>67.6.227.80</ip>
+			<ip>67.6.192.12</ip>
+			<ip>67.6.172.7</ip>
+			<ip>67.6.197.53</ip>
+			<ip>67.6.237.193</ip>
+			<ip>67.6.173.226</ip>
+			<ip>67.6.214.229</ip>
+			<ip>67.6.217.53</ip>
+			<ip>67.6.161.232</ip>
+			<ip>67.6.228.29</ip>
 		</addressList>
-		<totalCurrency>1.5272701799999404</totalCurrency>
+		<totalCurrency>1.4470368219997389</totalCurrency>
 		<sovereigns>0</sovereigns>
 	</account>
 	<account>
@@ -10496,27 +10528,28 @@
 		<newCryptPassword>15-6D-9D-79-1F-5B-10-2A-32-8C-FD-60-AC-34-E4-AC-1D-EF-A7-1C</newCryptPassword>
 		<flags>2</flags>
 		<created>2022-12-03T16:07:51.5968956Z</created>
-		<lastLogin>2023-02-03T11:30:01.1417983Z</lastLogin>
-		<totalGameTime>P43DT13H37M36.7177131S</totalGameTime>
+		<lastLogin>2023-03-22T11:38:02.3775396Z</lastLogin>
+		<totalGameTime>P54DT5H17M32.4077688S</totalGameTime>
 		<chars>
 			<char index="0">50788</char>
+			<char index="1">25901</char>
 		</chars>
 		<tags>
-			<tag name="VS_LAST_VOTE_PAYPAL">1/13/2023 9:24:44 AM</tag>
-			<tag name="VS_LAST_VOTE_DONATION INFO">12/16/2022 7:33:32 AM</tag>
+			<tag name="VS_LAST_VOTE_PAYPAL">3/13/2023 10:08:18 AM</tag>
+			<tag name="VS_LAST_VOTE_DONATION INFO">3/13/2023 10:07:47 AM</tag>
 			<tag name="GoldenFleeceRecieved">true</tag>
-			<tag name="VS_LAST_VOTE_G TOP 100">1/30/2023 11:29:41 AM</tag>
-			<tag name="VS_LAST_VOTE_TOP 100 ARENA">1/20/2023 2:00:46 PM</tag>
+			<tag name="VS_LAST_VOTE_G TOP 100">3/20/2023 10:24:14 AM</tag>
+			<tag name="VS_LAST_VOTE_TOP 100 ARENA">2/22/2023 3:10:12 PM</tag>
 			<tag name="VS_LAST_VOTE_SHARD PORTAL">1/18/2023 7:51:15 PM</tag>
-			<tag name="numRewardsChosen">4</tag>
-			<tag name="VS_LAST_VOTE_TOP G">1/10/2023 9:48:42 PM</tag>
-			<tag name="VS_LAST_VOTE_UOGATEWAY">1/15/2023 2:16:06 PM</tag>
+			<tag name="numRewardsChosen">5</tag>
+			<tag name="VS_LAST_VOTE_TOP G">3/17/2023 12:16:57 PM</tag>
+			<tag name="VS_LAST_VOTE_UOGATEWAY">2/8/2023 2:05:43 PM</tag>
 		</tags>
 		<addressList count="2">
 			<ip>208.123.2.82</ip>
 			<ip>74.127.144.21</ip>
 		</addressList>
-		<totalCurrency>0.018157890999999995</totalCurrency>
+		<totalCurrency>0.018149390999999751</totalCurrency>
 		<sovereigns>0</sovereigns>
 	</account>
 	<account>
@@ -10843,21 +10876,24 @@
 		<newCryptPassword>9A-15-AF-23-28-21-7F-B9-73-21-7C-4B-06-BB-4D-37-82-53-75-68</newCryptPassword>
 		<flags>2</flags>
 		<created>2022-12-14T19:31:38.0090487Z</created>
-		<lastLogin>2023-02-03T11:29:24.5306833Z</lastLogin>
-		<totalGameTime>P6DT1H41M1.2867289S</totalGameTime>
+		<lastLogin>2023-03-19T13:56:19.2565053Z</lastLogin>
+		<totalGameTime>P11DT17H8M47.849288S</totalGameTime>
 		<chars>
 			<char index="0">34681</char>
+			<char index="1">22778</char>
 		</chars>
 		<tags>
 			<tag name="VS_LAST_VOTE_SHARD PORTAL">2/2/2023 4:39:42 AM</tag>
 			<tag name="GoldenFleeceRecieved">true</tag>
-			<tag name="numRewardsChosen">3</tag>
+			<tag name="numRewardsChosen">5</tag>
+			<tag name="VS_LAST_VOTE_XTREME TOP 100">2/19/2023 6:04:57 PM</tag>
+			<tag name="VS_LAST_VOTE_TOP G">2/26/2023 7:51:04 PM</tag>
 		</tags>
 		<addressList count="2">
 			<ip>208.123.2.82</ip>
 			<ip>74.127.144.21</ip>
 		</addressList>
-		<totalCurrency>0.003025948</totalCurrency>
+		<totalCurrency>0.0031259480000000004</totalCurrency>
 		<sovereigns>0</sovereigns>
 	</account>
 	<account>
@@ -10881,8 +10917,8 @@
 		<newCryptPassword>F1-FF-F6-D6-3E-AD-18-AA-F1-53-7D-E1-C4-2C-B5-E5-5C-C0-85-0A</newCryptPassword>
 		<flags>2</flags>
 		<created>2022-12-21T01:14:10.277557Z</created>
-		<lastLogin>2023-01-11T11:56:25.0360863Z</lastLogin>
-		<totalGameTime>P10DT13H10M10.1685904S</totalGameTime>
+		<lastLogin>2023-02-27T23:33:01.5575531Z</lastLogin>
+		<totalGameTime>P10DT13H11M14.2936288S</totalGameTime>
 		<chars>
 			<char index="0">39235</char>
 			<char index="1">13125</char>
@@ -10911,10 +10947,11 @@
 			<tag name="VS_LAST_VOTE_PAYPAL">1/6/2023 7:12:42 PM</tag>
 			<tag name="VS_LAST_VOTE_DONATION INFO">1/8/2023 7:39:13 AM</tag>
 		</tags>
-		<addressList count="3">
+		<addressList count="4">
 			<ip>104.202.214.214</ip>
 			<ip>68.233.155.139</ip>
 			<ip>98.19.70.249</ip>
+			<ip>98.97.82.21</ip>
 		</addressList>
 		<totalCurrency>0.0030405760000000006</totalCurrency>
 		<sovereigns>0</sovereigns>
@@ -10942,8 +10979,8 @@
 		<newCryptPassword>71-0D-A5-FB-FF-B6-0F-77-D9-1D-57-26-D4-38-0E-17-2D-E5-C5-A1</newCryptPassword>
 		<flags>2</flags>
 		<created>2022-12-22T13:38:14.2919119Z</created>
-		<lastLogin>2023-01-17T13:06:47.7443697Z</lastLogin>
-		<totalGameTime>P2DT18H59M59.6681148S</totalGameTime>
+		<lastLogin>2023-03-10T08:48:48.9657213Z</lastLogin>
+		<totalGameTime>P2DT19H1M10.9150745S</totalGameTime>
 		<chars>
 			<char index="0">46768</char>
 		</chars>
@@ -10961,8 +10998,8 @@
 		<newCryptPassword>C3-0B-D6-BA-59-38-6B-F6-D4-A7-1D-C4-48-C1-B6-DB-2E-45-A2-40</newCryptPassword>
 		<flags>2</flags>
 		<created>2022-12-24T06:11:48.1855568Z</created>
-		<lastLogin>2023-02-03T02:01:15.9992449Z</lastLogin>
-		<totalGameTime>P17DT23H33M54.6848298S</totalGameTime>
+		<lastLogin>2023-03-21T18:08:25.6520141Z</lastLogin>
+		<totalGameTime>P44DT13H49M43.6933553S</totalGameTime>
 		<chars>
 			<char index="0">133406</char>
 			<char index="1">48478</char>
@@ -10970,6 +11007,7 @@
 			<char index="3">108060</char>
 			<char index="4">95189</char>
 			<char index="5">6784</char>
+			<char index="6">67309</char>
 		</chars>
 		<tags>
 			<tag name="VS_LAST_VOTE_MMOHUB">1/10/2023 5:41:48 PM</tag>
@@ -10980,17 +11018,17 @@
 			<tag name="VS_LAST_VOTE_G TOP 100">1/10/2023 5:41:53 PM</tag>
 			<tag name="VS_LAST_VOTE_SHARD PORTAL">1/10/2023 5:41:54 PM</tag>
 			<tag name="VS_LAST_VOTE_TOP 100 ARENA">1/10/2023 5:41:53 PM</tag>
-			<tag name="VS_LAST_VOTE_PAYPAL">1/5/2023 9:03:27 PM</tag>
+			<tag name="VS_LAST_VOTE_PAYPAL">2/15/2023 9:31:30 AM</tag>
 			<tag name="GoldenFleeceRecieved">true</tag>
-			<tag name="VS_LAST_VOTE_DONATION INFO">1/29/2023 8:34:32 PM</tag>
+			<tag name="VS_LAST_VOTE_DONATION INFO">2/15/2023 9:31:24 AM</tag>
 			<tag name="DiamondHoopEarringsRecieved">true</tag>
-			<tag name="numRewardsChosen">1</tag>
+			<tag name="numRewardsChosen">2</tag>
 		</tags>
 		<addressList count="2">
 			<ip>174.16.39.79</ip>
 			<ip>97.122.245.6</ip>
 		</addressList>
-		<totalCurrency>0.00022803799999999842</totalCurrency>
+		<totalCurrency>9.0164999999999134E-05</totalCurrency>
 		<sovereigns>0</sovereigns>
 	</account>
 	<account>
@@ -11013,27 +11051,29 @@
 		<newCryptPassword>3C-8D-45-BC-AE-2B-A7-4D-E8-03-48-EB-59-55-D8-93-91-0F-33-CA</newCryptPassword>
 		<flags>2</flags>
 		<created>2022-12-25T03:09:17.2421338Z</created>
-		<lastLogin>2023-02-03T00:28:36.2741889Z</lastLogin>
-		<totalGameTime>P13DT13H42M16.5095517S</totalGameTime>
+		<lastLogin>2023-03-19T11:22:09.6150886Z</lastLogin>
+		<totalGameTime>P19DT4M23.7943552S</totalGameTime>
 		<chars>
 			<char index="0">64275</char>
-			<char index="1">156759</char>
-			<char index="4">62667</char>
+			<char index="2">70825</char>
+			<char index="3">66306</char>
 		</chars>
 		<comments>
 			<comment addedBy="System" lastModified="2023-01-30T12:43:19.8945122Z">Character #3 0x16B63 "Nathan" deleted by 70.44.204.28</comment>
 			<comment addedBy="System" lastModified="2023-01-30T12:43:23.3789618Z">Character #4 0x16E28 "Lucy" deleted by 70.44.204.28</comment>
+			<comment addedBy="System" lastModified="2023-02-05T13:48:05.9153259Z">Character #5 0xF4CB "Ralph" deleted by 70.44.204.28</comment>
+			<comment addedBy="System" lastModified="2023-02-16T00:38:58.2759251Z">Character #2 0x26457 "Tin" deleted by 70.44.204.28</comment>
 		</comments>
 		<tags>
-			<tag name="VS_LAST_VOTE_SHARD PORTAL">1/31/2023 8:48:41 AM</tag>
-			<tag name="VS_LAST_VOTE_TOP 100 ARENA">1/31/2023 8:48:40 AM</tag>
-			<tag name="VS_LAST_VOTE_G TOP 100">1/31/2023 8:48:39 AM</tag>
-			<tag name="VS_LAST_VOTE_UOGATEWAY">1/31/2023 8:48:38 AM</tag>
-			<tag name="VS_LAST_VOTE_XTREME TOP 100">1/31/2023 8:48:37 AM</tag>
-			<tag name="VS_LAST_VOTE_TOP G">1/31/2023 8:48:34 AM</tag>
-			<tag name="VS_LAST_VOTE_UO PORTAL">1/31/2023 8:48:33 AM</tag>
+			<tag name="VS_LAST_VOTE_SHARD PORTAL">2/22/2023 6:26:58 AM</tag>
+			<tag name="VS_LAST_VOTE_TOP 100 ARENA">2/22/2023 6:26:57 AM</tag>
+			<tag name="VS_LAST_VOTE_G TOP 100">2/22/2023 6:26:56 AM</tag>
+			<tag name="VS_LAST_VOTE_UOGATEWAY">2/22/2023 6:26:55 AM</tag>
+			<tag name="VS_LAST_VOTE_XTREME TOP 100">2/22/2023 6:26:54 AM</tag>
+			<tag name="VS_LAST_VOTE_TOP G">2/22/2023 6:26:54 AM</tag>
+			<tag name="VS_LAST_VOTE_UO PORTAL">2/22/2023 6:26:53 AM</tag>
 			<tag name="VS_LAST_VOTE_SIRCHADE">1/22/2023 10:45:50 AM</tag>
-			<tag name="VS_LAST_VOTE_MMOHUB">1/31/2023 8:48:30 AM</tag>
+			<tag name="VS_LAST_VOTE_MMOHUB">2/22/2023 6:26:51 AM</tag>
 			<tag name="DiamondHoopEarringsRecieved">true</tag>
 			<tag name="GoldenFleeceRecieved">true</tag>
 			<tag name="VS_LAST_VOTE_PAYPAL">1/22/2023 2:10:18 PM</tag>
@@ -11041,7 +11081,7 @@
 		<addressList count="1">
 			<ip>70.44.204.28</ip>
 		</addressList>
-		<totalCurrency>0.00090419700000000025</totalCurrency>
+		<totalCurrency>0.0003046779999999986</totalCurrency>
 		<sovereigns>0</sovereigns>
 	</account>
 	<account>
@@ -11049,37 +11089,39 @@
 		<newCryptPassword>55-E3-42-4F-9F-CB-87-73-FF-E3-E2-F9-84-59-6B-92-84-84-6B-C6</newCryptPassword>
 		<flags>2</flags>
 		<created>2022-12-26T00:03:27.5669728Z</created>
-		<lastLogin>2023-02-02T22:21:20.7573748Z</lastLogin>
-		<totalGameTime>P15DT4H23M22.9424812S</totalGameTime>
+		<lastLogin>2023-03-20T21:52:24.0078135Z</lastLogin>
+		<totalGameTime>P21DT3H59M12.605153S</totalGameTime>
 		<chars>
 			<char index="0">142683</char>
 			<char index="1">64626</char>
-			<char index="2">60524</char>
+			<char index="2">12428</char>
+			<char index="3">150435</char>
 		</chars>
 		<comments>
 			<comment addedBy="System" lastModified="2023-01-16T15:17:48.0409574Z">Character #1 0xF6E3 "Brophy" deleted by 70.44.204.28</comment>
 			<comment addedBy="System" lastModified="2023-01-16T22:59:53.5479555Z">Character #3 0xFBFB "Stone Forge" deleted by 70.44.204.28</comment>
 			<comment addedBy="System" lastModified="2023-01-21T14:56:07.2197413Z">Character #4 0x104EC "Stone Forge" deleted by 70.44.204.28</comment>
+			<comment addedBy="System" lastModified="2023-02-12T14:58:15.1227181Z">Character #3 0xEC6C "Freddy Mercury" deleted by 70.44.204.28</comment>
 		</comments>
 		<tags>
 			<tag name="VS_LAST_VOTE_SIRCHADE">12/30/2022 8:38:03 AM</tag>
-			<tag name="VS_LAST_VOTE_UO PORTAL">1/31/2023 8:50:12 AM</tag>
-			<tag name="VS_LAST_VOTE_TOP G">1/31/2023 8:50:13 AM</tag>
-			<tag name="VS_LAST_VOTE_XTREME TOP 100">1/31/2023 8:50:14 AM</tag>
-			<tag name="VS_LAST_VOTE_G TOP 100">1/31/2023 8:50:15 AM</tag>
-			<tag name="VS_LAST_VOTE_TOP 100 ARENA">1/31/2023 8:50:16 AM</tag>
-			<tag name="VS_LAST_VOTE_SHARD PORTAL">1/31/2023 8:50:17 AM</tag>
-			<tag name="VS_LAST_VOTE_MMOHUB">1/31/2023 8:50:11 AM</tag>
-			<tag name="VS_LAST_VOTE_UOGATEWAY">1/31/2023 8:50:15 AM</tag>
+			<tag name="VS_LAST_VOTE_UO PORTAL">2/26/2023 12:58:54 PM</tag>
+			<tag name="VS_LAST_VOTE_TOP G">2/26/2023 12:58:55 PM</tag>
+			<tag name="VS_LAST_VOTE_XTREME TOP 100">2/26/2023 12:58:56 PM</tag>
+			<tag name="VS_LAST_VOTE_G TOP 100">2/26/2023 12:58:58 PM</tag>
+			<tag name="VS_LAST_VOTE_TOP 100 ARENA">2/26/2023 12:58:59 PM</tag>
+			<tag name="VS_LAST_VOTE_SHARD PORTAL">2/26/2023 12:59:00 PM</tag>
+			<tag name="VS_LAST_VOTE_MMOHUB">2/26/2023 12:58:53 PM</tag>
+			<tag name="VS_LAST_VOTE_UOGATEWAY">2/26/2023 12:58:57 PM</tag>
 			<tag name="VS_LAST_VOTE_DONATION INFO">1/3/2023 4:07:50 PM</tag>
-			<tag name="VS_LAST_VOTE_PAYPAL">1/3/2023 12:32:20 PM</tag>
+			<tag name="VS_LAST_VOTE_PAYPAL">2/15/2023 7:36:14 PM</tag>
 			<tag name="GoldenFleeceRecieved">true</tag>
 			<tag name="DiamondHoopEarringsRecieved">true</tag>
 		</tags>
 		<addressList count="1">
 			<ip>70.44.204.28</ip>
 		</addressList>
-		<totalCurrency>0.0017360330000000021</totalCurrency>
+		<totalCurrency>0.0026052109999999988</totalCurrency>
 		<sovereigns>0</sovereigns>
 	</account>
 	<account>
@@ -11087,15 +11129,20 @@
 		<newCryptPassword>B1-8B-ED-98-6B-1A-53-C3-EB-2D-E8-54-A0-E6-A4-DF-0B-0C-A2-76</newCryptPassword>
 		<flags>2</flags>
 		<created>2022-12-26T19:24:36.4502503Z</created>
-		<lastLogin>2023-01-30T23:35:55.5325502Z</lastLogin>
-		<totalGameTime>P10DT15H15M9.1015924S</totalGameTime>
+		<lastLogin>2023-03-20T21:39:40.3580843Z</lastLogin>
+		<totalGameTime>P29DT3H13M8.0465163S</totalGameTime>
 		<chars>
 			<char index="0">71216</char>
 			<char index="1">120624</char>
 			<char index="2">52854</char>
 			<char index="3">161160</char>
 			<char index="4">93371</char>
+			<char index="5">37355</char>
+			<char index="6">129217</char>
 		</chars>
+		<comments>
+			<comment addedBy="System" lastModified="2023-03-20T21:23:21.8077172Z">Character #7 0x230B5 "George" deleted by 97.122.245.6</comment>
+		</comments>
 		<tags>
 			<tag name="VS_LAST_VOTE_SHARD PORTAL">1/10/2023 5:45:49 PM</tag>
 			<tag name="VS_LAST_VOTE_TOP 100 ARENA">1/10/2023 5:45:50 PM</tag>
@@ -11209,8 +11256,8 @@
 		<newCryptPassword>E2-BE-D7-E4-7A-15-67-67-B7-95-62-CF-3F-3C-8B-84-6A-B5-05-AA</newCryptPassword>
 		<flags>2</flags>
 		<created>2022-12-30T05:03:54.8465694Z</created>
-		<lastLogin>2023-01-31T15:57:58.2648887Z</lastLogin>
-		<totalGameTime>P9DT45M22.81346S</totalGameTime>
+		<lastLogin>2023-03-20T14:41:25.6912661Z</lastLogin>
+		<totalGameTime>P18DT5H2M35.8451001S</totalGameTime>
 		<chars>
 			<char index="0">43805</char>
 		</chars>
@@ -11225,29 +11272,34 @@
 			<comment addedBy="System" lastModified="2023-01-22T06:46:34.2162746Z">Character #4 0x19D0D "Geryt" deleted by 39.171.140.58</comment>
 			<comment addedBy="System" lastModified="2023-01-22T06:46:40.6225413Z">Character #5 0x1B777 "Luyis" deleted by 39.171.140.58</comment>
 			<comment addedBy="System" lastModified="2023-01-24T14:45:41.9868614Z">Character #6 0x4247 "Beklame" deleted by 39.171.140.136</comment>
+			<comment addedBy="System" lastModified="2023-03-14T01:40:59.9617373Z">Character #2 0x634E "foreion" deleted by 39.171.140.203</comment>
 		</comments>
 		<tags>
-			<tag name="VS_LAST_VOTE_SHARD PORTAL">1/30/2023 10:31:00 AM</tag>
-			<tag name="VS_LAST_VOTE_TOP 100 ARENA">1/30/2023 10:30:46 AM</tag>
-			<tag name="VS_LAST_VOTE_G TOP 100">1/30/2023 10:30:47 AM</tag>
-			<tag name="VS_LAST_VOTE_UOGATEWAY">1/30/2023 10:30:47 AM</tag>
-			<tag name="VS_LAST_VOTE_XTREME TOP 100">1/30/2023 10:30:48 AM</tag>
-			<tag name="VS_LAST_VOTE_TOP G">1/30/2023 10:30:48 AM</tag>
-			<tag name="VS_LAST_VOTE_UO PORTAL">1/30/2023 10:30:49 AM</tag>
-			<tag name="VS_LAST_VOTE_MMOHUB">1/30/2023 10:30:49 AM</tag>
-			<tag name="VS_LAST_VOTE_PAYPAL">1/31/2023 11:17:02 AM</tag>
+			<tag name="VS_LAST_VOTE_SHARD PORTAL">3/18/2023 8:30:41 AM</tag>
+			<tag name="VS_LAST_VOTE_TOP 100 ARENA">3/18/2023 8:30:43 AM</tag>
+			<tag name="VS_LAST_VOTE_G TOP 100">3/18/2023 8:30:45 AM</tag>
+			<tag name="VS_LAST_VOTE_UOGATEWAY">3/18/2023 8:30:46 AM</tag>
+			<tag name="VS_LAST_VOTE_XTREME TOP 100">3/18/2023 8:30:46 AM</tag>
+			<tag name="VS_LAST_VOTE_TOP G">3/18/2023 8:30:48 AM</tag>
+			<tag name="VS_LAST_VOTE_UO PORTAL">3/18/2023 8:30:49 AM</tag>
+			<tag name="VS_LAST_VOTE_MMOHUB">3/18/2023 8:30:50 AM</tag>
+			<tag name="VS_LAST_VOTE_PAYPAL">3/6/2023 3:29:07 AM</tag>
 			<tag name="VS_LAST_VOTE_DONATION INFO">1/31/2023 11:17:11 AM</tag>
-			<tag name="VS_LAST_VOTE_WEBSITE">1/25/2023 10:40:49 AM</tag>
-			<tag name="numRewardsChosen">3</tag>
+			<tag name="VS_LAST_VOTE_WEBSITE">3/1/2023 12:34:24 AM</tag>
+			<tag name="numRewardsChosen">4</tag>
 		</tags>
-		<addressList count="5">
+		<addressList count="9">
 			<ip>223.95.20.128</ip>
 			<ip>39.171.140.188</ip>
 			<ip>39.171.140.20</ip>
 			<ip>39.171.140.58</ip>
 			<ip>39.171.140.136</ip>
+			<ip>39.171.141.94</ip>
+			<ip>39.171.141.243</ip>
+			<ip>39.171.140.43</ip>
+			<ip>39.171.140.203</ip>
 		</addressList>
-		<totalCurrency>0.63311261100002048</totalCurrency>
+		<totalCurrency>0.84985462699987369</totalCurrency>
 		<sovereigns>0</sovereigns>
 	</account>
 	<account>
@@ -11343,8 +11395,8 @@
 		<newCryptPassword>E4-B2-99-87-48-72-28-F9-BA-B8-B3-75-E8-1B-E7-0B-21-E8-45-69</newCryptPassword>
 		<flags>2</flags>
 		<created>2023-01-06T05:45:11.5893374Z</created>
-		<lastLogin>2023-02-03T06:08:26.1593615Z</lastLogin>
-		<totalGameTime>P11DT7H17M5.3553525S</totalGameTime>
+		<lastLogin>2023-02-09T23:06:47.5283836Z</lastLogin>
+		<totalGameTime>P12DT1H16M37.7625072S</totalGameTime>
 		<chars>
 			<char index="2">256015</char>
 			<char index="3">346294</char>
@@ -11374,7 +11426,7 @@
 			<ip>64.113.167.216</ip>
 			<ip>64.113.172.8</ip>
 		</addressList>
-		<totalCurrency>0.1847190660000011</totalCurrency>
+		<totalCurrency>0.008752166000002129</totalCurrency>
 		<sovereigns>0</sovereigns>
 	</account>
 	<account>
@@ -11397,29 +11449,31 @@
 		<newCryptPassword>CB-BD-BB-44-61-3B-EE-7F-08-16-94-F5-6A-AB-FD-12-BE-48-88-68</newCryptPassword>
 		<flags>2</flags>
 		<created>2023-01-07T04:08:02.760369Z</created>
-		<lastLogin>2023-02-03T13:02:30.2925807Z</lastLogin>
-		<totalGameTime>P20DT8H29M39.5530932S</totalGameTime>
+		<lastLogin>2023-03-13T01:14:56.1734947Z</lastLogin>
+		<totalGameTime>P31DT4H13M25.1265398S</totalGameTime>
 		<chars>
 			<char index="0">87297</char>
 		</chars>
 		<tags>
-			<tag name="VS_LAST_VOTE_SHARD PORTAL">2/2/2023 8:41:08 AM</tag>
-			<tag name="VS_LAST_VOTE_TOP 100 ARENA">2/2/2023 8:42:35 AM</tag>
-			<tag name="VS_LAST_VOTE_G TOP 100">2/2/2023 8:42:47 AM</tag>
-			<tag name="VS_LAST_VOTE_UOGATEWAY">2/2/2023 8:43:04 AM</tag>
-			<tag name="VS_LAST_VOTE_XTREME TOP 100">2/2/2023 8:43:16 AM</tag>
-			<tag name="VS_LAST_VOTE_TOP G">2/2/2023 8:45:06 AM</tag>
-			<tag name="VS_LAST_VOTE_UO PORTAL">2/2/2023 8:45:23 AM</tag>
-			<tag name="VS_LAST_VOTE_MMOHUB">2/2/2023 8:45:39 AM</tag>
-			<tag name="VS_LAST_VOTE_WEBSITE">2/1/2023 5:28:38 AM</tag>
+			<tag name="VS_LAST_VOTE_SHARD PORTAL">2/16/2023 3:10:35 AM</tag>
+			<tag name="VS_LAST_VOTE_TOP 100 ARENA">2/16/2023 3:12:23 AM</tag>
+			<tag name="VS_LAST_VOTE_G TOP 100">2/16/2023 3:12:40 AM</tag>
+			<tag name="VS_LAST_VOTE_UOGATEWAY">2/16/2023 3:13:11 AM</tag>
+			<tag name="VS_LAST_VOTE_XTREME TOP 100">2/16/2023 3:13:25 AM</tag>
+			<tag name="VS_LAST_VOTE_TOP G">2/16/2023 3:14:08 AM</tag>
+			<tag name="VS_LAST_VOTE_UO PORTAL">2/16/2023 3:14:44 AM</tag>
+			<tag name="VS_LAST_VOTE_MMOHUB">2/16/2023 3:15:02 AM</tag>
+			<tag name="VS_LAST_VOTE_WEBSITE">2/4/2023 7:29:15 AM</tag>
 			<tag name="DiamondHoopEarringsRecieved">true</tag>
-			<tag name="VS_LAST_VOTE_PAYPAL">1/30/2023 10:55:48 AM</tag>
+			<tag name="VS_LAST_VOTE_PAYPAL">2/8/2023 4:11:27 PM</tag>
 			<tag name="VS_LAST_VOTE_DONATION INFO">1/17/2023 10:56:03 AM</tag>
+			<tag name="numRewardsChosen">4</tag>
 		</tags>
-		<addressList count="1">
+		<addressList count="2">
 			<ip>76.181.152.167</ip>
+			<ip>76.181.152.212</ip>
 		</addressList>
-		<totalCurrency>0.0013871139999999985</totalCurrency>
+		<totalCurrency>0.0013440639999999968</totalCurrency>
 		<sovereigns>0</sovereigns>
 	</account>
 	<account>
@@ -11443,8 +11497,8 @@
 		<newCryptPassword>9B-1B-70-12-A9-DC-04-9F-76-E1-D1-FE-12-4F-C4-7F-2B-8F-E3-16</newCryptPassword>
 		<flags>2</flags>
 		<created>2023-01-08T03:07:27.1241167Z</created>
-		<lastLogin>2023-02-03T08:57:26.9764439Z</lastLogin>
-		<totalGameTime>P10DT20H3M45.1643728S</totalGameTime>
+		<lastLogin>2023-02-16T06:30:14.2717169Z</lastLogin>
+		<totalGameTime>P12DT14H15M18.6018483S</totalGameTime>
 		<chars>
 			<char index="0">161379</char>
 			<char index="1">184978</char>
@@ -11457,7 +11511,7 @@
 			<tag name="VS_LAST_VOTE_G TOP 100">1/13/2023 5:58:18 PM</tag>
 			<tag name="VS_LAST_VOTE_MMOHUB">1/15/2023 12:52:37 AM</tag>
 			<tag name="VS_LAST_VOTE_WEBSITE">1/13/2023 5:58:31 PM</tag>
-			<tag name="VS_LAST_VOTE_PAYPAL">1/14/2023 2:48:59 AM</tag>
+			<tag name="VS_LAST_VOTE_PAYPAL">2/3/2023 2:32:55 PM</tag>
 			<tag name="VS_LAST_VOTE_UO PORTAL">1/15/2023 12:52:56 AM</tag>
 		</tags>
 		<addressList count="3">
@@ -11465,7 +11519,7 @@
 			<ip>64.113.167.216</ip>
 			<ip>64.113.172.8</ip>
 		</addressList>
-		<totalCurrency>0.0011650910000007497</totalCurrency>
+		<totalCurrency>4.3831000000771336E-05</totalCurrency>
 		<sovereigns>0</sovereigns>
 		<SecureAccounts>
 			<char index="2">60000</char>
@@ -11545,8 +11599,8 @@
 		<newCryptPassword>4B-B7-6D-2C-BD-C8-D7-86-4C-AA-86-16-B5-17-B0-F4-AE-0E-19-89</newCryptPassword>
 		<flags>2</flags>
 		<created>2023-01-12T03:12:31.627099Z</created>
-		<lastLogin>2023-01-31T15:59:16.9217221Z</lastLogin>
-		<totalGameTime>P5DT2H10M29.2764287S</totalGameTime>
+		<lastLogin>2023-03-18T12:22:07.503354Z</lastLogin>
+		<totalGameTime>P8DT21H43M24.8054697S</totalGameTime>
 		<chars>
 			<char index="0">124544</char>
 		</chars>
@@ -11554,22 +11608,28 @@
 			<comment addedBy="System" lastModified="2023-01-24T06:05:39.9539606Z">Character #2 0x1ED4B "liu" deleted by 39.171.140.136</comment>
 		</comments>
 		<tags>
-			<tag name="VS_LAST_VOTE_SHARD PORTAL">1/30/2023 10:27:36 AM</tag>
-			<tag name="VS_LAST_VOTE_TOP 100 ARENA">1/30/2023 10:27:36 AM</tag>
-			<tag name="VS_LAST_VOTE_G TOP 100">1/30/2023 10:27:36 AM</tag>
-			<tag name="VS_LAST_VOTE_UOGATEWAY">1/30/2023 10:27:36 AM</tag>
-			<tag name="VS_LAST_VOTE_XTREME TOP 100">1/30/2023 10:27:36 AM</tag>
-			<tag name="VS_LAST_VOTE_TOP G">1/30/2023 10:27:36 AM</tag>
-			<tag name="VS_LAST_VOTE_UO PORTAL">1/30/2023 10:28:20 AM</tag>
-			<tag name="VS_LAST_VOTE_MMOHUB">1/30/2023 10:28:23 AM</tag>
+			<tag name="VS_LAST_VOTE_SHARD PORTAL">3/18/2023 8:22:35 AM</tag>
+			<tag name="VS_LAST_VOTE_TOP 100 ARENA">3/18/2023 8:22:29 AM</tag>
+			<tag name="VS_LAST_VOTE_G TOP 100">3/18/2023 8:22:30 AM</tag>
+			<tag name="VS_LAST_VOTE_UOGATEWAY">3/18/2023 8:22:30 AM</tag>
+			<tag name="VS_LAST_VOTE_XTREME TOP 100">3/18/2023 8:22:31 AM</tag>
+			<tag name="VS_LAST_VOTE_TOP G">3/18/2023 8:22:32 AM</tag>
+			<tag name="VS_LAST_VOTE_UO PORTAL">3/18/2023 8:22:32 AM</tag>
+			<tag name="VS_LAST_VOTE_MMOHUB">3/18/2023 8:22:40 AM</tag>
+			<tag name="VS_LAST_VOTE_WEBSITE">3/8/2023 11:58:03 PM</tag>
+			<tag name="numRewardsChosen">4</tag>
 		</tags>
-		<addressList count="4">
+		<addressList count="8">
 			<ip>223.95.20.128</ip>
 			<ip>39.171.140.188</ip>
 			<ip>39.171.140.58</ip>
 			<ip>39.171.140.136</ip>
+			<ip>39.171.141.94</ip>
+			<ip>39.171.141.243</ip>
+			<ip>39.171.140.43</ip>
+			<ip>39.171.140.203</ip>
 		</addressList>
-		<totalCurrency>0.10349349999999996</totalCurrency>
+		<totalCurrency>0.073391099999999945</totalCurrency>
 		<sovereigns>0</sovereigns>
 	</account>
 	<account>
@@ -11577,30 +11637,36 @@
 		<newCryptPassword>EB-F1-05-A1-4F-22-61-78-DA-DE-60-A9-85-7D-3A-31-9C-84-8A-1E</newCryptPassword>
 		<flags>2</flags>
 		<created>2023-01-16T16:58:38.0314211Z</created>
-		<lastLogin>2023-02-02T15:06:28.710589Z</lastLogin>
-		<totalGameTime>P6DT7H55M41.7614572S</totalGameTime>
+		<lastLogin>2023-03-21T17:12:11.3280728Z</lastLogin>
+		<totalGameTime>P7DT21H38M45.9790609S</totalGameTime>
 		<chars>
 			<char index="0">88897</char>
 			<char index="1">31142</char>
 			<char index="2">57068</char>
-			<char index="6">22131</char>
 		</chars>
 		<comments>
 			<comment addedBy="System" lastModified="2023-01-27T09:44:11.1108043Z">Character #2 0x228FB "eye" deleted by 95.250.110.111</comment>
 			<comment addedBy="System" lastModified="2023-01-28T15:07:08.536099Z">Character #4 0xEA6F "Pass" deleted by 95.250.110.111</comment>
 			<comment addedBy="System" lastModified="2023-01-29T16:06:47.9195455Z">Character #5 0x605 "Passdue" deleted by 95.250.110.111</comment>
 			<comment addedBy="System" lastModified="2023-01-29T16:06:58.419539Z">Character #6 0x359F "Passtre" deleted by 95.250.110.111</comment>
+			<comment addedBy="System" lastModified="2023-03-17T13:13:22.0723579Z">Character #7 0x5673 "Newnew" deleted by 79.13.166.11</comment>
 		</comments>
 		<tags>
 			<tag name="VS_LAST_VOTE_PAYPAL">1/20/2023 10:08:17 AM</tag>
 			<tag name="VS_LAST_VOTE_DONATION INFO">1/22/2023 8:50:30 AM</tag>
 			<tag name="VS_LAST_VOTE_SIRCHADE">1/31/2023 2:28:18 PM</tag>
 		</tags>
-		<addressList count="2">
+		<addressList count="8">
 			<ip>95.246.171.74</ip>
 			<ip>95.250.110.111</ip>
+			<ip>87.16.165.155</ip>
+			<ip>82.59.132.64</ip>
+			<ip>82.51.104.156</ip>
+			<ip>87.18.161.65</ip>
+			<ip>82.59.134.92</ip>
+			<ip>79.13.166.11</ip>
 		</addressList>
-		<totalCurrency>9.013299999999985E-05</totalCurrency>
+		<totalCurrency>8.9867999999999838E-05</totalCurrency>
 		<sovereigns>0</sovereigns>
 	</account>
 	<account>
@@ -11669,8 +11735,8 @@
 		<username>Bukktoof</username>
 		<newCryptPassword>88-E9-A6-3C-01-BE-26-54-8B-76-14-04-95-B8-CD-49-77-14-28-87</newCryptPassword>
 		<created>2023-01-21T23:41:40.1500425Z</created>
-		<lastLogin>2023-01-21T23:42:47.1188373Z</lastLogin>
-		<totalGameTime>PT19M45.3287576S</totalGameTime>
+		<lastLogin>2023-02-19T02:34:43.5502414Z</lastLogin>
+		<totalGameTime>PT21M38.1413851S</totalGameTime>
 		<chars>
 			<char index="0">175045</char>
 		</chars>
@@ -11684,13 +11750,17 @@
 		<username>Neidling</username>
 		<newCryptPassword>ED-C0-F6-5A-05-6F-47-EF-39-9D-3C-A5-68-9D-9E-80-4F-32-28-1E</newCryptPassword>
 		<created>2023-01-22T15:02:54.4074906Z</created>
-		<lastLogin>2023-01-22T15:04:12.7669274Z</lastLogin>
-		<totalGameTime>PT13M15.8445773S</totalGameTime>
+		<lastLogin>2023-03-04T18:44:48.6688616Z</lastLogin>
+		<totalGameTime>PT16M42.407388S</totalGameTime>
 		<chars>
 			<char index="0">29831</char>
 		</chars>
-		<addressList count="1">
+		<tags>
+			<tag name="numRewardsChosen">1</tag>
+		</tags>
+		<addressList count="2">
 			<ip>90.60.97.1</ip>
+			<ip>90.60.99.89</ip>
 		</addressList>
 		<totalCurrency>5E-05</totalCurrency>
 		<sovereigns>0</sovereigns>
@@ -11757,8 +11827,8 @@
 		<username>21wolves4uo</username>
 		<newCryptPassword>DD-58-1B-CD-B5-F7-BF-DE-E1-61-71-94-F2-ED-82-37-C7-4E-16-9D</newCryptPassword>
 		<created>2023-01-25T12:51:58.0415235Z</created>
-		<lastLogin>2023-01-25T21:15:37.0581049Z</lastLogin>
-		<totalGameTime>PT4H58M57.2748752S</totalGameTime>
+		<lastLogin>2023-03-09T09:59:33.0257425Z</lastLogin>
+		<totalGameTime>PT5H7M15.1859396S</totalGameTime>
 		<chars>
 			<char index="0">7912</char>
 			<char index="1">35876</char>
@@ -11766,7 +11836,7 @@
 		<addressList count="1">
 			<ip>86.81.45.48</ip>
 		</addressList>
-		<totalCurrency>4.9968E-05</totalCurrency>
+		<totalCurrency>4.9963E-05</totalCurrency>
 		<sovereigns>0</sovereigns>
 	</account>
 	<account>
@@ -11834,19 +11904,548 @@
 	<account>
 		<username>Khezra</username>
 		<newCryptPassword>2D-52-DC-AE-ED-ED-18-DA-0D-1F-30-49-0A-E2-7E-6D-55-E6-4E-6D</newCryptPassword>
+		<flags>2</flags>
 		<created>2023-01-31T18:39:28.9897247Z</created>
-		<lastLogin>2023-02-03T09:30:55.4097435Z</lastLogin>
-		<totalGameTime>P1DT10H41M38.1423974S</totalGameTime>
+		<lastLogin>2023-03-22T10:23:36.4596969Z</lastLogin>
+		<totalGameTime>P12DT15H54M18.2053269S</totalGameTime>
 		<chars>
 			<char index="0">92539</char>
 			<char index="1">34496</char>
-			<char index="2">51643</char>
+			<char index="2">40512</char>
 			<char index="3">4584</char>
+			<char index="4">77934</char>
+			<char index="5">70446</char>
 		</chars>
+		<comments>
+			<comment addedBy="System" lastModified="2023-02-12T16:39:44.348199Z">Character #3 0xC9BB "Nismo" deleted by 76.69.185.199</comment>
+			<comment addedBy="System" lastModified="2023-02-12T16:44:06.2866541Z">Character #5 0x106D9 "Storm" deleted by 76.69.185.199</comment>
+			<comment addedBy="System" lastModified="2023-02-12T16:44:24.2085637Z">Character #7 0x11871 "Jess" deleted by 76.69.185.199</comment>
+		</comments>
+		<tags>
+			<tag name="VS_LAST_VOTE_UO PORTAL">3/20/2023 6:14:11 AM</tag>
+			<tag name="VS_LAST_VOTE_MMOHUB">3/20/2023 6:14:11 AM</tag>
+			<tag name="VS_LAST_VOTE_SHARD PORTAL">3/20/2023 6:14:17 AM</tag>
+			<tag name="VS_LAST_VOTE_TOP 100 ARENA">3/20/2023 6:14:16 AM</tag>
+			<tag name="VS_LAST_VOTE_G TOP 100">3/20/2023 6:14:16 AM</tag>
+			<tag name="VS_LAST_VOTE_UOGATEWAY">3/20/2023 6:14:15 AM</tag>
+			<tag name="VS_LAST_VOTE_XTREME TOP 100">3/20/2023 6:14:14 AM</tag>
+			<tag name="VS_LAST_VOTE_TOP G">3/20/2023 6:14:13 AM</tag>
+		</tags>
 		<addressList count="1">
 			<ip>76.69.185.199</ip>
 		</addressList>
-		<totalCurrency>0.040600471000000096</totalCurrency>
+		<totalCurrency>0.022392977000000092</totalCurrency>
+		<sovereigns>0</sovereigns>
+	</account>
+	<account>
+		<username>jykah</username>
+		<newCryptPassword>95-71-1A-59-F0-A2-CB-F0-43-17-CF-C0-20-65-1A-61-69-B6-37-95</newCryptPassword>
+		<created>2023-02-07T18:30:48.88053Z</created>
+		<lastLogin>2023-02-07T18:31:03.1773991Z</lastLogin>
+		<totalGameTime>PT53.5937901S</totalGameTime>
+		<chars>
+			<char index="0">24262</char>
+		</chars>
+		<addressList count="1">
+			<ip>85.76.161.82</ip>
+		</addressList>
+		<totalCurrency>0</totalCurrency>
+		<sovereigns>0</sovereigns>
+	</account>
+	<account>
+		<username>elly</username>
+		<newCryptPassword>D6-33-D4-E8-77-2C-C6-0F-02-C0-79-9C-FF-29-3B-5A-91-50-26-B2</newCryptPassword>
+		<created>2023-02-08T03:00:35.7120429Z</created>
+		<lastLogin>2023-02-26T20:10:23.3210041Z</lastLogin>
+		<totalGameTime>PT13H30M27.0713249S</totalGameTime>
+		<chars>
+			<char index="0">49131</char>
+			<char index="1">56732</char>
+		</chars>
+		<addressList count="3">
+			<ip>67.149.159.233</ip>
+			<ip>67.149.152.25</ip>
+			<ip>50.4.112.90</ip>
+		</addressList>
+		<totalCurrency>4.2343000000000004E-05</totalCurrency>
+		<sovereigns>0</sovereigns>
+	</account>
+	<account>
+		<username>LordJardeborde</username>
+		<newCryptPassword>24-69-8D-BF-10-D0-1B-41-54-2B-41-EC-8E-4A-13-98-48-A3-BE-ED</newCryptPassword>
+		<created>2023-02-08T13:43:55.9971936Z</created>
+		<lastLogin>2023-02-08T14:09:16.3164539Z</lastLogin>
+		<totalGameTime>PT12M4.6099105S</totalGameTime>
+		<chars>
+			<char index="0">13000</char>
+		</chars>
+		<addressList count="1">
+			<ip>84.249.218.177</ip>
+		</addressList>
+		<totalCurrency>5E-05</totalCurrency>
+		<sovereigns>0</sovereigns>
+	</account>
+	<account>
+		<username>marcaum</username>
+		<newCryptPassword>CB-D2-2F-A7-76-CB-01-29-3A-E7-B2-A5-5F-FF-D1-C5-E8-FB-93-D6</newCryptPassword>
+		<flags>2</flags>
+		<created>2023-02-10T01:40:35.77512Z</created>
+		<lastLogin>2023-02-21T00:27:30.4608732Z</lastLogin>
+		<totalGameTime>PT18H45M14.1399479S</totalGameTime>
+		<chars>
+			<char index="0">69277</char>
+		</chars>
+		<tags>
+			<tag name="VS_LAST_VOTE_PAYPAL">2/12/2023 9:07:11 PM</tag>
+		</tags>
+		<addressList count="2">
+			<ip>177.128.10.166</ip>
+			<ip>186.249.28.237</ip>
+		</addressList>
+		<totalCurrency>0.00038464600000000015</totalCurrency>
+		<sovereigns>0</sovereigns>
+	</account>
+	<account>
+		<username>vicratt</username>
+		<newCryptPassword>76-A3-94-25-F4-D8-E3-B7-51-F2-95-72-B7-70-E0-29-16-D2-59-09</newCryptPassword>
+		<created>2023-02-17T07:07:54.0890343Z</created>
+		<lastLogin>2023-03-22T05:39:21.0619246Z</lastLogin>
+		<totalGameTime>PT22H8M41.1581356S</totalGameTime>
+		<chars>
+			<char index="0">75393</char>
+		</chars>
+		<tags>
+			<tag name="VS_LAST_VOTE_PAYPAL">2/17/2023 2:23:06 AM</tag>
+			<tag name="VS_LAST_VOTE_DONATION INFO">2/20/2023 7:19:31 AM</tag>
+			<tag name="VS_LAST_VOTE_UO PORTAL">2/20/2023 7:28:30 AM</tag>
+			<tag name="VS_LAST_VOTE_MMOHUB">2/20/2023 7:29:12 AM</tag>
+			<tag name="VS_LAST_VOTE_SHARD PORTAL">3/2/2023 8:35:34 AM</tag>
+			<tag name="numRewardsChosen">1</tag>
+		</tags>
+		<addressList count="1">
+			<ip>70.176.171.182</ip>
+		</addressList>
+		<totalCurrency>2.2000000000000006E-05</totalCurrency>
+		<sovereigns>0</sovereigns>
+	</account>
+	<account>
+		<username>mskidmor</username>
+		<newCryptPassword>BB-BA-37-6F-40-C7-41-CB-7F-74-F3-0E-BD-3F-95-7B-3E-1B-0E-66</newCryptPassword>
+		<created>2023-02-16T09:56:37.0376954Z</created>
+		<lastLogin>2023-02-16T09:57:12.131472Z</lastLogin>
+		<totalGameTime>PT14M6.3816119S</totalGameTime>
+		<chars>
+			<char index="0">98244</char>
+		</chars>
+		<addressList count="1">
+			<ip>184.15.194.242</ip>
+		</addressList>
+		<totalCurrency>5E-05</totalCurrency>
+		<sovereigns>0</sovereigns>
+	</account>
+	<account>
+		<username>Omegusone</username>
+		<newCryptPassword>52-72-6F-D0-0E-DC-2D-57-4C-46-69-52-D9-28-35-CB-D7-E4-03-6A</newCryptPassword>
+		<created>2023-02-20T14:42:42.1587729Z</created>
+		<lastLogin>2023-02-20T14:51:37.2397642Z</lastLogin>
+		<totalGameTime>PT5M14.8752954S</totalGameTime>
+		<chars>
+			<char index="0">31693</char>
+		</chars>
+		<addressList count="1">
+			<ip>208.104.68.97</ip>
+		</addressList>
+		<totalCurrency>0</totalCurrency>
+		<sovereigns>0</sovereigns>
+	</account>
+	<account>
+		<username>zecar</username>
+		<newCryptPassword>CA-7E-CF-B4-83-A5-46-41-82-B2-C7-00-E4-41-D3-CD-1E-4E-40-D7</newCryptPassword>
+		<created>2023-02-21T20:22:41.7394118Z</created>
+		<lastLogin>2023-02-21T20:26:39.4114934Z</lastLogin>
+		<totalGameTime>PT5M40.1096626S</totalGameTime>
+		<chars>
+			<char index="0">59686</char>
+		</chars>
+		<tags>
+			<tag name="VS_LAST_VOTE_PAYPAL">2/21/2023 3:31:43 PM</tag>
+		</tags>
+		<addressList count="1">
+			<ip>86.4.67.17</ip>
+		</addressList>
+		<totalCurrency>5E-05</totalCurrency>
+		<sovereigns>0</sovereigns>
+	</account>
+	<account>
+		<username>manuel</username>
+		<newCryptPassword>EC-6F-17-FA-F2-DE-BD-72-E3-D0-D7-63-A4-04-76-DF-9F-7A-B7-A8</newCryptPassword>
+		<created>2023-02-22T16:57:20.5697096Z</created>
+		<lastLogin>2023-02-23T07:54:17.7957729Z</lastLogin>
+		<totalGameTime>PT2H28M29.8636067S</totalGameTime>
+		<chars>
+			<char index="0">21275</char>
+		</chars>
+		<addressList count="1">
+			<ip>185.56.183.172</ip>
+		</addressList>
+		<totalCurrency>0</totalCurrency>
+		<sovereigns>0</sovereigns>
+	</account>
+	<account>
+		<username>uopkuo</username>
+		<newCryptPassword>2F-04-80-7D-88-02-53-7F-A2-53-9C-05-9B-1E-8C-1B-88-40-5A-E0</newCryptPassword>
+		<created>2023-02-23T20:24:38.2388918Z</created>
+		<lastLogin>2023-02-24T19:29:37.171611Z</lastLogin>
+		<totalGameTime>PT14H40M26.6856589S</totalGameTime>
+		<chars>
+			<char index="0">70115</char>
+			<char index="1">80429</char>
+			<char index="2">80449</char>
+			<char index="3">80544</char>
+			<char index="4">80563</char>
+			<char index="5">80584</char>
+		</chars>
+		<tags>
+			<tag name="VS_LAST_VOTE_SIRCHADE">2/23/2023 3:40:16 PM</tag>
+			<tag name="VS_LAST_VOTE_SHARD PORTAL">2/23/2023 3:40:34 PM</tag>
+			<tag name="VS_LAST_VOTE_TOP 100 ARENA">2/23/2023 3:40:39 PM</tag>
+			<tag name="VS_LAST_VOTE_G TOP 100">2/23/2023 3:40:40 PM</tag>
+			<tag name="VS_LAST_VOTE_UOGATEWAY">2/23/2023 3:40:41 PM</tag>
+			<tag name="VS_LAST_VOTE_XTREME TOP 100">2/23/2023 3:40:42 PM</tag>
+			<tag name="VS_LAST_VOTE_UO PORTAL">2/23/2023 3:40:45 PM</tag>
+			<tag name="VS_LAST_VOTE_TOP G">2/23/2023 3:40:46 PM</tag>
+			<tag name="VS_LAST_VOTE_MMOHUB">2/23/2023 3:40:52 PM</tag>
+		</tags>
+		<addressList count="2">
+			<ip>222.152.188.131</ip>
+			<ip>222.152.191.209</ip>
+		</addressList>
+		<totalCurrency>0.00030000000000000003</totalCurrency>
+		<sovereigns>0</sovereigns>
+	</account>
+	<account>
+		<username>uopku</username>
+		<newCryptPassword>BB-42-27-DC-0A-19-22-88-EB-F7-66-F4-17-35-F5-67-02-55-72-76</newCryptPassword>
+		<created>2023-02-23T20:46:19.9249523Z</created>
+		<lastLogin>2023-02-24T19:35:33.8906356Z</lastLogin>
+		<totalGameTime>PT14H6M52.7499941S</totalGameTime>
+		<chars>
+			<char index="0">71108</char>
+			<char index="1">74631</char>
+			<char index="2">77641</char>
+			<char index="3">80424</char>
+			<char index="4">80464</char>
+			<char index="5">80495</char>
+		</chars>
+		<tags>
+			<tag name="VS_LAST_VOTE_MMOHUB">2/23/2023 3:50:09 PM</tag>
+			<tag name="VS_LAST_VOTE_UO PORTAL">2/23/2023 3:50:10 PM</tag>
+			<tag name="VS_LAST_VOTE_TOP G">2/23/2023 3:50:12 PM</tag>
+			<tag name="VS_LAST_VOTE_XTREME TOP 100">2/23/2023 3:50:13 PM</tag>
+			<tag name="VS_LAST_VOTE_UOGATEWAY">2/23/2023 3:50:14 PM</tag>
+			<tag name="VS_LAST_VOTE_G TOP 100">2/23/2023 3:50:15 PM</tag>
+			<tag name="VS_LAST_VOTE_TOP 100 ARENA">2/23/2023 3:50:16 PM</tag>
+			<tag name="VS_LAST_VOTE_SHARD PORTAL">2/23/2023 3:50:17 PM</tag>
+			<tag name="VS_LAST_VOTE_PAYPAL">2/23/2023 5:39:17 PM</tag>
+		</tags>
+		<addressList count="2">
+			<ip>222.152.188.131</ip>
+			<ip>222.152.191.209</ip>
+		</addressList>
+		<totalCurrency>0.00020232399999999998</totalCurrency>
+		<sovereigns>0</sovereigns>
+	</account>
+	<account>
+		<username>Ungod</username>
+		<newCryptPassword>BA-EA-01-74-B2-2D-41-E4-4A-04-7F-1F-87-9C-E7-FB-2F-38-A9-08</newCryptPassword>
+		<created>2023-02-24T19:21:31.4679798Z</created>
+		<lastLogin>2023-02-28T06:38:22.4243275Z</lastLogin>
+		<totalGameTime>P1DT12H25M57.7314155S</totalGameTime>
+		<chars>
+			<char index="0">56510</char>
+			<char index="1">15422</char>
+		</chars>
+		<addressList count="1">
+			<ip>45.45.51.238</ip>
+		</addressList>
+		<totalCurrency>2.7105054312137611E-20</totalCurrency>
+		<sovereigns>0</sovereigns>
+	</account>
+	<account>
+		<username>iloveuo</username>
+		<newCryptPassword>76-41-E2-EC-8E-A6-41-71-34-FD-CF-74-DC-2F-97-ED-66-5C-E0-B7</newCryptPassword>
+		<created>2023-02-24T20:01:14.6029566Z</created>
+		<lastLogin>2023-02-24T20:03:56.5874695Z</lastLogin>
+		<totalGameTime>PT36M28.2848985S</totalGameTime>
+		<chars>
+			<char index="0">56772</char>
+		</chars>
+		<addressList count="1">
+			<ip>222.152.191.209</ip>
+		</addressList>
+		<totalCurrency>2.5E-05</totalCurrency>
+		<sovereigns>0</sovereigns>
+	</account>
+	<account>
+		<username>Keldius</username>
+		<newCryptPassword>33-81-6F-F0-E4-14-B3-89-71-EC-CE-6C-F3-D8-93-47-71-85-2C-EB</newCryptPassword>
+		<flags>2</flags>
+		<created>2023-02-26T15:35:15.0996447Z</created>
+		<lastLogin>2023-03-22T12:22:05.506552Z</lastLogin>
+		<totalGameTime>P12DT6H16M17.6009893S</totalGameTime>
+		<chars>
+			<char index="0">19913</char>
+			<char index="1">50745</char>
+		</chars>
+		<tags>
+			<tag name="VS_LAST_VOTE_SHARD PORTAL">3/20/2023 7:49:53 AM</tag>
+			<tag name="VS_LAST_VOTE_TOP 100 ARENA">3/20/2023 7:49:58 AM</tag>
+			<tag name="VS_LAST_VOTE_G TOP 100">3/20/2023 7:50:03 AM</tag>
+			<tag name="VS_LAST_VOTE_UOGATEWAY">3/20/2023 7:50:07 AM</tag>
+			<tag name="VS_LAST_VOTE_XTREME TOP 100">3/20/2023 7:50:14 AM</tag>
+			<tag name="VS_LAST_VOTE_TOP G">3/20/2023 7:50:19 AM</tag>
+			<tag name="VS_LAST_VOTE_UO PORTAL">3/20/2023 7:50:24 AM</tag>
+			<tag name="VS_LAST_VOTE_MMOHUB">3/20/2023 7:50:27 AM</tag>
+			<tag name="GoldenFleeceRecieved">true</tag>
+		</tags>
+		<addressList count="1">
+			<ip>74.58.208.88</ip>
+		</addressList>
+		<totalCurrency>0.035835161000000032</totalCurrency>
+		<sovereigns>0</sovereigns>
+	</account>
+	<account>
+		<username>moloch83</username>
+		<newCryptPassword>12-93-3C-25-32-51-9C-AC-02-12-9D-7F-59-03-C1-45-BC-E3-BC-F0</newCryptPassword>
+		<created>2023-02-26T19:13:10.7827378Z</created>
+		<lastLogin>2023-02-26T20:46:18.1373818Z</lastLogin>
+		<totalGameTime>PT19M49.5169552S</totalGameTime>
+		<chars>
+			<char index="0">25689</char>
+		</chars>
+		<addressList count="1">
+			<ip>93.40.240.207</ip>
+		</addressList>
+		<totalCurrency>0</totalCurrency>
+		<sovereigns>0</sovereigns>
+		<SecureAccounts>
+			<char index="0">50000</char>
+		</SecureAccounts>
+	</account>
+	<account>
+		<username>Roxas210</username>
+		<newCryptPassword>B0-8F-32-AC-3A-92-5A-86-71-34-8D-DD-AC-CE-40-2F-40-17-90-46</newCryptPassword>
+		<created>2023-02-27T05:06:50.6381212Z</created>
+		<lastLogin>2023-02-27T16:04:45.9230424Z</lastLogin>
+		<totalGameTime>PT20H26M10.1622396S</totalGameTime>
+		<chars>
+			<char index="0">94830</char>
+		</chars>
+		<addressList count="1">
+			<ip>76.215.2.24</ip>
+		</addressList>
+		<totalCurrency>2.6753000000000006E-05</totalCurrency>
+		<sovereigns>0</sovereigns>
+	</account>
+	<account>
+		<username>Sora210</username>
+		<newCryptPassword>86-D1-A0-9A-C7-E3-A9-BB-F4-E8-C7-5B-EC-94-E5-E0-F0-F8-64-7A</newCryptPassword>
+		<created>2023-02-27T07:40:01.7578283Z</created>
+		<lastLogin>2023-02-28T05:27:25.2633107Z</lastLogin>
+		<totalGameTime>PT10H49.5735574S</totalGameTime>
+		<chars>
+			<char index="0">98572</char>
+		</chars>
+		<addressList count="1">
+			<ip>76.215.2.24</ip>
+		</addressList>
+		<totalCurrency>2.3310000000000002E-05</totalCurrency>
+		<sovereigns>0</sovereigns>
+	</account>
+	<account>
+		<username>jackdun</username>
+		<newCryptPassword>B0-3B-89-FF-2C-52-8D-4E-AA-76-32-0E-56-C7-1F-96-23-FF-82-8F</newCryptPassword>
+		<created>2023-02-27T23:14:14.9820973Z</created>
+		<lastLogin>2023-02-27T23:14:37.3571514Z</lastLogin>
+		<totalGameTime>PT37M13.0551257S</totalGameTime>
+		<chars>
+			<char index="0">33286</char>
+		</chars>
+		<tags>
+			<tag name="VS_LAST_VOTE_UO PORTAL">2/27/2023 6:23:30 PM</tag>
+			<tag name="VS_LAST_VOTE_TOP G">2/27/2023 6:23:44 PM</tag>
+			<tag name="VS_LAST_VOTE_XTREME TOP 100">2/27/2023 6:23:55 PM</tag>
+			<tag name="VS_LAST_VOTE_UOGATEWAY">2/27/2023 6:24:04 PM</tag>
+			<tag name="VS_LAST_VOTE_G TOP 100">2/27/2023 6:24:21 PM</tag>
+			<tag name="VS_LAST_VOTE_TOP 100 ARENA">2/27/2023 6:24:28 PM</tag>
+			<tag name="VS_LAST_VOTE_SHARD PORTAL">2/27/2023 6:24:33 PM</tag>
+		</tags>
+		<addressList count="1">
+			<ip>27.145.121.151</ip>
+		</addressList>
+		<totalCurrency>0</totalCurrency>
+		<sovereigns>0</sovereigns>
+	</account>
+	<account>
+		<username>uurcos</username>
+		<newCryptPassword>26-DF-DF-D1-53-88-6F-DA-AD-29-14-14-CF-CE-1D-86-E0-BD-73-5A</newCryptPassword>
+		<created>2023-02-28T08:30:02.5413584Z</created>
+		<lastLogin>2023-02-28T12:13:50.7602673Z</lastLogin>
+		<totalGameTime>PT13M53.1891276S</totalGameTime>
+		<chars>
+			<char index="0">54447</char>
+		</chars>
+		<addressList count="1">
+			<ip>88.248.131.47</ip>
+		</addressList>
+		<totalCurrency>0</totalCurrency>
+		<sovereigns>0</sovereigns>
+	</account>
+	<account>
+		<username>Octavia</username>
+		<newCryptPassword>FB-53-22-17-85-38-75-9A-17-65-EA-EE-45-93-5A-30-1F-6A-D8-50</newCryptPassword>
+		<created>2023-03-04T02:59:14.7651305Z</created>
+		<lastLogin>2023-03-04T02:59:27.233889Z</lastLogin>
+		<totalGameTime>PT1M52.172004S</totalGameTime>
+		<chars>
+			<char index="0">40780</char>
+		</chars>
+		<tags>
+			<tag name="VS_LAST_VOTE_PAYPAL">3/3/2023 10:01:06 PM</tag>
+		</tags>
+		<addressList count="1">
+			<ip>66.208.66.122</ip>
+		</addressList>
+		<totalCurrency>0</totalCurrency>
+		<sovereigns>0</sovereigns>
+	</account>
+	<account>
+		<username>Cun</username>
+		<newCryptPassword>52-AF-26-EA-27-55-73-78-11-15-D1-11-8A-D8-AF-F3-B0-23-FE-37</newCryptPassword>
+		<flags>2</flags>
+		<created>2023-03-07T20:37:03.8844274Z</created>
+		<lastLogin>2023-03-15T07:42:37.6115045Z</lastLogin>
+		<totalGameTime>P2DT13H54M13.4099602S</totalGameTime>
+		<chars>
+			<char index="0">91656</char>
+		</chars>
+		<tags>
+			<tag name="VS_LAST_VOTE_DONATION INFO">3/12/2023 8:38:20 PM</tag>
+			<tag name="VS_LAST_VOTE_PAYPAL">3/7/2023 4:24:17 PM</tag>
+			<tag name="VS_LAST_VOTE_WEBSITE">3/9/2023 2:39:14 PM</tag>
+			<tag name="VS_LAST_VOTE_MMOHUB">3/14/2023 9:09:55 PM</tag>
+			<tag name="VS_LAST_VOTE_UO PORTAL">3/14/2023 9:10:04 PM</tag>
+			<tag name="VS_LAST_VOTE_TOP G">3/14/2023 9:10:05 PM</tag>
+			<tag name="VS_LAST_VOTE_XTREME TOP 100">3/14/2023 9:10:06 PM</tag>
+			<tag name="VS_LAST_VOTE_UOGATEWAY">3/14/2023 9:10:06 PM</tag>
+			<tag name="VS_LAST_VOTE_G TOP 100">3/14/2023 9:10:08 PM</tag>
+			<tag name="VS_LAST_VOTE_TOP 100 ARENA">3/14/2023 9:10:09 PM</tag>
+			<tag name="VS_LAST_VOTE_SHARD PORTAL">3/14/2023 9:10:10 PM</tag>
+		</tags>
+		<addressList count="1">
+			<ip>67.6.198.132</ip>
+		</addressList>
+		<totalCurrency>0.00025748299999999965</totalCurrency>
+		<sovereigns>0</sovereigns>
+	</account>
+	<account>
+		<username>simba</username>
+		<newCryptPassword>F4-14-2D-99-1B-F7-E2-BC-A5-C0-22-E1-9D-9D-34-7F-43-61-72-0C</newCryptPassword>
+		<created>2023-03-09T12:55:18.6369235Z</created>
+		<lastLogin>2023-03-10T11:23:00.9004276Z</lastLogin>
+		<totalGameTime>PT7H36M28.0546509S</totalGameTime>
+		<chars>
+			<char index="0">14590</char>
+			<char index="1">54056</char>
+		</chars>
+		<tags>
+			<tag name="VS_LAST_VOTE_MMOHUB">3/9/2023 7:58:51 AM</tag>
+			<tag name="VS_LAST_VOTE_UO PORTAL">3/9/2023 7:58:59 AM</tag>
+			<tag name="VS_LAST_VOTE_TOP G">3/9/2023 7:59:02 AM</tag>
+			<tag name="VS_LAST_VOTE_XTREME TOP 100">3/9/2023 7:59:06 AM</tag>
+			<tag name="VS_LAST_VOTE_UOGATEWAY">3/9/2023 7:59:09 AM</tag>
+			<tag name="VS_LAST_VOTE_G TOP 100">3/9/2023 7:59:13 AM</tag>
+			<tag name="VS_LAST_VOTE_TOP 100 ARENA">3/9/2023 7:59:17 AM</tag>
+			<tag name="VS_LAST_VOTE_SHARD PORTAL">3/9/2023 7:59:21 AM</tag>
+			<tag name="VS_LAST_VOTE_PAYPAL">3/10/2023 4:50:02 AM</tag>
+			<tag name="VS_LAST_VOTE_WEBSITE">3/10/2023 3:29:47 AM</tag>
+			<tag name="VS_LAST_VOTE_DONATION INFO">3/10/2023 4:49:37 AM</tag>
+		</tags>
+		<addressList count="2">
+			<ip>185.229.155.235</ip>
+			<ip>185.229.155.149</ip>
+		</addressList>
+		<totalCurrency>8.2784000000000012E-05</totalCurrency>
+		<sovereigns>0</sovereigns>
+	</account>
+	<account>
+		<username>lightmaker</username>
+		<newCryptPassword>92-31-89-2E-D5-3C-F0-62-FB-5F-6C-D0-68-59-4D-B0-F3-FB-93-39</newCryptPassword>
+		<created>2023-03-10T23:54:54.9423084Z</created>
+		<lastLogin>2023-03-14T01:11:22.3928503Z</lastLogin>
+		<totalGameTime>PT19H17M9.0044524S</totalGameTime>
+		<chars>
+			<char index="0">67298</char>
+			<char index="1">68239</char>
+		</chars>
+		<tags>
+			<tag name="VS_LAST_VOTE_SHARD PORTAL">3/12/2023 10:27:19 PM</tag>
+			<tag name="VS_LAST_VOTE_TOP 100 ARENA">3/12/2023 10:27:23 PM</tag>
+			<tag name="VS_LAST_VOTE_G TOP 100">3/12/2023 10:27:24 PM</tag>
+			<tag name="VS_LAST_VOTE_UOGATEWAY">3/12/2023 10:27:25 PM</tag>
+			<tag name="VS_LAST_VOTE_XTREME TOP 100">3/12/2023 10:27:27 PM</tag>
+			<tag name="VS_LAST_VOTE_TOP G">3/12/2023 10:27:29 PM</tag>
+			<tag name="VS_LAST_VOTE_UO PORTAL">3/12/2023 10:27:31 PM</tag>
+			<tag name="VS_LAST_VOTE_MMOHUB">3/12/2023 10:27:33 PM</tag>
+		</tags>
+		<addressList count="1">
+			<ip>142.114.111.23</ip>
+		</addressList>
+		<totalCurrency>0.0045584300000000022</totalCurrency>
+		<sovereigns>0</sovereigns>
+	</account>
+	<account>
+		<username>kreien</username>
+		<newCryptPassword>4C-D1-EA-E2-06-90-74-F5-71-39-2D-02-35-0A-BE-EA-78-53-D5-8A</newCryptPassword>
+		<created>2023-03-11T10:47:26.388805Z</created>
+		<lastLogin>2023-03-11T10:48:33.8162588Z</lastLogin>
+		<totalGameTime>PT13M10.5757821S</totalGameTime>
+		<chars>
+			<char index="0">2689</char>
+		</chars>
+		<addressList count="1">
+			<ip>125.176.54.86</ip>
+		</addressList>
+		<totalCurrency>0</totalCurrency>
+		<sovereigns>0</sovereigns>
+	</account>
+	<account>
+		<username>289486314</username>
+		<newCryptPassword>FB-3A-6F-EE-37-50-BC-AF-1F-05-50-CB-E5-FE-DF-93-8E-F4-15-4F</newCryptPassword>
+		<created>2023-03-14T07:17:44.9620172Z</created>
+		<lastLogin>2023-03-15T10:29:34.7688525Z</lastLogin>
+		<totalGameTime>PT6H15M59.4640107S</totalGameTime>
+		<chars>
+			<char index="0">104727</char>
+		</chars>
+		<tags>
+			<tag name="VS_LAST_VOTE_MMOHUB">3/14/2023 9:35:06 PM</tag>
+			<tag name="VS_LAST_VOTE_UO PORTAL">3/14/2023 9:35:18 PM</tag>
+			<tag name="VS_LAST_VOTE_TOP G">3/14/2023 9:35:23 PM</tag>
+			<tag name="VS_LAST_VOTE_XTREME TOP 100">3/14/2023 9:35:25 PM</tag>
+			<tag name="VS_LAST_VOTE_UOGATEWAY">3/14/2023 9:35:28 PM</tag>
+			<tag name="VS_LAST_VOTE_G TOP 100">3/14/2023 9:35:31 PM</tag>
+			<tag name="VS_LAST_VOTE_TOP 100 ARENA">3/14/2023 9:35:33 PM</tag>
+			<tag name="VS_LAST_VOTE_SHARD PORTAL">3/14/2023 9:35:35 PM</tag>
+			<tag name="VS_LAST_VOTE_PAYPAL">3/14/2023 10:35:46 PM</tag>
+			<tag name="VS_LAST_VOTE_DONATION INFO">3/14/2023 10:35:55 PM</tag>
+			<tag name="VS_LAST_VOTE_WEBSITE">3/15/2023 12:20:41 AM</tag>
+		</tags>
+		<addressList count="2">
+			<ip>49.51.72.171</ip>
+			<ip>123.55.153.92</ip>
+		</addressList>
+		<totalCurrency>1.5260000000000003E-05</totalCurrency>
 		<sovereigns>0</sovereigns>
 	</account>
 </accounts>

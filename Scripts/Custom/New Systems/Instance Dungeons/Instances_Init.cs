@@ -25,7 +25,7 @@ using VitaNex.Network;
 
 namespace VitaNex.InstanceMaps
 {
-	[CoreService("Instance Maps", "1.0.0.2")]
+	[CoreService("Instance Maps", "1.0.0.3")]
 	public static partial class Instances
 	{
 		static Instances()

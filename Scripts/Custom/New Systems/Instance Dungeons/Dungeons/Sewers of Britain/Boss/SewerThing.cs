@@ -21,7 +21,11 @@ namespace VitaNex.Dungeons
 	{
 		public override Poison PoisonImmune { get { return Poison.Lethal; } }
 		public override Poison HitPoison { get { return Poison.Lethal; } }
-		public override Poison HitAreaPoison { get { return Poison.Lethal; } }
+
+#if !ServUO
+		public override bool HasAura => true;
+		public override int AuraPoisonDamage => 100;
+#endif
 
 		[Constructable]
 		public SewerThing()
@@ -67,7 +71,7 @@ namespace VitaNex.Dungeons
 
 		public override void GenerateLoot()
 		{
-			AddLoot(LootPack.AosSuperBoss, 8);
+			AddLoot(LootPack.SuperBoss, 8);
 			AddLoot(LootPack.LowScrolls, 4);
 			AddLoot(LootPack.MedScrolls, 4);
 			AddLoot(LootPack.HighScrolls, 4);
