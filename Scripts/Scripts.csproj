@@ -2287,6 +2287,7 @@
     <Compile Include="Custom\Rune Crafting\Runes\RuneTargetExt.cs" />
     <Compile Include="Custom\Tested\AP_EventGate.cs" />
     <Compile Include="Custom\Tested\Necrosalutor\Necroloricatus.cs" />
+    <Compile Include="Custom\Tested\Pimp\Mr.Bones No Loot.cs" />
     <Compile Include="Custom\Tested\RemoveUnwieldlyDeed.cs" />
     <Compile Include="Custom\Tested\Goliath\GargishArmsOfEvolution.cs" />
     <Compile Include="Custom\Tested\Goliath\GargishChestOfEvolution.cs" />
