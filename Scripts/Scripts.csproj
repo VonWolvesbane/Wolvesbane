@@ -3891,6 +3891,7 @@
     <Compile Include="Custom\Wolvesbane Written\Taming Gear\TunicofExpertTaming.cs" />
     <Compile Include="Custom\Wolvesbane Written\Taming Gear\VonWolvesbaneEvilShardOwner.cs" />
     <Compile Include="Custom\Wolvesbane Written\WebStone.cs" />
+    <Compile Include="Custom\Wolvesbane Written\Moose.cs" />
     <Compile Include="Custom\Wolvesbane Written\WolfSpiderMount.cs" />
     <Compile Include="Custom\Wolvesbane Written\WolvesbanianImp.cs" />
     <Compile Include="Custom\Wolvesbane Written\X-Men\ArmsofXMenUniform.cs" />

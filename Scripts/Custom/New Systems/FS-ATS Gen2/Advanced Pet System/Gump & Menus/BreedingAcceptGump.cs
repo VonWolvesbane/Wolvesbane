@@ -204,7 +204,7 @@ namespace Server.Gumps
 					if ( cm1 != null )
 						cm1.SendMessage( "You are to far away from the other pet owner." );
 				}
-				else if ( Utility.Random( chance ) < 3500 )
+				else if ( Utility.Random( chance ) < 35000 )
 				{
 					if ( cm1 != null ) //Generate Claim Ticket One
 					{
