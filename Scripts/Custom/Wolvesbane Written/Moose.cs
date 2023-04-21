@@ -22,7 +22,7 @@ namespace Server.Mobiles
         }
 
         [Constructable]
-        public Moose(string name) : base(name, 0xC8, 0x3E9F, AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
+        public Moose(string name) : base(name, 0xDA, 0x3EA4, AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
         	
         	
