@@ -43,7 +43,7 @@ namespace Server.Mobiles
             this.AddItem(new BoneLegs());
             this.AddItem(new BearMask());
 
-            new SavageRidgeback().Rider = this;
+            new Nightmare().Rider = this;
         }
 
         public SavageRider(Serial serial)

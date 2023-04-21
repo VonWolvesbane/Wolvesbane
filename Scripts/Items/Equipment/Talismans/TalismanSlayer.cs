@@ -82,8 +82,8 @@ namespace Server.Items
                 {
                     typeof(Bird),           typeof(TropicalBird),
                     typeof(Chicken),        typeof(Crane),
-                    typeof(DesertOstard),   typeof(Eagle),
-                    typeof(ForestOstard),   typeof(FrenziedOstard),
+                    /*typeof(DesertOstard),   typeof(FrenziedOstard),
+                    typeof(ForestOstard),*/   typeof(Eagle),
                     typeof(Phoenix),        typeof(Pyre),
                     typeof(Swoop),          typeof(Saliva)
                 };

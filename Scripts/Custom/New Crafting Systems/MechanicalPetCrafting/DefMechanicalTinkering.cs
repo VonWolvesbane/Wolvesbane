@@ -103,10 +103,10 @@ namespace Server.Engines.Craft
                                                AddRes(index, typeof(ClockworkAssembly), "Clockwork Assembly", 2);
                                                 AddRes(index, typeof(PowerCrystal), "Power Crystal", 1);
 
-                                                index = AddCraft(typeof(MechanicalFrenziedOstardPetStatue), "Mechanical FrenziedOstard Statue Pet", "Mechanical FrenziedOstard Pet", 110.1, 115.0, typeof(Feather), "Feather", 60);
-                                               AddRes(index, typeof(IronIngot), "Iron Ingots", 300);
-                                               AddRes(index, typeof(ClockworkAssembly), "Clockwork Assembly", 2);
-                                                AddRes(index, typeof(PowerCrystal), "Power Crystal", 1);
+                                                //index = AddCraft(typeof(MechanicalFrenziedOstardPetStatue), "Mechanical FrenziedOstard Statue Pet", "Mechanical FrenziedOstard Pet", 110.1, 115.0, typeof(Feather), "Feather", 60);
+                                              //AddRes(index, typeof(IronIngot), "Iron Ingots", 300);
+                                               //AddRes(index, typeof(ClockworkAssembly), "Clockwork Assembly", 2);
+                                                //AddRes(index, typeof(PowerCrystal), "Power Crystal", 1);
 
                                                 index = AddCraft(typeof(MechanicalHellSteedPetStatue), "Mechanical HellSteed Statue Pet", "Mechanical HellSteed Pet", 110.1, 115.0, typeof(HornedLeather), "Horned Leather", 20);
                                                AddRes(index, typeof(IronIngot), "Iron Ingots", 300);

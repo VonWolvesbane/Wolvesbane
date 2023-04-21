@@ -199,7 +199,7 @@ namespace Server.Mobiles
 						{
 							foreach (Mobile m in list)
 							{
-								bool isFriendly = (m is Savage || m is SavageRider || m is SavageShaman || m is SavageRidgeback);
+								bool isFriendly = (m is Savage || m is SavageRider || m is SavageShaman /*|| m is SavageRidgeback*/);
 
 								if (!isFriendly)
 								{
@@ -230,7 +230,7 @@ namespace Server.Mobiles
 						{
 							foreach (Mobile m in list)
 							{
-								bool isFriendly = (m is Savage || m is SavageRider || m is SavageShaman || m is SavageRidgeback);
+								bool isFriendly = (m is Savage || m is SavageRider || m is SavageShaman /*|| m is SavageRidgeback*/);
 
 								if (isFriendly)
 								{
@@ -268,7 +268,7 @@ namespace Server.Mobiles
 						{
 							foreach (Mobile m in list)
 							{
-								bool isFriendly = (m is Savage || m is SavageRider || m is SavageShaman || m is SavageRidgeback);
+								bool isFriendly = (m is Savage || m is SavageRider || m is SavageShaman /* || m is SavageRidgeback*/);
 
 								if (isFriendly)
 								{

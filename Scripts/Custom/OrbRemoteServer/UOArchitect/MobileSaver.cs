@@ -158,17 +158,17 @@ namespace Server
 			ConversionTable.Add( typeof( Walrus ) );
 			// Animals Mounts
 			ConversionTable.Add( typeof( Beetle ) );
-			ConversionTable.Add( typeof( DesertOstard ) );
+			//ConversionTable.Add( typeof( DesertOstard ) );
 			ConversionTable.Add( typeof( FireSteed ) );
-			ConversionTable.Add( typeof( ForestOstard ) );
+			//ConversionTable.Add( typeof( ForestOstard ) );
 			ConversionTable.Add( typeof( HellSteed ) );
 			ConversionTable.Add( typeof( Hiryu ) );
 			ConversionTable.Add( typeof( Horse ) );
 			ConversionTable.Add( typeof( Kirin ) );
 			ConversionTable.Add( typeof( LesserHiryu ) );
 			ConversionTable.Add( typeof( RidableLlama ) );
-			ConversionTable.Add( typeof( Ridgeback ) );
-			ConversionTable.Add( typeof( SavageRidgeback ) );
+			//ConversionTable.Add( typeof( Ridgeback ) );
+			//ConversionTable.Add( typeof( SavageRidgeback ) );
 			ConversionTable.Add( typeof( ScaledSwampDragon ) );
 			ConversionTable.Add( typeof( SeaHorse ) );
 			ConversionTable.Add( typeof( SilverSteed ) );

@@ -27,7 +27,7 @@ namespace Server.Mobiles
                 this.Name = NameList.RandomName("male"); 
             }
 
-            new ForestOstard().Rider = this; 
+            new Moose().Rider = this; 
 
             PlateChest chest = new PlateChest(); 
             chest.Hue = 0x966; 

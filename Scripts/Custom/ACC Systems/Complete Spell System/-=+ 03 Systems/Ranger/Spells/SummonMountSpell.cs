@@ -33,14 +33,14 @@ namespace Server.ACC.CSS.Systems.Ranger
 
 		private static Type[] m_Types = new Type[]
 		{
-			typeof( ForestOstard ),
-			typeof( DesertOstard ),
-			typeof( Ridgeback ),
-			typeof( ForestOstard ),
+			typeof( Moose ),
+			//typeof( DesertOstard ),
+			//typeof( Ridgeback ),
+			//typeof( ForestOstard ),
 			typeof( Horse ),
-			typeof( DesertOstard ),
+			//typeof( DesertOstard ),
 			typeof( Horse ),
-			typeof( Ridgeback ),
+			typeof( RideablePolarBear ),
 			typeof( SwampDragon ),
 			typeof( RidableLlama ),
 			typeof( RidableLlama ),

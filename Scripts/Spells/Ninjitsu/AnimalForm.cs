@@ -436,7 +436,7 @@ namespace Server.Spells.Ninjitsu
 			new AnimalFormEntry(typeof(BakeKitsune), "bake-kitsune", 10083, 0, 1070810, 82.5, 0xF6, 0, 0, false, true, false),
 			new AnimalFormEntry(typeof(GreyWolf), "wolf", 9681, 2309, 1070810, 82.5, 0x19, 0x8FD, 0x90E, false, true, false),
 			new AnimalFormEntry(typeof(Llama), "llama", 8438, 0, 1070809, 70.0, 0xDC, 0, 0, false, true, false),
-			new AnimalFormEntry(typeof(ForestOstard), "ostard", 8503, 2212, 1070809, 70.0, 0xDB, 0x899, 0x8B0, false, true, false),
+			//new AnimalFormEntry(typeof(ForestOstard), "ostard", 8503, 2212, 1070809, 70.0, 0xDB, 0x899, 0x8B0, false, true, false),
 			new AnimalFormEntry(typeof(BullFrog), "bullfrog", 8496, 2003, 1070807, 50.0, 0x51, 0x7D1, 0x7D6, false, false, false),
 			new AnimalFormEntry(typeof(GiantSerpent), "giant serpent", 9663, 2009, 1070808, 50.0, 0x15, 0x7D1, 0x7E2, false, false, false),
 			new AnimalFormEntry(typeof(Dog), "dog", 8476, 2309, 1070806, 40.0, 0xD9, 0x8FD, 0x90E, false, false, false),

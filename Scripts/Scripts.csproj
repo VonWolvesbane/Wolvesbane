@@ -1478,8 +1478,6 @@
     <Compile Include="Custom\New Crafting Systems\MechanicalPetCrafting\NewMechanicalPets\MechanicalBlackWidowStatue.cs" />
     <Compile Include="Custom\New Crafting Systems\MechanicalPetCrafting\NewMechanicalPets\MechanicalBoneDemon.cs" />
     <Compile Include="Custom\New Crafting Systems\MechanicalPetCrafting\NewMechanicalPets\MechanicalBoneDemonStatue.cs" />
-    <Compile Include="Custom\New Crafting Systems\MechanicalPetCrafting\NewMechanicalPets\MechanicalFrenziedOstard.cs" />
-    <Compile Include="Custom\New Crafting Systems\MechanicalPetCrafting\NewMechanicalPets\MechanicalFrenziedOstardStatue.cs" />
     <Compile Include="Custom\New Crafting Systems\MechanicalPetCrafting\NewMechanicalPets\MechanicalHellSteed.cs" />
     <Compile Include="Custom\New Crafting Systems\MechanicalPetCrafting\NewMechanicalPets\MechanicalHellSteedStatue.cs" />
     <Compile Include="Custom\New Crafting Systems\Medical Crafting\DefMedicalCrafting 2.0.cs" />
@@ -3572,16 +3570,11 @@
     <Compile Include="Custom\Tested\Mounts and Pets\Sean%27s Rainbow Mounts Pack\RainbowBeetle.cs" />
     <Compile Include="Custom\Tested\Mounts and Pets\Sean%27s Rainbow Mounts Pack\RainbowChargerOfTheFallen.cs" />
     <Compile Include="Custom\Tested\Mounts and Pets\Sean%27s Rainbow Mounts Pack\RainbowCuSidhe.cs" />
-    <Compile Include="Custom\Tested\Mounts and Pets\Sean%27s Rainbow Mounts Pack\RainbowDesertOstard.cs" />
-    <Compile Include="Custom\Tested\Mounts and Pets\Sean%27s Rainbow Mounts Pack\RainbowForestOstard.cs" />
-    <Compile Include="Custom\Tested\Mounts and Pets\Sean%27s Rainbow Mounts Pack\RainbowFrenziedOstard.cs" />
     <Compile Include="Custom\Tested\Mounts and Pets\Sean%27s Rainbow Mounts Pack\RainbowHellSteed.cs" />
     <Compile Include="Custom\Tested\Mounts and Pets\Sean%27s Rainbow Mounts Pack\RainbowHiryu.cs" />
     <Compile Include="Custom\Tested\Mounts and Pets\Sean%27s Rainbow Mounts Pack\RainbowKirin.cs" />
     <Compile Include="Custom\Tested\Mounts and Pets\Sean%27s Rainbow Mounts Pack\RainbowLlama.cs" />
     <Compile Include="Custom\Tested\Mounts and Pets\Sean%27s Rainbow Mounts Pack\RainbowPolarBear.cs" />
-    <Compile Include="Custom\Tested\Mounts and Pets\Sean%27s Rainbow Mounts Pack\RainbowRidgeback.cs" />
-    <Compile Include="Custom\Tested\Mounts and Pets\Sean%27s Rainbow Mounts Pack\RainbowSavageRidgeback.cs" />
     <Compile Include="Custom\Tested\Mounts and Pets\Sean%27s Rainbow Mounts Pack\RainbowScaledSwampDragon.cs" />
     <Compile Include="Custom\Tested\Mounts and Pets\Sean%27s Rainbow Mounts Pack\RainbowSteed.cs" />
     <Compile Include="Custom\Tested\Mounts and Pets\Sean%27s Rainbow Mounts Pack\RainbowSwampDragon.cs" />
@@ -3593,9 +3586,7 @@
     <Compile Include="Custom\Tested\Mounts and Pets\SkillMounts\SkillMountHorse.cs" />
     <Compile Include="Custom\Tested\Mounts and Pets\SkillMounts\SkillMountKirin.cs" />
     <Compile Include="Custom\Tested\Mounts and Pets\SkillMounts\SkillMountLlama.cs" />
-    <Compile Include="Custom\Tested\Mounts and Pets\SkillMounts\SkillMountOstard.cs" />
     <Compile Include="Custom\Tested\Mounts and Pets\SkillMounts\SkillMountPolarBear.cs" />
-    <Compile Include="Custom\Tested\Mounts and Pets\SkillMounts\SkillMountRidgeback.cs" />
     <Compile Include="Custom\Tested\Mounts and Pets\SkillMounts\SkillMountSwampDragon.cs" />
     <Compile Include="Custom\Tested\Mounts and Pets\SkillMounts\SkillMountUnicorn.cs" />
     <Compile Include="Custom\Tested\Mounts and Pets\[ServUO.com]-TarantulaMount.cs" />
@@ -5790,7 +5781,6 @@
     <Compile Include="Mobiles\Normal\DeathWatchBeetleHatchling.cs" />
     <Compile Include="Mobiles\Normal\DeepSeaSerpent.cs" />
     <Compile Include="Mobiles\Normal\DemonKnight.cs" />
-    <Compile Include="Mobiles\Normal\DesertOstard.cs" />
     <Compile Include="Mobiles\Normal\Devourer.cs" />
     <Compile Include="Mobiles\Normal\DireWolf.cs" />
     <Compile Include="Mobiles\Normal\DiseasedCat.cs" />
@@ -5844,9 +5834,7 @@
     <Compile Include="Mobiles\Normal\FireRabbit.cs" />
     <Compile Include="Mobiles\Normal\FleshGolem.cs" />
     <Compile Include="Mobiles\Normal\FleshRenderer.cs" />
-    <Compile Include="Mobiles\Normal\ForestOstard.cs" />
     <Compile Include="Mobiles\Normal\ForgottenServant.cs" />
-    <Compile Include="Mobiles\Normal\FrenziedOstard.cs" />
     <Compile Include="Mobiles\Normal\FrostDragon.cs" />
     <Compile Include="Mobiles\Normal\FrostOoze.cs" />
     <Compile Include="Mobiles\Normal\FrostSpider.cs" />
@@ -6039,7 +6027,6 @@
     <Compile Include="Mobiles\Normal\Revenant.cs" />
     <Compile Include="Mobiles\Normal\RevenantLion.cs" />
     <Compile Include="Mobiles\Normal\RidableLlama.cs" />
-    <Compile Include="Mobiles\Normal\Ridgeback.cs" />
     <Compile Include="Mobiles\Normal\Ronin.cs" />
     <Compile Include="Mobiles\Normal\RottingCorpse.cs" />
     <Compile Include="Mobiles\Normal\Rotworm.cs" />
@@ -6050,7 +6037,6 @@
     <Compile Include="Mobiles\Normal\Satyr.cs" />
     <Compile Include="Mobiles\Normal\Savage.cs" />
     <Compile Include="Mobiles\Normal\SavageRider.cs" />
-    <Compile Include="Mobiles\Normal\SavageRidgeback.cs" />
     <Compile Include="Mobiles\Normal\SavageShaman.cs" />
     <Compile Include="Mobiles\Normal\ScaledSwampDragon.cs" />
     <Compile Include="Mobiles\Normal\Scorpion.cs" />

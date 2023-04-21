@@ -67,7 +67,7 @@ namespace Server.Engines.Quests
         public RunawaysQuest()
             : base()
         { 
-            this.AddObjective(new SlayObjective(typeof(FrenziedOstard), "frenzied ostards", 12));
+            this.AddObjective(new SlayObjective(typeof(Moose), "frenzied moose", 12));
 			
             this.AddReward(new BaseReward(typeof(TrinketBag), 1072341));
         }
@@ -80,7 +80,7 @@ namespace Server.Engines.Quests
                 return 1072993;
             }
         }
-        /* You've got to help me out! Those wild ostards have been causing absolute havok around here.  Kill them 
+        /* You've got to help me out! Those wild moose have been causing absolute havok around here.  Kill them 
         off before they destroy my land.  There are around twelve of them. */
         public override object Description
         {

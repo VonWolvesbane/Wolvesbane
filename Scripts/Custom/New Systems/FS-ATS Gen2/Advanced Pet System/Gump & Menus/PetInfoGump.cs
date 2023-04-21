@@ -159,8 +159,8 @@ namespace Server.Gumps
 			{
 				from.SendMessage( "This Creature can not be bred." );
 			}*/
-			if ( target is SlasherOfVeilsTame || target is Mercenary || target is WolfSpiderMount || target is WolfEvo || target is RaelisDragon || target is EvoHiryu || target is RainbowBeetle || target is RainbowChargerOfTheFallen || target is RainbowForestOstard || target is RainbowDesertOstard || target is RainbowFrenziedOstard || target is RainbowCuSidhe || target is RainbowHellSteed
-				|| target is RainbowHiryu || target is RainbowKirin || target is RainbowLlama || target is RainbowPolarBear || target is RainbowRidgeback || target is RainbowSavageRidgeback || target is RainbowUnicorn || target is RainbowSwampDragon || target is RainbowSteed || target is RainbowScaledSwampDragon)
+			if ( target is SlasherOfVeilsTame || target is Mercenary || target is WolfSpiderMount || target is WolfEvo || target is RaelisDragon || target is EvoHiryu || target is RainbowBeetle || target is RainbowChargerOfTheFallen ||/* target is RainbowForestOstard || target is RainbowDesertOstard || target is RainbowFrenziedOstard ||*/ target is RainbowCuSidhe || target is RainbowHellSteed
+				|| target is RainbowHiryu || target is RainbowKirin || target is RainbowLlama || target is RainbowPolarBear ||/* target is RainbowRidgeback || target is RainbowSavageRidgeback ||*/ target is RainbowUnicorn || target is RainbowSwampDragon || target is RainbowSteed || target is RainbowScaledSwampDragon)
 			{
 				from.SendMessage( "These pets can not be bred." );
 			}

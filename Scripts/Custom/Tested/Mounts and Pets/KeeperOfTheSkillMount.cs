@@ -76,8 +76,8 @@ namespace Server.Mobiles
 				case 2: c.DropItem( new SkillMountHorse( ) ); break;
 				case 3: c.DropItem( new SkillMountKirin( ) ); break;
 				case 4: c.DropItem( new SkillMountLlama( ) ); break;
-				case 5: c.DropItem( new SkillMountOstard( ) ); break;
-				case 6: c.DropItem( new SkillMountRidgeback( ) ); break;
+				//case 5: c.DropItem( new SkillMountOstard( ) ); break;
+				//case 6: c.DropItem( new SkillMountRidgeback( ) ); break;
 				case 7: c.DropItem( new SkillMountSwampDragon( ) ); break;
 				case 8: c.DropItem( new SkillMountUnicorn( ) ); break;
 				case 10: c.DropItem( new SkillMountPolarB( ) ); break;

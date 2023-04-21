@@ -27,7 +27,7 @@ namespace Server
 					typeof(Orc), typeof(OrcBomber), typeof(OrcBrute), typeof(OrcCaptain), typeof(OrcChopper), typeof(OrcishLord),
 					typeof(OrcishMage), typeof(OrcScout), typeof(SpawnedOrcishLord)
 				},
-				new[] {typeof(Savage), typeof(SavageRider), typeof(SavageRidgeback), typeof(SavageShaman)}
+				new[] {typeof(Savage), typeof(SavageRider),/* typeof(SavageRidgeback),*/ typeof(SavageShaman)}
 			});
 
 		private static readonly OppositionGroup m_FeyAndUndead = new OppositionGroup(
