@@ -11,7 +11,7 @@ namespace Server.Mobiles
 	{
 		private static int[] m_IDs = new int[]
 			{
-				0xC8, 0x3E9F,
+				
 				0xE2, 0x3EA0,
 				0xE4, 0x3EA1,
 				0xCC, 0x3EA2
