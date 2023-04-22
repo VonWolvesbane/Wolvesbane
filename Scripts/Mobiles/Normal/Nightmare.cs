@@ -14,7 +14,7 @@ namespace Server.Mobiles
 
         [Constructable]
         public Nightmare(string name)
-            : base(name, 0x74, 0x3EA7, AIType.AI_Mage, FightMode.Closest, 10, 1, 0.2, 0.4)
+            : base(name, 0x72, 0x3EA9, AIType.AI_Mage, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
             this.BaseSoundID = Core.AOS ? 0xA8 : 0x16A;
 

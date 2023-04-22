@@ -14,7 +14,7 @@ namespace Server.Mobiles
 		}
 
 		[Constructable]
-		public IceSteed( string name ) : base( name, 0x74, 0x3EA7, AIType.AI_Mage, FightMode.Closest, 10, 1, 0.2, 0.4 )
+		public IceSteed( string name ) : base( name, 0x72, 0x3EA9, AIType.AI_Mage, FightMode.Closest, 10, 1, 0.2, 0.4 )
 		{
 			BaseSoundID = 0xA8;
 			Hue = 1152;
