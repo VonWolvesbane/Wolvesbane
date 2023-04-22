@@ -62,12 +62,12 @@ namespace Server.Mobiles
             switch (Utility.Random(4))
             {
                 case 0:
-                    {
-                        BodyValue = 116;
-                        ItemID = 16039;
-                        break;
-                    }
-                case 1:
+					{
+						BodyValue = 179;
+						ItemID = 16055;
+						break;
+					}
+				case 1:
                     {
                         BodyValue = 177;
                         ItemID = 16053;
@@ -79,12 +79,7 @@ namespace Server.Mobiles
                         ItemID = 16041;
                         break;
                     }
-                case 3:
-                    {
-                        BodyValue = 179;
-                        ItemID = 16055;
-                        break;
-                    }
+                
             }
 
             if (Utility.RandomDouble() < 0.05)
