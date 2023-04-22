@@ -6,8 +6,8 @@
 		<accessLevel>Owner</accessLevel>
 		<flags>2</flags>
 		<created>2019-11-12T16:37:35.2139089Z</created>
-		<lastLogin>2023-03-26T17:29:34.8704953Z</lastLogin>
-		<totalGameTime>P89DT5H55M57.57422S</totalGameTime>
+		<lastLogin>2023-04-21T15:05:45.1212672Z</lastLogin>
+		<totalGameTime>P89DT6H31.5103083S</totalGameTime>
 		<chars>
 			<char index="0">111</char>
 			<char index="1">147226</char>
@@ -1540,10 +1540,7 @@
 		<totalGameTime>P18DT15H28M23.7183828S</totalGameTime>
 		<chars>
 			<char index="0">114738</char>
-			<char index="1">35284</char>
 			<char index="2">109707</char>
-			<char index="3">125596</char>
-			<char index="4">126512</char>
 		</chars>
 		<comments>
 			<comment addedBy="System" lastModified="2020-06-22T00:10:27.1557818Z">Character #3 0x192A "Daisy" deleted by 69.207.162.165</comment>
@@ -9497,9 +9494,7 @@
 		<created>2022-09-07T10:34:59.8650636Z</created>
 		<lastLogin>2022-09-19T11:01:07.1815952Z</lastLogin>
 		<totalGameTime>P4DT8H44M16.1619615S</totalGameTime>
-		<chars>
-			<char index="0">350</char>
-		</chars>
+		<chars />
 		<tags>
 			<tag name="VS_LAST_VOTE_MMOHUB">9/18/2022 11:18:31 PM</tag>
 			<tag name="VS_LAST_VOTE_UO PORTAL">9/18/2022 11:18:48 PM</tag>
@@ -9595,9 +9590,7 @@
 		<created>2022-09-16T18:13:42.9018043Z</created>
 		<lastLogin>2022-09-16T18:14:30.2299643Z</lastLogin>
 		<totalGameTime>PT5M43.2509544S</totalGameTime>
-		<chars>
-			<char index="0">2119</char>
-		</chars>
+		<chars />
 		<addressList count="1">
 			<ip>177.220.173.31</ip>
 		</addressList>
@@ -9635,9 +9628,7 @@
 		<created>2022-09-27T00:58:12.0855027Z</created>
 		<lastLogin>2022-09-27T00:59:13.3043424Z</lastLogin>
 		<totalGameTime>PT7M20.9853548S</totalGameTime>
-		<chars>
-			<char index="0">31510</char>
-		</chars>
+		<chars />
 		<addressList count="1">
 			<ip>50.89.247.89</ip>
 		</addressList>
@@ -10532,7 +10523,6 @@
 		<totalGameTime>P54DT5H17M32.4077688S</totalGameTime>
 		<chars>
 			<char index="0">50788</char>
-			<char index="1">25901</char>
 		</chars>
 		<tags>
 			<tag name="VS_LAST_VOTE_PAYPAL">3/13/2023 10:08:18 AM</tag>
@@ -12195,7 +12185,6 @@
 		<totalGameTime>P12DT6H16M17.6009893S</totalGameTime>
 		<chars>
 			<char index="0">19913</char>
-			<char index="1">50745</char>
 		</chars>
 		<tags>
 			<tag name="VS_LAST_VOTE_SHARD PORTAL">3/20/2023 7:49:53 AM</tag>

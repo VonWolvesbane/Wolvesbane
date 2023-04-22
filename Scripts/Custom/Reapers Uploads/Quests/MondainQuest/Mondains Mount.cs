@@ -4,7 +4,7 @@ using Server.Mobiles;
 namespace Server.Mobiles
 {
 	[CorpseName( "a corpse Of Mondains Mount " )]
-	[TypeAlias( "Server.Mobiles.BrownHorse", "Server.Mobiles.DirtyHorse", "Server.Mobiles.GrayHorse", "Server.Mobiles.TanHorse" )]
+	[TypeAlias( /*"Server.Mobiles.BrownHorse", */, "Server.Mobiles.DirtyHorse", "Server.Mobiles.GrayHorse", "Server.Mobiles.TanHorse" )]
 	public class MondainsMount : BaseMount
 	{
 		private static int[] m_IDs = new int[]

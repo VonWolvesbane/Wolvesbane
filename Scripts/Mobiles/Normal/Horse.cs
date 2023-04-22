@@ -3,7 +3,7 @@ using System;
 namespace Server.Mobiles
 {
     [CorpseName("a horse corpse")]
-    [TypeAlias("Server.Mobiles.BrownHorse", "Server.Mobiles.DirtyHorse", "Server.Mobiles.GrayHorse", "Server.Mobiles.TanHorse")]
+    [TypeAlias(/*"Server.Mobiles.BrownHorse", */"Server.Mobiles.DirtyHorse", "Server.Mobiles.GrayHorse", "Server.Mobiles.TanHorse")]
     public class Horse : BaseMount
     {
         private static readonly int[] m_IDs = new int[]
