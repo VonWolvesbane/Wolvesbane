@@ -14,7 +14,7 @@ using Server.AllHues;
 namespace Server.Mobiles
 {
     [CorpseName( "a pony corpse" )]
-    [TypeAlias( /*"Server.Mobiles.BrownHorse", */, "Server.Mobiles.DirtyHorse", "Server.Mobiles.GrayHorse", "Server.Mobiles.TanHorse" )]
+    [TypeAlias( /*"Server.Mobiles.BrownHorse", */ "Server.Mobiles.DirtyHorse", "Server.Mobiles.GrayHorse", "Server.Mobiles.TanHorse" )]
     public class Pony : BaseMount
     {
         private static int[] m_IDs = new int[]
