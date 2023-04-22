@@ -53,7 +53,7 @@ namespace Server.Mobiles
 			{
 				case 0:
 				{
-					BodyValue = 116;
+					BodyValue = 179;
 					ItemID = 16039;
 					break;
 				}
@@ -63,12 +63,7 @@ namespace Server.Mobiles
 					ItemID = 16041;
 					break;
 				}
-				case 2:
-				{
-					BodyValue = 179;
-					ItemID = 16055;
-					break;
-				}
+				
 			}
 
 			PackItem( new SulfurousAsh( Utility.RandomMinMax( 3, 5 ) ) );
