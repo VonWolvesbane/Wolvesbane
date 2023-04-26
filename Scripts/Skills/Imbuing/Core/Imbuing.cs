@@ -95,7 +95,7 @@ namespace Server.SkillHandlers
             {
                 from.SendLocalizedMessage(1114312); // You cannot imbue faction items.
             }
-            else if (item is BaseJewel && !(item is BaseRing) && !(item is BaseBracelet) && !(item is BaseEarrings))
+            else if (item is BaseJewel && !(item is BaseRing) && !(item is BaseBracelet) && !(item is BaseEarrings) && !(item is BaseNecklace) )
             {
                 from.SendLocalizedMessage(1079576); // You cannot imbue this item.
             }

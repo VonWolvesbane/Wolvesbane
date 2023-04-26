@@ -55,6 +55,7 @@ namespace Server.Mobiles
 						case 1: item = new LevelUpScroll(10); break;
 						case 2: item = new LevelUpScroll(15); break;
 						case 3: item = new LevelUpScroll(20); break;
+						case 4: item = new LevelItemDeed(); break;
 					}
 				}
 						
