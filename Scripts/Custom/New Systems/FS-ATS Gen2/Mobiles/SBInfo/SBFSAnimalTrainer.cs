@@ -48,7 +48,7 @@ namespace Server.Mobiles
             	#endregion
             	
             	#region Animals
-                this.Add(new AnimalBuyInfo(1, typeof(Horse), 550, 10, 226, 0));
+                //this.Add(new AnimalBuyInfo(1, typeof(Horse), 550, 10, 226, 0));
                 this.Add(new AnimalBuyInfo(1, typeof(PackHorse), 631, 10, 291, 0));
                 this.Add(new AnimalBuyInfo(1, typeof(PackLlama), 565, 10, 292, 0));
                 #endregion
