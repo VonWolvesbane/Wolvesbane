@@ -1,4 +1,5 @@
 using System;
+using Server.Items;
 
 namespace Server.Mobiles
 {
@@ -42,7 +43,15 @@ namespace Server.Mobiles
             this.Tamable = true;
             this.ControlSlots = 1;
             this.MinTameSkill = 35.1;
-        }
+
+			switch (Utility.Random(7))
+			{
+				case 0:
+					AddItem(new PolarBearSkin());
+					break;
+
+			}
+		}
 
         public PolarBear(Serial serial)
             : base(serial)

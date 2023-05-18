@@ -3,17 +3,19 @@ using Server.Items;
 
 namespace Server.Items
 {
-	public class BearSkin : Item
+	public class BearSkin : Fur
 	{
 		[Constructable]
-		public BearSkin( int amount ) : base( 0x11F7 )
+		public BearSkin() : base()
 		{
 			Weight = 5.0;
 			Name = "A Bear Skin";
 			Movable = true;
 			Stackable = true;
-			Amount = amount;
+			//Amount = amount;
 		}
+
+
 
 		public BearSkin( Serial serial ) : base( serial )
 		{
