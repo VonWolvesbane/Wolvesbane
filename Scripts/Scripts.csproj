@@ -2323,6 +2323,7 @@
     <Compile Include="Custom\Tested\The Grove related Items\NewbieHat.cs" />
     <Compile Include="Custom\Tested\The Grove related Items\NewbieLegs.cs" />
     <Compile Include="Custom\Tested\Universal Storage Keys Version 2.0.6\Items\PSKey1.cs" />
+    <Compile Include="Custom\Wolvesbane Written\New Custom Art Mounts\Panda.cs" />
     <Compile Include="Custom\Wolvesbane Written\Totem Hoarder\ArchersIdol.cs" />
     <Compile Include="Custom\Wolvesbane Written\Totem Hoarder\Falausmon.cs" />
     <Compile Include="Custom\Wolvesbane Written\Totem Hoarder\TinkersIdol.cs" />
@@ -3886,7 +3887,7 @@
     <Compile Include="Custom\Wolvesbane Written\Taming Gear\TunicofExpertTaming.cs" />
     <Compile Include="Custom\Wolvesbane Written\Taming Gear\VonWolvesbaneEvilShardOwner.cs" />
     <Compile Include="Custom\Wolvesbane Written\WebStone.cs" />
-    <Compile Include="Custom\Wolvesbane Written\Moose.cs" />
+    <Compile Include="Custom\Wolvesbane Written\New Custom Art Mounts\Moose.cs" />
     <Compile Include="Custom\Wolvesbane Written\WolfSpiderMount.cs" />
     <Compile Include="Custom\Wolvesbane Written\WolvesbanianImp.cs" />
     <Compile Include="Custom\Wolvesbane Written\X-Men\ArmsofXMenUniform.cs" />
