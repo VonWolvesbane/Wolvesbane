@@ -1052,6 +1052,10 @@
     <Compile Include="Custom\Dye Tubs\System - All Dye Tubs\AllDyeTubsWeaponStaff.cs" />
     <Compile Include="Custom\Dye Tubs\System - All Dye Tubs\Deed - All Dye Tubs.cs" />
     <Compile Include="Custom\Dye Tubs\ultimatedyetub.cs" />
+    <Compile Include="Custom\Edits to New Pub\TreasureMaps\LootBags.cs" />
+    <Compile Include="Custom\Edits to New Pub\TreasureMaps\TreasureMap.cs" />
+    <Compile Include="Custom\Edits to New Pub\TreasureMaps\TreasureMapChest.cs" />
+    <Compile Include="Custom\Edits to New Pub\TreasureMaps\TreasureMapInfo.cs" />
     <Compile Include="Custom\EverlastingBandage.cs" />
     <Compile Include="Custom\EVO System\AI\EvoArcherAI.cs" />
     <Compile Include="Custom\EVO System\AI\EvoBerserkAI.cs" />

@@ -195,7 +195,12 @@ namespace Server
 
         public static Type[] NecroRegTypes { get { return m_NecroRegTypes; } }
 
-        private static readonly Type[] m_PotionTypes = new[]
+		private static readonly Type[] m_MysticRegTypes = new[] { typeof(Bone), typeof(DragonBlood), typeof(DaemonBone), typeof(FertileDirt),typeof(BlackPearl), typeof(Bloodmoss), typeof(Garlic), typeof(Ginseng), typeof(MandrakeRoot), typeof(Nightshade),
+			typeof(SulfurousAsh), typeof(SpidersSilk) };
+
+		public static Type[] MysticRegTypes { get { return m_MysticRegTypes; } }
+
+		private static readonly Type[] m_PotionTypes = new[]
 		{
 			typeof(AgilityPotion), typeof(StrengthPotion), typeof(RefreshPotion), typeof(LesserCurePotion),
 			typeof(LesserHealPotion), typeof(LesserPoisonPotion)
