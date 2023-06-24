@@ -9,6 +9,9 @@
 /Scripts/Output
 /Application/bin
 /Application/obj
+/Ultima/bin
+/Ultima/obj
+/Ultima.dll
 
 # Common Directories
 /.vs
