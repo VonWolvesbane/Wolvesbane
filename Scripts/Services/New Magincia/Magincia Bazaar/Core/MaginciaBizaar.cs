@@ -6,7 +6,8 @@ using System.Collections.Generic;
 
 namespace Server.Engines.NewMagincia
 {
-    public class MaginciaBazaar : Item
+	[DeleteConfirm("Delete the Magincia Bazaar master item?")]
+	public class MaginciaBazaar : Item
     {
         public static readonly int DefaultComissionFee = 5;
         public static TimeSpan GetShortAuctionTime => TimeSpan.FromMinutes(Utility.RandomMinMax(690, 750));
@@ -17,8 +18,8 @@ namespace Server.Engines.NewMagincia
 
         private Timer m_Timer;
 
-        private static readonly List<MaginciaBazaarPlot> m_Plots = new List<MaginciaBazaarPlot>();
-        public static List<MaginciaBazaarPlot> Plots => m_Plots;
+        private static readonly Dictionary<string, MaginciaBazaarPlot> m_Plots = new Dictionary<string, MaginciaBazaarPlot>();
+        public static Dictionary<string, MaginciaBazaarPlot> Plots => m_Plots;
 
         private static readonly Dictionary<Mobile, BidEntry> m_NextAvailable = new Dictionary<Mobile, BidEntry>();
         public static Dictionary<Mobile, BidEntry> NextAvailable => m_NextAvailable;
@@ -104,7 +105,7 @@ namespace Server.Engines.NewMagincia
         {
             if (m_Instance != null)
             {
-                int index = m_Plots.IndexOf(plot);
+                int index = m_Plots.Values.IndexOf(plot);
 
                 if (index == -1)
                     return false;
@@ -122,9 +123,11 @@ namespace Server.Engines.NewMagincia
 
         public void ActivatePlots()
         {
-            for (int i = 0; i < m_Plots.Count; i++)
+			var i = -1;
+
+			foreach (var plot in m_Plots.Values)
             {
-                MaginciaBazaarPlot plot = m_Plots[i];
+				++i;
 
                 switch ((int)m_Phase)
                 {
@@ -172,7 +175,7 @@ namespace Server.Engines.NewMagincia
 
         public void OnTick()
         {
-            foreach (MaginciaBazaarPlot plot in m_Plots)
+            foreach (MaginciaBazaarPlot plot in m_Plots.Values)
             {
                 if (plot.Active)
                     plot.OnTick();
@@ -261,7 +264,7 @@ namespace Server.Engines.NewMagincia
 
         public void AddPlotSigns()
         {
-            foreach (MaginciaBazaarPlot plot in m_Plots)
+            foreach (MaginciaBazaarPlot plot in m_Plots.Values)
             {
                 Point3D loc = new Point3D(plot.PlotDef.SignLoc.X - 1, plot.PlotDef.SignLoc.Y, plot.PlotDef.SignLoc.Z);
 
@@ -275,14 +278,14 @@ namespace Server.Engines.NewMagincia
             }
         }
 
-        public override void Delete()
+        /*public override void Delete()
         {
             // Note: This cannot be deleted.  That could potentially piss alot of people off who have items and gold invested in a plot.
-        }
+        }*/
 
         public static MaginciaBazaarPlot GetPlot(Mobile from)
         {
-            foreach (MaginciaBazaarPlot plot in m_Plots)
+            foreach (MaginciaBazaarPlot plot in m_Plots.Values)
             {
                 if (plot.IsOwner(from))
                     return plot;
@@ -293,7 +296,7 @@ namespace Server.Engines.NewMagincia
 
         public static bool HasPlot(Mobile from)
         {
-            foreach (MaginciaBazaarPlot plot in m_Plots)
+            foreach (MaginciaBazaarPlot plot in m_Plots.Values)
             {
                 if (plot.IsOwner(from))
                     return true;
@@ -327,7 +330,7 @@ namespace Server.Engines.NewMagincia
 
         public static MaginciaBazaarPlot GetBiddingPlotForAccount(Mobile from)
         {
-            foreach (MaginciaBazaarPlot plot in m_Plots)
+            foreach (MaginciaBazaarPlot plot in m_Plots.Values)
             {
                 if (plot.Auction != null && plot.Auction.Auctioners.ContainsKey(from))
                     return plot;
@@ -460,7 +463,7 @@ namespace Server.Engines.NewMagincia
 
         public static void RegisterPlot(PlotDef plotDef)
         {
-            m_Plots.Add(new MaginciaBazaarPlot(plotDef));
+            m_Plots[plotDef.ID] = new MaginciaBazaarPlot(plotDef);
         }
 
         public static bool IsSameAccount(Mobile check, Mobile checkAgainst)
@@ -577,10 +580,11 @@ namespace Server.Engines.NewMagincia
         #endregion
 
         public MaginciaBazaar(Serial serial) : base(serial)
-        {
-        }
+		{
+			m_Instance = this;
+		}
 
-        public override void Serialize(GenericWriter writer)
+		public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);
             writer.Write(0);
@@ -589,10 +593,10 @@ namespace Server.Engines.NewMagincia
             writer.Write((int)m_Phase);
 
             writer.Write(m_Plots.Count);
-            for (int i = 0; i < m_Plots.Count; i++)
-            {
-                m_Plots[i].Serialize(writer);
-            }
+			foreach (MaginciaBazaarPlot plot in m_Plots.Values)
+			{
+				plot.Serialize(writer);
+			}
 
             writer.Write(m_NextAvailable.Count);
             foreach (KeyValuePair<Mobile, BidEntry> kvp in m_NextAvailable)
@@ -618,17 +622,25 @@ namespace Server.Engines.NewMagincia
 
         public override void Deserialize(GenericReader reader)
         {
-            base.Deserialize(reader);
+			base.Deserialize(reader);
             int version = reader.ReadInt();
 
             m_Enabled = reader.ReadBool();
             m_Phase = (Phase)reader.ReadInt();
 
             int count = reader.ReadInt();
-            for (int i = 0; i < count; i++)
-            {
-                m_Plots.Add(new MaginciaBazaarPlot(reader));
-            }
+			for (int i = 0; i < count; i++)
+			{
+				var plot = new MaginciaBazaarPlot(reader);
+
+				if (m_Plots.TryGetValue(plot.PlotDef.ID, out var existing))
+				{
+					if (existing != plot)
+						existing?.Reset();
+				}
+
+				m_Plots[plot.PlotDef.ID] = plot;
+			}
 
             count = reader.ReadInt();
             for (int i = 0; i < count; i++)
@@ -661,9 +673,9 @@ namespace Server.Engines.NewMagincia
                     m_Reserve[m] = amt;
             }
 
-            m_Instance = this;
-
-            if (m_Enabled)
+			if (m_Instance != this)
+				Delete();
+			else if (m_Enabled)
                 StartTimer();
         }
 

@@ -130,7 +130,7 @@ namespace Server.Engines.NewMagincia
         public void Reset()
         {
             if (m_PlotMulti != null)
-                Timer.DelayCall(TimeSpan.FromMinutes(2), DeleteMulti_Callback);
+                Timer.DelayCall(m_PlotMulti.Delete);
 
             EndTempMultiTimer();
 
@@ -141,6 +141,7 @@ namespace Server.Engines.NewMagincia
             m_ShopName = null;
             m_Merchant = null;
             m_ShopName = null;
+			m_PlotMulti = null;
         }
 
         public void NewAuction(TimeSpan time)
@@ -149,14 +150,6 @@ namespace Server.Engines.NewMagincia
 
             if (m_Sign != null)
                 m_Sign.InvalidateProperties();
-        }
-
-        private void DeleteMulti_Callback()
-        {
-            if (m_PlotMulti != null)
-                m_PlotMulti.Delete();
-
-            m_PlotMulti = null;
         }
 
         public void OnTick()
