@@ -8585,9 +8585,6 @@
     <Compile Include="Items\Containers\TreasureChest.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Containers\TreasureMapChest.cs">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="Items\Containers\UnknownSkeletons.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -9018,9 +9015,6 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Items\Tools\SeaChart.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Items\Consumables\TreasureMap.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Items\Tools\WorldMap.cs">
@@ -12336,9 +12330,6 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Misc\ToggleItem.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Misc\TreasureMapProtection.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Misc\ValidationQueue.cs">
@@ -16328,6 +16319,7 @@
     <Compile Include="Vita Nex\SuperGumps\Framework\Base\SuperGump_Switches.cs" />
     <Compile Include="Vita Nex\SuperGumps\Framework\Base\SuperGump_TextInputs.cs" />
     <Compile Include="Vita Nex\SuperGumps\Framework\Base\SuperGump_TileButtons.cs" />
+    <Compile Include="Vita Nex\SuperGumps\Framework\Base\SuperGump_Tooltips.cs" />
     <Compile Include="Vita Nex\SuperGumps\Framework\Base\SuperGump_Tree.cs" />
     <Compile Include="Vita Nex\SuperGumps\Framework\DesktopGump.cs" />
     <Compile Include="Vita Nex\SuperGumps\Framework\GML\GmlReader.cs" />
@@ -16387,7 +16379,6 @@
     <Compile Include="Vita Nex\VitaNex_Services.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Accounts\accounts.xml" />
     <Content Include="Custom\Addons\Addons\lamps\Lamp00.bmp" />
     <Content Include="Custom\Addons\Addons\lamps\Lamp01.bmp" />
     <Content Include="Custom\Addons\Addons\lamps\Lamp02.bmp" />
@@ -16439,7 +16430,6 @@
     <Content Include="Services\Revamped Dungeons\Shame Revamped\Read Me.txt" />
     <Content Include="Services\RunicReforging\ReadMe.txt" />
     <Content Include="Services\UltimaStore\ReadMe.txt" />
-    <Content Include="Staff Runebook\Rune Accounts.xml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Server\Server.csproj">
@@ -16452,41 +16442,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="ACC\acc.sav" />
-    <None Include="ACC\Central Memory\Central Memory.bin" />
-    <None Include="ACC\Central Memory\Central Memory.idx" />
-    <None Include="ACC\Central Memory\Central Memory.tdb" />
-    <None Include="ACC\Complete Spell System\Complete Spell System.bin" />
-    <None Include="ACC\Complete Spell System\Complete Spell System.idx" />
-    <None Include="ACC\Complete Spell System\Complete Spell System.tdb" />
-    <None Include="ACC\Public Gates\Public Gates.bin" />
-    <None Include="ACC\Public Gates\Public Gates.idx" />
-    <None Include="ACC\Public Gates\Public Gates.tdb" />
-    <None Include="Attachments\Attachments.bin" />
     <None Include="Attachments\Attachments.fpi" />
     <None Include="Attachments\Attachments.ima" />
-    <None Include="Champions\ChampionSystem.bin" />
-    <None Include="Champions\MiniChampionSystem.bin" />
-    <None Include="ChatBeta8\Channels.bin" />
-    <None Include="ChatBeta8\Friends.bin" />
-    <None Include="ChatBeta8\GlobalListens.bin" />
-    <None Include="ChatBeta8\GlobalOptions.bin" />
-    <None Include="ChatBeta8\Gumps.bin" />
-    <None Include="ChatBeta8\Ignores.bin" />
-    <None Include="ChatBeta8\PlayerOptions.bin" />
-    <None Include="ChatBeta8\Pms.bin" />
-    <None Include="CraftContext\BODs.bin" />
-    <None Include="CraftContext\Contexts.bin" />
-    <None Include="CraftContext\DistillationContexts.bin" />
-    <None Include="CraftContext\ReforgingContexts.bin" />
-    <None Include="Customs\SaveData.bin" />
-    <None Include="Customs\SaveData.idx" />
-    <None Include="Customs\SaveData.tdb" />
-    <None Include="Custom\ACC Systems\Complete Spell System\-=+ 03 Systems\Avatar\AvatarSpell.cs.bak" />
-    <None Include="Custom\ACC Systems\Complete Spell System\-=+ 03 Systems\Cleric\Cleric\ClericSpell.cs.bak" />
-    <None Include="Custom\ACC Systems\Complete Spell System\-=+ 03 Systems\Druid\Familiars\SkitteringHopperFamiliar.cs.bak" />
-    <None Include="Custom\ACC Systems\Complete Spell System\-=+ 03 Systems\Ranger\Familars\PackRat.cs.bak" />
-    <None Include="Custom\ACC Systems\Complete Spell System\-=+ 03 Systems\Ranger\Spells\NoxBowSpell.cs.bak" />
     <None Include="Custom\Addons\abby addons\logcabinhealers.mlt" />
     <None Include="Custom\Addons\abby addons\Loghouse1.mlt" />
     <None Include="Custom\Addons\abby addons\LogHouse2.mlt" />
@@ -16495,13 +16452,6 @@
     <None Include="Custom\Addons\abby addons\OutdoorLogBlacksmith.mlt" />
     <None Include="Custom\Addons\Addons\DistilleryAddons.cs.OUT" />
     <None Include="Custom\New Crafting Systems\DefWeaving\Def Weaving Craft.doc" />
-    <None Include="Custom\New Crafting Systems\DefWeaving\Rugs\BlueDecorativeRugDeed.cs.bak" />
-    <None Include="Custom\New Crafting Systems\DefWeaving\Rugs\BlueFancyRugDeed.cs.bak" />
-    <None Include="Custom\New Crafting Systems\DefWeaving\Rugs\BluePlainRugDeed.cs.bak" />
-    <None Include="Custom\New Crafting Systems\DefWeaving\Rugs\CinnamonFancyRugDeed.cs.bak" />
-    <None Include="Custom\New Crafting Systems\DefWeaving\Rugs\GoldenDecorativeRugDeed.cs.bak" />
-    <None Include="Custom\New Crafting Systems\DefWeaving\Rugs\RedPlainRugDeed.cs.bak" />
-    <None Include="Custom\New Crafting Systems\DefWeaving\SBCarpetWeaver.cs.bak" />
     <None Include="Custom\New Crafting Systems\FireRockCraftVer 3.0 ServUO\FireRockCraftingSystem.rtf" />
     <None Include="Custom\New Crafting Systems\FireRockCraftVer 3.0 ServUO\Items\FireRockCraftingBook.cs.old" />
     <None Include="Custom\New Crafting Systems\Sewing\Magic Clothes.rar" />
@@ -16521,28 +16471,18 @@
     <None Include="Custom\New Systems\OWLTR\Data\Fletcher\bows.cfg" />
     <None Include="Custom\New Systems\OWLTR\Data\Fletcher\cfbbows.cfg" />
     <None Include="Custom\New Systems\OWLTR\Data\Fletcher\crossbows.cfg" />
-    <None Include="Custom\New Systems\OWLTR\New\BodRewards\Smithers Protector.cs.bak" />
-    <None Include="Custom\New Systems\OWLTR\New\BodRewards\Tailors Protector.cs.bak" />
-    <None Include="Custom\New Systems\OWLTR\New\Elementals.cs.bak" />
-    <None Include="Custom\New Systems\OWLTR\New\Resource Helper.cs.bak" />
     <None Include="Custom\Reapers Uploads\Quests\ArrianasQuest\ArrianasQuest.zip" />
     <None Include="Custom\Reapers Uploads\Quests\Quete of Elements english\Gumps\ElementQuestGump.cso" />
     <None Include="Custom\Reapers Uploads\Quests\SwampQueenQuest\Swamp Queen quest.txt.rtf" />
-    <None Include="Custom\Tested\Sexi Vampire\BloodyKatana2.cs.bak" />
     <None Include="Custom\Tested\Vote System\VoteToken.dnc" />
     <None Include="Custom\Town Houses\Read.doc" />
-    <None Include="Custom\Wolvesbane Written\X-Men\StormXmen.cs.bak" />
     <None Include="Custom\Wolvesbane Written\X-Men\Wolverine.rar" />
-    <None Include="Disguises\Persistence.bin" />
-    <None Include="Guilds\Guilds.bin" />
-    <None Include="Guilds\Guilds.idx" />
-    <None Include="Help\Pages.bin" />
-    <None Include="Misc\SphynxFortune\Persistence.bin" />
+    <None Include="LICENSE" />
     <None Include="packages.config" />
-    <None Include="Vita Nex\LICENSE" />
+    <None Include="VERSION" />
+    <None Include="Vita Nex\LICENSE.md" />
     <None Include="Vita Nex\Modules\EquipmentSets\Sets\PlateSet.cs-" />
-    <None Include="Vita Nex\README" />
-    <None Include="Vita Nex\VERSION" />
+    <None Include="Vita Nex\README.md" />
     <None Include="Vita Nex\VNC.cfg" />
   </ItemGroup>
   <ItemGroup>
