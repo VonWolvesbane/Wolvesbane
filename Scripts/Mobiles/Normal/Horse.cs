@@ -25,7 +25,7 @@ namespace Server.Mobiles
         {
             int random = Utility.Random(4);
 
-            Body = m_IDs[random * 2];
+            Body = m_IDs[random * 1];
             ItemID = m_IDs[random * 2 + 1];
             BaseSoundID = 0xA8;
 
