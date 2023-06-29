@@ -197,14 +197,14 @@ namespace Server.Engines.Auction
 					else
 						name = String.Format("#{0}", AuctionItem.LabelNumber.ToString());
 					
-					var message = new NewMaginciaMessage(null, new TextDefinition(1156427), String.Format("{0}\t{1}\t{2}", 
-															name, 
-															CurrentPlatBid.ToString("N0", CultureInfo.GetCultureInfo("en-US")), 
-															CurrentGoldBid.ToString("N0", CultureInfo.GetCultureInfo("en-US"))));
+					//var message = new NewMaginciaMessage(null, new TextDefinition(1156427), String.Format("{0}\t{1}\t{2}", 
+					//										name, 
+					//										CurrentPlatBid.ToString("N0", CultureInfo.GetCultureInfo("en-US")), 
+					//										CurrentGoldBid.ToString("N0", CultureInfo.GetCultureInfo("en-US"))));
 					/*  You have been out bid in an auction for ~1_ITEMNAME~. The current winning bid amount is 
 					 * ~2_BIDAMT~plat and ~3_BIDAMT~gp.*/
-					MaginciaLottoSystem.SendMessageTo(HighestBid.Mobile, message);
-
+					//MaginciaLottoSystem.SendMessageTo(HighestBid.Mobile, message);
+					
                     Account a = HighestBid.Mobile.Account as Account;
 
                     if(a != null)
@@ -296,13 +296,13 @@ namespace Server.Engines.Auction
                 else
                     name = String.Format("#{0}", AuctionItem.LabelNumber.ToString());
 
-                NewMaginciaMessage message = new NewMaginciaMessage(null, new TextDefinition(1156426), TimeSpan.FromHours(24) ,String.Format("{0}\t{1}\t{2}",
-                                                        name,
-                                                        CurrentPlatBid.ToString("N0", CultureInfo.GetCultureInfo("en-US")),
-                                                        CurrentGoldBid.ToString("N0", CultureInfo.GetCultureInfo("en-US"))));
+                //NewMaginciaMessage message = new NewMaginciaMessage(null, new TextDefinition(1156426), TimeSpan.FromHours(24) ,String.Format("{0}\t{1}\t{2}",
+                //                                        name,
+                //                                        CurrentPlatBid.ToString("N0", CultureInfo.GetCultureInfo("en-US")),
+                 //                                       CurrentGoldBid.ToString("N0", CultureInfo.GetCultureInfo("en-US"))));
                 /*  You have won an auction for ~1_ITEMNAME~! Your bid amount of ~2_BIDAMT~plat and ~3_BIDAMT~gp won the auction. 
                  *  You have 3 days from the end of the auction to claim your item or it will be lost.*/
-                MaginciaLottoSystem.SendMessageTo(HighestBid.Mobile, message);
+                //MaginciaLottoSystem.SendMessageTo(HighestBid.Mobile, message);
 
                 Account a = m.Account as Account;
                 Account b = Owner.Account as Account;
@@ -314,13 +314,13 @@ namespace Server.Engines.Auction
                 if (b != null)
                     b.DepositGold(HighestBid.CurrentBid);
 
-                message = new NewMaginciaMessage(null, new TextDefinition(1156428), TimeSpan.FromHours(24), String.Format("{0}\t{1}\t{2}",
-                                                        name,
-                                                        CurrentPlatBid.ToString("N0", CultureInfo.GetCultureInfo("en-US")),
-                                                        CurrentGoldBid.ToString("N0", CultureInfo.GetCultureInfo("en-US"))));
+                //message = new NewMaginciaMessage(null, new TextDefinition(1156428), TimeSpan.FromHours(24), String.Format("{0}\t{1}\t{2}",
+                //                                        name,
+               //                                         CurrentPlatBid.ToString("N0", CultureInfo.GetCultureInfo("en-US")),
+                //                                        CurrentGoldBid.ToString("N0", CultureInfo.GetCultureInfo("en-US"))));
                 /*Your auction for ~1_ITEMNAME~ has ended with a winning bid of ~2_BIDAMT~plat and ~3_BIDAMT~gp. The winning bid has 
                  *been deposited into your currency account.*/
-                MaginciaLottoSystem.SendMessageTo(Owner, message);
+               // MaginciaLottoSystem.SendMessageTo(Owner, message);
 
                 ClaimPeriod = DateTime.UtcNow + TimeSpan.FromDays(3);
             }
@@ -357,12 +357,12 @@ namespace Server.Engines.Auction
                     else
                         name = String.Format("#{0}", item.LabelNumber.ToString());
 
-                    var mes = new NewMaginciaMessage(null, new TextDefinition(1156454), String.Format("{0}\t{1}\t{2}",
-                                                                CurrentPlatBid.ToString("N0", CultureInfo.GetCultureInfo("en-US")),
-                                                                CurrentGoldBid.ToString("N0", CultureInfo.GetCultureInfo("en-US")),
-                                                                name));
+                   // var mes = new NewMaginciaMessage(null, new TextDefinition(1156454), String.Format("{0}\t{1}\t{2}",
+                   //                                             CurrentPlatBid.ToString("N0", CultureInfo.GetCultureInfo("en-US")),
+                   //                                             CurrentGoldBid.ToString("N0", CultureInfo.GetCultureInfo("en-US")),
+                   //                                             name));
                     /*Your winning bid amount of ~1_BIDAMT~plat and ~2_BIDAMT~gp for ~3_ITEMNAME~ has been refunded to you due to house collapse.*/
-                    MaginciaLottoSystem.SendMessageTo(bid.Mobile, mes);
+                  //  MaginciaLottoSystem.SendMessageTo(bid.Mobile, mes);
 
                     Account a = bid.Mobile.Account as Account;
 

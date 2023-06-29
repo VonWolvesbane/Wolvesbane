@@ -2547,12 +2547,12 @@ namespace Server.Multis
             {
                 string name = Sign == null || Sign.Name == null ? "An Unnamed House" : Sign.Name;
 
-                var message = new NewMaginciaMessage(null, new TextDefinition(1154338), String.Format("{0}\t{1}", vendor.ShopName, name));
+               // var message = new NewMaginciaMessage(null, new TextDefinition(1154338), String.Format("{0}\t{1}", vendor.ShopName, name));
                 /* Your rental vendor named ~1_VENDOR~ located in house: ~2_HOUSE~ is in danger of deletion. 
                  * This house has been condemned and you should remove everything on your vendor AS SOON AS 
                  * POSSIBLE or risk possible deletion.*/
 
-                MaginciaLottoSystem.SendMessageTo(vendor.Owner, message);
+               // MaginciaLottoSystem.SendMessageTo(vendor.Owner, message);
             }
         }
 

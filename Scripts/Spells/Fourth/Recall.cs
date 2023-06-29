@@ -260,7 +260,7 @@ namespace Server.Spells.Fourth
                 }
                 #endregion
 
-                #region New Magincia
+               /*#region New Magincia
                 else if (o is Server.Engines.NewMagincia.WritOfLease)
                 {
                     Server.Engines.NewMagincia.WritOfLease lease = (Server.Engines.NewMagincia.WritOfLease)o;
@@ -271,7 +271,7 @@ namespace Server.Spells.Fourth
                         from.Send(new MessageLocalized(from.Serial, from.Body, MessageType.Regular, 0x3B2, 3, 502357, from.Name, "")); // I can not recall from that object.
                 }
                 #endregion
-
+			   */
                 else
                 {
                     from.Send(new MessageLocalized(from.Serial, from.Body, MessageType.Regular, 0x3B2, 3, 502357, from.Name, "")); // I can not recall from that object.

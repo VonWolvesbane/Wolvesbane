@@ -542,7 +542,7 @@ namespace Server.Gumps
                 case 119:
                     return WeakEntityCollection.HasCollection("newshame");
                 case 120:
-                    return Server.Engines.NewMagincia.MaginciaBazaar.Instance != null;
+                    //return Server.Engines.NewMagincia.MaginciaBazaar.Instance != null;
                 case 121:
                     return WeakEntityCollection.HasCollection("highseas") || CharydbisSpawner.SpawnInstance != null;
                 case 122:

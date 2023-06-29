@@ -28,7 +28,7 @@ namespace Server.Engines.NewMagincia
 
             from.SendMessage("Generating New Magincia Bazaar System...");
 
-            if (MaginciaBazaar.Instance == null)
+            /*if (MaginciaBazaar.Instance == null)
             {
                 MaginciaBazaar.Instance = new MaginciaBazaar();
                 MaginciaBazaar.Instance.MoveToWorld(new Point3D(3729, 2058, 5), Map.Trammel);
@@ -38,7 +38,7 @@ namespace Server.Engines.NewMagincia
                 Console.WriteLine("Magincia Bazaar System already exists!");
 
             Console.WriteLine("Generating New Magincia Housing Lotty System..");
-
+			
             if (MaginciaLottoSystem.Instance == null)
             {
                 MaginciaLottoSystem.Instance = new MaginciaLottoSystem();
@@ -48,14 +48,14 @@ namespace Server.Engines.NewMagincia
             }
             else
                 Console.WriteLine("Magincia Housing Lotto System already exists!");
-        }
+        */}
 
         public static void ViewLottos_OnCommand(CommandEventArgs e)
         {
             if (e.Mobile.AccessLevel > AccessLevel.Player)
             {
-                e.Mobile.CloseGump(typeof(LottoTrackingGump));
-                e.Mobile.SendGump(new LottoTrackingGump());
+                //e.Mobile.CloseGump(typeof(LottoTrackingGump));
+                //e.Mobile.SendGump(new LottoTrackingGump());
             }
         }
     }

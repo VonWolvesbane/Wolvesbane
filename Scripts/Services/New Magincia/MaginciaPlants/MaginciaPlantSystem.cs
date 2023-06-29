@@ -166,13 +166,13 @@ namespace Server.Engines.Plants
                     return false;
             }
 
-            foreach (Rectangle2D rec in MaginciaLottoSystem.MagHousingZones)
+           /* foreach (Rectangle2D rec in MaginciaLottoSystem.MagHousingZones)
             {
                 Rectangle2D newRec = new Rectangle2D(rec.X - 2, rec.Y - 2, rec.Width + 4, rec.Height + 7);
 
                 if (newRec.Contains(p))
                     return false;
-            }
+            }*/
 
             return true;
         }
