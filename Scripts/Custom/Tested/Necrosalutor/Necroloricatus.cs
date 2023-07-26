@@ -172,6 +172,12 @@ namespace Server.Mobiles
 
 		public void ExplosionDamage(EffectInfo info)
 		{
+			// don't do more than one round of damage per tile for fx with multiple effects per tile
+			if (info.ProcessIndex > 0)
+			{
+				return;
+			}
+
 			Effects.PlaySound(info.Source, info.Map, 777);
 
 			foreach (var m in info.Source.FindPlayersInRange(info.Map, 0))
