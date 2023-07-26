@@ -159,13 +159,13 @@ namespace Server.Mobiles
 					case 5: new AirExplodeEffect(target, target.Map, 5, effectHandler: ExplosionDamage).Send(); break;
 					case 6: new PoisonExplodeEffect(target, target.Map, 5, effectHandler: ExplosionDamage).Send(); break;
 					case 7: new FirePentagramEffect(target, target.Map, 5, effectHandler: ExplosionDamage).Send(); break;
-					case 8: new WaterWaveEffect(target, target.Map, target.Direction, 5, effectHandler: ExplosionDamage).Send(); break;
-					case 9: new FireWaveEffect(target, target.Map, target.Direction, 5, effectHandler: ExplosionDamage).Send(); break;
-					case 10: new EarthWaveEffect(target, target.Map, target.Direction, 5, effectHandler: ExplosionDamage).Send(); break;
-					case 11: new AirWaveEffect(target, target.Map, target.Direction, 5, effectHandler: ExplosionDamage).Send(); break;
-					case 12: new EnergyWaveEffect(target, target.Map, target.Direction, 5, effectHandler: ExplosionDamage).Send(); break;
-					case 13: new PoisonWaveEffect(target, target.Map, target.Direction, 5, effectHandler: ExplosionDamage).Send(); break;
-					case 14: new TornadoEffect(target, target.Map, target.Direction, 5, effectHandler: ExplosionDamage).Send(); break;
+					case 8: new WaterWaveEffect(target, target.Map, GetDirectionTo(target), 5, effectHandler: ExplosionDamage).Send(); break;
+					case 9: new FireWaveEffect(target, target.Map, GetDirectionTo(target), 5, effectHandler: ExplosionDamage).Send(); break;
+					case 10: new EarthWaveEffect(target, target.Map, GetDirectionTo(target), 5, effectHandler: ExplosionDamage).Send(); break;
+					case 11: new AirWaveEffect(target, target.Map, GetDirectionTo(target), 5, effectHandler: ExplosionDamage).Send(); break;
+					case 12: new EnergyWaveEffect(target, target.Map, GetDirectionTo(target), 5, effectHandler: ExplosionDamage).Send(); break;
+					case 13: new PoisonWaveEffect(target, target.Map, GetDirectionTo(target), 5, effectHandler: ExplosionDamage).Send(); break;
+					case 14: new TornadoEffect(target, target.Map, GetDirectionTo(target), 5, effectHandler: ExplosionDamage).Send(); break;
 				}
 			}
 		}
