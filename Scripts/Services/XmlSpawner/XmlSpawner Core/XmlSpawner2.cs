@@ -155,7 +155,7 @@ namespace Server.Mobiles
 		public static int seccount;
 
 		// sector hashtable for each map
-		private static Dictionary<Sector, List<XmlSpawner>>[] GlobalSectorTable = new Dictionary<Sector, List<XmlSpawner>>[6];
+		private static readonly Dictionary<Map, Dictionary<Sector, HashSet<XmlSpawner>>> GlobalSectorTable = new Dictionary<Map, Dictionary<Sector, HashSet<XmlSpawner>>>();
 
 		#endregion
 
@@ -281,7 +281,7 @@ namespace Server.Mobiles
 
 		private bool inrespawn = false;
 
-		private List<Sector> sectorList = null;
+		private HashSet<Sector> sectorList = null;
 
 		private bool m_DisableGlobalAutoReset;
 
@@ -530,7 +530,7 @@ namespace Server.Mobiles
 				if (sectorList == null)
 				{
 					Point3D loc = this.Location;
-					sectorList = new List<Sector>();
+					sectorList = new HashSet<Sector>();
 
 					// is this container held?
 					if (Parent != null)
@@ -560,49 +560,12 @@ namespace Server.Mobiles
 							if (s == null) continue;
 
 							// dont add any redundant sectors
-							bool duplicate = false;
-							foreach (Sector olds in sectorList)
+							if (sectorList.Add(s))
 							{
-								if (olds == s)
-								{
-									duplicate = true;
-									break;
-								}
-							}
-							if (!duplicate)
-							{
-								sectorList.Add(s);
-
-								if (GlobalSectorTable[Map.MapID] == null)
-								{
-									GlobalSectorTable[Map.MapID] = new Dictionary<Sector, List<XmlSpawner>>();
-								}
-
 								// add this sector and the spawner associated with it to the global sector table
-								List<XmlSpawner> spawnerlist;
-								if (GlobalSectorTable[Map.MapID].TryGetValue(s, out spawnerlist))//.Contains(s))
+								if (AcquireSectorTable(s, out var spawnerlist))
 								{
-									//List<XmlSpawner> spawnerlist = GlobalSectorTable[Map.MapID][s];
-									if (spawnerlist == null)
-									{
-										//GlobalSectorTable[Map.MapID].Remove(s);
-										spawnerlist = new List<XmlSpawner>();
-										//GlobalSectorTable[Map.MapID].Add(s, spawnerlist);
-										GlobalSectorTable[Map.MapID][s] = spawnerlist;
-									}
-
-									if (!spawnerlist.Contains(this))
-									{
-										spawnerlist.Add(this);
-
-									}
-								}
-								else
-								{
-									spawnerlist = new List<XmlSpawner>();
-									spawnerlist.Add(this);
-									// add a new entry to the table
-									GlobalSectorTable[Map.MapID][s] = spawnerlist;
+									_ = spawnerlist.Add(this);
 								}
 
 								totalSectorsMonitored++;
@@ -2359,20 +2322,105 @@ namespace Server.Mobiles
 			}
 		}
 
-		private static void RemoveFromSectorTable(Sector s, XmlSpawner spawner)
+		private static bool AcquireSectorTable(Sector s, out HashSet<XmlSpawner> spawnerlist)
 		{
-			if (s == null || s.Owner == null || s.Owner == Map.Internal || GlobalSectorTable[s.Owner.MapID] == null) return;
+			spawnerlist = null;
 
-			// find the sector
-			List<XmlSpawner> spawnerlist;
-			if (GlobalSectorTable[s.Owner.MapID].TryGetValue(s, out spawnerlist) && spawnerlist!=null)
+			if (s == null || s.Owner == null || s.Owner == Map.Internal)
 			{
-				//List<XmlSpawner> spawnerlist = GlobalSectorTable[s.Owner.MapID][s];
-				if (spawnerlist.Contains(spawner))
-				{
-					spawnerlist.Remove(spawner);
-				}
+				return false;
 			}
+
+			if (!GlobalSectorTable.TryGetValue(s.Owner, out var cache) || cache == null)
+			{
+				GlobalSectorTable[s.Owner] = cache = new Dictionary<Sector, HashSet<XmlSpawner>>();
+			}
+
+			if (!cache.TryGetValue(s, out spawnerlist) || spawnerlist == null)
+			{
+				cache[s] = spawnerlist = new HashSet<XmlSpawner>();
+			}
+
+			return true;
+		}
+
+		private static bool GetSectorTable(Sector s, out HashSet<XmlSpawner> spawnerlist)
+		{
+			spawnerlist = null;
+
+			if (s == null || s.Owner == null || s.Owner == Map.Internal)
+			{
+				return false;
+			}
+
+			if (!GlobalSectorTable.TryGetValue(s.Owner, out var cache))
+			{
+				return false;
+			}
+
+			if (cache == null || cache.Count == 0)
+			{
+				_ = GlobalSectorTable.Remove(s.Owner);
+				return false;
+			}
+
+			if (!cache.TryGetValue(s, out spawnerlist))
+			{
+				return false;
+			}
+
+			if (spawnerlist == null || spawnerlist.Count == 0)
+			{
+				_ = cache.Remove(s);
+				return false;
+			}
+
+			return true;
+		}
+
+		private static bool RemoveFromSectorTable(Sector s, XmlSpawner spawner)
+		{
+			if (s == null || s.Owner == null || s.Owner == Map.Internal)
+			{
+				return false;
+			}
+
+			if (!GlobalSectorTable.TryGetValue(s.Owner, out var cache))
+			{
+				return false;
+			}
+
+			if (cache == null || cache.Count == 0)
+			{
+				return GlobalSectorTable.Remove(s.Owner);
+			}
+
+			if (!cache.TryGetValue(s, out var spawnerlist))
+			{
+				return false;
+			}
+
+			if (spawnerlist == null || spawnerlist.Count == 0)
+			{
+				return cache.Remove(s);
+			}
+
+			if (!spawnerlist.Remove(spawner))
+			{
+				return false;
+			}
+
+			if (spawnerlist.Count == 0)
+			{
+				_ = cache.Remove(s);
+			}
+
+			if (cache.Count == 0)
+			{
+				_ = GlobalSectorTable.Remove(s.Owner);
+			}
+
+			return true;
 		}
 
 		private void ResetSectorList()
@@ -2380,19 +2428,17 @@ namespace Server.Mobiles
 			// remove the global sector entries
 			if (sectorList != null)
 			{
-				foreach (Sector s in sectorList)
+				foreach (var s in sectorList)
 				{
-					RemoveFromSectorTable(s, this);
-
+					_ = RemoveFromSectorTable(s, this);
 				}
 			}
+
 			sectorList = null;
 			UseSectorActivate = false;
 
-			//IsInactivated = false;
-
 			// force an update of the sector list
-			bool sectorrefresh = HasActiveSectors;
+			_ = HasActiveSectors;
 		}
 
 		public void LoadXmlConfig(string filename)
@@ -11399,19 +11445,13 @@ public static void _TraceEnd(int index)
 							{
 								Sector s = m.Map.GetSector(m.Location);
 
-								if (s != null && GlobalSectorTable[m.Map.MapID] != null)
+								if (GetSectorTable(s, out var spawnerlist))
 								{
-
-									List<XmlSpawner> spawnerlist;// = GlobalSectorTable[m.Map.MapID][s];
-									if (GlobalSectorTable[m.Map.MapID].TryGetValue(s, out spawnerlist) && spawnerlist != null)
+									foreach (XmlSpawner spawner in spawnerlist)
 									{
-										foreach (XmlSpawner spawner in spawnerlist)
+										if (spawner != null && !spawner.Deleted && spawner.Running && spawner.SmartSpawning && spawner.IsInactivated)
 										{
-
-											if (spawner != null && !spawner.Deleted && spawner.Running && spawner.SmartSpawning && spawner.IsInactivated)
-											{
-												spawner.SmartRespawn();
-											}
+											spawner.SmartRespawn();
 										}
 									}
 								}
