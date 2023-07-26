@@ -207,17 +207,18 @@ namespace Server.Invasions
 					y += 20;
 					h -= 20;
 
-					var range = GetListRange();
+					var count = EntriesPerPage;
+					var index = Page * count;
+
+					var range = EnumerateListRange(index, count);
 
 					foreach (var o in range)
 					{
-						CompileEntryLayout(o.Key, x, y, w, 30, o.Value);
+						CompileEntryLayout(index++, x, y, w, 30, o);
 
 						y += 30;
 						h -= 30;
 					}
-
-					range.Clear();
 
 					y += h - 30;
 					h = 30;
