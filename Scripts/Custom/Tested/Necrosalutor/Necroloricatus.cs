@@ -1,18 +1,16 @@
-﻿using System;
-using Server;
+﻿using Server.Items;
 
-using Server.Items;
-using System.Collections; // needed for ArrayList
-using System.Collections.Generic;
 using VitaNex.FX;
-using System.Linq;
 
 namespace Server.Mobiles
 {
 	[CorpseName("Corpse Of The Necroloricatus")]
 	public class Necroloricatus : BaseCreature
 	{
-		public override bool ShowFameTitle { get { return false; } }
+		public override bool ShowFameTitle => false;
+
+		public override bool AlwaysAttackable => true;
+		public override bool AlwaysMurderer => true;
 
 		[Constructable]
 		public Necroloricatus() : base(AIType.AI_Necro, FightMode.Closest, 10, 1, 0.2, 0.4)
@@ -22,8 +20,16 @@ namespace Server.Mobiles
 
 			Body = 400;
 			Hue = 0;
+
 			BaseSoundID = 1072;
-			
+
+			HairItemID = 8265;
+
+			Fame = 25000;
+			Karma = -25000;
+
+			VirtualArmor = 40;
+
 			SetStr(300, 500);
 			SetDex(500, 500);
 			SetInt(200, 250);
@@ -53,63 +59,66 @@ namespace Server.Mobiles
 			SetSkill(SkillName.SpiritSpeak, 195.0, 250.0);
 			SetSkill(SkillName.DetectHidden, 195.0, 250.0);
 
-			Fame = 25000;
-			Karma = -25000;
-
-			VirtualArmor = 40;
-
-
 			AddItem(new HoodedShroudOfShadows(1579));
 
-			NecroloricatusShirt shirt = new NecroloricatusShirt();
-			shirt.Movable = false;
-			AddItem(shirt);
+			AddItem(new NecroloricatusShirt
+			{
+				Movable = false
+			});
 
-			NecroloricatusGloves gloves = new NecroloricatusGloves();
-			gloves.Movable = false;
-			AddItem(gloves);
+			AddItem(new NecroloricatusGloves
+			{
+				Movable = false
+			});
 
-			NecroloricatusCap head = new NecroloricatusCap();
-			head.Movable = false;
-			AddItem(head);
+			AddItem(new NecroloricatusCap
+			{
+				Movable = false
+			});
 
-			NecroloricatusBoots Boots = new NecroloricatusBoots();
-			Boots.Movable = false;
-			AddItem(Boots);
+			AddItem(new NecroloricatusBoots
+			{
+				Movable = false
+			});
 
-			NecroloricatusPants pants = new NecroloricatusPants();
-			pants.Movable = false;
-			AddItem(pants);
+			AddItem(new NecroloricatusPants
+			{
+				Movable = false
+			});
+			/*
+			AddItem(new NecroloricatusNecklace
+			{
+				Movable = false
+			});
+			*/
+			AddItem(new Necroacidus
+			{
+				Movable = false
+			});
 
-
-			//NecroloricatusNecklace Gorget = new NecroloricatusNecklace();
-			//Gorget.Movable = false;
-			//AddItem(Gorget);
-
-			Necroacidus Weapon = new Necroacidus();
-			Weapon.Movable = false;
-			AddItem(Weapon);
-						
-
-			PackGold(400, 600);
-
-			Item hair = new Item(Utility.RandomList(8265));
-			hair.Hue = 1153;
-			hair.Layer = Layer.Hair;
-			hair.Movable = false;
-			AddItem(hair);
 			switch (Utility.Random(2))
 			{
 				case 0: new Nightmare().Rider = this; break;
 				case 1: new SkeletalMount().Rider = this; break;
 			}
 
+			PackGold(400, 600);
 		}
 
-
+		public override void GenerateLoot()
+		{
+			AddLoot(LootPack.Rich, 2);
+		}
 
 		public override void OnDeath(Container c)
 		{
+			base.OnDeath(c);
+
+			if (c?.Deleted != false)
+			{
+				return;
+			}
+
 			switch (Utility.Random(30))
 			{
 				case 0: c.DropItem(new Necroacidus()); break;
@@ -119,114 +128,6 @@ namespace Server.Mobiles
 				case 4: c.DropItem(new NecroloricatusNecklace()); break;
 				case 5: c.DropItem(new NecroloricatusPants()); break;
 				case 6: c.DropItem(new NecroloricatusShirt()); break;
-				
-				
-			}
-
-
-			base.OnDeath(c);
-
-		}
-
-		public override bool AlwaysAttackable { get { return true; } }
-		public override bool AlwaysMurderer { get { return true; } }
-
-		public override void GenerateLoot()
-		{
-			AddLoot(LootPack.Rich, 2);
-		}
-
-		public void DoSpecialAbility(Mobile target)
-		{
-
-			if (0.01 >= Utility.RandomDouble())
-			{
-				new FireExplodeEffect(target, target.Map, 5, effectHandler: ExplosionDamage).Send();
-				base.OnGotMeleeAttack(target);
-			}
-
-			if (0.01 >= Utility.RandomDouble())
-			{
-				new EnergyExplodeEffect(target, target.Map, 5, effectHandler: ExplosionDamage).Send();
-				base.OnDamagedBySpell(target);
-			}
-
-			if (0.01 >= Utility.RandomDouble())
-			{
-				new SmokeExplodeEffect(target, target.Map, 5, effectHandler: ExplosionDamage).Send();
-				base.OnGotMeleeAttack(target);
-			}
-
-			if (0.01 >= Utility.RandomDouble())
-			{
-				new WaterRippleEffect(target, target.Map, 5, effectHandler: ExplosionDamage).Send();
-				base.OnDamagedBySpell(target);
-			}
-
-			if (0.01 >= Utility.RandomDouble())
-			{
-				new EarthExplodeEffect(target, target.Map, 5, effectHandler: ExplosionDamage).Send();
-				base.OnGotMeleeAttack(target);
-			}
-
-			if (0.01 >= Utility.RandomDouble())
-			{
-				new AirExplodeEffect(target, target.Map, 5, effectHandler: ExplosionDamage).Send();
-				base.OnDamagedBySpell(target);
-			}
-
-			if (0.01 >= Utility.RandomDouble())
-			{
-				new PoisonExplodeEffect(target, target.Map, 5, effectHandler: ExplosionDamage).Send();
-				base.OnDamagedBySpell(target);
-			}
-
-			if (0.01 >= Utility.RandomDouble())
-			{
-				new FirePentagramEffect(target, target.Map, 5, effectHandler: ExplosionDamage).Send();
-				base.OnGotMeleeAttack(target);
-			}
-
-			if (0.01 >= Utility.RandomDouble())
-			{
-				new WaterWaveEffect(target, target.Map, target.Direction, 5, effectHandler: ExplosionDamage).Send();
-				base.OnGotMeleeAttack(target);
-			}
-
-			if (0.01 >= Utility.RandomDouble())
-			{
-				new FireWaveEffect(target, target.Map, target.Direction, 5, effectHandler: ExplosionDamage).Send();
-				base.OnDamagedBySpell(target);
-			}
-
-			if (0.01 >= Utility.RandomDouble())
-			{
-				new EarthWaveEffect(target, target.Map, target.Direction, 5, effectHandler: ExplosionDamage).Send();
-				base.OnGotMeleeAttack(target);
-			}
-
-			if (0.01 >= Utility.RandomDouble())
-			{
-				new AirWaveEffect(target, target.Map, target.Direction, 5, effectHandler: ExplosionDamage).Send();
-				base.OnGotMeleeAttack(target);
-			}
-
-			if (0.01 >= Utility.RandomDouble())
-			{
-				new EnergyWaveEffect(target, target.Map, target.Direction, 5, effectHandler: ExplosionDamage).Send();
-				base.OnDamagedBySpell(target);
-			}
-
-			if (0.01 >= Utility.RandomDouble())
-			{
-				new PoisonWaveEffect(target, target.Map, target.Direction, 5, effectHandler: ExplosionDamage).Send();
-				base.OnGotMeleeAttack(target);
-			}
-
-			if (0.01 >= Utility.RandomDouble())
-			{
-				new TornadoEffect(target, target.Map, target.Direction, 5, effectHandler: ExplosionDamage).Send();
-				base.OnDamagedBySpell(target);
 			}
 		}
 
@@ -237,8 +138,6 @@ namespace Server.Mobiles
 			DoSpecialAbility(from);
 		}
 
-
-
 		public override void OnGotMeleeAttack(Mobile from)
 		{
 			base.OnGotMeleeAttack(from);
@@ -246,29 +145,45 @@ namespace Server.Mobiles
 			DoSpecialAbility(from);
 		}
 
-		public virtual void ExplosionDamage(EffectInfo info)
+		public void DoSpecialAbility(Mobile target)
 		{
-			ArrayList list = new ArrayList();
-			Effects.PlaySound(info.Source.Location, info.Map, 777);
-
-			foreach (Mobile m in
-				info.Source.Location.GetMobilesInRange(info.Map, 0)
-					.Where(m => m != null && !m.Deleted && m.CanBeHarmful(m, false, true)))
+			if (Utility.RandomDouble() <= 0.01)
 			{
-				if (m == this || !CanBeHarmful(m))
-					continue;
-
-				if (m.Player)
-					list.Add(m);
-			}
-			foreach (Mobile m in list)
-			{
-				DoHarmful(m);
-				int toExplode = Utility.RandomMinMax(30, 40);
-				m.Damage(toExplode, this);
+				switch (Utility.Random(15))
+				{
+					case 0: new FireExplodeEffect(target, target.Map, 5, effectHandler: ExplosionDamage).Send(); break;
+					case 1: new EnergyExplodeEffect(target, target.Map, 5, effectHandler: ExplosionDamage).Send(); break;
+					case 2: new SmokeExplodeEffect(target, target.Map, 5, effectHandler: ExplosionDamage).Send(); break;
+					case 3: new WaterRippleEffect(target, target.Map, 5, effectHandler: ExplosionDamage).Send(); break;
+					case 4: new EarthExplodeEffect(target, target.Map, 5, effectHandler: ExplosionDamage).Send(); break;
+					case 5: new AirExplodeEffect(target, target.Map, 5, effectHandler: ExplosionDamage).Send(); break;
+					case 6: new PoisonExplodeEffect(target, target.Map, 5, effectHandler: ExplosionDamage).Send(); break;
+					case 7: new FirePentagramEffect(target, target.Map, 5, effectHandler: ExplosionDamage).Send(); break;
+					case 8: new WaterWaveEffect(target, target.Map, target.Direction, 5, effectHandler: ExplosionDamage).Send(); break;
+					case 9: new FireWaveEffect(target, target.Map, target.Direction, 5, effectHandler: ExplosionDamage).Send(); break;
+					case 10: new EarthWaveEffect(target, target.Map, target.Direction, 5, effectHandler: ExplosionDamage).Send(); break;
+					case 11: new AirWaveEffect(target, target.Map, target.Direction, 5, effectHandler: ExplosionDamage).Send(); break;
+					case 12: new EnergyWaveEffect(target, target.Map, target.Direction, 5, effectHandler: ExplosionDamage).Send(); break;
+					case 13: new PoisonWaveEffect(target, target.Map, target.Direction, 5, effectHandler: ExplosionDamage).Send(); break;
+					case 14: new TornadoEffect(target, target.Map, target.Direction, 5, effectHandler: ExplosionDamage).Send(); break;
+				}
 			}
 		}
 
+		public void ExplosionDamage(EffectInfo info)
+		{
+			Effects.PlaySound(info.Source, info.Map, 777);
+
+			foreach (var m in info.Source.FindPlayersInRange(info.Map, 0))
+			{
+				if (CanBeHarmful(m, false, true))
+				{
+					DoHarmful(m);
+
+					_ = m.Damage(Utility.RandomMinMax(30, 40), this);
+				}
+			}
+		}
 
 		public Necroloricatus(Serial serial) : base(serial)
 		{
@@ -277,14 +192,15 @@ namespace Server.Mobiles
 		public override void Serialize(GenericWriter writer)
 		{
 			base.Serialize(writer);
-			writer.Write((int)0);
+
+			writer.Write(0);
 		}
 
 		public override void Deserialize(GenericReader reader)
 		{
 			base.Deserialize(reader);
-			int version = reader.ReadInt();
 
+			_ = reader.ReadInt();
 		}
 	}
 }
