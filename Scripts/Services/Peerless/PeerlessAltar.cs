@@ -580,11 +580,22 @@ namespace Server.Items
 
             StopSlayTimer();
 
+                
+            List<MAsterKey> copykeys = new List<MasterKey>(MasterKeys);
+
+   
+            copykeys.ForEach(x => x.Delete());
+
+    
+             MasterKeys.Clear();
+/*
+//Old Code
             // delete master keys				
             MasterKeys.ForEach(x => x.Delete());
 
             MasterKeys.Clear();
-
+//Old Code End
+*/
             m_DeadlineTimer = Timer.DelayCall(DelayAfterBossSlain, new TimerCallback(FinishSequence));
         }
 
