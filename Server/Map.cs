@@ -408,7 +408,8 @@ namespace Server
 		public static Map Malas { get { return m_Maps[3]; } }
 		public static Map Tokuno { get { return m_Maps[4]; } }
 		public static Map TerMur { get { return m_Maps[5]; } }
-        public static Map Wolvesbane { get { return m_Maps[250]; } }
+		public static Map NewWolvesbane { get { return m_Maps[56]; } }
+		public static Map Wolvesbane { get { return m_Maps[250]; } }
         public static Map Holiday { get { return m_Maps[251]; } }
         public static Map Event { get { return m_Maps[252]; } }
         public static Map Internal { get { return m_Maps[0x7F]; } }
