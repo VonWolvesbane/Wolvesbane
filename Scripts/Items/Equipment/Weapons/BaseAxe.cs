@@ -62,15 +62,15 @@ namespace Server.Items
             }
         }
 
-        public virtual HarvestSystem HarvestSystem
-        {
-            get
-            {
-                return Lumberjacking.System;
-            }
-        }
+		public virtual HarvestSystem HarvestSystem
+		{
+			get
+			{
+				return UltimaLiveLumberjacking.System;
+			}
+		}
 
-        public override void OnDoubleClick(Mobile from)
+		public override void OnDoubleClick(Mobile from)
         {
             if (HarvestSystem == null || Deleted)
                 return;
