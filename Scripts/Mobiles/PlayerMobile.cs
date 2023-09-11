@@ -2388,12 +2388,6 @@ namespace Server.Mobiles
 			{
 				RecheckTownProtection();
 			}
-			/* Begin UltimaLive Mod */
-			if (BlockQuery != null)
-			{
-				m_PreviousMapBlock = BlockQuery.QueryMobile(this, m_PreviousMapBlock);
-			}
-			/* End UltimaLive Mod */
 		}
 
 		public override void GetContextMenuEntries(Mobile from, List<ContextMenuEntry> list)
@@ -3578,13 +3572,8 @@ namespace Server.Mobiles
 		}
 
 		protected override void OnMapChange(Map oldMap)
-		{  /* Begin UltimaLive Mod */
-			if (BlockQuery != null)
-			{
-				m_PreviousMapBlock = BlockQuery.QueryMobile(this, m_PreviousMapBlock);
-			}
-			/* End UltimaLive Mod */
-			ViceVsVirtueSystem.OnMapChange(this);
+		{
+            ViceVsVirtueSystem.OnMapChange(this);
 
             if (NetState != null && NetState.IsEnhancedClient)
             {

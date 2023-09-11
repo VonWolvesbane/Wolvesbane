@@ -52,16 +52,16 @@ namespace Server.Items
                 return WeaponAnimation.Slash2H;
             }
         }
-
-		public virtual HarvestSystem HarvestSystem
-		{
-			get
-			{
-				return UltimaLiveLumberjacking.System;
-			}
-		}
-
-		public override void OnDoubleClick(Mobile from)
+        
+        public virtual HarvestSystem HarvestSystem
+        {
+            get
+            {
+                return Lumberjacking.System;
+            }
+        }
+       
+        public override void OnDoubleClick(Mobile from)
         {
             if (this.HarvestSystem == null)
                 return;
