@@ -27,20 +27,20 @@ namespace Xanthos.Evo
 			m_PercentFemaleChance = .20;
 			m_GuardianEggOrDeedChance = .01;
 			m_AlwaysHappy = true;
-			m_ProducesYoung = false;
+			m_ProducesYoung = true;
 			m_AbsoluteStatValues = false;
 			m_PackSpecialItemChance = 0.10;
-			m_MaxEvoResistance = 90;
+			m_MaxEvoResistance = 125;
 			m_MaxTrainingStage = 6;
 			m_ArtifactStage = m_MaxTrainingStage;
 			m_CraftedWeaponStage = m_ArtifactStage - 1;
 			m_CanAttackPlayers = false;
 
-			m_Skills = new SkillName[10] {	SkillName.Swords, SkillName.Macing, SkillName.Fencing,
+			m_Skills = new SkillName[11] {	SkillName.Swords, SkillName.Macing, SkillName.Fencing,
 											SkillName.Tactics, SkillName.Wrestling, SkillName.Parry,
-											SkillName.Anatomy, SkillName.MagicResist, SkillName.Healing, SkillName.Chivalry };
-			m_MinSkillValues = new int[10] { 10, 10, 10, 10, 10, 10, 10, 10, 10, 10 };
-			m_MaxSkillValues = new int[10] { 120, 120, 120, 120, 120, 120, 120, 120, 120, 120 };
+											SkillName.Anatomy, SkillName.MagicResist, SkillName.Healing, SkillName.Chivalry, SkillName.Archery };
+			m_MinSkillValues = new int[11] { 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10 };
+			m_MaxSkillValues = new int[11] { 120, 120, 120, 120, 120, 120, 120, 120, 120, 120, 120 };
 
 			m_Stages = new BaseEvoStage[] { new MercenaryStageZero(), new MercenaryStageOne(), new MercenaryStageTwo(),
 											new MercenaryStageThree(), new MercenaryStageFour(), new MercenaryStageFive(),
@@ -194,9 +194,10 @@ namespace Xanthos.Evo
 			EvolutionMessage = "has proven to be a loyal protector and friend!";
 			NextEpThreshold = 15000001; EpMinDivisor = 800; EpMaxDivisor = 700;
 			VirtualArmor = 45;
+			
 		
 			DamageMin = 10; DamageMax = 20; HitsMin= 250; HitsMax = 500;
-			StrMin = 150; StrMax = 200; DexMin = 35; DexMax = 40; IntMin = 100; IntMax = 200;
+			StrMin = 150; StrMax = 200; DexMin = 35; DexMax = 40; IntMin = 100; IntMax = 200; 
 		}
 	}
 }

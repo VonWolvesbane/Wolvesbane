@@ -148,25 +148,25 @@ namespace Server
 		public static readonly int NormalMANA = 15000;
 
 		//Normal Creatures Min Damage Cap
-		public static readonly int NormalMinDam = 45;
+		public static readonly int NormalMinDam = 345;
 
 		//Normal Creatures Max Damage Cap
-		public static readonly int NormalMaxDam = 55;
+		public static readonly int NormalMaxDam = 555;
 
 		//Normal Creatures PhysResist Cap
-		public static readonly int NormalPhys = 90;
+		public static readonly int NormalPhys = 100;
 
 		//Normal Creatures PhysFire Cap
-		public static readonly int NormalFire = 90;
+		public static readonly int NormalFire = 100;
 
 		//Normal Creatures PhysCold Cap
-		public static readonly int NormalCold = 90;
+		public static readonly int NormalCold = 100;
 
 		//Normal Creatures PhysEnergy Cap
-		public static readonly int NormalEnergy = 90;
+		public static readonly int NormalEnergy = 100;
 
 		//Normal Creatures PhysPoison Cap
-		public static readonly int NormalPoison = 90;
+		public static readonly int NormalPoison = 100;
 
 		//Normal Creatures V Armor Cap
 		public static readonly int NormalVArmor = 75;
@@ -199,25 +199,25 @@ namespace Server
 		public static readonly int BioMANA = 25000;
 
 		//Bio Creatures Min Damage Cap
-		public static readonly int BioMinDam = 145;
+		public static readonly int BioMinDam = 445;
 
 		//Bio Creatures Max Damage Cap
-		public static readonly int BioMaxDam = 355;
+		public static readonly int BioMaxDam = 655;
 
 		//Bio Creatures PhysResist Cap
-		public static readonly int BioPhys = 90;
+		public static readonly int BioPhys = 100;
 
 		//Bio Creatures PhysFire Cap
-		public static readonly int BioFire = 90;
+		public static readonly int BioFire = 100;
 
 		//Bio Creatures PhysCold Cap
-		public static readonly int BioCold = 90;
+		public static readonly int BioCold = 100;
 
 		//Bio Creatures PhysEnergy Cap
-		public static readonly int BioEnergy = 90;
+		public static readonly int BioEnergy = 100;
 
 		//Bio Creatures PhysPoison Cap
-		public static readonly int BioPoison = 95;
+		public static readonly int BioPoison = 105;
 
 		//Bio Creatures V Armor Cap
 		public static readonly int BioVArmor = 75;

@@ -23,8 +23,8 @@ namespace Xanthos.Evo
 			m_MinTamingToHatch = 0;
 			m_PercentFemaleChance = .20;
 			m_GuardianEggOrDeedChance = .01;
-			m_AlwaysHappy = false;
-			m_ProducesYoung = false;
+			m_AlwaysHappy = true;
+			m_ProducesYoung = true;
 			m_AbsoluteStatValues = false;
 			m_PackSpecialItemChance = 0.02;
 			m_MaxEvoResistance = 125;
