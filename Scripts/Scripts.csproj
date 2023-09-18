@@ -1091,7 +1091,6 @@
     <Compile Include="Custom\EVO System\Mercenary\MercenaryGumps.cs" />
     <Compile Include="Custom\EVO System\Mercenary\MercenarySpec.cs" />
     <Compile Include="Custom\EVO System\Mercenary\UberMercenarySpec.cs" />
-    <Compile Include="Custom\EVO System\TrainingElemental.cs" />
     <Compile Include="Custom\EVO System\TrainingElementalDeed.cs" />
     <Compile Include="Custom\EVO System\TrainingElementalSpawner.cs" />
     <Compile Include="Custom\EVO System\Utilities\ConfigParser.cs" />
