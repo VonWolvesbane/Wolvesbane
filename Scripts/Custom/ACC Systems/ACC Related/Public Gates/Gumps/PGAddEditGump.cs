@@ -134,9 +134,12 @@ namespace Server.ACC.PG
 				AddLabel( 685, 365, 0, "TerMur" );
 				AddRadio( 655, 370, 208, 209, (Map == Map.TerMur ? true : false), 20 );
 
-                AddLabel(685, 300, 0, "Wolvesbane");
-                AddRadio(655, 300, 208, 209, (Map == Map.Wolvesbane ? true : false), 25);
-            }
+                AddLabel(685, 290, 0, "Wolvesbane");
+                AddRadio(655, 290, 208, 209, (Map == Map.Wolvesbane ? true : false), 25);
+
+				AddLabel(585, 290, 0, "New WB");
+				AddRadio(555, 290, 208, 209, (Map == Map.NewWolvesbane ? true : false), 33);
+			}
 
 
 			AddLabel( 585, 395, 0, "Generate?" );
@@ -195,6 +198,7 @@ namespace Server.ACC.PG
 					case 10: Map = Map.Tokuno;   break;
                     case 20: Map = Map.TerMur;   break;
                     case 25: Map = Map.Wolvesbane;  break;
+					case 33: Map = Map.NewWolvesbane; break;
 
 				}
 			}
