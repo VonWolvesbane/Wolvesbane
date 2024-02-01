@@ -35,6 +35,7 @@ namespace Ultima
 		public static readonly Map Malas = new Map(3, 3, 2560, 2048);
 		public static readonly Map Tokuno = new Map(4, 4, 1448, 1448);
 		public static readonly Map TerMur = new Map(5, 5, 1280, 4096);
+		public static Map NewWolvesbane = new Map(6, 6, 6144, 4096);
 		public static Map Custom;
 
 		public static void StartUpSetDiff(bool value)

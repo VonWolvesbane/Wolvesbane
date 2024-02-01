@@ -30,7 +30,7 @@ namespace Server.Misc
                 RegisterMap(3, 3, 3, 2560, 2048, 1, "Malas", MapRules.TrammelRules);
                 RegisterMap(4, 4, 4, 1448, 1448, 1, "Tokuno", MapRules.TrammelRules);
                 RegisterMap(5, 5, 5, 1280, 4096, 1, "TerMur", MapRules.TrammelRules);
-				RegisterMap(253, 6, 6, 6144, 4096, 2, "NewWolvesbane", MapRules.TrammelRules);
+				RegisterMap(6, 6, 6, 6144, 4096, 2, "NewWolvesbane", MapRules.TrammelRules);
 				RegisterMap(250, 1, 1, 7168, 4096, 2, "Wolvesbane", MapRules.TrammelRules);
                 RegisterMap(251, 1, 1, 7168, 4096, 1, "Holiday", MapRules.TrammelRules);
                RegisterMap(252, 0, 0, 7168, 4096, 1, "Event", MapRules.FeluccaRules);

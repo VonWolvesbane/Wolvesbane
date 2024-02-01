@@ -138,7 +138,7 @@ namespace Server.ACC.PG
                 AddRadio(655, 290, 208, 209, (Map == Map.Wolvesbane ? true : false), 25);
 
 				AddLabel(585, 290, 0, "New WB");
-				AddRadio(555, 290, 208, 209, (Map == Map.NewWolvesbane ? true : false), 33);
+				AddRadio(555, 290, 208, 209, (Map == Map.NewWolvesbane ? true : false), 26);
 			}
 
 
@@ -198,7 +198,7 @@ namespace Server.ACC.PG
 					case 10: Map = Map.Tokuno;   break;
                     case 20: Map = Map.TerMur;   break;
                     case 25: Map = Map.Wolvesbane;  break;
-					case 33: Map = Map.NewWolvesbane; break;
+					case 26: Map = Map.NewWolvesbane;  break;
 
 				}
 			}
