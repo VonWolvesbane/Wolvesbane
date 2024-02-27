@@ -17,7 +17,7 @@ namespace Server.Items
 			Name = "Holy Avenger's Wrath";
 			Hue = 0;
 			ItemID = 0xC534;
-
+			
 			Attributes.BonusStr = 103;
 			Attributes.BonusInt = 103;
 			Attributes.BonusDex = 103;
@@ -69,12 +69,29 @@ namespace Server.Items
 
 		public HolyAvengersWrath(Serial serial) : base(serial) { }
 
+		public override WeaponAbility PrimaryAbility
+		{
+			get
+			{
+				return WeaponAbility.ArmorIgnore;
+			}
+		}
+		public override WeaponAbility SecondaryAbility
+		{
+			get
+			{
+				return WeaponAbility.ConcussionBlow;
+			}
+		}
+
 		public override void Serialize(GenericWriter writer)
 		{
 			base.Serialize(writer);
 
 			writer.Write((int)0); // version
 		}
+
+
 
 		public override void Deserialize(GenericReader reader)
 		{
