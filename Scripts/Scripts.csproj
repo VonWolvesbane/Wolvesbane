@@ -2329,6 +2329,7 @@
     <Compile Include="Custom\Wolvesbane Written\AI Written\EvoQuiver.cs" />
     <Compile Include="Custom\Wolvesbane Written\AI Written\Griffin.cs" />
     <Compile Include="Custom\Wolvesbane Written\AI Written\PlayerCount.cs" />
+    <Compile Include="Custom\Wolvesbane Written\Crusader Gear\Hephastos.cs" />
     <Compile Include="Custom\Wolvesbane Written\Crusader Gear\CrusaderBelt.cs" />
     <Compile Include="Custom\Wolvesbane Written\Crusader Gear\CrusaderBoots.cs" />
     <Compile Include="Custom\Wolvesbane Written\Crusader Gear\CrusaderGloves.cs" />

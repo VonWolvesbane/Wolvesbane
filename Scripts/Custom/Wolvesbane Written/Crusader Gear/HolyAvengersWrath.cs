@@ -16,7 +16,7 @@ namespace Server.Items
 		{
 			Name = "Holy Avenger's Wrath";
 			Hue = 0;
-			ItemID = 0xC534;
+			//ItemID = 0xC534;
 			
 			Attributes.BonusStr = 103;
 			Attributes.BonusInt = 103;
