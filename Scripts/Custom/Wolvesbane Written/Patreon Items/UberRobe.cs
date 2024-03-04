@@ -2,6 +2,7 @@
 
 using System;
 using Server;
+using Server.Mobiles;
 
 namespace Server.Items
 {
@@ -27,8 +28,23 @@ namespace Server.Items
             this.SkillBonuses.SetValues(2, SkillName.AnimalLore, 10.0);
         }
 
-        
-        public override void OnSingleClick(Mobile from)
+		public override bool OnEquip(Mobile from)
+		{
+			// Check if the mobile is a PlayerMobile and has IsPatreon set to true
+			if (from is PlayerMobile player && player.IsPatreon)
+			{
+				// Call the base method to allow the equip operation
+				return base.OnEquip(from);
+			}
+			else
+			{
+				// Send a message to the player indicating they cannot equip the item
+				from.SendMessage("You are not a Wolvesbane UO Patreon Member, and therefore are not authorized to equip this item.");
+				return false; // Deny the equip operation
+			}
+		}
+
+		public override void OnSingleClick(Mobile from)
         {
             this.LabelTo(from, Name);
         }

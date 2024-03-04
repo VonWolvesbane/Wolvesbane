@@ -86,7 +86,8 @@ namespace Server.Mobiles
         HasValiantStatReward = 0x20000000,
         RefuseTrades = 0x40000000,
         DisabledPvpWarning = 0x80000000,
-        FireRockMining = 0x00004000
+        FireRockMining = 0x00004000,
+		IsPatreon = 0x00005000
     }
 
     [Flags]
@@ -123,6 +124,8 @@ namespace Server.Mobiles
 	}
 	#endregion
 
+
+
 	public partial class PlayerMobile : Mobile, IHonorTarget
 	{
 		public static List<PlayerMobile> Instances { get; private set; }
@@ -130,10 +133,12 @@ namespace Server.Mobiles
 		static PlayerMobile()
 		{
 			Instances = new List<PlayerMobile>(0x1000);
-		}		
+		}
+
+		
 
 		#region FS:ATS Edtis
-        private DateTime m_NextTamingBulkOrder;
+		private DateTime m_NextTamingBulkOrder;
         private bool m_Bioenginer;
 
         [CommandProperty(AccessLevel.GameMaster)]
@@ -416,6 +421,8 @@ namespace Server.Mobiles
 			}
 		}
 
+
+
 		[CommandProperty(AccessLevel.GameMaster, true)]
 		public RankDefinition GuildRank
 		{
@@ -578,10 +585,17 @@ namespace Server.Mobiles
             get { return GetFlag(PlayerFlag.FireRockMining); }
             set { SetFlag(PlayerFlag.FireRockMining, value); }
         }
+		[CommandProperty(AccessLevel.GameMaster)]
+		public bool IsPatreon
+		{
+			get { return GetFlag(PlayerFlag.IsPatreon); }
+			set { SetFlag(PlayerFlag.IsPatreon, value); }
+		}
 
 
-        #region Plant system
-        [CommandProperty(AccessLevel.GameMaster)]
+
+		#region Plant system
+		[CommandProperty(AccessLevel.GameMaster)]
 		public bool ToggleClippings { get { return GetFlag(PlayerFlag.ToggleClippings); } set { SetFlag(PlayerFlag.ToggleClippings, value); } }
 
 		[CommandProperty(AccessLevel.GameMaster)]
@@ -711,16 +725,19 @@ namespace Server.Mobiles
 		{
 			get
 			{
-                string name;
+				string title = IsPatreon ? "Patreon of Wolvesbane UO" : ""; // Add Patreon title if the player is a Patreon supporter
 
-                if (Fame >= 10000)
-                    name = String.Format("{0} {1}", Female ? "Lady" : "Lord", RawName);
-                else
-                    name = RawName;
+				string name;
 
-                return name;
+				if (Fame >= 10000)
+					name = String.Format("{0} {1}", Female ? "Lady" : "Lord", RawName);
+				else
+					name = RawName;
+
+				return title + name;
 			}
 		}
+
 
 		#region Scroll of Alacrity
 		[CommandProperty(AccessLevel.GameMaster)]

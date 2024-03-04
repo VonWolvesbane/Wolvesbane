@@ -53,58 +53,32 @@ namespace Server.Items
         public PatreonMoongate(Serial serial)
             : base(serial)
         { }
-        public static PatreonTicket GetPatreonTicket(Mobile m)
-        {
-            for (int i = 0; i < m.Items.Count; i++)
-            {
-                if (m.Items[i] is PatreonTicket)
-                    return (PatreonTicket)m.Items[i];
-            }
-
-            if (m.Backpack != null)
-                return m.Backpack.FindItemByType(typeof(PatreonTicket), true) as PatreonTicket;
-
-            return null;
-        }
-        public virtual void EndConfirmation(Mobile from)
-        {
-            if (!ValidateUse(from, true))
-                return;
-
-            UseGate(from);
-        }
-        public virtual void Warning_Callback(Mobile from)
-        {
-            PatreonTicket ticket = GetPatreonTicket(from);
-            if (ticket != null)
-            {
-                //ticket.Delete();
-                from.SendMessage("You are transferred to the Patreon Dungeon as you step into the Gate.");
-                EndConfirmation(from);
-                
-            }
-            else
-            {
-                from.SendMessage("You decided not to travel at this time.");
-            }
-        }
-		
-		public override void BeginConfirmation(Mobile from)
+		public override void OnDoubleClick(Mobile m)
 		{
-			PatreonTicket ticket = GetPatreonTicket(from);
-				
-            if (ticket != null)
-            {
-				Warning_Callback(from);
+			if (m is PlayerMobile player && player.IsPatreon)
+			{
+				base.OnDoubleClick(m); // Allow player to use moongate if they are Patreon
 			}
 			else
 			{
-				from.SendMessage("You need The Patreon Ticket to use this Portal!");
+				m.SendMessage("You are not authorized to use this moongate.");
 			}
 		}
-       
+		public override void UseGate(Mobile m)
+		{
+			// Perform authorization check before calling base method
+			if (m is PlayerMobile player && !player.IsPatreon)
+			{
+				player.SendMessage("You are not a Wolvesbane UO Patreon Member, and therefore are not authorized to use this moongate.");
+				return;
+			}
 
-        public override void Serialize(GenericWriter writer)
+			// Call the base method to handle regular gate usage
+			base.UseGate(m);
+		}
+
+
+		public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);
 
