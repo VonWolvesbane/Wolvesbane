@@ -725,19 +725,19 @@ namespace Server.Mobiles
 		{
 			get
 			{
-				string title = IsPatreon ? "Patreon of Wolvesbane UO" : ""; // Add Patreon title if the player is a Patreon supporter
-
 				string name;
 
 				if (Fame >= 10000)
-					name = String.Format("{0} {1}", Female ? "Lady" : "Lord", RawName);
+					name = String.Format( "{0} {1}", Female ? "Lady" : "Lord", RawName );
+				
 				else
 					name = RawName;
 
-				return title + name;
+				return name;
 			}
 		}
 
+		
 
 		#region Scroll of Alacrity
 		[CommandProperty(AccessLevel.GameMaster)]
@@ -5972,6 +5972,12 @@ namespace Server.Mobiles
 
             suffix = ApplyNameSuffix(suffix);
 
+			if (suffix.Length == 0)
+            {
+                if(!Young && IsPatreon)
+                    suffix = "Patreon of Wolvesbane";
+            }
+
             list.Add(1050045, "{0} \t{1}\t {2}", prefix, name, suffix); // ~1_PREFIX~~2_NAME~~3_SUFFIX~
 
             if (guild != null && DisplayGuildTitle)
@@ -6282,11 +6288,17 @@ namespace Server.Mobiles
 			{
 				if (suffix.Length == 0)
 				{
-					suffix = "(Young)";
+					if (!IsPatreon)
+						suffix = "(Young)";
+					else
+						suffix = "(Young) Patreon of Wolvesbane";
 				}
 				else
 				{
-					suffix = String.Concat(suffix, " (Young)");
+					if(!IsPatreon)
+						suffix = String.Concat(suffix, " (Young)");
+					else
+						suffix = String.Concat(suffix, " (Young) Patreon of Wolvesbane");
 				}
 			}
 

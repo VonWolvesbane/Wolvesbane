@@ -3932,6 +3932,7 @@
     <Compile Include="Custom\X-Mas Deco\SnowmanBenchAddon.cs" />
     <Compile Include="Custom\X-Mas Deco\Tree N LightsAddon.cs" />
     <Compile Include="Custom\X-Mas Deco\XmasConvoAddon.cs" />
+    <Compile Include="Custom\ZeroDowned\OverloadedMove.cs" />
     <Compile Include="Custom\[ServUO.com]-GMTool.cs" />
     <Compile Include="Custom\[ServUO.com]-LockpickingChest.cs" />
     <Compile Include="Custom\[ServUO.com]-StatsGump.cs" />
