@@ -10,10 +10,10 @@ namespace Server.Mobiles
 
 
         [Constructable]
-        public GTiger(string name)
+        public GTiger()
             : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "a  Tiger";
+            Name = "a Tiger";
             Hue = 2058;
             Body = 1255;
 

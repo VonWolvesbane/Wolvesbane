@@ -3,14 +3,14 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-    [CorpseName("a  lion corpse")]
+    [CorpseName("a lion corpse")]
     public class GLion : BaseCreature
     {
         [Constructable]
         public GLion()
             : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "a  Lion";
+            Name = "a Lion";
 
 			Hue = 2058;
             Body = 0x592;
