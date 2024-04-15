@@ -2343,6 +2343,7 @@
     <Compile Include="Custom\Wolvesbane Written\New Custom Art Mounts\Panda.cs" />
     <Compile Include="Custom\Wolvesbane Written\Totem Hoarder\ArchersIdol.cs" />
     <Compile Include="Custom\Wolvesbane Written\Totem Hoarder\Falausmon.cs" />
+    <Compile Include="Custom\Wolvesbane Written\Totem Hoarder\SwordsmansIdol.cs" />
     <Compile Include="Custom\Wolvesbane Written\Totem Hoarder\TinkersIdol.cs" />
     <Compile Include="Custom\Wolvesbane Written\Totem Hoarder\TamersIdol.cs" />
     <Compile Include="Custom\Wolvesbane Written\DeadCat.cs" />
