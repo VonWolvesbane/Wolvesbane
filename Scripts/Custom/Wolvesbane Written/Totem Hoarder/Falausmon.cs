@@ -74,7 +74,7 @@ namespace Server.Mobiles
 		}
 		public override void GenerateLoot()
 		{
-			switch (Utility.Random(15))
+			switch (Utility.Random(20))
 			{
 				case 0: PackItem(new RandomTalisman()); break;
 				case 1: PackItem(new ArchersIdol()); break;
@@ -83,6 +83,7 @@ namespace Server.Mobiles
 				case 4: PackItem(new RandomTalisman()); break;
 				case 5: PackItem(new RandomTalisman()); break;
 				case 6: PackItem(new RandomTalisman()); break;
+				case 7: PackItem(new SwordsmansIdol()); break;
 
 
 			}
