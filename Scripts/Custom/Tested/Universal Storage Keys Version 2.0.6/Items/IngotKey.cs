@@ -39,8 +39,9 @@ namespace Server.Items
 				entry.Add(new ResourceEntry(typeof(ToxicIngot),"Toxic"));
 				entry.Add(new ResourceEntry(typeof(ElectrumIngot),"Electrum"));
 				entry.Add(new ResourceEntry(typeof(PlatinumIngot),"Platinum"));
+				entry.Add(new ResourceEntry(typeof(WolvesbanianIngot), "Wolvesbanian"));
 
-                return entry;
+				return entry;
             }
         }
 

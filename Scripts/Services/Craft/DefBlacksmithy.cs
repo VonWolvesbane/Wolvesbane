@@ -976,8 +976,9 @@ namespace Server.Engines.Craft
             AddSubRes(typeof(ToxicIngot), "Toxic", 110.0, 1044268);
             AddSubRes(typeof(ElectrumIngot), "Electrum", 115.0, 1044268);
             AddSubRes(typeof(PlatinumIngot), "Platinum", 119.0, 1044268);
+			AddSubRes(typeof(WolvesbanianIngot), "Wolvesbanian", 139.0, 1044268);
 
-            SetSubRes2(typeof(RedScales), 1060875);
+			SetSubRes2(typeof(RedScales), 1060875);
 
              AddSubRes2(typeof(RedScales), 1060875, 0.0, 1053137, 1044268);
             AddSubRes2(typeof(YellowScales), 1060876, 0.0, 1053137, 1044268);

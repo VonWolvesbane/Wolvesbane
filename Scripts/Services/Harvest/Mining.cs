@@ -107,7 +107,8 @@ namespace Server.Engines.Harvest
 				new HarvestResource( 105.0, 65.0, 145.0, "You put some Ice ore in your backpack", 			typeof( IceOre ),				typeof( IceGranite ),			typeof( IceOreElemental ) ),
 				new HarvestResource( 110.0, 70.0, 150.0, "You put some Toxic ore in your backpack",			typeof( ToxicOre ),				typeof( ToxicGranite ),			typeof( ToxicOreElemental ) ),
 				new HarvestResource( 115.0, 75.0, 155.0, "You put some Electrum ore in your backpack",		typeof( ElectrumOre ),			typeof( ElectrumGranite ),		typeof( ElectrumOreElemental ) ),
-				new HarvestResource( 119.0, 79.0, 159.0, "You put some Platinum ore in your backpack",		typeof( PlatinumOre ),			typeof( PlatinumGranite ),		typeof( PlatinumOreElemental ) )
+				new HarvestResource( 119.0, 79.0, 159.0, "You put some Platinum ore in your backpack",		typeof( PlatinumOre ),			typeof( PlatinumGranite ),		typeof( PlatinumOreElemental ) ),
+				new HarvestResource( 139.0, 99.0, 189.0, "You put some Wolvesbanian ore in your backpack",      typeof( WolvesbanianOre ),          typeof( WolvesbanianGranite ),      typeof( WolvesbanianOreElemental ) )
 				//daat99 OWLTR end - custom ores
             };
 
@@ -127,7 +128,8 @@ namespace Server.Engines.Harvest
 				new HarvestVein( 05.5, 0.5, res[10], res[0] ), // Ice
 				new HarvestVein( 05.0, 0.5, res[11], res[0] ), // Toxic
 				new HarvestVein( 04.5, 0.5, res[12], res[0] ), // Electrum
-				new HarvestVein( 04.0, 0.5, res[13], res[0] ) // Platinum
+				new HarvestVein( 04.0, 0.5, res[13], res[0] ), // Platinum
+				new HarvestVein( 03.0, 0.5, res[14], res[0] ) // Wolvesbanian
 				//daat99 OWLTR end - custom ores
             };
 
@@ -147,7 +149,7 @@ namespace Server.Engines.Harvest
                     new BonusHarvestResource(100, .1, 1072568, typeof(Turquoise)),
                     new BonusHarvestResource(100, .1, 1077180, typeof(SmallPieceofBlackrock)),
                     new BonusHarvestResource(100, .1, 1113344, typeof(CrystallineBlackrock), Map.TerMur),
-                    new BonusHarvestResource(100, .2, "You have found a Rough Stone", typeof(RoughStone))
+                    new BonusHarvestResource(140, .2, "You have found a Rough Stone", typeof(RoughStone))
                 };
             }
 

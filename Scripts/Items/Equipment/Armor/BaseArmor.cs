@@ -2249,8 +2249,11 @@ namespace Server.Items
                                 case 13: 
 									info = OreInfo.Platinum; 
 									break;
-                                //daat99 OWLTR end - add custom ores
-                            }
+								case 14:
+									info = OreInfo.Wolvesbanian;
+									break;
+									//daat99 OWLTR end - add custom ores
+							}
 
                             m_Resource = CraftResources.GetFromOreInfo(info, mat);
                         }

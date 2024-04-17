@@ -832,11 +832,11 @@ namespace Server.Mobiles
 		}
 	}
 
-	[CorpseName( "an ore elemental corpse" )]
+	[CorpseName("an ore elemental corpse")]
 	public class PlatinumOreElemental : BaseCreature
 	{
 		[Constructable]
-		public PlatinumOreElemental() : base( AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4 )
+		public PlatinumOreElemental() : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
 		{
 			// TODO: Gas attack
 			Name = "a platinum ore elemental";
@@ -844,29 +844,29 @@ namespace Server.Mobiles
 			BaseSoundID = 268;
 			Hue = 1153;
 
-			SetStr( 270, 320 );
-			SetDex( 220, 240 );
-			SetInt( 170, 180 );
+			SetStr(270, 320);
+			SetDex(220, 240);
+			SetInt(170, 180);
 
-			SetHits( 220, 240 );
+			SetHits(220, 240);
 
-			SetDamage( 65, 70 );
+			SetDamage(65, 70);
 
-			SetDamageType( ResistanceType.Physical, 70 );
-			SetDamageType( ResistanceType.Poison, 65 );
-			SetDamageType( ResistanceType.Energy, 65 );
-			SetDamageType( ResistanceType.Fire, 65 );
-			SetDamageType( ResistanceType.Cold, 65 );
+			SetDamageType(ResistanceType.Physical, 70);
+			SetDamageType(ResistanceType.Poison, 65);
+			SetDamageType(ResistanceType.Energy, 65);
+			SetDamageType(ResistanceType.Fire, 65);
+			SetDamageType(ResistanceType.Cold, 65);
 
-			SetResistance( ResistanceType.Physical, 70, 80 );
-			SetResistance( ResistanceType.Poison, 65, 70 );
-			SetResistance( ResistanceType.Energy, 65, 70 );
-			SetResistance( ResistanceType.Fire, 65, 70 );
-			SetResistance( ResistanceType.Cold, 65, 70 );
+			SetResistance(ResistanceType.Physical, 70, 80);
+			SetResistance(ResistanceType.Poison, 65, 70);
+			SetResistance(ResistanceType.Energy, 65, 70);
+			SetResistance(ResistanceType.Fire, 65, 70);
+			SetResistance(ResistanceType.Cold, 65, 70);
 
-			SetSkill( SkillName.MagicResist, 70.0 );
-			SetSkill( SkillName.Wrestling, 110.0 );
-			SetSkill( SkillName.Tactics, 110.0 );
+			SetSkill(SkillName.MagicResist, 70.0);
+			SetSkill(SkillName.Wrestling, 110.0);
+			SetSkill(SkillName.Tactics, 110.0);
 
 			Fame = 6500;
 			Karma = -6500;
@@ -876,25 +876,90 @@ namespace Server.Mobiles
 			PackGem();
 			PackGem();
 			//PackMagicItems( 2, 5 );
-			PackItem( new PlatinumOre( 10 ) );
+			PackItem(new PlatinumOre(10));
 		}
 
-		public override bool AutoDispel{ get{ return true; } }
+		public override bool AutoDispel { get { return true; } }
 
-		public PlatinumOreElemental( Serial serial ) : base( serial )
+		public PlatinumOreElemental(Serial serial) : base(serial)
 		{
 		}
 
-		public override void Serialize( GenericWriter writer )
+		public override void Serialize(GenericWriter writer)
 		{
-			base.Serialize( writer );
-			writer.Write( (int) 0 );
+			base.Serialize(writer);
+			writer.Write((int)0);
 		}
 
-		public override void Deserialize( GenericReader reader )
+		public override void Deserialize(GenericReader reader)
 		{
-			base.Deserialize( reader );
+			base.Deserialize(reader);
 			int version = reader.ReadInt();
 		}
 	}
+		[CorpseName("an ore elemental corpse")]
+		public class WolvesbanianOreElemental : BaseCreature
+		{
+			[Constructable]
+			public WolvesbanianOreElemental() : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
+			{
+				// TODO: Gas attack
+				Name = "a Wolvesbanian ore elemental";
+				Body = 108;
+				BaseSoundID = 268;
+				Hue = 2319;
+
+				SetStr(1270, 1320);
+				SetDex(1220, 1240);
+				SetInt(1170, 1180);
+
+				SetHits(22220, 22240);
+
+				SetDamage(165, 270);
+
+				SetDamageType(ResistanceType.Physical, 99);
+				SetDamageType(ResistanceType.Poison, 99);
+				SetDamageType(ResistanceType.Energy, 99);
+				SetDamageType(ResistanceType.Fire, 99);
+				SetDamageType(ResistanceType.Cold, 99);
+
+				SetResistance(ResistanceType.Physical, 99, 100);
+				SetResistance(ResistanceType.Poison, 99, 100);
+				SetResistance(ResistanceType.Energy, 99, 100);
+				SetResistance(ResistanceType.Fire, 99, 100);
+				SetResistance(ResistanceType.Cold, 99, 100);
+
+				SetSkill(SkillName.MagicResist, 170.0);
+				SetSkill(SkillName.Wrestling, 210.0);
+				SetSkill(SkillName.Tactics, 210.0);
+
+				Fame = 16500;
+				Karma = -16500;
+
+				VirtualArmor = 65;
+
+				PackGem();
+				PackGem();
+				//PackMagicItems( 2, 5 );
+				PackItem(new PlatinumOre(10));
+			}
+
+			public override bool AutoDispel { get { return true; } }
+
+			public WolvesbanianOreElemental(Serial serial) : base(serial)
+			{
+			}
+
+			public override void Serialize(GenericWriter writer)
+			{
+				base.Serialize(writer);
+				writer.Write((int)0);
+			}
+
+			public override void Deserialize(GenericReader reader)
+			{
+				base.Deserialize(reader);
+				int version = reader.ReadInt();
+			}
+		}
 }

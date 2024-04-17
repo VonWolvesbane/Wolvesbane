@@ -361,7 +361,7 @@ namespace Server.Engines.Craft
             AddCraft(typeof(MapmakersPen), 1044046, 1044167, 25.0, 75.0, typeof(IronIngot), 1044036, 1, 1044037);
             AddCraft(typeof(ScribesPen), 1044046, 1044168, 25.0, 75.0, typeof(IronIngot), 1044036, 1, 1044037);
             AddCraft(typeof(Clippers), 1044046, 1112117, 50.0, 50.0, typeof(IronIngot), 1044036, 4, 1044037);
-            AddCraft(typeof(MiniTinkeringTool), 1044046, "Mini Tinkering Tools", 100.0, 120.0, typeof(PlatinumIngot), "Platinum Ingots", 3, 1044037);
+            AddCraft(typeof(MiniTinkeringTool), 1044046, "Mini Tinkering Tools", 100.0, 120.0, typeof( PlatinumIngot ), "Platinum Ingots", 3, 1044037);
             AddCraft(typeof(MechanicalTinkeringTool), 1044046, "Mechanical Tinkering Tools", 100.0, 120.0, typeof(PlatinumIngot), "Platinum Ingots", 3, 1044037);
             AddCraft(typeof(DecoCraftTool), 1044046, "Deco Crafting Tools", 100.0, 120.0, typeof(PlatinumIngot), "Platinum Ingots", 3, 1044037);
             AddCraft(typeof(SewingShears), 1044046, "Sewing Shears", 100.0, 120.0, typeof(PlatinumIngot), "Platinum Ingots", 3, 1044037);
@@ -1118,12 +1118,13 @@ namespace Server.Engines.Craft
             AddSubRes(typeof(ToxicIngot), "Toxic", 110.0, 1044268);
             AddSubRes(typeof(ElectrumIngot), "Electrum", 115.0, 1044268);
             AddSubRes(typeof(PlatinumIngot), "Platinum", 119.0, 1044268);
+			AddSubRes(typeof(WolvesbanianIngot), "Wolvesbanian", 139.0, 1044268);
 
-            //daat99 OWLTR start - custom ores
-            //daat99.ResourceHelper.AddMetalResources(this);
-            //daat99 OWLTR end - custom ores
+			//daat99 OWLTR start - custom ores
+			//daat99.ResourceHelper.AddMetalResources(this);
+			//daat99 OWLTR end - custom ores
 
-            MarkOption = true;
+			MarkOption = true;
             Repair = true;
             CanEnhance = Core.AOS;
             CanAlter = Core.SA;

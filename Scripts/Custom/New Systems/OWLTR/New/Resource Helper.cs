@@ -123,7 +123,8 @@ namespace daat99
 					resources.Add( new ResourceData(CraftResourceType.Metal, 	CraftResource.Toxic, 			"Toxic", 			typeof(ToxicIngot), 		typeof(ToxicOre), 		110.0, CANT_CRAFT_METAL));
 					resources.Add( new ResourceData(CraftResourceType.Metal, 	CraftResource.Electrum, 		"Electrum", 		typeof(ElectrumIngot), 		typeof(ElectrumOre), 	115.0, CANT_CRAFT_METAL));
 					resources.Add( new ResourceData(CraftResourceType.Metal, 	CraftResource.Platinum, 		"Platinum", 		typeof(PlatinumIngot), 		typeof(PlatinumOre), 	119.0, CANT_CRAFT_METAL));
-					
+					resources.Add( new ResourceData(CraftResourceType.Metal,	CraftResource.Wolvesbanian,		"Wolvesbanian",		typeof(WolvesbanianIngot),	typeof(WolvesbanianOre), 139.0, CANT_CRAFT_METAL));
+
 					resources.Add( new ResourceData(CraftResourceType.Wood, 	CraftResource.RegularWood, 		"Log", 				typeof(Board), 				typeof(Log), 		 	 00.0, CANT_CRAFT_WOOD));
 					resources.Add( new ResourceData(CraftResourceType.Wood, 	CraftResource.OakWood, 			"Oak", 				typeof(OakBoard), 			typeof(OakLog), 	 	 20.0, CANT_CRAFT_WOOD));
 					resources.Add( new ResourceData(CraftResourceType.Wood, 	CraftResource.AshWood, 			"Ash", 				typeof(AshBoard), 			typeof(AshLog), 		 30.0, CANT_CRAFT_WOOD));
@@ -173,6 +174,7 @@ namespace daat99
 					resources.Add( new ResourceData(CraftResourceType.None, 	CraftResource.Toxic, 			"Toxic", 			typeof(ToxicGranite), 		typeof(ToxicGranite), 	110.0, CANT_CRAFT_STONE_GRANITE));
 					resources.Add( new ResourceData(CraftResourceType.None, 	CraftResource.Electrum, 		"Electrum", 		typeof(ElectrumGranite), 	typeof(ElectrumGranite),115.0, CANT_CRAFT_STONE_GRANITE));
 					resources.Add( new ResourceData(CraftResourceType.None, 	CraftResource.Platinum, 		"Platinum", 		typeof(PlatinumGranite), 	typeof(PlatinumGranite),119.0, CANT_CRAFT_STONE_GRANITE));
+					resources.Add(new ResourceData(CraftResourceType.None,	CraftResource.Wolvesbanian,		"Wolvesbanian",			typeof(WolvesbanianGranite), typeof(WolvesbanianGranite), 139.0, CANT_CRAFT_STONE_GRANITE));
 				}
 				return resources;
 			}
@@ -300,7 +302,7 @@ namespace daat99
 			switch (CraftResources.GetType(resource))
 			{
 				case CraftResourceType.Metal:
-					return CraftResource.Platinum;
+					return CraftResource.Wolvesbanian;
 				case CraftResourceType.Leather:
 					return CraftResource.EtherealLeather;
 				case CraftResourceType.Wood:

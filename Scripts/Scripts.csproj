@@ -1625,6 +1625,8 @@
     <Compile Include="Custom\New Crafting Systems\Sewing\Magic Clothes\MagicTunic.cs" />
     <Compile Include="Custom\New Crafting Systems\Sewing\PolarBearSkin.cs" />
     <Compile Include="Custom\New Crafting Systems\Sewing\SewingShears.cs" />
+    <Compile Include="Custom\New Crafting Systems\TotemMelding\DefTotemMelding.cs" />
+    <Compile Include="Custom\New Crafting Systems\TotemMelding\TotemMeldingTool.cs" />
     <Compile Include="Custom\New Crafting Systems\Waxcrafting\DefWaxCrafting.cs" />
     <Compile Include="Custom\New Crafting Systems\Waxcrafting\Waxcrafting Items\Candles\CandleLongColor.cs" />
     <Compile Include="Custom\New Crafting Systems\Waxcrafting\Waxcrafting Items\Candles\CandleOfLove.cs" />
@@ -1978,6 +1980,18 @@
     <Compile Include="Custom\Reapers Uploads\Quests\DHQuest\Rewards\DragonShield.cs" />
     <Compile Include="Custom\Reapers Uploads\Quests\DHQuest\Rewards\Dragontunic.cs" />
     <Compile Include="Custom\Reapers Uploads\Quests\DHQuest\Rewards\DragontunicFe.cs" />
+    <Compile Include="Custom\Reapers Uploads\Quests\EasterQuest2\Danny.cs" />
+    <Compile Include="Custom\Reapers Uploads\Quests\EasterQuest2\DannyGump.cs" />
+    <Compile Include="Custom\Reapers Uploads\Quests\EasterQuest2\GiftItems\ChocolateRabbit.cs" />
+    <Compile Include="Custom\Reapers Uploads\Quests\EasterQuest2\GiftItems\DannysGiftBox.cs" />
+    <Compile Include="Custom\Reapers Uploads\Quests\EasterQuest2\GiftItems\EasterBasket.cs" />
+    <Compile Include="Custom\Reapers Uploads\Quests\EasterQuest2\GiftItems\EasterBasketLargeGiftAddon.cs" />
+    <Compile Include="Custom\Reapers Uploads\Quests\EasterQuest2\GiftItems\EasterBunnyPet\EasterBunnyPet.cs" />
+    <Compile Include="Custom\Reapers Uploads\Quests\EasterQuest2\GiftItems\EasterBunnyPet\EasterBunnyPetStatue.cs" />
+    <Compile Include="Custom\Reapers Uploads\Quests\EasterQuest2\GiftItems\EasterHat.cs" />
+    <Compile Include="Custom\Reapers Uploads\Quests\EasterQuest2\GiftItems\MovingEasterEgg.cs" />
+    <Compile Include="Custom\Reapers Uploads\Quests\EasterQuest2\GiftItems\StuffedBunny.cs" />
+    <Compile Include="Custom\Reapers Uploads\Quests\EasterQuest2\SpecialEasterEgg2.cs" />
     <Compile Include="Custom\Reapers Uploads\Quests\Endless Peril\Gumps\NorivarFinishGump.cs" />
     <Compile Include="Custom\Reapers Uploads\Quests\Endless Peril\Gumps\NorivarGump.cs" />
     <Compile Include="Custom\Reapers Uploads\Quests\Endless Peril\Items\GraniteStone.cs" />
@@ -2325,6 +2339,7 @@
     <Compile Include="Custom\Tested\The Grove related Items\NewbieHat.cs" />
     <Compile Include="Custom\Tested\The Grove related Items\NewbieLegs.cs" />
     <Compile Include="Custom\Tested\Universal Storage Keys Version 2.0.6\Items\PSKey1.cs" />
+    <Compile Include="Custom\Wolvesbane Written\AI Written\SummoningOrb.cs" />
     <Compile Include="Custom\Wolvesbane Written\AI Written\DiscordWebhook.cs" />
     <Compile Include="Custom\Wolvesbane Written\AI Written\EvoQuiver.cs" />
     <Compile Include="Custom\Wolvesbane Written\AI Written\Griffin.cs" />
@@ -2341,6 +2356,7 @@
     <Compile Include="Custom\Wolvesbane Written\Crusader Gear\CrusaderLegs.cs" />
     <Compile Include="Custom\Wolvesbane Written\Crusader Gear\CrusaderWings.cs" />
     <Compile Include="Custom\Wolvesbane Written\New Custom Art Mounts\Panda.cs" />
+    <Compile Include="Custom\Wolvesbane Written\Totem Hoarder\SwordsmansIdol.cs" />
     <Compile Include="Custom\Wolvesbane Written\Totem Hoarder\ArchersIdol.cs" />
     <Compile Include="Custom\Wolvesbane Written\Totem Hoarder\Falausmon.cs" />
     <Compile Include="Custom\Wolvesbane Written\Totem Hoarder\TinkersIdol.cs" />
@@ -16394,6 +16410,8 @@
     <Content Include="Custom\Reapers Uploads\Auction System\Readme.htm" />
     <Content Include="Custom\Reapers Uploads\Quests\ArrianasQuest\Docs\Arrianas heirloom quest.txt" />
     <Content Include="Custom\Reapers Uploads\Quests\Berserker Quest-Doc edit\DOC- Edit.txt" />
+    <Content Include="Custom\Reapers Uploads\Quests\EasterQuest2\DannyQuestNPC.JPG" />
+    <Content Include="Custom\Reapers Uploads\Quests\EasterQuest2\EasterQuestEggHunt.JPG" />
     <Content Include="Custom\Reapers Uploads\Quests\Fisher Quest\Fisher Quest Information.txt" />
     <Content Include="Custom\Reapers Uploads\Quests\GingerbreadQuest\Gingerbread Quest.txt" />
     <Content Include="Custom\Reapers Uploads\Quests\Lighthouse Keeper Quest\Lighthouse Keeper Quest Information.txt" />
@@ -16479,6 +16497,7 @@
     <Folder Include="Custom\ACC Systems\Complete Spell System\-=+ 02 Changing\searchplugins\" />
     <Folder Include="Custom\ACC Systems\Complete Spell System\-=+ 03 Systems\Ancient\searchplugins\" />
     <Folder Include="Custom\Reapers Uploads\Auction System\Modified\" />
+    <Folder Include="Custom\Wolvesbane Written\AI Written\Quests\" />
     <Folder Include="Custom\Wolvesbane Written\From Kat\Deco\Deco\Buildings\" />
     <Folder Include="Custom\Wolvesbane Written\From Kat\Deco\Deco\Fireplaces\" />
     <Folder Include="Custom\Wolvesbane Written\From Kat\Deco\Deco\Kitchen\" />

@@ -22,6 +22,7 @@ namespace Server.Items
         Toxic,
         Electrum,
         Platinum,
+		Wolvesbanian,
         //daat99 OWLTR end - custom ores
 
         RegularLeather = 101,
@@ -195,7 +196,7 @@ namespace Server.Items
 
         public static readonly CraftAttributeInfo Blank;
         //daat99 OWLTR start - custom resource
-        public static readonly CraftAttributeInfo DullCopper, ShadowIron, Copper, Bronze, Golden, Agapite, Verite, Valorite, Blaze, Ice, Toxic, Electrum, Platinum;
+        public static readonly CraftAttributeInfo DullCopper, ShadowIron, Copper, Bronze, Golden, Agapite, Verite, Valorite, Blaze, Ice, Toxic, Electrum, Platinum, Wolvesbanian;
         public static readonly CraftAttributeInfo Spined, Horned, Barbed, Polar, Synthetic, BlazeL, Daemonic, Shadow, Frost, Ethereal;
         public static readonly CraftAttributeInfo RedScales, YellowScales, BlackScales, GreenScales, WhiteScales, BlueScales, CopperScales, SilverScales, GoldScales;
         public static readonly CraftAttributeInfo OakWood, AshWood, YewWood, Heartwood, Bloodwood, Frostwood, Ebony, Bamboo, PurpleHeart, Redwood, Petrified;
@@ -433,7 +434,24 @@ namespace Server.Items
             platinum.RunicMaxAttributes = Uber ? 9 : 7;
             platinum.RunicMinIntensity = Uber ? 105 : 70;
             platinum.RunicMaxIntensity = Uber ? 110 : 105;
-            CraftAttributeInfo spined = Spined = new CraftAttributeInfo();
+
+			CraftAttributeInfo wolvesbanian = Wolvesbanian = new CraftAttributeInfo();
+
+			wolvesbanian.ArmorPhysicalResist = Uber ? 9 : Utility.Random(10);
+			wolvesbanian.ArmorFireResist = Uber ? 9 : Utility.Random(10);
+			wolvesbanian.ArmorColdResist = Uber ? 9 : Utility.Random(10);
+			wolvesbanian.ArmorPoisonResist = Uber ? 9 : Utility.Random(10);
+			wolvesbanian.ArmorEnergyResist = Uber ? 9 : Utility.Random(10);
+			wolvesbanian.ArmorDurability = 350;
+			wolvesbanian.WeaponDurability = 350;
+			wolvesbanian.ArmorLowerRequirements = 100;
+			wolvesbanian.WeaponLowerRequirements = 100;
+			wolvesbanian.RunicMinAttributes = 9;
+			wolvesbanian.RunicMaxAttributes = Uber ? 9 : 7;
+			wolvesbanian.RunicMinIntensity = Uber ? 115 : 80;
+			wolvesbanian.RunicMaxIntensity = Uber ? 120 : 115;
+
+			CraftAttributeInfo spined = Spined = new CraftAttributeInfo();
 
             spined.ArmorPhysicalResist = 9;
             spined.ArmorLuck = 40;
@@ -930,7 +948,8 @@ namespace Server.Items
 			new CraftResourceInfo( 1152,	0,		"Ice",			CraftAttributeInfo.Ice,			CraftResource.Ice,			typeof( IceIngot ),			typeof( IceOre ),			typeof( IceGranite ) ),
 			new CraftResourceInfo( 1272,	0,		"Toxic",		CraftAttributeInfo.Toxic,		CraftResource.Toxic,		typeof( ToxicIngot ),		typeof( ToxicOre ),			typeof( ToxicGranite ) ),
 			new CraftResourceInfo( 1278,	0,		"Electrum",		CraftAttributeInfo.Electrum,	CraftResource.Electrum,		typeof( ElectrumIngot ),	typeof( ElectrumOre ),		typeof( ElectrumGranite ) ),
-			new CraftResourceInfo( 1153,	0,		"Platinum",		CraftAttributeInfo.Platinum,	CraftResource.Platinum,		typeof( PlatinumIngot ),	typeof( PlatinumOre ),		typeof( PlatinumGranite ) ),
+			new CraftResourceInfo( 1153,	0,		"Platinum",		CraftAttributeInfo.Platinum,	CraftResource.Platinum,		typeof( PlatinumIngot),	typeof( PlatinumOre ),		typeof( PlatinumGranite ) ),
+			new CraftResourceInfo( 2319,    0,      "Wolvesbanian", CraftAttributeInfo.Wolvesbanian, CraftResource.Wolvesbanian, typeof( WolvesbanianIngot ), typeof( WolvesbanianOre ), typeof( WolvesbanianGranite ) ),
 			//daat99 OWLTR end - custom ores
 		};
 
@@ -1079,7 +1098,7 @@ namespace Server.Items
         public static CraftResourceType GetType(CraftResource resource)
         {
 			// OWLTR
-			if (resource >= CraftResource.Iron && resource <= CraftResource.Platinum)
+			if (resource >= CraftResource.Iron && resource <= CraftResource.Wolvesbanian)
                 return CraftResourceType.Metal;
 
             if (resource >= CraftResource.RegularLeather && resource <= CraftResource.EtherealLeather)
@@ -1168,7 +1187,7 @@ namespace Server.Items
             //daat99 OWLTR end - custom leather
 
             //daat99 OWLTR start - custom ores
-            if (info.Level >= 0 && info.Level <= 13)
+            if (info.Level >= 0 && info.Level <= 15)
                 return (CraftResource)(info.Level + 1);
             //daat99 OWLTR end - custom ores
 
@@ -1218,9 +1237,10 @@ namespace Server.Items
         public static readonly OreInfo Toxic = new OreInfo(11, 1272, "Toxic");
         public static readonly OreInfo Electrum = new OreInfo(12, 1278, "Electrum");
         public static readonly OreInfo Platinum = new OreInfo(13, 1153, "Platinum");
-        //daat99 OWLTR end - custom ores
+		public static readonly OreInfo Wolvesbanian = new OreInfo(14, 2319, "Wolvesbanian");
+		//daat99 OWLTR end - custom ores
 
-        private readonly int m_Level;
+		private readonly int m_Level;
         private readonly int m_Hue;
         private readonly string m_Name;
 
