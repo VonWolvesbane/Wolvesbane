@@ -725,4 +725,3 @@ namespace Server.Items
 			}
 		}
 	}
-}
