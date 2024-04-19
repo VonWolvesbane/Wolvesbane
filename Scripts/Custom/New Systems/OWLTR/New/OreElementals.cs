@@ -941,7 +941,7 @@ namespace Server.Mobiles
 				PackGem();
 				PackGem();
 				//PackMagicItems( 2, 5 );
-				PackItem(new PlatinumOre(10));
+				PackItem(new WolvesbanianOre(5));
 			}
 
 			public override bool AutoDispel { get { return true; } }
