@@ -115,7 +115,7 @@ namespace Server.Engines.Harvest
             veins = new HarvestVein[]
             {
                 //daat99 OWLTR start - custom ores
- 				new HarvestVein( 15.0, 0.0, res[0], null   ), // Iron
+ 				new HarvestVein( 12.0, 0.0, res[0], null   ), // Iron
 				new HarvestVein( 09.0, 0.5, res[1], res[0] ), // Dull Copper
 				new HarvestVein( 08.5, 0.5, res[2], res[0] ), // Shadow Iron
 				new HarvestVein( 08.0, 0.5, res[3], res[0] ), // Copper
