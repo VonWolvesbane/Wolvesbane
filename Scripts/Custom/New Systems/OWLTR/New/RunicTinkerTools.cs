@@ -90,6 +90,8 @@ namespace Server.Items
 					return typeof(ElectrumRunicTinkerTools);
 				case CraftResource.Platinum:
 					return typeof(PlatinumRunicTinkerTools);
+				case CraftResource.Wolvesbanian:
+					return typeof(WolvesbanianRunicTinkerTools);
 				default:
 					return null;
 			}

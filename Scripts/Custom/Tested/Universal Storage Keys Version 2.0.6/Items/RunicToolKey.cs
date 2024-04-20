@@ -40,8 +40,9 @@ namespace Server.Items
 				entry.Add(new RunicToolEntry(typeof(RunicHammer),CraftResource.Toxic,"Toxic",0,30,-5,0));
 				entry.Add(new RunicToolEntry(typeof(RunicHammer),CraftResource.Electrum,"Electrum",0,30,-5,0));
 				entry.Add(new RunicToolEntry(typeof(RunicHammer),CraftResource.Platinum,"Platinum",0,30,-5,0));
+				entry.Add(new RunicToolEntry(typeof(RunicHammer), CraftResource.Wolvesbanian, "Wolvesbanian", 0, 30, -5, 0));
 
-                entry.Add(new RunicToolEntry(typeof(RunicSewingKit),CraftResource.SpinedLeather,"Spined",0,30,-5,3));
+				entry.Add(new RunicToolEntry(typeof(RunicSewingKit),CraftResource.SpinedLeather,"Spined",0,30,-5,3));
                 entry.Add(new RunicToolEntry(typeof(RunicSewingKit),CraftResource.HornedLeather,"Horned",0,30,-5,3));
                 entry.Add(new RunicToolEntry(typeof(RunicSewingKit),CraftResource.BarbedLeather,"Barbed",0,30,-5,3));
 				entry.Add(new RunicToolEntry(typeof(RunicSewingKit),CraftResource.PolarLeather,"Polar",0,30,-5,3));
@@ -81,7 +82,8 @@ namespace Server.Items
 				entry.Add(new RunicToolEntry(typeof(RunicTinkerTools),CraftResource.Toxic,"Toxic",0,30,-5,0));
 				entry.Add(new RunicToolEntry(typeof(RunicTinkerTools),CraftResource.Electrum,"Electrum",0,30,-5,0));
 				entry.Add(new RunicToolEntry(typeof(RunicTinkerTools),CraftResource.Platinum,"Platinum",0,30,-5,0));
-				
+				entry.Add(new RunicToolEntry(typeof(RunicTinkerTools), CraftResource.Wolvesbanian, "Wolvesbanian", 0, 30, -5, 0));
+
 				entry.Add(new ColumnSeparationEntry());
 
 				entry.Add(new RunicToolEntry(typeof(RunicDovetailSaw),CraftResource.OakWood,"Oak",0,30,-5,3));

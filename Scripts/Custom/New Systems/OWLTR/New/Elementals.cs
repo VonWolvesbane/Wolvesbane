@@ -57,6 +57,7 @@ namespace Server.Mobiles
 				case 12: Name = "a toxic ore elemental"; Hue = 1272; Body = 111; break;
 				case 13: Name = "an electrum ore elemental"; Hue = 1278; Body = 112; break;
 				case 14: Name = "a platinum ore elemental"; Hue = 1153; Body = 108; break;
+				case 15: Name = "a wolvesbanian ore elemental"; Hue = 2319; Body = 108; break;
 				case 101: Name = "a leather elemental"; break;
 				case 102: Name = "a spined leather elemental"; Hue = 0x8ac; break;
 				case 103: Name = "a horned leather elemental"; Hue = 0x845; break;
@@ -132,14 +133,15 @@ namespace Server.Mobiles
 				case 4: { if (b_Tinker == true) PackItem( new RunicTinkerTools( CraftResource.Copper, 5 ) ); else PackItem( new RunicHammer( CraftResource.Copper, 5 )); PackItem( new CopperOre( 25 )); break; }
 				case 5: { if (b_Tinker == true) PackItem( new RunicTinkerTools( CraftResource.Bronze, 5 ) ); else PackItem( new RunicHammer( CraftResource.Bronze, 5 )); PackItem( new BronzeOre( 25 )); break; }
 				case 6: { if (b_Tinker == true) PackItem( new RunicTinkerTools( CraftResource.Gold, 5 ) ); else PackItem( new RunicHammer( CraftResource.Gold, 5 )); PackItem( new GoldOre( 25 )); break; }
-				case 7: { if (b_Tinker == true) PackItem( new RunicTinkerTools( CraftResource.Agapite, 5 ) ); else PackItem( new RunicHammer( CraftResource.Agapite, 5 )); PackItem( new AgapiteOre( 25 )); break; }
-				case 8: { if (b_Tinker == true) PackItem( new RunicTinkerTools( CraftResource.Verite, 5 ) ); else PackItem( new RunicHammer( CraftResource.Verite, 5 )); PackItem( new VeriteOre( 25 )); break; }
-				case 9: { if (b_Tinker == true) PackItem( new RunicTinkerTools( CraftResource.Valorite, 5 ) ); else PackItem( new RunicHammer( CraftResource.Valorite, 5 )); PackItem( new ValoriteOre( 25 )); break; }
-				case 10: { if (b_Tinker == true) PackItem( new RunicTinkerTools( CraftResource.Blaze, 5 ) ); else PackItem( new RunicHammer( CraftResource.Blaze, 5 )); PackItem( new BlazeOre( 25 )); break; }
-				case 11: { if (b_Tinker == true) PackItem( new RunicTinkerTools( CraftResource.Ice, 5 ) ); else PackItem( new RunicHammer( CraftResource.Ice, 5 )); PackItem( new IceOre( 25 )); break; }
-				case 12: { if (b_Tinker == true) PackItem( new RunicTinkerTools( CraftResource.Toxic, 5 ) ); else PackItem( new RunicHammer( CraftResource.Toxic, 5 )); PackItem( new ToxicOre( 25 )); break; }
-				case 13: { if (b_Tinker == true) PackItem( new RunicTinkerTools( CraftResource.Electrum, 5 ) ); else PackItem( new RunicHammer( CraftResource.Electrum, 5 )); PackItem( new ElectrumOre( 25 )); break; }
-				case 14: { if (b_Tinker == true) PackItem( new RunicTinkerTools( CraftResource.Platinum, 5 ) ); else PackItem( new RunicHammer( CraftResource.Platinum, 5 )); PackItem( new PlatinumOre( 25 )); break; }
+				case 7: { if (b_Tinker == true) PackItem( new RunicTinkerTools( CraftResource.Agapite, 3 ) ); else PackItem( new RunicHammer( CraftResource.Agapite, 3 )); PackItem( new AgapiteOre( 15 )); break; }
+				case 8: { if (b_Tinker == true) PackItem( new RunicTinkerTools( CraftResource.Verite, 3 ) ); else PackItem( new RunicHammer( CraftResource.Verite, 3 )); PackItem( new VeriteOre( 15 )); break; }
+				case 9: { if (b_Tinker == true) PackItem( new RunicTinkerTools( CraftResource.Valorite, 3 ) ); else PackItem( new RunicHammer( CraftResource.Valorite, 3 )); PackItem( new ValoriteOre( 15 )); break; }
+				case 10: { if (b_Tinker == true) PackItem( new RunicTinkerTools( CraftResource.Blaze, 3 ) ); else PackItem( new RunicHammer( CraftResource.Blaze, 3 )); PackItem( new BlazeOre( 15 )); break; }
+				case 11: { if (b_Tinker == true) PackItem( new RunicTinkerTools( CraftResource.Ice, 2 ) ); else PackItem( new RunicHammer( CraftResource.Ice, 2 )); PackItem( new IceOre( 10 )); break; }
+				case 12: { if (b_Tinker == true) PackItem( new RunicTinkerTools( CraftResource.Toxic, 2 ) ); else PackItem( new RunicHammer( CraftResource.Toxic, 2 )); PackItem( new ToxicOre( 10 )); break; }
+				case 13: { if (b_Tinker == true) PackItem( new RunicTinkerTools( CraftResource.Electrum, 2 ) ); else PackItem( new RunicHammer( CraftResource.Electrum, 2 )); PackItem( new ElectrumOre( 5 )); break; }
+				case 14: { if (b_Tinker == true) PackItem( new RunicTinkerTools( CraftResource.Platinum, 2 ) ); else PackItem( new RunicHammer( CraftResource.Platinum, 2 )); PackItem( new PlatinumOre( 5 )); break; }
+				case 15: { if (b_Tinker == true) PackItem(new RunicTinkerTools(CraftResource.Wolvesbanian, 1)); else PackItem(new RunicHammer(CraftResource.Wolvesbanian, 1)); PackItem(new WolvesbanianOre(5)); break; }
 				case 102: { PackItem( new RunicSewingKit( CraftResource.SpinedLeather, 5 )); break; }
 				case 103: { PackItem( new RunicSewingKit( CraftResource.HornedLeather, 5 )); break; }
 				case 104: { PackItem( new RunicSewingKit( CraftResource.BarbedLeather, 5 )); break; }

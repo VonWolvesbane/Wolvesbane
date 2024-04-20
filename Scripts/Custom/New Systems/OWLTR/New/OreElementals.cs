@@ -946,7 +946,20 @@ namespace Server.Mobiles
 
 			public override bool AutoDispel { get { return true; } }
 
-			public WolvesbanianOreElemental(Serial serial) : base(serial)
+		
+
+		public override void AlterMeleeDamageFrom(Mobile from, ref int damage)
+		{
+			if (from is BaseCreature)
+			{
+				BaseCreature bc = (BaseCreature)from;
+
+				if (bc.Controlled || bc.BardTarget == this)
+					damage = 0; // Immune to pets and provoked creatures
+			}
+		}
+
+		public WolvesbanianOreElemental(Serial serial) : base(serial)
 			{
 			}
 
