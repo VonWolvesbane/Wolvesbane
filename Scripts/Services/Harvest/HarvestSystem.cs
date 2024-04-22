@@ -170,7 +170,7 @@ namespace Server.Engines.Harvest
 				daatHarvesting = true;
 			else if (type != null && daat99.OWLTROptionsManager.IsEnabled(daat99.OWLTROptionsManager.OPTIONS_ENUM.DAAT99_LUMBERJACKING) && type.IsSubclassOf(typeof(BaseLog)))
 				daatHarvesting = true;
-			if ( daatHarvesting || (skillBase >= resource.ReqSkill && from.CheckSkill( def.Skill, resource.MinSkill, resource.MaxSkill )) )
+			if ( daatHarvesting || (skillValue >= resource.ReqSkill && from.CheckSkill( def.Skill, resource.MinSkill, resource.MaxSkill )) )
 			{
 				type = GetResourceType( from, tool, def, map, loc, resource );
 

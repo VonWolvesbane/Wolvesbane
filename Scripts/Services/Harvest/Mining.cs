@@ -226,7 +226,7 @@ namespace Server.Engines.Harvest
                 #region Void Pool Items
                 HarvestMap hmap = HarvestMap.CheckMapOnHarvest(from, loc, def);
 
-                if (hmap != null && hmap.Resource >= CraftResource.Iron && hmap.Resource <= CraftResource.Valorite)
+                if (hmap != null && hmap.Resource >= CraftResource.Iron && hmap.Resource <= CraftResource.Wolvesbanian)
                 {
                     hmap.UsesRemaining--;
                     hmap.InvalidateProperties();
