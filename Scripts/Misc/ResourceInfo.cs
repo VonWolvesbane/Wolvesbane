@@ -446,6 +446,8 @@ namespace Server.Items
 			wolvesbanian.WeaponDurability = 350;
 			wolvesbanian.ArmorLowerRequirements = 100;
 			wolvesbanian.WeaponLowerRequirements = 100;
+			wolvesbanian.WeaponChaosDamage = 200;
+			wolvesbanian.WeaponRegenHits = 25;
 			wolvesbanian.RunicMinAttributes = 9;
 			wolvesbanian.RunicMaxAttributes = Uber ? 9 : 7;
 			wolvesbanian.RunicMinIntensity = Uber ? 115 : 80;
