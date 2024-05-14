@@ -1732,6 +1732,7 @@
     <Compile Include="Custom\New Systems\Instance Dungeons\Dungeons\Core\Options\Restrictions\Spells.cs" />
     <Compile Include="Custom\New Systems\Instance Dungeons\Dungeons\Core\UI\DungeonLootUI.cs" />
     <Compile Include="Custom\New Systems\Instance Dungeons\Dungeons\Core\UI\DungeonUI.cs" />
+    <Compile Include="Custom\New Systems\Instance Dungeons\Dungeons\Destard\Destard.cs" />
     <Compile Include="Custom\New Systems\Instance Dungeons\Dungeons\DungeonGenerator.cs" />
     <Compile Include="Custom\New Systems\Instance Dungeons\Dungeons\Sewers of Britain\Boss\LittleBarracoon.cs" />
     <Compile Include="Custom\New Systems\Instance Dungeons\Dungeons\Sewers of Britain\Boss\SewerThing.cs" />

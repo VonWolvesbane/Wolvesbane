@@ -18,6 +18,7 @@ namespace VitaNex.Dungeons
 		/// <summary>
 		///     Sewers of Britain
 		/// </summary>
-		SoB = 1
+		SoB = 1,
+		Des = 2
 	}
 }
