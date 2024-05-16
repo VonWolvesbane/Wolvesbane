@@ -198,7 +198,7 @@ namespace Server.Items
 							}
 							case 2: //weapons
 							{
-								if ( targeted is BaseWeapon && !(targeted is BaseRanged) && !(targeted is BaseStaff) && ((BaseWeapon)item).Resource >= CraftResource.Iron && ((BaseWeapon)item).Resource <= CraftResource.Platinum )
+								if ( targeted is BaseWeapon && !(targeted is BaseRanged) && !(targeted is BaseStaff) && ((BaseWeapon)item).Resource >= CraftResource.Iron && ((BaseWeapon)item).Resource <= CraftResource.Wolvesbanian )
 								{
 									item.Hue = i_DyeHue;
 									from.PlaySound( 0x23E );

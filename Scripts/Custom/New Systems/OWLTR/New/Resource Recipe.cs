@@ -104,7 +104,7 @@ namespace Server.Items
 					s_Key += " " + s_Temp;
 			}
 
-			if ( cr_Recipe >= CraftResource.DullCopper && cr_Recipe <= CraftResource.Platinum )
+			if ( cr_Recipe >= CraftResource.DullCopper && cr_Recipe <= CraftResource.Wolvesbanian )
 				list.Add( 1060844, "{0} ore", s_Key );
 			else if ( cr_Recipe >= CraftResource.SpinedLeather && cr_Recipe <= CraftResource.EtherealLeather )
 				list.Add( 1060844, "{0}", s_Key );
