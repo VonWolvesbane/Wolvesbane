@@ -10,6 +10,7 @@ using System.Linq;
 using Server;
 using Server.Items;
 using Server.Mobiles;
+using Xanthos.Evo;
 #endregion
 
 namespace VitaNex.Dungeons
@@ -20,8 +21,8 @@ namespace VitaNex.Dungeons
 
 		public override Map MapParent { get { return Server.Map.Felucca; } }
 
-		public override TimeSpan Duration { get { return TimeSpan.FromHours(4.0); } }
-		public override TimeSpan Lockout { get { return TimeSpan.FromHours(20.0); } }
+		public override TimeSpan Duration { get { return TimeSpan.FromHours(0.05); } }
+		public override TimeSpan Lockout { get { return TimeSpan.FromHours(0.25); } }
 		
 		public override Point3D Entrance { get { return new Point3D(5413, 859, 65); } }
 		public override Point3D Exit { get { return new Point3D(5610, 879, 30); } }
@@ -37,7 +38,7 @@ namespace VitaNex.Dungeons
 		public override int LootIntensityMin { get { return 40; } }
 		public override int LootIntensityMax { get { return 1000; } }
 
-		public override string Name { get { return "Destard"; } }
+		public override string Name { get { return "Despise"; } }
 		public override string Desc { get { return "Something evil lurks in the darkness, and it's very hungry..."; } }
 
 		public Mobile Boss1 { get; private set; }
@@ -64,6 +65,9 @@ namespace VitaNex.Dungeons
 
 			valderian.Name = "Valderian";
 			valderian.Hue = 2967;
+			valderian.Hits = 1000000000;
+			valderian.MagicDamageAbsorb = 100;
+
 
 			if (Utility.RandomDouble() < 0.05)
 			{
@@ -71,15 +75,15 @@ namespace VitaNex.Dungeons
 				valderian.IsParagon = true;
 			}
 
-			GenerateStairs();
-			GenerateTraps();
+			/*GenerateStairs();
+			GenerateTraps();*/
 
 			GenerateEasySpawn();
 			GenerateHardSpawn();
 			GenerateBossSpawn();
 		}
 
-		private void GenerateStairs()
+		/*private void GenerateStairs()
 		{
 			var tiles = new[] { 1959, 1958, 1957, 1956, 1962, 767, 766 };
 			
@@ -141,20 +145,126 @@ namespace VitaNex.Dungeons
 				t.Type = GasTrapType.Floor;
 				t.Poison = Poison.GetPoison(Utility.Random(5)) ?? Poison.Deadly;
 			}
-		}
+		}*/
 
 		private void GenerateEasySpawn()
 		{
-			var types = new[] {typeof(Sewerling), typeof(AnimatedSludge), typeof(BoneFlayer)};
+			var types = new[] {typeof(Moose), typeof(Panda), typeof(Griffin)};
 
 			var points = new[]
 			{
-				new Point3D(6033, 1482, 0), new Point3D(6034, 1477, 5), new Point3D(6039, 1479, 5), new Point3D(6041, 1478, 5),
-				new Point3D(6038, 1472, 0), new Point3D(6035, 1469, 5), new Point3D(6046, 1470, 5), new Point3D(6046, 1467, 5),
-				new Point3D(6048, 1475, 5), new Point3D(6048, 1477, 5), new Point3D(6049, 1486, 5), new Point3D(6049, 1488, 5),
-				new Point3D(6034, 1458, 5), new Point3D(6034, 1460, 5), new Point3D(6058, 1467, 5), new Point3D(6058, 1471, 5),
-				new Point3D(6056, 1472, 5), new Point3D(6056, 1469, 5), new Point3D(6059, 1490, 5), new Point3D(6061, 1490, 5),
-				new Point3D(6063, 1490, 5), new Point3D(6072, 1485, 10), new Point3D(6076, 1486, 5), new Point3D(6076, 1484, 5)
+new Point3D(5393, 866, 45), //
+new Point3D(5402, 866, 45), //
+new Point3D(5401, 856, 45), //
+new Point3D(5393, 855, 45), //
+new Point3D(5391, 848, 47), //
+new Point3D(5386, 851, 55), //
+new Point3D(5405, 840, 45), //
+new Point3D(5394, 830, 60), //
+new Point3D(5392, 824, 60), //
+new Point3D(5400, 822, 60), //
+new Point3D(5388, 817, 60), //
+new Point3D(5407, 818, 60), //
+new Point3D(5413, 813, 60), //
+new Point3D(5408, 823, 60), //
+new Point3D(5395, 795, 65), //
+new Point3D(5394, 784, 65), //
+new Point3D(5405, 777, 75), //
+new Point3D(5408, 788, 65), //
+new Point3D(5427, 778, 60), //
+new Point3D(5419, 777, 60), //
+new Point3D(5425, 792, 60), //
+new Point3D(5440, 779, 60), //
+new Point3D(5446, 787, 60), //
+new Point3D(5458, 783, 60), //
+new Point3D(5458, 804, 60), //
+new Point3D(5456, 821, 60), //
+new Point3D(5461, 818, 60), //
+new Point3D(5469, 809, 60), //
+new Point3D(5477, 795, 67), //
+new Point3D(5488, 794, 60), //
+new Point3D(5493, 784, 70), //
+new Point3D(5499, 777, 70), //
+new Point3D(5483, 826, 60), //
+new Point3D(5480, 832, 60), //
+new Point3D(5464, 839, 45), //
+new Point3D(5447, 843, 45), //
+new Point3D(5471, 856, 45), //
+new Point3D(5474, 869, 45), //
+new Point3D(5461, 880, 30), //
+new Point3D(5451, 876, 30), //
+new Point3D(5448, 869, 45), //
+new Point3D(5469, 888, 30), //
+new Point3D(5502, 841, 45), //
+new Point3D(5506, 849, 45), //
+new Point3D(5515, 858, 45), //
+new Point3D(5525, 848, 45), //
+new Point3D(5522, 836, 50), //
+new Point3D(5532, 867, 45), //
+new Point3D(5542, 858, 45), //
+new Point3D(5537, 862, 45), //
+new Point3D(5546, 879, 30), //
+new Point3D(5537, 882, 30), //
+new Point3D(5530, 879, 30), //
+new Point3D(5567, 858, 45), //
+new Point3D(5571, 868, 45), //
+new Point3D(5581, 858, 45), //
+new Point3D(5596, 843, 45), //
+new Point3D(5592, 835, 45), //
+new Point3D(5611, 827, 60), //
+new Point3D(5608, 817, 60), //
+new Point3D(5603, 826, 60), //
+new Point3D(5589, 817, 45), //
+new Point3D(5577, 822, 45), //
+new Point3D(5601, 807, 60), //
+new Point3D(5589, 804, 45), //
+new Point3D(5588, 790, 60), //
+new Point3D(5605, 790, 60), //
+new Point3D(5618, 783, 60), //
+new Point3D(5585, 785, 60), //
+new Point3D(5566, 800, 45), //
+new Point3D(5571, 785, 60), //
+new Point3D(5556, 799, 45), //
+new Point3D(5547, 796, 45), //
+new Point3D(5556, 777, 60), //
+new Point3D(5554, 785, 60), //
+new Point3D(5523, 785, 60), //
+new Point3D(5532, 792, 60), //
+new Point3D(5533, 799, 60), //
+new Point3D(5520, 832, 60), //
+new Point3D(5523, 875, 30), //
+new Point3D(5532, 880, 30), //
+new Point3D(5562, 896, 30), //
+new Point3D(5568, 888, 30), //
+new Point3D(5571, 891, 30), //
+new Point3D(5552, 919, 30), //
+new Point3D(5540, 909, 30), //
+new Point3D(5514, 907, 30), //
+new Point3D(5523, 889, 30), //
+new Point3D(5588, 895, 30), //
+new Point3D(5591, 885, 30), //
+new Point3D(5598, 876, 30), //
+new Point3D(5607, 882, 30), //
+new Point3D(5604, 870, 45), //
+new Point3D(5481, 949, 20), //
+new Point3D(5485, 938, 20), //
+new Point3D(5471, 938, 21), //
+new Point3D(5460, 929, 20), //
+new Point3D(5443, 921, 20), //
+new Point3D(5433, 918, 20), //
+new Point3D(5426, 922, 20), //
+new Point3D(5429, 914, 20), //
+new Point3D(5428, 941, 20), //
+new Point3D(5421, 945, 20), //
+new Point3D(5410, 943, 20), //
+new Point3D(5413, 935, 20), //
+new Point3D(5437, 963, 15), //
+new Point3D(5443, 980, 15), //
+new Point3D(5450, 974, 15), //
+new Point3D(5450, 1000, 5), //
+
+
+
 			};
 
 			foreach (var p in points)
@@ -219,13 +329,13 @@ namespace VitaNex.Dungeons
 		private void GenerateBossSpawn()
 		{
 			// Cave
-			Boss1 = CreateMobile<Sycophant>(new Point3D(6140, 1432, 4), true, true);
+			Boss1 = CreateMobile<Hephastos>(new Point3D(5557, 824, 45), true, true);
 
 			// Sewage Intake
-			Boss2 = CreateMobile<SewerThing>(new Point3D(6086, 1437, 0), true, true);
+			Boss2 = CreateMobile<RidableAncientHellHound>(new Point3D(5511, 942, 20), true, true);
 
 			// Control Room
-			Boss3 = CreateMobile<LittleBarracoon>(new Point3D(6049, 1433, 4), true, true);
+			Boss3 = CreateMobile<GuardianWolfEvo>(new Point3D(5464, 988, 5), true, true);
 		}
 
 		protected override void OnSpawnActivate(Mobile m)
