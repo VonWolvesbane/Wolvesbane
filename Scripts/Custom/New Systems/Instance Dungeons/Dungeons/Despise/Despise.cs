@@ -21,8 +21,8 @@ namespace VitaNex.Dungeons
 
 		public override Map MapParent { get { return Server.Map.Felucca; } }
 
-		public override TimeSpan Duration { get { return TimeSpan.FromHours(0.05); } }
-		public override TimeSpan Lockout { get { return TimeSpan.FromHours(0.25); } }
+		public override TimeSpan Duration { get { return TimeSpan.FromHours(1.0); } }
+		public override TimeSpan Lockout { get { return TimeSpan.FromHours(5.0); } }
 		
 		public override Point3D Entrance { get { return new Point3D(5413, 859, 65); } }
 		public override Point3D Exit { get { return new Point3D(5610, 879, 30); } }
@@ -33,7 +33,7 @@ namespace VitaNex.Dungeons
 		public override int GoldMax { get { return 3500000; } }
 
 		public override int LootPropsMin { get { return 4; } }
-		public override int LootPropsMax { get { return 11; } }
+		public override int LootPropsMax { get { return 25; } }
 
 		public override int LootIntensityMin { get { return 40; } }
 		public override int LootIntensityMax { get { return 1000; } }
@@ -69,6 +69,7 @@ namespace VitaNex.Dungeons
 			valderian.MagicDamageAbsorb = 100;
 
 
+
 			if (Utility.RandomDouble() < 0.05)
 			{
 				valderian.Tamable = false;
@@ -79,7 +80,7 @@ namespace VitaNex.Dungeons
 			GenerateTraps();*/
 
 			GenerateEasySpawn();
-			GenerateHardSpawn();
+			//GenerateHardSpawn();
 			GenerateBossSpawn();
 		}
 
@@ -149,7 +150,7 @@ namespace VitaNex.Dungeons
 
 		private void GenerateEasySpawn()
 		{
-			var types = new[] {typeof(Moose), typeof(Panda), typeof(Griffin)};
+			var types = new[] {typeof(Knoll), typeof(KnollCaptain)};
 
 			var points = new[]
 			{
@@ -267,7 +268,7 @@ new Point3D(5450, 1000, 5), //
 
 			};
 
-			foreach (var p in points)
+			/*foreach (var p in points)
 			{
 				CreateMobile(types.GetRandom(), p, false, true);
 			}
@@ -318,7 +319,7 @@ new Point3D(5450, 1000, 5), //
 				//Cave
 				new Point3D(6121, 1451, 5), new Point3D(6123, 1451, 5), new Point3D(6121, 1440, 5), new Point3D(6123, 1440, 5),
 				new Point3D(6129, 1441, 4)
-			};
+			};*/
 
 			foreach (var p in points)
 			{

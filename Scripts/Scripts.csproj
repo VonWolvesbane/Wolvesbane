@@ -1732,7 +1732,9 @@
     <Compile Include="Custom\New Systems\Instance Dungeons\Dungeons\Core\Options\Restrictions\Spells.cs" />
     <Compile Include="Custom\New Systems\Instance Dungeons\Dungeons\Core\UI\DungeonLootUI.cs" />
     <Compile Include="Custom\New Systems\Instance Dungeons\Dungeons\Core\UI\DungeonUI.cs" />
-    <Compile Include="Custom\New Systems\Instance Dungeons\Dungeons\Destard\Destard.cs" />
+    <Compile Include="Custom\New Systems\Instance Dungeons\Dungeons\Despise\Despise.cs" />
+    <Compile Include="Custom\New Systems\Instance Dungeons\Dungeons\Despise\Mobiles\Knoll.cs" />
+    <Compile Include="Custom\New Systems\Instance Dungeons\Dungeons\Despise\Mobiles\KnollCaptain.cs" />
     <Compile Include="Custom\New Systems\Instance Dungeons\Dungeons\DungeonGenerator.cs" />
     <Compile Include="Custom\New Systems\Instance Dungeons\Dungeons\Sewers of Britain\Boss\LittleBarracoon.cs" />
     <Compile Include="Custom\New Systems\Instance Dungeons\Dungeons\Sewers of Britain\Boss\SewerThing.cs" />
@@ -2340,6 +2342,8 @@
     <Compile Include="Custom\Tested\The Grove related Items\NewbieHat.cs" />
     <Compile Include="Custom\Tested\The Grove related Items\NewbieLegs.cs" />
     <Compile Include="Custom\Tested\Universal Storage Keys Version 2.0.6\Items\PSKey1.cs" />
+    <Compile Include="Custom\WD.cs" />
+    <Compile Include="Custom\Wolvesbane Written\AI Written\Immunity Boss.cs" />
     <Compile Include="Custom\Wolvesbane Written\AI Written\PetResStone.cs" />
     <Compile Include="Custom\Wolvesbane Written\AI Written\SummoningOrb.cs" />
     <Compile Include="Custom\Wolvesbane Written\AI Written\DiscordWebhook.cs" />
