@@ -22,7 +22,7 @@ namespace Server.Mobiles
 			SetHits(500000);
 			SetMana(10000);
 
-			SetDamage(250, 275);
+			SetDamage(150, 175);
 
 			SetDamageType(ResistanceType.Physical, 100);
 
