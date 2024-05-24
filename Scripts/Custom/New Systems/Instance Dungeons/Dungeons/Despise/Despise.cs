@@ -333,7 +333,7 @@ new Point3D(5450, 1000, 5), //
 			Boss1 = CreateMobile<Hephastos>(new Point3D(5557, 824, 45), true, true);
 
 			// Sewage Intake
-			Boss2 = CreateMobile<RidableAncientHellHound>(new Point3D(5511, 942, 20), true, true);
+			Boss2 = CreateMobile<RidableAncientHellHound1>(new Point3D(5511, 942, 20), true, true);
 
 			// Control Room
 			Boss3 = CreateMobile<GuardianWolfEvo>(new Point3D(5464, 988, 5), true, true);
