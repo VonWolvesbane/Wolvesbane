@@ -22,15 +22,15 @@ namespace Server.Mobiles
 			SetHits(50000);
 			SetMana(10000);
 
-			SetDamage(150, 175);
+			SetDamage(15, 75);
 
 			SetDamageType(ResistanceType.Physical, 90);
 
-			SetResistance(ResistanceType.Physical, 90);
-			SetResistance(ResistanceType.Fire, 90);
-			SetResistance(ResistanceType.Cold, 90);
-			SetResistance(ResistanceType.Poison, 90);
-			SetResistance(ResistanceType.Energy, 90);
+			SetResistance(ResistanceType.Physical, 70, 90);
+			SetResistance(ResistanceType.Fire, 70, 90);
+			SetResistance(ResistanceType.Cold, 70, 90);
+			SetResistance(ResistanceType.Poison, 70, 90);
+			SetResistance(ResistanceType.Energy, 70, 90);
 
 			SetSkill(SkillName.Wrestling, 200.0);
 			SetSkill(SkillName.Tactics, 200.0);
@@ -52,7 +52,7 @@ namespace Server.Mobiles
 		}
 
 		public override bool AutoDispel { get { return true; } }
-		public override bool BardImmune { get { return true; } }
+		//public override bool BardImmune { get { return true; } }
 		public override Poison PoisonImmune { get { return Poison.Lethal; } }
 		public override bool Unprovokable { get { return true; } }
 		public override bool Uncalmable { get { return true; } }
