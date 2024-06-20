@@ -56,6 +56,8 @@ namespace Server.Mobiles
 			SetSkill(SkillName.Spellweaving, 75.0, 120.0);
 
 			Tamable = true;
+			
+			MinTameSkill = 145.1;
 			ControlSlots = 5;
 		}
 

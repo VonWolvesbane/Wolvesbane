@@ -47,8 +47,18 @@ namespace Server.Mobiles
 		}
 
 		public override void GenerateLoot()
+		
 		{
 			AddLoot(LootPack.FilthyRich, 3);
+			switch (Utility.Random(15))
+			{
+				case 0: PackItem(new DaggerBeltSkin()); break;
+				case 1: PackItem(new MaceBeltSkin()); break;
+				case 2: PackItem(new SwordBeltSkin()); break;
+						
+
+
+			}
 		}
 
 		public override bool AutoDispel { get { return true; } }

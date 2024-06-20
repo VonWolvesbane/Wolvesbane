@@ -80,9 +80,11 @@ namespace Server.Mobiles
 				case 1: PackItem(new ArchersIdol()); break;
 				case 2: PackItem(new TinkersIdol()); break;
 				case 3: PackItem(new TamersIdol()); break;
+
 				case 4: PackItem(new RandomTalisman()); break;
 				case 5: PackItem(new RandomTalisman()); break;
 				case 6: PackItem(new RandomTalisman()); break;
+				case 7: PackItem(new SwordsmansIdol()); break;
 
 
 			}
