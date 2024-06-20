@@ -49,6 +49,11 @@ namespace Server.Mobiles
 		public override void GenerateLoot()
 		{
 			AddLoot(LootPack.FilthyRich, 3);
+			switch (Utility.Random(15))
+			{
+				case 0: PackItem(new InvisHelmSkin()); break;
+				
+			}
 		}
 
 		public override bool AutoDispel { get { return true; } }
