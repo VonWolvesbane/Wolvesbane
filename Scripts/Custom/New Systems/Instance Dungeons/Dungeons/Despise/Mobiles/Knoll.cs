@@ -50,7 +50,7 @@ namespace Server.Mobiles
 		
 		{
 			AddLoot(LootPack.FilthyRich, 3);
-			switch (Utility.Random(15))
+			switch (Utility.Random(150))
 			{
 				case 0: PackItem(new DaggerBeltSkin()); break;
 				case 1: PackItem(new MaceBeltSkin()); break;

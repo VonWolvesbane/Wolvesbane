@@ -1269,7 +1269,11 @@
     <Compile Include="Custom\Knives Chat 3.0 Beta 9\Jail.cs" />
     <Compile Include="Custom\Knives Chat 3.0 Beta 9\ListGump10.cs" />
     <Compile Include="Custom\Knives Chat 3.0 Beta 9\RUOVersion.cs" />
+    <Compile Include="Custom\Leetstreet Upload\DaggerBeltSkin.cs" />
+    <Compile Include="Custom\Leetstreet Upload\INVISHELM.cs" />
     <Compile Include="Custom\Leetstreet Upload\JUNE_THINGY.cs" />
+    <Compile Include="Custom\Leetstreet Upload\MaceBeltSkin.cs" />
+    <Compile Include="Custom\Leetstreet Upload\SwordBeltSkin.cs" />
     <Compile Include="Custom\MyHouses.cs" />
     <Compile Include="Custom\New Crafting Systems\Animated Fishtanks\1x1 Fishtanks- no lids\AlbinoAngelfishSmallNoLidFishtankAddon.cs" />
     <Compile Include="Custom\New Crafting Systems\Animated Fishtanks\1x1 Fishtanks- no lids\AngelfishSmallNoLidFishtankAddon.cs" />

@@ -49,7 +49,7 @@ namespace Server.Mobiles
 		public override void GenerateLoot()
 		{
 			AddLoot(LootPack.FilthyRich, 3);
-			switch (Utility.Random(15))
+			switch (Utility.Random(150))
 			{
 				case 0: PackItem(new InvisHelmSkin()); break;
 				
