@@ -1805,6 +1805,14 @@
     <Compile Include="Custom\New Systems\Small champions\Ninja turtles\Raphael.cs" />
     <Compile Include="Custom\New Systems\Small champions\Ninja turtles\RaphaelSai.cs" />
     <Compile Include="Custom\New Systems\Small champions\Ninja turtles\TurtlesChest.cs" />
+    <Compile Include="Custom\New Systems\UOBuilder\UOBuilderAdminGump.cs" />
+    <Compile Include="Custom\New Systems\UOBuilder\UOBuilderCommand.cs" />
+    <Compile Include="Custom\New Systems\UOBuilder\UOBuilderCore.cs" />
+    <Compile Include="Custom\New Systems\UOBuilder\UOBuilderEntity.cs" />
+    <Compile Include="Custom\New Systems\UOBuilder\UOBuilderGump.cs" />
+    <Compile Include="Custom\New Systems\UOBuilder\UOBuilderPermit.cs" />
+    <Compile Include="Custom\New Systems\UOBuilder\UOBuilderStatic.cs" />
+    <Compile Include="Custom\New Systems\UOBuilder\UOBuilderTarget.cs" />
     <Compile Include="Custom\Reapers Uploads\Alien SuperBoss\AlienDeed.cs" />
     <Compile Include="Custom\Reapers Uploads\Alien SuperBoss\armor\ArtifactArm.cs" />
     <Compile Include="Custom\Reapers Uploads\Alien SuperBoss\armor\ArtifactChest.cs" />
