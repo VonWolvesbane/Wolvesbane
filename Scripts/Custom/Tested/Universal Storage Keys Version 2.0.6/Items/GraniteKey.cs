@@ -41,8 +41,9 @@ namespace Server.Items
                 entry.Add(new ResourceEntry(typeof(ToxicGranite),"Toxic",0,height,0,0));
                 entry.Add(new ResourceEntry(typeof(ElectrumGranite),"Electrum",0,height,0,0));
                 entry.Add(new ResourceEntry(typeof(PlatinumGranite),"Platinum",0,height,0,0));
+				entry.Add(new ResourceEntry(typeof(WolvesbanianGranite), "Wolvesbanian", 0, height, 0, 0));
 
-                return entry;
+				return entry;
             }
         }
 
