@@ -1208,6 +1208,7 @@
     <Compile Include="Custom\Gold Panning\GoldPan.cs" />
     <Compile Include="Custom\Gold Panning\GoldPanningSystem.cs" />
     <Compile Include="Custom\HueRoomGen.cs" />
+    <Compile Include="Custom\JulyThingy24.cs" />
     <Compile Include="Custom\Knives Chat 3.0 Beta 9\Channels\Alliance.cs" />
     <Compile Include="Custom\Knives Chat 3.0 Beta 9\Channels\Channel.cs" />
     <Compile Include="Custom\Knives Chat 3.0 Beta 9\Channels\Faction.cs" />
