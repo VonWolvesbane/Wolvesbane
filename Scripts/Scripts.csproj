@@ -1785,6 +1785,12 @@
     <Compile Include="Custom\New Systems\Invasions\UI\RankEditUI.cs" />
     <Compile Include="Custom\New Systems\Invasions\UI\SpawnEditUI.cs" />
     <Compile Include="Custom\New Systems\OWLTR\Custom Craftables\Bank Hive fixed.cs" />
+    <Compile Include="Custom\New Systems\Raffles\RaffleEntry.cs" />
+    <Compile Include="Custom\New Systems\Raffles\RaffleResult.cs" />
+    <Compile Include="Custom\New Systems\Raffles\RaffleResults.cs" />
+    <Compile Include="Custom\New Systems\Raffles\RaffleToken.cs" />
+    <Compile Include="Custom\New Systems\Raffles\UltimateRaffle.cs" />
+    <Compile Include="Custom\New Systems\Raffles\UltimateRaffleUI.cs" />
     <Compile Include="Custom\New Systems\Small champions\BaseMiniChampion.cs" />
     <Compile Include="Custom\New Systems\Small champions\MiniChampion shredder\FootSoldier.cs" />
     <Compile Include="Custom\New Systems\Small champions\MiniChampion shredder\FootSoldiersArms.cs" />
@@ -2375,6 +2381,8 @@
     <Compile Include="Custom\Wolvesbane Written\Crusader Gear\CrusaderHelm.cs" />
     <Compile Include="Custom\Wolvesbane Written\Crusader Gear\CrusaderLegs.cs" />
     <Compile Include="Custom\Wolvesbane Written\Crusader Gear\CrusaderWings.cs" />
+    <Compile Include="Custom\Wolvesbane Written\Hidden Gear\ShoulderParrot.cs" />
+    <Compile Include="Custom\Wolvesbane Written\Hidden Gear\HiddenRobe.cs" />
     <Compile Include="Custom\Wolvesbane Written\New Custom Art Mounts\Panda.cs" />
     <Compile Include="Custom\Wolvesbane Written\Totem Hoarder\SwordsmansIdol.cs" />
     <Compile Include="Custom\Wolvesbane Written\Totem Hoarder\ArchersIdol.cs" />
@@ -4257,6 +4265,7 @@
     <Compile Include="Items\Addons\Crystal Furniture Set\CrystalSupplicantStatue.cs" />
     <Compile Include="Items\Addons\Crystal Furniture Set\CrystalThrone.cs" />
     <Compile Include="Items\Addons\Crystal Furniture Set\CrystalRunnerStatue.cs" />
+    <Compile Include="Items\Artifacts\PhoenixRobe.cs" />
     <Compile Include="Items\Consumables\AnniversaryPromotionalToken.cs" />
     <Compile Include="Items\Containers\BoxOfCrystalItems.cs" />
     <Compile Include="Items\Containers\BoxOfShadowItems.cs" />
