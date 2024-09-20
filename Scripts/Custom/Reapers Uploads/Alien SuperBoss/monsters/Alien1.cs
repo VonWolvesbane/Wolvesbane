@@ -29,7 +29,7 @@ namespace Server.Mobiles
             if (DateTime.Now >= m_NextTalk && InRange(m, 4) && InLOS(m)) // check if it's time to talk & mobile in range & in los.
             {
                 m_NextTalk = DateTime.Now + TalkDelay; // set next talk time 
-                switch (Utility.Random(7))
+                switch (Utility.Random(8))
                 {
                     case 0: Say("I'm going to Probe you"); //make it say ...
                         PlaySound(1066); //play giggle sound
@@ -50,6 +50,9 @@ namespace Server.Mobiles
                         PlaySound(1073); //play lough sound
                         break;
                     case 6: Say("You vile Creature");
+                        PlaySound(1094); //play spit sound
+                        break;
+					case 7: Say("You rolled a nat 1 on appearance");
                         PlaySound(1094); //play spit sound
                         break;
                 };
