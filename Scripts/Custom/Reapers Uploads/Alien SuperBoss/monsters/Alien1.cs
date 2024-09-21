@@ -72,7 +72,7 @@ namespace Server.Mobiles
 		
 		[Constructable]
         public Alien1()
-            : base(AIType.AI_Predator, FightMode.Weakest, 18, 10, 0.01, 0.2)    
+            : base(AIType.AI_Predator, FightMode.Weakest, 18, 1, 0.01, 0.2)    
 		{
            
             Title = "The Alien";
