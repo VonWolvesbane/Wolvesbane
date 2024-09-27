@@ -2,50 +2,53 @@ using System;
 
 namespace Server.Mobiles
 {
-    [CorpseName("a dragon corpse")]
-    public class Dragon : BaseCreature
+    [CorpseName("a white dragon corpse")]
+    public class WhiteDragon : BaseCreature
     {
         [Constructable]
-        public Dragon()
-            : base(AIType.AI_Mage, FightMode.Closest, 10, 1, 0.2, 0.4)
+        public WhiteDragon()
+            : base(AIType.AI_Mage, FightMode.Closest, 10, 1, 0.1, 0.4)
         {
-            this.Name = "a dragon";
+            this.Name = "a white dragon";
             this.Body = Utility.RandomList(12, 59);
             this.BaseSoundID = 362;
+            this.Hue = 1153;
 
-            this.SetStr(796, 825);
-            this.SetDex(86, 105);
-            this.SetInt(436, 475);
+            this.SetStr(800);
+            this.SetDex(800);
+            this.SetInt(800);
 
-            this.SetHits(478, 495);
-
-            this.SetDamage(16, 22);
+            this.SetHits(120000);
+            this.SetStam(120000);
+            this.SetDamage(75, 75);
 
             this.SetDamageType(ResistanceType.Physical, 100);
 
-            this.SetResistance(ResistanceType.Physical, 55, 65);
-            this.SetResistance(ResistanceType.Fire, 60, 70);
-            this.SetResistance(ResistanceType.Cold, 30, 40);
-            this.SetResistance(ResistanceType.Poison, 25, 35);
-            this.SetResistance(ResistanceType.Energy, 35, 45);
+            this.SetResistance(ResistanceType.Physical, 60);
+            this.SetResistance(ResistanceType.Fire, 60);
+            this.SetResistance(ResistanceType.Cold, 60);
+            this.SetResistance(ResistanceType.Poison, 60);
+            this.SetResistance(ResistanceType.Energy, 60);
 
-            this.SetSkill(SkillName.EvalInt, 30.1, 40.0);
-            this.SetSkill(SkillName.Magery, 30.1, 40.0);
-            this.SetSkill(SkillName.MagicResist, 99.1, 100.0);
-            this.SetSkill(SkillName.Tactics, 97.6, 100.0);
-            this.SetSkill(SkillName.Wrestling, 90.1, 92.5);
 
+            this.SetSkill(SkillName.EvalInt, 200);
+            this.SetSkill(SkillName.Magery, 200);
+            this.SetSkill(SkillName.Meditation, 200);
+            this.SetSkill(SkillName.MagicResist, 200);
+            this.SetSkill(SkillName.Tactics, 200);
+            this.SetSkill(SkillName.Wrestling, 400);
+            this.SetSkill(SkillName.DetectHidden, 100.0);
             this.Fame = 15000;
             this.Karma = -15000;
 
             this.VirtualArmor = 60;
 
-            this.Tamable = true;
+            this.Tamable = false;
             this.ControlSlots = 3;
             this.MinTameSkill = 93.9;
         }
 
-        public Dragon(Serial serial)
+        public WhiteDragon(Serial serial)
             : base(serial)
         {
         }
@@ -71,69 +74,7 @@ namespace Server.Mobiles
                 return !this.Controlled;
             }
         }
-        public override int TreasureMapLevel
-        {
-            get
-            {
-                return 4;
-            }
-        }
-        public override int Meat
-        {
-            get
-            {
-                return 19;
-            }
-        }
-        public override int DragonBlood
-        {
-            get
-            {
-                return 8;
-            }
-        }
-        public override int Hides
-        {
-            get
-            {
-                return 20;
-            }
-        }
-        public override HideType HideType
-        {
-            get
-            {
-                return HideType.Barbed;
-            }
-        }
-        public override int Scales
-        {
-            get
-            {
-                return 7;
-            }
-        }
-        public override ScaleType ScaleType
-        {
-            get
-            {
-                return (this.Body == 12 ? ScaleType.Yellow : ScaleType.Red);
-            }
-        }
-        public override FoodType FavoriteFood
-        {
-            get
-            {
-                return FoodType.Meat;
-            }
-        }
-        public override bool CanAngerOnTame
-        {
-            get
-            {
-                return true;
-            }
-        }
+
         public override bool CanFly
         {
             get
