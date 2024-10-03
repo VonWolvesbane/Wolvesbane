@@ -14,7 +14,7 @@ namespace Server.Items
         [Constructable]
         public OctoberThingy2024() : base(41369)
         {
-            Name = "June Thingy 2024";
+            Name = "October Thingy 2024";
             Weight = 2.0;
             StartColorCycle();
         }
