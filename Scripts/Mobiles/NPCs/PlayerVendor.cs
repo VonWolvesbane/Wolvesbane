@@ -178,7 +178,7 @@ namespace Server.Mobiles
             if (!base.CheckItemUse(from, item))
                 return false;
 
-            if (item is Container || item is Engines.BulkOrders.BulkOrderBook || item is RecipeBook)
+            if (item is Container || item is Engines.BulkOrders.BulkOrderBook || item is RecipeBook || item is PowerScrollBook)
                 return true;
 
             from.SendLocalizedMessage(500447); // That is not accessible.
@@ -1609,7 +1609,8 @@ namespace Server.Mobiles
                         else
                             setPrice = true;
                     }
-                    else if (item is BaseBook || item is Engines.BulkOrders.BulkOrderBook || item is RecipeBook)
+                    else if (item is BaseBook || item is Engines.BulkOrders.BulkOrderBook || item is RecipeBook || item is PowerScrollBook
+                    )
                     {
                         setPrice = true;
                     }

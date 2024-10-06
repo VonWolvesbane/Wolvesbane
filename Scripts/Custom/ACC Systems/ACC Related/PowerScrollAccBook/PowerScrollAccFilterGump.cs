@@ -31,42 +31,46 @@ namespace Server.Items
     {
         private PlayerMobile m_From;
         private PowerScrollBook m_Book;
-
         private const int LabelColor = 0x7FFF;
 
         private static int[,] m_SkillFilters = new int[,]
-			{
-				{ 1062229,  0 }, 
-				{       0,  1 }, 
-				{       0,  2 }, 
-				{       0,  3 }, 
-                {       0,  0 }, 
-				{       0,  4 }, 
-                {       0,  5 }, 
-                {       0,  6 }, 
-			};
+            {
+                { 1062229,  0 },
+                {       0,  1 },
+                {       0,  2 },
+                {       0,  3 },
+                {       0,  0 },
+                {       0,  4 },
+                {       0,  5 },
+                {       0,  6 },
+            };
 
         private static int[,] m_ValueFilters = new int[,]
-			{
-				{ 1062229, 0 }, 
-				{       0, 1 }, 
-				{       0, 2 }, 
-				{       0, 3 }, 
-				{       0, 4 }
-			};
+        {
+            { 1062229, 0 },
+            {       0, 1 },
+            {       0, 2 },
+            {       0, 3 },
+            {       0, 4 },
+            {       0, 0 },
+            {       0, 5 },
+            {       0, 6 },
+            {       0, 7 },
+            {       0, 8 },
+            {       0, 0 },
+            {       0, 9 },
+            {       0, 10 }
+        };
 
         private static int[][,] m_Filters = new int[][,]
-			{
-				m_SkillFilters,
+            {
+                m_SkillFilters,
                 m_ValueFilters
-			};
-
+            };
         private static int[] m_XOffsets_SkillValue = new int[] { 0, 75, 180, 275, 370 };
         private static int[] m_XOffsets_SkillCategory = new int[] { 0, 105, 255, 405 };
-
         private static int[] m_XWidths_Small = new int[] { 50, 50, 70, 50, 50 };
         private static int[] m_XWidths_Large = new int[] { 80, 80, 80, 80 };
-
         private void AddFilterList(int x, int y, int[] xOffsets, int yOffset, int[,] filters, int[] xWidths, int filterValue, int filterIndex)
         {
             for (int i = 0; i < filters.GetLength(0); ++i)
@@ -122,7 +126,7 @@ namespace Server.Items
                 }
                 else if (filterIndex == 1)
                 {
-                    if (filters[i, 1] >= 1 && filters[i, 1] <= 4)
+                    if (filters[i, 1] >= 1 && filters[i, 1] <= 10)
                     {
                         switch (filters[i, 1])
                         {
@@ -142,6 +146,30 @@ namespace Server.Items
                                 AddHtml(x + 35 + xOffsets[i % xOffsets.Length], y + ((i / xOffsets.Length) * yOffset), xWidths[i % xOffsets.Length], yOffset, isSelected ? "<basefont color=#8484FF>20" : "<basefont color=#FFFFFF>20", false, false);
                                 AddButton(x + xOffsets[i % xOffsets.Length], y + ((i / xOffsets.Length) * yOffset), 4005, 4007, 4 + filterIndex + (i * 4), GumpButtonType.Reply, 0);
                                 continue;
+                            case 5:
+                                AddHtml(x + 35 + xOffsets[i % xOffsets.Length], y + ((i / xOffsets.Length) * yOffset), xWidths[i % xOffsets.Length], yOffset, isSelected ? "<basefont color=#8484FF>25" : "<basefont color=#FFFFFF>25", false, false);
+                                AddButton(x + xOffsets[i % xOffsets.Length], y + ((i / xOffsets.Length) * yOffset), 4005, 4007, 4 + filterIndex + (i * 4), GumpButtonType.Reply, 0);
+                                continue;
+                            case 6:
+                                AddHtml(x + 35 + xOffsets[i % xOffsets.Length], y + ((i / xOffsets.Length) * yOffset), xWidths[i % xOffsets.Length], yOffset, isSelected ? "<basefont color=#8484FF>30" : "<basefont color=#FFFFFF>30", false, false);
+                                AddButton(x + xOffsets[i % xOffsets.Length], y + ((i / xOffsets.Length) * yOffset), 4005, 4007, 4 + filterIndex + (i * 4), GumpButtonType.Reply, 0);
+                                continue;
+                            case 7:
+                                AddHtml(x + 35 + xOffsets[i % xOffsets.Length], y + ((i / xOffsets.Length) * yOffset), xWidths[i % xOffsets.Length], yOffset, isSelected ? "<basefont color=#8484FF>35" : "<basefont color=#FFFFFF>35", false, false);
+                                AddButton(x + xOffsets[i % xOffsets.Length], y + ((i / xOffsets.Length) * yOffset), 4005, 4007, 4 + filterIndex + (i * 4), GumpButtonType.Reply, 0);
+                                continue;
+                            case 8:
+                                AddHtml(x + 35 + xOffsets[i % xOffsets.Length], y + ((i / xOffsets.Length) * yOffset), xWidths[i % xOffsets.Length], yOffset, isSelected ? "<basefont color=#8484FF>40" : "<basefont color=#FFFFFF>40", false, false);
+                                AddButton(x + xOffsets[i % xOffsets.Length], y + ((i / xOffsets.Length) * yOffset), 4005, 4007, 4 + filterIndex + (i * 4), GumpButtonType.Reply, 0);
+                                continue;
+                            case 9:
+                                AddHtml(x + 35 + xOffsets[i % xOffsets.Length], y + ((i / xOffsets.Length) * yOffset), xWidths[i % xOffsets.Length], yOffset, isSelected ? "<basefont color=#8484FF>45" : "<basefont color=#FFFFFF>45", false, false);
+                                AddButton(x + xOffsets[i % xOffsets.Length], y + ((i / xOffsets.Length) * yOffset), 4005, 4007, 4 + filterIndex + (i * 4), GumpButtonType.Reply, 0);
+                                continue;
+                            case 10:
+                                AddHtml(x + 35 + xOffsets[i % xOffsets.Length], y + ((i / xOffsets.Length) * yOffset), xWidths[i % xOffsets.Length], yOffset, isSelected ? "<basefont color=#8484FF>50" : "<basefont color=#FFFFFF>50", false, false);
+                                AddButton(x + xOffsets[i % xOffsets.Length], y + ((i / xOffsets.Length) * yOffset), 4005, 4007, 4 + filterIndex + (i * 4), GumpButtonType.Reply, 0);
+                                continue;
                         }
                     }
                 }
@@ -159,27 +187,27 @@ namespace Server.Items
 
             switch (index)
             {
-                case 0: 
+                case 0:
                     {
                         m_From.SendGump(new PowerScrollBookGump(m_From, m_Book));
 
                         break;
                     }
-                case 1: 
+                case 1:
                     {
                         m_From.UseOwnFilter = false;
                         m_From.SendGump(new PowerScrollFilterGump(m_From, m_Book));
 
                         break;
                     }
-                case 2: 
+                case 2:
                     {
                         m_From.UseOwnFilter = true;
                         m_From.SendGump(new PowerScrollFilterGump(m_From, m_Book));
 
                         break;
                     }
-                case 3: 
+                case 3:
                     {
                         f.Clear();
                         m_From.SendGump(new PowerScrollFilterGump(m_From, m_Book));
@@ -215,6 +243,12 @@ namespace Server.Items
                                             case 2: f.SkillValue = 110; break;
                                             case 3: f.SkillValue = 115; break;
                                             case 4: f.SkillValue = 120; break;
+                                            case 5: f.SkillValue = 125; break;
+                                            case 6: f.SkillValue = 130; break;
+                                            case 7: f.SkillValue = 135; break;
+                                            case 8: f.SkillValue = 140; break;
+                                            case 9: f.SkillValue = 145; break;
+                                            case 10: f.SkillValue = 150; break;
                                         }
                                         break;
                                 }
@@ -253,17 +287,9 @@ namespace Server.Items
 
             AddHtmlLocalized(270, 20, 200, 32, 1062223, LabelColor, false, false);
 
-            
-            
-
-            
-            
-
-            
             AddLabel(26, 100, 1149, @"Skill Category");
             AddFilterList(25, 132, m_XOffsets_SkillCategory, 40, m_SkillFilters, m_XWidths_Large, (int)f.SkillCat, 0);
 
-            
             AddLabel(26, 220, 1149, @"Skill Value");
             int ValueIndex = 0;
             switch (f.SkillValue)
@@ -272,14 +298,17 @@ namespace Server.Items
                 case 110: ValueIndex = 2; break;
                 case 115: ValueIndex = 3; break;
                 case 120: ValueIndex = 4; break;
+                case 125: ValueIndex = 5; break;
+                case 130: ValueIndex = 6; break;
+                case 135: ValueIndex = 7; break;
+                case 140: ValueIndex = 8; break;
+                case 145: ValueIndex = 9; break;
+                case 150: ValueIndex = 10; break;
             }
             AddFilterList(25, 242, m_XOffsets_SkillValue, 40, m_ValueFilters, m_XWidths_Small, ValueIndex, 1);
 
             AddHtmlLocalized(75, 416, 120, 32, 1062477, (from.UseOwnFilter ? LabelColor : 16927), false, false);
             AddButton(40, 416, 4005, 4007, 1, GumpButtonType.Reply, 0);
-
-            
-            
 
             AddHtmlLocalized(405, 416, 120, 32, 1062231, LabelColor, false, false);
             AddButton(370, 416, 4005, 4007, 3, GumpButtonType.Reply, 0);
