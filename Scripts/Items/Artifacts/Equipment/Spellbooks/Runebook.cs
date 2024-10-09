@@ -10,12 +10,24 @@ using Server.Network;
 namespace Server.Items
 {
     public class Runebook : Item, ISecurable, ICraftable
-	{
+    {
         public static readonly TimeSpan UseDelay = TimeSpan.FromSeconds(7.0);
+        public Type Type { get; set; }
+
+        public virtual bool HasGump(Mobile toCheck)
+        {
+            // Base implementation
+            return false;
+        }
+
+        public virtual void CloseGump(Mobile m)
+        {
+            // Base implementation
+        }
 
         private BookQuality m_Quality;
-		
-        [CommandProperty(AccessLevel.GameMaster)]		
+
+        [CommandProperty(AccessLevel.GameMaster)]
         public BookQuality Quality
         {
             get
@@ -35,9 +47,9 @@ namespace Server.Items
         private int m_DefaultIndex;
         private SecureLevel m_Level;
         private Mobile m_Crafter;
-		
+
         private DateTime m_NextUse;
-		
+
         private List<Mobile> m_Openers = new List<Mobile>();
 
         [CommandProperty(AccessLevel.GameMaster)]
@@ -119,7 +131,7 @@ namespace Server.Items
                 m_MaxCharges = value;
             }
         }
-		
+
         public List<Mobile> Openers
         {
             get
@@ -221,7 +233,7 @@ namespace Server.Items
 
             writer.Write((int)3);
 
-            writer.Write((byte)m_Quality);	
+            writer.Write((byte)m_Quality);
 
             writer.Write(m_Crafter);
 
@@ -249,11 +261,11 @@ namespace Server.Items
 
             int version = reader.ReadInt();
 
-            switch ( version )
+            switch (version)
             {
                 case 3:
                     {
-                        m_Quality = (BookQuality)reader.ReadByte();		
+                        m_Quality = (BookQuality)reader.ReadByte();
                         goto case 2;
                     }
                 case 2:
@@ -355,17 +367,17 @@ namespace Server.Items
         public override void GetProperties(ObjectPropertyList list)
         {
             base.GetProperties(list);
-		
+
             if (m_Quality == BookQuality.Exceptional)
                 list.Add(1063341); // exceptional
 
             if (m_Crafter != null)
-				list.Add(1050043, m_Crafter.TitleName); // crafted by ~1_NAME~
+                list.Add(1050043, m_Crafter.TitleName); // crafted by ~1_NAME~
 
             if (m_Description != null && m_Description.Length > 0)
                 list.Add(m_Description);
         }
-		
+
         public override bool OnDragLift(Mobile from)
         {
             if (from.HasGump(typeof(RunebookGump)))
@@ -373,13 +385,13 @@ namespace Server.Items
                 from.SendLocalizedMessage(500169); // You cannot pick that up.
                 return false;
             }
-			
+
             foreach (Mobile m in m_Openers)
                 if (IsOpen(m))
                     m.CloseGump(typeof(RunebookGump));
-				
+
             m_Openers.Clear();
-			
+
             return true;
         }
 
@@ -391,7 +403,7 @@ namespace Server.Items
             base.OnSingleClick(from);
 
             if (m_Crafter != null)
-				LabelTo(from, 1050043, m_Crafter.TitleName);
+                LabelTo(from, 1050043, m_Crafter.TitleName);
         }
 
         public override void OnDoubleClick(Mobile from)
@@ -412,7 +424,7 @@ namespace Server.Items
 
                 from.CloseGump(typeof(RunebookGump));
                 from.SendGump(new RunebookGump(from, this));
-				
+
                 m_Openers.Add(from);
             }
         }
@@ -495,7 +507,7 @@ namespace Server.Items
                             from.SendLocalizedMessage(502409); // This rune does not have a marked location.
                         }
                     }
-                    else if(dropped is ShipRune)
+                    else if (dropped is ShipRune)
                     {
                         ShipRune rune = (ShipRune)dropped;
 
@@ -588,6 +600,9 @@ namespace Server.Items
         private readonly string m_Description;
         private readonly BaseHouse m_House;
         private BaseGalleon m_Galleon;
+		internal object Type;
+
+		public RecallRuneType RuneType { get; set; }
 
         public Point3D Location
         {
@@ -644,12 +659,11 @@ namespace Server.Items
             m_House = house;
             m_Galleon = g;
         }
-
         public RunebookEntry(GenericReader reader)
         {
             int version = reader.ReadByte();
 
-            switch ( version )
+            switch (version)
             {
                 case 2:
                     {
@@ -695,5 +709,10 @@ namespace Server.Items
             writer.Write(m_Map);
             writer.Write(m_Description);
         }
-    }
+
+		public class RecallRuneType
+		{
+			public static object Ship { get; internal set; }
+		}
+	}
 }
