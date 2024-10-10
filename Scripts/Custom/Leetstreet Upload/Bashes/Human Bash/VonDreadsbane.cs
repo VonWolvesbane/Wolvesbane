@@ -21,7 +21,7 @@ namespace Server.Mobiles
         public override bool AlwaysMurderer { get { return true; } }
 
         [Constructable]
-        public VonDreadsbane() : base(AIType.AI_MegaMage, FightMode.Closest, 10, 1, 0.002, 0.004)
+        public VonDreadsbane() : base(AIType.AI_NecroMage, FightMode.Closest, 10, 1, 0.002, 0.004)
         {
             Name = "Von Dreadsbane";
             Title = "The Evil Shard Owner";
