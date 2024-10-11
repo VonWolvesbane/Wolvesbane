@@ -40,6 +40,7 @@ namespace Server.Items
         public HalloweenTotem()
             : base(0xA276)
         {
+            Name = "Halloween 2024 Costume";
             LootType = LootType.Blessed;
         }
 
