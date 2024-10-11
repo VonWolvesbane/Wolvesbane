@@ -1189,7 +1189,7 @@ namespace Server.Items
             //daat99 OWLTR end - custom leather
 
             //daat99 OWLTR start - custom ores
-            if (info.Level >= 0 && info.Level <= 15)
+            if (info.Level >= 0 && info.Level <= 14)
                 return (CraftResource)(info.Level + 1);
             //daat99 OWLTR end - custom ores
 
