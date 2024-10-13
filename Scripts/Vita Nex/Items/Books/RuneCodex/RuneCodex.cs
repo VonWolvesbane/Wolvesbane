@@ -211,17 +211,19 @@ namespace VitaNex.Items
 
 		public override void OnDoubleClick(Mobile m)
 		{
-			if (!this.CheckDoubleClick(m, true, false, 3) || !(m is PlayerMobile))
+			if (!(m is PlayerMobile pm))
 			{
 				return;
 			}
 
-			var pm = (PlayerMobile)m;
+			bool isInBackpack = this.RootParent == pm;
+			if (!this.CheckDoubleClick(m, true, false, isInBackpack ? -1 : 3))
+			{
+				return;
+			}
 
 			var ui = Users.FirstOrDefault(uic => uic.User == pm) ?? new UICache(pm);
-
 			Users.Update(ui);
-
 			new RuneCodexGump(pm, this).Send();
 		}
 
