@@ -1,9 +1,10 @@
-// Created by Tom Sibilsky aka Neptune
-
-using System;
-using System.Collections.Generic;
-//using daat99;
+using System.Collections;
+using Server.Targeting;
+using Server.Network;
 using Server.Items;
+using System.Collections.Generic;
+using System.Linq;
+using System;
 
 namespace Server.Mobiles
 {
@@ -15,12 +16,6 @@ namespace Server.Mobiles
 			return Utility.RandomBool() ? WeaponAbility.CrushingBlow : WeaponAbility.ConcussionBlow;
 		}
 
-		private Timer m_Timer;
-		private int i_PsCount;
-		public int PsCount { get { return i_PsCount; } set { i_PsCount = value; InvalidateProperties(); } }
-		private bool i_ChampionSpawn;
-		public bool ChampionSpawn { get { return i_ChampionSpawn; } set { i_ChampionSpawn = value; InvalidateProperties(); } }
-
 		[Constructable]
 		public Malacoda() : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
 		{
@@ -29,7 +24,6 @@ namespace Server.Mobiles
 			Body = 400;
 			Female = false;
 			Hue = 33775;
-			ChampionSpawn = i_ChampionSpawn;
 
 			SetStr(8400);
 			SetDex(8400);
@@ -106,96 +100,70 @@ namespace Server.Mobiles
 				case 5: PackItem(new MalabrancheChest()); break;
 				case 6: PackItem(new MalabrancheVest()); break;
 			}
+			AddLoot(LootPack.SuperBoss, 3);
+		}
 
-			List<Mobile> toGive = new List<Mobile>();
-
-			// Gather all attackers who are eligible to receive Power Scrolls
-			List<AggressorInfo> aggressors = this.Aggressors;
-			for (int i = 0; i < aggressors.Count; ++i)
-			{
-				AggressorInfo info = aggressors[i];
-
-				if (info.Attacker.Player && info.Attacker.Alive && (DateTime.Now - info.LastCombatTime) < TimeSpan.FromSeconds(30.0) && !toGive.Contains(info.Attacker))
-					toGive.Add(info.Attacker);
-			}
-
-			// Also check looting rights for eligible players
+		public override void OnDeath(Container c)
+		{
+			base.OnDeath(c);
 			List<DamageStore> rights = GetLootingRights();
-			for (int i = 0; i < rights.Count; ++i)
+
+			foreach (Mobile m in rights.Select(x => x.m_Mobile).Distinct())
 			{
-				DamageStore ds = rights[i];
-
-				if (ds.m_HasRight && !toGive.Contains(ds.m_Mobile))
-					toGive.Add(ds.m_Mobile);
-			}
-
-			if (toGive.Count == 0)
-				return;
-
-			for (int i = 0; i < toGive.Count; ++i)
-			{
-				int rand = Utility.Random(toGive.Count);
-				Mobile temp = toGive[i];
-				toGive[i] = toGive[rand];
-				toGive[rand] = temp;
-			}
-
-			int PsCount = toGive.Count;
-
-			for (int i = 0; i < PsCount && i < toGive.Count; ++i)
-			{
-				Mobile m = toGive[i];
-
-				int level;
-				double random = Utility.RandomDouble();
-				if (random <= 0.05)
-					level = 150;
-				else if (random <= 0.10)
-					level = 145;
-				else if (random <= 0.15)
-					level = 140;
-				else if (random <= 0.20)
-					level = 135;
-				else if (random <= 0.25)
-					level = 130;
-				else
-					level = 125;
-
-				int skillIndex = Utility.Random(32);
-				switch (skillIndex)
+				if (m is PlayerMobile)
 				{
-					case 0: m.AddToBackpack(new PowerScroll(SkillName.Swords, level)); break;
-					case 1: m.AddToBackpack(new PowerScroll(SkillName.Fencing, level)); break;
-					case 2: m.AddToBackpack(new PowerScroll(SkillName.Macing, level)); break;
-					case 3: m.AddToBackpack(new PowerScroll(SkillName.Archery, level)); break;
-					case 4: m.AddToBackpack(new PowerScroll(SkillName.Wrestling, level)); break;
-					case 5: m.AddToBackpack(new PowerScroll(SkillName.Parry, level)); break;
-					case 6: m.AddToBackpack(new PowerScroll(SkillName.Tactics, level)); break;
-					case 7: m.AddToBackpack(new PowerScroll(SkillName.Anatomy, level)); break;
-					case 8: m.AddToBackpack(new PowerScroll(SkillName.Healing, level)); break;
-					case 9: m.AddToBackpack(new PowerScroll(SkillName.Magery, level)); break;
-					case 10: m.AddToBackpack(new PowerScroll(SkillName.Meditation, level)); break;
-					case 11: m.AddToBackpack(new PowerScroll(SkillName.EvalInt, level)); break;
-					case 12: m.AddToBackpack(new PowerScroll(SkillName.MagicResist, level)); break;
-					case 13: m.AddToBackpack(new PowerScroll(SkillName.AnimalTaming, level)); break;
-					case 14: m.AddToBackpack(new PowerScroll(SkillName.AnimalLore, level)); break;
-					case 15: m.AddToBackpack(new PowerScroll(SkillName.Veterinary, level)); break;
-					case 16: m.AddToBackpack(new PowerScroll(SkillName.Musicianship, level)); break;
-					case 17: m.AddToBackpack(new PowerScroll(SkillName.Provocation, level)); break;
-					case 18: m.AddToBackpack(new PowerScroll(SkillName.Discordance, level)); break;
-					case 19: m.AddToBackpack(new PowerScroll(SkillName.Peacemaking, level)); break;
-					case 20: m.AddToBackpack(new PowerScroll(SkillName.Chivalry, level)); break;
-					case 21: m.AddToBackpack(new PowerScroll(SkillName.Focus, level)); break;
-					case 22: m.AddToBackpack(new PowerScroll(SkillName.Necromancy, level)); break;
-					case 23: m.AddToBackpack(new PowerScroll(SkillName.Stealing, level)); break;
-					case 24: m.AddToBackpack(new PowerScroll(SkillName.Stealth, level)); break;
-					case 25: m.AddToBackpack(new PowerScroll(SkillName.SpiritSpeak, level)); break;
-					case 26: m.AddToBackpack(new PowerScroll(SkillName.Spellweaving, level)); break;
-					case 27: m.AddToBackpack(new PowerScroll(SkillName.Ninjitsu, level)); break;
-					case 28: m.AddToBackpack(new PowerScroll(SkillName.Bushido, level)); break;
-					case 29: m.AddToBackpack(new PowerScroll(SkillName.Imbuing, level)); break;
-					case 30: m.AddToBackpack(new PowerScroll(SkillName.Throwing, level)); break;
-					case 31: m.AddToBackpack(new PowerScroll(SkillName.Mysticism, level)); break;
+					int level;
+					double random = Utility.RandomDouble();
+					if (random <= 0.05)
+						level = 150;
+					else if (random <= 0.10)
+						level = 145;
+					else if (random <= 0.15)
+						level = 140;
+					else if (random <= 0.20)
+						level = 135;
+					else if (random <= 0.25)
+						level = 130;
+					else
+						level = 125;
+
+					int skillIndex = Utility.Random(32);
+					switch (skillIndex)
+					{
+						case 0: m.AddToBackpack(new PowerScroll(SkillName.Swords, level)); break;
+						case 1: m.AddToBackpack(new PowerScroll(SkillName.Fencing, level)); break;
+						case 2: m.AddToBackpack(new PowerScroll(SkillName.Macing, level)); break;
+						case 3: m.AddToBackpack(new PowerScroll(SkillName.Archery, level)); break;
+						case 4: m.AddToBackpack(new PowerScroll(SkillName.Wrestling, level)); break;
+						case 5: m.AddToBackpack(new PowerScroll(SkillName.Parry, level)); break;
+						case 6: m.AddToBackpack(new PowerScroll(SkillName.Tactics, level)); break;
+						case 7: m.AddToBackpack(new PowerScroll(SkillName.Anatomy, level)); break;
+						case 8: m.AddToBackpack(new PowerScroll(SkillName.Healing, level)); break;
+						case 9: m.AddToBackpack(new PowerScroll(SkillName.Magery, level)); break;
+						case 10: m.AddToBackpack(new PowerScroll(SkillName.Meditation, level)); break;
+						case 11: m.AddToBackpack(new PowerScroll(SkillName.EvalInt, level)); break;
+						case 12: m.AddToBackpack(new PowerScroll(SkillName.MagicResist, level)); break;
+						case 13: m.AddToBackpack(new PowerScroll(SkillName.AnimalTaming, level)); break;
+						case 14: m.AddToBackpack(new PowerScroll(SkillName.AnimalLore, level)); break;
+						case 15: m.AddToBackpack(new PowerScroll(SkillName.Veterinary, level)); break;
+						case 16: m.AddToBackpack(new PowerScroll(SkillName.Musicianship, level)); break;
+						case 17: m.AddToBackpack(new PowerScroll(SkillName.Provocation, level)); break;
+						case 18: m.AddToBackpack(new PowerScroll(SkillName.Discordance, level)); break;
+						case 19: m.AddToBackpack(new PowerScroll(SkillName.Peacemaking, level)); break;
+						case 20: m.AddToBackpack(new PowerScroll(SkillName.Chivalry, level)); break;
+						case 21: m.AddToBackpack(new PowerScroll(SkillName.Focus, level)); break;
+						case 22: m.AddToBackpack(new PowerScroll(SkillName.Necromancy, level)); break;
+						case 23: m.AddToBackpack(new PowerScroll(SkillName.Stealing, level)); break;
+						case 24: m.AddToBackpack(new PowerScroll(SkillName.Stealth, level)); break;
+						case 25: m.AddToBackpack(new PowerScroll(SkillName.SpiritSpeak, level)); break;
+						case 26: m.AddToBackpack(new PowerScroll(SkillName.Spellweaving, level)); break;
+						case 27: m.AddToBackpack(new PowerScroll(SkillName.Ninjitsu, level)); break;
+						case 28: m.AddToBackpack(new PowerScroll(SkillName.Bushido, level)); break;
+						case 29: m.AddToBackpack(new PowerScroll(SkillName.Imbuing, level)); break;
+						case 30: m.AddToBackpack(new PowerScroll(SkillName.Throwing, level)); break;
+						case 31: m.AddToBackpack(new PowerScroll(SkillName.Mysticism, level)); break;
+					}
+					m.SendMessage("You have recieved A Scroll of power for your efforts!");
 				}
 			}
 		}
@@ -212,7 +180,7 @@ namespace Server.Mobiles
 				BaseCreature bc = (BaseCreature)from;
 
 				if (bc.Controlled || bc.BardTarget == this)
-					damage = 0; // Immune to pets and provoked creatures
+					damage = 0;
 			}
 		}
 
