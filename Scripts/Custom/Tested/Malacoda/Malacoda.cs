@@ -116,9 +116,9 @@ namespace Server.Mobiles
 					double random = Utility.RandomDouble();
 					if (random <= 0.05)
 						level = 150;
-					else if (random <= 0.10)
-						level = 145;
 					else if (random <= 0.15)
+						level = 145;
+					else if (random <= 0.20)
 						level = 140;
 					else if (random <= 0.20)
 						level = 135;
