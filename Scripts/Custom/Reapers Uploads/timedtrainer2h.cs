@@ -182,7 +182,7 @@ namespace Server.Mobiles
             Effects.PlaySound(Location, Map, 0x201);
 			
             StopTimer();
-            Delete();
+            base.Delete();
         
 		}
 		public override void Serialize( GenericWriter writer )

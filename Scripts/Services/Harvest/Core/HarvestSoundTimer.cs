@@ -28,7 +28,7 @@ namespace Server.Engines.Harvest
             this.m_System.DoHarvestingSound(this.m_From, this.m_Tool, this.m_Definition, this.m_ToHarvest);
 
             if (this.m_Last)
-                this.m_System.FinishHarvesting(this.m_From, this.m_Tool, this.m_Definition, this.m_ToHarvest, this.m_Locked);
+				this.m_System.FinishHarvesting(this.m_From, this.m_Tool, this.m_Definition, this.m_ToHarvest, this.m_Locked);
         }
     }
 }

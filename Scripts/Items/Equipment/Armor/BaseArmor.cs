@@ -2651,16 +2651,25 @@ namespace Server.Items
                             HitPoints = 0;
                         }
 
-                        if (wear > 0)
-                        {
-                            if (m_MaxHitPoints > wear)
-                            {
-                                MaxHitPoints -= wear;
+						if (wear > 0)
+						{
+							if (this.m_MaxHitPoints > wear)
+							{
+								this.MaxHitPoints -= wear;
 
-                                if (Parent is Mobile)
-                                    ((Mobile)Parent).LocalOverheadMessage(MessageType.Regular, 0x3B2, 1061121); // Your equipment is severely damaged.
-                            }
-                            else
+								if (this.Parent is Mobile parent)
+								{
+									if (parent is PlayerMobile)
+									{
+										parent.LocalOverheadMessage(MessageType.Regular, 0x3B2, 1061121); // Your equipment is severely damaged.
+									}
+									else if (parent is BaseCreature creature && creature.Controlled)
+									{
+										creature.PublicOverheadMessage(MessageType.Regular, 0x3B2, false, "My equipment is damaged.");
+									}
+								}
+							}
+							else
                             {
                                 Delete();
                             }
