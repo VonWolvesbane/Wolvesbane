@@ -101,12 +101,14 @@ namespace Server.Items
 
             if (m is PlayerMobile)
             {
-                m.AddToBackpack(new SkillsCodex (3, 120, true, SkillCodexMode.Fixed, SkillCodexFlags.Both));
-                
-                
+				SkillsCodex codex = new SkillsCodex(3, 120, true, SkillCodexMode.Fixed, SkillCodexFlags.Both);
+				codex.Movable = false;
+				m.AddToBackpack(codex);
 
 
-            }
+
+
+			}
 
             if (m.IsPlayer() || !m.Hidden)
                 m.PlaySound(0x1FE);
