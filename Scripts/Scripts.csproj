@@ -1782,6 +1782,8 @@
     <Compile Include="Custom\New Systems\Instance Dungeons\Dungeons\Despise\Mobiles\Knoll.cs" />
     <Compile Include="Custom\New Systems\Instance Dungeons\Dungeons\Despise\Mobiles\KnollCaptain.cs" />
     <Compile Include="Custom\New Systems\Instance Dungeons\Dungeons\DungeonGenerator.cs" />
+    <Compile Include="Custom\New Systems\Instance Dungeons\Dungeons\Harrower\HarrowerInstance.cs" />
+    <Compile Include="Custom\New Systems\Instance Dungeons\Dungeons\Harrower\Mobiles\Harrower2.cs" />
     <Compile Include="Custom\New Systems\Instance Dungeons\Dungeons\Sewers of Britain\Boss\LittleBarracoon.cs" />
     <Compile Include="Custom\New Systems\Instance Dungeons\Dungeons\Sewers of Britain\Boss\SewerThing.cs" />
     <Compile Include="Custom\New Systems\Instance Dungeons\Dungeons\Sewers of Britain\Boss\Sycophant.cs" />
@@ -2368,7 +2370,7 @@
     <Compile Include="Custom\Reapers Uploads\Quests\Titan Quest\TitanGump.cs" />
     <Compile Include="Custom\Reapers Uploads\Quests\Titan Quest\TitanWarriorSandals.cs" />
     <Compile Include="Custom\Reapers Uploads\ShardBreaker.cs" />
-    <Compile Include="Custom\Reapers Uploads\SkillKatana.cs" />
+    <Compile Include="Custom\Wolvesbane Written\AI Written\SkillKatana.cs" />
     <Compile Include="Custom\Reapers Uploads\SlasherOfVeilsTame.cs" />
     <Compile Include="Custom\Reapers Uploads\Talkingsigns.cs" />
     <Compile Include="Custom\Reapers Uploads\Ticket TP\Ticket.cs" />
@@ -2421,6 +2423,7 @@
     <Compile Include="Custom\Tested\The Grove related Items\NewbieLegs.cs" />
     <Compile Include="Custom\Tested\Universal Storage Keys Version 2.0.6\Items\PSKey1.cs" />
     <Compile Include="Custom\WD.cs" />
+    <Compile Include="Custom\Wolvesbane Written\AI Written\SkillSelectGump.cs" />
     <Compile Include="Custom\Wolvesbane Written\AI Written\Training Weapon.cs" />
     <Compile Include="Custom\Wolvesbane Written\AI Written\Immunity Boss.cs" />
     <Compile Include="Custom\Wolvesbane Written\AI Written\PetResStone.cs" />
