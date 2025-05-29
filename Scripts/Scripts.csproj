@@ -1748,6 +1748,7 @@
     <Compile Include="Custom\New Systems\FS-ATS Gen2\Animal Taming BODs\Rewards\Pet Power Scrolls\PetPowerScroll.cs" />
     <Compile Include="Custom\New Systems\FS-ATS Gen2\Animal Taming BODs\Rewards\PetBondingDeed.cs" />
     <Compile Include="Custom\New Systems\FS-ATS Gen2\Items\PetBag.cs" />
+    <Compile Include="Custom\New Systems\Instance Dungeons\Dungeons\Champion Inst\ChampionInstance.cs" />
     <Compile Include="Custom\New Systems\Instance Dungeons\Dungeons\Core\Dungeon.cs" />
     <Compile Include="Custom\New Systems\Instance Dungeons\Dungeons\Core\Dungeon_Actions.cs" />
     <Compile Include="Custom\New Systems\Instance Dungeons\Dungeons\Core\Dungeon_Loot.cs" />

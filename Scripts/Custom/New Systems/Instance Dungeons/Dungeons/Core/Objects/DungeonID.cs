@@ -20,6 +20,7 @@ namespace VitaNex.Dungeons
 		/// </summary>
 		SoB = 1,
 		Des = 2,
-		Harr = 3
+		Harr = 3,
+		Champ = 4,
 	}
 }

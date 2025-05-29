@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 
 using Server;
+using Server.Engines.CannedEvil;
 using Server.Items;
 using Server.Mobiles;
 using Xanthos.Evo;
@@ -11,17 +12,17 @@ using Xanthos.Evo;
 
 namespace VitaNex.Dungeons
 {
-    public sealed class ChampionInstance : Dungeon
+    public sealed class ChampInstance : Dungeon
     {
-        public override DungeonID ID { get { return DungeonID.Harr; } }
+        public override DungeonID ID { get { return DungeonID.Champ; } }
 
-        public override Map MapParent { get { return Server.Map.Felucca; } }
+        public override Map MapParent { get { return Server.Map.NewWolvesbane; } }
 
-        public override TimeSpan Duration { get { return TimeSpan.FromHours(2.0); } }
-        public override TimeSpan Lockout { get { return TimeSpan.FromHours(20.0); } }
+        public override TimeSpan Duration { get { return TimeSpan.FromHours(3.0); } }
+        public override TimeSpan Lockout { get { return TimeSpan.FromHours(5.0); } }
 
-        public override Point3D Entrance { get { return new Point3D(5250, 855, 0); } }
-        public override Point3D Exit { get { return new Point3D(5258, 775, 0); } }
+        public override Point3D Entrance { get { return new Point3D(5836, 176, 0); } }
+        public override Point3D Exit { get { return new Point3D(5741, 344, 0); } }
 
         public override int GroupMax { get { return 5; } }
 
@@ -34,8 +35,8 @@ namespace VitaNex.Dungeons
         public override int LootIntensityMin { get { return 40; } }
         public override int LootIntensityMax { get { return 1000; } }
 
-        public override string Name { get { return "Harrower Instance"; } }
-        public override string Desc { get { return "Rawr"; } }
+        public override string Name { get { return "Champion Instance"; } }
+        public override string Desc { get { return "This will Spawn a Random Champion"; } }
 
         public Mobile Boss1 { get; private set; }
         public Mobile Boss2 { get; private set; }
@@ -43,10 +44,10 @@ namespace VitaNex.Dungeons
 
         private List<Static>[] _BossFields = { new List<Static>(), new List<Static>(), new List<Static>() };
 
-        public ChampionInstance()
+        public ChampInstance()
         { }
 
-        public ChampionInstance(DungeonSerial serial)
+        public ChampInstance(DungeonSerial serial)
             : base(serial)
         { }
 
@@ -54,13 +55,45 @@ namespace VitaNex.Dungeons
         {
             base.OnGenerate();
 
-            CreateZone("HarrowerInstance", new Rectangle2D(5334, 866, 143, 96));
+            CreateZone("ChampionInstance", new Rectangle2D(5608, 174, 221, 190));
             GenerateEasySpawn();
             GenerateBossSpawn();
-            GenerateBlockers();
-        }
+            //GenerateBlockers();
+			GenerateChampionSpawn();
+		}
+		private ChampionSpawn _ChampionSpawn;
 
-private void GenerateBlockers()
+		private void GenerateChampionSpawn()
+		{
+			var spawnTypes = new[]
+   {
+		ChampionSpawnType.Abyss,
+		ChampionSpawnType.Arachnid,
+		ChampionSpawnType.ColdBlood,
+		ChampionSpawnType.UnholyTerror,
+		ChampionSpawnType.VerminHorde,
+		ChampionSpawnType.ForestLord,
+		ChampionSpawnType.Glade,
+		ChampionSpawnType.Corrupt,
+		ChampionSpawnType.Terror,
+		ChampionSpawnType.SleepingDragon,
+		ChampionSpawnType.Khaldun,
+		ChampionSpawnType.Infuse,
+		ChampionSpawnType.Crafter
+	};
+
+			// Pick one at random
+			ChampionSpawnType randomType = spawnTypes[Utility.Random(spawnTypes.Length)];
+
+			_ChampionSpawn = new ChampionSpawn(); // Use the default constructor
+			_ChampionSpawn.Type = randomType; // Set the type
+			_ChampionSpawn.Map = Map;
+			_ChampionSpawn.MoveToWorld(new Point3D(5715, 237, 20), Map);
+
+			// Optional: configure spawn settings
+			_ChampionSpawn.Active = true;
+		}
+		/*private void GenerateBlockers()
 {
     var points = new[]
     {
@@ -104,16 +137,16 @@ private void GenerateBlockers()
         var blocker = new Blocker();
         blocker.MoveToWorld(p, dungeonMap);
     }
-}
+}*/
         private void GenerateEasySpawn()
         {
             var types = new[] { typeof(Dragon), typeof(Drake) };
 
             var points = new[]
             {
-                new Point3D(5260, 800, 10),
-                new Point3D(5270, 810, 12),
-                new Point3D(5280, 820, 15)
+                new Point3D(5733, 256, 0),
+                new Point3D(5705, 276, 0),
+                new Point3D(5692, 250, 0)
             };
 
             foreach (var p in points)
@@ -124,7 +157,7 @@ private void GenerateBlockers()
 
         private void GenerateBossSpawn()
         {
-            Boss1 = CreateMobile<InstanceHarrower>(new Point3D(5267, 807, 7), true, true);
+            Boss1 = CreateMobile<VonWolvesbane>(new Point3D(5682, 311, 0), true, true);
         }
 
         protected override void OnSpawnActivate(Mobile m)
@@ -268,14 +301,22 @@ private void GenerateBlockers()
             }
 
             _BossFields.Free(true);
-        }
+			if (_ChampionSpawn != null && !_ChampionSpawn.Deleted)
+				_ChampionSpawn.Delete();
+
+			_ChampionSpawn = null;
+		}
 
         protected override void OnAfterDelete()
         {
             base.OnAfterDelete();
 
             Boss1 = Boss2 = Boss3 = null;
-        }
+			if (_ChampionSpawn != null && !_ChampionSpawn.Deleted)
+				_ChampionSpawn.Delete();
+
+			_ChampionSpawn = null;
+		}
 
         public override void Serialize(GenericWriter writer)
         {
