@@ -18,7 +18,7 @@ namespace VitaNex.Dungeons
 
         public override Map MapParent { get { return Server.Map.NewWolvesbane; } }
 
-        public override TimeSpan Duration { get { return TimeSpan.FromHours(3.0); } }
+        public override TimeSpan Duration { get { return TimeSpan.FromHours(1.0); } }
         public override TimeSpan Lockout { get { return TimeSpan.FromHours(5.0); } }
 
         public override Point3D Entrance { get { return new Point3D(5836, 176, 0); } }
@@ -92,6 +92,9 @@ namespace VitaNex.Dungeons
 
 			// Optional: configure spawn settings
 			_ChampionSpawn.Active = true;
+		
+
+
 		}
 		/*private void GenerateBlockers()
 {
@@ -138,7 +141,7 @@ namespace VitaNex.Dungeons
         blocker.MoveToWorld(p, dungeonMap);
     }
 }*/
-        private void GenerateEasySpawn()
+		private void GenerateEasySpawn()
         {
             var types = new[] { typeof(Dragon), typeof(Drake) };
 

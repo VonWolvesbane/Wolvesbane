@@ -147,7 +147,7 @@ namespace Server.Mobiles
 
         public virtual void GivePowerScrolls()
         {
-            if (this.Map != Map.Felucca)
+            if (this.Map != Map.Felucca || this.Map == Map.NewWolvesbane)
                 return;
 
             List<Mobile> toGive = new List<Mobile>();
@@ -252,7 +252,7 @@ namespace Server.Mobiles
 
         public override void OnDeath(Container c)
         {
-            if (this.Map == Map.Felucca)
+            if (this.Map == Map.Felucca || this.Map == Map.NewWolvesbane)
             {
                 //TODO: Confirm SE change or AoS one too?
                 List<DamageStore> rights = GetLootingRights();
