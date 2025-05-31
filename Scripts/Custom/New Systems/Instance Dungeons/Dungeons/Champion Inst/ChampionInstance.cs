@@ -87,7 +87,7 @@ namespace VitaNex.Dungeons
 
 			_ChampionSpawn = new ChampionSpawn(); // Use the default constructor
 			_ChampionSpawn.Type = randomType; // Set the type
-			_ChampionSpawn.Map = Map;
+			_ChampionSpawn.Map = Server.Map.Felucca;
 			_ChampionSpawn.MoveToWorld(new Point3D(5715, 237, 20), Map);
 
 			// Optional: configure spawn settings
