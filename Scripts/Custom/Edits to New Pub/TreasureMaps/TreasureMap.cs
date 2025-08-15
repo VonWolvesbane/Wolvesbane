@@ -428,7 +428,7 @@ namespace Server.Items
 				return Point2D.Zero;
 
 			int x, y;
-			int maxAttempts = 100; // Prevent infinite loops
+			int maxAttempts = 10; // Prevent infinite loops
 			int attempts = 0;
 
 			do
