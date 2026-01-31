@@ -2425,7 +2425,6 @@
     <Compile Include="Custom\Tested\Universal Storage Keys Version 2.0.6\Items\PSKey1.cs" />
     <Compile Include="Custom\WD.cs" />
     <Compile Include="Custom\Wolvesbane Written\AI Written\SkillSelectGump.cs" />
-    <Compile Include="Custom\Wolvesbane Written\AI Written\Training Weapon.cs" />
     <Compile Include="Custom\Wolvesbane Written\AI Written\Immunity Boss.cs" />
     <Compile Include="Custom\Wolvesbane Written\AI Written\PetResStone.cs" />
     <Compile Include="Custom\Wolvesbane Written\AI Written\SummoningOrb.cs" />
