@@ -12,7 +12,7 @@ title: Home
 
 
 
-Welcome to the official Reflection UO game database.
+Welcome to the official Wolvesbane UO game database.
 
 
 
