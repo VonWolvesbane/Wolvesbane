@@ -23,4 +23,15 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: PlateArms, PlateChest, PlateGloves, PlateGorget, PlateHelm, PlateLegs, Scimitar, WoodenShield
+
+### Guaranteed Drops
+- [Scimitar](../items/Scimitar.html)
+- [Wooden Shield](../items/WoodenShield.html)
+
+### Random Drops
+- [Plate Arms](../items/PlateArms.html)
+- [Plate Chest](../items/PlateChest.html)
+- [Plate Gloves](../items/PlateGloves.html)
+- [Plate Gorget](../items/PlateGorget.html)
+- [Plate Helm](../items/PlateHelm.html)
+- [Plate Legs](../items/PlateLegs.html)

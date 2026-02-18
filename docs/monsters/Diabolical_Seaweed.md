@@ -23,4 +23,17 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: BlueDiamond, BrilliantAmber, DarkSapphire, EcruCitrine, FireRuby, LuminescentFungi, ParasiticPlant, PerfectEmerald, Turquoise, WhitePearl
+
+### Guaranteed Drops
+- [Luminescent Fungi](../items/LuminescentFungi.html)
+- [Parasitic Plant](../items/ParasiticPlant.html)
+
+### Random Drops
+- [Blue Diamond](../items/BlueDiamond.html)
+- [Brilliant Amber](../items/BrilliantAmber.html)
+- [Dark Sapphire](../items/DarkSapphire.html)
+- [Ecru Citrine](../items/EcruCitrine.html)
+- [Fire Ruby](../items/FireRuby.html)
+- [Perfect Emerald](../items/PerfectEmerald.html)
+- [Turquoise](../items/Turquoise.html)
+- [White Pearl](../items/WhitePearl.html)

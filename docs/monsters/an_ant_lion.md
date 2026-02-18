@@ -23,4 +23,13 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: Bone, FertileDirt, UnknownBardSkeleton, UnknownMageSkeleton, UnknownRogueSkeleton
+
+### Guaranteed Drops
+- [Bone](../items/Bone.html)
+- [Fertile Dirt](../items/FertileDirt.html)
+- [Unknown Bard Skeleton](../items/UnknownBardSkeleton.html)
+- [Unknown Mage Skeleton](../items/UnknownMageSkeleton.html)
+- [Unknown Rogue Skeleton](../items/UnknownRogueSkeleton.html)
+
+### Random Drops
+None

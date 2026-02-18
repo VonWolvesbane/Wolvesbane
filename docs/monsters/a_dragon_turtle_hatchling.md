@@ -23,4 +23,9 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: DragonTurtleScute
+
+### Guaranteed Drops
+- [Dragon Turtle Scute](../items/DragonTurtleScute.html)
+
+### Random Drops
+None

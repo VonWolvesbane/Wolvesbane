@@ -23,4 +23,13 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: DLoveSpear, FLoveChest, LoveChest, LoveLegs, LoveSkirt
+
+### Guaranteed Drops
+- [D Love Spear](../items/DLoveSpear.html)
+- [F Love Chest](../items/FLoveChest.html)
+- [Love Chest](../items/LoveChest.html)
+- [Love Legs](../items/LoveLegs.html)
+- [Love Skirt](../items/LoveSkirt.html)
+
+### Random Drops
+None

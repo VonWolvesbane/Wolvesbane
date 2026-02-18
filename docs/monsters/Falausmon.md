@@ -23,4 +23,13 @@ None Listed
 
 ## Loot
 - Gold: 20000 - 30000
-- Items: ArchersIdol, RandomTalisman, SwordsmansIdol, TamersIdol, TinkersIdol
+
+### Guaranteed Drops
+None
+
+### Random Drops
+- [Archers Idol](../items/ArchersIdol.html)
+- [Random Talisman](../items/RandomTalisman.html)
+- [Swordsmans Idol](../items/SwordsmansIdol.html)
+- [Tamers Idol](../items/TamersIdol.html)
+- [Tinkers Idol](../items/TinkersIdol.html)

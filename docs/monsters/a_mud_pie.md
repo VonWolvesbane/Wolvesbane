@@ -23,4 +23,19 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: BlackPowder, Charcoal, ExecutionersCap, FertileDirt, Potash, Robe, Saltpeter, Sandals, ShameCrystal, SulfurousAsh, VoidCore
+
+### Guaranteed Drops
+- [Black Powder](../items/BlackPowder.html)
+- [Charcoal](../items/Charcoal.html)
+- [Executioners Cap](../items/ExecutionersCap.html)
+- [Fertile Dirt](../items/FertileDirt.html)
+- [Potash](../items/Potash.html)
+- [Robe](../items/Robe.html)
+- [Saltpeter](../items/Saltpeter.html)
+- [Sandals](../items/Sandals.html)
+- [Shame Crystal](../items/ShameCrystal.html)
+- [Sulfurous Ash](../items/SulfurousAsh.html)
+- [Void Core](../items/VoidCore.html)
+
+### Random Drops
+None

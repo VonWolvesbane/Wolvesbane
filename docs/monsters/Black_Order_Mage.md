@@ -23,4 +23,13 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: DragonFlameSectBadge, FancyShirt, Hakama, Kasa, NinjaTabi
+
+### Guaranteed Drops
+- [Dragon Flame Sect Badge](../items/DragonFlameSectBadge.html)
+- [Fancy Shirt](../items/FancyShirt.html)
+- [Hakama](../items/Hakama.html)
+- [Kasa](../items/Kasa.html)
+- [Ninja Tabi](../items/NinjaTabi.html)
+
+### Random Drops
+None

@@ -23,4 +23,13 @@ None Listed
 
 ## Loot
 - Gold: 11120 - 11130
-- Items: DemonLordArms, DemonLordChest, DemonLordGloves, DemonLordHelm, DemonLordLegs
+
+### Guaranteed Drops
+- [Demon Lord Arms](../items/DemonLordArms.html)
+- [Demon Lord Chest](../items/DemonLordChest.html)
+- [Demon Lord Gloves](../items/DemonLordGloves.html)
+- [Demon Lord Helm](../items/DemonLordHelm.html)
+- [Demon Lord Legs](../items/DemonLordLegs.html)
+
+### Random Drops
+None

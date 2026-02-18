@@ -23,4 +23,11 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: HydraScale, ParrotItem, ThorvaldsMedallion
+
+### Guaranteed Drops
+- [Hydra Scale](../items/HydraScale.html)
+- [Parrot Item](../items/ParrotItem.html)
+- [Thorvalds Medallion](../items/ThorvaldsMedallion.html)
+
+### Random Drops
+None

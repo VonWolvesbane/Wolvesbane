@@ -23,4 +23,9 @@ None Listed
 
 ## Loot
 - Gold: 2500 - 3000
-- Items: ErymanthusHam
+
+### Guaranteed Drops
+- [Erymanthus Ham](../items/ErymanthusHam.html)
+
+### Random Drops
+None

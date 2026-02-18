@@ -23,4 +23,14 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: ArcaneGem, ClockworkAssembly, ExodusSacrificalDagger, ExodusSummoningAlter, ExodusSummoningRite, PowerCrystal, RobeofRite
+
+### Guaranteed Drops
+- [Arcane Gem](../items/ArcaneGem.html)
+- [Clockwork Assembly](../items/ClockworkAssembly.html)
+- [Power Crystal](../items/PowerCrystal.html)
+
+### Random Drops
+- [Exodus Sacrifical Dagger](../items/ExodusSacrificalDagger.html)
+- [Exodus Summoning Alter](../items/ExodusSummoningAlter.html)
+- [Exodus Summoning Rite](../items/ExodusSummoningRite.html)
+- [Robeof Rite](../items/RobeofRite.html)

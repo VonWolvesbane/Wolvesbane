@@ -23,4 +23,15 @@ None Listed
 
 ## Loot
 - Gold: 20000 - 30000
-- Items: ArmsofExpertMining, CapofExpertMining, GlovesofExpertMining, GorgetofExpertMining, LegsofExpertMining, MinersPickaxe, TunicofExpertMining
+
+### Guaranteed Drops
+None
+
+### Random Drops
+- [Armsof Expert Mining](../items/ArmsofExpertMining.html)
+- [Capof Expert Mining](../items/CapofExpertMining.html)
+- [Glovesof Expert Mining](../items/GlovesofExpertMining.html)
+- [Gorgetof Expert Mining](../items/GorgetofExpertMining.html)
+- [Legsof Expert Mining](../items/LegsofExpertMining.html)
+- [Miners Pickaxe](../items/MinersPickaxe.html)
+- [Tunicof Expert Mining](../items/TunicofExpertMining.html)

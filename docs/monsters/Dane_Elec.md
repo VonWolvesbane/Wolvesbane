@@ -23,4 +23,15 @@ None Listed
 
 ## Loot
 - Gold: 2000 - 3000
-- Items: ManiacTailorArms, ManiacTailorChest, ManiacTailorGloves, ManiacTailorGorget, ManiacTailorHelm, ManiacTailorKnife, ManiacTailorLegs
+
+### Guaranteed Drops
+None
+
+### Random Drops
+- [Maniac Tailor Arms](../items/ManiacTailorArms.html)
+- [Maniac Tailor Chest](../items/ManiacTailorChest.html)
+- [Maniac Tailor Gloves](../items/ManiacTailorGloves.html)
+- [Maniac Tailor Gorget](../items/ManiacTailorGorget.html)
+- [Maniac Tailor Helm](../items/ManiacTailorHelm.html)
+- [Maniac Tailor Knife](../items/ManiacTailorKnife.html)
+- [Maniac Tailor Legs](../items/ManiacTailorLegs.html)

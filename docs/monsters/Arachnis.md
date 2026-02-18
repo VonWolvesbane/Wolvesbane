@@ -23,4 +23,15 @@ None Listed
 
 ## Loot
 - Gold: 5120 - 6130
-- Items: BootsofArachnis, CloakofArachnis, ShirtofArachnis, ShroudofArachnis, SkirtofArachnis, SoulofArachnis, SurcoatofArachnis
+
+### Guaranteed Drops
+- [Bootsof Arachnis](../items/BootsofArachnis.html)
+- [Cloakof Arachnis](../items/CloakofArachnis.html)
+- [Shirtof Arachnis](../items/ShirtofArachnis.html)
+- [Shroudof Arachnis](../items/ShroudofArachnis.html)
+- [Skirtof Arachnis](../items/SkirtofArachnis.html)
+- [Soulof Arachnis](../items/SoulofArachnis.html)
+- [Surcoatof Arachnis](../items/SurcoatofArachnis.html)
+
+### Random Drops
+None

@@ -23,4 +23,9 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: GoldFoil
+
+### Guaranteed Drops
+- [Gold Foil](../items/GoldFoil.html)
+
+### Random Drops
+None

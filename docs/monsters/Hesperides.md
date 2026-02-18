@@ -23,4 +23,9 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: GoldenApple
+
+### Guaranteed Drops
+- [Golden Apple](../items/GoldenApple.html)
+
+### Random Drops
+None

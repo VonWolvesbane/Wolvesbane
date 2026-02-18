@@ -23,4 +23,13 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: Kama, LeatherNinjaJacket, LeatherNinjaPants, NinjaTabi, Tessen
+
+### Guaranteed Drops
+- [Kama](../items/Kama.html)
+- [Leather Ninja Jacket](../items/LeatherNinjaJacket.html)
+- [Leather Ninja Pants](../items/LeatherNinjaPants.html)
+- [Ninja Tabi](../items/NinjaTabi.html)
+- [Tessen](../items/Tessen.html)
+
+### Random Drops
+None

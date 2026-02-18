@@ -23,4 +23,15 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: BlackPearl, BolaBall, LesserExplosionPotion, MandrakeRoot, MortarPestle, SulfurousAsh, Yeast
+
+### Guaranteed Drops
+- [Black Pearl](../items/BlackPearl.html)
+- [Bola Ball](../items/BolaBall.html)
+- [Lesser Explosion Potion](../items/LesserExplosionPotion.html)
+- [Mandrake Root](../items/MandrakeRoot.html)
+- [Mortar Pestle](../items/MortarPestle.html)
+- [Sulfurous Ash](../items/SulfurousAsh.html)
+- [Yeast](../items/Yeast.html)
+
+### Random Drops
+None

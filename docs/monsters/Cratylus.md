@@ -23,4 +23,13 @@ None Listed
 
 ## Loot
 - Gold: 5000 - 15000
-- Items: CratylusArms, CratylusChest, CratylusGloves, CratylusGorget, CratylusLegs
+
+### Guaranteed Drops
+- [Cratylus Arms](../items/CratylusArms.html)
+- [Cratylus Chest](../items/CratylusChest.html)
+- [Cratylus Gloves](../items/CratylusGloves.html)
+- [Cratylus Gorget](../items/CratylusGorget.html)
+- [Cratylus Legs](../items/CratylusLegs.html)
+
+### Random Drops
+None

@@ -23,4 +23,12 @@ None Listed
 
 ## Loot
 - Gold: 5000 - 15000
-- Items: SSSash, SSShirt, SSSkirt, SSStaff
+
+### Guaranteed Drops
+- [S S Sash](../items/SSSash.html)
+- [S S Shirt](../items/SSShirt.html)
+- [S S Skirt](../items/SSSkirt.html)
+- [S S Staff](../items/SSStaff.html)
+
+### Random Drops
+None

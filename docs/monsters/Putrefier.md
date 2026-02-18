@@ -23,4 +23,11 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: ParagonChest, ParrotItem, SpleenOfThePutrefier
+
+### Guaranteed Drops
+- [Paragon Chest](../items/ParagonChest.html)
+- [Parrot Item](../items/ParrotItem.html)
+- [Spleen Of The Putrefier](../items/SpleenOfThePutrefier.html)
+
+### Random Drops
+None

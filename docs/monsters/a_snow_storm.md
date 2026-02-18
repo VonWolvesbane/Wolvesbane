@@ -23,4 +23,10 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: BlackPearl, IronOre
+
+### Guaranteed Drops
+- [Black Pearl](../items/BlackPearl.html)
+- [Iron Ore](../items/IronOre.html)
+
+### Random Drops
+None

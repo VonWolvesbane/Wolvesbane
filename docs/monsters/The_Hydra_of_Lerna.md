@@ -23,4 +23,10 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: GnarledStaff, LernaHydraScale
+
+### Guaranteed Drops
+- [Gnarled Staff](../items/GnarledStaff.html)
+- [Lerna Hydra Scale](../items/LernaHydraScale.html)
+
+### Random Drops
+None

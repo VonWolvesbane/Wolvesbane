@@ -23,4 +23,11 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: AncientPotteryFragments, InfusedGlassStave, TatteredAncientScroll
+
+### Guaranteed Drops
+- [Ancient Pottery Fragments](../items/AncientPotteryFragments.html)
+- [Infused Glass Stave](../items/InfusedGlassStave.html)
+- [Tattered Ancient Scroll](../items/TatteredAncientScroll.html)
+
+### Random Drops
+None

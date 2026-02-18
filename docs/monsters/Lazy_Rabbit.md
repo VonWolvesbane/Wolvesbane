@@ -23,4 +23,9 @@ None Listed
 
 ## Loot
 - Gold: 100 - 200
-- Items: eggeaster
+
+### Guaranteed Drops
+- [eggeaster](../items/eggeaster.html)
+
+### Random Drops
+None

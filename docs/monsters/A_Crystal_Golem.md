@@ -23,4 +23,9 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: LightEnhancingCrystal
+
+### Guaranteed Drops
+- [Light Enhancing Crystal](../items/LightEnhancingCrystal.html)
+
+### Random Drops
+None

@@ -23,4 +23,12 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: Arrow, BodySash, Boots, FireHorn
+
+### Guaranteed Drops
+- [Arrow](../items/Arrow.html)
+- [Body Sash](../items/BodySash.html)
+- [Boots](../items/Boots.html)
+- [Fire Horn](../items/FireHorn.html)
+
+### Random Drops
+None

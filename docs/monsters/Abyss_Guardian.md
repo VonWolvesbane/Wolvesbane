@@ -23,4 +23,11 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: GargoylesAxe, GargoylesKnife, GargoylesPickaxe
+
+### Guaranteed Drops
+None
+
+### Random Drops
+- [Gargoyles Axe](../items/GargoylesAxe.html)
+- [Gargoyles Knife](../items/GargoylesKnife.html)
+- [Gargoyles Pickaxe](../items/GargoylesPickaxe.html)

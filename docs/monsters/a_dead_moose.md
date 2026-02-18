@@ -23,4 +23,9 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: EssenceSingularity
+
+### Guaranteed Drops
+- [Essence Singularity](../items/EssenceSingularity.html)
+
+### Random Drops
+None

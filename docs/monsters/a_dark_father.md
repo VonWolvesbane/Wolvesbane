@@ -23,4 +23,12 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: Boots, EmptyDNAVial, EmptyDNAVialSet, Organics
+
+### Guaranteed Drops
+- [Boots](../items/Boots.html)
+- [Empty D N A Vial](../items/EmptyDNAVial.html)
+- [Empty D N A Vial Set](../items/EmptyDNAVialSet.html)
+- [Organics](../items/Organics.html)
+
+### Random Drops
+None

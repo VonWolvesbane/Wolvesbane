@@ -23,4 +23,10 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: Bone, Gold
+
+### Guaranteed Drops
+- [Bone](../items/Bone.html)
+- [Gold](../items/Gold.html)
+
+### Random Drops
+None

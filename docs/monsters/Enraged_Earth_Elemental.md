@@ -23,4 +23,11 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: FertileDirt, LuckyCoin, MandrakeRoot
+
+### Guaranteed Drops
+- [Fertile Dirt](../items/FertileDirt.html)
+- [Lucky Coin](../items/LuckyCoin.html)
+- [Mandrake Root](../items/MandrakeRoot.html)
+
+### Random Drops
+None

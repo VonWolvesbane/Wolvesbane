@@ -23,4 +23,9 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: GargoylesPickaxe
+
+### Guaranteed Drops
+None
+
+### Random Drops
+- [Gargoyles Pickaxe](../items/GargoylesPickaxe.html)

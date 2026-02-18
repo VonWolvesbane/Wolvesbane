@@ -23,4 +23,13 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: Cutlass, Dagger, FancyShirt, ShortPants, ThighBoots, TricorneHat
+
+### Guaranteed Drops
+- [Fancy Shirt](../items/FancyShirt.html)
+- [Short Pants](../items/ShortPants.html)
+- [Thigh Boots](../items/ThighBoots.html)
+- [Tricorne Hat](../items/TricorneHat.html)
+
+### Random Drops
+- [Cutlass](../items/Cutlass.html)
+- [Dagger](../items/Dagger.html)

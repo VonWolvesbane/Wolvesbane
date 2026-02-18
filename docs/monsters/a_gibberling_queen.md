@@ -23,4 +23,9 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: GibberHead
+
+### Guaranteed Drops
+- [Gibber Head](../items/GibberHead.html)
+
+### Random Drops
+None

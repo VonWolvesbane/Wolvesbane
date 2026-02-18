@@ -23,4 +23,10 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: BlackthornWelcomeBook, PowerCrystal
+
+### Guaranteed Drops
+- [Blackthorn Welcome Book](../items/BlackthornWelcomeBook.html)
+- [Power Crystal](../items/PowerCrystal.html)
+
+### Random Drops
+None

@@ -23,4 +23,11 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: Bandage, PrimitiveFetish, Ribs
+
+### Guaranteed Drops
+- [Bandage](../items/Bandage.html)
+- [Primitive Fetish](../items/PrimitiveFetish.html)
+- [Ribs](../items/Ribs.html)
+
+### Random Drops
+None

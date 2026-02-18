@@ -23,4 +23,10 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: HeartwoodLog, MandrakeRoot
+
+### Guaranteed Drops
+- [Heartwood Log](../items/HeartwoodLog.html)
+- [Mandrake Root](../items/MandrakeRoot.html)
+
+### Random Drops
+None

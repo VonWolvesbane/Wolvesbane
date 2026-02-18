@@ -23,4 +23,9 @@ None Listed
 
 ## Loot
 - Gold: 6500 - 7025
-- Items: Obolus
+
+### Guaranteed Drops
+- [Obolus](../items/Obolus.html)
+
+### Random Drops
+None

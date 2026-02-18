@@ -23,4 +23,15 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: SinArms, SinBlade, SinChest, SinGloves, SinHelm, SinLegs, SinShield
+
+### Guaranteed Drops
+- [Sin Arms](../items/SinArms.html)
+- [Sin Blade](../items/SinBlade.html)
+- [Sin Chest](../items/SinChest.html)
+- [Sin Gloves](../items/SinGloves.html)
+- [Sin Helm](../items/SinHelm.html)
+- [Sin Legs](../items/SinLegs.html)
+- [Sin Shield](../items/SinShield.html)
+
+### Random Drops
+None

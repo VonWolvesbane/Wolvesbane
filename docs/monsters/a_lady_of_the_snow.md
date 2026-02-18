@@ -23,4 +23,9 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: Necklace
+
+### Guaranteed Drops
+- [Necklace](../items/Necklace.html)
+
+### Random Drops
+None

@@ -23,4 +23,9 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: ShortPants
+
+### Guaranteed Drops
+- [Short Pants](../items/ShortPants.html)
+
+### Random Drops
+None

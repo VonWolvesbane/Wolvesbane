@@ -23,4 +23,10 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: Gold, vseggs
+
+### Guaranteed Drops
+- [Gold](../items/Gold.html)
+- [vseggs](../items/vseggs.html)
+
+### Random Drops
+None

@@ -23,4 +23,11 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: PegLegHead, PegLeghook, SparrowBlade
+
+### Guaranteed Drops
+- [Peg Leg Head](../items/PegLegHead.html)
+- [Peg Leghook](../items/PegLeghook.html)
+- [Sparrow Blade](../items/SparrowBlade.html)
+
+### Random Drops
+None

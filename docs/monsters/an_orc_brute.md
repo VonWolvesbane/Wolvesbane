@@ -23,4 +23,12 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: BolaBall, IronIngot, OrcishKinMask, Yeast
+
+### Guaranteed Drops
+- [Bola Ball](../items/BolaBall.html)
+- [Iron Ingot](../items/IronIngot.html)
+- [Orcish Kin Mask](../items/OrcishKinMask.html)
+- [Yeast](../items/Yeast.html)
+
+### Random Drops
+None

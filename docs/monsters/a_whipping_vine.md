@@ -23,4 +23,12 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: DecorativeVines, ExecutionersCap, FertileDirt, Vines
+
+### Guaranteed Drops
+- [Decorative Vines](../items/DecorativeVines.html)
+- [Executioners Cap](../items/ExecutionersCap.html)
+- [Fertile Dirt](../items/FertileDirt.html)
+- [Vines](../items/Vines.html)
+
+### Random Drops
+None

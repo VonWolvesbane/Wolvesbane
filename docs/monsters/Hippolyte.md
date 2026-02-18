@@ -23,4 +23,16 @@ None Listed
 
 ## Loot
 - Gold: 1500 - 3000
-- Items: Bandage, Boots, FancyShirt, FlowerGarland, HippolytesGirdle, Katana, LongHair, Skirt
+
+### Guaranteed Drops
+- [Bandage](../items/Bandage.html)
+- [Boots](../items/Boots.html)
+- [Fancy Shirt](../items/FancyShirt.html)
+- [Flower Garland](../items/FlowerGarland.html)
+- [Hippolytes Girdle](../items/HippolytesGirdle.html)
+- [Katana](../items/Katana.html)
+- [Long Hair](../items/LongHair.html)
+- [Skirt](../items/Skirt.html)
+
+### Random Drops
+None

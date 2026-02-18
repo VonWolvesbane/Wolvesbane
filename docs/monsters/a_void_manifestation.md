@@ -23,4 +23,11 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: VoidCrystalOfCorruptedArcaneEssence, VoidCrystalOfCorruptedMysticalEssence, VoidCrystalOfCorruptedSpiritualEssence
+
+### Guaranteed Drops
+- [Void Crystal Of Corrupted Arcane Essence](../items/VoidCrystalOfCorruptedArcaneEssence.html)
+- [Void Crystal Of Corrupted Mystical Essence](../items/VoidCrystalOfCorruptedMysticalEssence.html)
+- [Void Crystal Of Corrupted Spiritual Essence](../items/VoidCrystalOfCorruptedSpiritualEssence.html)
+
+### Random Drops
+None

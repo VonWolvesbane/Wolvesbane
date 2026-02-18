@@ -23,4 +23,15 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: BolaBall, Bottle, Lockpick, MortarPestle, RawRibs, RingmailChest, Shovel, Yeast
+
+### Guaranteed Drops
+- [Bola Ball](../items/BolaBall.html)
+- [Ringmail Chest](../items/RingmailChest.html)
+- [Yeast](../items/Yeast.html)
+
+### Random Drops
+- [Bottle](../items/Bottle.html)
+- [Lockpick](../items/Lockpick.html)
+- [Mortar Pestle](../items/MortarPestle.html)
+- [Raw Ribs](../items/RawRibs.html)
+- [Shovel](../items/Shovel.html)

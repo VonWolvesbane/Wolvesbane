@@ -23,4 +23,9 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: MoonstoneCrystalShard
+
+### Guaranteed Drops
+- [Moonstone Crystal Shard](../items/MoonstoneCrystalShard.html)
+
+### Random Drops
+None

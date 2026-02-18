@@ -23,4 +23,9 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: Boots
+
+### Guaranteed Drops
+- [Boots](../items/Boots.html)
+
+### Random Drops
+None

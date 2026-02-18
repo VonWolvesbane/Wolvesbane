@@ -23,4 +23,15 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: FancyShirt, FullApron, Gold, JesterHat, LongPants, Obsidian, Shoes
+
+### Guaranteed Drops
+- [Fancy Shirt](../items/FancyShirt.html)
+- [Full Apron](../items/FullApron.html)
+- [Gold](../items/Gold.html)
+- [Jester Hat](../items/JesterHat.html)
+- [Long Pants](../items/LongPants.html)
+- [Obsidian](../items/Obsidian.html)
+- [Shoes](../items/Shoes.html)
+
+### Random Drops
+None

@@ -23,4 +23,16 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: Arrow, Bolt, Boots, Cutlass, FancyShirt, GoldEarrings, LeatherArms, ShortPants, TricorneHat
+
+### Guaranteed Drops
+- [Boots](../items/Boots.html)
+- [Cutlass](../items/Cutlass.html)
+- [Fancy Shirt](../items/FancyShirt.html)
+- [Gold Earrings](../items/GoldEarrings.html)
+- [Leather Arms](../items/LeatherArms.html)
+- [Short Pants](../items/ShortPants.html)
+- [Tricorne Hat](../items/TricorneHat.html)
+
+### Random Drops
+- [Arrow](../items/Arrow.html)
+- [Bolt](../items/Bolt.html)

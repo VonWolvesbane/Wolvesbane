@@ -23,4 +23,10 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: Boots, Cloak
+
+### Guaranteed Drops
+- [Boots](../items/Boots.html)
+- [Cloak](../items/Cloak.html)
+
+### Random Drops
+None

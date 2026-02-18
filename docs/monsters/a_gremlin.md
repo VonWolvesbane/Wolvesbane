@@ -23,4 +23,12 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: Apple, Arrow, Bow, LuckyCoin
+
+### Guaranteed Drops
+- [Apple](../items/Apple.html)
+- [Arrow](../items/Arrow.html)
+- [Bow](../items/Bow.html)
+- [Lucky Coin](../items/LuckyCoin.html)
+
+### Random Drops
+None

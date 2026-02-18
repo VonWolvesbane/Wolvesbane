@@ -23,4 +23,9 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: BouraSkin
+
+### Guaranteed Drops
+- [Boura Skin](../items/BouraSkin.html)
+
+### Random Drops
+None

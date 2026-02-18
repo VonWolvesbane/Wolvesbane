@@ -23,4 +23,10 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: Gold, TreasureMap
+
+### Guaranteed Drops
+- [Gold](../items/Gold.html)
+- [Treasure Map](../items/TreasureMap.html)
+
+### Random Drops
+None

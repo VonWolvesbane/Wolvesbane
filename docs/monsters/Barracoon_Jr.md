@@ -23,4 +23,13 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: Cloak, FancyShirt, JesterHat, LongPants, Sandals
+
+### Guaranteed Drops
+- [Cloak](../items/Cloak.html)
+- [Fancy Shirt](../items/FancyShirt.html)
+- [Jester Hat](../items/JesterHat.html)
+- [Long Pants](../items/LongPants.html)
+- [Sandals](../items/Sandals.html)
+
+### Random Drops
+None

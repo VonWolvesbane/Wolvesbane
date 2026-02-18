@@ -23,4 +23,15 @@ None Listed
 
 ## Loot
 - Gold: 11120 - 11130
-- Items: DragonArmsOfEvolution, DragonChestOfEvolution, DragonGlovesOfEvolution, DragonGorgetOfEvolution, DragonHelmOfEvolution, DragonLegsOfEvolution, OrderShieldOfEvolution
+
+### Guaranteed Drops
+- [Dragon Arms Of Evolution](../items/DragonArmsOfEvolution.html)
+- [Dragon Chest Of Evolution](../items/DragonChestOfEvolution.html)
+- [Dragon Gloves Of Evolution](../items/DragonGlovesOfEvolution.html)
+- [Dragon Gorget Of Evolution](../items/DragonGorgetOfEvolution.html)
+- [Dragon Helm Of Evolution](../items/DragonHelmOfEvolution.html)
+- [Dragon Legs Of Evolution](../items/DragonLegsOfEvolution.html)
+- [Order Shield Of Evolution](../items/OrderShieldOfEvolution.html)
+
+### Random Drops
+None

@@ -23,4 +23,10 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: MandrakeRoot, YewLog
+
+### Guaranteed Drops
+- [Mandrake Root](../items/MandrakeRoot.html)
+- [Yew Log](../items/YewLog.html)
+
+### Random Drops
+None

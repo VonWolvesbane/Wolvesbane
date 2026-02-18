@@ -23,4 +23,10 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: MessageInABottle, SpecialFishingNet
+
+### Guaranteed Drops
+- [Message In A Bottle](../items/MessageInABottle.html)
+- [Special Fishing Net](../items/SpecialFishingNet.html)
+
+### Random Drops
+None

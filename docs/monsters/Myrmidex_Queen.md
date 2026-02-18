@@ -23,4 +23,9 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: MyrmidexEggsac
+
+### Guaranteed Drops
+- [Myrmidex Eggsac](../items/MyrmidexEggsac.html)
+
+### Random Drops
+None

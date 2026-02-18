@@ -23,4 +23,10 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: MetalChest, PlagueBeastGland
+
+### Guaranteed Drops
+- [Metal Chest](../items/MetalChest.html)
+- [Plague Beast Gland](../items/PlagueBeastGland.html)
+
+### Random Drops
+None

@@ -23,4 +23,10 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: OrigamiPaper, Tessen
+
+### Guaranteed Drops
+- [Origami Paper](../items/OrigamiPaper.html)
+- [Tessen](../items/Tessen.html)
+
+### Random Drops
+None

@@ -23,4 +23,10 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: AncientPotteryFragments, SlithEye, TatteredAncientScroll
+
+### Guaranteed Drops
+- [Slith Eye](../items/SlithEye.html)
+
+### Random Drops
+- [Ancient Pottery Fragments](../items/AncientPotteryFragments.html)
+- [Tattered Ancient Scroll](../items/TatteredAncientScroll.html)

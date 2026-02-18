@@ -23,4 +23,9 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: ParrotItem
+
+### Guaranteed Drops
+- [Parrot Item](../items/ParrotItem.html)
+
+### Random Drops
+None

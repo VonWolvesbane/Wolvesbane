@@ -23,4 +23,10 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: LongHair, Vandyke
+
+### Guaranteed Drops
+None
+
+### Random Drops
+- [Long Hair](../items/LongHair.html)
+- [Vandyke](../items/Vandyke.html)

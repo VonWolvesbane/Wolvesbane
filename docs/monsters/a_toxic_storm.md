@@ -23,4 +23,9 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: NoxCrystal
+
+### Guaranteed Drops
+- [Nox Crystal](../items/NoxCrystal.html)
+
+### Random Drops
+None

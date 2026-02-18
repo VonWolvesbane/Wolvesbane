@@ -23,4 +23,14 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: LeatherArms, LeatherCap, LeatherChest, LeatherGloves, LeatherGorget, LeatherLegs
+
+### Guaranteed Drops
+None
+
+### Random Drops
+- [Leather Arms](../items/LeatherArms.html)
+- [Leather Cap](../items/LeatherCap.html)
+- [Leather Chest](../items/LeatherChest.html)
+- [Leather Gloves](../items/LeatherGloves.html)
+- [Leather Gorget](../items/LeatherGorget.html)
+- [Leather Legs](../items/LeatherLegs.html)

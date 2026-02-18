@@ -23,4 +23,14 @@ None Listed
 
 ## Loot
 - Gold: 1500 - 2000
-- Items: WQStonebow, WQStonefork, WQStonekatana, WQStonekryss, WQStonemace, WQStoneshield
+
+### Guaranteed Drops
+- [W Q Stonebow](../items/WQStonebow.html)
+- [W Q Stonefork](../items/WQStonefork.html)
+- [W Q Stonekatana](../items/WQStonekatana.html)
+- [W Q Stonekryss](../items/WQStonekryss.html)
+- [W Q Stonemace](../items/WQStonemace.html)
+- [W Q Stoneshield](../items/WQStoneshield.html)
+
+### Random Drops
+None

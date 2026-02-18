@@ -23,4 +23,10 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: Gold, RandomTalisman
+
+### Guaranteed Drops
+- [Gold](../items/Gold.html)
+- [Random Talisman](../items/RandomTalisman.html)
+
+### Random Drops
+None

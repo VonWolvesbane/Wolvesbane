@@ -23,4 +23,16 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: Gold, Katana, LongHair, OrochimaruBoots, OrochimaruPants, OrochimaruShirt, OrochimaruUnderShirt, OrochimarusHeart
+
+### Guaranteed Drops
+- [Gold](../items/Gold.html)
+- [Katana](../items/Katana.html)
+- [Long Hair](../items/LongHair.html)
+- [Orochimaru Boots](../items/OrochimaruBoots.html)
+- [Orochimaru Pants](../items/OrochimaruPants.html)
+- [Orochimaru Shirt](../items/OrochimaruShirt.html)
+- [Orochimaru Under Shirt](../items/OrochimaruUnderShirt.html)
+- [Orochimarus Heart](../items/OrochimarusHeart.html)
+
+### Random Drops
+None

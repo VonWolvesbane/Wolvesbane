@@ -23,4 +23,9 @@ None Listed
 
 ## Loot
 - Gold: 20000 - 30000
-- Items: MichelangeloNunchuk
+
+### Guaranteed Drops
+None
+
+### Random Drops
+- [Michelangelo Nunchuk](../items/MichelangeloNunchuk.html)

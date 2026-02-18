@@ -23,4 +23,15 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: Boots, ExecutionersAxe, GreenGourd, LongPants, Sandals, Shoes, ShortPants, ThighBoots
+
+### Guaranteed Drops
+- [Executioners Axe](../items/ExecutionersAxe.html)
+- [Green Gourd](../items/GreenGourd.html)
+- [Long Pants](../items/LongPants.html)
+- [Short Pants](../items/ShortPants.html)
+
+### Random Drops
+- [Boots](../items/Boots.html)
+- [Sandals](../items/Sandals.html)
+- [Shoes](../items/Shoes.html)
+- [Thigh Boots](../items/ThighBoots.html)

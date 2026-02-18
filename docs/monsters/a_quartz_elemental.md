@@ -23,4 +23,13 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: CorrosiveAsh, CursedOilstone, QuartzGrit, ShameCrystal, SulfurousAsh
+
+### Guaranteed Drops
+- [Corrosive Ash](../items/CorrosiveAsh.html)
+- [Cursed Oilstone](../items/CursedOilstone.html)
+- [Quartz Grit](../items/QuartzGrit.html)
+- [Shame Crystal](../items/ShameCrystal.html)
+- [Sulfurous Ash](../items/SulfurousAsh.html)
+
+### Random Drops
+None

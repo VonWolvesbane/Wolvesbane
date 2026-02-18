@@ -23,4 +23,13 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: FancyShirt, JinBaori, SerpentFangSectBadge, StuddedMempo, ThighBoots
+
+### Guaranteed Drops
+- [Fancy Shirt](../items/FancyShirt.html)
+- [Jin Baori](../items/JinBaori.html)
+- [Serpent Fang Sect Badge](../items/SerpentFangSectBadge.html)
+- [Studded Mempo](../items/StuddedMempo.html)
+- [Thigh Boots](../items/ThighBoots.html)
+
+### Random Drops
+None

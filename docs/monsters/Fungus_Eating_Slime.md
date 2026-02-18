@@ -23,4 +23,9 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: MMQSpores
+
+### Guaranteed Drops
+- [M M Q Spores](../items/MMQSpores.html)
+
+### Random Drops
+None

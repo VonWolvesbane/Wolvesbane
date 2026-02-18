@@ -23,4 +23,9 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: GoldenThread
+
+### Guaranteed Drops
+None
+
+### Random Drops
+- [Golden Thread](../items/GoldenThread.html)

@@ -23,4 +23,10 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: LuckyCoin, UndamagedIronBeetleScale
+
+### Guaranteed Drops
+- [Lucky Coin](../items/LuckyCoin.html)
+- [Undamaged Iron Beetle Scale](../items/UndamagedIronBeetleScale.html)
+
+### Random Drops
+None

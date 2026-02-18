@@ -23,4 +23,15 @@ None Listed
 
 ## Loot
 - Gold: 11120 - 11130
-- Items: RevelationApron, RevelationBoots, RevelationCloak, RevelationRobe, RevelationSash, RevelationShirt, RevelationSkirt
+
+### Guaranteed Drops
+- [Revelation Apron](../items/RevelationApron.html)
+- [Revelation Boots](../items/RevelationBoots.html)
+- [Revelation Cloak](../items/RevelationCloak.html)
+- [Revelation Robe](../items/RevelationRobe.html)
+- [Revelation Sash](../items/RevelationSash.html)
+- [Revelation Shirt](../items/RevelationShirt.html)
+- [Revelation Skirt](../items/RevelationSkirt.html)
+
+### Random Drops
+None

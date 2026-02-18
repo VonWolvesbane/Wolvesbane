@@ -23,4 +23,12 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: GargoylesAxe, GargoylesKnife, GargoylesPickaxe, PainSpikeScroll
+
+### Guaranteed Drops
+None
+
+### Random Drops
+- [Gargoyles Axe](../items/GargoylesAxe.html)
+- [Gargoyles Knife](../items/GargoylesKnife.html)
+- [Gargoyles Pickaxe](../items/GargoylesPickaxe.html)
+- [Pain Spike Scroll](../items/PainSpikeScroll.html)

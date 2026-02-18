@@ -23,4 +23,10 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: CrystallineFragments, PiecesOfCrystal
+
+### Guaranteed Drops
+- [Crystalline Fragments](../items/CrystallineFragments.html)
+- [Pieces Of Crystal](../items/PiecesOfCrystal.html)
+
+### Random Drops
+None

@@ -23,4 +23,13 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: BoneArms, BoneChest, BoneGloves, BoneHelm, BoneLegs
+
+### Guaranteed Drops
+None
+
+### Random Drops
+- [Bone Arms](../items/BoneArms.html)
+- [Bone Chest](../items/BoneChest.html)
+- [Bone Gloves](../items/BoneGloves.html)
+- [Bone Helm](../items/BoneHelm.html)
+- [Bone Legs](../items/BoneLegs.html)

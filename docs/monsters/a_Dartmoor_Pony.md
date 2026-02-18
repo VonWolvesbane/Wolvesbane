@@ -23,4 +23,9 @@ None Listed
 
 ## Loot
 - Gold: 100 - 250
-- Items: GraniteStone
+
+### Guaranteed Drops
+- [Granite Stone](../items/GraniteStone.html)
+
+### Random Drops
+None

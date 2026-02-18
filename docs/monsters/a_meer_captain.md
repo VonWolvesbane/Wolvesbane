@@ -23,4 +23,15 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: Bolt, Broadsword, Crossbow, Cutlass, Katana, Longsword, Scimitar, VikingSword
+
+### Guaranteed Drops
+- [Bolt](../items/Bolt.html)
+- [Crossbow](../items/Crossbow.html)
+
+### Random Drops
+- [Broadsword](../items/Broadsword.html)
+- [Cutlass](../items/Cutlass.html)
+- [Katana](../items/Katana.html)
+- [Longsword](../items/Longsword.html)
+- [Scimitar](../items/Scimitar.html)
+- [Viking Sword](../items/VikingSword.html)

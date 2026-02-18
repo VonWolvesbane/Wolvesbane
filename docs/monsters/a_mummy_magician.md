@@ -23,4 +23,12 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: Bandage, Bones, Skull, wickedCrystal
+
+### Guaranteed Drops
+- [Bandage](../items/Bandage.html)
+- [Bones](../items/Bones.html)
+- [Skull](../items/Skull.html)
+- [wicked Crystal](../items/wickedCrystal.html)
+
+### Random Drops
+None

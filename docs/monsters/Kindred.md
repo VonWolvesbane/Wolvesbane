@@ -23,4 +23,18 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: MagesRevenge, MagesRevengeGarg, Rolodex, WitchesArms, WitchesChest, WitchesGloves, WitchesGorget, WitchesHat, WitchesLegs, WitchesSkirt
+
+### Guaranteed Drops
+None
+
+### Random Drops
+- [Mages Revenge](../items/MagesRevenge.html)
+- [Mages Revenge Garg](../items/MagesRevengeGarg.html)
+- [Rolodex](../items/Rolodex.html)
+- [Witches Arms](../items/WitchesArms.html)
+- [Witches Chest](../items/WitchesChest.html)
+- [Witches Gloves](../items/WitchesGloves.html)
+- [Witches Gorget](../items/WitchesGorget.html)
+- [Witches Hat](../items/WitchesHat.html)
+- [Witches Legs](../items/WitchesLegs.html)
+- [Witches Skirt](../items/WitchesSkirt.html)

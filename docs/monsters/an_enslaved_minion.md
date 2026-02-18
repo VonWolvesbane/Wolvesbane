@@ -23,4 +23,11 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: HoodedShroudOfShadows, Sandals, Scythe
+
+### Guaranteed Drops
+- [Hooded Shroud Of Shadows](../items/HoodedShroudOfShadows.html)
+- [Sandals](../items/Sandals.html)
+- [Scythe](../items/Scythe.html)
+
+### Random Drops
+None

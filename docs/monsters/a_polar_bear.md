@@ -23,4 +23,9 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: PolarBearSkin
+
+### Guaranteed Drops
+None
+
+### Random Drops
+- [Polar Bear Skin](../items/PolarBearSkin.html)

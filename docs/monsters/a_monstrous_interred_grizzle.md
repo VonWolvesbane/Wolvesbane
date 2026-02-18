@@ -23,4 +23,19 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: GlobOfMonstreousInterredGrizzle, GrizzleGauntlets, GrizzleGreaves, GrizzleHelm, GrizzleTunic, GrizzleVambraces, GrizzledBones, GrizzledMareStatuette, GrizzledSkullCollection, MonsterousInterredGrizzleMaggots, ParrotItem, TombstoneOfTheDamned
+
+### Guaranteed Drops
+- [Grizzled Bones](../items/GrizzledBones.html)
+- [Grizzled Mare Statuette](../items/GrizzledMareStatuette.html)
+- [Parrot Item](../items/ParrotItem.html)
+
+### Random Drops
+- [Glob Of Monstreous Interred Grizzle](../items/GlobOfMonstreousInterredGrizzle.html)
+- [Grizzle Gauntlets](../items/GrizzleGauntlets.html)
+- [Grizzle Greaves](../items/GrizzleGreaves.html)
+- [Grizzle Helm](../items/GrizzleHelm.html)
+- [Grizzle Tunic](../items/GrizzleTunic.html)
+- [Grizzle Vambraces](../items/GrizzleVambraces.html)
+- [Grizzled Skull Collection](../items/GrizzledSkullCollection.html)
+- [Monsterous Interred Grizzle Maggots](../items/MonsterousInterredGrizzleMaggots.html)
+- [Tombstone Of The Damned](../items/TombstoneOfTheDamned.html)

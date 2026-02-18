@@ -23,4 +23,9 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: LongHair
+
+### Guaranteed Drops
+None
+
+### Random Drops
+- [Long Hair](../items/LongHair.html)

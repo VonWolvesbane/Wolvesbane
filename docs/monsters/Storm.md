@@ -23,4 +23,9 @@ None Listed
 
 ## Loot
 - Gold: 5000 - 20000
-- Items: StormsCloak
+
+### Guaranteed Drops
+None
+
+### Random Drops
+- [Storms Cloak](../items/StormsCloak.html)

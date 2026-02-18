@@ -23,4 +23,9 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: greencarrot
+
+### Guaranteed Drops
+- [greencarrot](../items/greencarrot.html)
+
+### Random Drops
+None

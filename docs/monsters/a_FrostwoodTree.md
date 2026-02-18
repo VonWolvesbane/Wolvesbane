@@ -23,4 +23,10 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: FrostwoodLog, MandrakeRoot
+
+### Guaranteed Drops
+- [Frostwood Log](../items/FrostwoodLog.html)
+- [Mandrake Root](../items/MandrakeRoot.html)
+
+### Random Drops
+None

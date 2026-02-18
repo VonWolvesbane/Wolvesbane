@@ -23,4 +23,9 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: Club
+
+### Guaranteed Drops
+- [Club](../items/Club.html)
+
+### Random Drops
+None

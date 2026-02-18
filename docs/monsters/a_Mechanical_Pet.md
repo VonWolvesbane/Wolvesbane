@@ -23,4 +23,9 @@ None Listed
 
 ## Loot
 - Gold: 250 - 350
-- Items: SulfurousAsh
+
+### Guaranteed Drops
+- [Sulfurous Ash](../items/SulfurousAsh.html)
+
+### Random Drops
+None

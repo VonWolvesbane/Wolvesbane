@@ -23,4 +23,9 @@ None Listed
 
 ## Loot
 - Gold: 5000 - 20000
-- Items: CyclopsVisor
+
+### Guaranteed Drops
+None
+
+### Random Drops
+- [Cyclops Visor](../items/CyclopsVisor.html)

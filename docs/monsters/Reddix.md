@@ -23,4 +23,11 @@ None Listed
 
 ## Loot
 - Gold: 1000 - 2000
-- Items: HeadOfReddix, Longsword, Tokens
+
+### Guaranteed Drops
+- [Head Of Reddix](../items/HeadOfReddix.html)
+- [Longsword](../items/Longsword.html)
+- [Tokens](../items/Tokens.html)
+
+### Random Drops
+None

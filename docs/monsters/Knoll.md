@@ -23,4 +23,11 @@ None Listed
 
 ## Loot
 - Gold: 10000 - 20000
-- Items: DaggerBeltSkin, Item, MaceBeltSkin, SwordBeltSkin
+
+### Guaranteed Drops
+- [Item](../items/Item.html)
+
+### Random Drops
+- [Dagger Belt Skin](../items/DaggerBeltSkin.html)
+- [Mace Belt Skin](../items/MaceBeltSkin.html)
+- [Sword Belt Skin](../items/SwordBeltSkin.html)

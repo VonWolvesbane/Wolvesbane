@@ -23,4 +23,13 @@ None Listed
 
 ## Loot
 - Gold: 50 - 150
-- Items: Pitchfork, Sandals, Shirt, ShortPants, SkullCap
+
+### Guaranteed Drops
+- [Pitchfork](../items/Pitchfork.html)
+- [Sandals](../items/Sandals.html)
+- [Shirt](../items/Shirt.html)
+- [Short Pants](../items/ShortPants.html)
+- [Skull Cap](../items/SkullCap.html)
+
+### Random Drops
+None

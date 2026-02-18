@@ -23,4 +23,10 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: HellKey, HoodedShroudOfShadows
+
+### Guaranteed Drops
+- [Hell Key](../items/HellKey.html)
+- [Hooded Shroud Of Shadows](../items/HoodedShroudOfShadows.html)
+
+### Random Drops
+None

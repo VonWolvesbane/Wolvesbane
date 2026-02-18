@@ -23,4 +23,10 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: BlackPearl, SulfurousAsh
+
+### Guaranteed Drops
+- [Black Pearl](../items/BlackPearl.html)
+- [Sulfurous Ash](../items/SulfurousAsh.html)
+
+### Random Drops
+None

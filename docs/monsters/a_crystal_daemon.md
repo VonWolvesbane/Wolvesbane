@@ -23,4 +23,9 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: ScatteredCrystals
+
+### Guaranteed Drops
+- [Scattered Crystals](../items/ScatteredCrystals.html)
+
+### Random Drops
+None

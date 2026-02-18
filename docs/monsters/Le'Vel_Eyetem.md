@@ -23,4 +23,9 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: LevelItemDeed
+
+### Guaranteed Drops
+None
+
+### Random Drops
+- [Level Item Deed](../items/LevelItemDeed.html)

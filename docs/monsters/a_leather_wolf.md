@@ -23,4 +23,9 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: LeatherWolfSkin
+
+### Guaranteed Drops
+- [Leather Wolf Skin](../items/LeatherWolfSkin.html)
+
+### Random Drops
+None

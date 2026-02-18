@@ -23,4 +23,9 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: DragonOre
+
+### Guaranteed Drops
+- [Dragon Ore](../items/DragonOre.html)
+
+### Random Drops
+None

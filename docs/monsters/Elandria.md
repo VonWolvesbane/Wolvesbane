@@ -23,4 +23,9 @@ None Listed
 
 ## Loot
 - Gold: 1200 - 1500
-- Items: PixieSwatter
+
+### Guaranteed Drops
+- [Pixie Swatter](../items/PixieSwatter.html)
+
+### Random Drops
+None

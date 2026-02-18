@@ -23,4 +23,22 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: AgapiteOre, BlazeOre, BronzeOre, CopperOre, DullCopperOre, ElectrumOre, GoldOre, IceOre, PlatinumOre, ShadowIronOre, ToxicOre, ValoriteOre, VeriteOre, WolvesbanianOre
+
+### Guaranteed Drops
+- [Agapite Ore](../items/AgapiteOre.html)
+- [Blaze Ore](../items/BlazeOre.html)
+- [Bronze Ore](../items/BronzeOre.html)
+- [Copper Ore](../items/CopperOre.html)
+- [Dull Copper Ore](../items/DullCopperOre.html)
+- [Electrum Ore](../items/ElectrumOre.html)
+- [Gold Ore](../items/GoldOre.html)
+- [Ice Ore](../items/IceOre.html)
+- [Platinum Ore](../items/PlatinumOre.html)
+- [Shadow Iron Ore](../items/ShadowIronOre.html)
+- [Toxic Ore](../items/ToxicOre.html)
+- [Valorite Ore](../items/ValoriteOre.html)
+- [Verite Ore](../items/VeriteOre.html)
+- [Wolvesbanian Ore](../items/WolvesbanianOre.html)
+
+### Random Drops
+None

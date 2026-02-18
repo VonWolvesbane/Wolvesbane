@@ -23,4 +23,9 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: VampiricEmbraceScroll
+
+### Guaranteed Drops
+None
+
+### Random Drops
+- [Vampiric Embrace Scroll](../items/VampiricEmbraceScroll.html)

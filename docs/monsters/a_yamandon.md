@@ -23,4 +23,9 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: Eggs
+
+### Guaranteed Drops
+- [Eggs](../items/Eggs.html)
+
+### Random Drops
+None

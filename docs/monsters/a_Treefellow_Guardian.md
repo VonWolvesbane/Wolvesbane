@@ -23,4 +23,10 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: Log, TreefellowWood
+
+### Guaranteed Drops
+- [Log](../items/Log.html)
+- [Treefellow Wood](../items/TreefellowWood.html)
+
+### Random Drops
+None

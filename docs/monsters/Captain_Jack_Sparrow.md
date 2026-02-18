@@ -23,4 +23,11 @@ None Listed
 
 ## Loot
 - Gold: 1500 - 2000
-- Items: Boots, CaptainJackSparrowsCutlass, DreadPirateHat, ShipModelOfTheHMSCape
+
+### Guaranteed Drops
+- [Boots](../items/Boots.html)
+
+### Random Drops
+- [Captain Jack Sparrows Cutlass](../items/CaptainJackSparrowsCutlass.html)
+- [Dread Pirate Hat](../items/DreadPirateHat.html)
+- [Ship Model Of The H M S Cape](../items/ShipModelOfTheHMSCape.html)

@@ -23,4 +23,10 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: GargoylesPickaxe, UndeadGargHorn, UndeadGargoyleMedallions
+
+### Guaranteed Drops
+- [Undead Garg Horn](../items/UndeadGargHorn.html)
+- [Undead Gargoyle Medallions](../items/UndeadGargoyleMedallions.html)
+
+### Random Drops
+- [Gargoyles Pickaxe](../items/GargoylesPickaxe.html)

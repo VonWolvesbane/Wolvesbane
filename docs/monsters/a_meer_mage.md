@@ -23,4 +23,10 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: StrangleScroll, WitherScroll
+
+### Guaranteed Drops
+None
+
+### Random Drops
+- [Strangle Scroll](../items/StrangleScroll.html)
+- [Wither Scroll](../items/WitherScroll.html)

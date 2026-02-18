@@ -23,4 +23,9 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: Log
+
+### Guaranteed Drops
+- [Log](../items/Log.html)
+
+### Random Drops
+None

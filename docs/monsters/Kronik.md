@@ -23,4 +23,10 @@ None Listed
 
 ## Loot
 - Gold: 11120 - 31130
-- Items: KronikAxe, KronikTome
+
+### Guaranteed Drops
+- [Kronik Axe](../items/KronikAxe.html)
+- [Kronik Tome](../items/KronikTome.html)
+
+### Random Drops
+None

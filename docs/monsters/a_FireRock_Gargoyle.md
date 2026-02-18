@@ -23,4 +23,12 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: GargoyleFirePick, IronIngot, LargeFireRock, LightSource
+
+### Guaranteed Drops
+- [Gargoyle Fire Pick](../items/GargoyleFirePick.html)
+- [Iron Ingot](../items/IronIngot.html)
+- [Large Fire Rock](../items/LargeFireRock.html)
+- [Light Source](../items/LightSource.html)
+
+### Random Drops
+None

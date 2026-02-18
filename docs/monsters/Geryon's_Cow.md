@@ -23,4 +23,9 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: GeryonCowHide
+
+### Guaranteed Drops
+- [Geryon Cow Hide](../items/GeryonCowHide.html)
+
+### Random Drops
+None

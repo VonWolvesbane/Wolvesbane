@@ -23,4 +23,9 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: SpecialCharcoal
+
+### Guaranteed Drops
+None
+
+### Random Drops
+- [Special Charcoal](../items/SpecialCharcoal.html)

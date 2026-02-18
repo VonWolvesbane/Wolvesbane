@@ -23,4 +23,11 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: GargishClothChest, GargishClothKilt, GargishClothLegs
+
+### Guaranteed Drops
+- [Gargish Cloth Chest](../items/GargishClothChest.html)
+- [Gargish Cloth Kilt](../items/GargishClothKilt.html)
+- [Gargish Cloth Legs](../items/GargishClothLegs.html)
+
+### Random Drops
+None

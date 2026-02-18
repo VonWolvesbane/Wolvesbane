@@ -23,4 +23,9 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: LuckyCoin
+
+### Guaranteed Drops
+- [Lucky Coin](../items/LuckyCoin.html)
+
+### Random Drops
+None

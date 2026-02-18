@@ -23,4 +23,11 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: Board, Log, MandrakeRoot
+
+### Guaranteed Drops
+- [Board](../items/Board.html)
+- [Log](../items/Log.html)
+- [Mandrake Root](../items/MandrakeRoot.html)
+
+### Random Drops
+None

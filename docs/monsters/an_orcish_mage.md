@@ -23,4 +23,10 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: CorpseSkinScroll, OrcishKinMask, Yeast
+
+### Guaranteed Drops
+- [Orcish Kin Mask](../items/OrcishKinMask.html)
+- [Yeast](../items/Yeast.html)
+
+### Random Drops
+- [Corpse Skin Scroll](../items/CorpseSkinScroll.html)

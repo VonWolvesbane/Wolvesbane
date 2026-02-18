@@ -23,4 +23,11 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: LesserPoisonPotion, Nightshade, SulfurousAsh
+
+### Guaranteed Drops
+- [Lesser Poison Potion](../items/LesserPoisonPotion.html)
+- [Nightshade](../items/Nightshade.html)
+- [Sulfurous Ash](../items/SulfurousAsh.html)
+
+### Random Drops
+None

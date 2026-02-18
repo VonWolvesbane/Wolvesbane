@@ -23,4 +23,9 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: SilverSerpentVenom
+
+### Guaranteed Drops
+- [Silver Serpent Venom](../items/SilverSerpentVenom.html)
+
+### Random Drops
+None

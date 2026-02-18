@@ -23,4 +23,9 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: EnergizerCrystal
+
+### Guaranteed Drops
+None
+
+### Random Drops
+- [Energizer Crystal](../items/EnergizerCrystal.html)

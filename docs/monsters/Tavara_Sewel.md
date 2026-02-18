@@ -23,4 +23,10 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: Kilt, Sandals
+
+### Guaranteed Drops
+- [Kilt](../items/Kilt.html)
+- [Sandals](../items/Sandals.html)
+
+### Random Drops
+None

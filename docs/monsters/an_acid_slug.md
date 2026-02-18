@@ -23,4 +23,10 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: AcidSac, CongealedSlugAcid
+
+### Guaranteed Drops
+- [Acid Sac](../items/AcidSac.html)
+- [Congealed Slug Acid](../items/CongealedSlugAcid.html)
+
+### Random Drops
+None

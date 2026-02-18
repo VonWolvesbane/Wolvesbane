@@ -23,4 +23,16 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: BlackScales, BlueScales, Boots, GreenScales, RedScales, Shirt, WhiteScales, YellowScales
+
+### Guaranteed Drops
+- [Black Scales](../items/BlackScales.html)
+- [Blue Scales](../items/BlueScales.html)
+- [Boots](../items/Boots.html)
+- [Green Scales](../items/GreenScales.html)
+- [Red Scales](../items/RedScales.html)
+- [Shirt](../items/Shirt.html)
+- [White Scales](../items/WhiteScales.html)
+- [Yellow Scales](../items/YellowScales.html)
+
+### Random Drops
+None

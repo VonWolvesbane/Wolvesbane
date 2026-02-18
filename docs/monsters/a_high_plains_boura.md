@@ -23,4 +23,10 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: BouraSkin, BouraTailShield
+
+### Guaranteed Drops
+- [Boura Skin](../items/BouraSkin.html)
+- [Boura Tail Shield](../items/BouraTailShield.html)
+
+### Random Drops
+None

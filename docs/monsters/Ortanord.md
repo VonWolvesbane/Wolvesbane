@@ -23,4 +23,9 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: DaemonBone
+
+### Guaranteed Drops
+- [Daemon Bone](../items/DaemonBone.html)
+
+### Random Drops
+None

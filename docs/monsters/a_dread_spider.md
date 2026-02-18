@@ -23,4 +23,9 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: SpidersSilk
+
+### Guaranteed Drops
+- [Spiders Silk](../items/SpidersSilk.html)
+
+### Random Drops
+None

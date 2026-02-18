@@ -23,4 +23,9 @@ None Listed
 
 ## Loot
 - Gold: 60 - 70
-- Items: PerfectBanana
+
+### Guaranteed Drops
+- [Perfect Banana](../items/PerfectBanana.html)
+
+### Random Drops
+None

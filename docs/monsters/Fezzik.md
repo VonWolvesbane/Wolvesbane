@@ -23,4 +23,10 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: Club, RecipeScroll
+
+### Guaranteed Drops
+- [Club](../items/Club.html)
+- [Recipe Scroll](../items/RecipeScroll.html)
+
+### Random Drops
+None

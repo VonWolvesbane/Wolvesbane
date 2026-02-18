@@ -23,4 +23,9 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: LesserPoisonPotion
+
+### Guaranteed Drops
+- [Lesser Poison Potion](../items/LesserPoisonPotion.html)
+
+### Random Drops
+None

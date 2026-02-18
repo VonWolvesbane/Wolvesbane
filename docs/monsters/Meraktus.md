@@ -23,4 +23,20 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: Blight, BonePile, Corruption, CrimsonCincture, LightYarn, MalletAndChisel, MinotaurHedge, Muculent, Putrefication, RandomTalisman, Scourge, Taint, TormentedChains
+
+### Guaranteed Drops
+- [Crimson Cincture](../items/CrimsonCincture.html)
+- [Mallet And Chisel](../items/MalletAndChisel.html)
+- [Random Talisman](../items/RandomTalisman.html)
+- [Tormented Chains](../items/TormentedChains.html)
+
+### Random Drops
+- [Blight](../items/Blight.html)
+- [Bone Pile](../items/BonePile.html)
+- [Corruption](../items/Corruption.html)
+- [Light Yarn](../items/LightYarn.html)
+- [Minotaur Hedge](../items/MinotaurHedge.html)
+- [Muculent](../items/Muculent.html)
+- [Putrefication](../items/Putrefication.html)
+- [Scourge](../items/Scourge.html)
+- [Taint](../items/Taint.html)

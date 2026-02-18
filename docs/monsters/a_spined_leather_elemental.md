@@ -23,4 +23,9 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: GoldScales
+
+### Guaranteed Drops
+- [Gold Scales](../items/GoldScales.html)
+
+### Random Drops
+None

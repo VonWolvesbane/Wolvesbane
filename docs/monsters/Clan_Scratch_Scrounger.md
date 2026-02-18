@@ -23,4 +23,10 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: Arrow, Bow
+
+### Guaranteed Drops
+- [Arrow](../items/Arrow.html)
+- [Bow](../items/Bow.html)
+
+### Random Drops
+None

@@ -23,4 +23,9 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: LightSource
+
+### Guaranteed Drops
+- [Light Source](../items/LightSource.html)
+
+### Random Drops
+None

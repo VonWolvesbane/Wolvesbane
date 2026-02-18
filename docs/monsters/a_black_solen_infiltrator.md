@@ -23,4 +23,9 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: ZoogiFungus
+
+### Guaranteed Drops
+- [Zoogi Fungus](../items/ZoogiFungus.html)
+
+### Random Drops
+None

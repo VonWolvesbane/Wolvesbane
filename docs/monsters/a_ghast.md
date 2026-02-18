@@ -23,4 +23,13 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: Bones, LeftArm, RightArm, Torso, perilousCrystal
+
+### Guaranteed Drops
+- [Bones](../items/Bones.html)
+- [Left Arm](../items/LeftArm.html)
+- [Right Arm](../items/RightArm.html)
+- [Torso](../items/Torso.html)
+- [perilous Crystal](../items/perilousCrystal.html)
+
+### Random Drops
+None

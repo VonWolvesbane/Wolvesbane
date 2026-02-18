@@ -23,4 +23,9 @@ None Listed
 
 ## Loot
 - Gold: 10000 - 20000
-- Items: InvisHelmSkin, Item
+
+### Guaranteed Drops
+- [Item](../items/Item.html)
+
+### Random Drops
+- [Invis Helm Skin](../items/InvisHelmSkin.html)

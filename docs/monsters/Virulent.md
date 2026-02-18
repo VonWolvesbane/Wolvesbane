@@ -23,4 +23,11 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: HunterLegs, MalekisHonor, ParrotItem, SpidersSilk
+
+### Guaranteed Drops
+- [Parrot Item](../items/ParrotItem.html)
+- [Spiders Silk](../items/SpidersSilk.html)
+
+### Random Drops
+- [Hunter Legs](../items/HunterLegs.html)
+- [Malekis Honor](../items/MalekisHonor.html)

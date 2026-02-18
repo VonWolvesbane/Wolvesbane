@@ -23,4 +23,9 @@ None Listed
 
 ## Loot
 - Gold: 2500 - 3000
-- Items: StagAntler
+
+### Guaranteed Drops
+- [Stag Antler](../items/StagAntler.html)
+
+### Random Drops
+None

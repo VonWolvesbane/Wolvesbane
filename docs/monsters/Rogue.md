@@ -23,4 +23,9 @@ None Listed
 
 ## Loot
 - Gold: 5000 - 20000
-- Items: Cloak
+
+### Guaranteed Drops
+None
+
+### Random Drops
+- [Cloak](../items/Cloak.html)

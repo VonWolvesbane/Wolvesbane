@@ -23,4 +23,9 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: BearSkin
+
+### Guaranteed Drops
+None
+
+### Random Drops
+- [Bear Skin](../items/BearSkin.html)

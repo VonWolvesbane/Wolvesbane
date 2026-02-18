@@ -23,4 +23,13 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: Bones, RibCage, Skull, Spine, ominousCrystal
+
+### Guaranteed Drops
+- [Bones](../items/Bones.html)
+- [Rib Cage](../items/RibCage.html)
+- [Skull](../items/Skull.html)
+- [Spine](../items/Spine.html)
+- [ominous Crystal](../items/ominousCrystal.html)
+
+### Random Drops
+None

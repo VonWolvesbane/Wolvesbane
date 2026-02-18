@@ -23,4 +23,9 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: TheHeadOfSauron
+
+### Guaranteed Drops
+- [The Head Of Sauron](../items/TheHeadOfSauron.html)
+
+### Random Drops
+None

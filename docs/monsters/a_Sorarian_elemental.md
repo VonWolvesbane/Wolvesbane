@@ -23,4 +23,9 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: SosarianOre
+
+### Guaranteed Drops
+None
+
+### Random Drops
+- [Sosarian Ore](../items/SosarianOre.html)

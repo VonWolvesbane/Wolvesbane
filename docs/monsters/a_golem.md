@@ -23,4 +23,13 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: ArcaneGem, ClockworkAssembly, Gears, IronIngot, PowerCrystal
+
+### Guaranteed Drops
+- [Arcane Gem](../items/ArcaneGem.html)
+- [Clockwork Assembly](../items/ClockworkAssembly.html)
+- [Gears](../items/Gears.html)
+- [Iron Ingot](../items/IronIngot.html)
+- [Power Crystal](../items/PowerCrystal.html)
+
+### Random Drops
+None

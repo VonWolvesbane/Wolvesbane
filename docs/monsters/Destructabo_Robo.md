@@ -23,4 +23,16 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: BlasterAmmo, DRoboBlaster, RoboArms, RoboChest, RoboGloves, RoboGorget, RoboHelm, RoboLegs
+
+### Guaranteed Drops
+- [Blaster Ammo](../items/BlasterAmmo.html)
+- [D Robo Blaster](../items/DRoboBlaster.html)
+- [Robo Arms](../items/RoboArms.html)
+- [Robo Chest](../items/RoboChest.html)
+- [Robo Gloves](../items/RoboGloves.html)
+- [Robo Gorget](../items/RoboGorget.html)
+- [Robo Helm](../items/RoboHelm.html)
+- [Robo Legs](../items/RoboLegs.html)
+
+### Random Drops
+None

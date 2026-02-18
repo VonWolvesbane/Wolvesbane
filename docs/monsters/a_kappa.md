@@ -23,4 +23,11 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: Axle, Gears, Hinge, RawFishSteak
+
+### Guaranteed Drops
+- [Raw Fish Steak](../items/RawFishSteak.html)
+
+### Random Drops
+- [Axle](../items/Axle.html)
+- [Gears](../items/Gears.html)
+- [Hinge](../items/Hinge.html)

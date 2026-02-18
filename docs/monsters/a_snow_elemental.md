@@ -23,4 +23,9 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: BlackPearl
+
+### Guaranteed Drops
+- [Black Pearl](../items/BlackPearl.html)
+
+### Random Drops
+None

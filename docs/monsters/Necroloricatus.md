@@ -23,4 +23,15 @@ None Listed
 
 ## Loot
 - Gold: 400 - 600
-- Items: HoodedShroudOfShadows, Necroacidus, NecroloricatusBoots, NecroloricatusCap, NecroloricatusGloves, NecroloricatusNecklace, NecroloricatusPants, NecroloricatusShirt
+
+### Guaranteed Drops
+- [Hooded Shroud Of Shadows](../items/HoodedShroudOfShadows.html)
+
+### Random Drops
+- [Necroacidus](../items/Necroacidus.html)
+- [Necroloricatus Boots](../items/NecroloricatusBoots.html)
+- [Necroloricatus Cap](../items/NecroloricatusCap.html)
+- [Necroloricatus Gloves](../items/NecroloricatusGloves.html)
+- [Necroloricatus Necklace](../items/NecroloricatusNecklace.html)
+- [Necroloricatus Pants](../items/NecroloricatusPants.html)
+- [Necroloricatus Shirt](../items/NecroloricatusShirt.html)

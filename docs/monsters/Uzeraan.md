@@ -23,4 +23,33 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: Bandage, BankCheck, BlackPearl, Bloodmoss, EnchantedSextant, ExplosionScroll, Garlic, Ginseng, Gold, LesserHealPotion, MagicWizardsHat, MandrakeRoot, MarkScroll, NightSightPotion, Nightshade, RecallRune, RecallScroll, Robe, Shoes, Shovel, SpidersSilk, SulfurousAsh, TreasureMap, UzeraanTurmoilHorn, WizardsHat
+
+### Guaranteed Drops
+- [Bandage](../items/Bandage.html)
+- [Bank Check](../items/BankCheck.html)
+- [Black Pearl](../items/BlackPearl.html)
+- [Bloodmoss](../items/Bloodmoss.html)
+- [Enchanted Sextant](../items/EnchantedSextant.html)
+- [Explosion Scroll](../items/ExplosionScroll.html)
+- [Garlic](../items/Garlic.html)
+- [Ginseng](../items/Ginseng.html)
+- [Gold](../items/Gold.html)
+- [Lesser Heal Potion](../items/LesserHealPotion.html)
+- [Magic Wizards Hat](../items/MagicWizardsHat.html)
+- [Mandrake Root](../items/MandrakeRoot.html)
+- [Mark Scroll](../items/MarkScroll.html)
+- [Night Sight Potion](../items/NightSightPotion.html)
+- [Nightshade](../items/Nightshade.html)
+- [Recall Rune](../items/RecallRune.html)
+- [Recall Scroll](../items/RecallScroll.html)
+- [Robe](../items/Robe.html)
+- [Shoes](../items/Shoes.html)
+- [Shovel](../items/Shovel.html)
+- [Spiders Silk](../items/SpidersSilk.html)
+- [Sulfurous Ash](../items/SulfurousAsh.html)
+- [Treasure Map](../items/TreasureMap.html)
+- [Uzeraan Turmoil Horn](../items/UzeraanTurmoilHorn.html)
+- [Wizards Hat](../items/WizardsHat.html)
+
+### Random Drops
+None

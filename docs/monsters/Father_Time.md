@@ -23,4 +23,12 @@ None Listed
 
 ## Loot
 - Gold: 20000 - 30000
-- Items: FTGWatch, FTRWatch, FTSWatch, FTWatch
+
+### Guaranteed Drops
+- [F T G Watch](../items/FTGWatch.html)
+- [F T R Watch](../items/FTRWatch.html)
+- [F T S Watch](../items/FTSWatch.html)
+- [F T Watch](../items/FTWatch.html)
+
+### Random Drops
+None

@@ -23,4 +23,10 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: Bone, LightSource
+
+### Guaranteed Drops
+- [Bone](../items/Bone.html)
+- [Light Source](../items/LightSource.html)
+
+### Random Drops
+None

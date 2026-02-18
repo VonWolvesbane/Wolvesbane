@@ -23,4 +23,14 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: PaintedDaemonMask, PaintedEvilClownMask, PaintedEvilJesterMask, PaintedPlagueMask, PaintedPorcelainMask, TwilightLantern, WrappedCandy
+
+### Guaranteed Drops
+- [Twilight Lantern](../items/TwilightLantern.html)
+- [Wrapped Candy](../items/WrappedCandy.html)
+
+### Random Drops
+- [Painted Daemon Mask](../items/PaintedDaemonMask.html)
+- [Painted Evil Clown Mask](../items/PaintedEvilClownMask.html)
+- [Painted Evil Jester Mask](../items/PaintedEvilJesterMask.html)
+- [Painted Plague Mask](../items/PaintedPlagueMask.html)
+- [Painted Porcelain Mask](../items/PaintedPorcelainMask.html)

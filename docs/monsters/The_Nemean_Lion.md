@@ -23,4 +23,10 @@ None Listed
 
 ## Loot
 - Gold: 4500 - 7000
-- Items: NemeanSkin, NemeanTooth
+
+### Guaranteed Drops
+- [Nemean Skin](../items/NemeanSkin.html)
+- [Nemean Tooth](../items/NemeanTooth.html)
+
+### Random Drops
+None

@@ -23,4 +23,11 @@ None Listed
 
 ## Loot
 - Gold: 600 - 800
-- Items: HeadOfMolach, Longsword, Tokens
+
+### Guaranteed Drops
+- [Head Of Molach](../items/HeadOfMolach.html)
+- [Longsword](../items/Longsword.html)
+- [Tokens](../items/Tokens.html)
+
+### Random Drops
+None

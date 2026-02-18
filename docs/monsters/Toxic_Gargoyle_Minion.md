@@ -23,4 +23,9 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: None Listed
+
+### Guaranteed Drops
+None
+
+### Random Drops
+None

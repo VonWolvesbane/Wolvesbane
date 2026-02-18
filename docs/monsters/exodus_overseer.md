@@ -23,4 +23,10 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: ArcaneGem, PowerCrystal
+
+### Guaranteed Drops
+- [Arcane Gem](../items/ArcaneGem.html)
+- [Power Crystal](../items/PowerCrystal.html)
+
+### Random Drops
+None

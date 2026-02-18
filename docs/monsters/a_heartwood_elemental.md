@@ -23,4 +23,19 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: AshLog, BambooLog, BloodwoodLog, EbonyLog, FrostwoodLog, HeartwoodLog, OakLog, PetrifiedLog, PurpleHeartLog, RedwoodLog, YewLog
+
+### Guaranteed Drops
+- [Ash Log](../items/AshLog.html)
+- [Bamboo Log](../items/BambooLog.html)
+- [Bloodwood Log](../items/BloodwoodLog.html)
+- [Ebony Log](../items/EbonyLog.html)
+- [Frostwood Log](../items/FrostwoodLog.html)
+- [Heartwood Log](../items/HeartwoodLog.html)
+- [Oak Log](../items/OakLog.html)
+- [Petrified Log](../items/PetrifiedLog.html)
+- [Purple Heart Log](../items/PurpleHeartLog.html)
+- [Redwood Log](../items/RedwoodLog.html)
+- [Yew Log](../items/YewLog.html)
+
+### Random Drops
+None

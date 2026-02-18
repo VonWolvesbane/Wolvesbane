@@ -23,4 +23,19 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: BolaBall, Candle, Katana, Kryss, LuckyCoin, Pitchfork, Ribs, Scimitar, Shaft, ThighBoots, WarHammer, WarMace
+
+### Guaranteed Drops
+- [Bola Ball](../items/BolaBall.html)
+- [Lucky Coin](../items/LuckyCoin.html)
+- [Thigh Boots](../items/ThighBoots.html)
+
+### Random Drops
+- [Candle](../items/Candle.html)
+- [Katana](../items/Katana.html)
+- [Kryss](../items/Kryss.html)
+- [Pitchfork](../items/Pitchfork.html)
+- [Ribs](../items/Ribs.html)
+- [Scimitar](../items/Scimitar.html)
+- [Shaft](../items/Shaft.html)
+- [War Hammer](../items/WarHammer.html)
+- [War Mace](../items/WarMace.html)

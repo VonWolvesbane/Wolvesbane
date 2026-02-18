@@ -23,4 +23,13 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: BankCheck, CraymaCrap, DeathAxe, HoodRobe, NobleSword
+
+### Guaranteed Drops
+- [Bank Check](../items/BankCheck.html)
+- [Crayma Crap](../items/CraymaCrap.html)
+- [Death Axe](../items/DeathAxe.html)
+- [Hood Robe](../items/HoodRobe.html)
+- [Noble Sword](../items/NobleSword.html)
+
+### Random Drops
+None

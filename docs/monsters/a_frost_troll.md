@@ -23,4 +23,9 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: DoubleAxe
+
+### Guaranteed Drops
+- [Double Axe](../items/DoubleAxe.html)
+
+### Random Drops
+None

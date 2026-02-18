@@ -23,4 +23,10 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: Carrot, EasterEgg1
+
+### Guaranteed Drops
+- [Carrot](../items/Carrot.html)
+- [Easter Egg1](../items/EasterEgg1.html)
+
+### Random Drops
+None

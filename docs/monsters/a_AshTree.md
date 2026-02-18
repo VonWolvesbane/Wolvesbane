@@ -23,4 +23,10 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: AshLog, MandrakeRoot
+
+### Guaranteed Drops
+- [Ash Log](../items/AshLog.html)
+- [Mandrake Root](../items/MandrakeRoot.html)
+
+### Random Drops
+None

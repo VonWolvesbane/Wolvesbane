@@ -23,4 +23,9 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: YellowSnow
+
+### Guaranteed Drops
+- [Yellow Snow](../items/YellowSnow.html)
+
+### Random Drops
+None

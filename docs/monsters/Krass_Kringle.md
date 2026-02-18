@@ -23,4 +23,16 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: Axe, Broadsword, Club, Cutlass, Dagger, Longsword, RecipeFragment10, Spear
+
+### Guaranteed Drops
+- [Axe](../items/Axe.html)
+- [Broadsword](../items/Broadsword.html)
+- [Club](../items/Club.html)
+- [Cutlass](../items/Cutlass.html)
+- [Dagger](../items/Dagger.html)
+- [Longsword](../items/Longsword.html)
+- [Recipe Fragment10](../items/RecipeFragment10.html)
+- [Spear](../items/Spear.html)
+
+### Random Drops
+None

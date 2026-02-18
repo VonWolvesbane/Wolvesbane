@@ -23,4 +23,15 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: Boots, ExecutionersAxe, FancyShirt, HalfApron, MagicDrakeWing, ShortPants, TricorneHat
+
+### Guaranteed Drops
+- [Boots](../items/Boots.html)
+- [Executioners Axe](../items/ExecutionersAxe.html)
+- [Fancy Shirt](../items/FancyShirt.html)
+- [Half Apron](../items/HalfApron.html)
+- [Magic Drake Wing](../items/MagicDrakeWing.html)
+- [Short Pants](../items/ShortPants.html)
+- [Tricorne Hat](../items/TricorneHat.html)
+
+### Random Drops
+None

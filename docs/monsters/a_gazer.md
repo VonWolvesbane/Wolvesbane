@@ -23,4 +23,9 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: Nightshade
+
+### Guaranteed Drops
+- [Nightshade](../items/Nightshade.html)
+
+### Random Drops
+None

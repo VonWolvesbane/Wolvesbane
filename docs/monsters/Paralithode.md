@@ -23,4 +23,9 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: FertileDirt
+
+### Guaranteed Drops
+- [Fertile Dirt](../items/FertileDirt.html)
+
+### Random Drops
+None

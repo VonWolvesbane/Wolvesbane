@@ -23,4 +23,10 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: DraconicOrb, FairyDragonWing
+
+### Guaranteed Drops
+- [Draconic Orb](../items/DraconicOrb.html)
+- [Fairy Dragon Wing](../items/FairyDragonWing.html)
+
+### Random Drops
+None

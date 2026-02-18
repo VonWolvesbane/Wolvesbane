@@ -23,4 +23,14 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: Bone, LeftArm, PlayerBones, RibCage, RightArm, Torso
+
+### Guaranteed Drops
+None
+
+### Random Drops
+- [Bone](../items/Bone.html)
+- [Left Arm](../items/LeftArm.html)
+- [Player Bones](../items/PlayerBones.html)
+- [Rib Cage](../items/RibCage.html)
+- [Right Arm](../items/RightArm.html)
+- [Torso](../items/Torso.html)

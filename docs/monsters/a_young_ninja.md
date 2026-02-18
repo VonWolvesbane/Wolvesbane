@@ -23,4 +23,15 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: Bandana, Kama, Lajatang, LeatherNinjaBelt, LeatherNinjaJacket, LeatherNinjaPants, NinjaTabi, Tessen
+
+### Guaranteed Drops
+- [Bandana](../items/Bandana.html)
+- [Leather Ninja Belt](../items/LeatherNinjaBelt.html)
+- [Leather Ninja Jacket](../items/LeatherNinjaJacket.html)
+- [Leather Ninja Pants](../items/LeatherNinjaPants.html)
+- [Ninja Tabi](../items/NinjaTabi.html)
+
+### Random Drops
+- [Kama](../items/Kama.html)
+- [Lajatang](../items/Lajatang.html)
+- [Tessen](../items/Tessen.html)

@@ -23,4 +23,9 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: StymphalianFeather
+
+### Guaranteed Drops
+- [Stymphalian Feather](../items/StymphalianFeather.html)
+
+### Random Drops
+None

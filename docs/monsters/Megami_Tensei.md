@@ -23,4 +23,11 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: MegamiChest, MegamiLegs, MegamiScepter
+
+### Guaranteed Drops
+- [Megami Chest](../items/MegamiChest.html)
+- [Megami Legs](../items/MegamiLegs.html)
+- [Megami Scepter](../items/MegamiScepter.html)
+
+### Random Drops
+None

@@ -23,4 +23,9 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: GlacialStaff
+
+### Guaranteed Drops
+- [Glacial Staff](../items/GlacialStaff.html)
+
+### Random Drops
+None

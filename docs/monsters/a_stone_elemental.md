@@ -23,4 +23,10 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: Gold, RoughStone
+
+### Guaranteed Drops
+- [Gold](../items/Gold.html)
+- [Rough Stone](../items/RoughStone.html)
+
+### Random Drops
+None

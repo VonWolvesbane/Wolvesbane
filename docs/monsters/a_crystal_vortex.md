@@ -23,4 +23,10 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: CrystallineFragments, JaggedCrystals
+
+### Guaranteed Drops
+- [Crystalline Fragments](../items/CrystallineFragments.html)
+- [Jagged Crystals](../items/JaggedCrystals.html)
+
+### Random Drops
+None

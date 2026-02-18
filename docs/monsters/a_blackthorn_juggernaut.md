@@ -23,4 +23,10 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: ClockworkAssembly, PowerCrystal
+
+### Guaranteed Drops
+- [Clockwork Assembly](../items/ClockworkAssembly.html)
+- [Power Crystal](../items/PowerCrystal.html)
+
+### Random Drops
+None

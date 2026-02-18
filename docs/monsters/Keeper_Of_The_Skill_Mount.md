@@ -23,4 +23,22 @@ None Listed
 
 ## Loot
 - Gold: 400 - 600
-- Items: HoodedShroudOfShadows, SkillMount, SkillMountBeetle, SkillMountChimera, SkillMountCuShide, SkillMountDemon, SkillMountHorse, SkillMountKirin, SkillMountLlama, SkillMountOstard, SkillMountPolarB, SkillMountRidgeback, SkillMountSwampDragon, SkillMountUnicorn
+
+### Guaranteed Drops
+- [Hooded Shroud Of Shadows](../items/HoodedShroudOfShadows.html)
+- [Skill Mount](../items/SkillMount.html)
+- [Skill Mount Beetle](../items/SkillMountBeetle.html)
+- [Skill Mount Chimera](../items/SkillMountChimera.html)
+- [Skill Mount Cu Shide](../items/SkillMountCuShide.html)
+- [Skill Mount Demon](../items/SkillMountDemon.html)
+- [Skill Mount Horse](../items/SkillMountHorse.html)
+- [Skill Mount Kirin](../items/SkillMountKirin.html)
+- [Skill Mount Llama](../items/SkillMountLlama.html)
+- [Skill Mount Ostard](../items/SkillMountOstard.html)
+- [Skill Mount Polar B](../items/SkillMountPolarB.html)
+- [Skill Mount Ridgeback](../items/SkillMountRidgeback.html)
+- [Skill Mount Swamp Dragon](../items/SkillMountSwampDragon.html)
+- [Skill Mount Unicorn](../items/SkillMountUnicorn.html)
+
+### Random Drops
+None

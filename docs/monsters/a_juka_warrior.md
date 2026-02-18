@@ -23,4 +23,9 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: ArcaneGem
+
+### Guaranteed Drops
+- [Arcane Gem](../items/ArcaneGem.html)
+
+### Random Drops
+None

@@ -23,4 +23,12 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: Backpack, Sandals, Skirt, Tunic
+
+### Guaranteed Drops
+- [Backpack](../items/Backpack.html)
+- [Sandals](../items/Sandals.html)
+- [Skirt](../items/Skirt.html)
+- [Tunic](../items/Tunic.html)
+
+### Random Drops
+None

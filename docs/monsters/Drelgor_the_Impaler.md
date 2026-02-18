@@ -23,4 +23,14 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: BoneArms, BoneChest, BoneGloves, BoneHelm, BoneLegs, Scimitar, WoodenShield
+
+### Guaranteed Drops
+- [Scimitar](../items/Scimitar.html)
+- [Wooden Shield](../items/WoodenShield.html)
+
+### Random Drops
+- [Bone Arms](../items/BoneArms.html)
+- [Bone Chest](../items/BoneChest.html)
+- [Bone Gloves](../items/BoneGloves.html)
+- [Bone Helm](../items/BoneHelm.html)
+- [Bone Legs](../items/BoneLegs.html)

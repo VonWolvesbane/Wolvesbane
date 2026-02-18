@@ -23,4 +23,9 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: Organics
+
+### Guaranteed Drops
+- [Organics](../items/Organics.html)
+
+### Random Drops
+None

@@ -23,4 +23,10 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: MandrakeRoot, OakLog
+
+### Guaranteed Drops
+- [Mandrake Root](../items/MandrakeRoot.html)
+- [Oak Log](../items/OakLog.html)
+
+### Random Drops
+None

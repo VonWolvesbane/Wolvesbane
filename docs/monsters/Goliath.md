@@ -23,4 +23,14 @@ None Listed
 
 ## Loot
 - Gold: 11120 - 11130
-- Items: GargishArmsOfEvolution, GargishChestOfEvolution, GargishKiltOfEvolution, GargishLegsOfEvolution, GargishShieldOfEvolution, GargishWingArmorOfEvolution
+
+### Guaranteed Drops
+- [Gargish Arms Of Evolution](../items/GargishArmsOfEvolution.html)
+- [Gargish Chest Of Evolution](../items/GargishChestOfEvolution.html)
+- [Gargish Kilt Of Evolution](../items/GargishKiltOfEvolution.html)
+- [Gargish Legs Of Evolution](../items/GargishLegsOfEvolution.html)
+- [Gargish Shield Of Evolution](../items/GargishShieldOfEvolution.html)
+- [Gargish Wing Armor Of Evolution](../items/GargishWingArmorOfEvolution.html)
+
+### Random Drops
+None

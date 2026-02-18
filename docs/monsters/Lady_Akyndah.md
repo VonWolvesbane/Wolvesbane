@@ -23,4 +23,9 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: AkyndahEarrings
+
+### Guaranteed Drops
+- [Akyndah Earrings](../items/AkyndahEarrings.html)
+
+### Random Drops
+None

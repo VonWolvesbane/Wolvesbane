@@ -23,4 +23,10 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: BrightlyColoredEggs, Carrot
+
+### Guaranteed Drops
+- [Brightly Colored Eggs](../items/BrightlyColoredEggs.html)
+- [Carrot](../items/Carrot.html)
+
+### Random Drops
+None

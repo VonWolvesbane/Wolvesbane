@@ -23,4 +23,17 @@ None Listed
 
 ## Loot
 - Gold: 2820 - 3300
-- Items: NoxArms, NoxGloves, NoxGorget, NoxHelm, NoxKatana, NoxLegs, NoxRobe, NoxShield, NoxTunic
+
+### Guaranteed Drops
+None
+
+### Random Drops
+- [Nox Arms](../items/NoxArms.html)
+- [Nox Gloves](../items/NoxGloves.html)
+- [Nox Gorget](../items/NoxGorget.html)
+- [Nox Helm](../items/NoxHelm.html)
+- [Nox Katana](../items/NoxKatana.html)
+- [Nox Legs](../items/NoxLegs.html)
+- [Nox Robe](../items/NoxRobe.html)
+- [Nox Shield](../items/NoxShield.html)
+- [Nox Tunic](../items/NoxTunic.html)

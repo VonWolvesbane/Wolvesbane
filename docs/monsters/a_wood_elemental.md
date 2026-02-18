@@ -23,4 +23,40 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: AgapiteOre, AshLog, BambooLog, BlazeOre, BloodwoodLog, BronzeOre, CopperOre, DullCopperOre, EbonyLog, ElectrumOre, FrostwoodLog, GoldOre, HeartwoodLog, IceOre, IronOre, Log, OakLog, PetrifiedLog, PlatinumOre, PurpleHeartLog, RedwoodLog, ResourceRecipe, RunicFletcherTools, RunicHammer, RunicSewingKit, RunicTinkerTools, ShadowIronOre, ToxicOre, ValoriteOre, VeriteOre, WolvesbanianOre, YewLog
+
+### Guaranteed Drops
+- [Agapite Ore](../items/AgapiteOre.html)
+- [Ash Log](../items/AshLog.html)
+- [Bamboo Log](../items/BambooLog.html)
+- [Blaze Ore](../items/BlazeOre.html)
+- [Bloodwood Log](../items/BloodwoodLog.html)
+- [Bronze Ore](../items/BronzeOre.html)
+- [Copper Ore](../items/CopperOre.html)
+- [Dull Copper Ore](../items/DullCopperOre.html)
+- [Ebony Log](../items/EbonyLog.html)
+- [Electrum Ore](../items/ElectrumOre.html)
+- [Frostwood Log](../items/FrostwoodLog.html)
+- [Gold Ore](../items/GoldOre.html)
+- [Heartwood Log](../items/HeartwoodLog.html)
+- [Ice Ore](../items/IceOre.html)
+- [Iron Ore](../items/IronOre.html)
+- [Log](../items/Log.html)
+- [Oak Log](../items/OakLog.html)
+- [Petrified Log](../items/PetrifiedLog.html)
+- [Platinum Ore](../items/PlatinumOre.html)
+- [Purple Heart Log](../items/PurpleHeartLog.html)
+- [Redwood Log](../items/RedwoodLog.html)
+- [Resource Recipe](../items/ResourceRecipe.html)
+- [Runic Fletcher Tools](../items/RunicFletcherTools.html)
+- [Runic Hammer](../items/RunicHammer.html)
+- [Runic Sewing Kit](../items/RunicSewingKit.html)
+- [Runic Tinker Tools](../items/RunicTinkerTools.html)
+- [Shadow Iron Ore](../items/ShadowIronOre.html)
+- [Toxic Ore](../items/ToxicOre.html)
+- [Valorite Ore](../items/ValoriteOre.html)
+- [Verite Ore](../items/VeriteOre.html)
+- [Wolvesbanian Ore](../items/WolvesbanianOre.html)
+- [Yew Log](../items/YewLog.html)
+
+### Random Drops
+None

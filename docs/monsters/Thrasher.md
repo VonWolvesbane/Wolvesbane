@@ -23,4 +23,9 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: ThrashersTail
+
+### Guaranteed Drops
+- [Thrashers Tail](../items/ThrashersTail.html)
+
+### Random Drops
+None

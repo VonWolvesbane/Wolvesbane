@@ -23,4 +23,9 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: Bandage
+
+### Guaranteed Drops
+- [Bandage](../items/Bandage.html)
+
+### Random Drops
+None

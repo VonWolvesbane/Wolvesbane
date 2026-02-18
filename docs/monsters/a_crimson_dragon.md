@@ -23,4 +23,10 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: CrimsonCincture, ParrotItem
+
+### Guaranteed Drops
+- [Crimson Cincture](../items/CrimsonCincture.html)
+- [Parrot Item](../items/ParrotItem.html)
+
+### Random Drops
+None

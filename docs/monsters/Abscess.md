@@ -23,4 +23,10 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: AbscessTail, ParagonChest
+
+### Guaranteed Drops
+- [Abscess Tail](../items/AbscessTail.html)
+- [Paragon Chest](../items/ParagonChest.html)
+
+### Random Drops
+None

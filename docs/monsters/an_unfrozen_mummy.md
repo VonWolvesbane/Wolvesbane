@@ -23,4 +23,10 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: BrokenCrystals, ParrotItem
+
+### Guaranteed Drops
+- [Broken Crystals](../items/BrokenCrystals.html)
+- [Parrot Item](../items/ParrotItem.html)
+
+### Random Drops
+None

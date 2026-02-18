@@ -23,4 +23,9 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: SulfurousAsh
+
+### Guaranteed Drops
+- [Sulfurous Ash](../items/SulfurousAsh.html)
+
+### Random Drops
+None

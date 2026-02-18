@@ -23,4 +23,16 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: DreadFlute, DreadHornMane, DreadsRevenge, HornOfTheDreadhorn, MangledHeadOfDreadhorn, ParrotItem, PristineDreadHorn, TaintedMushroom
+
+### Guaranteed Drops
+- [Dread Flute](../items/DreadFlute.html)
+- [Dread Horn Mane](../items/DreadHornMane.html)
+- [Dreads Revenge](../items/DreadsRevenge.html)
+- [Horn Of The Dreadhorn](../items/HornOfTheDreadhorn.html)
+- [Mangled Head Of Dreadhorn](../items/MangledHeadOfDreadhorn.html)
+- [Parrot Item](../items/ParrotItem.html)
+- [Pristine Dread Horn](../items/PristineDreadHorn.html)
+- [Tainted Mushroom](../items/TaintedMushroom.html)
+
+### Random Drops
+None

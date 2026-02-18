@@ -23,4 +23,16 @@ None Listed
 
 ## Loot
 - Gold: 11120 - 11130
-- Items: OblivionArms, OblivionBlade, OblivionCap, OblivionChest, OblivionGloves, OblivionGorget, OblivionLegs, OblivionShield
+
+### Guaranteed Drops
+- [Oblivion Arms](../items/OblivionArms.html)
+- [Oblivion Blade](../items/OblivionBlade.html)
+- [Oblivion Cap](../items/OblivionCap.html)
+- [Oblivion Chest](../items/OblivionChest.html)
+- [Oblivion Gloves](../items/OblivionGloves.html)
+- [Oblivion Gorget](../items/OblivionGorget.html)
+- [Oblivion Legs](../items/OblivionLegs.html)
+- [Oblivion Shield](../items/OblivionShield.html)
+
+### Random Drops
+None

@@ -23,4 +23,10 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: LuckyCoin, SpidersSilk
+
+### Guaranteed Drops
+- [Lucky Coin](../items/LuckyCoin.html)
+- [Spiders Silk](../items/SpidersSilk.html)
+
+### Random Drops
+None

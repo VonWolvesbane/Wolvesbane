@@ -23,4 +23,11 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: Bandage, Garlic, Worm
+
+### Guaranteed Drops
+- [Bandage](../items/Bandage.html)
+- [Garlic](../items/Garlic.html)
+- [Worm](../items/Worm.html)
+
+### Random Drops
+None

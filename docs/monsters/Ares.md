@@ -23,4 +23,11 @@ None Listed
 
 ## Loot
 - Gold: 1000 - 2000
-- Items: HeadOfAres, Longsword, Tokens
+
+### Guaranteed Drops
+- [Head Of Ares](../items/HeadOfAres.html)
+- [Longsword](../items/Longsword.html)
+- [Tokens](../items/Tokens.html)
+
+### Random Drops
+None

@@ -23,4 +23,10 @@ None Listed
 
 ## Loot
 - Gold: 5000 - 20000
-- Items: ClawsOfWolverine, MaskofWolverine
+
+### Guaranteed Drops
+None
+
+### Random Drops
+- [Claws Of Wolverine](../items/ClawsOfWolverine.html)
+- [Maskof Wolverine](../items/MaskofWolverine.html)

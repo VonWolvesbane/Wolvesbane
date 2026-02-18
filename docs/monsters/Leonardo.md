@@ -23,4 +23,9 @@ None Listed
 
 ## Loot
 - Gold: 20000 - 30000
-- Items: LeonardoDaisho
+
+### Guaranteed Drops
+None
+
+### Random Drops
+- [Leonardo Daisho](../items/LeonardoDaisho.html)

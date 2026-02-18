@@ -23,4 +23,9 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: TeleporterTicket
+
+### Guaranteed Drops
+- [Teleporter Ticket](../items/TeleporterTicket.html)
+
+### Random Drops
+None

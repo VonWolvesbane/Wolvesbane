@@ -23,4 +23,10 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: ShadowguardApple, TatteredBook
+
+### Guaranteed Drops
+- [Shadowguard Apple](../items/ShadowguardApple.html)
+- [Tattered Book](../items/TatteredBook.html)
+
+### Random Drops
+None

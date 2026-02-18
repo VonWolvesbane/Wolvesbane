@@ -23,4 +23,10 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: LightSource, SulfurousAsh
+
+### Guaranteed Drops
+- [Light Source](../items/LightSource.html)
+- [Sulfurous Ash](../items/SulfurousAsh.html)
+
+### Random Drops
+None

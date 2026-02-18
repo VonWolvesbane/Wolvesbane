@@ -23,4 +23,11 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: StrangleScroll, VampiricEmbraceScroll, WitherScroll
+
+### Guaranteed Drops
+None
+
+### Random Drops
+- [Strangle Scroll](../items/StrangleScroll.html)
+- [Vampiric Embrace Scroll](../items/VampiricEmbraceScroll.html)
+- [Wither Scroll](../items/WitherScroll.html)

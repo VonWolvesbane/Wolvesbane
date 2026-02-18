@@ -23,4 +23,10 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: KepetchWax, RawRibs
+
+### Guaranteed Drops
+- [Kepetch Wax](../items/KepetchWax.html)
+- [Raw Ribs](../items/RawRibs.html)
+
+### Random Drops
+None

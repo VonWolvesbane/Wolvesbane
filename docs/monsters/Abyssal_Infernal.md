@@ -23,4 +23,10 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: HornAbyssalInferno, NetherCycloneScroll
+
+### Guaranteed Drops
+None
+
+### Random Drops
+- [Horn Abyssal Inferno](../items/HornAbyssalInferno.html)
+- [Nether Cyclone Scroll](../items/NetherCycloneScroll.html)

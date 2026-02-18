@@ -23,4 +23,20 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: Axe, Bandana, Boots, Broadsword, Club, Cutlass, Dagger, FancyShirt, Longsword, PawsOfTheWereWolf, ShortPants, Skirt, Spear
+
+### Guaranteed Drops
+- [Axe](../items/Axe.html)
+- [Bandana](../items/Bandana.html)
+- [Boots](../items/Boots.html)
+- [Broadsword](../items/Broadsword.html)
+- [Club](../items/Club.html)
+- [Cutlass](../items/Cutlass.html)
+- [Dagger](../items/Dagger.html)
+- [Fancy Shirt](../items/FancyShirt.html)
+- [Longsword](../items/Longsword.html)
+- [Short Pants](../items/ShortPants.html)
+- [Skirt](../items/Skirt.html)
+- [Spear](../items/Spear.html)
+
+### Random Drops
+- [Paws Of The Were Wolf](../items/PawsOfTheWereWolf.html)

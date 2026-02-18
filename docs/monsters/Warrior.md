@@ -23,4 +23,18 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: FemaleGargishPlateArms, FemaleGargishPlateChest, FemaleGargishPlateKilt, FemaleGargishPlateLegs, GargishPlateArms, GargishPlateChest, GargishPlateKilt, GargishPlateLegs, GlassSword, PlateTalons
+
+### Guaranteed Drops
+- [Female Gargish Plate Arms](../items/FemaleGargishPlateArms.html)
+- [Female Gargish Plate Chest](../items/FemaleGargishPlateChest.html)
+- [Female Gargish Plate Kilt](../items/FemaleGargishPlateKilt.html)
+- [Female Gargish Plate Legs](../items/FemaleGargishPlateLegs.html)
+- [Gargish Plate Arms](../items/GargishPlateArms.html)
+- [Gargish Plate Chest](../items/GargishPlateChest.html)
+- [Gargish Plate Kilt](../items/GargishPlateKilt.html)
+- [Gargish Plate Legs](../items/GargishPlateLegs.html)
+- [Glass Sword](../items/GlassSword.html)
+- [Plate Talons](../items/PlateTalons.html)
+
+### Random Drops
+None

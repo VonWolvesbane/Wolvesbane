@@ -23,4 +23,13 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: DaemonArms, DaemonChest, DaemonGloves, DaemonHelm, DaemonLegs
+
+### Guaranteed Drops
+None
+
+### Random Drops
+- [Daemon Arms](../items/DaemonArms.html)
+- [Daemon Chest](../items/DaemonChest.html)
+- [Daemon Gloves](../items/DaemonGloves.html)
+- [Daemon Helm](../items/DaemonHelm.html)
+- [Daemon Legs](../items/DaemonLegs.html)

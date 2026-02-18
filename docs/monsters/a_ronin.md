@@ -23,4 +23,23 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: BookOfBushido, ChainHatsuburi, DecorativePlateKabuto, Halberd, LeatherDo, LeatherHiroSode, LeatherJingasa, LeatherSuneate, LightPlateJingasa, Longsword, NoDachi, PlateSuneate, SamuraiTabi, StuddedHaidate, Wakizashi
+
+### Guaranteed Drops
+- [Book Of Bushido](../items/BookOfBushido.html)
+- [Chain Hatsuburi](../items/ChainHatsuburi.html)
+- [Decorative Plate Kabuto](../items/DecorativePlateKabuto.html)
+- [Halberd](../items/Halberd.html)
+- [Leather Do](../items/LeatherDo.html)
+- [Leather Hiro Sode](../items/LeatherHiroSode.html)
+- [Leather Jingasa](../items/LeatherJingasa.html)
+- [Leather Suneate](../items/LeatherSuneate.html)
+- [Light Plate Jingasa](../items/LightPlateJingasa.html)
+- [Longsword](../items/Longsword.html)
+- [No Dachi](../items/NoDachi.html)
+- [Plate Suneate](../items/PlateSuneate.html)
+- [Samurai Tabi](../items/SamuraiTabi.html)
+- [Studded Haidate](../items/StuddedHaidate.html)
+- [Wakizashi](../items/Wakizashi.html)
+
+### Random Drops
+None

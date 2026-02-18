@@ -23,4 +23,9 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: MessageInABottle
+
+### Guaranteed Drops
+- [Message In A Bottle](../items/MessageInABottle.html)
+
+### Random Drops
+None

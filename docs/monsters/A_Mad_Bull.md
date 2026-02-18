@@ -23,4 +23,9 @@ None Listed
 
 ## Loot
 - Gold: 2500 - 3000
-- Items: MadBullHorn
+
+### Guaranteed Drops
+- [Mad Bull Horn](../items/MadBullHorn.html)
+
+### Random Drops
+None

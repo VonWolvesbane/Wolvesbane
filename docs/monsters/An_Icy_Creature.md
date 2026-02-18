@@ -23,4 +23,9 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: MysteriousNote
+
+### Guaranteed Drops
+- [Mysterious Note](../items/MysteriousNote.html)
+
+### Random Drops
+None

@@ -23,4 +23,12 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: Boots, Robe, Sandals, Shoes, ThighBoots
+
+### Guaranteed Drops
+- [Robe](../items/Robe.html)
+
+### Random Drops
+- [Boots](../items/Boots.html)
+- [Sandals](../items/Sandals.html)
+- [Shoes](../items/Shoes.html)
+- [Thigh Boots](../items/ThighBoots.html)

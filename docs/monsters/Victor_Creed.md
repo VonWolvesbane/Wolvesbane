@@ -23,4 +23,9 @@ None Listed
 
 ## Loot
 - Gold: 11120 - 11130
-- Items: AssassinStaff
+
+### Guaranteed Drops
+- [Assassin Staff](../items/AssassinStaff.html)
+
+### Random Drops
+None

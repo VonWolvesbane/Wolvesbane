@@ -23,4 +23,10 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: LesserPoisonPotion, SpidersSilk
+
+### Guaranteed Drops
+- [Lesser Poison Potion](../items/LesserPoisonPotion.html)
+- [Spiders Silk](../items/SpidersSilk.html)
+
+### Random Drops
+None

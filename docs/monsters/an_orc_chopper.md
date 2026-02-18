@@ -23,4 +23,20 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: Arrow, Bandage, BeverageBottle, Board, DoubleAxe, EvilOrcHelm, ExecutionersAxe, Jug, Lockpick, Log, Ribs, Shaft, Yeast
+
+### Guaranteed Drops
+- [Board](../items/Board.html)
+- [Double Axe](../items/DoubleAxe.html)
+- [Evil Orc Helm](../items/EvilOrcHelm.html)
+- [Executioners Axe](../items/ExecutionersAxe.html)
+- [Log](../items/Log.html)
+- [Yeast](../items/Yeast.html)
+
+### Random Drops
+- [Arrow](../items/Arrow.html)
+- [Bandage](../items/Bandage.html)
+- [Beverage Bottle](../items/BeverageBottle.html)
+- [Jug](../items/Jug.html)
+- [Lockpick](../items/Lockpick.html)
+- [Ribs](../items/Ribs.html)
+- [Shaft](../items/Shaft.html)

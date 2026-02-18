@@ -23,4 +23,11 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: Backpack, Kamishimo, Waraji
+
+### Guaranteed Drops
+- [Backpack](../items/Backpack.html)
+- [Kamishimo](../items/Kamishimo.html)
+- [Waraji](../items/Waraji.html)
+
+### Random Drops
+None

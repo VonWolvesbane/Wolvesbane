@@ -23,4 +23,15 @@ None Listed
 
 ## Loot
 - Gold: 15000 - 16000
-- Items: Cloak, Doublet, FancyShirt, HeadOfMondain, PaladinSword, Robe, Sandals
+
+### Guaranteed Drops
+- [Cloak](../items/Cloak.html)
+- [Doublet](../items/Doublet.html)
+- [Fancy Shirt](../items/FancyShirt.html)
+- [Head Of Mondain](../items/HeadOfMondain.html)
+- [Paladin Sword](../items/PaladinSword.html)
+- [Robe](../items/Robe.html)
+- [Sandals](../items/Sandals.html)
+
+### Random Drops
+None

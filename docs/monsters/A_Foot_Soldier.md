@@ -23,4 +23,12 @@ None Listed
 
 ## Loot
 - Gold: 20000 - 30000
-- Items: FootSoldiersArms, FootSoldiersChest, FootSoldiersGloves, FootSoldiersLegs
+
+### Guaranteed Drops
+None
+
+### Random Drops
+- [Foot Soldiers Arms](../items/FootSoldiersArms.html)
+- [Foot Soldiers Chest](../items/FootSoldiersChest.html)
+- [Foot Soldiers Gloves](../items/FootSoldiersGloves.html)
+- [Foot Soldiers Legs](../items/FootSoldiersLegs.html)

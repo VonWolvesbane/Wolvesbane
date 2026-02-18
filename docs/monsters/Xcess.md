@@ -23,4 +23,9 @@ None Listed
 
 ## Loot
 - Gold: 20000 - 30000
-- Items: None Listed
+
+### Guaranteed Drops
+None
+
+### Random Drops
+None

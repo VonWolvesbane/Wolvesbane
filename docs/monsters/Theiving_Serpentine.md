@@ -23,4 +23,9 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: FQGoldenFish
+
+### Guaranteed Drops
+- [F Q Golden Fish](../items/FQGoldenFish.html)
+
+### Random Drops
+None

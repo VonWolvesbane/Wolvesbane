@@ -23,4 +23,9 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: BuyBackpack
+
+### Guaranteed Drops
+- [Buy Backpack](../items/BuyBackpack.html)
+
+### Random Drops
+None

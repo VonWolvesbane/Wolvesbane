@@ -23,4 +23,10 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: BraceletOfBinding, ZoogiFungus
+
+### Guaranteed Drops
+- [Bracelet Of Binding](../items/BraceletOfBinding.html)
+- [Zoogi Fungus](../items/ZoogiFungus.html)
+
+### Random Drops
+None

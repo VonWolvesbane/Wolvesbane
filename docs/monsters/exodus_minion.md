@@ -23,4 +23,11 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: ArcaneGem, ClockworkAssembly, MechanicalComponent, PowerCrystal
+
+### Guaranteed Drops
+- [Mechanical Component](../items/MechanicalComponent.html)
+
+### Random Drops
+- [Arcane Gem](../items/ArcaneGem.html)
+- [Clockwork Assembly](../items/ClockworkAssembly.html)
+- [Power Crystal](../items/PowerCrystal.html)

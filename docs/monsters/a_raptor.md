@@ -23,4 +23,10 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: AncientPotteryFragments, RaptorClaw
+
+### Guaranteed Drops
+- [Ancient Pottery Fragments](../items/AncientPotteryFragments.html)
+- [Raptor Claw](../items/RaptorClaw.html)
+
+### Random Drops
+None

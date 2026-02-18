@@ -23,4 +23,9 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: SearedFireAntGoo
+
+### Guaranteed Drops
+- [Seared Fire Ant Goo](../items/SearedFireAntGoo.html)
+
+### Random Drops
+None

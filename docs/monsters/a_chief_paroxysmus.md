@@ -23,4 +23,15 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: LardOfParoxysmus, ParoxysmusCorrodedStein, ParoxysmusDinner, ParoxysmusSwampDragonStatuette, ParrotItem, ScepterOfTheChief, StringOfPartsOfParoxysmusVictims, SweatOfParoxysmus
+
+### Guaranteed Drops
+- [Lard Of Paroxysmus](../items/LardOfParoxysmus.html)
+- [Paroxysmus Swamp Dragon Statuette](../items/ParoxysmusSwampDragonStatuette.html)
+- [Parrot Item](../items/ParrotItem.html)
+- [Scepter Of The Chief](../items/ScepterOfTheChief.html)
+- [Sweat Of Paroxysmus](../items/SweatOfParoxysmus.html)
+
+### Random Drops
+- [Paroxysmus Corroded Stein](../items/ParoxysmusCorrodedStein.html)
+- [Paroxysmus Dinner](../items/ParoxysmusDinner.html)
+- [String Of Parts Of Paroxysmus Victims](../items/StringOfPartsOfParoxysmusVictims.html)

@@ -23,4 +23,9 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: PureWhiteFeather
+
+### Guaranteed Drops
+- [Pure White Feather](../items/PureWhiteFeather.html)
+
+### Random Drops
+None

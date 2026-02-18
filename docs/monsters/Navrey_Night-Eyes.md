@@ -23,4 +23,11 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: LuckyCoin, TatteredAncientScroll, UntranslatedAncientTome
+
+### Guaranteed Drops
+- [Lucky Coin](../items/LuckyCoin.html)
+- [Tattered Ancient Scroll](../items/TatteredAncientScroll.html)
+- [Untranslated Ancient Tome](../items/UntranslatedAncientTome.html)
+
+### Random Drops
+None

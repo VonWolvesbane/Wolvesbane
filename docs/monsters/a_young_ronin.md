@@ -23,4 +23,17 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: Bandana, Lajatang, LeatherDo, LeatherHiroSode, LeatherSuneate, NoDachi, PlateSuneate, SamuraiTabi, StuddedHaidate, Wakizashi
+
+### Guaranteed Drops
+- [Bandana](../items/Bandana.html)
+- [Leather Do](../items/LeatherDo.html)
+- [Leather Hiro Sode](../items/LeatherHiroSode.html)
+- [Samurai Tabi](../items/SamuraiTabi.html)
+
+### Random Drops
+- [Lajatang](../items/Lajatang.html)
+- [Leather Suneate](../items/LeatherSuneate.html)
+- [No Dachi](../items/NoDachi.html)
+- [Plate Suneate](../items/PlateSuneate.html)
+- [Studded Haidate](../items/StuddedHaidate.html)
+- [Wakizashi](../items/Wakizashi.html)

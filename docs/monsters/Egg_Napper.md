@@ -23,4 +23,13 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: CrocEgg, Gold, NobleSword, StevesRobe, StevesShirt
+
+### Guaranteed Drops
+- [Croc Egg](../items/CrocEgg.html)
+- [Gold](../items/Gold.html)
+- [Noble Sword](../items/NobleSword.html)
+- [Steves Robe](../items/StevesRobe.html)
+- [Steves Shirt](../items/StevesShirt.html)
+
+### Random Drops
+None

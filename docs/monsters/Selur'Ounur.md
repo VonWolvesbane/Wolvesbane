@@ -23,4 +23,9 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: WilliamSoul
+
+### Guaranteed Drops
+- [William Soul](../items/WilliamSoul.html)
+
+### Random Drops
+None

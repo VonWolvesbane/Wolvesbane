@@ -23,4 +23,13 @@ None Listed
 
 ## Loot
 - Gold: 5120 - 5130
-- Items: CavemanClub, CavemanLoincloth, CavemanNeck, CavemanShirt, Flyswatter
+
+### Guaranteed Drops
+- [Caveman Club](../items/CavemanClub.html)
+- [Caveman Loincloth](../items/CavemanLoincloth.html)
+- [Caveman Neck](../items/CavemanNeck.html)
+- [Caveman Shirt](../items/CavemanShirt.html)
+- [Flyswatter](../items/Flyswatter.html)
+
+### Random Drops
+None

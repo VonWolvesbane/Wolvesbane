@@ -23,4 +23,10 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: BallOfSummoning, ZoogiFungus
+
+### Guaranteed Drops
+- [Ball Of Summoning](../items/BallOfSummoning.html)
+- [Zoogi Fungus](../items/ZoogiFungus.html)
+
+### Random Drops
+None

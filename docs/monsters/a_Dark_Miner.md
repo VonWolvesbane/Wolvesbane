@@ -23,4 +23,9 @@ None Listed
 
 ## Loot
 - Gold: 100 - 250
-- Items: DarkMetal
+
+### Guaranteed Drops
+- [Dark Metal](../items/DarkMetal.html)
+
+### Random Drops
+None

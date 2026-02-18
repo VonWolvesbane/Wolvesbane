@@ -23,4 +23,12 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: Arrow, MedusaBlood, MedusaDarkScales, MedusaStatue
+
+### Guaranteed Drops
+- [Arrow](../items/Arrow.html)
+- [Medusa Blood](../items/MedusaBlood.html)
+- [Medusa Dark Scales](../items/MedusaDarkScales.html)
+- [Medusa Statue](../items/MedusaStatue.html)
+
+### Random Drops
+None

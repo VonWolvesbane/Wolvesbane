@@ -23,4 +23,14 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: Apple, Arrow, Bandage, Bow, OrcishBow, Yeast
+
+### Guaranteed Drops
+- [Apple](../items/Apple.html)
+- [Arrow](../items/Arrow.html)
+- [Bandage](../items/Bandage.html)
+- [Bow](../items/Bow.html)
+- [Orcish Bow](../items/OrcishBow.html)
+- [Yeast](../items/Yeast.html)
+
+### Random Drops
+None

@@ -23,4 +23,10 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: ParagonChest, StygianDragonHead
+
+### Guaranteed Drops
+- [Paragon Chest](../items/ParagonChest.html)
+- [Stygian Dragon Head](../items/StygianDragonHead.html)
+
+### Random Drops
+None

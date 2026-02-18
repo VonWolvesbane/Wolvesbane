@@ -23,4 +23,10 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: Bone, SulfurousAsh
+
+### Guaranteed Drops
+- [Bone](../items/Bone.html)
+- [Sulfurous Ash](../items/SulfurousAsh.html)
+
+### Random Drops
+None

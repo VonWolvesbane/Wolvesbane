@@ -23,4 +23,9 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: GnarledStaff
+
+### Guaranteed Drops
+- [Gnarled Staff](../items/GnarledStaff.html)
+
+### Random Drops
+None

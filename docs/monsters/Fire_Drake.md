@@ -23,4 +23,10 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: Gold, fdeggs
+
+### Guaranteed Drops
+- [Gold](../items/Gold.html)
+- [fdeggs](../items/fdeggs.html)
+
+### Random Drops
+None

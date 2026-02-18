@@ -23,4 +23,9 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: ChickenLizardEgg
+
+### Guaranteed Drops
+- [Chicken Lizard Egg](../items/ChickenLizardEgg.html)
+
+### Random Drops
+None

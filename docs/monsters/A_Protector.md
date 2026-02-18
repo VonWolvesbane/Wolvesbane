@@ -23,4 +23,9 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: ProtectorsEssence
+
+### Guaranteed Drops
+- [Protectors Essence](../items/ProtectorsEssence.html)
+
+### Random Drops
+None

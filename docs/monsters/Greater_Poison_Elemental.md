@@ -23,4 +23,11 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: LesserPoisonPotion, LuckyCoin, Nightshade
+
+### Guaranteed Drops
+- [Lesser Poison Potion](../items/LesserPoisonPotion.html)
+- [Lucky Coin](../items/LuckyCoin.html)
+- [Nightshade](../items/Nightshade.html)
+
+### Random Drops
+None

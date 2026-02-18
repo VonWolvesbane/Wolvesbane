@@ -23,4 +23,13 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: GnarledStaff, LichFormScroll, PoisonStrikeScroll, StrangleScroll, VengefulSpiritScroll, WitherScroll
+
+### Guaranteed Drops
+- [Gnarled Staff](../items/GnarledStaff.html)
+
+### Random Drops
+- [Lich Form Scroll](../items/LichFormScroll.html)
+- [Poison Strike Scroll](../items/PoisonStrikeScroll.html)
+- [Strangle Scroll](../items/StrangleScroll.html)
+- [Vengeful Spirit Scroll](../items/VengefulSpiritScroll.html)
+- [Wither Scroll](../items/WitherScroll.html)

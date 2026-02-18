@@ -23,4 +23,15 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: Bandana, Boots, Cutlass, FancyShirt, LeatherArms, ShortPants, SilverEarrings
+
+### Guaranteed Drops
+- [Bandana](../items/Bandana.html)
+- [Boots](../items/Boots.html)
+- [Cutlass](../items/Cutlass.html)
+- [Fancy Shirt](../items/FancyShirt.html)
+- [Leather Arms](../items/LeatherArms.html)
+- [Short Pants](../items/ShortPants.html)
+- [Silver Earrings](../items/SilverEarrings.html)
+
+### Random Drops
+None

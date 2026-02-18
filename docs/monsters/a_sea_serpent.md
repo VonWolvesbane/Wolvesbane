@@ -23,4 +23,11 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: BlackPearl, RawFishSteak, SulfurousAsh
+
+### Guaranteed Drops
+- [Black Pearl](../items/BlackPearl.html)
+- [Raw Fish Steak](../items/RawFishSteak.html)
+- [Sulfurous Ash](../items/SulfurousAsh.html)
+
+### Random Drops
+None

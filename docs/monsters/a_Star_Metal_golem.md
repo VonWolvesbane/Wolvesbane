@@ -23,4 +23,9 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: StarMetalFragments
+
+### Guaranteed Drops
+None
+
+### Random Drops
+- [Star Metal Fragments](../items/StarMetalFragments.html)

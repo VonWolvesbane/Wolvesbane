@@ -23,4 +23,13 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: Bone, RareSerpentEgg1, RareSerpentEgg2, RareSerpentEgg3, RareSerpentEgg4
+
+### Guaranteed Drops
+- [Bone](../items/Bone.html)
+- [Rare Serpent Egg1](../items/RareSerpentEgg1.html)
+- [Rare Serpent Egg2](../items/RareSerpentEgg2.html)
+- [Rare Serpent Egg3](../items/RareSerpentEgg3.html)
+- [Rare Serpent Egg4](../items/RareSerpentEgg4.html)
+
+### Random Drops
+None

@@ -23,4 +23,13 @@ None Listed
 
 ## Loot
 - Gold: 5120 - 15130
-- Items: ChaosBoots, ChaosCloak, ChaosGloves, ChaosRobe, SlothChaosShield
+
+### Guaranteed Drops
+- [Chaos Boots](../items/ChaosBoots.html)
+- [Chaos Cloak](../items/ChaosCloak.html)
+- [Chaos Gloves](../items/ChaosGloves.html)
+- [Chaos Robe](../items/ChaosRobe.html)
+- [Sloth Chaos Shield](../items/SlothChaosShield.html)
+
+### Random Drops
+None

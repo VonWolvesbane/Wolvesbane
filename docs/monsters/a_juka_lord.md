@@ -23,4 +23,12 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: ArcaneGem, Arrow, Bandage, JukaBow
+
+### Guaranteed Drops
+- [Arcane Gem](../items/ArcaneGem.html)
+- [Arrow](../items/Arrow.html)
+- [Bandage](../items/Bandage.html)
+- [Juka Bow](../items/JukaBow.html)
+
+### Random Drops
+None
