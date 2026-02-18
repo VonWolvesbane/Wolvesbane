@@ -1,8 +1,8 @@
 ---
 layout: default
-title: vines
+title: a treasure chest
 ---
 
-# vines
+# a treasure chest
 
 No Photo Available

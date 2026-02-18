@@ -33,6 +33,3 @@ No Photo Available
 
 ### Guaranteed Drops
 - [Essence Singularity](../items/EssenceSingularity.html)
-
-### Potential Item Drops
-None

@@ -1,8 +1,8 @@
 ---
 layout: default
-title: vines
+title: Regular Leather
 ---
 
-# vines
+# Regular Leather
 
 No Photo Available

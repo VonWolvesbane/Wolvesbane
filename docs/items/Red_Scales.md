@@ -1,8 +1,8 @@
 ---
 layout: default
-title: vines
+title: Red Scales
 ---
 
-# vines
+# Red Scales
 
 No Photo Available

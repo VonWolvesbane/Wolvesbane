@@ -1,8 +1,8 @@
 ---
 layout: default
-title: vines
+title: kotl automaton
 ---
 
-# vines
+# kotl automaton
 
 No Photo Available

@@ -1,8 +1,8 @@
 ---
 layout: default
-title: vines
+title: stew
 ---
 
-# vines
+# stew
 
 No Photo Available

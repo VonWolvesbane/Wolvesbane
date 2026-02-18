@@ -1,8 +1,8 @@
 ---
 layout: default
-title: vines
+title: Iron Ingots
 ---
 
-# vines
+# Iron Ingots
 
 No Photo Available

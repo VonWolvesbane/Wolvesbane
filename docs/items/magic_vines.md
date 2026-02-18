@@ -1,8 +1,8 @@
 ---
 layout: default
-title: vines
+title: magic vines
 ---
 
-# vines
+# magic vines
 
 No Photo Available

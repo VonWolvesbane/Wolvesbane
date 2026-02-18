@@ -1,8 +1,8 @@
 ---
 layout: default
-title: vines
+title: Flip
 ---
 
-# vines
+# Flip
 
 No Photo Available

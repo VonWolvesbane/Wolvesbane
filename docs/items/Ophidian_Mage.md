@@ -1,8 +1,8 @@
 ---
 layout: default
-title: vines
+title: Ophidian Mage
 ---
 
-# vines
+# Ophidian Mage
 
 No Photo Available

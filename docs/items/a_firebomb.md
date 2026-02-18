@@ -1,8 +1,8 @@
 ---
 layout: default
-title: vines
+title: a firebomb
 ---
 
-# vines
+# a firebomb
 
 No Photo Available

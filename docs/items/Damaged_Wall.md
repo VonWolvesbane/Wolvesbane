@@ -1,8 +1,8 @@
 ---
 layout: default
-title: vines
+title: Damaged Wall
 ---
 
-# vines
+# Damaged Wall
 
 No Photo Available

@@ -1,8 +1,8 @@
 ---
 layout: default
-title: vines
+title: Boura Skin
 ---
 
-# vines
+# Boura Skin
 
 No Photo Available

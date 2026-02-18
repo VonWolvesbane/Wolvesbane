@@ -1,8 +1,8 @@
 ---
 layout: default
-title: vines
+title: a power generator
 ---
 
-# vines
+# a power generator
 
 No Photo Available

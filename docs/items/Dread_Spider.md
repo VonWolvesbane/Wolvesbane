@@ -1,8 +1,8 @@
 ---
 layout: default
-title: vines
+title: Dread Spider
 ---
 
-# vines
+# Dread Spider
 
 No Photo Available

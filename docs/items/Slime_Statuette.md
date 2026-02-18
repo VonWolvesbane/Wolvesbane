@@ -1,8 +1,8 @@
 ---
 layout: default
-title: vines
+title: Slime Statuette
 ---
 
-# vines
+# Slime Statuette
 
 No Photo Available

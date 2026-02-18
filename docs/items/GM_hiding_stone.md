@@ -1,8 +1,8 @@
 ---
 layout: default
-title: vines
+title: GM hiding stone
 ---
 
-# vines
+# GM hiding stone
 
 No Photo Available

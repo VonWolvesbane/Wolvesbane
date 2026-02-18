@@ -1,8 +1,8 @@
 ---
 layout: default
-title: vines
+title: Ophidian Warrior
 ---
 
-# vines
+# Ophidian Warrior
 
 No Photo Available

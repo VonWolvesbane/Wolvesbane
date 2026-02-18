@@ -1,8 +1,8 @@
 ---
 layout: default
-title: vines
+title: a crystal ball
 ---
 
-# vines
+# a crystal ball
 
 No Photo Available

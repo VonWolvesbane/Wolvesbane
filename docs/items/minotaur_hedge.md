@@ -1,8 +1,8 @@
 ---
 layout: default
-title: vines
+title: minotaur hedge
 ---
 
-# vines
+# minotaur hedge
 
 No Photo Available

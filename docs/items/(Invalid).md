@@ -1,8 +1,8 @@
 ---
 layout: default
-title: vines
+title: (Invalid)
 ---
 
-# vines
+# (Invalid)
 
 No Photo Available

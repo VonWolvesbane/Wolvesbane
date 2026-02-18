@@ -1,8 +1,8 @@
 ---
 layout: default
-title: vines
+title: Plague Beast
 ---
 
-# vines
+# Plague Beast
 
 No Photo Available

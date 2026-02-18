@@ -1,8 +1,8 @@
 ---
 layout: default
-title: vines
+title: Medusa's Lair
 ---
 
-# vines
+# Medusa's Lair
 
 No Photo Available

@@ -1,8 +1,8 @@
 ---
 layout: default
-title: vines
+title: VendorMall
 ---
 
-# vines
+# VendorMall
 
 No Photo Available

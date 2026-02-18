@@ -1,8 +1,8 @@
 ---
 layout: default
-title: vines
+title: a pet parrot
 ---
 
-# vines
+# a pet parrot
 
 No Photo Available

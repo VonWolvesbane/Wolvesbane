@@ -1,8 +1,8 @@
 ---
 layout: default
-title: vines
+title: jack-o-lantern
 ---
 
-# vines
+# jack-o-lantern
 
 No Photo Available

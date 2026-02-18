@@ -1,8 +1,8 @@
 ---
 layout: default
-title: vines
+title: Red Death
 ---
 
-# vines
+# Red Death
 
 No Photo Available

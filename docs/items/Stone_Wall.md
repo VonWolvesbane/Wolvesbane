@@ -1,8 +1,8 @@
 ---
 layout: default
-title: vines
+title: Stone Wall
 ---
 
-# vines
+# Stone Wall
 
 No Photo Available

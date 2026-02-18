@@ -1,8 +1,8 @@
 ---
 layout: default
-title: vines
+title: Granite
 ---
 
-# vines
+# Granite
 
 No Photo Available

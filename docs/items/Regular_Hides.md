@@ -1,8 +1,8 @@
 ---
 layout: default
-title: vines
+title: Regular Hides
 ---
 
-# vines
+# Regular Hides
 
 No Photo Available

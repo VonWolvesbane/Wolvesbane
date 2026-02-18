@@ -1,8 +1,8 @@
 ---
 layout: default
-title: vines
+title: an ant lion
 ---
 
-# vines
+# an ant lion
 
 No Photo Available

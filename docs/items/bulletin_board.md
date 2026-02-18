@@ -1,8 +1,8 @@
 ---
 layout: default
-title: vines
+title: bulletin board
 ---
 
-# vines
+# bulletin board
 
 No Photo Available
