@@ -5,6 +5,8 @@ title: a prison rat
 
 # a prison rat
 
+No Photo Available
+
 ## Stats
 - STR: 9
 - DEX: 35

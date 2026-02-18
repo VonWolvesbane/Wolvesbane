@@ -5,6 +5,8 @@ title: a dull copper ore elemental
 
 # a dull copper ore elemental
 
+No Photo Available
+
 ## Stats
 - STR: 150 - 200
 - DEX: 100 - 120

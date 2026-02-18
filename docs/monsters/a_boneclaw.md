@@ -5,6 +5,8 @@ title: a boneclaw
 
 # a boneclaw
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

@@ -5,6 +5,8 @@ title: pet dye (Orange)
 
 # pet dye (Orange)
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

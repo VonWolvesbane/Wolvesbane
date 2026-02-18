@@ -5,6 +5,8 @@ title: an Archaeosaurus
 
 # an Archaeosaurus
 
+No Photo Available
+
 ## Stats
 - STR: 405 - 421
 - DEX: 301 - 320

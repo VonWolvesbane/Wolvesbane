@@ -5,6 +5,8 @@ title: Zombie Skeleton
 
 # Zombie Skeleton
 
+No Photo Available
+
 ## Stats
 - STR: 500
 - DEX: 500

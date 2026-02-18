@@ -5,6 +5,8 @@ title: Archambeau
 
 # Archambeau
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

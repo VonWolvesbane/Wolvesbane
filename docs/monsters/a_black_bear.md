@@ -5,6 +5,8 @@ title: a black bear
 
 # a black bear
 
+No Photo Available
+
 ## Stats
 - STR: 76 - 100
 - DEX: 56 - 75

@@ -5,6 +5,8 @@ title: Geryon's Cow
 
 # Geryon's Cow
 
+No Photo Available
+
 ## Stats
 - STR: 300
 - DEX: 150

@@ -5,6 +5,8 @@ title: a clockwork scorpion
 
 # a clockwork scorpion
 
+No Photo Available
+
 ## Stats
 - STR: 225 - 245
 - DEX: 80 - 100

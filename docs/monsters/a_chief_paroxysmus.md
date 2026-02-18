@@ -5,6 +5,8 @@ title: a chief paroxysmus
 
 # a chief paroxysmus
 
+No Photo Available
+
 ## Stats
 - STR: 1232 - 1400
 - DEX: 76 - 82

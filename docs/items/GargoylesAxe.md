@@ -5,6 +5,8 @@ title: Gargoyles Axe
 
 # Gargoyles Axe
 
+No Photo Available
+
 ## Dropped By
 - [a master of the arts](../monsters/a_master_of_the_arts.html)
 - [a gargoyle](../monsters/a_gargoyle.html)

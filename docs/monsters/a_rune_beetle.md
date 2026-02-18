@@ -5,6 +5,8 @@ title: a rune beetle
 
 # a rune beetle
 
+No Photo Available
+
 ## Stats
 - STR: 401 - 460
 - DEX: 121 - 170

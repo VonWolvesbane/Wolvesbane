@@ -5,6 +5,8 @@ title: unholy bones
 
 # unholy bones
 
+No Photo Available
+
 ## Stats
 - STR: 500
 - DEX: 100

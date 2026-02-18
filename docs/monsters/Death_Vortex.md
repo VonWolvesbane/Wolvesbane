@@ -5,6 +5,8 @@ title: Death Vortex
 
 # Death Vortex
 
+No Photo Available
+
 ## Stats
 - STR: 50
 - DEX: 200

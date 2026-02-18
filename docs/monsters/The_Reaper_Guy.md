@@ -5,6 +5,8 @@ title: The Reaper Guy
 
 # The Reaper Guy
 
+No Photo Available
+
 ## Stats
 - STR: 380
 - DEX: 110

@@ -5,6 +5,8 @@ title: Ash Log
 
 # Ash Log
 
+No Photo Available
+
 ## Dropped By
 - [a AshTree](../monsters/a_AshTree.html)
 - [a wood elemental](../monsters/a_wood_elemental.html)

@@ -5,6 +5,8 @@ title: a mud pie
 
 # a mud pie
 
+No Photo Available
+
 ## Stats
 - STR: 140 - 210
 - DEX: 70 - 100

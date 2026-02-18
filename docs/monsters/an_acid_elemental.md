@@ -5,6 +5,8 @@ title: an acid elemental
 
 # an acid elemental
 
+No Photo Available
+
 ## Stats
 - STR: 326 - 355
 - DEX: 66 - 85

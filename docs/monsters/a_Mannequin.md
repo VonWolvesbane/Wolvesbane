@@ -5,6 +5,8 @@ title: a Mannequin
 
 # a Mannequin
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

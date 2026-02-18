@@ -5,6 +5,8 @@ title: a weiner dragon
 
 # a weiner dragon
 
+No Photo Available
+
 ## Stats
 - STR: 650
 - DEX: 650

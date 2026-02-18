@@ -5,6 +5,8 @@ title: a silverback gorilla
 
 # a silverback gorilla
 
+No Photo Available
+
 ## Stats
 - STR: 79 - 106
 - DEX: 77 - 91

@@ -5,6 +5,8 @@ title: Anshu
 
 # Anshu
 
+No Photo Available
+
 ## Stats
 - STR: 216 - 305
 - DEX: 96 - 115

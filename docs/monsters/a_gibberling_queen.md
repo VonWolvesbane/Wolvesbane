@@ -5,6 +5,8 @@ title: a gibberling queen
 
 # a gibberling queen
 
+No Photo Available
+
 ## Stats
 - STR: 350
 - DEX: 120

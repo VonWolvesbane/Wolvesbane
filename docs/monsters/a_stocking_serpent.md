@@ -5,6 +5,8 @@ title: a stocking serpent
 
 # a stocking serpent
 
+No Photo Available
+
 ## Stats
 - STR: 800
 - DEX: 150

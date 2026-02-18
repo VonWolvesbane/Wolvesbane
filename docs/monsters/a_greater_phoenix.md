@@ -5,6 +5,8 @@ title: a greater phoenix
 
 # a greater phoenix
 
+No Photo Available
+
 ## Stats
 - STR: 332 - 386
 - DEX: 97 - 113

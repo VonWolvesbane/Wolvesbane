@@ -5,6 +5,8 @@ title: a shadow wisp
 
 # a shadow wisp
 
+No Photo Available
+
 ## Stats
 - STR: 16 - 40
 - DEX: 16 - 45

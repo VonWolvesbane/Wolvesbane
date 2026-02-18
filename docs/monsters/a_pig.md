@@ -5,6 +5,8 @@ title: a pig
 
 # a pig
 
+No Photo Available
+
 ## Stats
 - STR: 20
 - DEX: 20

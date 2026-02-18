@@ -5,6 +5,8 @@ title: Meraktus
 
 # Meraktus
 
+No Photo Available
+
 ## Stats
 - STR: 1419 - 1438
 - DEX: 309 - 413

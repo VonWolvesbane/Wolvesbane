@@ -5,6 +5,8 @@ title: a savage pack wolf
 
 # a savage pack wolf
 
+No Photo Available
+
 ## Stats
 - STR: 100 - 116
 - DEX: 51 - 61

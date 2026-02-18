@@ -5,6 +5,8 @@ title: a stone slith
 
 # a stone slith
 
+No Photo Available
+
 ## Stats
 - STR: 250 - 300
 - DEX: 76 - 90

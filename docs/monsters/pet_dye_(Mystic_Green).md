@@ -5,6 +5,8 @@ title: pet dye (Mystic Green)
 
 # pet dye (Mystic Green)
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

@@ -5,6 +5,8 @@ title: a crane
 
 # a crane
 
+No Photo Available
+
 ## Stats
 - STR: 26 - 35
 - DEX: 16 - 25

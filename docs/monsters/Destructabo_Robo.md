@@ -5,6 +5,8 @@ title: Destructabo Robo
 
 # Destructabo Robo
 
+No Photo Available
+
 ## Stats
 - STR: 900
 - DEX: 500

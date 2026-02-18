@@ -5,6 +5,8 @@ title: an allosaurus
 
 # an allosaurus
 
+No Photo Available
+
 ## Stats
 - STR: 699 - 828
 - DEX: 200

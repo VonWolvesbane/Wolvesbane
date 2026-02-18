@@ -5,6 +5,8 @@ title: M.O.U.S.E.R
 
 # M.O.U.S.E.R
 
+No Photo Available
+
 ## Stats
 - STR: 96 - 120
 - DEX: 86 - 105

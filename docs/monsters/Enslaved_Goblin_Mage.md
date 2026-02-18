@@ -5,6 +5,8 @@ title: Enslaved Goblin Mage
 
 # Enslaved Goblin Mage
 
+No Photo Available
+
 ## Stats
 - STR: 297 - 297
 - DEX: 94 - 94

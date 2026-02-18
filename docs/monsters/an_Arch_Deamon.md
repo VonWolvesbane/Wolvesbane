@@ -5,6 +5,8 @@ title: an Arch Deamon
 
 # an Arch Deamon
 
+No Photo Available
+
 ## Stats
 - STR: 986 - 1185
 - DEX: 177 - 255

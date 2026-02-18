@@ -5,6 +5,8 @@ title: Knoll
 
 # Knoll
 
+No Photo Available
+
 ## Stats
 - STR: 5000
 - DEX: 5000

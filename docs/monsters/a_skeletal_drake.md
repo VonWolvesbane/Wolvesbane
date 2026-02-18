@@ -5,6 +5,8 @@ title: a skeletal drake
 
 # a skeletal drake
 
+No Photo Available
+
 ## Stats
 - STR: 600 - 700
 - DEX: 70 - 100

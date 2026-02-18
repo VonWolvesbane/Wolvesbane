@@ -5,6 +5,8 @@ title: a meer warrior
 
 # a meer warrior
 
+No Photo Available
+
 ## Stats
 - STR: 86 - 100
 - DEX: 186 - 200

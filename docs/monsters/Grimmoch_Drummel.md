@@ -5,6 +5,8 @@ title: Grimmoch Drummel
 
 # Grimmoch Drummel
 
+No Photo Available
+
 ## Stats
 - STR: 111 - 120
 - DEX: 151 - 160

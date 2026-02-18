@@ -5,6 +5,8 @@ title: a body cast
 
 # a body cast
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

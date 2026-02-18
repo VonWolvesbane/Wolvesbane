@@ -5,6 +5,8 @@ title: J
 
 # J
 
+No Photo Available
+
 ## Stats
 - STR: 800
 - DEX: 1500

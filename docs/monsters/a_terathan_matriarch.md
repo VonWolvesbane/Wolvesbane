@@ -5,6 +5,8 @@ title: a terathan matriarch
 
 # a terathan matriarch
 
+No Photo Available
+
 ## Stats
 - STR: 316 - 405
 - DEX: 96 - 115

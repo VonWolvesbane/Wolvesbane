@@ -5,6 +5,8 @@ title: a succubus
 
 # a succubus
 
+No Photo Available
+
 ## Stats
 - STR: 488 - 620
 - DEX: 121 - 170

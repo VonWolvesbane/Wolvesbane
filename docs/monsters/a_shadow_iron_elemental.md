@@ -5,6 +5,8 @@ title: a shadow iron elemental
 
 # a shadow iron elemental
 
+No Photo Available
+
 ## Stats
 - STR: 226 - 255
 - DEX: 126 - 145

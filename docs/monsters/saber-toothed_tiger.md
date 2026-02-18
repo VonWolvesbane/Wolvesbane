@@ -5,6 +5,8 @@ title: saber-toothed tiger
 
 # saber-toothed tiger
 
+No Photo Available
+
 ## Stats
 - STR: 496 - 523
 - DEX: 386 - 403

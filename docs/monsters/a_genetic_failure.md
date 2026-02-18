@@ -5,6 +5,8 @@ title: a genetic failure
 
 # a genetic failure
 
+No Photo Available
+
 ## Stats
 - STR: 18 - 30
 - DEX: 16 - 21

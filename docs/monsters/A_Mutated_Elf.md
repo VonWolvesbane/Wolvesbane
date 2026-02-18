@@ -5,6 +5,8 @@ title: A Mutated Elf
 
 # A Mutated Elf
 
+No Photo Available
+
 ## Stats
 - STR: 767 - 945
 - DEX: 206 - 275

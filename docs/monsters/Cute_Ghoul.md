@@ -5,6 +5,8 @@ title: Cute Ghoul
 
 # Cute Ghoul
 
+No Photo Available
+
 ## Stats
 - STR: 600
 - DEX: 800

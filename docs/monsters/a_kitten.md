@@ -5,6 +5,8 @@ title: a kitten
 
 # a kitten
 
+No Photo Available
+
 ## Stats
 - STR: 400
 - DEX: 100

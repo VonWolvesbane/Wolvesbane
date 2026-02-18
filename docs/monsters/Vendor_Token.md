@@ -5,6 +5,8 @@ title: Vendor Token
 
 # Vendor Token
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

@@ -5,6 +5,8 @@ title: hitching post south deed
 
 # hitching post south deed
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

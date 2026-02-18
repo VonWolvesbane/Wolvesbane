@@ -5,6 +5,8 @@ title: Barracoon Jr
 
 # Barracoon Jr
 
+No Photo Available
+
 ## Stats
 - STR: 305 - 425
 - DEX: 72 - 150

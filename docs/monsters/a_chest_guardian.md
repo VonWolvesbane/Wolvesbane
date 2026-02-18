@@ -5,6 +5,8 @@ title: a chest guardian
 
 # a chest guardian
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

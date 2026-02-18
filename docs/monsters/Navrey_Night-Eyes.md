@@ -5,6 +5,8 @@ title: Navrey Night-Eyes
 
 # Navrey Night-Eyes
 
+No Photo Available
+
 ## Stats
 - STR: 1000 - 1500
 - DEX: 200 - 250

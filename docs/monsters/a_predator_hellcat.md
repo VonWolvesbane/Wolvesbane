@@ -5,6 +5,8 @@ title: a predator hellcat
 
 # a predator hellcat
 
+No Photo Available
+
 ## Stats
 - STR: 161 - 185
 - DEX: 96 - 115

@@ -5,6 +5,8 @@ title: a OakTree
 
 # a OakTree
 
+No Photo Available
+
 ## Stats
 - STR: 166 - 315
 - DEX: 66 - 75

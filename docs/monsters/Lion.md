@@ -5,6 +5,8 @@ title: Lion
 
 # Lion
 
+No Photo Available
+
 ## Stats
 - STR: 710 - 720
 - DEX: 200 - 220

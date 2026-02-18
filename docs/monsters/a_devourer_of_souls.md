@@ -5,6 +5,8 @@ title: a devourer of souls
 
 # a devourer of souls
 
+No Photo Available
+
 ## Stats
 - STR: 801 - 950
 - DEX: 126 - 175

@@ -5,6 +5,8 @@ title: Pet Mage AI Deed
 
 # Pet Mage AI Deed
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

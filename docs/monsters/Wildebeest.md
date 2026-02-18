@@ -5,6 +5,8 @@ title: Wildebeest
 
 # Wildebeest
 
+No Photo Available
+
 ## Stats
 - STR: 500 - 600
 - DEX: 2500 - 2600

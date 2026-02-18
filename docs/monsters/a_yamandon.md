@@ -5,6 +5,8 @@ title: a yamandon
 
 # a yamandon
 
+No Photo Available
+
 ## Stats
 - STR: 786 - 930
 - DEX: 251 - 365

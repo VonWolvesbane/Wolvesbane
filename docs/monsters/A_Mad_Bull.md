@@ -5,6 +5,8 @@ title: A Mad Bull
 
 # A Mad Bull
 
+No Photo Available
+
 ## Stats
 - STR: 120 - 125
 - DEX: 70 - 77

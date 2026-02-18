@@ -5,6 +5,8 @@ title: Clan Ribbon Courtier
 
 # Clan Ribbon Courtier
 
+No Photo Available
+
 ## Stats
 - STR: 231
 - DEX: 252

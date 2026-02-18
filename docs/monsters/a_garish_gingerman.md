@@ -5,6 +5,8 @@ title: a garish gingerman
 
 # a garish gingerman
 
+No Photo Available
+
 ## Stats
 - STR: 400
 - DEX: 150

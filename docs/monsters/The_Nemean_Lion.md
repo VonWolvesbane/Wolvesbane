@@ -5,6 +5,8 @@ title: The Nemean Lion
 
 # The Nemean Lion
 
+No Photo Available
+
 ## Stats
 - STR: 8000
 - DEX: 510 - 750

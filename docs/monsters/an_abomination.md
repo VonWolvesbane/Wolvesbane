@@ -5,6 +5,8 @@ title: an abomination
 
 # an abomination
 
+No Photo Available
+
 ## Stats
 - STR: 1100
 - DEX: 151 - 175

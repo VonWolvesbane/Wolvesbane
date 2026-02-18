@@ -5,6 +5,8 @@ title: jack
 
 # jack
 
+No Photo Available
+
 ## Stats
 - STR: 500
 - DEX: 200

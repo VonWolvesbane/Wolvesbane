@@ -5,6 +5,8 @@ title: a shadow fiend
 
 # a shadow fiend
 
+No Photo Available
+
 ## Stats
 - STR: 300 - 400
 - DEX: 200 - 250

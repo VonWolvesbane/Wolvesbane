@@ -5,6 +5,8 @@ title: spectral armour
 
 # spectral armour
 
+No Photo Available
+
 ## Stats
 - STR: 101 - 110
 - DEX: 101 - 110

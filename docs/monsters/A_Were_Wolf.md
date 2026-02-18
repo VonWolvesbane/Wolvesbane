@@ -5,6 +5,8 @@ title: A Were Wolf
 
 # A Were Wolf
 
+No Photo Available
+
 ## Stats
 - STR: 386 - 500
 - DEX: 481 - 595

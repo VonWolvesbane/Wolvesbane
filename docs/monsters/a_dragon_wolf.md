@@ -5,6 +5,8 @@ title: a dragon wolf
 
 # a dragon wolf
 
+No Photo Available
+
 ## Stats
 - STR: 750 - 850
 - DEX: 60 - 75

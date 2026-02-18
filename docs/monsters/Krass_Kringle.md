@@ -5,6 +5,8 @@ title: Krass Kringle
 
 # Krass Kringle
 
+No Photo Available
+
 ## Stats
 - STR: 410 - 580
 - DEX: 185 - 210

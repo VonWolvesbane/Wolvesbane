@@ -5,6 +5,8 @@ title: a headless elf
 
 # a headless elf
 
+No Photo Available
+
 ## Stats
 - STR: 700 - 800
 - DEX: 90 - 100

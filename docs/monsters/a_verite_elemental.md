@@ -5,6 +5,8 @@ title: a verite elemental
 
 # a verite elemental
 
+No Photo Available
+
 ## Stats
 - STR: 226 - 255
 - DEX: 126 - 145

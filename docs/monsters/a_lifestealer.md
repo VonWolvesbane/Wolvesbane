@@ -5,6 +5,8 @@ title: a lifestealer
 
 # a lifestealer
 
+No Photo Available
+
 ## Stats
 - STR: 200 - 240
 - DEX: 130 - 150

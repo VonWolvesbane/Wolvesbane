@@ -5,6 +5,8 @@ title: Cute Skeleton
 
 # Cute Skeleton
 
+No Photo Available
+
 ## Stats
 - STR: 300
 - DEX: 300

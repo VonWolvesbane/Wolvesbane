@@ -5,6 +5,8 @@ title: charydbis
 
 # charydbis
 
+No Photo Available
+
 ## Stats
 - STR: 533 - 586
 - DEX: 113 - 131

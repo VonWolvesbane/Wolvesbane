@@ -5,6 +5,8 @@ title: a void manifestation
 
 # a void manifestation
 
+No Photo Available
+
 ## Stats
 - STR: 500
 - DEX: 150

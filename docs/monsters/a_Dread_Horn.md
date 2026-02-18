@@ -5,6 +5,8 @@ title: a Dread Horn
 
 # a Dread Horn
 
+No Photo Available
+
 ## Stats
 - STR: 878 - 993
 - DEX: 581 - 683

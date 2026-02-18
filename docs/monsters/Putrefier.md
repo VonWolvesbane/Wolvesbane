@@ -5,6 +5,8 @@ title: Putrefier
 
 # Putrefier
 
+No Photo Available
+
 ## Stats
 - STR: 1057 - 1400
 - DEX: 232 - 560

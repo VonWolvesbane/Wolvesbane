@@ -5,6 +5,8 @@ title: Crystal Lattice Seeker
 
 # Crystal Lattice Seeker
 
+No Photo Available
+
 ## Stats
 - STR: 550 - 850
 - DEX: 190 - 250

@@ -5,6 +5,8 @@ title: a patchwork skeleton
 
 # a patchwork skeleton
 
+No Photo Available
+
 ## Stats
 - STR: 96 - 120
 - DEX: 71 - 95

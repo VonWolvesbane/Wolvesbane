@@ -5,6 +5,8 @@ title: Tavara Sewel
 
 # Tavara Sewel
 
+No Photo Available
+
 ## Stats
 - STR: 111 - 120
 - DEX: 111 - 120

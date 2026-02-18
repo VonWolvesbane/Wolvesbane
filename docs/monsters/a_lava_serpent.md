@@ -5,6 +5,8 @@ title: a lava serpent
 
 # a lava serpent
 
+No Photo Available
+
 ## Stats
 - STR: 386 - 415
 - DEX: 56 - 80

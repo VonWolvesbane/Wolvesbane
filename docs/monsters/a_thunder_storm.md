@@ -5,6 +5,8 @@ title: a thunder storm
 
 # a thunder storm
 
+No Photo Available
+
 ## Stats
 - STR: 63 - 78
 - DEX: 83 - 93

@@ -5,6 +5,8 @@ title: an oni
 
 # an oni
 
+No Photo Available
+
 ## Stats
 - STR: 801 - 910
 - DEX: 151 - 300

@@ -5,6 +5,8 @@ title: a ronin
 
 # a ronin
 
+No Photo Available
+
 ## Stats
 - STR: 326 - 375
 - DEX: 31 - 45

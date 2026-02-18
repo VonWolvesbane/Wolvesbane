@@ -5,6 +5,8 @@ title: Hungry Ogre
 
 # Hungry Ogre
 
+No Photo Available
+
 ## Stats
 - STR: 188 - 223
 - DEX: 62 - 79

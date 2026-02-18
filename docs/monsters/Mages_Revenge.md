@@ -5,6 +5,8 @@ title: Mages Revenge
 
 # Mages Revenge
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

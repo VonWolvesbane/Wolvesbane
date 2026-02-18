@@ -5,6 +5,8 @@ title: Mistral
 
 # Mistral
 
+No Photo Available
+
 ## Stats
 - STR: 134 - 201
 - DEX: 226 - 238

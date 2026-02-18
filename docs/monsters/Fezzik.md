@@ -5,6 +5,8 @@ title: Fezzik
 
 # Fezzik
 
+No Photo Available
+
 ## Stats
 - STR: 1142 - 1381
 - DEX: 73 - 90

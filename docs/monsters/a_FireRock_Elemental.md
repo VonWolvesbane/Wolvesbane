@@ -5,6 +5,8 @@ title: a FireRock Elemental
 
 # a FireRock Elemental
 
+No Photo Available
+
 ## Stats
 - STR: 286 - 325
 - DEX: 226 - 245

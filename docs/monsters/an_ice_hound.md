@@ -5,6 +5,8 @@ title: an ice hound
 
 # an ice hound
 
+No Photo Available
+
 ## Stats
 - STR: 102 - 150
 - DEX: 81 - 105

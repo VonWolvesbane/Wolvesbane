@@ -5,6 +5,8 @@ title: a white wolf
 
 # a white wolf
 
+No Photo Available
+
 ## Stats
 - STR: 56 - 80
 - DEX: 56 - 75

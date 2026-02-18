@@ -5,6 +5,8 @@ title: a meer eternal
 
 # a meer eternal
 
+No Photo Available
+
 ## Stats
 - STR: 416 - 505
 - DEX: 146 - 165

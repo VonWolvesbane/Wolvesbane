@@ -5,6 +5,8 @@ title: Thigh Boots
 
 # Thigh Boots
 
+No Photo Available
+
 ## Dropped By
 - [Tristan Irons](../monsters/Tristan_Irons.html)
 - [a bake kitsune](../monsters/a_bake_kitsune.html)

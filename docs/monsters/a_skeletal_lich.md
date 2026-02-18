@@ -5,6 +5,8 @@ title: a skeletal lich
 
 # a skeletal lich
 
+No Photo Available
+
 ## Stats
 - STR: 301 - 350
 - DEX: 75

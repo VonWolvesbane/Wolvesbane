@@ -5,6 +5,8 @@ title: Crystal of Elemental Summoning
 
 # Crystal of Elemental Summoning
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

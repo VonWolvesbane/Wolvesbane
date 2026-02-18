@@ -5,6 +5,8 @@ title: a raptor
 
 # a raptor
 
+No Photo Available
+
 ## Stats
 - STR: 404 - 471
 - DEX: 132 - 155

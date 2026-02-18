@@ -5,6 +5,8 @@ title: a Pet Res Stone
 
 # a Pet Res Stone
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

@@ -5,6 +5,8 @@ title: a llama
 
 # a llama
 
+No Photo Available
+
 ## Stats
 - STR: 21 - 49
 - DEX: 36 - 55

@@ -5,6 +5,8 @@ title: a Treefellow Guardian
 
 # a Treefellow Guardian
 
+No Photo Available
+
 ## Stats
 - STR: 511 - 695
 - DEX: 30 - 55

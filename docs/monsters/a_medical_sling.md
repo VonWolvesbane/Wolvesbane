@@ -5,6 +5,8 @@ title: a medical sling
 
 # a medical sling
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

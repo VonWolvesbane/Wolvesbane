@@ -5,6 +5,8 @@ title: a zombie
 
 # a zombie
 
+No Photo Available
+
 ## Stats
 - STR: 46 - 70
 - DEX: 31 - 50

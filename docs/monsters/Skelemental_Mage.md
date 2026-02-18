@@ -5,6 +5,8 @@ title: Skelemental Mage
 
 # Skelemental Mage
 
+No Photo Available
+
 ## Stats
 - STR: 200 - 250
 - DEX: 70 - 100

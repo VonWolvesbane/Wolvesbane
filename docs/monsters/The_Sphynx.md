@@ -5,6 +5,8 @@ title: The Sphynx
 
 # The Sphynx
 
+No Photo Available
+
 ## Stats
 - STR: 1001 - 1200
 - DEX: 176 - 195

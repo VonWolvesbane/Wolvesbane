@@ -5,6 +5,8 @@ title: a spectral myrmidex warrior
 
 # a spectral myrmidex warrior
 
+No Photo Available
+
 ## Stats
 - STR: 500 - 600
 - DEX: 82 - 95

@@ -5,6 +5,8 @@ title: a giant turkey
 
 # a giant turkey
 
+No Photo Available
+
 ## Stats
 - STR: 1200 - 1400
 - DEX: 170 - 260

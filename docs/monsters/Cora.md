@@ -5,6 +5,8 @@ title: Cora
 
 # Cora
 
+No Photo Available
+
 ## Stats
 - STR: 909 - 949
 - DEX: 901 - 948

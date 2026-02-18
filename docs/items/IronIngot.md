@@ -5,6 +5,8 @@ title: Iron Ingot
 
 # Iron Ingot
 
+No Photo Available
+
 ## Dropped By
 - [a FireRock Gargoyle](../monsters/a_FireRock_Gargoyle.html)
 - [a golem](../monsters/a_golem.html)

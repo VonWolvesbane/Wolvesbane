@@ -5,6 +5,8 @@ title: a poison storm
 
 # a poison storm
 
+No Photo Available
+
 ## Stats
 - STR: 213 - 258
 - DEX: 83 - 93

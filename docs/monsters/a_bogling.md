@@ -5,6 +5,8 @@ title: a bogling
 
 # a bogling
 
+No Photo Available
+
 ## Stats
 - STR: 96 - 120
 - DEX: 91 - 115

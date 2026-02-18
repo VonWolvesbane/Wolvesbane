@@ -5,6 +5,8 @@ title: Viscera
 
 # Viscera
 
+No Photo Available
+
 ## Stats
 - STR: 250 - 293
 - DEX: 120 - 130

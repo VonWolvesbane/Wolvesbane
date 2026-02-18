@@ -5,6 +5,8 @@ title: a stone elemental
 
 # a stone elemental
 
+No Photo Available
+
 ## Stats
 - STR: 12666 - 15566
 - DEX: 66 - 85

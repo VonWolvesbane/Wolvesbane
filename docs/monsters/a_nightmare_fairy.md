@@ -5,6 +5,8 @@ title: a nightmare fairy
 
 # a nightmare fairy
 
+No Photo Available
+
 ## Stats
 - STR: 400
 - DEX: 150

@@ -5,6 +5,8 @@ title: a frost dragon
 
 # a frost dragon
 
+No Photo Available
+
 ## Stats
 - STR: 1300 - 1400
 - DEX: 100 - 125

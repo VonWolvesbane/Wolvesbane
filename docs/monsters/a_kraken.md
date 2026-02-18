@@ -5,6 +5,8 @@ title: a kraken
 
 # a kraken
 
+No Photo Available
+
 ## Stats
 - STR: 756 - 780
 - DEX: 226 - 245

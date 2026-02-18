@@ -5,6 +5,8 @@ title: a sewer mutant
 
 # a sewer mutant
 
+No Photo Available
+
 ## Stats
 - STR: 241 - 265
 - DEX: 201 - 225

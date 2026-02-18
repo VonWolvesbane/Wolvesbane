@@ -5,6 +5,8 @@ title: Broken Armor
 
 # Broken Armor
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

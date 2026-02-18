@@ -5,6 +5,8 @@ title: a walrus
 
 # a walrus
 
+No Photo Available
+
 ## Stats
 - STR: 21 - 29
 - DEX: 46 - 55

@@ -5,6 +5,8 @@ title: Morg Bergen
 
 # Morg Bergen
 
+No Photo Available
+
 ## Stats
 - STR: 111 - 120
 - DEX: 111 - 120

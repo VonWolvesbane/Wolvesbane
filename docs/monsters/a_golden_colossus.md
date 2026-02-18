@@ -5,6 +5,8 @@ title: a golden colossus
 
 # a golden colossus
 
+No Photo Available
+
 ## Stats
 - STR: 226 - 255
 - DEX: 126 - 145

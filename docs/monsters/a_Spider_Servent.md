@@ -5,6 +5,8 @@ title: a Spider Servent
 
 # a Spider Servent
 
+No Photo Available
+
 ## Stats
 - STR: 1750 - 2000
 - DEX: 1500 - 1750

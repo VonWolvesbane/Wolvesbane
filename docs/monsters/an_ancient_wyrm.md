@@ -5,6 +5,8 @@ title: an ancient wyrm
 
 # an ancient wyrm
 
+No Photo Available
+
 ## Stats
 - STR: 1096 - 1185
 - DEX: 86 - 175

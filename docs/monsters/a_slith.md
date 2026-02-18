@@ -5,6 +5,8 @@ title: a slith
 
 # a slith
 
+No Photo Available
+
 ## Stats
 - STR: 129 - 136
 - DEX: 72 - 75

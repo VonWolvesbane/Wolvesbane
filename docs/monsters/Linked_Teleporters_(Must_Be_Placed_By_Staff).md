@@ -5,6 +5,8 @@ title: Linked Teleporters (Must Be Placed By Staff)
 
 # Linked Teleporters (Must Be Placed By Staff)
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

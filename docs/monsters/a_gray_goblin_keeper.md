@@ -5,6 +5,8 @@ title: a gray goblin keeper
 
 # a gray goblin keeper
 
+No Photo Available
+
 ## Stats
 - STR: 326
 - DEX: 79

@@ -5,6 +5,8 @@ title: Greater Poison Elemental
 
 # Greater Poison Elemental
 
+No Photo Available
+
 ## Stats
 - STR: 700 - 771
 - DEX: 195 - 203

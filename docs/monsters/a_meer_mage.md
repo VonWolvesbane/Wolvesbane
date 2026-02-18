@@ -5,6 +5,8 @@ title: a meer mage
 
 # a meer mage
 
+No Photo Available
+
 ## Stats
 - STR: 171 - 200
 - DEX: 126 - 145

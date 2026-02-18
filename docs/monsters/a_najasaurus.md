@@ -5,6 +5,8 @@ title: a najasaurus
 
 # a najasaurus
 
+No Photo Available
+
 ## Stats
 - STR: 162 - 346
 - DEX: 151 - 218

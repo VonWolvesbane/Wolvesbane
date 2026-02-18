@@ -5,6 +5,8 @@ title: a minotaur scout
 
 # a minotaur scout
 
+No Photo Available
+
 ## Stats
 - STR: 353 - 375
 - DEX: 111 - 130

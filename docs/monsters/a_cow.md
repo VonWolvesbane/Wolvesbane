@@ -5,6 +5,8 @@ title: a cow
 
 # a cow
 
+No Photo Available
+
 ## Stats
 - STR: 30
 - DEX: 15

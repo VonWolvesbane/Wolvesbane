@@ -5,6 +5,8 @@ title: Father Time
 
 # Father Time
 
+No Photo Available
+
 ## Stats
 - STR: 8000
 - DEX: 6000

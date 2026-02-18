@@ -5,6 +5,8 @@ title: a minotaur
 
 # a minotaur
 
+No Photo Available
+
 ## Stats
 - STR: 301 - 340
 - DEX: 91 - 110

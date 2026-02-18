@@ -5,6 +5,8 @@ title: Keeper Of The Skill Mount
 
 # Keeper Of The Skill Mount
 
+No Photo Available
+
 ## Stats
 - STR: 300 - 500
 - DEX: 500 - 500

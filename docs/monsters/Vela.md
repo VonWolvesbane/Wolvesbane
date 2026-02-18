@@ -5,6 +5,8 @@ title: Vela
 
 # Vela
 
+No Photo Available
+
 ## Stats
 - STR: 110
 - DEX: 100

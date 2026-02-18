@@ -5,6 +5,8 @@ title: Zoogi Fungus
 
 # Zoogi Fungus
 
+No Photo Available
+
 ## Dropped By
 - [a black solen infiltrator](../monsters/a_black_solen_infiltrator.html)
 - [a black solen infiltrator](../monsters/a_black_solen_infiltrator.html)
@@ -16,3 +18,10 @@ title: Zoogi Fungus
 - [a red solen queen](../monsters/a_red_solen_queen.html)
 - [a red solen warrior](../monsters/a_red_solen_warrior.html)
 - [a red solen worker](../monsters/a_red_solen_worker.html)
+
+## Resist Bonuses
+- Physical: +Unknown
+- Cold: +Unknown
+- Fire: +Unknown
+- Energy: +Unknown
+- Poison: +Unknown

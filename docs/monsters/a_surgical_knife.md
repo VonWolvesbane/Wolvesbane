@@ -5,6 +5,8 @@ title: a surgical knife
 
 # a surgical knife
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

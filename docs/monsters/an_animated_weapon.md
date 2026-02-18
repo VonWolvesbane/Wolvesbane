@@ -5,6 +5,8 @@ title: an animated weapon
 
 # an animated weapon
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

@@ -5,6 +5,8 @@ title: ice spike
 
 # ice spike
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

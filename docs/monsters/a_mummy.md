@@ -5,6 +5,8 @@ title: a mummy
 
 # a mummy
 
+No Photo Available
+
 ## Stats
 - STR: 346 - 370
 - DEX: 71 - 90

@@ -5,6 +5,8 @@ title: pet cure potion
 
 # pet cure potion
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

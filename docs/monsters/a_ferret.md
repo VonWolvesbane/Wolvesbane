@@ -5,6 +5,8 @@ title: a ferret
 
 # a ferret
 
+No Photo Available
+
 ## Stats
 - STR: 41 - 48
 - DEX: 55

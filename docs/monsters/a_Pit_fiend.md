@@ -5,6 +5,8 @@ title: a Pit fiend
 
 # a Pit fiend
 
+No Photo Available
+
 ## Stats
 - STR: 376 - 405
 - DEX: 176 - 195

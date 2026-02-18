@@ -5,6 +5,8 @@ title: a panther
 
 # a panther
 
+No Photo Available
+
 ## Stats
 - STR: 61 - 85
 - DEX: 86 - 105

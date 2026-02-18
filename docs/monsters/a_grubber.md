@@ -5,6 +5,8 @@ title: a grubber
 
 # a grubber
 
+No Photo Available
+
 ## Stats
 - STR: 15
 - DEX: 2000

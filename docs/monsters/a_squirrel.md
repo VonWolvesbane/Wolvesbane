@@ -5,6 +5,8 @@ title: a squirrel
 
 # a squirrel
 
+No Photo Available
+
 ## Stats
 - STR: 44 - 50
 - DEX: 35

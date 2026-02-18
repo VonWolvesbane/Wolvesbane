@@ -5,6 +5,8 @@ title: a dragon turtle hatchling
 
 # a dragon turtle hatchling
 
+No Photo Available
+
 ## Stats
 - STR: 550 - 650
 - DEX: 55 - 65

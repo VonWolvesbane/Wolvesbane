@@ -5,6 +5,8 @@ title: Bandage
 
 # Bandage
 
+No Photo Available
+
 ## Dropped By
 - [a mummy magician](../monsters/a_mummy_magician.html)
 - [a mummy](../monsters/a_mummy.html)
@@ -18,3 +20,10 @@ title: Bandage
 - [Triton](../monsters/Triton.html)
 - [a troglodyte](../monsters/a_troglodyte.html)
 - [Uzeraan](../monsters/Uzeraan.html)
+
+## Resist Bonuses
+- Physical: +Unknown
+- Cold: +Unknown
+- Fire: +Unknown
+- Energy: +Unknown
+- Poison: +Unknown

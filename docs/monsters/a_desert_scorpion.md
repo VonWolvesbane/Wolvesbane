@@ -5,6 +5,8 @@ title: a desert scorpion
 
 # a desert scorpion
 
+No Photo Available
+
 ## Stats
 - STR: 600 - 700
 - DEX: 120 - 128

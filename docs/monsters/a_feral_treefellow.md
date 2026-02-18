@@ -5,6 +5,8 @@ title: a feral treefellow
 
 # a feral treefellow
 
+No Photo Available
+
 ## Stats
 - STR: 1351 - 1600
 - DEX: 301 - 550

@@ -5,6 +5,8 @@ title: a titan
 
 # a titan
 
+No Photo Available
+
 ## Stats
 - STR: 536 - 585
 - DEX: 126 - 145

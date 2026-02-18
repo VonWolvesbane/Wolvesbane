@@ -5,6 +5,8 @@ title: Pet Resurrection Potion
 
 # Pet Resurrection Potion
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

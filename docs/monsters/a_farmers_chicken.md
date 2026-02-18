@@ -5,6 +5,8 @@ title: a farmers chicken
 
 # a farmers chicken
 
+No Photo Available
+
 ## Stats
 - STR: 450
 - DEX: 350

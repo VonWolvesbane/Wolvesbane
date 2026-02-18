@@ -5,6 +5,8 @@ title: an acid slug
 
 # an acid slug
 
+No Photo Available
+
 ## Stats
 - STR: 213 - 294
 - DEX: 80 - 82

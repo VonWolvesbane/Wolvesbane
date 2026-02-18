@@ -5,6 +5,8 @@ title: a dolphin
 
 # a dolphin
 
+No Photo Available
+
 ## Stats
 - STR: 21 - 49
 - DEX: 66 - 85

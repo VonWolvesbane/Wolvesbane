@@ -5,6 +5,8 @@ title: Xcess
 
 # Xcess
 
+No Photo Available
+
 ## Stats
 - STR: 1500
 - DEX: 1500

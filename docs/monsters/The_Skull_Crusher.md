@@ -5,6 +5,8 @@ title: The Skull Crusher
 
 # The Skull Crusher
 
+No Photo Available
+
 ## Stats
 - STR: 2000 - 2010
 - DEX: 250 - 275

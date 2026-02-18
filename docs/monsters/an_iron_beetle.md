@@ -5,6 +5,8 @@ title: an iron beetle
 
 # an iron beetle
 
+No Photo Available
+
 ## Stats
 - STR: 816 - 883
 - DEX: 68 - 73

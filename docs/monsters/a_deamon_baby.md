@@ -5,6 +5,8 @@ title: a deamon baby
 
 # a deamon baby
 
+No Photo Available
+
 ## Stats
 - STR: 401 - 430
 - DEX: 133 - 152

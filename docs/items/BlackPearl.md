@@ -5,6 +5,8 @@ title: Black Pearl
 
 # Black Pearl
 
+No Photo Available
+
 ## Dropped By
 - [an ice storm](../monsters/an_ice_storm.html)
 - [a sea storm](../monsters/a_sea_storm.html)
@@ -17,3 +19,10 @@ title: Black Pearl
 - [a water elemental](../monsters/a_water_elemental.html)
 - [Grizelda](../monsters/Grizelda.html)
 - [Uzeraan](../monsters/Uzeraan.html)
+
+## Resist Bonuses
+- Physical: +Unknown
+- Cold: +Unknown
+- Fire: +Unknown
+- Energy: +Unknown
+- Poison: +Unknown

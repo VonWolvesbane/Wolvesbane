@@ -5,6 +5,8 @@ title: a spined leather elemental
 
 # a spined leather elemental
 
+No Photo Available
+
 ## Stats
 - STR: 150 - 200
 - DEX: 100 - 120

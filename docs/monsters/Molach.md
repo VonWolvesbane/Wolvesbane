@@ -5,6 +5,8 @@ title: Molach
 
 # Molach
 
+No Photo Available
+
 ## Stats
 - STR: 1000 - 1000
 - DEX: 300 - 300

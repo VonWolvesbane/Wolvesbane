@@ -5,6 +5,8 @@ title: a shadow wyrm
 
 # a shadow wyrm
 
+No Photo Available
+
 ## Stats
 - STR: 898 - 1030
 - DEX: 68 - 200

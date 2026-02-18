@@ -5,6 +5,8 @@ title: Selur'Ounur
 
 # Selur'Ounur
 
+No Photo Available
+
 ## Stats
 - STR: 1096 - 1185
 - DEX: 186 - 225

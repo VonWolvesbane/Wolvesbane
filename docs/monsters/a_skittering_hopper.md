@@ -5,6 +5,8 @@ title: a skittering hopper
 
 # a skittering hopper
 
+No Photo Available
+
 ## Stats
 - STR: 41 - 65
 - DEX: 91 - 115

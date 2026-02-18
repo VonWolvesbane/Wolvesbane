@@ -5,6 +5,8 @@ title: an injured wolf
 
 # an injured wolf
 
+No Photo Available
+
 ## Stats
 - STR: 10 - 20
 - DEX: 45 - 65

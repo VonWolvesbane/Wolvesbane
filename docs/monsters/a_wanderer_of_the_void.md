@@ -5,6 +5,8 @@ title: a wanderer of the void
 
 # a wanderer of the void
 
+No Photo Available
+
 ## Stats
 - STR: 111 - 200
 - DEX: 101 - 125

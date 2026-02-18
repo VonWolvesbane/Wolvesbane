@@ -5,6 +5,8 @@ title: Ancient Chest Guardian
 
 # Ancient Chest Guardian
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

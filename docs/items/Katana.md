@@ -5,6 +5,8 @@ title: Katana
 
 # Katana
 
+No Photo Available
+
 ## Dropped By
 - [Hippolyte](../monsters/Hippolyte.html)
 - [Orochimaru](../monsters/Orochimaru.html)
@@ -21,3 +23,10 @@ title: Katana
 - [a green goblin](../monsters/a_green_goblin.html)
 - [a green goblin alchemist](../monsters/a_green_goblin_alchemist.html)
 - [a meer captain](../monsters/a_meer_captain.html)
+
+## Resist Bonuses
+- Physical: +Unknown
+- Cold: +Unknown
+- Fire: +Unknown
+- Energy: +Unknown
+- Poison: +Unknown

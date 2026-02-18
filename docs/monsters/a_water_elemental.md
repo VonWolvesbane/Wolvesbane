@@ -5,6 +5,8 @@ title: a water elemental
 
 # a water elemental
 
+No Photo Available
+
 ## Stats
 - STR: 200
 - DEX: 70

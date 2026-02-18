@@ -5,6 +5,8 @@ title: Rogue
 
 # Rogue
 
+No Photo Available
+
 ## Stats
 - STR: 2350 - 5400
 - DEX: 1150 - 1200

@@ -5,6 +5,8 @@ title: an arctic ogre lord
 
 # an arctic ogre lord
 
+No Photo Available
+
 ## Stats
 - STR: 767 - 945
 - DEX: 66 - 75

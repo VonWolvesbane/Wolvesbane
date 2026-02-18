@@ -5,6 +5,8 @@ title: a quagmire
 
 # a quagmire
 
+No Photo Available
+
 ## Stats
 - STR: 101 - 130
 - DEX: 66 - 85

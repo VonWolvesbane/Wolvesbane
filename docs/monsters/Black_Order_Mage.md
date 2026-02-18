@@ -5,6 +5,8 @@ title: Black Order Mage
 
 # Black Order Mage
 
+No Photo Available
+
 ## Stats
 - STR: 340 - 360
 - DEX: 200 - 215

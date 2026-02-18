@@ -5,6 +5,8 @@ title: a Tiger
 
 # a Tiger
 
+No Photo Available
+
 ## Stats
 - STR: 1200 - 1225
 - DEX: 350 - 370

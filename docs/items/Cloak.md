@@ -5,6 +5,8 @@ title: Cloak
 
 # Cloak
 
+No Photo Available
+
 ## Dropped By
 - [Barracoon Jr](../monsters/Barracoon_Jr.html)
 - [Killar Ancestor](../monsters/Killar_Ancestor.html)

@@ -5,6 +5,8 @@ title: a pet power scroll
 
 # a pet power scroll
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

@@ -5,6 +5,8 @@ title: a gazer
 
 # a gazer
 
+No Photo Available
+
 ## Stats
 - STR: 96 - 125
 - DEX: 86 - 105

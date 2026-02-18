@@ -5,6 +5,8 @@ title: a headless one
 
 # a headless one
 
+No Photo Available
+
 ## Stats
 - STR: 26 - 50
 - DEX: 36 - 55

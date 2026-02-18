@@ -5,6 +5,8 @@ title: Djinn
 
 # Djinn
 
+No Photo Available
+
 ## Stats
 - STR: 320 - 500
 - DEX: 200 - 300

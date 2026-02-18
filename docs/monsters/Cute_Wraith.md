@@ -5,6 +5,8 @@ title: Cute Wraith
 
 # Cute Wraith
 
+No Photo Available
+
 ## Stats
 - STR: 600
 - DEX: 800

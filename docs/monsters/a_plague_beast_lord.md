@@ -5,6 +5,8 @@ title: a plague beast lord
 
 # a plague beast lord
 
+No Photo Available
+
 ## Stats
 - STR: 500
 - DEX: 100

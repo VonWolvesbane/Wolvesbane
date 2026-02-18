@@ -5,6 +5,8 @@ title: Tempest
 
 # Tempest
 
+No Photo Available
+
 ## Stats
 - STR: 116 - 135
 - DEX: 166 - 185

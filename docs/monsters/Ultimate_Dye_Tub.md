@@ -5,6 +5,8 @@ title: Ultimate Dye Tub
 
 # Ultimate Dye Tub
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

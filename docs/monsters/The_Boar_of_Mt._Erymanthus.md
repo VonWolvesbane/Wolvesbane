@@ -5,6 +5,8 @@ title: The Boar of Mt. Erymanthus
 
 # The Boar of Mt. Erymanthus
 
+No Photo Available
+
 ## Stats
 - STR: 250
 - DEX: 150

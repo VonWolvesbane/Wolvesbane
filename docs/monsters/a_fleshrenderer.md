@@ -5,6 +5,8 @@ title: a fleshrenderer
 
 # a fleshrenderer
 
+No Photo Available
+
 ## Stats
 - STR: 401 - 460
 - DEX: 201 - 210

@@ -5,6 +5,8 @@ title: a chicken
 
 # a chicken
 
+No Photo Available
+
 ## Stats
 - STR: 5
 - DEX: 15

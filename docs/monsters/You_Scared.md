@@ -5,6 +5,8 @@ title: You Scared?
 
 # You Scared?
 
+No Photo Available
+
 ## Stats
 - STR: 2500
 - DEX: 2000

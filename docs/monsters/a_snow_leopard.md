@@ -5,6 +5,8 @@ title: a snow leopard
 
 # a snow leopard
 
+No Photo Available
+
 ## Stats
 - STR: 56 - 80
 - DEX: 66 - 85

@@ -5,6 +5,8 @@ title: Clan Chitter Assistant
 
 # Clan Chitter Assistant
 
+No Photo Available
+
 ## Stats
 - STR: 146 - 175
 - DEX: 101 - 130

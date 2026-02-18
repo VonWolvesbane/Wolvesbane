@@ -5,6 +5,8 @@ title: an efreet
 
 # an efreet
 
+No Photo Available
+
 ## Stats
 - STR: 326 - 355
 - DEX: 266 - 285

@@ -5,6 +5,8 @@ title: an ettin
 
 # an ettin
 
+No Photo Available
+
 ## Stats
 - STR: 136 - 165
 - DEX: 56 - 75

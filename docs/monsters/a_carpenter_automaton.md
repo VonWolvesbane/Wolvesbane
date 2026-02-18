@@ -5,6 +5,8 @@ title: a carpenter automaton
 
 # a carpenter automaton
 
+No Photo Available
+
 ## Stats
 - STR: 32 - 74
 - DEX: 46 - 65

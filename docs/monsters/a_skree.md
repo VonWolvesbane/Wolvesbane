@@ -5,6 +5,8 @@ title: a skree
 
 # a skree
 
+No Photo Available
+
 ## Stats
 - STR: 297 - 330
 - DEX: 96 - 124

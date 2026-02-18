@@ -5,6 +5,8 @@ title: an anchisaur
 
 # an anchisaur
 
+No Photo Available
+
 ## Stats
 - STR: 441 - 511
 - DEX: 166 - 185

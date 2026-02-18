@@ -5,6 +5,8 @@ title: a Dark Miner
 
 # a Dark Miner
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

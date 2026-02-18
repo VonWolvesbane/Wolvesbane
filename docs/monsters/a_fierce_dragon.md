@@ -5,6 +5,8 @@ title: a fierce dragon
 
 # a fierce dragon
 
+No Photo Available
+
 ## Stats
 - STR: 6000 - 6020
 - DEX: 0

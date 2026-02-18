@@ -5,6 +5,8 @@ title: a HeartwoodTree
 
 # a HeartwoodTree
 
+No Photo Available
+
 ## Stats
 - STR: 466 - 615
 - DEX: 66 - 75

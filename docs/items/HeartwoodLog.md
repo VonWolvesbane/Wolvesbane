@@ -5,6 +5,8 @@ title: Heartwood Log
 
 # Heartwood Log
 
+No Photo Available
+
 ## Dropped By
 - [a HeartwoodTree](../monsters/a_HeartwoodTree.html)
 - [a wood elemental](../monsters/a_wood_elemental.html)

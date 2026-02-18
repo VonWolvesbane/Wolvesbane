@@ -5,6 +5,8 @@ title: A Crystal Golem
 
 # A Crystal Golem
 
+No Photo Available
+
 ## Stats
 - STR: 500
 - DEX: 250

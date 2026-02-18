@@ -5,6 +5,8 @@ title: a yomotsu warrior
 
 # a yomotsu warrior
 
+No Photo Available
+
 ## Stats
 - STR: 486 - 530
 - DEX: 151 - 165

@@ -5,6 +5,8 @@ title: Egg Napper
 
 # Egg Napper
 
+No Photo Available
+
 ## Stats
 - STR: 280 - 360
 - DEX: 150 - 200

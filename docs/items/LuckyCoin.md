@@ -5,6 +5,8 @@ title: Lucky Coin
 
 # Lucky Coin
 
+No Photo Available
+
 ## Dropped By
 - [Navrey Night-Eyes](../monsters/Navrey_Night-Eyes.html)
 - [a bloodworm](../monsters/a_bloodworm.html)

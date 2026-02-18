@@ -5,6 +5,8 @@ title: a rabbit
 
 # a rabbit
 
+No Photo Available
+
 ## Stats
 - STR: 6 - 10
 - DEX: 26 - 38

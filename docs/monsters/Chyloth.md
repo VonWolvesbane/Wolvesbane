@@ -5,6 +5,8 @@ title: Chyloth
 
 # Chyloth
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

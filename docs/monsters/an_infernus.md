@@ -5,6 +5,8 @@ title: an infernus
 
 # an infernus
 
+No Photo Available
+
 ## Stats
 - STR: 318 - 400
 - DEX: 97 - 115

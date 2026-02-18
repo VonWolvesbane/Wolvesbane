@@ -5,6 +5,8 @@ title: The Stag of Arcadia
 
 # The Stag of Arcadia
 
+No Photo Available
+
 ## Stats
 - STR: 120 - 125
 - DEX: 70 - 77

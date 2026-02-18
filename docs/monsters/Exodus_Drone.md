@@ -5,6 +5,8 @@ title: Exodus Drone
 
 # Exodus Drone
 
+No Photo Available
+
 ## Stats
 - STR: 554 - 650
 - DEX: 77 - 85

@@ -5,6 +5,8 @@ title: Arrow
 
 # Arrow
 
+No Photo Available
+
 ## Dropped By
 - [a carpenter automaton](../monsters/a_carpenter_automaton.html)
 - [Medusa](../monsters/Medusa.html)
@@ -18,3 +20,10 @@ title: Arrow
 - [an orc scout](../monsters/an_orc_scout.html)
 - [a soulbound pirate raider](../monsters/a_soulbound_pirate_raider.html)
 - [Anon](../monsters/Anon.html)
+
+## Resist Bonuses
+- Physical: +Unknown
+- Cold: +Unknown
+- Fire: +Unknown
+- Energy: +Unknown
+- Poison: +Unknown

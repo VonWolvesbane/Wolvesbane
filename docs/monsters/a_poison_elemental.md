@@ -5,6 +5,8 @@ title: a poison elemental
 
 # a poison elemental
 
+No Photo Available
+
 ## Stats
 - STR: 426 - 515
 - DEX: 166 - 185

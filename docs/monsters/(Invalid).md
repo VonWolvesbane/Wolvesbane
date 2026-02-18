@@ -5,6 +5,8 @@ title: (Invalid)
 
 # (Invalid)
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

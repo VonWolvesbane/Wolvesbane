@@ -5,6 +5,8 @@ title: a Training Elemental
 
 # a Training Elemental
 
+No Photo Available
+
 ## Stats
 - STR: 50 - 50
 - DEX: 350 - 350

@@ -5,6 +5,8 @@ title: Ares
 
 # Ares
 
+No Photo Available
+
 ## Stats
 - STR: 500 - 700
 - DEX: 300 - 300

@@ -5,6 +5,8 @@ title: Poseidon
 
 # Poseidon
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

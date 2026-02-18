@@ -5,6 +5,8 @@ title: a kappa
 
 # a kappa
 
+No Photo Available
+
 ## Stats
 - STR: 186 - 230
 - DEX: 51 - 75

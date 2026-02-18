@@ -5,6 +5,8 @@ title: Kindred
 
 # Kindred
 
+No Photo Available
+
 ## Stats
 - STR: 3386 - 3400
 - DEX: 350 - 350

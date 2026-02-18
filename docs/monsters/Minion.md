@@ -5,6 +5,8 @@ title: Minion
 
 # Minion
 
+No Photo Available
+
 ## Stats
 - STR: 476 - 505
 - DEX: 76 - 95

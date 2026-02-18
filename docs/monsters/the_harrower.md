@@ -5,6 +5,8 @@ title: the harrower
 
 # the harrower
 
+No Photo Available
+
 ## Stats
 - STR: 3900 - 4000
 - DEX: 325 - 335

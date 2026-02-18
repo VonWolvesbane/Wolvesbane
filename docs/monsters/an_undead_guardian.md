@@ -5,6 +5,8 @@ title: an undead guardian
 
 # an undead guardian
 
+No Photo Available
+
 ## Stats
 - STR: 212
 - DEX: 76

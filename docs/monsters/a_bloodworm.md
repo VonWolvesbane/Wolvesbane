@@ -5,6 +5,8 @@ title: a bloodworm
 
 # a bloodworm
 
+No Photo Available
+
 ## Stats
 - STR: 401 - 473
 - DEX: 80

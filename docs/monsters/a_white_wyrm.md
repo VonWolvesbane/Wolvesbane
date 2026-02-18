@@ -5,6 +5,8 @@ title: a white wyrm
 
 # a white wyrm
 
+No Photo Available
+
 ## Stats
 - STR: 721 - 760
 - DEX: 101 - 130

@@ -5,6 +5,8 @@ title: a wailing banshee
 
 # a wailing banshee
 
+No Photo Available
+
 ## Stats
 - STR: 126 - 150
 - DEX: 76 - 100

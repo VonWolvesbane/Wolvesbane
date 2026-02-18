@@ -5,6 +5,8 @@ title: Krampus
 
 # Krampus
 
+No Photo Available
+
 ## Stats
 - STR: 700 - 750
 - DEX: 800 - 900

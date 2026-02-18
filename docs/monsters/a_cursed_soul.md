@@ -5,6 +5,8 @@ title: a cursed soul
 
 # a cursed soul
 
+No Photo Available
+
 ## Stats
 - STR: 20 - 40
 - DEX: 40 - 60

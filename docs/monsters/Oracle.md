@@ -5,6 +5,8 @@ title: Oracle
 
 # Oracle
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

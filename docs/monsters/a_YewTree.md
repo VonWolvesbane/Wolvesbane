@@ -5,6 +5,8 @@ title: a YewTree
 
 # a YewTree
 
+No Photo Available
+
 ## Stats
 - STR: 366 - 515
 - DEX: 66 - 75

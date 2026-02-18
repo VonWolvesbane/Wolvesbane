@@ -5,6 +5,8 @@ title: Triton
 
 # Triton
 
+No Photo Available
+
 ## Stats
 - STR: 120 - 250
 - DEX: 150 - 250

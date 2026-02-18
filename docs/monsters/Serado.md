@@ -5,6 +5,8 @@ title: Serado
 
 # Serado
 
+No Photo Available
+
 ## Stats
 - STR: 1000
 - DEX: 150

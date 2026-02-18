@@ -5,6 +5,8 @@ title: a deep sea serpent
 
 # a deep sea serpent
 
+No Photo Available
+
 ## Stats
 - STR: 251 - 425
 - DEX: 87 - 135

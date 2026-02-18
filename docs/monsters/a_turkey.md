@@ -5,6 +5,8 @@ title: a turkey
 
 # a turkey
 
+No Photo Available
+
 ## Stats
 - STR: 5
 - DEX: 15

@@ -5,6 +5,8 @@ title: a descicated myrmidex larvae
 
 # a descicated myrmidex larvae
 
+No Photo Available
+
 ## Stats
 - STR: 350 - 450
 - DEX: 80 - 95

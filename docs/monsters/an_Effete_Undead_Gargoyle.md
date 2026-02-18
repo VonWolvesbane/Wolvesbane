@@ -5,6 +5,8 @@ title: an Effete Undead Gargoyle
 
 # an Effete Undead Gargoyle
 
+No Photo Available
+
 ## Stats
 - STR: 60 - 65
 - DEX: 60 - 65

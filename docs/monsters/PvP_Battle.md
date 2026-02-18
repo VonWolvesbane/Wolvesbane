@@ -5,6 +5,8 @@ title: PvP Battle
 
 # PvP Battle
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

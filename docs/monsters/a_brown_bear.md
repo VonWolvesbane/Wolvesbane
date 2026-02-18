@@ -5,6 +5,8 @@ title: a brown bear
 
 # a brown bear
 
+No Photo Available
+
 ## Stats
 - STR: 76 - 100
 - DEX: 26 - 45

@@ -5,6 +5,8 @@ title: Skirt
 
 # Skirt
 
+No Photo Available
+
 ## Dropped By
 - [Hippolyte](../monsters/Hippolyte.html)
 - [A Were Wolf](../monsters/A_Were_Wolf.html)

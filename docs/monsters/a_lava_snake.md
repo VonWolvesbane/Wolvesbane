@@ -5,6 +5,8 @@ title: a lava snake
 
 # a lava snake
 
+No Photo Available
+
 ## Stats
 - STR: 43 - 55
 - DEX: 16 - 25

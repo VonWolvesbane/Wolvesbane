@@ -5,6 +5,8 @@ title: Obsidian Wyvern
 
 # Obsidian Wyvern
 
+No Photo Available
+
 ## Stats
 - STR: 1377 - 1450
 - DEX: 125 - 180

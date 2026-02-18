@@ -5,6 +5,8 @@ title: Elwood McCarrin
 
 # Elwood McCarrin
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

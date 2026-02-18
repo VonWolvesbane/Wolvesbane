@@ -5,6 +5,8 @@ title: Gary
 
 # Gary
 
+No Photo Available
+
 ## Stats
 - STR: 150
 - DEX: 150

@@ -5,6 +5,8 @@ title: Pythie
 
 # Pythie
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

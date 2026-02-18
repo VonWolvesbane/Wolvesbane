@@ -5,6 +5,8 @@ title: a coral snake
 
 # a coral snake
 
+No Photo Available
+
 ## Stats
 - STR: 205 - 340
 - DEX: 248 - 300

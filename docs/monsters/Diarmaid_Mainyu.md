@@ -5,6 +5,8 @@ title: Diarmaid Mainyu
 
 # Diarmaid Mainyu
 
+No Photo Available
+
 ## Stats
 - STR: 2000 - 2500
 - DEX: 1500 - 2000

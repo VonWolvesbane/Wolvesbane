@@ -5,6 +5,8 @@ title: a scorpion
 
 # a scorpion
 
+No Photo Available
+
 ## Stats
 - STR: 73 - 115
 - DEX: 76 - 95

@@ -5,6 +5,8 @@ title: a bone flayer
 
 # a bone flayer
 
+No Photo Available
+
 ## Stats
 - STR: 141 - 165
 - DEX: 191 - 215

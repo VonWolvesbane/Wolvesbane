@@ -5,6 +5,8 @@ title: Corgul the Soulbinder
 
 # Corgul the Soulbinder
 
+No Photo Available
+
 ## Stats
 - STR: 800 - 900
 - DEX: 121 - 165

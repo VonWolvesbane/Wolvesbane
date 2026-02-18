@@ -5,6 +5,8 @@ title: a bull
 
 # a bull
 
+No Photo Available
+
 ## Stats
 - STR: 77 - 111
 - DEX: 56 - 75

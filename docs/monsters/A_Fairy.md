@@ -5,6 +5,8 @@ title: A Fairy
 
 # A Fairy
 
+No Photo Available
+
 ## Stats
 - STR: 321 - 330
 - DEX: 401 - 420

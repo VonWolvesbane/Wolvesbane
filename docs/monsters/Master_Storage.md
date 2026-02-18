@@ -5,6 +5,8 @@ title: Master Storage
 
 # Master Storage
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

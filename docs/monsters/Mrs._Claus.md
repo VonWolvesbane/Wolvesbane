@@ -5,6 +5,8 @@ title: Mrs. Claus
 
 # Mrs. Claus
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

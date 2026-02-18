@@ -5,6 +5,8 @@ title: a sheep
 
 # a sheep
 
+No Photo Available
+
 ## Stats
 - STR: 19
 - DEX: 25

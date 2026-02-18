@@ -5,6 +5,8 @@ title: Abyssal Infernal
 
 # Abyssal Infernal
 
+No Photo Available
+
 ## Stats
 - STR: 1200 - 1300
 - DEX: 100 - 125

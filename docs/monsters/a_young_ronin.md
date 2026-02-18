@@ -5,6 +5,8 @@ title: a young ronin
 
 # a young ronin
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

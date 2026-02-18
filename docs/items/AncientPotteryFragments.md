@@ -5,6 +5,8 @@ title: Ancient Pottery Fragments
 
 # Ancient Pottery Fragments
 
+No Photo Available
+
 ## Dropped By
 - [a putrid undead gargoyle](../monsters/a_putrid_undead_gargoyle.html)
 - [a raptor](../monsters/a_raptor.html)

@@ -5,6 +5,8 @@ title: Boom You Dead
 
 # Boom You Dead
 
+No Photo Available
+
 ## Stats
 - STR: 1200
 - DEX: 500

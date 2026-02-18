@@ -5,6 +5,8 @@ title: a pet leash
 
 # a pet leash
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

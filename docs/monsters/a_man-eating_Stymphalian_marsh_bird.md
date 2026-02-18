@@ -5,6 +5,8 @@ title: a man-eating Stymphalian marsh bird
 
 # a man-eating Stymphalian marsh bird
 
+No Photo Available
+
 ## Stats
 - STR: 196 - 200
 - DEX: 186 - 200

@@ -5,6 +5,8 @@ title: a Tree
 
 # a Tree
 
+No Photo Available
+
 ## Stats
 - STR: 66 - 215
 - DEX: 66 - 75

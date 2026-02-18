@@ -5,6 +5,8 @@ title: Arachnis
 
 # Arachnis
 
+No Photo Available
+
 ## Stats
 - STR: 5000 - 7500
 - DEX: 3000 - 5000

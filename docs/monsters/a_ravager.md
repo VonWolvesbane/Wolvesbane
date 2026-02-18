@@ -5,6 +5,8 @@ title: a ravager
 
 # a ravager
 
+No Photo Available
+
 ## Stats
 - STR: 251 - 275
 - DEX: 101 - 125

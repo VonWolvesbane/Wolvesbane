@@ -5,6 +5,8 @@ title: Gargoyle Destroyer
 
 # Gargoyle Destroyer
 
+No Photo Available
+
 ## Stats
 - STR: 760 - 850
 - DEX: 102 - 150

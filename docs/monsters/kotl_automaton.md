@@ -5,6 +5,8 @@ title: kotl automaton
 
 # kotl automaton
 
+No Photo Available
+
 ## Stats
 - STR: 793 - 875
 - DEX: 67 - 74

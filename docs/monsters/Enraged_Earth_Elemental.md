@@ -5,6 +5,8 @@ title: Enraged Earth Elemental
 
 # Enraged Earth Elemental
 
+No Photo Available
+
 ## Stats
 - STR: 147 - 155
 - DEX: 78 - 90

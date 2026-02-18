@@ -5,6 +5,8 @@ title: a chaos dragoon
 
 # a chaos dragoon
 
+No Photo Available
+
 ## Stats
 - STR: 176 - 225
 - DEX: 81 - 95

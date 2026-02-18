@@ -5,6 +5,8 @@ title: an orc bomber
 
 # an orc bomber
 
+No Photo Available
+
 ## Stats
 - STR: 147 - 215
 - DEX: 91 - 115

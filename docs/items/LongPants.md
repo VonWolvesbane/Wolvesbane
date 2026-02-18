@@ -5,6 +5,8 @@ title: Long Pants
 
 # Long Pants
 
+No Photo Available
+
 ## Dropped By
 - [Barracoon Jr](../monsters/Barracoon_Jr.html)
 - [Barracoon](../monsters/Barracoon.html)

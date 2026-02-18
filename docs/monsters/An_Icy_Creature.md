@@ -5,6 +5,8 @@ title: An Icy Creature
 
 # An Icy Creature
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

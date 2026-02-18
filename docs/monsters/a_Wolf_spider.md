@@ -5,6 +5,8 @@ title: a Wolf spider
 
 # a Wolf spider
 
+No Photo Available
+
 ## Stats
 - STR: 225 - 268
 - DEX: 145 - 165

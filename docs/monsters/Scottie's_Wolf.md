@@ -5,6 +5,8 @@ title: Scottie's Wolf
 
 # Scottie's Wolf
 
+No Photo Available
+
 ## Stats
 - STR: 280 - 340
 - DEX: 180 - 220

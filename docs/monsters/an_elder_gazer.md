@@ -5,6 +5,8 @@ title: an elder gazer
 
 # an elder gazer
 
+No Photo Available
+
 ## Stats
 - STR: 296 - 325
 - DEX: 86 - 105

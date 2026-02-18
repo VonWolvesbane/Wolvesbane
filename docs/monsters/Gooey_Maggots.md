@@ -5,6 +5,8 @@ title: Gooey Maggots
 
 # Gooey Maggots
 
+No Photo Available
+
 ## Stats
 - STR: 738 - 763
 - DEX: 61 - 70

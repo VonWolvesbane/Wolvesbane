@@ -5,6 +5,8 @@ title: a gore fiend
 
 # a gore fiend
 
+No Photo Available
+
 ## Stats
 - STR: 161 - 185
 - DEX: 41 - 65

@@ -5,6 +5,8 @@ title: a skeletal dragon
 
 # a skeletal dragon
 
+No Photo Available
+
 ## Stats
 - STR: 898 - 1030
 - DEX: 68 - 200

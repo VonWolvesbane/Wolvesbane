@@ -5,6 +5,8 @@ title: Pitchfork
 
 # Pitchfork
 
+No Photo Available
+
 ## Dropped By
 - [Enslaved Goblin Keeper](../monsters/Enslaved_Goblin_Keeper.html)
 - [Enslaved Goblin Mage](../monsters/Enslaved_Goblin_Mage.html)
@@ -18,3 +20,10 @@ title: Pitchfork
 - [a green goblin](../monsters/a_green_goblin.html)
 - [a green goblin alchemist](../monsters/a_green_goblin_alchemist.html)
 - [Gregorio](../monsters/Gregorio.html)
+
+## Resist Bonuses
+- Physical: +Unknown
+- Cold: +Unknown
+- Fire: +Unknown
+- Energy: +Unknown
+- Poison: +Unknown

@@ -5,6 +5,8 @@ title: an imp
 
 # an imp
 
+No Photo Available
+
 ## Stats
 - STR: 55
 - DEX: 40

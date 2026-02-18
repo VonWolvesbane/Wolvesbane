@@ -5,6 +5,8 @@ title: Sulfurous Ash
 
 # Sulfurous Ash
 
+No Photo Available
+
 ## Dropped By
 - [a FireRock Elemental](../monsters/a_FireRock_Elemental.html)
 - [a Mechanical Pet](../monsters/a_Mechanical_Pet.html)
@@ -23,3 +25,10 @@ title: Sulfurous Ash
 - [Uzeraan](../monsters/Uzeraan.html)
 - [a quartz elemental](../monsters/a_quartz_elemental.html)
 - [a mud pie](../monsters/a_mud_pie.html)
+
+## Resist Bonuses
+- Physical: +Unknown
+- Cold: +Unknown
+- Fire: +Unknown
+- Energy: +Unknown
+- Poison: +Unknown

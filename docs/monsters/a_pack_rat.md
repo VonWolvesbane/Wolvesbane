@@ -5,6 +5,8 @@ title: a pack rat
 
 # a pack rat
 
+No Photo Available
+
 ## Stats
 - STR: 52 - 80
 - DEX: 36 - 55

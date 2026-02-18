@@ -5,6 +5,8 @@ title: a sewerling
 
 # a sewerling
 
+No Photo Available
+
 ## Stats
 - STR: 196 - 220
 - DEX: 191 - 215

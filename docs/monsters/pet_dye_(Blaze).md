@@ -5,6 +5,8 @@ title: pet dye (Blaze)
 
 # pet dye (Blaze)
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

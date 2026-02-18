@@ -5,6 +5,8 @@ title: a dimetrosaur
 
 # a dimetrosaur
 
+No Photo Available
+
 ## Stats
 - STR: 526 - 601
 - DEX: 166 - 184

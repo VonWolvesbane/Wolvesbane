@@ -5,6 +5,8 @@ title: A Protector
 
 # A Protector
 
+No Photo Available
+
 ## Stats
 - STR: 700 - 800
 - DEX: 100 - 150

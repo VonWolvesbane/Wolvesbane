@@ -5,6 +5,8 @@ title: a white dragon
 
 # a white dragon
 
+No Photo Available
+
 ## Stats
 - STR: 800
 - DEX: 800

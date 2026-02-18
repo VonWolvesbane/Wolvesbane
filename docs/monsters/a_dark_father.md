@@ -5,6 +5,8 @@ title: a dark father
 
 # a dark father
 
+No Photo Available
+
 ## Stats
 - STR: 200 - 275
 - DEX: 115 - 125

@@ -5,6 +5,8 @@ title: an earth elemental
 
 # an earth elemental
 
+No Photo Available
+
 ## Stats
 - STR: 200
 - DEX: 70

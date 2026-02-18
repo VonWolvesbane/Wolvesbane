@@ -5,6 +5,8 @@ title: a pack horse
 
 # a pack horse
 
+No Photo Available
+
 ## Stats
 - STR: 44 - 120
 - DEX: 36 - 55

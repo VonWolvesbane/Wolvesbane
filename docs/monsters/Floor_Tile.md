@@ -5,6 +5,8 @@ title: Floor Tile
 
 # Floor Tile
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

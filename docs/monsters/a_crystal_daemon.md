@@ -5,6 +5,8 @@ title: a crystal daemon
 
 # a crystal daemon
 
+No Photo Available
+
 ## Stats
 - STR: 140 - 200
 - DEX: 120 - 150

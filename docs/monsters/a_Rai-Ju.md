@@ -5,6 +5,8 @@ title: a Rai-Ju
 
 # a Rai-Ju
 
+No Photo Available
+
 ## Stats
 - STR: 151 - 225
 - DEX: 81 - 135

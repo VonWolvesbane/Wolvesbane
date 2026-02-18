@@ -5,6 +5,8 @@ title: Pet Fighter AI Deed
 
 # Pet Fighter AI Deed
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

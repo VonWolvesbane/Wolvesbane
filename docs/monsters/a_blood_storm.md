@@ -5,6 +5,8 @@ title: a blood storm
 
 # a blood storm
 
+No Photo Available
+
 ## Stats
 - STR: 263 - 308
 - DEX: 33 - 43

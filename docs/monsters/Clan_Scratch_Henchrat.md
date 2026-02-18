@@ -5,6 +5,8 @@ title: Clan Scratch Henchrat
 
 # Clan Scratch Henchrat
 
+No Photo Available
+
 ## Stats
 - STR: 227
 - DEX: 183

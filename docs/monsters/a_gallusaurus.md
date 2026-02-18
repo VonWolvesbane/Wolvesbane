@@ -5,6 +5,8 @@ title: a gallusaurus
 
 # a gallusaurus
 
+No Photo Available
+
 ## Stats
 - STR: 477 - 511
 - DEX: 155 - 168

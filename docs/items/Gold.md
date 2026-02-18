@@ -5,6 +5,8 @@ title: Gold
 
 # Gold
 
+No Photo Available
+
 ## Dropped By
 - [Ancient Chest Guardian](../monsters/Ancient_Chest_Guardian.html)
 - [a master of the arts](../monsters/a_master_of_the_arts.html)
@@ -20,3 +22,10 @@ title: Gold
 - [Elwood McCarrin](../monsters/Elwood_McCarrin.html)
 - [Grizelda](../monsters/Grizelda.html)
 - [Uzeraan](../monsters/Uzeraan.html)
+
+## Resist Bonuses
+- Physical: +Unknown
+- Cold: +Unknown
+- Fire: +Unknown
+- Energy: +Unknown
+- Poison: +Unknown

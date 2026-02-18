@@ -5,6 +5,8 @@ title: Dane Elec
 
 # Dane Elec
 
+No Photo Available
+
 ## Stats
 - STR: 5350 - 5400
 - DEX: 5150 - 5200

@@ -5,6 +5,8 @@ title: Cute Zombie
 
 # Cute Zombie
 
+No Photo Available
+
 ## Stats
 - STR: 300
 - DEX: 300

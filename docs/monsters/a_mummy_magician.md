@@ -5,6 +5,8 @@ title: a mummy magician
 
 # a mummy magician
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

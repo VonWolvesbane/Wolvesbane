@@ -5,6 +5,8 @@ title: Power Crystal
 
 # Power Crystal
 
+No Photo Available
+
 ## Dropped By
 - [a betrayer](../monsters/a_betrayer.html)
 - [exodus minion](../monsters/exodus_minion.html)
@@ -15,3 +17,10 @@ title: Power Crystal
 - [Exodus Juggernaut](../monsters/Exodus_Juggernaut.html)
 - [Exodus Minion Lord](../monsters/Exodus_Minion_Lord.html)
 - [Exodus Sentinel](../monsters/Exodus_Sentinel.html)
+
+## Resist Bonuses
+- Physical: +Unknown
+- Cold: +Unknown
+- Fire: +Unknown
+- Energy: +Unknown
+- Poison: +Unknown

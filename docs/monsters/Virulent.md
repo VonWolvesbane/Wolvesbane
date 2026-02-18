@@ -5,6 +5,8 @@ title: Virulent
 
 # Virulent
 
+No Photo Available
+
 ## Stats
 - STR: 207 - 252
 - DEX: 156 - 194

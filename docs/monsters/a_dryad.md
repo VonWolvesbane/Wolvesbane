@@ -5,6 +5,8 @@ title: a dryad
 
 # a dryad
 
+No Photo Available
+
 ## Stats
 - STR: 132 - 149
 - DEX: 152 - 168

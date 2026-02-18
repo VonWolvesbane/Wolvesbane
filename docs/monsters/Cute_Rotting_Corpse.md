@@ -5,6 +5,8 @@ title: Cute Rotting Corpse
 
 # Cute Rotting Corpse
 
+No Photo Available
+
 ## Stats
 - STR: 1000
 - DEX: 1200

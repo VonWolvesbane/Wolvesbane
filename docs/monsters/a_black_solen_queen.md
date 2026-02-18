@@ -5,6 +5,8 @@ title: a black solen queen
 
 # a black solen queen
 
+No Photo Available
+
 ## Stats
 - STR: 296 - 320
 - DEX: 121 - 145

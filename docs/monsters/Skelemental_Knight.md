@@ -5,6 +5,8 @@ title: Skelemental Knight
 
 # Skelemental Knight
 
+No Photo Available
+
 ## Stats
 - STR: 200 - 250
 - DEX: 70 - 95

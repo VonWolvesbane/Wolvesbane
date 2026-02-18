@@ -5,6 +5,8 @@ title: Night Terror
 
 # Night Terror
 
+No Photo Available
+
 ## Stats
 - STR: 385 - 467
 - DEX: 40 - 70

@@ -5,6 +5,8 @@ title: a Mechanical Pet
 
 # a Mechanical Pet
 
+No Photo Available
+
 ## Stats
 - STR: 496 - 525
 - DEX: 156 - 225

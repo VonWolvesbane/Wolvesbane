@@ -5,6 +5,8 @@ title: a gargoyle pet
 
 # a gargoyle pet
 
+No Photo Available
+
 ## Stats
 - STR: 500 - 512
 - DEX: 90 - 94

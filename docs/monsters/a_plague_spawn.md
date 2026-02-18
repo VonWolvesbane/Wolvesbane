@@ -5,6 +5,8 @@ title: a plague spawn
 
 # a plague spawn
 
+No Photo Available
+
 ## Stats
 - STR: 201 - 300
 - DEX: 80

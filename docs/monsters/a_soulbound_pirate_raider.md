@@ -5,6 +5,8 @@ title: a soulbound pirate raider
 
 # a soulbound pirate raider
 
+No Photo Available
+
 ## Stats
 - STR: 150 - 200
 - DEX: 125 - 150

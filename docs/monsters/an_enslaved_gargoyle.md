@@ -5,6 +5,8 @@ title: an enslaved gargoyle
 
 # an enslaved gargoyle
 
+No Photo Available
+
 ## Stats
 - STR: 302 - 360
 - DEX: 76 - 95

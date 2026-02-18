@@ -5,6 +5,8 @@ title: Von Wolvesbane
 
 # Von Wolvesbane
 
+No Photo Available
+
 ## Stats
 - STR: 2350 - 2400
 - DEX: 2150 - 2200

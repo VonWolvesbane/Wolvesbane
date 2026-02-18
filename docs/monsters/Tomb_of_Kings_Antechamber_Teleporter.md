@@ -5,6 +5,8 @@ title: Tomb of Kings Antechamber Teleporter
 
 # Tomb of Kings Antechamber Teleporter
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

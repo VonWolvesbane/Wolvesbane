@@ -5,6 +5,8 @@ title: Septem Mactabilis Peccatus
 
 # Septem Mactabilis Peccatus
 
+No Photo Available
+
 ## Stats
 - STR: 7666
 - DEX: 7666

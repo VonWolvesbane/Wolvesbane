@@ -5,6 +5,8 @@ title: Khal Ankur
 
 # Khal Ankur
 
+No Photo Available
+
 ## Stats
 - STR: 700 - 800
 - DEX: 500 - 600

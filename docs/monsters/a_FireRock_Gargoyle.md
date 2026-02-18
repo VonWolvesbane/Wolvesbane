@@ -5,6 +5,8 @@ title: a FireRock Gargoyle
 
 # a FireRock Gargoyle
 
+No Photo Available
+
 ## Stats
 - STR: 351 - 400
 - DEX: 126 - 145

@@ -5,6 +5,8 @@ title: a betrayer
 
 # a betrayer
 
+No Photo Available
+
 ## Stats
 - STR: 401 - 500
 - DEX: 81 - 100

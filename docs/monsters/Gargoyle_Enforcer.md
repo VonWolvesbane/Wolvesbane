@@ -5,6 +5,8 @@ title: Gargoyle Enforcer
 
 # Gargoyle Enforcer
 
+No Photo Available
+
 ## Stats
 - STR: 760 - 850
 - DEX: 102 - 150

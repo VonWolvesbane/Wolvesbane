@@ -5,6 +5,8 @@ title: a revenant
 
 # a revenant
 
+No Photo Available
+
 ## Stats
 - STR: 200
 - DEX: 150

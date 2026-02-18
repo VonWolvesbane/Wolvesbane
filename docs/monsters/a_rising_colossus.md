@@ -5,6 +5,8 @@ title: a rising colossus
 
 # a rising colossus
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

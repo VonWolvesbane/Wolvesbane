@@ -5,6 +5,8 @@ title: a monstrous interred grizzle
 
 # a monstrous interred grizzle
 
+No Photo Available
+
 ## Stats
 - STR: 1198 - 1207
 - DEX: 127 - 135

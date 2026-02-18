@@ -5,6 +5,8 @@ title: Pet Wars scroll Claim your pet!
 
 # Pet Wars scroll Claim your pet!
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

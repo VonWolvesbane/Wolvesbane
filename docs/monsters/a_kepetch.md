@@ -5,6 +5,8 @@ title: a kepetch
 
 # a kepetch
 
+No Photo Available
+
 ## Stats
 - STR: 337 - 380
 - DEX: 184 - 194

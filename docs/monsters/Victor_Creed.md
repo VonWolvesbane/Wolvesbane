@@ -5,6 +5,8 @@ title: Victor Creed
 
 # Victor Creed
 
+No Photo Available
+
 ## Stats
 - STR: 3500
 - DEX: 2500

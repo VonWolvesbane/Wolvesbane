@@ -5,6 +5,8 @@ title: a stone harpy
 
 # a stone harpy
 
+No Photo Available
+
 ## Stats
 - STR: 296 - 320
 - DEX: 86 - 110

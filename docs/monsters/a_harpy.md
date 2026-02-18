@@ -5,6 +5,8 @@ title: a harpy
 
 # a harpy
 
+No Photo Available
+
 ## Stats
 - STR: 96 - 120
 - DEX: 86 - 110

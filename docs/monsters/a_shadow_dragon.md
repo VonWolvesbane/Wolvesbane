@@ -5,6 +5,8 @@ title: a shadow dragon
 
 # a shadow dragon
 
+No Photo Available
+
 ## Stats
 - STR: 796 - 825
 - DEX: 86 - 105

@@ -5,6 +5,8 @@ title: a tangling root
 
 # a tangling root
 
+No Photo Available
+
 ## Stats
 - STR: 157 - 189
 - DEX: 51 - 64

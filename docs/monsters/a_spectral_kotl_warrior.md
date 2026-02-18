@@ -5,6 +5,8 @@ title: a spectral kotl warrior
 
 # a spectral kotl warrior
 
+No Photo Available
+
 ## Stats
 - STR: 500 - 600
 - DEX: 82 - 95

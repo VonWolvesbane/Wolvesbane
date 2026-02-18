@@ -5,6 +5,8 @@ title: A Evil Elf
 
 # A Evil Elf
 
+No Photo Available
+
 ## Stats
 - STR: 80 - 110
 - DEX: 80 - 90

@@ -5,6 +5,8 @@ title: a greater mongbat
 
 # a greater mongbat
 
+No Photo Available
+
 ## Stats
 - STR: 56 - 80
 - DEX: 61 - 80

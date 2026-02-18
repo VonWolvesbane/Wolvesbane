@@ -5,6 +5,8 @@ title: a yomotsu priest
 
 # a yomotsu priest
 
+No Photo Available
+
 ## Stats
 - STR: 486 - 530
 - DEX: 101 - 115

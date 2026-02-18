@@ -5,6 +5,8 @@ title: a red solen worker
 
 # a red solen worker
 
+No Photo Available
+
 ## Stats
 - STR: 96 - 120
 - DEX: 81 - 105

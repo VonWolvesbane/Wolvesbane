@@ -5,6 +5,8 @@ title: an ethie wyrm
 
 # an ethie wyrm
 
+No Photo Available
+
 ## Stats
 - STR: 1000
 - DEX: 1000

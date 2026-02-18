@@ -5,6 +5,8 @@ title: a vollem
 
 # a vollem
 
+No Photo Available
+
 ## Stats
 - STR: 496 - 524
 - DEX: 88 - 105

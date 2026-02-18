@@ -5,6 +5,8 @@ title: A Huge Snake
 
 # A Huge Snake
 
+No Photo Available
+
 ## Stats
 - STR: 2500 - 4500
 - DEX: 500 - 800

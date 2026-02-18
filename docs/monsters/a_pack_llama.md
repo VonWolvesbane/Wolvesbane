@@ -5,6 +5,8 @@ title: a pack llama
 
 # a pack llama
 
+No Photo Available
+
 ## Stats
 - STR: 52 - 80
 - DEX: 36 - 55

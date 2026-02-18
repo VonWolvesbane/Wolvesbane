@@ -5,6 +5,8 @@ title: an ogre
 
 # an ogre
 
+No Photo Available
+
 ## Stats
 - STR: 166 - 195
 - DEX: 46 - 65

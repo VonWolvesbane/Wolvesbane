@@ -5,6 +5,8 @@ title: Hippolyte
 
 # Hippolyte
 
+No Photo Available
+
 ## Stats
 - STR: 600 - 700
 - DEX: 200 - 300

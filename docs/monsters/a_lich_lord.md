@@ -5,6 +5,8 @@ title: a lich lord
 
 # a lich lord
 
+No Photo Available
+
 ## Stats
 - STR: 416 - 505
 - DEX: 146 - 165

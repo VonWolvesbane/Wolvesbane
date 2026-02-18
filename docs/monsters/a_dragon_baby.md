@@ -5,6 +5,8 @@ title: a dragon baby
 
 # a dragon baby
 
+No Photo Available
+
 ## Stats
 - STR: 401 - 430
 - DEX: 133 - 152

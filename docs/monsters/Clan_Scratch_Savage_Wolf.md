@@ -5,6 +5,8 @@ title: Clan Scratch Savage Wolf
 
 # Clan Scratch Savage Wolf
 
+No Photo Available
+
 ## Stats
 - STR: 170
 - DEX: 244

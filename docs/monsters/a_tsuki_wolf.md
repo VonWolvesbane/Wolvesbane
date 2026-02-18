@@ -5,6 +5,8 @@ title: a tsuki wolf
 
 # a tsuki wolf
 
+No Photo Available
+
 ## Stats
 - STR: 401 - 450
 - DEX: 151 - 200

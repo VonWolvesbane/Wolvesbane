@@ -5,6 +5,8 @@ title: vicious macaw
 
 # vicious macaw
 
+No Photo Available
+
 ## Stats
 - STR: 100 - 150
 - DEX: 400 - 500

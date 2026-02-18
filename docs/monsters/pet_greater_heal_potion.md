@@ -5,6 +5,8 @@ title: pet greater heal potion
 
 # pet greater heal potion
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

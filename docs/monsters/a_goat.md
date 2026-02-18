@@ -5,6 +5,8 @@ title: a goat
 
 # a goat
 
+No Photo Available
+
 ## Stats
 - STR: 19
 - DEX: 15

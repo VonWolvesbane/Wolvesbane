@@ -5,6 +5,8 @@ title: a AshTree
 
 # a AshTree
 
+No Photo Available
+
 ## Stats
 - STR: 266 - 415
 - DEX: 66 - 75

@@ -5,6 +5,8 @@ title: a blood elemental
 
 # a blood elemental
 
+No Photo Available
+
 ## Stats
 - STR: 526 - 615
 - DEX: 66 - 85

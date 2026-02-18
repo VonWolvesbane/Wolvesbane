@@ -5,6 +5,8 @@ title: a myrmidex larvae
 
 # a myrmidex larvae
 
+No Photo Available
+
 ## Stats
 - STR: 79 - 100
 - DEX: 82 - 95

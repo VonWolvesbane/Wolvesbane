@@ -5,6 +5,8 @@ title: a decaying corpse
 
 # a decaying corpse
 
+No Photo Available
+
 ## Stats
 - STR: 346 - 370
 - DEX: 71 - 90

@@ -5,6 +5,8 @@ title: a gray goblin mage
 
 # a gray goblin mage
 
+No Photo Available
+
 ## Stats
 - STR: 227 - 285
 - DEX: 70 - 88

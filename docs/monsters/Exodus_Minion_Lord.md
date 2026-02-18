@@ -5,6 +5,8 @@ title: Exodus Minion Lord
 
 # Exodus Minion Lord
 
+No Photo Available
+
 ## Stats
 - STR: 1501 - 1571
 - DEX: 74 - 78

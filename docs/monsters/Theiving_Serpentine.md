@@ -5,6 +5,8 @@ title: Theiving Serpentine
 
 # Theiving Serpentine
 
+No Photo Available
+
 ## Stats
 - STR: 500
 - DEX: 500

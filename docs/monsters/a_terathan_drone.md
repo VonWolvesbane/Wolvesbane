@@ -5,6 +5,8 @@ title: a terathan drone
 
 # a terathan drone
 
+No Photo Available
+
 ## Stats
 - STR: 36 - 65
 - DEX: 96 - 145

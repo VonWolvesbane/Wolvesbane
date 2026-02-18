@@ -5,6 +5,8 @@ title: a cougar
 
 # a cougar
 
+No Photo Available
+
 ## Stats
 - STR: 56 - 80
 - DEX: 66 - 85

@@ -5,6 +5,8 @@ title: The Keeper of Advanced Knowledge
 
 # The Keeper of Advanced Knowledge
 
+No Photo Available
+
 ## Stats
 - STR: 6401 - 6420
 - DEX: 4481 - 4490

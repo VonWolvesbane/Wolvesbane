@@ -5,6 +5,8 @@ title: an Undead Gargoyle
 
 # an Undead Gargoyle
 
+No Photo Available
+
 ## Stats
 - STR: 250 - 350
 - DEX: 120 - 140

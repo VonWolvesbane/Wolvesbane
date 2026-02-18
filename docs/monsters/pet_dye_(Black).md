@@ -5,6 +5,8 @@ title: pet dye (Black)
 
 # pet dye (Black)
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

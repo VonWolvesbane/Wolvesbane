@@ -5,6 +5,8 @@ title: an energized elemental
 
 # an energized elemental
 
+No Photo Available
+
 ## Stats
 - STR: 800 - 928
 - DEX: 166 - 185

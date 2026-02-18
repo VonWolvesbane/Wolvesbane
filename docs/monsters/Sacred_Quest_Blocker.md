@@ -5,6 +5,8 @@ title: Sacred Quest Blocker
 
 # Sacred Quest Blocker
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

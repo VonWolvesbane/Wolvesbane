@@ -5,6 +5,8 @@ title: a mimic
 
 # a mimic
 
+No Photo Available
+
 ## Stats
 - STR: 281
 - DEX: 140

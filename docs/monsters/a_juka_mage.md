@@ -5,6 +5,8 @@ title: a juka mage
 
 # a juka mage
 
+No Photo Available
+
 ## Stats
 - STR: 201 - 300
 - DEX: 71 - 90

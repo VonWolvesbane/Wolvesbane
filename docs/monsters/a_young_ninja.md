@@ -5,6 +5,8 @@ title: a young ninja
 
 # a young ninja
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

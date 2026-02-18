@@ -5,6 +5,8 @@ title: Noxia the Swamp Queen
 
 # Noxia the Swamp Queen
 
+No Photo Available
+
 ## Stats
 - STR: 180 - 225
 - DEX: 120 - 185

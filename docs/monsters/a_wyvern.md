@@ -5,6 +5,8 @@ title: a wyvern
 
 # a wyvern
 
+No Photo Available
+
 ## Stats
 - STR: 202 - 240
 - DEX: 153 - 172

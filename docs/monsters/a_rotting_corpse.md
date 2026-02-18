@@ -5,6 +5,8 @@ title: a rotting corpse
 
 # a rotting corpse
 
+No Photo Available
+
 ## Stats
 - STR: 301 - 350
 - DEX: 75

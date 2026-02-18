@@ -5,6 +5,8 @@ title: Elandria
 
 # Elandria
 
+No Photo Available
+
 ## Stats
 - STR: 253 - 400
 - DEX: 157 - 850

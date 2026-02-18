@@ -5,6 +5,8 @@ title: a rotworm
 
 # a rotworm
 
+No Photo Available
+
 ## Stats
 - STR: 200 - 300
 - DEX: 80

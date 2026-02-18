@@ -5,6 +5,8 @@ title: an interred grizzle
 
 # an interred grizzle
 
+No Photo Available
+
 ## Stats
 - STR: 451 - 500
 - DEX: 201 - 250

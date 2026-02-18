@@ -5,6 +5,8 @@ title: a swamp tentacle
 
 # a swamp tentacle
 
+No Photo Available
+
 ## Stats
 - STR: 96 - 120
 - DEX: 66 - 85

@@ -5,6 +5,8 @@ title: Fire Snuggles
 
 # Fire Snuggles
 
+No Photo Available
+
 ## Stats
 - STR: 1500
 - DEX: 2000

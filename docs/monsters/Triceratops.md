@@ -5,6 +5,8 @@ title: Triceratops
 
 # Triceratops
 
+No Photo Available
+
 ## Stats
 - STR: 1100 - 1300
 - DEX: 150 - 170

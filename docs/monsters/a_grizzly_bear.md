@@ -5,6 +5,8 @@ title: a grizzly bear
 
 # a grizzly bear
 
+No Photo Available
+
 ## Stats
 - STR: 126 - 155
 - DEX: 81 - 105

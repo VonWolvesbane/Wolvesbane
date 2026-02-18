@@ -5,6 +5,8 @@ title: Mondain
 
 # Mondain
 
+No Photo Available
+
 ## Stats
 - STR: 200
 - DEX: 200

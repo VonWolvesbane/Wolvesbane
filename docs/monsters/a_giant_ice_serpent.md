@@ -5,6 +5,8 @@ title: a giant ice serpent
 
 # a giant ice serpent
 
+No Photo Available
+
 ## Stats
 - STR: 216 - 245
 - DEX: 26 - 50

@@ -5,6 +5,8 @@ title: a ferret imprisoned in a crystal
 
 # a ferret imprisoned in a crystal
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

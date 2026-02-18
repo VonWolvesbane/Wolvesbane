@@ -5,6 +5,8 @@ title: a fire ant
 
 # a fire ant
 
+No Photo Available
+
 ## Stats
 - STR: 225
 - DEX: 108

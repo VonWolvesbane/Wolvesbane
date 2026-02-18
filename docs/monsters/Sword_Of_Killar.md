@@ -5,6 +5,8 @@ title: Sword Of Killar
 
 # Sword Of Killar
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

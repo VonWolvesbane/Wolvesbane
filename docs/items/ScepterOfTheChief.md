@@ -5,8 +5,17 @@ title: Scepter Of The Chief
 
 # Scepter Of The Chief
 
+No Photo Available
+
 ## Dropped By
 - [a chief paroxysmus](../monsters/a_chief_paroxysmus.html)
+
+## Resist Bonuses
+- Physical: +Unknown
+- Cold: +Unknown
+- Fire: +Unknown
+- Energy: +Unknown
+- Poison: +Unknown
 
 ## Regeneration Bonuses
 - Hits: +2

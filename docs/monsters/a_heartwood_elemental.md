@@ -5,6 +5,8 @@ title: a heartwood elemental
 
 # a heartwood elemental
 
+No Photo Available
+
 ## Stats
 - STR: 150 - 200
 - DEX: 100 - 120

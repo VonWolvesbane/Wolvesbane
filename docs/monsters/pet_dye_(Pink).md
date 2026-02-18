@@ -5,6 +5,8 @@ title: pet dye (Pink)
 
 # pet dye (Pink)
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

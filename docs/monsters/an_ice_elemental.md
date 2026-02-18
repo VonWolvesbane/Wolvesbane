@@ -5,6 +5,8 @@ title: an ice elemental
 
 # an ice elemental
 
+No Photo Available
+
 ## Stats
 - STR: 156 - 185
 - DEX: 96 - 115

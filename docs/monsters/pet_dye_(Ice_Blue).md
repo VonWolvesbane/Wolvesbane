@@ -5,6 +5,8 @@ title: pet dye (Ice Blue)
 
 # pet dye (Ice Blue)
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

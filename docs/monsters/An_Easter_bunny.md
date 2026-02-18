@@ -5,6 +5,8 @@ title: An Easter bunny
 
 # An Easter bunny
 
+No Photo Available
+
 ## Stats
 - STR: 450
 - DEX: 2100 - 3000

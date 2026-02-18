@@ -5,6 +5,8 @@ title: Pet Spellweaving AI Deed
 
 # Pet Spellweaving AI Deed
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

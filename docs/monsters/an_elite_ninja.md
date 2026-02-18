@@ -5,6 +5,8 @@ title: an elite ninja
 
 # an elite ninja
 
+No Photo Available
+
 ## Stats
 - STR: 126 - 225
 - DEX: 81 - 95

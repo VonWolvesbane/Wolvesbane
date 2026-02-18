@@ -5,6 +5,8 @@ title: a green goblin alchemist
 
 # a green goblin alchemist
 
+No Photo Available
+
 ## Stats
 - STR: 282 - 331
 - DEX: 62 - 79

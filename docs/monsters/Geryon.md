@@ -5,6 +5,8 @@ title: Geryon
 
 # Geryon
 
+No Photo Available
+
 ## Stats
 - STR: 500 - 550
 - DEX: 320 - 350

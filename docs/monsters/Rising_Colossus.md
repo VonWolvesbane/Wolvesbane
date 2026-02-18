@@ -5,6 +5,8 @@ title: Rising Colossus
 
 # Rising Colossus
 
+No Photo Available
+
 ## Stats
 - STR: 600
 - DEX: 70

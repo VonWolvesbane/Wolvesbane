@@ -5,6 +5,8 @@ title: a red drake
 
 # a red drake
 
+No Photo Available
+
 ## Stats
 - STR: 350
 - DEX: 350

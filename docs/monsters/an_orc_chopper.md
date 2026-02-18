@@ -5,6 +5,8 @@ title: an orc chopper
 
 # an orc chopper
 
+No Photo Available
+
 ## Stats
 - STR: 147 - 245
 - DEX: 91 - 115

@@ -5,6 +5,8 @@ title: Mechanical Bone Demon
 
 # Mechanical Bone Demon
 
+No Photo Available
+
 ## Stats
 - STR: 620 - 925
 - DEX: 556 - 725

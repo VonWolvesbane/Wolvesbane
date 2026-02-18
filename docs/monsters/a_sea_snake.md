@@ -5,6 +5,8 @@ title: a sea snake
 
 # a sea snake
 
+No Photo Available
+
 ## Stats
 - STR: 261
 - DEX: 193

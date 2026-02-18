@@ -5,6 +5,8 @@ title: an Ancient Panther
 
 # an Ancient Panther
 
+No Photo Available
+
 ## Stats
 - STR: 400 - 700
 - DEX: 400

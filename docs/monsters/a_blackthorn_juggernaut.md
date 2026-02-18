@@ -5,6 +5,8 @@ title: a blackthorn juggernaut
 
 # a blackthorn juggernaut
 
+No Photo Available
+
 ## Stats
 - STR: 301 - 400
 - DEX: 51 - 70

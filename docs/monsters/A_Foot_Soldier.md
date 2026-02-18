@@ -5,6 +5,8 @@ title: A Foot Soldier
 
 # A Foot Soldier
 
+No Photo Available
+
 ## Stats
 - STR: 500 - 700
 - DEX: 215 - 220

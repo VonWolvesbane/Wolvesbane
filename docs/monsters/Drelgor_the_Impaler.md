@@ -5,6 +5,8 @@ title: Drelgor the Impaler
 
 # Drelgor the Impaler
 
+No Photo Available
+
 ## Stats
 - STR: 127 - 137
 - DEX: 82 - 94

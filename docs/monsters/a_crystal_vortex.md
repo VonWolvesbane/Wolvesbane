@@ -5,6 +5,8 @@ title: a crystal vortex
 
 # a crystal vortex
 
+No Photo Available
+
 ## Stats
 - STR: 800 - 900
 - DEX: 500 - 600

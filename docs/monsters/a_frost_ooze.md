@@ -5,6 +5,8 @@ title: a frost ooze
 
 # a frost ooze
 
+No Photo Available
+
 ## Stats
 - STR: 18 - 30
 - DEX: 16 - 21

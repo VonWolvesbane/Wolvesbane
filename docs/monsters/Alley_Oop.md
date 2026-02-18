@@ -5,6 +5,8 @@ title: Alley Oop
 
 # Alley Oop
 
+No Photo Available
+
 ## Stats
 - STR: 3000 - 6000
 - DEX: 2000 - 4000

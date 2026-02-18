@@ -5,6 +5,8 @@ title: tentacles of the harrower
 
 # tentacles of the harrower
 
+No Photo Available
+
 ## Stats
 - STR: 1901 - 2000
 - DEX: 126 - 140

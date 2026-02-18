@@ -5,6 +5,8 @@ title: Orochimaru
 
 # Orochimaru
 
+No Photo Available
+
 ## Stats
 - STR: 500 - 1500
 - DEX: 300 - 300

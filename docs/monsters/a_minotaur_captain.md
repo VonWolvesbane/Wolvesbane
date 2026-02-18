@@ -5,6 +5,8 @@ title: a minotaur captain
 
 # a minotaur captain
 
+No Photo Available
+
 ## Stats
 - STR: 401 - 425
 - DEX: 91 - 110

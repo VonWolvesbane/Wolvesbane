@@ -5,6 +5,8 @@ title: Ice Gargoyle Minion
 
 # Ice Gargoyle Minion
 
+No Photo Available
+
 ## Stats
 - STR: 420 - 625
 - DEX: 456 - 625

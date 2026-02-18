@@ -5,6 +5,8 @@ title: a dragon elemental
 
 # a dragon elemental
 
+No Photo Available
+
 ## Stats
 - STR: 898 - 1030
 - DEX: 568 - 600

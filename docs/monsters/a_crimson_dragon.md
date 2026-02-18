@@ -5,6 +5,8 @@ title: a crimson dragon
 
 # a crimson dragon
 
+No Photo Available
+
 ## Stats
 - STR: 2034 - 2140
 - DEX: 215 - 256

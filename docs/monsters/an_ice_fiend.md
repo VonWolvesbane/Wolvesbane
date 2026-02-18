@@ -5,6 +5,8 @@ title: an ice fiend
 
 # an ice fiend
 
+No Photo Available
+
 ## Stats
 - STR: 376 - 405
 - DEX: 176 - 195

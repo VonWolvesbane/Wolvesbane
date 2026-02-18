@@ -5,6 +5,8 @@ title: a doppleganger
 
 # a doppleganger
 
+No Photo Available
+
 ## Stats
 - STR: 81 - 110
 - DEX: 56 - 75

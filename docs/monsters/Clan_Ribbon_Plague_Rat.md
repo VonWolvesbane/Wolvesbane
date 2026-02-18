@@ -5,6 +5,8 @@ title: Clan Ribbon Plague Rat
 
 # Clan Ribbon Plague Rat
 
+No Photo Available
+
 ## Stats
 - STR: 59
 - DEX: 51

@@ -5,6 +5,8 @@ title: a fire storm
 
 # a fire storm
 
+No Photo Available
+
 ## Stats
 - STR: 63 - 78
 - DEX: 83 - 93

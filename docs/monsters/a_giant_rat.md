@@ -5,6 +5,8 @@ title: a giant rat
 
 # a giant rat
 
+No Photo Available
+
 ## Stats
 - STR: 32 - 74
 - DEX: 46 - 65

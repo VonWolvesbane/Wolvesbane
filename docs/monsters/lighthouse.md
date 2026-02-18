@@ -5,6 +5,8 @@ title: lighthouse
 
 # lighthouse
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

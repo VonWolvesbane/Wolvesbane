@@ -5,6 +5,8 @@ title: a corporeal brume
 
 # a corporeal brume
 
+No Photo Available
+
 ## Stats
 - STR: 400 - 450
 - DEX: 100 - 150

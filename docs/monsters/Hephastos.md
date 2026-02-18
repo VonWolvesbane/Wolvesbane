@@ -5,6 +5,8 @@ title: Hephastos
 
 # Hephastos
 
+No Photo Available
+
 ## Stats
 - STR: 6660
 - DEX: 6660

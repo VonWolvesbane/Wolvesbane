@@ -5,6 +5,8 @@ title: a gibberling
 
 # a gibberling
 
+No Photo Available
+
 ## Stats
 - STR: 141 - 165
 - DEX: 101 - 125

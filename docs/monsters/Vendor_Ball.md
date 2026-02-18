@@ -5,6 +5,8 @@ title: Vendor Ball
 
 # Vendor Ball
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

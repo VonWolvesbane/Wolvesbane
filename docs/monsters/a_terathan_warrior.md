@@ -5,6 +5,8 @@ title: a terathan warrior
 
 # a terathan warrior
 
+No Photo Available
+
 ## Stats
 - STR: 166 - 215
 - DEX: 96 - 145

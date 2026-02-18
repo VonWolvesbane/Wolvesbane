@@ -5,6 +5,8 @@ title: a mongbat
 
 # a mongbat
 
+No Photo Available
+
 ## Stats
 - STR: 6 - 10
 - DEX: 26 - 38

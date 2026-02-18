@@ -5,6 +5,8 @@ title: a quartz elemental
 
 # a quartz elemental
 
+No Photo Available
+
 ## Stats
 - STR: 240 - 260
 - DEX: 70 - 80

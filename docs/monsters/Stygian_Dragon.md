@@ -5,6 +5,8 @@ title: Stygian Dragon
 
 # Stygian Dragon
 
+No Photo Available
+
 ## Stats
 - STR: 702
 - DEX: 250

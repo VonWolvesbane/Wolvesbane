@@ -5,6 +5,8 @@ title: Toxic Gargoyle Minion
 
 # Toxic Gargoyle Minion
 
+No Photo Available
+
 ## Stats
 - STR: 320 - 525
 - DEX: 356 - 525

@@ -5,6 +5,8 @@ title: a stone gargoyle
 
 # a stone gargoyle
 
+No Photo Available
+
 ## Stats
 - STR: 246 - 275
 - DEX: 76 - 95

@@ -5,6 +5,8 @@ title: a green goblin
 
 # a green goblin
 
+No Photo Available
+
 ## Stats
 - STR: 252 - 343
 - DEX: 60 - 74

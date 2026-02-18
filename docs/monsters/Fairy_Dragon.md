@@ -5,6 +5,8 @@ title: Fairy Dragon
 
 # Fairy Dragon
 
+No Photo Available
+
 ## Stats
 - STR: 512 - 558
 - DEX: 95 - 105

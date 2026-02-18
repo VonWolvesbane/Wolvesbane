@@ -5,6 +5,8 @@ title: Summoning Orb
 
 # Summoning Orb
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

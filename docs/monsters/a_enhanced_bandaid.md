@@ -5,6 +5,8 @@ title: a enhanced bandaid
 
 # a enhanced bandaid
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

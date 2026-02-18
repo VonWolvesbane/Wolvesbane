@@ -5,6 +5,8 @@ title: a corrosive slime
 
 # a corrosive slime
 
+No Photo Available
+
 ## Stats
 - STR: 22 - 34
 - DEX: 16 - 21

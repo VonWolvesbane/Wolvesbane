@@ -5,6 +5,8 @@ title: a gargoyle shade
 
 # a gargoyle shade
 
+No Photo Available
+
 ## Stats
 - STR: 76 - 78
 - DEX: 76 - 81

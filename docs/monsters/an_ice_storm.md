@@ -5,6 +5,8 @@ title: an ice storm
 
 # an ice storm
 
+No Photo Available
+
 ## Stats
 - STR: 78 - 93
 - DEX: 48 - 58

@@ -5,6 +5,8 @@ title: a mysterious wisp
 
 # a mysterious wisp
 
+No Photo Available
+
 ## Stats
 - STR: 196 - 225
 - DEX: 196 - 225

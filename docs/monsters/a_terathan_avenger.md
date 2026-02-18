@@ -5,6 +5,8 @@ title: a terathan avenger
 
 # a terathan avenger
 
+No Photo Available
+
 ## Stats
 - STR: 467 - 645
 - DEX: 77 - 95

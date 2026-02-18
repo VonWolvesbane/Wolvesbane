@@ -5,6 +5,8 @@ title: Dye Tub [Mount]
 
 # Dye Tub [Mount]
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

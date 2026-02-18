@@ -5,6 +5,8 @@ title: a chicken lizard
 
 # a chicken lizard
 
+No Photo Available
+
 ## Stats
 - STR: 74 - 95
 - DEX: 78 - 95

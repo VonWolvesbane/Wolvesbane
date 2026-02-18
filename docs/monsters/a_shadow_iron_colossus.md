@@ -5,6 +5,8 @@ title: a shadow iron colossus
 
 # a shadow iron colossus
 
+No Photo Available
+
 ## Stats
 - STR: 226 - 255
 - DEX: 126 - 145

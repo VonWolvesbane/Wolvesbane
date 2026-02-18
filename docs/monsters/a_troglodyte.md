@@ -5,6 +5,8 @@ title: a troglodyte
 
 # a troglodyte
 
+No Photo Available
+
 ## Stats
 - STR: 148 - 217
 - DEX: 91 - 120

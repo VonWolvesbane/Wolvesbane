@@ -5,6 +5,8 @@ title: a snake
 
 # a snake
 
+No Photo Available
+
 ## Stats
 - STR: 22 - 34
 - DEX: 16 - 25

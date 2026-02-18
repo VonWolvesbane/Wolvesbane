@@ -5,6 +5,8 @@ title: Crayma
 
 # Crayma
 
+No Photo Available
+
 ## Stats
 - STR: 250 - 360
 - DEX: 100 - 150

@@ -5,6 +5,8 @@ title: pet heal potion
 
 # pet heal potion
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

@@ -5,6 +5,8 @@ title: Enslaved Green Goblin
 
 # Enslaved Green Goblin
 
+No Photo Available
+
 ## Stats
 - STR: 326 - 326
 - DEX: 71 - 71

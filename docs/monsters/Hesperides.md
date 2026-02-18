@@ -5,6 +5,8 @@ title: Hesperides
 
 # Hesperides
 
+No Photo Available
+
 ## Stats
 - STR: 410 - 500
 - DEX: 401 - 500

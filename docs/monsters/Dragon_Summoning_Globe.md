@@ -5,6 +5,8 @@ title: Dragon Summoning Globe
 
 # Dragon Summoning Globe
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

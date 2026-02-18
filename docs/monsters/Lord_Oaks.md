@@ -5,6 +5,8 @@ title: Lord Oaks
 
 # Lord Oaks
 
+No Photo Available
+
 ## Stats
 - STR: 403 - 850
 - DEX: 101 - 150

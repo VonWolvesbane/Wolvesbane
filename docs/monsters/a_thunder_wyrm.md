@@ -5,6 +5,8 @@ title: a thunder wyrm
 
 # a thunder wyrm
 
+No Photo Available
+
 ## Stats
 - STR: 721 - 760
 - DEX: 101 - 130

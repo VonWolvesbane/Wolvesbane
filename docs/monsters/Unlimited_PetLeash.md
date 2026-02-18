@@ -5,6 +5,8 @@ title: Unlimited PetLeash
 
 # Unlimited PetLeash
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

@@ -5,6 +5,8 @@ title: a fetid essence
 
 # a fetid essence
 
+No Photo Available
+
 ## Stats
 - STR: 101 - 150
 - DEX: 210 - 250

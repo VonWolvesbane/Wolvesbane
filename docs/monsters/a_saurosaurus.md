@@ -5,6 +5,8 @@ title: a saurosaurus
 
 # a saurosaurus
 
+No Photo Available
+
 ## Stats
 - STR: 802 - 824
 - DEX: 201 - 220

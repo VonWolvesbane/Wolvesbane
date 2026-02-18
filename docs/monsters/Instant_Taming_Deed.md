@@ -5,6 +5,8 @@ title: Instant Taming Deed
 
 # Instant Taming Deed
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

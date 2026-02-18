@@ -5,6 +5,8 @@ title: Masters Knife
 
 # Masters Knife
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

@@ -5,6 +5,8 @@ title: a servant of Semidar
 
 # a servant of Semidar
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

@@ -5,6 +5,8 @@ title: Parrot Item
 
 # Parrot Item
 
+No Photo Available
+
 ## Dropped By
 - [You Scared?](../monsters/You_Scared.html)
 - [Death's Kiss](../monsters/Death's_Kiss.html)

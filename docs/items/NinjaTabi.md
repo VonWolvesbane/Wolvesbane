@@ -5,6 +5,8 @@ title: Ninja Tabi
 
 # Ninja Tabi
 
+No Photo Available
+
 ## Dropped By
 - [Black Order Mage](../monsters/Black_Order_Mage.html)
 - [an elite ninja](../monsters/an_elite_ninja.html)

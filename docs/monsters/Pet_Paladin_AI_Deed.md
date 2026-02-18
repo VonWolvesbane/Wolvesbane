@@ -5,6 +5,8 @@ title: Pet Paladin AI Deed
 
 # Pet Paladin AI Deed
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

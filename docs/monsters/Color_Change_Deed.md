@@ -5,6 +5,8 @@ title: Color Change Deed
 
 # Color Change Deed
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

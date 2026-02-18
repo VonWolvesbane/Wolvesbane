@@ -5,6 +5,8 @@ title: Mercutio
 
 # Mercutio
 
+No Photo Available
+
 ## Stats
 - STR: 1000 - 1300
 - DEX: 101 - 125

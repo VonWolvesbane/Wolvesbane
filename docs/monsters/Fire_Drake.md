@@ -5,6 +5,8 @@ title: Fire Drake
 
 # Fire Drake
 
+No Photo Available
+
 ## Stats
 - STR: 721 - 760
 - DEX: 101 - 130

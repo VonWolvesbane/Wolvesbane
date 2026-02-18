@@ -5,6 +5,8 @@ title: Ossein Ram
 
 # Ossein Ram
 
+No Photo Available
+
 ## Stats
 - STR: 300 - 400
 - DEX: 80 - 100

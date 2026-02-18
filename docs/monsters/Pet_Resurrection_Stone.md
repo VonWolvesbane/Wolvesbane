@@ -5,6 +5,8 @@ title: Pet Resurrection Stone
 
 # Pet Resurrection Stone
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

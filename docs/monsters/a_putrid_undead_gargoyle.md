@@ -5,6 +5,8 @@ title: a putrid undead gargoyle
 
 # a putrid undead gargoyle
 
+No Photo Available
+
 ## Stats
 - STR: 525
 - DEX: 120 - 125

@@ -5,6 +5,8 @@ title: a phoenix
 
 # a phoenix
 
+No Photo Available
+
 ## Stats
 - STR: 504 - 700
 - DEX: 202 - 300

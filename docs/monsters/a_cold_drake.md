@@ -5,6 +5,8 @@ title: a cold drake
 
 # a cold drake
 
+No Photo Available
+
 ## Stats
 - STR: 610 - 670
 - DEX: 130 - 160

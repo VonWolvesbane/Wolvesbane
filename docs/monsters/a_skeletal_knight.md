@@ -5,6 +5,8 @@ title: a skeletal knight
 
 # a skeletal knight
 
+No Photo Available
+
 ## Stats
 - STR: 196 - 250
 - DEX: 76 - 95

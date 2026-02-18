@@ -5,6 +5,8 @@ title: a bake kitsune
 
 # a bake kitsune
 
+No Photo Available
+
 ## Stats
 - STR: 171 - 220
 - DEX: 126 - 145

@@ -5,6 +5,8 @@ title: Cute Bone Mage
 
 # Cute Bone Mage
 
+No Photo Available
+
 ## Stats
 - STR: 800
 - DEX: 900

@@ -5,6 +5,8 @@ title: a crystal hydra
 
 # a crystal hydra
 
+No Photo Available
+
 ## Stats
 - STR: 800 - 830
 - DEX: 100 - 120

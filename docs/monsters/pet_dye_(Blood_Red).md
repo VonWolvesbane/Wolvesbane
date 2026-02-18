@@ -5,6 +5,8 @@ title: pet dye (Blood Red)
 
 # pet dye (Blood Red)
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

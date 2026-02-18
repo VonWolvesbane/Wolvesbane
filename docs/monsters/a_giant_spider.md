@@ -5,6 +5,8 @@ title: a giant spider
 
 # a giant spider
 
+No Photo Available
+
 ## Stats
 - STR: 76 - 100
 - DEX: 76 - 95

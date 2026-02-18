@@ -5,6 +5,8 @@ title: Slim
 
 # Slim
 
+No Photo Available
+
 ## Stats
 - STR: 150
 - DEX: 150

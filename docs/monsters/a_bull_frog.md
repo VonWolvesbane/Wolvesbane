@@ -5,6 +5,8 @@ title: a bull frog
 
 # a bull frog
 
+No Photo Available
+
 ## Stats
 - STR: 46 - 70
 - DEX: 6 - 25

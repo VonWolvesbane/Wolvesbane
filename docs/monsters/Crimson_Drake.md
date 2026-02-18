@@ -5,6 +5,8 @@ title: Crimson Drake
 
 # Crimson Drake
 
+No Photo Available
+
 ## Stats
 - STR: 400 - 430
 - DEX: 133 - 152

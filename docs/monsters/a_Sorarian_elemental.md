@@ -5,6 +5,8 @@ title: a Sorarian elemental
 
 # a Sorarian elemental
 
+No Photo Available
+
 ## Stats
 - STR: 1260 - 1550
 - DEX: 150 - 185

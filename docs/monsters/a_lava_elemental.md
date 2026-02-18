@@ -5,6 +5,8 @@ title: a lava elemental
 
 # a lava elemental
 
+No Photo Available
+
 ## Stats
 - STR: 446 - 510
 - DEX: 160 - 190

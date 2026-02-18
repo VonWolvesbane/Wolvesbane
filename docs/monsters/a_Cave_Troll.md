@@ -5,6 +5,8 @@ title: a Cave Troll
 
 # a Cave Troll
 
+No Photo Available
+
 ## Stats
 - STR: 118 - 118
 - DEX: 58 - 58

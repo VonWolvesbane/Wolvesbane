@@ -5,6 +5,8 @@ title: a sewer fiend
 
 # a sewer fiend
 
+No Photo Available
+
 ## Stats
 - STR: 261 - 285
 - DEX: 141 - 165

@@ -5,6 +5,8 @@ title: Blood Fox
 
 # Blood Fox
 
+No Photo Available
+
 ## Stats
 - STR: 300 - 320
 - DEX: 190 - 200

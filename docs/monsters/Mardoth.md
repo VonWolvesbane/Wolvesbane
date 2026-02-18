@@ -5,6 +5,8 @@ title: Mardoth
 
 # Mardoth
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

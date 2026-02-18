@@ -5,6 +5,8 @@ title: Cute Mummy
 
 # Cute Mummy
 
+No Photo Available
+
 ## Stats
 - STR: 600
 - DEX: 800

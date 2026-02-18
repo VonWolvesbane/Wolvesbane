@@ -5,6 +5,8 @@ title: Short Pants
 
 # Short Pants
 
+No Photo Available
+
 ## Dropped By
 - [Tristan Irons](../monsters/Tristan_Irons.html)
 - [A Were Wolf](../monsters/A_Were_Wolf.html)

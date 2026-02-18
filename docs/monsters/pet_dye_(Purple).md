@@ -5,6 +5,8 @@ title: pet dye (Purple)
 
 # pet dye (Purple)
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

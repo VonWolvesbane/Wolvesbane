@@ -5,6 +5,8 @@ title: the abominable snowman
 
 # the abominable snowman
 
+No Photo Available
+
 ## Stats
 - STR: 800
 - DEX: 150

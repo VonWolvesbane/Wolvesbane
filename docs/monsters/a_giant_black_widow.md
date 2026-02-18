@@ -5,6 +5,8 @@ title: a giant black widow
 
 # a giant black widow
 
+No Photo Available
+
 ## Stats
 - STR: 76 - 100
 - DEX: 96 - 115

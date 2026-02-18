@@ -5,6 +5,8 @@ title: Enslaved Gray Goblin
 
 # Enslaved Gray Goblin
 
+No Photo Available
+
 ## Stats
 - STR: 321 - 321
 - DEX: 64 - 64

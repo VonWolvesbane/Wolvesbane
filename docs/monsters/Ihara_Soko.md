@@ -5,6 +5,8 @@ title: Ihara Soko
 
 # Ihara Soko
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

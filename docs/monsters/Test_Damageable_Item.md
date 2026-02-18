@@ -5,6 +5,8 @@ title: Test Damageable Item
 
 # Test Damageable Item
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

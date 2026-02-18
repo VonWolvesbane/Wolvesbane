@@ -5,6 +5,8 @@ title: Ortanord
 
 # Ortanord
 
+No Photo Available
+
 ## Stats
 - STR: 50 - 50
 - DEX: 50 - 50

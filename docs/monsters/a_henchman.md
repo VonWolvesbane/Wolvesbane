@@ -5,6 +5,8 @@ title: a henchman
 
 # a henchman
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

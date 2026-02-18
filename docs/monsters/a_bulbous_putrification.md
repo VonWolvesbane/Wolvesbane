@@ -5,6 +5,8 @@ title: a bulbous putrification
 
 # a bulbous putrification
 
+No Photo Available
+
 ## Stats
 - STR: 755 - 800
 - DEX: 53 - 60

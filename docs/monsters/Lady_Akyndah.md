@@ -5,6 +5,8 @@ title: Lady Akyndah
 
 # Lady Akyndah
 
+No Photo Available
+
 ## Stats
 - STR: 1230
 - DEX: 1590

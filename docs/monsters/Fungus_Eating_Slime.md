@@ -5,6 +5,8 @@ title: Fungus Eating Slime
 
 # Fungus Eating Slime
 
+No Photo Available
+
 ## Stats
 - STR: 500
 - DEX: 500

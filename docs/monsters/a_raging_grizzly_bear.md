@@ -5,6 +5,8 @@ title: a raging grizzly bear
 
 # a raging grizzly bear
 
+No Photo Available
+
 ## Stats
 - STR: 1251 - 1550
 - DEX: 801 - 1050

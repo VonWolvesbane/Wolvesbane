@@ -5,6 +5,8 @@ title: a pet deed
 
 # a pet deed
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

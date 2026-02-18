@@ -5,6 +5,8 @@ title: a leather wolf
 
 # a leather wolf
 
+No Photo Available
+
 ## Stats
 - STR: 104 - 125
 - DEX: 102 - 125

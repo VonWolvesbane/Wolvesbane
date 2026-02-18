@@ -5,6 +5,8 @@ title: a crinkle dragon
 
 # a crinkle dragon
 
+No Photo Available
+
 ## Stats
 - STR: 350
 - DEX: 350

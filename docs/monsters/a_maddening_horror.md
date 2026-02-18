@@ -5,6 +5,8 @@ title: a maddening horror
 
 # a maddening horror
 
+No Photo Available
+
 ## Stats
 - STR: 270 - 290
 - DEX: 80 - 100

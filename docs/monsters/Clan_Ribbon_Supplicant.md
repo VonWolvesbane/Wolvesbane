@@ -5,6 +5,8 @@ title: Clan Ribbon Supplicant
 
 # Clan Ribbon Supplicant
 
+No Photo Available
+
 ## Stats
 - STR: 173
 - DEX: 117

@@ -5,6 +5,8 @@ title: a easter bunny pet
 
 # a easter bunny pet
 
+No Photo Available
+
 ## Stats
 - STR: 15
 - DEX: 36 - 38

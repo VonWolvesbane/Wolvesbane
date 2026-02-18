@@ -5,6 +5,8 @@ title: Le'Vel Eyetem
 
 # Le'Vel Eyetem
 
+No Photo Available
+
 ## Stats
 - STR: 1336 - 1385
 - DEX: 196 - 315

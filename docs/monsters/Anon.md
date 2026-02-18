@@ -5,6 +5,8 @@ title: Anon
 
 # Anon
 
+No Photo Available
+
 ## Stats
 - STR: 150 - 200
 - DEX: 100 - 200

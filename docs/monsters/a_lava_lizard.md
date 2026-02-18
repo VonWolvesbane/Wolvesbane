@@ -5,6 +5,8 @@ title: a lava lizard
 
 # a lava lizard
 
+No Photo Available
+
 ## Stats
 - STR: 126 - 150
 - DEX: 56 - 75

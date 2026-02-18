@@ -5,6 +5,8 @@ title: a rat
 
 # a rat
 
+No Photo Available
+
 ## Stats
 - STR: 9
 - DEX: 35

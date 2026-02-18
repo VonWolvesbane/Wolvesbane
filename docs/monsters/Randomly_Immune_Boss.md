@@ -5,6 +5,8 @@ title: Randomly Immune Boss
 
 # Randomly Immune Boss
 
+No Photo Available
+
 ## Stats
 - STR: 800 - 1000
 - DEX: 150 - 200

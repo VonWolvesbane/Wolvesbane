@@ -5,6 +5,8 @@ title: an orcish lord
 
 # an orcish lord
 
+No Photo Available
+
 ## Stats
 - STR: 147 - 215
 - DEX: 91 - 115

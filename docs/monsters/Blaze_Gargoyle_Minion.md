@@ -5,6 +5,8 @@ title: Blaze Gargoyle Minion
 
 # Blaze Gargoyle Minion
 
+No Photo Available
+
 ## Stats
 - STR: 450 - 675
 - DEX: 456 - 675

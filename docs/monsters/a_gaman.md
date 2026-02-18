@@ -5,6 +5,8 @@ title: a gaman
 
 # a gaman
 
+No Photo Available
+
 ## Stats
 - STR: 146 - 175
 - DEX: 111 - 150

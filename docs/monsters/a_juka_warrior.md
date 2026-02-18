@@ -5,6 +5,8 @@ title: a juka warrior
 
 # a juka warrior
 
+No Photo Available
+
 ## Stats
 - STR: 251 - 350
 - DEX: 61 - 80

@@ -5,6 +5,8 @@ title: Hephaistos
 
 # Hephaistos
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

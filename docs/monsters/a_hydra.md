@@ -5,6 +5,8 @@ title: a hydra
 
 # a hydra
 
+No Photo Available
+
 ## Stats
 - STR: 801 - 828
 - DEX: 105 - 118

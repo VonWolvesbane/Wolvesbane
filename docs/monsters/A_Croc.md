@@ -5,6 +5,8 @@ title: A Croc
 
 # A Croc
 
+No Photo Available
+
 ## Stats
 - STR: 176 - 200
 - DEX: 76 - 95

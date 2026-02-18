@@ -5,6 +5,8 @@ title: a timber wolf
 
 # a timber wolf
 
+No Photo Available
+
 ## Stats
 - STR: 56 - 80
 - DEX: 56 - 75

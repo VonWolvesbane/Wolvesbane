@@ -5,6 +5,8 @@ title: a polar bear
 
 # a polar bear
 
+No Photo Available
+
 ## Stats
 - STR: 116 - 140
 - DEX: 81 - 105

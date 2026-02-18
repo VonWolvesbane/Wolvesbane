@@ -5,6 +5,8 @@ title: a mountain goat
 
 # a mountain goat
 
+No Photo Available
+
 ## Stats
 - STR: 22 - 64
 - DEX: 56 - 75

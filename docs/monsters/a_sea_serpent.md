@@ -5,6 +5,8 @@ title: a sea serpent
 
 # a sea serpent
 
+No Photo Available
+
 ## Stats
 - STR: 168 - 225
 - DEX: 58 - 85

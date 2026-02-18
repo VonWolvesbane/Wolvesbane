@@ -5,6 +5,8 @@ title: a dog
 
 # a dog
 
+No Photo Available
+
 ## Stats
 - STR: 27 - 37
 - DEX: 28 - 43

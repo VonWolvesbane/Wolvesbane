@@ -5,6 +5,8 @@ title: Mandrake Root
 
 # Mandrake Root
 
+No Photo Available
+
 ## Dropped By
 - [a AshTree](../monsters/a_AshTree.html)
 - [a HeartwoodTree](../monsters/a_HeartwoodTree.html)
@@ -22,3 +24,10 @@ title: Mandrake Root
 - [a tangling root](../monsters/a_tangling_root.html)
 - [Grizelda](../monsters/Grizelda.html)
 - [Uzeraan](../monsters/Uzeraan.html)
+
+## Resist Bonuses
+- Physical: +Unknown
+- Cold: +Unknown
+- Fire: +Unknown
+- Energy: +Unknown
+- Poison: +Unknown

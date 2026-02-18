@@ -5,6 +5,8 @@ title: an orc brute
 
 # an orc brute
 
+No Photo Available
+
 ## Stats
 - STR: 767 - 945
 - DEX: 66 - 75

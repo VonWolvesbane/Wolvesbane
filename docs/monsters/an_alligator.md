@@ -5,6 +5,8 @@ title: an alligator
 
 # an alligator
 
+No Photo Available
+
 ## Stats
 - STR: 76 - 100
 - DEX: 6 - 25

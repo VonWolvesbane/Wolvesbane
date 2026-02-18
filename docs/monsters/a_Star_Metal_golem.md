@@ -5,6 +5,8 @@ title: a Star Metal golem
 
 # a Star Metal golem
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

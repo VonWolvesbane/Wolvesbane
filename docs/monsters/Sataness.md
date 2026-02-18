@@ -5,6 +5,8 @@ title: Sataness
 
 # Sataness
 
+No Photo Available
+
 ## Stats
 - STR: 5000
 - DEX: 3000

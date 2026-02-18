@@ -5,6 +5,8 @@ title: Spiders Silk
 
 # Spiders Silk
 
+No Photo Available
+
 ## Dropped By
 - [a dread spider](../monsters/a_dread_spider.html)
 - [a frost spider](../monsters/a_frost_spider.html)
@@ -16,3 +18,10 @@ title: Spiders Silk
 - [a Wolf spider](../monsters/a_Wolf_spider.html)
 - [Grizelda](../monsters/Grizelda.html)
 - [Uzeraan](../monsters/Uzeraan.html)
+
+## Resist Bonuses
+- Physical: +Unknown
+- Cold: +Unknown
+- Fire: +Unknown
+- Energy: +Unknown
+- Poison: +Unknown

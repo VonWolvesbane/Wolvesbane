@@ -5,6 +5,8 @@ title: an air elemental
 
 # an air elemental
 
+No Photo Available
+
 ## Stats
 - STR: 200
 - DEX: 200

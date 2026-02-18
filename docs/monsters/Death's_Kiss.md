@@ -5,6 +5,8 @@ title: Death's Kiss
 
 # Death's Kiss
 
+No Photo Available
+
 ## Stats
 - STR: 1100
 - DEX: 1200

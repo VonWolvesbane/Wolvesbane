@@ -5,6 +5,8 @@ title: Ribs
 
 # Ribs
 
+No Photo Available
+
 ## Dropped By
 - [Enslaved Goblin Keeper](../monsters/Enslaved_Goblin_Keeper.html)
 - [Enslaved Goblin Mage](../monsters/Enslaved_Goblin_Mage.html)

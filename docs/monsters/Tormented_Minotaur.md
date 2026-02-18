@@ -5,6 +5,8 @@ title: Tormented Minotaur
 
 # Tormented Minotaur
 
+No Photo Available
+
 ## Stats
 - STR: 822 - 930
 - DEX: 401 - 415

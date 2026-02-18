@@ -5,6 +5,8 @@ title: an energy vortex
 
 # an energy vortex
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

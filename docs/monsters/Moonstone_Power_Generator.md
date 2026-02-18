@@ -5,6 +5,8 @@ title: Moonstone Power Generator
 
 # Moonstone Power Generator
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

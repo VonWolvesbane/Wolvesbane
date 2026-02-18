@@ -5,6 +5,8 @@ title: a crow
 
 # a crow
 
+No Photo Available
+
 ## Stats
 - STR: 10
 - DEX: 25 - 35

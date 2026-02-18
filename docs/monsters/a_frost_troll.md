@@ -5,6 +5,8 @@ title: a frost troll
 
 # a frost troll
 
+No Photo Available
+
 ## Stats
 - STR: 227 - 265
 - DEX: 66 - 85

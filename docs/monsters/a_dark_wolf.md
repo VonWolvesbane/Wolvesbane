@@ -5,6 +5,8 @@ title: a dark wolf
 
 # a dark wolf
 
+No Photo Available
+
 ## Stats
 - STR: 96 - 120
 - DEX: 81 - 105

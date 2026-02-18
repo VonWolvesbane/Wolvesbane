@@ -5,6 +5,8 @@ title: Large Fire Rock
 
 # Large Fire Rock
 
+No Photo Available
+
 ## Dropped By
 - [a FireRock Elemental](../monsters/a_FireRock_Elemental.html)
 - [a FireRock Gargoyle](../monsters/a_FireRock_Gargoyle.html)

@@ -5,6 +5,8 @@ title: a high plains boura
 
 # a high plains boura
 
+No Photo Available
+
 ## Stats
 - STR: 400 - 435
 - DEX: 90 - 96

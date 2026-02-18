@@ -5,8 +5,17 @@ title: Crusader Legs
 
 # Crusader Legs
 
+No Photo Available
+
 ## Dropped By
 - [Hephastos](../monsters/Hephastos.html)
+
+## Resist Bonuses
+- Physical: +Unknown
+- Cold: +Unknown
+- Fire: +Unknown
+- Energy: +Unknown
+- Poison: +Unknown
 
 ## Skill Bonuses
 - Swords: +10

@@ -5,6 +5,8 @@ title: Zealot of Khaldun
 
 # Zealot of Khaldun
 
+No Photo Available
+
 ## Stats
 - STR: 351 - 400
 - DEX: 151 - 165

@@ -5,6 +5,8 @@ title: Peg Leg
 
 # Peg Leg
 
+No Photo Available
+
 ## Stats
 - STR: 60 - 110
 - DEX: 60 - 100

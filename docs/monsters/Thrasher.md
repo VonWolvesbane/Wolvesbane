@@ -5,6 +5,8 @@ title: Thrasher
 
 # Thrasher
 
+No Photo Available
+
 ## Stats
 - STR: 93 - 327
 - DEX: 7 - 201

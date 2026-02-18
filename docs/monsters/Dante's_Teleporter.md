@@ -5,6 +5,8 @@ title: Dante's Teleporter
 
 # Dante's Teleporter
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

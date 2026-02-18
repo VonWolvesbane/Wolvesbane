@@ -5,6 +5,8 @@ title: Blood
 
 # Blood
 
+No Photo Available
+
 ## Stats
 - STR: 220 - 286
 - DEX: 125 - 130

@@ -5,6 +5,8 @@ title: a myrmidex warrior
 
 # a myrmidex warrior
 
+No Photo Available
+
 ## Stats
 - STR: 500 - 600
 - DEX: 82 - 95

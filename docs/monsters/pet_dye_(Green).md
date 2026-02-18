@@ -5,6 +5,8 @@ title: pet dye (Green)
 
 # pet dye (Green)
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

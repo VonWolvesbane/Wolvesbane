@@ -5,6 +5,8 @@ title: a dead moose
 
 # a dead moose
 
+No Photo Available
+
 ## Stats
 - STR: 451 - 500
 - DEX: 201 - 250

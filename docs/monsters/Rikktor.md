@@ -5,6 +5,8 @@ title: Rikktor
 
 # Rikktor
 
+No Photo Available
+
 ## Stats
 - STR: 701 - 900
 - DEX: 201 - 350

@@ -5,6 +5,8 @@ title: a Dream Wraith
 
 # a Dream Wraith
 
+No Photo Available
+
 ## Stats
 - STR: 200 - 300
 - DEX: 100 - 200

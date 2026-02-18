@@ -5,6 +5,8 @@ title: a bog thing
 
 # a bog thing
 
+No Photo Available
+
 ## Stats
 - STR: 801 - 900
 - DEX: 46 - 65

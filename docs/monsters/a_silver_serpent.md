@@ -5,6 +5,8 @@ title: a silver serpent
 
 # a silver serpent
 
+No Photo Available
+
 ## Stats
 - STR: 161 - 360
 - DEX: 151 - 300

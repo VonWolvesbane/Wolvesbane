@@ -5,6 +5,8 @@ title: Megami Tensei
 
 # Megami Tensei
 
+No Photo Available
+
 ## Stats
 - STR: 6500
 - DEX: 3500

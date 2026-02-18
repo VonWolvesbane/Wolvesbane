@@ -5,6 +5,8 @@ title: Lure Stone
 
 # Lure Stone
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

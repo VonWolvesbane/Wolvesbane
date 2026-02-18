@@ -5,6 +5,8 @@ title: a chaos daemon
 
 # a chaos daemon
 
+No Photo Available
+
 ## Stats
 - STR: 106 - 130
 - DEX: 171 - 200

@@ -5,6 +5,8 @@ title: a majestic wyrm
 
 # a majestic wyrm
 
+No Photo Available
+
 ## Stats
 - STR: 800
 - DEX: 800

@@ -5,6 +5,8 @@ title: a bone demon
 
 # a bone demon
 
+No Photo Available
+
 ## Stats
 - STR: 1000
 - DEX: 151 - 175

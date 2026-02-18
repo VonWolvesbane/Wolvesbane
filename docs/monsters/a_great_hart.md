@@ -5,6 +5,8 @@ title: a great hart
 
 # a great hart
 
+No Photo Available
+
 ## Stats
 - STR: 41 - 71
 - DEX: 47 - 77

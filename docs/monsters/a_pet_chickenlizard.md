@@ -5,6 +5,8 @@ title: a pet chickenlizard
 
 # a pet chickenlizard
 
+No Photo Available
+
 ## Stats
 - STR: 1 - 5
 - DEX: 25 - 30

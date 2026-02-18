@@ -5,6 +5,8 @@ title: a Timed Training Elemental
 
 # a Timed Training Elemental
 
+No Photo Available
+
 ## Stats
 - STR: 50 - 50
 - DEX: 350 - 350

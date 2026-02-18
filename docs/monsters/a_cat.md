@@ -5,6 +5,8 @@ title: a cat
 
 # a cat
 
+No Photo Available
+
 ## Stats
 - STR: 9
 - DEX: 35

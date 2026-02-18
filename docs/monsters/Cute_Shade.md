@@ -5,6 +5,8 @@ title: Cute Shade
 
 # Cute Shade
 
+No Photo Available
+
 ## Stats
 - STR: 300
 - DEX: 300

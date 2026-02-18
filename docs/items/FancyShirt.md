@@ -5,6 +5,8 @@ title: Fancy Shirt
 
 # Fancy Shirt
 
+No Photo Available
+
 ## Dropped By
 - [Barracoon Jr](../monsters/Barracoon_Jr.html)
 - [Hippolyte](../monsters/Hippolyte.html)

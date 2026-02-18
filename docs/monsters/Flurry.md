@@ -5,6 +5,8 @@ title: Flurry
 
 # Flurry
 
+No Photo Available
+
 ## Stats
 - STR: 149 - 195
 - DEX: 218 - 264

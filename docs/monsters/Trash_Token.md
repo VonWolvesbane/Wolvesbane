@@ -5,6 +5,8 @@ title: Trash Token
 
 # Trash Token
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

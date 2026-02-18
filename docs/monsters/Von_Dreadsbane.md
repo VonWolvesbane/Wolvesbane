@@ -5,6 +5,8 @@ title: Von Dreadsbane
 
 # Von Dreadsbane
 
+No Photo Available
+
 ## Stats
 - STR: 300 - 500
 - DEX: 500 - 500

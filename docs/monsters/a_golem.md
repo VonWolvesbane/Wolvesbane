@@ -5,6 +5,8 @@ title: a golem
 
 # a golem
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

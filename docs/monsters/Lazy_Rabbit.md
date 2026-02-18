@@ -5,6 +5,8 @@ title: Lazy Rabbit
 
 # Lazy Rabbit
 
+No Photo Available
+
 ## Stats
 - STR: 496 - 525
 - DEX: 86 - 105

@@ -5,6 +5,8 @@ title: a blade spirit
 
 # a blade spirit
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

@@ -5,6 +5,8 @@ title: a satyr
 
 # a satyr
 
+No Photo Available
+
 ## Stats
 - STR: 177 - 195
 - DEX: 251 - 269

@@ -5,6 +5,8 @@ title: a deadly imp
 
 # a deadly imp
 
+No Photo Available
+
 ## Stats
 - STR: 91 - 115
 - DEX: 61 - 80

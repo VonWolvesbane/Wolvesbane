@@ -5,6 +5,8 @@ title: Cute Lich Lord
 
 # Cute Lich Lord
 
+No Photo Available
+
 ## Stats
 - STR: 1000
 - DEX: 1200

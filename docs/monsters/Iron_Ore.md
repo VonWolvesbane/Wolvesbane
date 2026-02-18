@@ -5,6 +5,8 @@ title: Iron Ore
 
 # Iron Ore
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

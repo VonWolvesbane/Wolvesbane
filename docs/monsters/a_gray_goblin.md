@@ -5,6 +5,8 @@ title: a gray goblin
 
 # a gray goblin
 
+No Photo Available
+
 ## Stats
 - STR: 258 - 327
 - DEX: 62 - 80

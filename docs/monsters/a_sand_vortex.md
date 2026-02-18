@@ -5,6 +5,8 @@ title: a sand vortex
 
 # a sand vortex
 
+No Photo Available
+
 ## Stats
 - STR: 96 - 120
 - DEX: 171 - 195

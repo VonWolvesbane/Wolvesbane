@@ -5,6 +5,8 @@ title: Cute Bone Knight
 
 # Cute Bone Knight
 
+No Photo Available
+
 ## Stats
 - STR: 800
 - DEX: 900

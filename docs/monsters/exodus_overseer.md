@@ -5,6 +5,8 @@ title: exodus overseer
 
 # exodus overseer
 
+No Photo Available
+
 ## Stats
 - STR: 561 - 650
 - DEX: 76 - 95

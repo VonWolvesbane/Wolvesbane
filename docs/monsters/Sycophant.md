@@ -5,6 +5,8 @@ title: Sycophant
 
 # Sycophant
 
+No Photo Available
+
 ## Stats
 - STR: 878 - 993
 - DEX: 581 - 683

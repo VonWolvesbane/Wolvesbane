@@ -5,6 +5,8 @@ title: a master of the arts
 
 # a master of the arts
 
+No Photo Available
+
 ## Stats
 - STR: 401 - 420
 - DEX: 81 - 90

@@ -5,6 +5,8 @@ title: Gaia
 
 # Gaia
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

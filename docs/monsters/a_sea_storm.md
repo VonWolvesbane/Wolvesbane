@@ -5,6 +5,8 @@ title: a sea storm
 
 # a sea storm
 
+No Photo Available
+
 ## Stats
 - STR: 63 - 78
 - DEX: 33 - 43

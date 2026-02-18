@@ -5,6 +5,8 @@ title: a dull copper elemental
 
 # a dull copper elemental
 
+No Photo Available
+
 ## Stats
 - STR: 226 - 255
 - DEX: 126 - 145

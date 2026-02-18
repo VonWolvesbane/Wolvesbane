@@ -5,6 +5,8 @@ title: a dread spider
 
 # a dread spider
 
+No Photo Available
+
 ## Stats
 - STR: 196 - 220
 - DEX: 126 - 145

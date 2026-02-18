@@ -5,6 +5,8 @@ title: an arcane daemon
 
 # an arcane daemon
 
+No Photo Available
+
 ## Stats
 - STR: 131 - 150
 - DEX: 126 - 145

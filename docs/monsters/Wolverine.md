@@ -5,6 +5,8 @@ title: Wolverine
 
 # Wolverine
 
+No Photo Available
+
 ## Stats
 - STR: 1350 - 3400
 - DEX: 1150 - 1200

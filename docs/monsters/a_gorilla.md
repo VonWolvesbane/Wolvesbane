@@ -5,6 +5,8 @@ title: a gorilla
 
 # a gorilla
 
+No Photo Available
+
 ## Stats
 - STR: 53 - 95
 - DEX: 36 - 55

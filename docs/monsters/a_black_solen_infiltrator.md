@@ -5,6 +5,8 @@ title: a black solen infiltrator
 
 # a black solen infiltrator
 
+No Photo Available
+
 ## Stats
 - STR: 206 - 230
 - DEX: 121 - 145

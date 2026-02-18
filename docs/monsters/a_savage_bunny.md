@@ -5,6 +5,8 @@ title: a savage bunny
 
 # a savage bunny
 
+No Photo Available
+
 ## Stats
 - STR: 15
 - DEX: 2000

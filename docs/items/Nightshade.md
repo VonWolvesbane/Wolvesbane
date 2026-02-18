@@ -5,6 +5,8 @@ title: Nightshade
 
 # Nightshade
 
+No Photo Available
+
 ## Dropped By
 - [a poison storm](../monsters/a_poison_storm.html)
 - [an acid elemental](../monsters/an_acid_elemental.html)
@@ -15,3 +17,10 @@ title: Nightshade
 - [a poison elemental](../monsters/a_poison_elemental.html)
 - [Grizelda](../monsters/Grizelda.html)
 - [Uzeraan](../monsters/Uzeraan.html)
+
+## Resist Bonuses
+- Physical: +Unknown
+- Cold: +Unknown
+- Fire: +Unknown
+- Energy: +Unknown
+- Poison: +Unknown

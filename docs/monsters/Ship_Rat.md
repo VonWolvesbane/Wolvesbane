@@ -5,6 +5,8 @@ title: Ship Rat
 
 # Ship Rat
 
+No Photo Available
+
 ## Stats
 - STR: 32 - 74
 - DEX: 46 - 65

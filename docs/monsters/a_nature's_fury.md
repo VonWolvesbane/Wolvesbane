@@ -5,6 +5,8 @@ title: a nature's fury
 
 # a nature's fury
 
+No Photo Available
+
 ## Stats
 - STR: 150
 - DEX: 150

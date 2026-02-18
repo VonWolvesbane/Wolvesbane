@@ -5,6 +5,8 @@ title: a Revenant Lion
 
 # a Revenant Lion
 
+No Photo Available
+
 ## Stats
 - STR: 276 - 325
 - DEX: 156 - 175

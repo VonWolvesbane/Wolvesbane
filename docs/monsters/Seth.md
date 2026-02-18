@@ -5,6 +5,8 @@ title: Seth
 
 # Seth
 
+No Photo Available
+
 ## Stats
 - STR: 666
 - DEX: 666

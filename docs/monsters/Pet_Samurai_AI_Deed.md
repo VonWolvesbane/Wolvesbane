@@ -5,6 +5,8 @@ title: Pet Samurai AI Deed
 
 # Pet Samurai AI Deed
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

@@ -5,6 +5,8 @@ title: Gargoyles Knife
 
 # Gargoyles Knife
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

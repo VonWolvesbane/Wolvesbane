@@ -5,6 +5,8 @@ title: Myrmidex Queen
 
 # Myrmidex Queen
 
+No Photo Available
+
 ## Stats
 - STR: 900 - 1000
 - DEX: 800 - 850

@@ -5,6 +5,8 @@ title: a snow storm
 
 # a snow storm
 
+No Photo Available
+
 ## Stats
 - STR: 163 - 178
 - DEX: 83 - 93

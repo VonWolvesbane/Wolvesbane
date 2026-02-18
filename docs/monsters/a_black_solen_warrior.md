@@ -5,6 +5,8 @@ title: a black solen warrior
 
 # a black solen warrior
 
+No Photo Available
+
 ## Stats
 - STR: 196 - 220
 - DEX: 101 - 125

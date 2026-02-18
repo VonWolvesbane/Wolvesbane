@@ -5,6 +5,8 @@ title: Enslaved Goblin Scout
 
 # Enslaved Goblin Scout
 
+No Photo Available
+
 ## Stats
 - STR: 320 - 320
 - DEX: 74 - 74

@@ -5,6 +5,8 @@ title: a mechanical black widow
 
 # a mechanical black widow
 
+No Photo Available
+
 ## Stats
 - STR: 280 - 500
 - DEX: 216 - 515

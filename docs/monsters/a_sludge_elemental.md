@@ -5,6 +5,8 @@ title: a sludge elemental
 
 # a sludge elemental
 
+No Photo Available
+
 ## Stats
 - STR: 426 - 455
 - DEX: 166 - 185

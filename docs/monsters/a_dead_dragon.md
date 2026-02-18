@@ -5,6 +5,8 @@ title: a dead dragon
 
 # a dead dragon
 
+No Photo Available
+
 ## Stats
 - STR: 1000
 - DEX: 1000

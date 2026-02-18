@@ -5,6 +5,8 @@ title: a giant ice worm
 
 # a giant ice worm
 
+No Photo Available
+
 ## Stats
 - STR: 216 - 245
 - DEX: 76 - 100

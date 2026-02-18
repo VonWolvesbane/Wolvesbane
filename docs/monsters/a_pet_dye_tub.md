@@ -5,6 +5,8 @@ title: a pet dye tub
 
 # a pet dye tub
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

@@ -5,6 +5,8 @@ title: a boar
 
 # a boar
 
+No Photo Available
+
 ## Stats
 - STR: 25
 - DEX: 15

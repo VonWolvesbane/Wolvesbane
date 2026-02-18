@@ -5,6 +5,8 @@ title: a fecal construct
 
 # a fecal construct
 
+No Photo Available
+
 ## Stats
 - STR: 276 - 300
 - DEX: 151 - 175

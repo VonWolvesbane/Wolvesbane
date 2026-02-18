@@ -5,6 +5,8 @@ title: a Wight
 
 # a Wight
 
+No Photo Available
+
 ## Stats
 - STR: 150 - 200
 - DEX: 50 - 60

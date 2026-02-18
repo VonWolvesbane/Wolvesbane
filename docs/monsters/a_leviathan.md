@@ -5,6 +5,8 @@ title: a leviathan
 
 # a leviathan
 
+No Photo Available
+
 ## Stats
 - STR: 1000
 - DEX: 501 - 520

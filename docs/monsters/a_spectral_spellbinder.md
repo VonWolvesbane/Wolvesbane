@@ -5,6 +5,8 @@ title: a spectral spellbinder
 
 # a spectral spellbinder
 
+No Photo Available
+
 ## Stats
 - STR: 46 - 70
 - DEX: 47 - 65

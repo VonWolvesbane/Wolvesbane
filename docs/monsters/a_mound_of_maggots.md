@@ -5,6 +5,8 @@ title: a mound of maggots
 
 # a mound of maggots
 
+No Photo Available
+
 ## Stats
 - STR: 61 - 70
 - DEX: 61 - 70

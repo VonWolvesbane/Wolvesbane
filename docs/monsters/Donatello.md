@@ -5,6 +5,8 @@ title: Donatello
 
 # Donatello
 
+No Photo Available
+
 ## Stats
 - STR: 1350 - 2400
 - DEX: 1150 - 1200

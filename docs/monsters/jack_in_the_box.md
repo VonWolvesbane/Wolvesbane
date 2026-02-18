@@ -5,6 +5,8 @@ title: jack in the box
 
 # jack in the box
 
+No Photo Available
+
 ## Stats
 - STR: 200 - 300
 - DEX: 150 - 200

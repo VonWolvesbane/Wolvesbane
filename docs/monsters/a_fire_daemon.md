@@ -5,6 +5,8 @@ title: a fire daemon
 
 # a fire daemon
 
+No Photo Available
+
 ## Stats
 - STR: 504 - 539
 - DEX: 126 - 145

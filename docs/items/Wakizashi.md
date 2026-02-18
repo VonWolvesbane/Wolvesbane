@@ -5,8 +5,17 @@ title: Wakizashi
 
 # Wakizashi
 
+No Photo Available
+
 ## Dropped By
 - [an elite ninja](../monsters/an_elite_ninja.html)
 - [a ronin](../monsters/a_ronin.html)
 - [Black Order Thief](../monsters/Black_Order_Thief.html)
 - [a young ronin](../monsters/a_young_ronin.html)
+
+## Resist Bonuses
+- Physical: +Unknown
+- Cold: +Unknown
+- Fire: +Unknown
+- Energy: +Unknown
+- Poison: +Unknown

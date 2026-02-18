@@ -5,6 +5,8 @@ title: XmlQuestNPC
 
 # XmlQuestNPC
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

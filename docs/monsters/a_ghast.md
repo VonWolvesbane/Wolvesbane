@@ -5,6 +5,8 @@ title: a ghast
 
 # a ghast
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

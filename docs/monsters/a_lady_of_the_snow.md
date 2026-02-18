@@ -5,6 +5,8 @@ title: a lady of the snow
 
 # a lady of the snow
 
+No Photo Available
+
 ## Stats
 - STR: 276 - 305
 - DEX: 106 - 125

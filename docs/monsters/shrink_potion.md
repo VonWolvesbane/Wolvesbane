@@ -5,6 +5,8 @@ title: shrink potion
 
 # shrink potion
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

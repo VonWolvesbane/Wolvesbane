@@ -5,6 +5,8 @@ title: an enslaved minion
 
 # an enslaved minion
 
+No Photo Available
+
 ## Stats
 - STR: 90 - 110
 - DEX: 90 - 110

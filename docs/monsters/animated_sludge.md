@@ -5,6 +5,8 @@ title: animated sludge
 
 # animated sludge
 
+No Photo Available
+
 ## Stats
 - STR: 161 - 170
 - DEX: 161 - 170

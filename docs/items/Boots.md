@@ -5,6 +5,8 @@ title: Boots
 
 # Boots
 
+No Photo Available
+
 ## Dropped By
 - [a dark father](../monsters/a_dark_father.html)
 - [Hippolyte](../monsters/Hippolyte.html)

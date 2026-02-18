@@ -5,6 +5,8 @@ title: a drake
 
 # a drake
 
+No Photo Available
+
 ## Stats
 - STR: 401 - 430
 - DEX: 133 - 152

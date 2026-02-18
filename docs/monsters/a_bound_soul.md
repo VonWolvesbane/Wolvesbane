@@ -5,6 +5,8 @@ title: a bound soul
 
 # a bound soul
 
+No Photo Available
+
 ## Stats
 - STR: 150 - 180
 - DEX: 120 - 150

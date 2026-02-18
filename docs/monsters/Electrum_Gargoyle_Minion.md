@@ -5,6 +5,8 @@ title: Electrum Gargoyle Minion
 
 # Electrum Gargoyle Minion
 
+No Photo Available
+
 ## Stats
 - STR: 320 - 525
 - DEX: 356 - 525

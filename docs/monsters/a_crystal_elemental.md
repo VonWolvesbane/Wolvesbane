@@ -5,6 +5,8 @@ title: a crystal elemental
 
 # a crystal elemental
 
+No Photo Available
+
 ## Stats
 - STR: 136 - 160
 - DEX: 51 - 65

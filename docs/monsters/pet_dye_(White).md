@@ -5,6 +5,8 @@ title: pet dye (White)
 
 # pet dye (White)
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

@@ -5,6 +5,8 @@ title: Grizelda
 
 # Grizelda
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

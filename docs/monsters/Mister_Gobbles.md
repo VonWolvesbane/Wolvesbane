@@ -5,6 +5,8 @@ title: Mister Gobbles
 
 # Mister Gobbles
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

@@ -5,6 +5,8 @@ title: exodus minion
 
 # exodus minion
 
+No Photo Available
+
 ## Stats
 - STR: 851 - 950
 - DEX: 71 - 80

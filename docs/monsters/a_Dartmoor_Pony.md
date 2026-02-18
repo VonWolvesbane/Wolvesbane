@@ -5,6 +5,8 @@ title: a Dartmoor Pony
 
 # a Dartmoor Pony
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

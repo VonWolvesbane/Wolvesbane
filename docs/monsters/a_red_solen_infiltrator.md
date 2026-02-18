@@ -5,6 +5,8 @@ title: a red solen infiltrator
 
 # a red solen infiltrator
 
+No Photo Available
+
 ## Stats
 - STR: 206 - 230
 - DEX: 121 - 145

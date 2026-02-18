@@ -5,6 +5,8 @@ title: Cute Lich
 
 # Cute Lich
 
+No Photo Available
+
 ## Stats
 - STR: 800
 - DEX: 900

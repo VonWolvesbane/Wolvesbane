@@ -5,6 +5,8 @@ title: a dragon turtle
 
 # a dragon turtle
 
+No Photo Available
+
 ## Stats
 - STR: 750 - 800
 - DEX: 185 - 240

@@ -5,6 +5,8 @@ title: a green goblin scout
 
 # a green goblin scout
 
+No Photo Available
+
 ## Stats
 - STR: 276 - 309
 - DEX: 65 - 79

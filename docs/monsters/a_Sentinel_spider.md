@@ -5,6 +5,8 @@ title: a Sentinel spider
 
 # a Sentinel spider
 
+No Photo Available
+
 ## Stats
 - STR: 95 - 100
 - DEX: 140 - 145

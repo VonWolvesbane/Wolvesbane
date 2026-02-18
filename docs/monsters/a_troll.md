@@ -5,6 +5,8 @@ title: a troll
 
 # a troll
 
+No Photo Available
+
 ## Stats
 - STR: 176 - 205
 - DEX: 46 - 65

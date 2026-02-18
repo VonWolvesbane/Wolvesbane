@@ -5,6 +5,8 @@ title: SpellBook renamer
 
 # SpellBook renamer
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

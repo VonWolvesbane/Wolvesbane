@@ -5,6 +5,8 @@ title: Exodus Juggernaut
 
 # Exodus Juggernaut
 
+No Photo Available
+
 ## Stats
 - STR: 1506 - 1565
 - DEX: 92 - 99

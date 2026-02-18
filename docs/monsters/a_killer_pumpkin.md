@@ -5,6 +5,8 @@ title: a killer pumpkin
 
 # a killer pumpkin
 
+No Photo Available
+
 ## Stats
 - STR: 350
 - DEX: 125

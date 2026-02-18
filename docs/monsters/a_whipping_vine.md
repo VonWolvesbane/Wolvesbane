@@ -5,6 +5,8 @@ title: a whipping vine
 
 # a whipping vine
 
+No Photo Available
+
 ## Stats
 - STR: 251 - 300
 - DEX: 76 - 100

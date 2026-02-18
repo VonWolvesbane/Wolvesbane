@@ -5,6 +5,8 @@ title: a kepetch ambusher
 
 # a kepetch ambusher
 
+No Photo Available
+
 ## Stats
 - STR: 440 - 446
 - DEX: 229 - 254

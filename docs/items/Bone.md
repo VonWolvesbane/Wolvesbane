@@ -5,6 +5,8 @@ title: Bone
 
 # Bone
 
+No Photo Available
+
 ## Dropped By
 - [A Huge Snake](../monsters/A_Huge_Snake.html)
 - [an ant lion](../monsters/an_ant_lion.html)
@@ -17,3 +19,10 @@ title: Bone
 - [a skeletal mage](../monsters/a_skeletal_mage.html)
 - [Zombie Skeleton](../monsters/Zombie_Skeleton.html)
 - [Skelemental Mage](../monsters/Skelemental_Mage.html)
+
+## Resist Bonuses
+- Physical: +Unknown
+- Cold: +Unknown
+- Fire: +Unknown
+- Energy: +Unknown
+- Poison: +Unknown

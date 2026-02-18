@@ -5,6 +5,8 @@ title: a wood elemental
 
 # a wood elemental
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

@@ -5,6 +5,8 @@ title: Ilhenir
 
 # Ilhenir
 
+No Photo Available
+
 ## Stats
 - STR: 1105 - 1350
 - DEX: 82 - 160

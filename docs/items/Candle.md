@@ -5,6 +5,8 @@ title: Candle
 
 # Candle
 
+No Photo Available
+
 ## Dropped By
 - [Enslaved Goblin Keeper](../monsters/Enslaved_Goblin_Keeper.html)
 - [Enslaved Goblin Mage](../monsters/Enslaved_Goblin_Mage.html)
@@ -17,3 +19,10 @@ title: Candle
 - [a gray goblin mage](../monsters/a_gray_goblin_mage.html)
 - [a green goblin](../monsters/a_green_goblin.html)
 - [a green goblin alchemist](../monsters/a_green_goblin_alchemist.html)
+
+## Resist Bonuses
+- Physical: +Unknown
+- Cold: +Unknown
+- Fire: +Unknown
+- Energy: +Unknown
+- Poison: +Unknown

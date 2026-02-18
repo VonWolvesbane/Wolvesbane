@@ -5,6 +5,8 @@ title: Linked Gate
 
 # Linked Gate
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

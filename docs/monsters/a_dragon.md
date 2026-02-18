@@ -5,6 +5,8 @@ title: a dragon
 
 # a dragon
 
+No Photo Available
+
 ## Stats
 - STR: 796 - 825
 - DEX: 86 - 105

@@ -5,6 +5,8 @@ title: Clan Scratch Tinkerer
 
 # Clan Scratch Tinkerer
 
+No Photo Available
+
 ## Stats
 - STR: 300 - 330
 - DEX: 220 - 240

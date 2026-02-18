@@ -5,6 +5,8 @@ title: a myrmidex drone
 
 # a myrmidex drone
 
+No Photo Available
+
 ## Stats
 - STR: 76 - 105
 - DEX: 96 - 136

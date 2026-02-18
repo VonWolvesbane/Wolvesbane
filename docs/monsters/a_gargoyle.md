@@ -5,6 +5,8 @@ title: a gargoyle
 
 # a gargoyle
 
+No Photo Available
+
 ## Stats
 - STR: 146 - 175
 - DEX: 76 - 95

@@ -5,6 +5,8 @@ title: an eagle
 
 # an eagle
 
+No Photo Available
+
 ## Stats
 - STR: 31 - 47
 - DEX: 36 - 60

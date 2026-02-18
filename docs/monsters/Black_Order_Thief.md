@@ -5,6 +5,8 @@ title: Black Order Thief
 
 # Black Order Thief
 
+No Photo Available
+
 ## Stats
 - STR: 340 - 360
 - DEX: 400 - 415

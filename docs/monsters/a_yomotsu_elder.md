@@ -5,6 +5,8 @@ title: a yomotsu elder
 
 # a yomotsu elder
 
+No Photo Available
+
 ## Stats
 - STR: 686 - 830
 - DEX: 251 - 365

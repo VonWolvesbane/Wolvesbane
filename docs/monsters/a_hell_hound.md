@@ -5,6 +5,8 @@ title: a hell hound
 
 # a hell hound
 
+No Photo Available
+
 ## Stats
 - STR: 100 - 350
 - DEX: 80 - 300

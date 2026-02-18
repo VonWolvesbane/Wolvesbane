@@ -5,6 +5,8 @@ title: a gremlin
 
 # a gremlin
 
+No Photo Available
+
 ## Stats
 - STR: 106
 - DEX: 130

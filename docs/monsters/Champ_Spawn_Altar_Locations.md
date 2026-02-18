@@ -5,6 +5,8 @@ title: Champ Spawn Altar Locations
 
 # Champ Spawn Altar Locations
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

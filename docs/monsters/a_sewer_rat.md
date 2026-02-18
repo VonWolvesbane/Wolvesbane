@@ -5,6 +5,8 @@ title: a sewer rat
 
 # a sewer rat
 
+No Photo Available
+
 ## Stats
 - STR: 9
 - DEX: 25

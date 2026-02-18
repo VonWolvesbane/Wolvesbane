@@ -5,6 +5,8 @@ title: a toxic slith
 
 # a toxic slith
 
+No Photo Available
+
 ## Stats
 - STR: 223 - 306
 - DEX: 231 - 258

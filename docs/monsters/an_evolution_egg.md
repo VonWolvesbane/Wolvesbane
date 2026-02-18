@@ -5,6 +5,8 @@ title: an evolution egg
 
 # an evolution egg
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

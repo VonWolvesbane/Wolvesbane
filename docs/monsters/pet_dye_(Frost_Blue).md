@@ -5,6 +5,8 @@ title: pet dye (Frost Blue)
 
 # pet dye (Frost Blue)
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

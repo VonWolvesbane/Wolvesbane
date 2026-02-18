@@ -5,6 +5,8 @@ title: a full body cast
 
 # a full body cast
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

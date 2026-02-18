@@ -5,6 +5,8 @@ title: Long Hair
 
 # Long Hair
 
+No Photo Available
+
 ## Dropped By
 - [Hippolyte](../monsters/Hippolyte.html)
 - [Orochimaru](../monsters/Orochimaru.html)

@@ -5,6 +5,8 @@ title: Medusa
 
 # Medusa
 
+No Photo Available
+
 ## Stats
 - STR: 1235 - 1391
 - DEX: 128 - 139

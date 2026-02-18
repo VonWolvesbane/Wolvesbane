@@ -5,6 +5,8 @@ title: an abyssmal horror
 
 # an abyssmal horror
 
+No Photo Available
+
 ## Stats
 - STR: 401 - 420
 - DEX: 81 - 90

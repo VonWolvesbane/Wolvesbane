@@ -5,6 +5,8 @@ title: a corpser
 
 # a corpser
 
+No Photo Available
+
 ## Stats
 - STR: 156 - 180
 - DEX: 26 - 45

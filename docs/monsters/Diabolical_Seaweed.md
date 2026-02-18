@@ -5,6 +5,8 @@ title: Diabolical Seaweed
 
 # Diabolical Seaweed
 
+No Photo Available
+
 ## Stats
 - STR: 452 - 485
 - DEX: 401 - 420

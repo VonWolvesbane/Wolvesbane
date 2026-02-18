@@ -5,6 +5,8 @@ title: a spectre
 
 # a spectre
 
+No Photo Available
+
 ## Stats
 - STR: 76 - 100
 - DEX: 76 - 95

@@ -5,6 +5,8 @@ title: a hind
 
 # a hind
 
+No Photo Available
+
 ## Stats
 - STR: 21 - 51
 - DEX: 47 - 77

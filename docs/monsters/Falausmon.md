@@ -5,6 +5,8 @@ title: Falausmon
 
 # Falausmon
 
+No Photo Available
+
 ## Stats
 - STR: 8400
 - DEX: 8400

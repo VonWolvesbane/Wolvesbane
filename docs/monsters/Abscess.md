@@ -5,6 +5,8 @@ title: Abscess
 
 # Abscess
 
+No Photo Available
+
 ## Stats
 - STR: 845 - 871
 - DEX: 121 - 134

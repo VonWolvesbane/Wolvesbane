@@ -5,6 +5,8 @@ title: a fan dancer
 
 # a fan dancer
 
+No Photo Available
+
 ## Stats
 - STR: 301 - 375
 - DEX: 201 - 255

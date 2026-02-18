@@ -5,6 +5,8 @@ title: Exodus Sentinel
 
 # Exodus Sentinel
 
+No Photo Available
+
 ## Stats
 - STR: 854 - 934
 - DEX: 81 - 90

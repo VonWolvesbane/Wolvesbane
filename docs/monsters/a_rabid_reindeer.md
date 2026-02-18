@@ -5,6 +5,8 @@ title: a rabid reindeer
 
 # a rabid reindeer
 
+No Photo Available
+
 ## Stats
 - STR: 800
 - DEX: 150

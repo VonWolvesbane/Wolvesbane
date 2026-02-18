@@ -5,6 +5,8 @@ title: Stone Monster
 
 # Stone Monster
 
+No Photo Available
+
 ## Stats
 - STR: 150 - 320
 - DEX: 94 - 190

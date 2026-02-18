@@ -5,6 +5,8 @@ title: Shanty
 
 # Shanty
 
+No Photo Available
+
 ## Stats
 - STR: 386 - 400
 - DEX: 151 - 165

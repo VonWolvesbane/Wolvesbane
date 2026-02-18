@@ -5,6 +5,8 @@ title: Crockett Scarr
 
 # Crockett Scarr
 
+No Photo Available
+
 ## Stats
 - STR: 1250
 - DEX: 1500

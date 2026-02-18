@@ -5,6 +5,8 @@ title: a soulbound pirate captain
 
 # a soulbound pirate captain
 
+No Photo Available
+
 ## Stats
 - STR: 150 - 200
 - DEX: 150

@@ -5,6 +5,8 @@ title: a black solen worker
 
 # a black solen worker
 
+No Photo Available
+
 ## Stats
 - STR: 96 - 120
 - DEX: 81 - 105

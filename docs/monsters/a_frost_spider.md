@@ -5,6 +5,8 @@ title: a frost spider
 
 # a frost spider
 
+No Photo Available
+
 ## Stats
 - STR: 76 - 100
 - DEX: 126 - 145

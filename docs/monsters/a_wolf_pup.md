@@ -5,6 +5,8 @@ title: a wolf pup
 
 # a wolf pup
 
+No Photo Available
+
 ## Stats
 - STR: 400
 - DEX: 100

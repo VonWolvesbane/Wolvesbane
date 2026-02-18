@@ -5,6 +5,8 @@ title: Frost Mite
 
 # Frost Mite
 
+No Photo Available
+
 ## Stats
 - STR: 1017
 - DEX: 164

@@ -5,6 +5,8 @@ title: The Hydra of Lerna
 
 # The Hydra of Lerna
 
+No Photo Available
+
 ## Stats
 - STR: 416 - 505
 - DEX: 146 - 165

@@ -5,6 +5,8 @@ title: a flesh golem
 
 # a flesh golem
 
+No Photo Available
+
 ## Stats
 - STR: 176 - 200
 - DEX: 51 - 75

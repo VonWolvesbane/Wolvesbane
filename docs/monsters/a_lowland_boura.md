@@ -5,6 +5,8 @@ title: a lowland boura
 
 # a lowland boura
 
+No Photo Available
+
 ## Stats
 - STR: 337 - 411
 - DEX: 82 - 93

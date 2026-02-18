@@ -5,6 +5,8 @@ title: an ancient reaper
 
 # an ancient reaper
 
+No Photo Available
+
 ## Stats
 - STR: 150 - 375
 - DEX: 100 - 175

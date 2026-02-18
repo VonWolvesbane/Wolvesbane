@@ -5,6 +5,8 @@ title: a vampire bat
 
 # a vampire bat
 
+No Photo Available
+
 ## Stats
 - STR: 91 - 110
 - DEX: 91 - 115

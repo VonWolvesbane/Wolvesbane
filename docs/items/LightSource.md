@@ -5,6 +5,8 @@ title: Light Source
 
 # Light Source
 
+No Photo Available
+
 ## Dropped By
 - [Death Vortex](../monsters/Death_Vortex.html)
 - [a FireRock Elemental](../monsters/a_FireRock_Elemental.html)
@@ -16,3 +18,10 @@ title: Light Source
 - [a shadow wisp](../monsters/a_shadow_wisp.html)
 - [a wisp](../monsters/a_wisp.html)
 - [a fire elemental](../monsters/a_fire_elemental.html)
+
+## Resist Bonuses
+- Physical: +Unknown
+- Cold: +Unknown
+- Fire: +Unknown
+- Energy: +Unknown
+- Poison: +Unknown

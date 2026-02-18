@@ -5,6 +5,8 @@ title: an orc scout
 
 # an orc scout
 
+No Photo Available
+
 ## Stats
 - STR: 96 - 120
 - DEX: 101 - 130

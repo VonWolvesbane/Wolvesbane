@@ -5,6 +5,8 @@ title: Paralithode
 
 # Paralithode
 
+No Photo Available
+
 ## Stats
 - STR: 642 - 729
 - DEX: 87 - 103

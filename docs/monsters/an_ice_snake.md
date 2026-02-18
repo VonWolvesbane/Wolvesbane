@@ -5,6 +5,8 @@ title: an ice snake
 
 # an ice snake
 
+No Photo Available
+
 ## Stats
 - STR: 42 - 54
 - DEX: 36 - 45

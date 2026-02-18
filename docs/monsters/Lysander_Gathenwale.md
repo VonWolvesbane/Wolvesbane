@@ -5,6 +5,8 @@ title: Lysander Gathenwale
 
 # Lysander Gathenwale
 
+No Photo Available
+
 ## Stats
 - STR: 111 - 120
 - DEX: 71 - 80

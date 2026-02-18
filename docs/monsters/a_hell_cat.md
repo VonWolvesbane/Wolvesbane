@@ -5,6 +5,8 @@ title: a hell cat
 
 # a hell cat
 
+No Photo Available
+
 ## Stats
 - STR: 51 - 100
 - DEX: 52 - 150

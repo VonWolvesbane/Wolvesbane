@@ -5,6 +5,8 @@ title: hitching post east deed
 
 # hitching post east deed
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

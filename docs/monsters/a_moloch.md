@@ -5,6 +5,8 @@ title: a moloch
 
 # a moloch
 
+No Photo Available
+
 ## Stats
 - STR: 331 - 360
 - DEX: 66 - 85

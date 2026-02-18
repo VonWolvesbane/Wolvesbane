@@ -5,6 +5,8 @@ title: a giant toad
 
 # a giant toad
 
+No Photo Available
+
 ## Stats
 - STR: 76 - 100
 - DEX: 6 - 25

@@ -5,6 +5,8 @@ title: Warrior
 
 # Warrior
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

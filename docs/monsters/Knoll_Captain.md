@@ -5,6 +5,8 @@ title: Knoll Captain
 
 # Knoll Captain
 
+No Photo Available
+
 ## Stats
 - STR: 10000
 - DEX: 10000

@@ -5,6 +5,8 @@ title: a ship key
 
 # a ship key
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

@@ -5,6 +5,8 @@ title: Everlasting Bandage
 
 # Everlasting Bandage
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

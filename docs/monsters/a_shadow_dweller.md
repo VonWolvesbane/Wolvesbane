@@ -5,6 +5,8 @@ title: a shadow dweller
 
 # a shadow dweller
 
+No Photo Available
+
 ## Stats
 - STR: 171 - 200
 - DEX: 126 - 145

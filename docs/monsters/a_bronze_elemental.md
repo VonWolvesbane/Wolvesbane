@@ -5,6 +5,8 @@ title: a bronze elemental
 
 # a bronze elemental
 
+No Photo Available
+
 ## Stats
 - STR: 226 - 255
 - DEX: 126 - 145

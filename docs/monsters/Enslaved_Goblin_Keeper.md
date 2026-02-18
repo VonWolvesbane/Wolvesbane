@@ -5,6 +5,8 @@ title: Enslaved Goblin Keeper
 
 # Enslaved Goblin Keeper
 
+No Photo Available
+
 ## Stats
 - STR: 297 - 297
 - DEX: 80 - 80

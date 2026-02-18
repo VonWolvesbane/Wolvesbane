@@ -5,6 +5,8 @@ title: an orcish mage
 
 # an orcish mage
 
+No Photo Available
+
 ## Stats
 - STR: 116 - 150
 - DEX: 91 - 115

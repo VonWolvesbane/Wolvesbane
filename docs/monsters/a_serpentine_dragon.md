@@ -5,6 +5,8 @@ title: a serpentine dragon
 
 # a serpentine dragon
 
+No Photo Available
+
 ## Stats
 - STR: 111 - 140
 - DEX: 201 - 220

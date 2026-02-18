@@ -5,6 +5,8 @@ title: Cultist Ambusher
 
 # Cultist Ambusher
 
+No Photo Available
+
 ## Stats
 - STR: 150 - 200
 - DEX: 150

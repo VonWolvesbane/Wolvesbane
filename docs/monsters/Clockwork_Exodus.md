@@ -5,6 +5,8 @@ title: Clockwork Exodus
 
 # Clockwork Exodus
 
+No Photo Available
+
 ## Stats
 - STR: 851 - 950
 - DEX: 581 - 683

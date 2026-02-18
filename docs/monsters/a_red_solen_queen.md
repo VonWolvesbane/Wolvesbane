@@ -5,6 +5,8 @@ title: a red solen queen
 
 # a red solen queen
 
+No Photo Available
+
 ## Stats
 - STR: 296 - 320
 - DEX: 121 - 145

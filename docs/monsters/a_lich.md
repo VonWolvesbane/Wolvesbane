@@ -5,6 +5,8 @@ title: a lich
 
 # a lich
 
+No Photo Available
+
 ## Stats
 - STR: 171 - 200
 - DEX: 126 - 145

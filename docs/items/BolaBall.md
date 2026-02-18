@@ -5,6 +5,8 @@ title: Bola Ball
 
 # Bola Ball
 
+No Photo Available
+
 ## Dropped By
 - [Enslaved Goblin Keeper](../monsters/Enslaved_Goblin_Keeper.html)
 - [Enslaved Goblin Mage](../monsters/Enslaved_Goblin_Mage.html)
@@ -20,3 +22,10 @@ title: Bola Ball
 - [an orc bomber](../monsters/an_orc_bomber.html)
 - [an orc brute](../monsters/an_orc_brute.html)
 - [an orcish lord](../monsters/an_orcish_lord.html)
+
+## Resist Bonuses
+- Physical: +Unknown
+- Cold: +Unknown
+- Fire: +Unknown
+- Energy: +Unknown
+- Poison: +Unknown

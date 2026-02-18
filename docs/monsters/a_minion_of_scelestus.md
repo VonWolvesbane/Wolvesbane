@@ -5,6 +5,8 @@ title: a minion of scelestus
 
 # a minion of scelestus
 
+No Photo Available
+
 ## Stats
 - STR: 375 - 405
 - DEX: 175 - 200

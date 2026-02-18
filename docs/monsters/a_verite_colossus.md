@@ -5,6 +5,8 @@ title: a verite colossus
 
 # a verite colossus
 
+No Photo Available
+
 ## Stats
 - STR: 226 - 255
 - DEX: 126 - 145

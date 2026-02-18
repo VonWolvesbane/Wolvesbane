@@ -5,6 +5,8 @@ title: a kaze kemono
 
 # a kaze kemono
 
+No Photo Available
+
 ## Stats
 - STR: 201 - 275
 - DEX: 101 - 155

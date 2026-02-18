@@ -5,6 +5,8 @@ title: Tristan Irons
 
 # Tristan Irons
 
+No Photo Available
+
 ## Stats
 - STR: 96 - 105
 - DEX: 91 - 100

@@ -5,6 +5,8 @@ title: a soulbound swashbuckler
 
 # a soulbound swashbuckler
 
+No Photo Available
+
 ## Stats
 - STR: 120 - 130
 - DEX: 105 - 115

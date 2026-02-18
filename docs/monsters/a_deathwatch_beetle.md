@@ -5,6 +5,8 @@ title: a deathwatch beetle
 
 # a deathwatch beetle
 
+No Photo Available
+
 ## Stats
 - STR: 136 - 160
 - DEX: 41 - 52

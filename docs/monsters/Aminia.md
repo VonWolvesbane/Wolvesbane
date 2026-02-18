@@ -5,6 +5,8 @@ title: Aminia
 
 # Aminia
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

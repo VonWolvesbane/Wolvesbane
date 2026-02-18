@@ -5,6 +5,8 @@ title: a horde minion
 
 # a horde minion
 
+No Photo Available
+
 ## Stats
 - STR: 16 - 40
 - DEX: 31 - 60

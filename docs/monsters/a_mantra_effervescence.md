@@ -5,6 +5,8 @@ title: a mantra effervescence
 
 # a mantra effervescence
 
+No Photo Available
+
 ## Stats
 - STR: 130 - 150
 - DEX: 120 - 130

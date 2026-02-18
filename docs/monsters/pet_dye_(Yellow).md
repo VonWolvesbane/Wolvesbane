@@ -5,6 +5,8 @@ title: pet dye (Yellow)
 
 # pet dye (Yellow)
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

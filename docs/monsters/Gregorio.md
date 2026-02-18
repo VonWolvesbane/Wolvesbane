@@ -5,6 +5,8 @@ title: Gregorio
 
 # Gregorio
 
+No Photo Available
+
 ## Stats
 - STR: 86 - 100
 - DEX: 81 - 95

@@ -5,6 +5,8 @@ title: a snow elemental
 
 # a snow elemental
 
+No Photo Available
+
 ## Stats
 - STR: 326 - 355
 - DEX: 166 - 185

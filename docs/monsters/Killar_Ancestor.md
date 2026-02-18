@@ -5,6 +5,8 @@ title: Killar Ancestor
 
 # Killar Ancestor
 
+No Photo Available
+
 ## Stats
 - STR: 1800
 - DEX: 1510 - 1750

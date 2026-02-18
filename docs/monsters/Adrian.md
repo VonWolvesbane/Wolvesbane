@@ -5,6 +5,8 @@ title: Adrian
 
 # Adrian
 
+No Photo Available
+
 ## Stats
 - STR: 900 - 1200
 - DEX: 500 - 600

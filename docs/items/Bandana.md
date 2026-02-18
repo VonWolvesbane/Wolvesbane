@@ -5,6 +5,8 @@ title: Bandana
 
 # Bandana
 
+No Photo Available
+
 ## Dropped By
 - [A Were Wolf](../monsters/A_Were_Wolf.html)
 - [a young ninja](../monsters/a_young_ninja.html)

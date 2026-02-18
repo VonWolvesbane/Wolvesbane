@@ -5,6 +5,8 @@ title: a ruddy boura
 
 # a ruddy boura
 
+No Photo Available
+
 ## Stats
 - STR: 396 - 480
 - DEX: 68 - 82

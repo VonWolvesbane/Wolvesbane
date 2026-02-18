@@ -5,6 +5,8 @@ title: a battle chicken lizard
 
 # a battle chicken lizard
 
+No Photo Available
+
 ## Stats
 - STR: 94 - 177
 - DEX: 78 - 124

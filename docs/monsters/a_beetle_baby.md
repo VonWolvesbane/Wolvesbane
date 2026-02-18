@@ -5,6 +5,8 @@ title: a beetle baby
 
 # a beetle baby
 
+No Photo Available
+
 ## Stats
 - STR: 95 - 115
 - DEX: 55 - 100

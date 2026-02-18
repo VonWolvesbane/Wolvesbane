@@ -5,6 +5,8 @@ title: a pestilent bandage
 
 # a pestilent bandage
 
+No Photo Available
+
 ## Stats
 - STR: 691 - 740
 - DEX: 141 - 180

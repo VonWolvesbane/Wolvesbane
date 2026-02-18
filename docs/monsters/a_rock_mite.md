@@ -5,6 +5,8 @@ title: a rock mite
 
 # a rock mite
 
+No Photo Available
+
 ## Stats
 - STR: 733 - 754
 - DEX: 126 - 144

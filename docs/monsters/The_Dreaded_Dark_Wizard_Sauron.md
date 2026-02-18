@@ -5,6 +5,8 @@ title: The Dreaded Dark Wizard Sauron
 
 # The Dreaded Dark Wizard Sauron
 
+No Photo Available
+
 ## Stats
 - STR: 1700 - 2800
 - DEX: 1691 - 2315

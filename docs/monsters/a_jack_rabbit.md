@@ -5,6 +5,8 @@ title: a jack rabbit
 
 # a jack rabbit
 
+No Photo Available
+
 ## Stats
 - STR: 15
 - DEX: 25

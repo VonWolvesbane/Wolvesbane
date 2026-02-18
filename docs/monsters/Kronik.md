@@ -5,6 +5,8 @@ title: Kronik
 
 # Kronik
 
+No Photo Available
+
 ## Stats
 - STR: 3500
 - DEX: 2350

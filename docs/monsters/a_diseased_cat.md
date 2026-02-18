@@ -5,6 +5,8 @@ title: a diseased cat
 
 # a diseased cat
 
+No Photo Available
+
 ## Stats
 - STR: 9
 - DEX: 35

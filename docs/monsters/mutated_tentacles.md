@@ -5,6 +5,8 @@ title: mutated tentacles
 
 # mutated tentacles
 
+No Photo Available
+
 ## Stats
 - STR: 196 - 220
 - DEX: 166 - 185

@@ -5,6 +5,8 @@ title: a dark guardian
 
 # a dark guardian
 
+No Photo Available
+
 ## Stats
 - STR: 125 - 150
 - DEX: 100 - 120

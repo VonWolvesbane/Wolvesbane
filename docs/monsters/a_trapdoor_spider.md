@@ -5,6 +5,8 @@ title: a trapdoor spider
 
 # a trapdoor spider
 
+No Photo Available
+
 ## Stats
 - STR: 100 - 104
 - DEX: 162 - 165

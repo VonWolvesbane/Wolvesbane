@@ -5,6 +5,8 @@ title: Tattered Ancient Scroll
 
 # Tattered Ancient Scroll
 
+No Photo Available
+
 ## Dropped By
 - [Navrey Night-Eyes](../monsters/Navrey_Night-Eyes.html)
 - [a putrid undead gargoyle](../monsters/a_putrid_undead_gargoyle.html)

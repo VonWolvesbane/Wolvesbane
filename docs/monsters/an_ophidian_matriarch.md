@@ -5,6 +5,8 @@ title: an ophidian matriarch
 
 # an ophidian matriarch
 
+No Photo Available
+
 ## Stats
 - STR: 416 - 505
 - DEX: 96 - 115

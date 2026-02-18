@@ -5,6 +5,8 @@ title: a juka lord
 
 # a juka lord
 
+No Photo Available
+
 ## Stats
 - STR: 401 - 500
 - DEX: 81 - 100

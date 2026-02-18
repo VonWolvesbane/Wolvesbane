@@ -5,6 +5,8 @@ title: pet dye (Gold)
 
 # pet dye (Gold)
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

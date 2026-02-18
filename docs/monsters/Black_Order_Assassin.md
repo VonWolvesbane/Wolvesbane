@@ -5,6 +5,8 @@ title: Black Order Assassin
 
 # Black Order Assassin
 
+No Photo Available
+
 ## Stats
 - STR: 440 - 460
 - DEX: 160 - 175

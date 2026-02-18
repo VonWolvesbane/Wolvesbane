@@ -5,6 +5,8 @@ title: a bone mage
 
 # a bone mage
 
+No Photo Available
+
 ## Stats
 - STR: 76 - 100
 - DEX: 56 - 75

@@ -5,6 +5,8 @@ title: Invasion
 
 # Invasion
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

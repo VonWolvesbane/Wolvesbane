@@ -5,6 +5,8 @@ title: weapon pad
 
 # weapon pad
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

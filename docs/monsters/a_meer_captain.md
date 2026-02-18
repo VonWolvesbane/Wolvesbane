@@ -5,6 +5,8 @@ title: a meer captain
 
 # a meer captain
 
+No Photo Available
+
 ## Stats
 - STR: 96 - 110
 - DEX: 186 - 200

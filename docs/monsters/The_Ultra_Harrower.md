@@ -5,6 +5,8 @@ title: The Ultra Harrower
 
 # The Ultra Harrower
 
+No Photo Available
+
 ## Stats
 - STR: 1000
 - DEX: 150

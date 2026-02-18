@@ -5,6 +5,8 @@ title: a cyclopean warrior
 
 # a cyclopean warrior
 
+No Photo Available
+
 ## Stats
 - STR: 336 - 385
 - DEX: 96 - 115

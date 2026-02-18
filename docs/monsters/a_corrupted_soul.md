@@ -5,6 +5,8 @@ title: a corrupted soul
 
 # a corrupted soul
 
+No Photo Available
+
 ## Stats
 - STR: 102 - 115
 - DEX: 101 - 115

@@ -5,6 +5,8 @@ title: a chaos dragoon elite
 
 # a chaos dragoon elite
 
+No Photo Available
+
 ## Stats
 - STR: 276 - 350
 - DEX: 66 - 90

@@ -5,6 +5,8 @@ title: Cutlass
 
 # Cutlass
 
+No Photo Available
+
 ## Dropped By
 - [Krass Kringle](../monsters/Krass_Kringle.html)
 - [Tristan Irons](../monsters/Tristan_Irons.html)
@@ -13,3 +15,10 @@ title: Cutlass
 - [a soulbound pirate captain](../monsters/a_soulbound_pirate_captain.html)
 - [a soulbound pirate raider](../monsters/a_soulbound_pirate_raider.html)
 - [a soulbound swashbuckler](../monsters/a_soulbound_swashbuckler.html)
+
+## Resist Bonuses
+- Physical: +Unknown
+- Cold: +Unknown
+- Fire: +Unknown
+- Energy: +Unknown
+- Poison: +Unknown

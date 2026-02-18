@@ -5,6 +5,8 @@ title: Platinum Gargoyle Minion
 
 # Platinum Gargoyle Minion
 
+No Photo Available
+
 ## Stats
 - STR: 700 - 1000
 - DEX: 500 - 1000

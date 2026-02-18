@@ -5,6 +5,8 @@ title: Void Pool Controller
 
 # Void Pool Controller
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

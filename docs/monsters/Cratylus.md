@@ -5,6 +5,8 @@ title: Cratylus
 
 # Cratylus
 
+No Photo Available
+
 ## Stats
 - STR: 3000
 - DEX: 2000

@@ -5,6 +5,8 @@ title: a bio-engienered clone
 
 # a bio-engienered clone
 
+No Photo Available
+
 ## Stats
 - STR: 1
 - DEX: 1

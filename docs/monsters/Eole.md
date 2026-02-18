@@ -5,6 +5,8 @@ title: Eole
 
 # Eole
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

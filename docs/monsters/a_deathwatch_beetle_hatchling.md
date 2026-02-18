@@ -5,6 +5,8 @@ title: a deathwatch beetle hatchling
 
 # a deathwatch beetle hatchling
 
+No Photo Available
+
 ## Stats
 - STR: 26 - 50
 - DEX: 41 - 52

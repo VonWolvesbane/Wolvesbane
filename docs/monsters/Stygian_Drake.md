@@ -5,6 +5,8 @@ title: Stygian Drake
 
 # Stygian Drake
 
+No Photo Available
+
 ## Stats
 - STR: 790 - 830
 - DEX: 85 - 125

@@ -5,6 +5,8 @@ title: a giant serpent
 
 # a giant serpent
 
+No Photo Available
+
 ## Stats
 - STR: 186 - 215
 - DEX: 56 - 80

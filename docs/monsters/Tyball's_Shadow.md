@@ -5,6 +5,8 @@ title: Tyball's Shadow
 
 # Tyball's Shadow
 
+No Photo Available
+
 ## Stats
 - STR: 400 - 450
 - DEX: 210 - 250

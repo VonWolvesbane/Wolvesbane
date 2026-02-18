@@ -5,6 +5,8 @@ title: a greater dragon
 
 # a greater dragon
 
+No Photo Available
+
 ## Stats
 - STR: 1025 - 1425
 - DEX: 81 - 148

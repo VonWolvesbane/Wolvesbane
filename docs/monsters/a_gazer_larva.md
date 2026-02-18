@@ -5,6 +5,8 @@ title: a gazer larva
 
 # a gazer larva
 
+No Photo Available
+
 ## Stats
 - STR: 76 - 100
 - DEX: 51 - 75

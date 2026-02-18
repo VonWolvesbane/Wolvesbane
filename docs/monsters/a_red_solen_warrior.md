@@ -5,6 +5,8 @@ title: a red solen warrior
 
 # a red solen warrior
 
+No Photo Available
+
 ## Stats
 - STR: 196 - 220
 - DEX: 101 - 125

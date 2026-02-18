@@ -5,6 +5,8 @@ title: an Effete putrid gargoyle
 
 # an Effete putrid gargoyle
 
+No Photo Available
+
 ## Stats
 - STR: 215 - 220
 - DEX: 90 - 95

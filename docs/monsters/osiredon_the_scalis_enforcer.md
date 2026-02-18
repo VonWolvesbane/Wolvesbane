@@ -5,6 +5,8 @@ title: osiredon the scalis enforcer
 
 # osiredon the scalis enforcer
 
+No Photo Available
+
 ## Stats
 - STR: 805 - 900
 - DEX: 121 - 165

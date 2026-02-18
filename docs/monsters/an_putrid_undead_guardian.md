@@ -5,6 +5,8 @@ title: an putrid undead guardian
 
 # an putrid undead guardian
 
+No Photo Available
+
 ## Stats
 - STR: 79
 - DEX: 63

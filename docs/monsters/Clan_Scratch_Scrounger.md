@@ -5,6 +5,8 @@ title: Clan Scratch Scrounger
 
 # Clan Scratch Scrounger
 
+No Photo Available
+
 ## Stats
 - STR: 97 - 100
 - DEX: 98 - 100

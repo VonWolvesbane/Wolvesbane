@@ -5,6 +5,8 @@ title: Barracoon
 
 # Barracoon
 
+No Photo Available
+
 ## Stats
 - STR: 283 - 425
 - DEX: 72 - 150

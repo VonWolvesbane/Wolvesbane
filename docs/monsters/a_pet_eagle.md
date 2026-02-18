@@ -5,6 +5,8 @@ title: a pet eagle
 
 # a pet eagle
 
+No Photo Available
+
 ## Stats
 - STR: 1 - 5
 - DEX: 25 - 30

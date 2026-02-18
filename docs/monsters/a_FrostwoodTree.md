@@ -5,6 +5,8 @@ title: a FrostwoodTree
 
 # a FrostwoodTree
 
+No Photo Available
+
 ## Stats
 - STR: 666 - 815
 - DEX: 66 - 75

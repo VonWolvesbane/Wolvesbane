@@ -5,6 +5,8 @@ title: a toxic storm
 
 # a toxic storm
 
+No Photo Available
+
 ## Stats
 - STR: 163 - 178
 - DEX: 33 - 43

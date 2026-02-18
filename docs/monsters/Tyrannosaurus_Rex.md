@@ -5,6 +5,8 @@ title: Tyrannosaurus Rex
 
 # Tyrannosaurus Rex
 
+No Photo Available
+
 ## Stats
 - STR: 500 - 700
 - DEX: 500 - 700

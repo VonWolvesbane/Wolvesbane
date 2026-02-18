@@ -5,6 +5,8 @@ title: a Steward
 
 # a Steward
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

@@ -5,6 +5,8 @@ title: an unfrozen mummy
 
 # an unfrozen mummy
 
+No Photo Available
+
 ## Stats
 - STR: 450 - 500
 - DEX: 200 - 250

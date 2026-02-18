@@ -5,6 +5,8 @@ title: Gargoyle Minion
 
 # Gargoyle Minion
 
+No Photo Available
+
 ## Stats
 - STR: 300 - 500
 - DEX: 300 - 500

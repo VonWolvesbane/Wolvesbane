@@ -5,6 +5,8 @@ title: Spawns
 
 # Spawns
 
+No Photo Available
+
 ## Stats
 - STR: Unknown
 - DEX: Unknown

@@ -5,6 +5,8 @@ title: a twisted holidy tree
 
 # a twisted holidy tree
 
+No Photo Available
+
 ## Stats
 - STR: 400
 - DEX: 150
