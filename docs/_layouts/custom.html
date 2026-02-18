@@ -1,28 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
+  <meta charset="UTF-8">
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
 </head>
 
 <body>
 
-    <!-- Banner -->
-    <div class="banner-container">
-        <img src="{{ page.banner | relative_url }}" class="page-banner">
+  <!-- ================= HEADER ROW ================= -->
+  <div class="header-row">
+
+    <!-- Left Logo -->
+    <div class="header-left">
+      <a href="{{ '/' | relative_url }}">
+        <img src="{{ '/images/site_logo.png' | relative_url }}" class="header-logo" alt="Site Logo">
+      </a>
     </div>
 
-    <!-- Logo under banner (top-left) -->
-    <div class="logo-wrapper">
-        <a href="{{ '/' | relative_url }}">
-            <img src="{{ '/images/site_logo.png' | relative_url }}" class="site-logo">
-        </a>
+    <!-- Center Banner (GLOBAL - same for all pages) -->
+    <div class="header-center">
+      <img src="{{ '/images/site_banner.jpg' | relative_url }}" class="header-banner" alt="Wolvesbane Banner">
     </div>
 
-    <div class="page-content">
-        {{ content }}
+    <!-- Right Logo -->
+    <div class="header-right">
+      <img src="{{ '/images/site_logo.png' | relative_url }}" class="header-logo" alt="Site Logo">
     </div>
+
+  </div>
+
+  <!-- ================= NAVIGATION ================= -->
+  <nav class="nav-bar">
+    <a href="{{ '/monsters/' | relative_url }}">Monsters</a>
+    <a href="{{ '/tamables/' | relative_url }}">Tamables</a>
+    <a href="{{ '/items/' | relative_url }}">Items</a>
+    <a href="{{ '/armor/' | relative_url }}">Armor</a>
+    <a href="{{ '/weapons/' | relative_url }}">Weapons</a>
+  </nav>
+
+  <!-- ================= PAGE CONTENT ================= -->
+  <div class="page-content">
+    {{ content }}
+  </div>
 
 </body>
 </html>
