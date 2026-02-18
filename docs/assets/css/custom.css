@@ -49,3 +49,20 @@
 .nav-bar a:hover {
   color: #ffffff;
 }
+html, body {
+  background-color: #111 !important;
+  color: #e6e6e6 !important;
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Arial, sans-serif;
+}
+
+/* Make entire page dark */
+body {
+  background-color: #111 !important;
+}
+
+/* Ensure main wrapper isn't white */
+.page-content {
+  background-color: #111 !important;
+}
