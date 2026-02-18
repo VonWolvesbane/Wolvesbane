@@ -24,7 +24,7 @@
 .header-banner {
   max-height: 160px;   /* Adjust if needed */
   width: auto;
-  max-width: 100%;
+  max-width: 200%;
   object-fit: contain; /* SHOW ENTIRE BANNER */
 }
 
