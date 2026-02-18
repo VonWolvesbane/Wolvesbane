@@ -3,16 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <title>{{ page.title }}</title>
-
     <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
 </head>
 
 <body>
 
-    <!-- Site Logo -->
-    <div class="site-header">
-        <img src="{{ '/images/site_logo.png' | relative_url }}" class="site-logo">
-    </div>
+    <!-- Top Header Bar -->
+    <header class="site-header">
+
+        <!-- Logo Left -->
+        <div class="logo-container">
+            <a href="{{ '/' | relative_url }}">
+                <img src="{{ '/images/site_logo.png' | relative_url }}" class="site-logo">
+            </a>
+        </div>
+
+        <!-- Site Title (optional) -->
+        <div class="site-title">
+            Wolvesbane Wiki
+        </div>
+
+    </header>
 
     <!-- Page Banner -->
     <div class="banner-container">

@@ -1,7 +1,7 @@
 ---
 layout: custom
 title: Items
-banner: /images/default_banner.jpg
+banner: /images/default_banner.png
 ---
 
 # Items
