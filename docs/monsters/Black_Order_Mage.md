@@ -23,4 +23,4 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: FancyShirt, Hakama, Kasa, NinjaTabi
+- Items: DragonFlameSectBadge, FancyShirt, Hakama, Kasa, NinjaTabi

@@ -23,4 +23,4 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: Blight, Corruption, Muculent, Putrefication, RandomTalisman, Scourge, Taint
+- Items: Blight, BonePile, Corruption, CrimsonCincture, LightYarn, MalletAndChisel, MinotaurHedge, Muculent, Putrefication, RandomTalisman, Scourge, Taint, TormentedChains

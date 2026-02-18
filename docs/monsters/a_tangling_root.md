@@ -23,4 +23,4 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: Board, Log, MandrakeRoot
+- Items: Board, Log, LuckyCoin, MandrakeRoot

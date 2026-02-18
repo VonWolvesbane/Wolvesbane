@@ -23,4 +23,4 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: TatteredAncientScroll, UntranslatedAncientTome
+- Items: LuckyCoin, TatteredAncientScroll, UntranslatedAncientTome

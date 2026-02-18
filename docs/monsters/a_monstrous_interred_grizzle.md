@@ -23,4 +23,4 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: None Listed
+- Items: GlobOfMonstreousInterredGrizzle, GrizzleGauntlets, GrizzleGreaves, GrizzleHelm, GrizzleTunic, GrizzleVambraces, GrizzledBones, GrizzledMareStatuette, GrizzledSkullCollection, MonsterousInterredGrizzleMaggots, ParrotItem, TombstoneOfTheDamned

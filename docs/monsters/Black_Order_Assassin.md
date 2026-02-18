@@ -23,4 +23,4 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: FancyShirt, JinBaori, StuddedMempo, ThighBoots
+- Items: FancyShirt, JinBaori, SerpentFangSectBadge, StuddedMempo, ThighBoots

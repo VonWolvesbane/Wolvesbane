@@ -23,4 +23,4 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: Apple, Arrow, Bow
+- Items: Apple, Arrow, Bow, LuckyCoin

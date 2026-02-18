@@ -23,4 +23,4 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: Bandage, Ribs
+- Items: Bandage, PrimitiveFetish, Ribs

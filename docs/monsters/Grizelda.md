@@ -23,4 +23,4 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: GoldBracelet, Robe, Sandals, WizardsHat
+- Items: BlackPearl, Bloodmoss, Cauldron, Garlic, Ginseng, Gold, GoldBracelet, HangoverCure, MandrakeRoot, MoonfireBrew, Nightshade, Robe, Sandals, SpidersSilk, SulfurousAsh, TreasureMap, WizardsHat

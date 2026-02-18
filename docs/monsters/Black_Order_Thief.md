@@ -23,4 +23,4 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: FancyShirt, JinBaori, StuddedMempo, ThighBoots, Wakizashi
+- Items: FancyShirt, JinBaori, StuddedMempo, ThighBoots, TigerClawSectBadge, Wakizashi

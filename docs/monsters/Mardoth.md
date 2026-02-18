@@ -23,4 +23,4 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: BlackStaff, Robe, Sandals, WizardsHat
+- Items: BankCheck, BatWing, BlackStaff, DaemonBlood, EnchantedSextant, GraveDust, NoxCrystal, PigIron, Robe, Sandals, WizardsHat

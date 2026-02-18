@@ -23,4 +23,4 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: Arrow, Bandage, BeverageBottle, Board, ExecutionersAxe, Jug, Lockpick, Log, Ribs, Shaft, Yeast
+- Items: Arrow, Bandage, BeverageBottle, Board, DoubleAxe, EvilOrcHelm, ExecutionersAxe, Jug, Lockpick, Log, Ribs, Shaft, Yeast

@@ -23,4 +23,4 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: FertileDirt, MandrakeRoot
+- Items: FertileDirt, LuckyCoin, MandrakeRoot

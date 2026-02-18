@@ -23,4 +23,4 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: Robe, Shoes, WizardsHat
+- Items: Bandage, BankCheck, BlackPearl, Bloodmoss, EnchantedSextant, ExplosionScroll, Garlic, Ginseng, Gold, LesserHealPotion, MagicWizardsHat, MandrakeRoot, MarkScroll, NightSightPotion, Nightshade, RecallRune, RecallScroll, Robe, Shoes, Shovel, SpidersSilk, SulfurousAsh, TreasureMap, UzeraanTurmoilHorn, WizardsHat

@@ -23,4 +23,4 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: RawRibs
+- Items: KepetchWax, RawRibs

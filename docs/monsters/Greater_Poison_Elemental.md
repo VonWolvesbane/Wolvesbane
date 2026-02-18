@@ -23,4 +23,4 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: LesserPoisonPotion, Nightshade
+- Items: LesserPoisonPotion, LuckyCoin, Nightshade

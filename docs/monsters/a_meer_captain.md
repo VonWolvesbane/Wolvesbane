@@ -23,4 +23,4 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: Crossbow
+- Items: Bolt, Broadsword, Crossbow, Cutlass, Katana, Longsword, Scimitar, VikingSword

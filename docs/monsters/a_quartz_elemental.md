@@ -23,4 +23,4 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: SulfurousAsh
+- Items: CorrosiveAsh, CursedOilstone, QuartzGrit, ShameCrystal, SulfurousAsh

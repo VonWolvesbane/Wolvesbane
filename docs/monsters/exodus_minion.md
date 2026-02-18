@@ -23,4 +23,4 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: ArcaneGem, ClockworkAssembly, PowerCrystal
+- Items: ArcaneGem, ClockworkAssembly, MechanicalComponent, PowerCrystal

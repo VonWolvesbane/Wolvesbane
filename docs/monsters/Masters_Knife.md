@@ -23,4 +23,4 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: None Listed
+- Items: BarbedHides, BlazeHides, DaemonicHides, EtherealHides, FrostHides, Hides, HornedHides, PolarHides, ShadowHides, SpinedHides, SyntheticHides

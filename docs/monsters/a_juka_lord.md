@@ -23,4 +23,4 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: JukaBow
+- Items: ArcaneGem, Arrow, Bandage, JukaBow

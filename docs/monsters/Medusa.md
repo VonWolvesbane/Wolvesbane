@@ -23,4 +23,4 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: Arrow
+- Items: Arrow, MedusaBlood, MedusaDarkScales, MedusaStatue

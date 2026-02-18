@@ -23,4 +23,4 @@ None Listed
 
 ## Loot
 - Gold: 20000 - 30000
-- Items: None Listed
+- Items: ArmsofExpertAnimalTaming, CapofExpertAnimalTaming, EarringsofExpertAnimalTaming, GlovesofExpertAnimalTaming, GorgetofExpertAnimalTaming, InstaTameDeed, LegsofExpertAnimalTaming, PetMageAIDeed, PetMysticAIDeed, PetNecroAIDeed, PetPaladinAIDeed, PetSamuraiAIDeed, PetSpellweavingAIDeed, RingofExpertAnimalTaming, TunicofExpertAnimalTaming

@@ -23,4 +23,4 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: BlackPowder, Charcoal, ExecutionersCap, FertileDirt, Potash, Robe, Saltpeter, Sandals, SulfurousAsh
+- Items: BlackPowder, Charcoal, ExecutionersCap, FertileDirt, Potash, Robe, Saltpeter, Sandals, ShameCrystal, SulfurousAsh, VoidCore

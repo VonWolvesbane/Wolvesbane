@@ -23,4 +23,4 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: None Listed
+- Items: LardOfParoxysmus, ParoxysmusCorrodedStein, ParoxysmusDinner, ParoxysmusSwampDragonStatuette, ParrotItem, ScepterOfTheChief, StringOfPartsOfParoxysmusVictims, SweatOfParoxysmus

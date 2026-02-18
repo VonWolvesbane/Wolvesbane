@@ -23,4 +23,4 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: Bone
+- Items: Bone, RareSerpentEgg1, RareSerpentEgg2, RareSerpentEgg3, RareSerpentEgg4

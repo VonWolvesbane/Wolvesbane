@@ -23,4 +23,4 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: FancyShirt, FullApron, JesterHat, LongPants, Shoes
+- Items: FancyShirt, FullApron, Gold, JesterHat, LongPants, Obsidian, Shoes

@@ -23,4 +23,4 @@ None Listed
 
 ## Loot
 - Gold: 400 - 600
-- Items: HoodedShroudOfShadows
+- Items: HoodedShroudOfShadows, SkillMount, SkillMountBeetle, SkillMountChimera, SkillMountCuShide, SkillMountDemon, SkillMountHorse, SkillMountKirin, SkillMountLlama, SkillMountOstard, SkillMountPolarB, SkillMountRidgeback, SkillMountSwampDragon, SkillMountUnicorn

@@ -23,4 +23,4 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: Boots, ExecutionersAxe, FancyShirt, HalfApron, ShortPants, TricorneHat
+- Items: Boots, ExecutionersAxe, FancyShirt, HalfApron, MagicDrakeWing, ShortPants, TricorneHat
