@@ -6,3 +6,11 @@ title: Stern Anchor of the BMV Ararat
 # Stern Anchor of the BMV Ararat
 
 No Photo Available
+
+## Loot
+
+### Guaranteed Drops
+None
+
+### Random Drops
+None

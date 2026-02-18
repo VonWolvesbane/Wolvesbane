@@ -7,8 +7,10 @@ title: The Staff Ring
 
 No Photo Available
 
+## Loot
 
-## Regeneration Bonuses
-- Hits: +12
-- Stam: +24
-- Mana: +18
+### Guaranteed Drops
+None
+
+### Random Drops
+None
