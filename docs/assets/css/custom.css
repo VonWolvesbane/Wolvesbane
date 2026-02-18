@@ -1,3 +1,17 @@
+html, body {
+  background-color: #111;
+  color: #e6e6e6;
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Arial, sans-serif;
+}
+
+/* your main content area */
+.page-content {
+  background-color: #111;
+}
+
+
 /* ================= HEADER ROW ================= */
 
 .header-row {
