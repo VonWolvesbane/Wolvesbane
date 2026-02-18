@@ -16,8 +16,8 @@ body {
 /* Show the FULL banner image (no cropping) */
 .page-banner {
   width: 100%;
-  height: auto;          /* key: don't force height */
-  max-height: 260px;     /* optional cap; raise if needed */
+  height: 100%;          /* key: don't force height */
+  max-height: 2600px;     /* optional cap; raise if needed */
   object-fit: contain;   /* key: show whole image */
   display: block;
 }
