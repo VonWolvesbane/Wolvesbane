@@ -3,36 +3,33 @@ layout: default
 title: a sheep
 ---
 
-# a sheep — Unknown
-
-**No Photo Available**
+# a sheep
 
 ## Stats
 - STR: 19
 - DEX: 25
 - INT: 5
 - Hits: 12
-- Damage: 1 - 2
-- Fame/Karma: 300 / 0
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 5 - 10
+- Fire: Unknown
+- Cold: Unknown
+- Poison: Unknown
+- Energy: Unknown
 
 ## Taming Info
 - Tamable: Yes
 - Control Slots: 1
+- AI Type: AI_Animal
 
 ## Damage Types
 - Physical: 100%
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

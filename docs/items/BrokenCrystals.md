@@ -5,8 +5,5 @@ title: Broken Crystals
 
 # Broken Crystals
 
-Class Name: `BrokenCrystals`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [an unfrozen mummy](../monsters/an_unfrozen_mummy.html)

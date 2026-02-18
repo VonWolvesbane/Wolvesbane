@@ -5,8 +5,7 @@ title: Paragon Chest
 
 # Paragon Chest
 
-Class Name: `ParagonChest`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [Stygian Dragon](../monsters/Stygian_Dragon.html)
+- [Abscess](../monsters/Abscess.html)
+- [Putrefier](../monsters/Putrefier.html)

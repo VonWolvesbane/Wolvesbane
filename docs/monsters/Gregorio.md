@@ -3,29 +3,25 @@ layout: default
 title: Gregorio
 ---
 
-# Gregorio — the brigand
-
-**No Photo Available**
+# Gregorio
 
 ## Stats
 - STR: 86 - 100
 - DEX: 81 - 95
 - INT: 61 - 75
 - Hits: Unknown
-- Damage: 15 - 27
-- Fame/Karma: Unknown / Unknown
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 10 - 15
+- Fire: 10 - 15
+- Cold: Unknown
+- Poison: 10 - 15
+- Energy: 10 - 15
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: 50 - 150
 
 ### Guaranteed Drops
 - [Pitchfork](../items/Pitchfork.html)
@@ -34,5 +30,5 @@ None Listed
 - [Short Pants](../items/ShortPants.html)
 - [Skull Cap](../items/SkullCap.html)
 
-### Random Drops
+### Potential Item Drops
 None

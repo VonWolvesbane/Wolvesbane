@@ -5,8 +5,6 @@ title: Shovel
 
 # Shovel
 
-Class Name: `Shovel`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [an orcish lord](../monsters/an_orcish_lord.html)
+- [Uzeraan](../monsters/Uzeraan.html)

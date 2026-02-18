@@ -3,32 +3,28 @@ layout: default
 title: an earth elemental
 ---
 
-# an earth elemental — Unknown
-
-**No Photo Available**
+# an earth elemental
 
 ## Stats
 - STR: 200
 - DEX: 70
 - INT: 70
 - Hits: 180
-- Damage: 14 - 21
-- Fame/Karma: Unknown / Unknown
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 65 - 75
+- Fire: 40 - 50
+- Cold: 40 - 50
+- Poison: 40 - 50
+- Energy: 40 - 50
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

@@ -5,8 +5,5 @@ title: Rough Stone
 
 # Rough Stone
 
-Class Name: `RoughStone`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [a stone elemental](../monsters/a_stone_elemental.html)

@@ -5,8 +5,5 @@ title: Buy Backpack
 
 # Buy Backpack
 
-Class Name: `BuyBackpack`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [a mysterious wisp](../monsters/a_mysterious_wisp.html)

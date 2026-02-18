@@ -3,32 +3,28 @@ layout: default
 title: The Dreaded Dark Wizard Sauron
 ---
 
-# The Dreaded Dark Wizard Sauron — Deciever of The UnderWorld
-
-**No Photo Available**
+# The Dreaded Dark Wizard Sauron
 
 ## Stats
 - STR: 1700 - 2800
 - DEX: 1691 - 2315
 - INT: 1100 - 1520
 - Hits: 5320 - 6725
-- Damage: 35 - 45
-- Fame/Karma: 25000 / -2500
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 95 - 100
+- Fire: 95 - 100
+- Cold: 95 - 100
+- Poison: 95 - 100
+- Energy: 100 - 110
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [The Head Of Sauron](../items/TheHeadOfSauron.html)
 
-### Random Drops
+### Potential Item Drops
 None

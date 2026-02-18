@@ -3,32 +3,28 @@ layout: default
 title: a terathan matriarch
 ---
 
-# a terathan matriarch — Unknown
-
-**No Photo Available**
+# a terathan matriarch
 
 ## Stats
 - STR: 316 - 405
 - DEX: 96 - 115
 - INT: 366 - 455
 - Hits: 190 - 243
-- Damage: 11 - 14
-- Fame/Karma: 10000 / -10000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 45 - 55
+- Fire: 30 - 40
+- Cold: 35 - 45
+- Poison: 40 - 50
+- Energy: 35 - 45
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Spiders Silk](../items/SpidersSilk.html)
 
-### Random Drops
+### Potential Item Drops
 None

@@ -3,32 +3,28 @@ layout: default
 title: a golden elemental
 ---
 
-# a golden elemental — Unknown
-
-**No Photo Available**
+# a golden elemental
 
 ## Stats
 - STR: 226 - 255
 - DEX: 126 - 145
 - INT: 71 - 92
 - Hits: 136 - 153
-- Damage: 9 - 16
-- Fame/Karma: 3500 / -3500
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 60 - 75
+- Fire: 10 - 20
+- Cold: 30 - 40
+- Poison: 30 - 40
+- Energy: 30 - 40
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

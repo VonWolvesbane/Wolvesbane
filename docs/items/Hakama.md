@@ -5,8 +5,5 @@ title: Hakama
 
 # Hakama
 
-Class Name: `Hakama`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [Black Order Mage](../monsters/Black_Order_Mage.html)

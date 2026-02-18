@@ -5,8 +5,5 @@ title: Fire Ruby
 
 # Fire Ruby
 
-Class Name: `FireRuby`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [Diabolical Seaweed](../monsters/Diabolical_Seaweed.html)

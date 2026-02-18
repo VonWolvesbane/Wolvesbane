@@ -5,8 +5,10 @@ title: Revelation Shirt
 
 # Revelation Shirt
 
-Class Name: `RevelationShirt`
-
 ## Dropped By
+- [Apocalypsis](../monsters/Apocalypsis.html)
 
-(To be auto-filled in future update)
+## Regeneration Bonuses
+- Hits: +10
+- Mana: +10
+- Stam: +10

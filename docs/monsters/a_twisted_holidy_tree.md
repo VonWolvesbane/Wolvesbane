@@ -3,32 +3,28 @@ layout: default
 title: a twisted holidy tree
 ---
 
-# a twisted holidy tree — Unknown
-
-**No Photo Available**
+# a twisted holidy tree
 
 ## Stats
 - STR: 400
 - DEX: 150
 - INT: 1200
 - Hits: 8000
-- Damage: 21 - 27
-- Fame/Karma: 12000 / -12000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 60 - 70
+- Fire: 40 - 50
+- Cold: 80 - 90
+- Poison: 60 - 70
+- Energy: Unknown
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

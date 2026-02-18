@@ -5,8 +5,6 @@ title: Gears
 
 # Gears
 
-Class Name: `Gears`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [a golem](../monsters/a_golem.html)
+- [a kappa](../monsters/a_kappa.html)

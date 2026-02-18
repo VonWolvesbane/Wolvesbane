@@ -5,8 +5,5 @@ title: Lesser Explosion Potion
 
 # Lesser Explosion Potion
 
-Class Name: `LesserExplosionPotion`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [an orc bomber](../monsters/an_orc_bomber.html)

@@ -3,32 +3,28 @@ layout: default
 title: Cute Skeleton
 ---
 
-# Cute Skeleton — Unknown
-
-**No Photo Available**
+# Cute Skeleton
 
 ## Stats
 - STR: 300
 - DEX: 300
 - INT: 100
 - Hits: 20000
-- Damage: 25 - 50
-- Fame/Karma: 1000 / 0
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: Unknown
+- Fire: Unknown
+- Cold: Unknown
+- Poison: Unknown
+- Energy: Unknown
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

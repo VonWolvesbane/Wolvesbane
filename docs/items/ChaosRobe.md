@@ -5,8 +5,5 @@ title: Chaos Robe
 
 # Chaos Robe
 
-Class Name: `ChaosRobe`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [Seth](../monsters/Seth.html)

@@ -5,8 +5,10 @@ title: Caveman Neck
 
 # Caveman Neck
 
-Class Name: `CavemanNeck`
-
 ## Dropped By
+- [Alley Oop](../monsters/Alley_Oop.html)
 
-(To be auto-filled in future update)
+## Regeneration Bonuses
+- Hits: +15
+- Mana: +15
+- Stam: +15

@@ -5,8 +5,13 @@ title: Raphael Sai
 
 # Raphael Sai
 
-Class Name: `RaphaelSai`
-
 ## Dropped By
+- [Raphael](../monsters/Raphael.html)
 
-(To be auto-filled in future update)
+## Skill Bonuses
+- Swords: +20.0
+- Parry: +20.0
+
+## Regeneration Bonuses
+- Hits: +10
+- Stam: +10

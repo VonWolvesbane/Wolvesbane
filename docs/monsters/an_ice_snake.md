@@ -3,32 +3,28 @@ layout: default
 title: an ice snake
 ---
 
-# an ice snake — Unknown
-
-**No Photo Available**
+# an ice snake
 
 ## Stats
 - STR: 42 - 54
 - DEX: 36 - 45
 - INT: 26 - 30
 - Hits: Unknown
-- Damage: 4 - 12
-- Fame/Karma: 900 / -900
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 20 - 25
+- Fire: Unknown
+- Cold: 80 - 90
+- Poison: 60 - 70
+- Energy: 30 - 40
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

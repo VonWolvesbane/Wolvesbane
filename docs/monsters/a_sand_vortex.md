@@ -3,32 +3,28 @@ layout: default
 title: a sand vortex
 ---
 
-# a sand vortex — Unknown
-
-**No Photo Available**
+# a sand vortex
 
 ## Stats
 - STR: 96 - 120
 - DEX: 171 - 195
 - INT: 76 - 100
 - Hits: 51 - 62
-- Damage: 3 - 16
-- Fame/Karma: 4500 / -4500
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 80 - 90
+- Fire: 60 - 70
+- Cold: 60 - 70
+- Poison: 60 - 70
+- Energy: 60 - 70
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Bone](../items/Bone.html)
 
-### Random Drops
+### Potential Item Drops
 None

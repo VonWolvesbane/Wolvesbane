@@ -5,8 +5,5 @@ title: Scattered Crystals
 
 # Scattered Crystals
 
-Class Name: `ScatteredCrystals`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [a crystal daemon](../monsters/a_crystal_daemon.html)

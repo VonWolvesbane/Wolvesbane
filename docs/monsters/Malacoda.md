@@ -3,34 +3,30 @@ layout: default
 title: Malacoda
 ---
 
-# Malacoda — Leader of the Malabranche
-
-**No Photo Available**
+# Malacoda
 
 ## Stats
 - STR: 8400
 - DEX: 8400
 - INT: 8400
 - Hits: 850000
-- Damage: 150 - 200
-- Fame/Karma: 15000 / -15000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: Unknown
+- Fire: Unknown
+- Cold: Unknown
+- Poison: Unknown
+- Energy: Unknown
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: 20000 - 30000
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 - [Malabranche Arms](../items/MalabrancheArms.html)
 - [Malabranche Chest](../items/MalabrancheChest.html)
 - [Malabranche Gloves](../items/MalabrancheGloves.html)

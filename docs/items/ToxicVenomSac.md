@@ -5,8 +5,5 @@ title: Toxic Venom Sac
 
 # Toxic Venom Sac
 
-Class Name: `ToxicVenomSac`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [a toxic slith](../monsters/a_toxic_slith.html)

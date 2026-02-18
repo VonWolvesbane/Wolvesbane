@@ -5,8 +5,5 @@ title: Painted Daemon Mask
 
 # Painted Daemon Mask
 
-Class Name: `PaintedDaemonMask`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [a killer pumpkin](../monsters/a_killer_pumpkin.html)

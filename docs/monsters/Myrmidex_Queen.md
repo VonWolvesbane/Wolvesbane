@@ -3,32 +3,28 @@ layout: default
 title: Myrmidex Queen
 ---
 
-# Myrmidex Queen — Unknown
-
-**No Photo Available**
+# Myrmidex Queen
 
 ## Stats
 - STR: 900 - 1000
 - DEX: 800 - 850
 - INT: 1000 - 1200
 - Hits: 60000
-- Damage: 18 - 24
-- Fame/Karma: 35000 / -35000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 80 - 90
+- Fire: 60 - 70
+- Cold: 60 - 70
+- Poison: 80 - 90
+- Energy: 60 - 70
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Myrmidex Eggsac](../items/MyrmidexEggsac.html)
 
-### Random Drops
+### Potential Item Drops
 None

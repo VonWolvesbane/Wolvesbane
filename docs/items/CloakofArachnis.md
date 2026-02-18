@@ -5,8 +5,5 @@ title: Cloakof Arachnis
 
 # Cloakof Arachnis
 
-Class Name: `CloakofArachnis`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [Arachnis](../monsters/Arachnis.html)

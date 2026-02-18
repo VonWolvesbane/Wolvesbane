@@ -3,32 +3,28 @@ layout: default
 title: Clan Scratch Henchrat
 ---
 
-# Clan Scratch Henchrat — Unknown
-
-**No Photo Available**
+# Clan Scratch Henchrat
 
 ## Stats
 - STR: 227
 - DEX: 183
 - INT: 93
 - Hits: 2065
-- Damage: 5 - 7
-- Fame/Karma: 1500 / -1500
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 26 - 30
+- Fire: 29 - 35
+- Cold: 30 - 35
+- Poison: 15 - 20
+- Energy: 13 - 15
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

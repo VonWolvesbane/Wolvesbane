@@ -5,8 +5,6 @@ title: Apple
 
 # Apple
 
-Class Name: `Apple`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [a gremlin](../monsters/a_gremlin.html)
+- [an orc scout](../monsters/an_orc_scout.html)

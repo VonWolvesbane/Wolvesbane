@@ -5,8 +5,5 @@ title: Resource Recipe
 
 # Resource Recipe
 
-Class Name: `ResourceRecipe`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [a wood elemental](../monsters/a_wood_elemental.html)

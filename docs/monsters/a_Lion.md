@@ -3,32 +3,28 @@ layout: default
 title: a Lion
 ---
 
-# a Lion — Unknown
-
-**No Photo Available**
+# a Lion
 
 ## Stats
 - STR: 1200 - 1225
 - DEX: 350 - 370
 - INT: 250 - 285
 - Hits: 1210 - 1275
-- Damage: 28 - 38
-- Fame/Karma: 4000 / -4000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 50 - 65
+- Fire: 25 - 65
+- Cold: 70 - 85
+- Poison: 30 - 70
+- Energy: 70 - 85
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

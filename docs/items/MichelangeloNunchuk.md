@@ -5,8 +5,9 @@ title: Michelangelo Nunchuk
 
 # Michelangelo Nunchuk
 
-Class Name: `MichelangeloNunchuk`
-
 ## Dropped By
+- [Michelangelo](../monsters/Michelangelo.html)
 
-(To be auto-filled in future update)
+## Skill Bonuses
+- Macing: +20.0
+- Parry: +20.0

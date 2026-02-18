@@ -3,32 +3,28 @@ layout: default
 title: Leonardo
 ---
 
-# Leonardo — The Ninja Turtle
-
-**No Photo Available**
+# Leonardo
 
 ## Stats
 - STR: 1350 - 2400
 - DEX: 1150 - 1200
 - INT: 1150 - 1200
 - Hits: 50000 - 75000
-- Damage: 25 - 35
-- Fame/Karma: 25000 / 25000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 90 - 90
+- Fire: 90 - 90
+- Cold: Unknown
+- Poison: 90 - 90
+- Energy: 90 - 90
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: 20000 - 30000
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 - [Leonardo Daisho](../items/LeonardoDaisho.html)

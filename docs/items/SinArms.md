@@ -5,8 +5,5 @@ title: Sin Arms
 
 # Sin Arms
 
-Class Name: `SinArms`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [Septem Mactabilis Peccatus](../monsters/Septem_Mactabilis_Peccatus.html)

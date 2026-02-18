@@ -3,29 +3,25 @@ layout: default
 title: an orc bomber
 ---
 
-# an orc bomber — Unknown
-
-**No Photo Available**
+# an orc bomber
 
 ## Stats
 - STR: 147 - 215
 - DEX: 91 - 115
 - INT: 61 - 85
 - Hits: 95 - 123
-- Damage: 1 - 8
-- Fame/Karma: 2500 / -2500
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 25 - 35
+- Fire: 30 - 40
+- Cold: 15 - 25
+- Poison: 15 - 20
+- Energy: 25 - 30
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Black Pearl](../items/BlackPearl.html)
@@ -36,5 +32,5 @@ None Listed
 - [Sulfurous Ash](../items/SulfurousAsh.html)
 - [Yeast](../items/Yeast.html)
 
-### Random Drops
+### Potential Item Drops
 None

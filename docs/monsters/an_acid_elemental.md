@@ -3,32 +3,28 @@ layout: default
 title: an acid elemental
 ---
 
-# an acid elemental — Unknown
-
-**No Photo Available**
+# an acid elemental
 
 ## Stats
 - STR: 326 - 355
 - DEX: 66 - 85
 - INT: 271 - 295
 - Hits: 196 - 213
-- Damage: 9 - 15
-- Fame/Karma: 10000 / -10000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 45 - 55
+- Fire: 40 - 50
+- Cold: 20 - 30
+- Poison: 10 - 20
+- Energy: 30 - 40
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

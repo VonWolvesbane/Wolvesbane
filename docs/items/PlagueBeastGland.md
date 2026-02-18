@@ -5,8 +5,5 @@ title: Plague Beast Gland
 
 # Plague Beast Gland
 
-Class Name: `PlagueBeastGland`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [a plague beast](../monsters/a_plague_beast.html)

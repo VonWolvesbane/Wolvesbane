@@ -3,32 +3,28 @@ layout: default
 title: a shadow fiend
 ---
 
-# a shadow fiend — Unknown
-
-**No Photo Available**
+# a shadow fiend
 
 ## Stats
 - STR: 300 - 400
 - DEX: 200 - 250
 - INT: 45 - 55
 - Hits: 300 - 500
-- Damage: 10 - 22
-- Fame/Karma: 1000 / -1000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 30 - 40
+- Fire: 20 - 30
+- Cold: 50 - 70
+- Poison: 60 - 70
+- Energy: 5 - 10
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

@@ -3,33 +3,29 @@ layout: default
 title: a bog thing
 ---
 
-# a bog thing — Unknown
-
-**No Photo Available**
+# a bog thing
 
 ## Stats
 - STR: 801 - 900
 - DEX: 46 - 65
 - INT: 36 - 50
 - Hits: 481 - 540
-- Damage: 10 - 23
-- Fame/Karma: 8000 / -8000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 30 - 40
+- Fire: 20 - 25
+- Cold: 10 - 15
+- Poison: 40 - 50
+- Energy: 20 - 25
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Board](../items/Board.html)
 - [Log](../items/Log.html)
 
-### Random Drops
+### Potential Item Drops
 None

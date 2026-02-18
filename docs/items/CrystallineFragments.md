@@ -5,8 +5,7 @@ title: Crystalline Fragments
 
 # Crystalline Fragments
 
-Class Name: `CrystallineFragments`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [a crystal hydra](../monsters/a_crystal_hydra.html)
+- [Crystal Lattice Seeker](../monsters/Crystal_Lattice_Seeker.html)
+- [a crystal vortex](../monsters/a_crystal_vortex.html)

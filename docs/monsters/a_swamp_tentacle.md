@@ -3,32 +3,28 @@ layout: default
 title: a swamp tentacle
 ---
 
-# a swamp tentacle — Unknown
-
-**No Photo Available**
+# a swamp tentacle
 
 ## Stats
 - STR: 96 - 120
 - DEX: 66 - 85
 - INT: 16 - 30
 - Hits: 58 - 72
-- Damage: 6 - 12
-- Fame/Karma: 3000 / -3000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 25 - 35
+- Fire: 10 - 20
+- Cold: 10 - 20
+- Poison: 60 - 80
+- Energy: 10 - 20
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

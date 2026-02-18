@@ -5,8 +5,8 @@ title: Garlic
 
 # Garlic
 
-Class Name: `Garlic`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [a decaying corpse](../monsters/a_decaying_corpse.html)
+- [a mummy](../monsters/a_mummy.html)
+- [Grizelda](../monsters/Grizelda.html)
+- [Uzeraan](../monsters/Uzeraan.html)

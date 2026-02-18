@@ -3,36 +3,33 @@ layout: default
 title: Paralithode
 ---
 
-# Paralithode — Unknown
-
-**No Photo Available**
+# Paralithode
 
 ## Stats
 - STR: 642 - 729
 - DEX: 87 - 103
 - INT: 25 - 30
 - Hits: 1800 - 2000
-- Damage: 20 - 24
-- Fame/Karma: 2500 / -2500
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 65 - 75
+- Fire: 50 - 60
+- Cold: 60 - 70
+- Poison: 50 - 60
+- Energy: 50 - 60
 
 ## Taming Info
 - Tamable: Yes
 - Control Slots: 4
+- AI Type: AI_Melee
 
 ## Damage Types
 - Physical: 100%
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Fertile Dirt](../items/FertileDirt.html)
 
-### Random Drops
+### Potential Item Drops
 None

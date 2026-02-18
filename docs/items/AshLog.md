@@ -5,8 +5,7 @@ title: Ash Log
 
 # Ash Log
 
-Class Name: `AshLog`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [a AshTree](../monsters/a_AshTree.html)
+- [a wood elemental](../monsters/a_wood_elemental.html)
+- [a heartwood elemental](../monsters/a_heartwood_elemental.html)

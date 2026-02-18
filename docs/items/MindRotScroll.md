@@ -5,8 +5,5 @@ title: Mind Rot Scroll
 
 # Mind Rot Scroll
 
-Class Name: `MindRotScroll`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [an imp](../monsters/an_imp.html)

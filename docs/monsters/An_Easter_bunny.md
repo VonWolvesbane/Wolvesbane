@@ -3,33 +3,29 @@ layout: default
 title: An Easter bunny
 ---
 
-# An Easter bunny — Unknown
-
-**No Photo Available**
+# An Easter bunny
 
 ## Stats
 - STR: 450
 - DEX: 2100 - 3000
 - INT: 1000 - 2000
 - Hits: 300000
-- Damage: 150
-- Fame/Karma: 1000 / 0
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 75 - 75
+- Fire: 75 - 75
+- Cold: 75 - 75
+- Poison: 100 - 100
+- Energy: 75 - 75
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Carrot](../items/Carrot.html)
 - [Easter Egg1](../items/EasterEgg1.html)
 
-### Random Drops
+### Potential Item Drops
 None

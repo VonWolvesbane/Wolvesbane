@@ -5,8 +5,5 @@ title: Mangled Head Of Dreadhorn
 
 # Mangled Head Of Dreadhorn
 
-Class Name: `MangledHeadOfDreadhorn`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [a Dread Horn](../monsters/a_Dread_Horn.html)

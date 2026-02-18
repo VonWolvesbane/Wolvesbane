@@ -3,34 +3,30 @@ layout: default
 title: Hephastos
 ---
 
-# Hephastos — The Evil Blacksmith
-
-**No Photo Available**
+# Hephastos
 
 ## Stats
 - STR: 6660
 - DEX: 6660
 - INT: 6660
 - Hits: 666666
-- Damage: 150 - 666
-- Fame/Karma: Unknown / Unknown
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: Unknown
+- Fire: Unknown
+- Cold: Unknown
+- Poison: Unknown
+- Energy: Unknown
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 - [Crusader Arms](../items/CrusaderArms.html)
 - [Crusader Belt](../items/CrusaderBelt.html)
 - [Crusader Boots](../items/CrusaderBoots.html)

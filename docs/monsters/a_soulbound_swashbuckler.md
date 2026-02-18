@@ -3,29 +3,25 @@ layout: default
 title: a soulbound swashbuckler
 ---
 
-# a soulbound swashbuckler — Unknown
-
-**No Photo Available**
+# a soulbound swashbuckler
 
 ## Stats
 - STR: 120 - 130
 - DEX: 105 - 115
 - INT: 95 - 110
 - Hits: 100 - 125
-- Damage: 12 - 18
-- Fame/Karma: 2000 / -2000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 30 - 40
+- Fire: 30 - 40
+- Cold: 30 - 40
+- Poison: 30 - 40
+- Energy: 30 - 40
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Bandana](../items/Bandana.html)
@@ -36,5 +32,5 @@ None Listed
 - [Short Pants](../items/ShortPants.html)
 - [Silver Earrings](../items/SilverEarrings.html)
 
-### Random Drops
+### Potential Item Drops
 None

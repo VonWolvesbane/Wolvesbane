@@ -3,32 +3,28 @@ layout: default
 title: a man-eating Stymphalian marsh bird
 ---
 
-# a man-eating Stymphalian marsh bird — Unknown
-
-**No Photo Available**
+# a man-eating Stymphalian marsh bird
 
 ## Stats
 - STR: 196 - 200
 - DEX: 186 - 200
 - INT: 151 - 175
 - Hits: 1580 - 1720
-- Damage: 15 - 17
-- Fame/Karma: 0 / -2500
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 250 - 300
+- Fire: 100 - 200
+- Cold: 100 - 300
+- Poison: 200 - 300
+- Energy: 100 - 200
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Stymphalian Feather](../items/StymphalianFeather.html)
 
-### Random Drops
+### Potential Item Drops
 None

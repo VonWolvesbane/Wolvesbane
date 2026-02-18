@@ -3,29 +3,25 @@ layout: default
 title: a mud pie
 ---
 
-# a mud pie — the wall guardian
-
-**No Photo Available**
+# a mud pie
 
 ## Stats
 - STR: 140 - 210
 - DEX: 70 - 100
 - INT: 90 - 110
 - Hits: 280 - 340
-- Damage: 9 - 12
-- Fame/Karma: 500 / -500
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 30 - 45
+- Fire: 35 - 40
+- Cold: 30 - 40
+- Poison: 35 - 45
+- Energy: 35 - 45
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Black Powder](../items/BlackPowder.html)
@@ -40,5 +36,5 @@ None Listed
 - [Sulfurous Ash](../items/SulfurousAsh.html)
 - [Void Core](../items/VoidCore.html)
 
-### Random Drops
+### Potential Item Drops
 None

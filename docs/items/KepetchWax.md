@@ -5,8 +5,5 @@ title: Kepetch Wax
 
 # Kepetch Wax
 
-Class Name: `KepetchWax`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [a kepetch ambusher](../monsters/a_kepetch_ambusher.html)

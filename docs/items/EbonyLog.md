@@ -5,8 +5,6 @@ title: Ebony Log
 
 # Ebony Log
 
-Class Name: `EbonyLog`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [a wood elemental](../monsters/a_wood_elemental.html)
+- [a heartwood elemental](../monsters/a_heartwood_elemental.html)

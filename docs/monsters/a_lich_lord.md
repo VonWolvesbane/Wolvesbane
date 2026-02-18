@@ -3,34 +3,30 @@ layout: default
 title: a lich lord
 ---
 
-# a lich lord — Unknown
-
-**No Photo Available**
+# a lich lord
 
 ## Stats
 - STR: 416 - 505
 - DEX: 146 - 165
 - INT: 566 - 655
 - Hits: 250 - 303
-- Damage: 11 - 13
-- Fame/Karma: 18000 / -18000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 40 - 50
+- Fire: 30 - 40
+- Cold: 50 - 60
+- Poison: 50 - 60
+- Energy: 40 - 50
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Gnarled Staff](../items/GnarledStaff.html)
 
-### Random Drops
+### Potential Item Drops
 - [Lich Form Scroll](../items/LichFormScroll.html)
 - [Poison Strike Scroll](../items/PoisonStrikeScroll.html)
 - [Strangle Scroll](../items/StrangleScroll.html)

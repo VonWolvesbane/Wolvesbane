@@ -5,8 +5,5 @@ title: Nox Katana
 
 # Nox Katana
 
-Class Name: `NoxKatana`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [Noxia the Swamp Queen](../monsters/Noxia_the_Swamp_Queen.html)

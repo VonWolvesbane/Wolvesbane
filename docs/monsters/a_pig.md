@@ -3,36 +3,33 @@ layout: default
 title: a pig
 ---
 
-# a pig — Unknown
-
-**No Photo Available**
+# a pig
 
 ## Stats
 - STR: 20
 - DEX: 20
 - INT: 5
 - Hits: 12
-- Damage: 2 - 4
-- Fame/Karma: 150 / 0
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 10 - 15
+- Fire: Unknown
+- Cold: Unknown
+- Poison: Unknown
+- Energy: Unknown
 
 ## Taming Info
 - Tamable: Yes
 - Control Slots: 1
+- AI Type: AI_Animal
 
 ## Damage Types
 - Physical: 100%
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

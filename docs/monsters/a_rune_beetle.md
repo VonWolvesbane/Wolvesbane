@@ -3,27 +3,25 @@ layout: default
 title: a rune beetle
 ---
 
-# a rune beetle — Unknown
-
-**No Photo Available**
+# a rune beetle
 
 ## Stats
 - STR: 401 - 460
 - DEX: 121 - 170
 - INT: 376 - 450
 - Hits: 301 - 360
-- Damage: 15 - 22
-- Fame/Karma: 15000 / -15000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 40 - 65
+- Fire: 35 - 50
+- Cold: 35 - 50
+- Poison: 75 - 95
+- Energy: 40 - 60
 
 ## Taming Info
 - Tamable: Yes
 - Control Slots: 3
+- AI Type: AI_Mage
 
 ## Damage Types
 - Physical: 20%
@@ -31,10 +29,9 @@ None Listed
 - Energy: 70%
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

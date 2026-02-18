@@ -3,32 +3,28 @@ layout: default
 title: a fire elemental
 ---
 
-# a fire elemental — Unknown
-
-**No Photo Available**
+# a fire elemental
 
 ## Stats
 - STR: 200
 - DEX: 200
 - INT: 100
 - Hits: Unknown
-- Damage: 9 - 14
-- Fame/Karma: Unknown / Unknown
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 50 - 60
+- Fire: 70 - 80
+- Cold: 0 - 10
+- Poison: 50 - 60
+- Energy: 50 - 60
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Light Source](../items/LightSource.html)
 
-### Random Drops
+### Potential Item Drops
 None

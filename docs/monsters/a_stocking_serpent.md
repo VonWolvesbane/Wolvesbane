@@ -3,32 +3,28 @@ layout: default
 title: a stocking serpent
 ---
 
-# a stocking serpent — Unknown
-
-**No Photo Available**
+# a stocking serpent
 
 ## Stats
 - STR: 800
 - DEX: 150
 - INT: 1200
 - Hits: 8000
-- Damage: 22 - 29
-- Fame/Karma: 12000 / -12000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 60 - 70
+- Fire: 40 - 50
+- Cold: Unknown
+- Poison: 60 - 70
+- Energy: 60 - 70
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

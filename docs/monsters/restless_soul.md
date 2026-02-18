@@ -3,32 +3,28 @@ layout: default
 title: restless soul
 ---
 
-# restless soul — Unknown
-
-**No Photo Available**
+# restless soul
 
 ## Stats
 - STR: 26 - 40
 - DEX: 26 - 40
 - INT: 26 - 40
 - Hits: 16 - 24
-- Damage: 1 - 10
-- Fame/Karma: 500 / -500
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 15 - 25
+- Fire: 5 - 15
+- Cold: 25 - 40
+- Poison: 5 - 10
+- Energy: 10 - 20
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

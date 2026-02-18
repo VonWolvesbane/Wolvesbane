@@ -5,8 +5,8 @@ title: Hat Of Killar
 
 # Hat Of Killar
 
-Class Name: `HatOfKillar`
-
 ## Dropped By
+- [Killar Ancestor](../monsters/Killar_Ancestor.html)
 
-(To be auto-filled in future update)
+## Regeneration Bonuses
+- Mana: +5

@@ -3,29 +3,25 @@ layout: default
 title: Black Order Mage
 ---
 
-# Black Order Mage — of the Dragon's Flame Sect
-
-**No Photo Available**
+# Black Order Mage
 
 ## Stats
 - STR: 340 - 360
 - DEX: 200 - 215
 - INT: 400 - 415
 - Hits: 600 - 615
-- Damage: 13 - 15
-- Fame/Karma: 13000 / -13000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 40 - 50
+- Fire: 30 - 50
+- Cold: 55 - 60
+- Poison: 50 - 60
+- Energy: 60 - 70
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Dragon Flame Sect Badge](../items/DragonFlameSectBadge.html)
@@ -34,5 +30,5 @@ None Listed
 - [Kasa](../items/Kasa.html)
 - [Ninja Tabi](../items/NinjaTabi.html)
 
-### Random Drops
+### Potential Item Drops
 None

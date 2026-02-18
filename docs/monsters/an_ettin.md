@@ -3,32 +3,28 @@ layout: default
 title: an ettin
 ---
 
-# an ettin — Unknown
-
-**No Photo Available**
+# an ettin
 
 ## Stats
 - STR: 136 - 165
 - DEX: 56 - 75
 - INT: 31 - 55
 - Hits: 82 - 99
-- Damage: 7 - 17
-- Fame/Karma: 3000 / -3000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 35 - 40
+- Fire: 15 - 25
+- Cold: 40 - 50
+- Poison: 15 - 25
+- Energy: 15 - 25
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

@@ -5,8 +5,5 @@ title: S S Staff
 
 # S S Staff
 
-Class Name: `SSStaff`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [Sataness](../monsters/Sataness.html)

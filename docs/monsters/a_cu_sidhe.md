@@ -3,32 +3,28 @@ layout: default
 title: a cu sidhe
 ---
 
-# a cu sidhe — Unknown
-
-**No Photo Available**
+# a cu sidhe
 
 ## Stats
 - STR: 1200 - 1225
 - DEX: 350 - 370
 - INT: 250 - 285
 - Hits: 2010 - 2275
-- Damage: 28 - 38
-- Fame/Karma: 5000 / 5000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 50 - 65
+- Fire: 25 - 45
+- Cold: 70 - 85
+- Poison: 30 - 50
+- Energy: 70 - 85
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: 500 - 800
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

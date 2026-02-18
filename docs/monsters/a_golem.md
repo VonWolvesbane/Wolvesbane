@@ -3,29 +3,25 @@ layout: default
 title: a golem
 ---
 
-# a golem — Unknown
-
-**No Photo Available**
+# a golem
 
 ## Stats
 - STR: Unknown
 - DEX: Unknown
 - INT: Unknown
 - Hits: 151 - 210
-- Damage: 13 - 24
-- Fame/Karma: 10 / 10
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 40 - 60
+- Fire: 50 - 65
+- Cold: 20 - 30
+- Poison: 75 - 85
+- Energy: 30 - 45
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Arcane Gem](../items/ArcaneGem.html)
@@ -34,5 +30,5 @@ None Listed
 - [Iron Ingot](../items/IronIngot.html)
 - [Power Crystal](../items/PowerCrystal.html)
 
-### Random Drops
+### Potential Item Drops
 None

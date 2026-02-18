@@ -3,34 +3,30 @@ layout: default
 title: Exodus Juggernaut
 ---
 
-# Exodus Juggernaut — Unknown
-
-**No Photo Available**
+# Exodus Juggernaut
 
 ## Stats
 - STR: 1506 - 1565
 - DEX: 92 - 99
 - INT: 101 - 126
 - Hits: 1012 - 1069
-- Damage: 19 - 25
-- Fame/Karma: 18000 / -18000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 60 - 80
+- Fire: 60 - 80
+- Cold: 20 - 30
+- Poison: 30 - 40
+- Energy: 40 - 50
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Arcane Gem](../items/ArcaneGem.html)
 - [Clockwork Assembly](../items/ClockworkAssembly.html)
 - [Power Crystal](../items/PowerCrystal.html)
 
-### Random Drops
+### Potential Item Drops
 None

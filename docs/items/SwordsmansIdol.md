@@ -5,8 +5,9 @@ title: Swordsmans Idol
 
 # Swordsmans Idol
 
-Class Name: `SwordsmansIdol`
-
 ## Dropped By
+- [Falausmon](../monsters/Falausmon.html)
 
-(To be auto-filled in future update)
+## Skill Bonuses
+- Swords: +25.0
+- Tactics: +15.0

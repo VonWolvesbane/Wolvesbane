@@ -3,32 +3,28 @@ layout: default
 title: an injured wolf
 ---
 
-# an injured wolf — Unknown
-
-**No Photo Available**
+# an injured wolf
 
 ## Stats
 - STR: 10 - 20
 - DEX: 45 - 65
 - INT: 10 - 15
 - Hits: 1
-- Damage: 1 - 3
-- Fame/Karma: Unknown / Unknown
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: Unknown
+- Fire: 5 - 10
+- Cold: Unknown
+- Poison: Unknown
+- Energy: Unknown
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

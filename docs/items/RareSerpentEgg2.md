@@ -5,8 +5,5 @@ title: Rare Serpent Egg2
 
 # Rare Serpent Egg2
 
-Class Name: `RareSerpentEgg2`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [a giant serpent](../monsters/a_giant_serpent.html)

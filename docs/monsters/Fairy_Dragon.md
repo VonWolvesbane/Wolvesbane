@@ -3,33 +3,29 @@ layout: default
 title: Fairy Dragon
 ---
 
-# Fairy Dragon — Unknown
-
-**No Photo Available**
+# Fairy Dragon
 
 ## Stats
 - STR: 512 - 558
 - DEX: 95 - 105
 - INT: 455 - 501
 - Hits: 398 - 403
-- Damage: 15 - 18
-- Fame/Karma: 15000 / -15000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 16 - 30
+- Fire: 41 - 44
+- Cold: 40 - 49
+- Poison: 40 - 49
+- Energy: 45 - 47
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Draconic Orb](../items/DraconicOrb.html)
 - [Fairy Dragon Wing](../items/FairyDragonWing.html)
 
-### Random Drops
+### Potential Item Drops
 None

@@ -3,32 +3,28 @@ layout: default
 title: a wanderer of the void
 ---
 
-# a wanderer of the void — Unknown
-
-**No Photo Available**
+# a wanderer of the void
 
 ## Stats
 - STR: 111 - 200
 - DEX: 101 - 125
 - INT: 301 - 390
 - Hits: 351 - 400
-- Damage: 11 - 13
-- Fame/Karma: 20000 / -20000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 40 - 50
+- Fire: 15 - 25
+- Cold: 40 - 50
+- Poison: 50 - 75
+- Energy: 40 - 50
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

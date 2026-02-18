@@ -5,8 +5,8 @@ title: Nox Gloves
 
 # Nox Gloves
 
-Class Name: `NoxGloves`
-
 ## Dropped By
+- [Noxia the Swamp Queen](../monsters/Noxia_the_Swamp_Queen.html)
 
-(To be auto-filled in future update)
+## Regeneration Bonuses
+- Mana: +5

@@ -3,36 +3,33 @@ layout: default
 title: a pack rat
 ---
 
-# a pack rat — Unknown
-
-**No Photo Available**
+# a pack rat
 
 ## Stats
 - STR: 52 - 80
 - DEX: 36 - 55
 - INT: 16 - 30
 - Hits: 50
-- Damage: 2 - 6
-- Fame/Karma: 0 / 200
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 25 - 35
+- Fire: 10 - 15
+- Cold: 10 - 15
+- Poison: 10 - 15
+- Energy: 10 - 15
 
 ## Taming Info
 - Tamable: Yes
 - Control Slots: 1
+- AI Type: AI_Animal
 
 ## Damage Types
 - Physical: 100%
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

@@ -5,8 +5,6 @@ title: Noble Sword
 
 # Noble Sword
 
-Class Name: `NobleSword`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [Crayma](../monsters/Crayma.html)
+- [Egg Napper](../monsters/Egg_Napper.html)

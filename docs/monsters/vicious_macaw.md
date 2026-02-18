@@ -3,32 +3,28 @@ layout: default
 title: vicious macaw
 ---
 
-# vicious macaw — Unknown
-
-**No Photo Available**
+# vicious macaw
 
 ## Stats
 - STR: 100 - 150
 - DEX: 400 - 500
 - INT: 80 - 90
 - Hits: 700 - 800
-- Damage: 15 - 25
-- Fame/Karma: 7000 / -7000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 80 - 90
+- Fire: 60 - 77
+- Cold: 70 - 85
+- Poison: 55 - 85
+- Energy: 50 - 60
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Gold Foil](../items/GoldFoil.html)
 
-### Random Drops
+### Potential Item Drops
 None

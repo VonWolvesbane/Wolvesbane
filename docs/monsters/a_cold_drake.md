@@ -3,37 +3,34 @@ layout: default
 title: a cold drake
 ---
 
-# a cold drake — Unknown
-
-**No Photo Available**
+# a cold drake
 
 ## Stats
 - STR: 610 - 670
 - DEX: 130 - 160
 - INT: 150 - 190
 - Hits: 450 - 500
-- Damage: 17 - 20
-- Fame/Karma: 12000 / -12000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 50 - 65
+- Fire: 30 - 40
+- Cold: 75 - 90
+- Poison: 40 - 50
+- Energy: 40 - 50
 
 ## Taming Info
 - Tamable: Yes
 - Control Slots: 3
+- AI Type: AI_Melee
 
 ## Damage Types
 - Physical: 50%
 - Cold: 50%
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

@@ -3,32 +3,28 @@ layout: default
 title: Hungry Ogre
 ---
 
-# Hungry Ogre — Unknown
-
-**No Photo Available**
+# Hungry Ogre
 
 ## Stats
 - STR: 188 - 223
 - DEX: 62 - 79
 - INT: 49 - 59
 - Hits: 1107 - 1205
-- Damage: 15 - 20
-- Fame/Karma: 12000 / -12000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 50 - 60
+- Fire: 70 - 80
+- Cold: 50 - 60
+- Poison: 70 - 80
+- Energy: 60 - 70
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Club](../items/Club.html)
 
-### Random Drops
+### Potential Item Drops
 None

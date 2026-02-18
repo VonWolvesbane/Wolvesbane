@@ -5,8 +5,8 @@ title: Wakizashi
 
 # Wakizashi
 
-Class Name: `Wakizashi`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [an elite ninja](../monsters/an_elite_ninja.html)
+- [a ronin](../monsters/a_ronin.html)
+- [Black Order Thief](../monsters/Black_Order_Thief.html)
+- [a young ronin](../monsters/a_young_ronin.html)

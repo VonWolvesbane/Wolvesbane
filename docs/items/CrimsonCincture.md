@@ -5,8 +5,12 @@ title: Crimson Cincture
 
 # Crimson Cincture
 
-Class Name: `CrimsonCincture`
-
 ## Dropped By
+- [You Scared?](../monsters/You_Scared.html)
+- [Death's Kiss](../monsters/Death's_Kiss.html)
+- [a crimson dragon](../monsters/a_crimson_dragon.html)
+- [Meraktus](../monsters/Meraktus.html)
 
-(To be auto-filled in future update)
+## Regeneration Bonuses
+- Hits: +2
+- Hits: +2

@@ -5,8 +5,5 @@ title: Undamaged Iron Beetle Scale
 
 # Undamaged Iron Beetle Scale
 
-Class Name: `UndamagedIronBeetleScale`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [an iron beetle](../monsters/an_iron_beetle.html)

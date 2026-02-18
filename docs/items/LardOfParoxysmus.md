@@ -5,8 +5,5 @@ title: Lard Of Paroxysmus
 
 # Lard Of Paroxysmus
 
-Class Name: `LardOfParoxysmus`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [a chief paroxysmus](../monsters/a_chief_paroxysmus.html)

@@ -3,32 +3,28 @@ layout: default
 title: a savage bunny
 ---
 
-# a savage bunny — Unknown
-
-**No Photo Available**
+# a savage bunny
 
 ## Stats
 - STR: 15
 - DEX: 2000
 - INT: 1000
 - Hits: 200
-- Damage: 1
-- Fame/Karma: 1000 / 0
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: Unknown
+- Fire: Unknown
+- Cold: Unknown
+- Poison: Unknown
+- Energy: Unknown
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [greencarrot](../items/greencarrot.html)
 
-### Random Drops
+### Potential Item Drops
 None

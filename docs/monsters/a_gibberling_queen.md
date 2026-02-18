@@ -3,32 +3,28 @@ layout: default
 title: a gibberling queen
 ---
 
-# a gibberling queen — Unknown
-
-**No Photo Available**
+# a gibberling queen
 
 ## Stats
 - STR: 350
 - DEX: 120
 - INT: 120
 - Hits: 750
-- Damage: 17 - 24
-- Fame/Karma: 1500 / -1500
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: Unknown
+- Fire: Unknown
+- Cold: 25 - 35
+- Poison: Unknown
+- Energy: Unknown
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Gibber Head](../items/GibberHead.html)
 
-### Random Drops
+### Potential Item Drops
 None

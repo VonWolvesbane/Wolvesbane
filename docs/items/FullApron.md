@@ -5,8 +5,5 @@ title: Full Apron
 
 # Full Apron
 
-Class Name: `FullApron`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [Elwood McCarrin](../monsters/Elwood_McCarrin.html)

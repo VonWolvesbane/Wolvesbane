@@ -3,32 +3,28 @@ layout: default
 title: a clockwork scorpion
 ---
 
-# a clockwork scorpion — Unknown
-
-**No Photo Available**
+# a clockwork scorpion
 
 ## Stats
 - STR: 225 - 245
 - DEX: 80 - 100
 - INT: 30 - 40
 - Hits: 151 - 210
-- Damage: 5 - 10
-- Fame/Karma: 3500 / -3500
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 80 - 100
+- Fire: 20 - 30
+- Cold: 60 - 80
+- Poison: Unknown
+- Energy: 10 - 25
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

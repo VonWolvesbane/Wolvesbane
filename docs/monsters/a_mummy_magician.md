@@ -3,29 +3,25 @@ layout: default
 title: a mummy magician
 ---
 
-# a mummy magician — Unknown
-
-**No Photo Available**
+# a mummy magician
 
 ## Stats
 - STR: Unknown
 - DEX: Unknown
 - INT: Unknown
 - Hits: Unknown
-- Damage: Unknown
-- Fame/Karma: 400 / -400
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: Unknown
+- Fire: Unknown
+- Cold: Unknown
+- Poison: Unknown
+- Energy: Unknown
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Bandage](../items/Bandage.html)
@@ -33,5 +29,5 @@ None Listed
 - [Skull](../items/Skull.html)
 - [wicked Crystal](../items/wickedCrystal.html)
 
-### Random Drops
+### Potential Item Drops
 None

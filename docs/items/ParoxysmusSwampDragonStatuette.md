@@ -5,8 +5,5 @@ title: Paroxysmus Swamp Dragon Statuette
 
 # Paroxysmus Swamp Dragon Statuette
 
-Class Name: `ParoxysmusSwampDragonStatuette`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [a chief paroxysmus](../monsters/a_chief_paroxysmus.html)

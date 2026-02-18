@@ -3,32 +3,28 @@ layout: default
 title: Le'Vel Eyetem
 ---
 
-# Le'Vel Eyetem — Unknown
-
-**No Photo Available**
+# Le'Vel Eyetem
 
 ## Stats
 - STR: 1336 - 1385
 - DEX: 196 - 315
 - INT: 131 - 255
 - Hits: 12020 - 12310
-- Damage: 37 - 83
-- Fame/Karma: 45000 / -45000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 90 - 95
+- Fire: 90 - 95
+- Cold: 90 - 95
+- Poison: 90 - 95
+- Energy: 90 - 95
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 - [Level Item Deed](../items/LevelItemDeed.html)

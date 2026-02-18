@@ -5,8 +5,5 @@ title: Void Crystal Of Corrupted Spiritual Essence
 
 # Void Crystal Of Corrupted Spiritual Essence
 
-Class Name: `VoidCrystalOfCorruptedSpiritualEssence`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [a void manifestation](../monsters/a_void_manifestation.html)

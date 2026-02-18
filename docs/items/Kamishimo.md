@@ -5,8 +5,5 @@ title: Kamishimo
 
 # Kamishimo
 
-Class Name: `Kamishimo`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [Ihara Soko](../monsters/Ihara_Soko.html)

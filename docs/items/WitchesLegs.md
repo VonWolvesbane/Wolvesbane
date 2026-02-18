@@ -5,8 +5,8 @@ title: Witches Legs
 
 # Witches Legs
 
-Class Name: `WitchesLegs`
-
 ## Dropped By
+- [Kindred](../monsters/Kindred.html)
 
-(To be auto-filled in future update)
+## Skill Bonuses
+- Archery: +10

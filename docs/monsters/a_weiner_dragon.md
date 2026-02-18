@@ -3,32 +3,28 @@ layout: default
 title: a weiner dragon
 ---
 
-# a weiner dragon — Unknown
-
-**No Photo Available**
+# a weiner dragon
 
 ## Stats
 - STR: 650
 - DEX: 650
 - INT: 650
 - Hits: 80000
-- Damage: 32 - 60
-- Fame/Karma: 15000 / -15000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: Unknown
+- Fire: Unknown
+- Cold: Unknown
+- Poison: Unknown
+- Energy: Unknown
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

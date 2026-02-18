@@ -3,33 +3,29 @@ layout: default
 title: an unfrozen mummy
 ---
 
-# an unfrozen mummy — Unknown
-
-**No Photo Available**
+# an unfrozen mummy
 
 ## Stats
 - STR: 450 - 500
 - DEX: 200 - 250
 - INT: 800 - 850
 - Hits: 1500
-- Damage: 16 - 20
-- Fame/Karma: 25000 / -25000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 35 - 40
+- Fire: 20 - 30
+- Cold: 60 - 80
+- Poison: 20 - 30
+- Energy: 70 - 80
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Broken Crystals](../items/BrokenCrystals.html)
 - [Parrot Item](../items/ParrotItem.html)
 
-### Random Drops
+### Potential Item Drops
 None

@@ -5,8 +5,5 @@ title: Runic Fletcher Tools
 
 # Runic Fletcher Tools
 
-Class Name: `RunicFletcherTools`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [a wood elemental](../monsters/a_wood_elemental.html)

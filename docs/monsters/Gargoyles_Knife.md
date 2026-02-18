@@ -3,34 +3,30 @@ layout: default
 title: Gargoyles Knife
 ---
 
-# Gargoyles Knife — Unknown
-
-**No Photo Available**
+# Gargoyles Knife
 
 ## Stats
 - STR: Unknown
 - DEX: Unknown
 - INT: Unknown
 - Hits: Unknown
-- Damage: Unknown
-- Fame/Karma: Unknown / Unknown
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: Unknown
+- Fire: Unknown
+- Cold: Unknown
+- Poison: Unknown
+- Energy: Unknown
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 - [Barbed Hides](../items/BarbedHides.html)
 - [Blaze Hides](../items/BlazeHides.html)
 - [Daemonic Hides](../items/DaemonicHides.html)

@@ -3,29 +3,25 @@ layout: default
 title: a henchman
 ---
 
-# a henchman — Unknown
-
-**No Photo Available**
+# a henchman
 
 ## Stats
 - STR: Unknown
 - DEX: Unknown
 - INT: Unknown
 - Hits: Unknown
-- Damage: Unknown
-- Fame/Karma: Unknown / Unknown
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: Unknown
+- Fire: Unknown
+- Cold: Unknown
+- Poison: Unknown
+- Energy: Unknown
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Kama](../items/Kama.html)
@@ -34,5 +30,5 @@ None Listed
 - [Ninja Tabi](../items/NinjaTabi.html)
 - [Tessen](../items/Tessen.html)
 
-### Random Drops
+### Potential Item Drops
 None

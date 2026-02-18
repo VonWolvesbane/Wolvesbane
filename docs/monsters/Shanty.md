@@ -3,29 +3,25 @@ layout: default
 title: Shanty
 ---
 
-# Shanty — the Pirate
-
-**No Photo Available**
+# Shanty
 
 ## Stats
 - STR: 386 - 400
 - DEX: 151 - 165
 - INT: 161 - 175
 - Hits: 550 - 700
-- Damage: 15 - 21
-- Fame/Karma: 1000 / -1000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 35 - 45
+- Fire: 25 - 30
+- Cold: 25 - 30
+- Poison: 10 - 20
+- Energy: 10 - 20
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Boots](../items/Boots.html)
@@ -36,5 +32,5 @@ None Listed
 - [Short Pants](../items/ShortPants.html)
 - [Tricorne Hat](../items/TricorneHat.html)
 
-### Random Drops
+### Potential Item Drops
 None

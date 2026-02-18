@@ -3,32 +3,28 @@ layout: default
 title: a dryad
 ---
 
-# a dryad — Unknown
-
-**No Photo Available**
+# a dryad
 
 ## Stats
 - STR: 132 - 149
 - DEX: 152 - 168
 - INT: 251 - 280
 - Hits: 304 - 321
-- Damage: 11 - 20
-- Fame/Karma: 5000 / 5000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 40 - 50
+- Fire: 15 - 25
+- Cold: 40 - 45
+- Poison: 30 - 40
+- Energy: 25 - 35
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Parrot Item](../items/ParrotItem.html)
 
-### Random Drops
+### Potential Item Drops
 None

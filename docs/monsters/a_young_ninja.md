@@ -3,29 +3,25 @@ layout: default
 title: a young ninja
 ---
 
-# a young ninja — Unknown
-
-**No Photo Available**
+# a young ninja
 
 ## Stats
 - STR: Unknown
 - DEX: Unknown
 - INT: Unknown
 - Hits: 20 - 30
-- Damage: Unknown
-- Fame/Karma: Unknown / Unknown
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: Unknown
+- Fire: Unknown
+- Cold: Unknown
+- Poison: Unknown
+- Energy: Unknown
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Bandana](../items/Bandana.html)
@@ -34,7 +30,7 @@ None Listed
 - [Leather Ninja Pants](../items/LeatherNinjaPants.html)
 - [Ninja Tabi](../items/NinjaTabi.html)
 
-### Random Drops
+### Potential Item Drops
 - [Kama](../items/Kama.html)
 - [Lajatang](../items/Lajatang.html)
 - [Tessen](../items/Tessen.html)

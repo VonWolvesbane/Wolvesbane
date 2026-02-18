@@ -5,8 +5,5 @@ title: Draconic Orb
 
 # Draconic Orb
 
-Class Name: `DraconicOrb`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [Fairy Dragon](../monsters/Fairy_Dragon.html)

@@ -5,8 +5,8 @@ title: Witches Skirt
 
 # Witches Skirt
 
-Class Name: `WitchesSkirt`
-
 ## Dropped By
+- [Kindred](../monsters/Kindred.html)
 
-(To be auto-filled in future update)
+## Skill Bonuses
+- Archery: +10

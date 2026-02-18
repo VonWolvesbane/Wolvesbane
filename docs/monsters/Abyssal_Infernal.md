@@ -3,33 +3,29 @@ layout: default
 title: Abyssal Infernal
 ---
 
-# Abyssal Infernal — Unknown
-
-**No Photo Available**
+# Abyssal Infernal
 
 ## Stats
 - STR: 1200 - 1300
 - DEX: 100 - 125
 - INT: 600 - 700
 - Hits: 30000
-- Damage: 11 - 18
-- Fame/Karma: 28000 / -28000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 50 - 60
+- Fire: 60 - 70
+- Cold: 50 - 60
+- Poison: 30 - 40
+- Energy: 70 - 80
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 - [Horn Abyssal Inferno](../items/HornAbyssalInferno.html)
 - [Nether Cyclone Scroll](../items/NetherCycloneScroll.html)

@@ -5,8 +5,10 @@ title: Oblivion Arms
 
 # Oblivion Arms
 
-Class Name: `OblivionArms`
-
 ## Dropped By
+- [Thoroar](../monsters/Thoroar.html)
 
-(To be auto-filled in future update)
+## Regeneration Bonuses
+- Hits: +5
+- Mana: +5
+- Stam: +25

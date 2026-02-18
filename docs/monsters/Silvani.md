@@ -3,32 +3,28 @@ layout: default
 title: Silvani
 ---
 
-# Silvani — Unknown
-
-**No Photo Available**
+# Silvani
 
 ## Stats
 - STR: 253 - 400
 - DEX: 157 - 850
 - INT: 503 - 800
 - Hits: 600
-- Damage: 27 - 38
-- Fame/Karma: 20000 / 20000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 45 - 55
+- Fire: 30 - 40
+- Cold: 30 - 40
+- Poison: 40 - 50
+- Energy: 40 - 50
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

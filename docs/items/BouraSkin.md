@@ -5,8 +5,7 @@ title: Boura Skin
 
 # Boura Skin
 
-Class Name: `BouraSkin`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [a high plains boura](../monsters/a_high_plains_boura.html)
+- [a lowland boura](../monsters/a_lowland_boura.html)
+- [a ruddy boura](../monsters/a_ruddy_boura.html)

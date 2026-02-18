@@ -3,32 +3,28 @@ layout: default
 title: a bound soul
 ---
 
-# a bound soul — Unknown
-
-**No Photo Available**
+# a bound soul
 
 ## Stats
 - STR: 150 - 180
 - DEX: 120 - 150
 - INT: 20 - 40
 - Hits: 600 - 620
-- Damage: 17 - 22
-- Fame/Karma: 5000 / -5000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 80 - 95
+- Fire: 30 - 40
+- Cold: 20 - 30
+- Poison: 70 - 80
+- Energy: 30 - 40
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

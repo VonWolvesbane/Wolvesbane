@@ -5,8 +5,6 @@ title: Raw Fish Steak
 
 # Raw Fish Steak
 
-Class Name: `RawFishSteak`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [a kappa](../monsters/a_kappa.html)
+- [a sea serpent](../monsters/a_sea_serpent.html)

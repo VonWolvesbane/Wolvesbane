@@ -5,8 +5,5 @@ title: Treefellow Wood
 
 # Treefellow Wood
 
-Class Name: `TreefellowWood`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [a Treefellow Guardian](../monsters/a_Treefellow_Guardian.html)

@@ -3,32 +3,28 @@ layout: default
 title: a snow elemental
 ---
 
-# a snow elemental — Unknown
-
-**No Photo Available**
+# a snow elemental
 
 ## Stats
 - STR: 326 - 355
 - DEX: 166 - 185
 - INT: 71 - 95
 - Hits: 196 - 213
-- Damage: 11 - 17
-- Fame/Karma: 5000 / -5000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 45 - 55
+- Fire: 10 - 15
+- Cold: 60 - 70
+- Poison: 25 - 35
+- Energy: 25 - 35
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Black Pearl](../items/BlackPearl.html)
 
-### Random Drops
+### Potential Item Drops
 None

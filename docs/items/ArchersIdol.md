@@ -5,8 +5,9 @@ title: Archers Idol
 
 # Archers Idol
 
-Class Name: `ArchersIdol`
-
 ## Dropped By
+- [Falausmon](../monsters/Falausmon.html)
 
-(To be auto-filled in future update)
+## Skill Bonuses
+- Archery: +25.0
+- Fletching: +15.0

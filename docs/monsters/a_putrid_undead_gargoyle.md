@@ -3,34 +3,30 @@ layout: default
 title: a putrid undead gargoyle
 ---
 
-# a putrid undead gargoyle — Unknown
-
-**No Photo Available**
+# a putrid undead gargoyle
 
 ## Stats
 - STR: 525
 - DEX: 120 - 125
 - INT: 1145
 - Hits: 660 - 665
-- Damage: 21 - 30
-- Fame/Karma: 3500 / -3500
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 55 - 60
+- Fire: Unknown
+- Cold: Unknown
+- Poison: 50 - 55
+- Energy: 45 - 50
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Ancient Pottery Fragments](../items/AncientPotteryFragments.html)
 - [Infused Glass Stave](../items/InfusedGlassStave.html)
 - [Tattered Ancient Scroll](../items/TatteredAncientScroll.html)
 
-### Random Drops
+### Potential Item Drops
 None

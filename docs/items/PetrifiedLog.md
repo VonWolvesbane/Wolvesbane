@@ -5,8 +5,6 @@ title: Petrified Log
 
 # Petrified Log
 
-Class Name: `PetrifiedLog`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [a wood elemental](../monsters/a_wood_elemental.html)
+- [a heartwood elemental](../monsters/a_heartwood_elemental.html)

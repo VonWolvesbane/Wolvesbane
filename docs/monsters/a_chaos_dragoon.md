@@ -3,29 +3,25 @@ layout: default
 title: a chaos dragoon
 ---
 
-# a chaos dragoon — Unknown
-
-**No Photo Available**
+# a chaos dragoon
 
 ## Stats
 - STR: 176 - 225
 - DEX: 81 - 95
 - INT: 61 - 85
 - Hits: 176 - 225
-- Damage: 24 - 26
-- Fame/Karma: 5000 / -5000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 25 - 38
+- Fire: 25 - 38
+- Cold: 25 - 38
+- Poison: 25 - 38
+- Energy: 25 - 38
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Black Scales](../items/BlackScales.html)
@@ -37,5 +33,5 @@ None Listed
 - [White Scales](../items/WhiteScales.html)
 - [Yellow Scales](../items/YellowScales.html)
 
-### Random Drops
+### Potential Item Drops
 None

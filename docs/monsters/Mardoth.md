@@ -3,29 +3,25 @@ layout: default
 title: Mardoth
 ---
 
-# Mardoth — Unknown
-
-**No Photo Available**
+# Mardoth
 
 ## Stats
 - STR: Unknown
 - DEX: Unknown
 - INT: Unknown
 - Hits: Unknown
-- Damage: Unknown
-- Fame/Karma: Unknown / Unknown
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: Unknown
+- Fire: Unknown
+- Cold: Unknown
+- Poison: Unknown
+- Energy: Unknown
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Bank Check](../items/BankCheck.html)
@@ -40,5 +36,5 @@ None Listed
 - [Sandals](../items/Sandals.html)
 - [Wizards Hat](../items/WizardsHat.html)
 
-### Random Drops
+### Potential Item Drops
 None

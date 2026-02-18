@@ -5,8 +5,5 @@ title: Horn Abyssal Inferno
 
 # Horn Abyssal Inferno
 
-Class Name: `HornAbyssalInferno`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [Abyssal Infernal](../monsters/Abyssal_Infernal.html)

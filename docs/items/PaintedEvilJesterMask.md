@@ -5,8 +5,5 @@ title: Painted Evil Jester Mask
 
 # Painted Evil Jester Mask
 
-Class Name: `PaintedEvilJesterMask`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [a killer pumpkin](../monsters/a_killer_pumpkin.html)

@@ -5,8 +5,5 @@ title: Juka Bow
 
 # Juka Bow
 
-Class Name: `JukaBow`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [a juka lord](../monsters/a_juka_lord.html)

@@ -5,8 +5,5 @@ title: Megami Legs
 
 # Megami Legs
 
-Class Name: `MegamiLegs`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [Megami Tensei](../monsters/Megami_Tensei.html)

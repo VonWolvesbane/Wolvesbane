@@ -5,8 +5,9 @@ title: Nox Robe
 
 # Nox Robe
 
-Class Name: `NoxRobe`
-
 ## Dropped By
+- [Noxia the Swamp Queen](../monsters/Noxia_the_Swamp_Queen.html)
 
-(To be auto-filled in future update)
+## Regeneration Bonuses
+- Hits: +4
+- Mana: +4

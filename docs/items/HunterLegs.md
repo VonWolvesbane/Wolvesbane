@@ -5,8 +5,5 @@ title: Hunter Legs
 
 # Hunter Legs
 
-Class Name: `HunterLegs`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [Virulent](../monsters/Virulent.html)

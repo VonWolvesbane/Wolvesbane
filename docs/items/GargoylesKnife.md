@@ -5,8 +5,10 @@ title: Gargoyles Knife
 
 # Gargoyles Knife
 
-Class Name: `GargoylesKnife`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [a master of the arts](../monsters/a_master_of_the_arts.html)
+- [a gargoyle](../monsters/a_gargoyle.html)
+- [Gargoyle Destroyer](../monsters/Gargoyle_Destroyer.html)
+- [Gargoyle Enforcer](../monsters/Gargoyle_Enforcer.html)
+- [Abyss Guardian](../monsters/Abyss_Guardian.html)
+- [a stone gargoyle](../monsters/a_stone_gargoyle.html)

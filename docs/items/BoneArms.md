@@ -5,8 +5,6 @@ title: Bone Arms
 
 # Bone Arms
 
-Class Name: `BoneArms`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [Drelgor the Impaler](../monsters/Drelgor_the_Impaler.html)
+- [a skeleton](../monsters/a_skeleton.html)

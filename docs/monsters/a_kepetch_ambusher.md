@@ -3,33 +3,29 @@ layout: default
 title: a kepetch ambusher
 ---
 
-# a kepetch ambusher — Unknown
-
-**No Photo Available**
+# a kepetch ambusher
 
 ## Stats
 - STR: 440 - 446
 - DEX: 229 - 254
 - INT: 46 - 46
 - Hits: 533 - 544
-- Damage: 7 - 17
-- Fame/Karma: 2500 / -2500
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 73 - 95
+- Fire: 57 - 70
+- Cold: 50 - 60
+- Poison: 55 - 65
+- Energy: 70 - 95
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Kepetch Wax](../items/KepetchWax.html)
 - [Raw Ribs](../items/RawRibs.html)
 
-### Random Drops
+### Potential Item Drops
 None

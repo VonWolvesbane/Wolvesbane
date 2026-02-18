@@ -5,8 +5,5 @@ title: Hinge
 
 # Hinge
 
-Class Name: `Hinge`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [a kappa](../monsters/a_kappa.html)

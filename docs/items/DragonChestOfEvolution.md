@@ -5,8 +5,5 @@ title: Dragon Chest Of Evolution
 
 # Dragon Chest Of Evolution
 
-Class Name: `DragonChestOfEvolution`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [Idium](../monsters/Idium.html)

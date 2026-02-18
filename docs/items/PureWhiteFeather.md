@@ -5,8 +5,5 @@ title: Pure White Feather
 
 # Pure White Feather
 
-Class Name: `PureWhiteFeather`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [a farmers chicken](../monsters/a_farmers_chicken.html)

@@ -3,29 +3,25 @@ layout: default
 title: Meraktus
 ---
 
-# Meraktus — the Tormented
-
-**No Photo Available**
+# Meraktus
 
 ## Stats
 - STR: 1419 - 1438
 - DEX: 309 - 413
 - INT: 129 - 131
 - Hits: 4100 - 4200
-- Damage: 16 - 30
-- Fame/Karma: 70000 / -70000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 65 - 90
+- Fire: 65 - 70
+- Cold: 50 - 60
+- Poison: 40 - 60
+- Energy: 50 - 55
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Crimson Cincture](../items/CrimsonCincture.html)
@@ -33,7 +29,7 @@ None Listed
 - [Random Talisman](../items/RandomTalisman.html)
 - [Tormented Chains](../items/TormentedChains.html)
 
-### Random Drops
+### Potential Item Drops
 - [Blight](../items/Blight.html)
 - [Bone Pile](../items/BonePile.html)
 - [Corruption](../items/Corruption.html)

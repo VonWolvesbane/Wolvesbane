@@ -3,36 +3,33 @@ layout: default
 title: a black bear
 ---
 
-# a black bear — Unknown
-
-**No Photo Available**
+# a black bear
 
 ## Stats
 - STR: 76 - 100
 - DEX: 56 - 75
 - INT: 11 - 14
 - Hits: 46 - 60
-- Damage: 4 - 10
-- Fame/Karma: 450 / 0
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 20 - 25
+- Fire: Unknown
+- Cold: 10 - 15
+- Poison: 5 - 10
+- Energy: Unknown
 
 ## Taming Info
 - Tamable: Yes
 - Control Slots: 1
+- AI Type: AI_Animal
 
 ## Damage Types
 - Physical: 100%
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

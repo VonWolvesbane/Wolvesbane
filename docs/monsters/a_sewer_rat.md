@@ -3,36 +3,33 @@ layout: default
 title: a sewer rat
 ---
 
-# a sewer rat — Unknown
-
-**No Photo Available**
+# a sewer rat
 
 ## Stats
 - STR: 9
 - DEX: 25
 - INT: 6 - 10
 - Hits: 6
-- Damage: 1 - 2
-- Fame/Karma: 300 / -300
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 5 - 10
+- Fire: Unknown
+- Cold: Unknown
+- Poison: 15 - 25
+- Energy: 5 - 10
 
 ## Taming Info
 - Tamable: Yes
 - Control Slots: 1
+- AI Type: AI_Melee
 
 ## Damage Types
 - Physical: 100%
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

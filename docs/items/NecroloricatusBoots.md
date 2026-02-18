@@ -5,8 +5,11 @@ title: Necroloricatus Boots
 
 # Necroloricatus Boots
 
-Class Name: `NecroloricatusBoots`
-
 ## Dropped By
+- [Von Dreadsbane](../monsters/Von_Dreadsbane.html)
+- [Necroloricatus](../monsters/Necroloricatus.html)
 
-(To be auto-filled in future update)
+## Regeneration Bonuses
+- Hits: +10
+- Mana: +10
+- Stam: +10

@@ -5,8 +5,6 @@ title: Purple Heart Log
 
 # Purple Heart Log
 
-Class Name: `PurpleHeartLog`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [a wood elemental](../monsters/a_wood_elemental.html)
+- [a heartwood elemental](../monsters/a_heartwood_elemental.html)

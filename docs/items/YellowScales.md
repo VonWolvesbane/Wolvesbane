@@ -5,8 +5,6 @@ title: Yellow Scales
 
 # Yellow Scales
 
-Class Name: `YellowScales`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [a chaos dragoon](../monsters/a_chaos_dragoon.html)
+- [a chaos dragoon elite](../monsters/a_chaos_dragoon_elite.html)

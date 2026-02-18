@@ -5,8 +5,5 @@ title: Leather Ninja Belt
 
 # Leather Ninja Belt
 
-Class Name: `LeatherNinjaBelt`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [a young ninja](../monsters/a_young_ninja.html)

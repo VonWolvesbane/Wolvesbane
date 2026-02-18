@@ -5,8 +5,5 @@ title: Necklace
 
 # Necklace
 
-Class Name: `Necklace`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [a lady of the snow](../monsters/a_lady_of_the_snow.html)

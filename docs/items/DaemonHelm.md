@@ -5,8 +5,5 @@ title: Daemon Helm
 
 # Daemon Helm
 
-Class Name: `DaemonHelm`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [an efreet](../monsters/an_efreet.html)

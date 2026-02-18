@@ -3,35 +3,31 @@ layout: default
 title: a gray goblin keeper
 ---
 
-# a gray goblin keeper — Unknown
-
-**No Photo Available**
+# a gray goblin keeper
 
 ## Stats
 - STR: 326
 - DEX: 79
 - INT: 114
 - Hits: 186
-- Damage: 5 - 7
-- Fame/Karma: 1500 / -1500
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: Unknown
+- Fire: Unknown
+- Cold: Unknown
+- Poison: Unknown
+- Energy: Unknown
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Bola Ball](../items/BolaBall.html)
 - [Thigh Boots](../items/ThighBoots.html)
 
-### Random Drops
+### Potential Item Drops
 - [Candle](../items/Candle.html)
 - [Katana](../items/Katana.html)
 - [Kryss](../items/Kryss.html)

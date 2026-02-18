@@ -3,29 +3,25 @@ layout: default
 title: Barracoon Jr
 ---
 
-# Barracoon Jr — little piper
-
-**No Photo Available**
+# Barracoon Jr
 
 ## Stats
 - STR: 305 - 425
 - DEX: 72 - 150
 - INT: 505 - 750
 - Hits: 4200
-- Damage: 15 - 20
-- Fame/Karma: 22500 / -22500
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 60 - 70
+- Fire: 40 - 60
+- Cold: 50 - 60
+- Poison: 40 - 50
+- Energy: 40 - 50
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Cloak](../items/Cloak.html)
@@ -34,5 +30,5 @@ None Listed
 - [Long Pants](../items/LongPants.html)
 - [Sandals](../items/Sandals.html)
 
-### Random Drops
+### Potential Item Drops
 None

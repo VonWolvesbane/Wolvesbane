@@ -3,32 +3,28 @@ layout: default
 title: a skeletal drake
 ---
 
-# a skeletal drake — Unknown
-
-**No Photo Available**
+# a skeletal drake
 
 ## Stats
 - STR: 600 - 700
 - DEX: 70 - 100
 - INT: 300 - 400
 - Hits: 300 - 400
-- Damage: 29 - 35
-- Fame/Karma: 15000 / -15000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 75 - 80
+- Fire: 40 - 60
+- Cold: 40 - 60
+- Poison: 70 - 80
+- Energy: 40 - 60
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

@@ -5,8 +5,6 @@ title: Mortar Pestle
 
 # Mortar Pestle
 
-Class Name: `MortarPestle`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [an orc bomber](../monsters/an_orc_bomber.html)
+- [an orcish lord](../monsters/an_orcish_lord.html)

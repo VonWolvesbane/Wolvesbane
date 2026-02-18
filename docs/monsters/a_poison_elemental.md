@@ -3,33 +3,29 @@ layout: default
 title: a poison elemental
 ---
 
-# a poison elemental — Unknown
-
-**No Photo Available**
+# a poison elemental
 
 ## Stats
 - STR: 426 - 515
 - DEX: 166 - 185
 - INT: 361 - 435
 - Hits: 256 - 309
-- Damage: 12 - 18
-- Fame/Karma: 12500 / -12500
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 60 - 70
+- Fire: 20 - 30
+- Cold: 20 - 30
+- Poison: Unknown
+- Energy: 40 - 50
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Lesser Poison Potion](../items/LesserPoisonPotion.html)
 - [Nightshade](../items/Nightshade.html)
 
-### Random Drops
+### Potential Item Drops
 None

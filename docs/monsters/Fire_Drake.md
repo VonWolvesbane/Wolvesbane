@@ -3,33 +3,29 @@ layout: default
 title: Fire Drake
 ---
 
-# Fire Drake — Unknown
-
-**No Photo Available**
+# Fire Drake
 
 ## Stats
 - STR: 721 - 760
 - DEX: 101 - 130
 - INT: 386 - 425
 - Hits: 433 - 456
-- Damage: 17 - 25
-- Fame/Karma: 18000 / -18000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 55 - 70
+- Fire: 80 - 90
+- Cold: 25 - 45
+- Poison: 40 - 50
+- Energy: 40 - 50
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Gold](../items/Gold.html)
 - [fdeggs](../items/fdeggs.html)
 
-### Random Drops
+### Potential Item Drops
 None

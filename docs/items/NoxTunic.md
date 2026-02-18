@@ -5,8 +5,9 @@ title: Nox Tunic
 
 # Nox Tunic
 
-Class Name: `NoxTunic`
-
 ## Dropped By
+- [Noxia the Swamp Queen](../monsters/Noxia_the_Swamp_Queen.html)
 
-(To be auto-filled in future update)
+## Regeneration Bonuses
+- Hits: +2
+- Mana: +2

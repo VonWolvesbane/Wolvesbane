@@ -5,8 +5,5 @@ title: Pet Necro A I Deed
 
 # Pet Necro A I Deed
 
-Class Name: `PetNecroAIDeed`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [Von Wolvesbane](../monsters/Von_Wolvesbane.html)

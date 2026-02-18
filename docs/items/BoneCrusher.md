@@ -5,8 +5,5 @@ title: Bone Crusher
 
 # Bone Crusher
 
-Class Name: `BoneCrusher`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [Killar Ancestor](../monsters/Killar_Ancestor.html)

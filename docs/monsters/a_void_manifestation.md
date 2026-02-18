@@ -3,34 +3,30 @@ layout: default
 title: a void manifestation
 ---
 
-# a void manifestation — Unknown
-
-**No Photo Available**
+# a void manifestation
 
 ## Stats
 - STR: 500
 - DEX: 150
 - INT: 105
 - Hits: 2400
-- Damage: 25 - 31
-- Fame/Karma: 15000 / -15000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 15 - 30
+- Fire: 50 - 65
+- Cold: 50 - 65
+- Poison: 50 - 65
+- Energy: 50 - 65
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Void Crystal Of Corrupted Arcane Essence](../items/VoidCrystalOfCorruptedArcaneEssence.html)
 - [Void Crystal Of Corrupted Mystical Essence](../items/VoidCrystalOfCorruptedMysticalEssence.html)
 - [Void Crystal Of Corrupted Spiritual Essence](../items/VoidCrystalOfCorruptedSpiritualEssence.html)
 
-### Random Drops
+### Potential Item Drops
 None

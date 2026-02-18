@@ -3,29 +3,25 @@ layout: default
 title: Elwood McCarrin
 ---
 
-# Elwood McCarrin — Unknown
-
-**No Photo Available**
+# Elwood McCarrin
 
 ## Stats
 - STR: Unknown
 - DEX: Unknown
 - INT: Unknown
 - Hits: Unknown
-- Damage: Unknown
-- Fame/Karma: Unknown / Unknown
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: Unknown
+- Fire: Unknown
+- Cold: Unknown
+- Poison: Unknown
+- Energy: Unknown
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Fancy Shirt](../items/FancyShirt.html)
@@ -36,5 +32,5 @@ None Listed
 - [Obsidian](../items/Obsidian.html)
 - [Shoes](../items/Shoes.html)
 
-### Random Drops
+### Potential Item Drops
 None

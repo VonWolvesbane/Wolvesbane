@@ -5,8 +5,5 @@ title: Granite Stone
 
 # Granite Stone
 
-Class Name: `GraniteStone`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [a Dartmoor Pony](../monsters/a_Dartmoor_Pony.html)

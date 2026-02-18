@@ -3,32 +3,28 @@ layout: default
 title: Boom You Dead
 ---
 
-# Boom You Dead — Unknown
-
-**No Photo Available**
+# Boom You Dead
 
 ## Stats
 - STR: 1200
 - DEX: 500
 - INT: 900
 - Hits: 800000
-- Damage: 35 - 45
-- Fame/Karma: 25000 / -25000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: Unknown
+- Fire: Unknown
+- Cold: Unknown
+- Poison: Unknown
+- Energy: Unknown
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

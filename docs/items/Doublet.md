@@ -5,8 +5,6 @@ title: Doublet
 
 # Doublet
 
-Class Name: `Doublet`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [Killar Ancestor](../monsters/Killar_Ancestor.html)
+- [Mondain](../monsters/Mondain.html)

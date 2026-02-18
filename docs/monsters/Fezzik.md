@@ -3,33 +3,29 @@ layout: default
 title: Fezzik
 ---
 
-# Fezzik — The Ogre Cook
-
-**No Photo Available**
+# Fezzik
 
 ## Stats
 - STR: 1142 - 1381
 - DEX: 73 - 90
 - INT: 52 - 84
 - Hits: Unknown
-- Damage: 25 - 30
-- Fame/Karma: 3000 / -3000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 75 - 80
+- Fire: 70 - 75
+- Cold: 65 - 75
+- Poison: 55 - 65
+- Energy: 65 - 75
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Club](../items/Club.html)
 - [Recipe Scroll](../items/RecipeScroll.html)
 
-### Random Drops
+### Potential Item Drops
 None

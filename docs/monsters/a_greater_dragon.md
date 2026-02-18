@@ -3,36 +3,33 @@ layout: default
 title: a greater dragon
 ---
 
-# a greater dragon — Unknown
-
-**No Photo Available**
+# a greater dragon
 
 ## Stats
 - STR: 1025 - 1425
 - DEX: 81 - 148
 - INT: 475 - 675
 - Hits: 1000 - 2000
-- Damage: 24 - 33
-- Fame/Karma: 22000 / -15000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 60 - 85
+- Fire: 65 - 90
+- Cold: 40 - 55
+- Poison: 40 - 60
+- Energy: 50 - 75
 
 ## Taming Info
 - Tamable: Yes
 - Control Slots: 5
+- AI Type: AI_Mage
 
 ## Damage Types
 - Physical: 100%
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

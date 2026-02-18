@@ -3,33 +3,29 @@ layout: default
 title: Death's Kiss
 ---
 
-# Death's Kiss — Unknown
-
-**No Photo Available**
+# Death's Kiss
 
 ## Stats
 - STR: 1100
 - DEX: 1200
 - INT: 4000
 - Hits: 2500000
-- Damage: 75 - 110
-- Fame/Karma: 22500 / -22500
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 80 - 80
+- Fire: 80 - 80
+- Cold: 80 - 80
+- Poison: 80 - 80
+- Energy: 80 - 80
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Crimson Cincture](../items/CrimsonCincture.html)
 - [Parrot Item](../items/ParrotItem.html)
 
-### Random Drops
+### Potential Item Drops
 None

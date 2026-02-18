@@ -5,8 +5,5 @@ title: Nox Shield
 
 # Nox Shield
 
-Class Name: `NoxShield`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [Noxia the Swamp Queen](../monsters/Noxia_the_Swamp_Queen.html)

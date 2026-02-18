@@ -3,29 +3,25 @@ layout: default
 title: Barracoon
 ---
 
-# Barracoon — the piper
-
-**No Photo Available**
+# Barracoon
 
 ## Stats
 - STR: 283 - 425
 - DEX: 72 - 150
 - INT: 505 - 750
 - Hits: 12000
-- Damage: 29 - 38
-- Fame/Karma: 22500 / -22500
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 65 - 75
+- Fire: 70 - 80
+- Cold: 65 - 80
+- Poison: 70 - 75
+- Energy: 70 - 80
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Cloak](../items/Cloak.html)
@@ -34,5 +30,5 @@ None Listed
 - [Long Pants](../items/LongPants.html)
 - [Sandals](../items/Sandals.html)
 
-### Random Drops
+### Potential Item Drops
 None

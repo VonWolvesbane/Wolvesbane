@@ -3,32 +3,28 @@ layout: default
 title: Cute Lich
 ---
 
-# Cute Lich — Unknown
-
-**No Photo Available**
+# Cute Lich
 
 ## Stats
 - STR: 800
 - DEX: 900
 - INT: 900
 - Hits: 80000
-- Damage: 60 - 400
-- Fame/Karma: 4000 / -4000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: Unknown
+- Fire: Unknown
+- Cold: Unknown
+- Poison: Unknown
+- Energy: Unknown
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

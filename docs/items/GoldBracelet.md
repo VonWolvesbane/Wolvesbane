@@ -5,8 +5,5 @@ title: Gold Bracelet
 
 # Gold Bracelet
 
-Class Name: `GoldBracelet`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [Grizelda](../monsters/Grizelda.html)

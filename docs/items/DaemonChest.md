@@ -5,8 +5,5 @@ title: Daemon Chest
 
 # Daemon Chest
 
-Class Name: `DaemonChest`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [an efreet](../monsters/an_efreet.html)

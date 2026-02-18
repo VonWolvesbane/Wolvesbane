@@ -3,32 +3,28 @@ layout: default
 title: a wyvern
 ---
 
-# a wyvern — Unknown
-
-**No Photo Available**
+# a wyvern
 
 ## Stats
 - STR: 202 - 240
 - DEX: 153 - 172
 - INT: 51 - 90
 - Hits: 125 - 141
-- Damage: 8 - 19
-- Fame/Karma: 4000 / -4000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 35 - 45
+- Fire: 30 - 40
+- Cold: 20 - 30
+- Poison: 90 - 100
+- Energy: 30 - 40
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Lesser Poison Potion](../items/LesserPoisonPotion.html)
 
-### Random Drops
+### Potential Item Drops
 None

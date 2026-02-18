@@ -3,32 +3,28 @@ layout: default
 title: a revenant
 ---
 
-# a revenant — Unknown
-
-**No Photo Available**
+# a revenant
 
 ## Stats
 - STR: 200
 - DEX: 150
 - INT: 150
 - Hits: Unknown
-- Damage: 16 - 17
-- Fame/Karma: 0 / 0
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: Unknown
+- Fire: Unknown
+- Cold: Unknown
+- Poison: Unknown
+- Energy: Unknown
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

@@ -3,29 +3,25 @@ layout: default
 title: Cratylus
 ---
 
-# Cratylus — Beast of Norath
-
-**No Photo Available**
+# Cratylus
 
 ## Stats
 - STR: 3000
 - DEX: 2000
 - INT: 4000
 - Hits: 60000
-- Damage: 60 - 85
-- Fame/Karma: 15000 / -15000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: Unknown
+- Fire: Unknown
+- Cold: Unknown
+- Poison: Unknown
+- Energy: Unknown
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: 5000 - 15000
 
 ### Guaranteed Drops
 - [Cratylus Arms](../items/CratylusArms.html)
@@ -34,5 +30,5 @@ None Listed
 - [Cratylus Gorget](../items/CratylusGorget.html)
 - [Cratylus Legs](../items/CratylusLegs.html)
 
-### Random Drops
+### Potential Item Drops
 None

@@ -5,8 +5,6 @@ title: Item
 
 # Item
 
-Class Name: `Item`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [Knoll](../monsters/Knoll.html)
+- [Knoll Captain](../monsters/Knoll_Captain.html)

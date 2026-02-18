@@ -5,8 +5,8 @@ title: Cyclops Visor
 
 # Cyclops Visor
 
-Class Name: `CyclopsVisor`
-
 ## Dropped By
+- [Cyclops](../monsters/Cyclops.html)
 
-(To be auto-filled in future update)
+## Regeneration Bonuses
+- Stam: +5

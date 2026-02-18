@@ -3,27 +3,25 @@ layout: default
 title: a thunder storm
 ---
 
-# a thunder storm — Unknown
-
-**No Photo Available**
+# a thunder storm
 
 ## Stats
 - STR: 63 - 78
 - DEX: 83 - 93
 - INT: 51 - 63
 - Hits: 38 - 47
-- Damage: 4 - 5
-- Fame/Karma: 2250 / -2250
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 18 - 23
+- Fire: 8 - 13
+- Cold: 5 - 10
+- Poison: 5 - 10
+- Energy: 13 - 18
 
 ## Taming Info
 - Tamable: Yes
 - Control Slots: 1
+- AI Type: AI_Mage
 
 ## Damage Types
 - Physical: 20%
@@ -31,10 +29,9 @@ None Listed
 - Energy: 40%
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Sulfurous Ash](../items/SulfurousAsh.html)
 
-### Random Drops
+### Potential Item Drops
 None

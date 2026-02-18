@@ -5,8 +5,8 @@ title: Maskof Wolverine
 
 # Maskof Wolverine
 
-Class Name: `MaskofWolverine`
-
 ## Dropped By
+- [Wolverine](../monsters/Wolverine.html)
 
-(To be auto-filled in future update)
+## Regeneration Bonuses
+- Stam: +5

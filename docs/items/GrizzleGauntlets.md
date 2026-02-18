@@ -5,8 +5,5 @@ title: Grizzle Gauntlets
 
 # Grizzle Gauntlets
 
-Class Name: `GrizzleGauntlets`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [a monstrous interred grizzle](../monsters/a_monstrous_interred_grizzle.html)

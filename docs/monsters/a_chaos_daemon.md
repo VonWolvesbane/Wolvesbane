@@ -3,32 +3,28 @@ layout: default
 title: a chaos daemon
 ---
 
-# a chaos daemon — Unknown
-
-**No Photo Available**
+# a chaos daemon
 
 ## Stats
 - STR: 106 - 130
 - DEX: 171 - 200
 - INT: 56 - 80
 - Hits: 91 - 110
-- Damage: 12 - 17
-- Fame/Karma: 3000 / -4000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 50 - 60
+- Fire: 60 - 70
+- Cold: 40 - 50
+- Poison: 20 - 30
+- Energy: 20 - 30
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

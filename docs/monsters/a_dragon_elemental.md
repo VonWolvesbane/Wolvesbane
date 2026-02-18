@@ -3,32 +3,28 @@ layout: default
 title: a dragon elemental
 ---
 
-# a dragon elemental — Unknown
-
-**No Photo Available**
+# a dragon elemental
 
 ## Stats
 - STR: 898 - 1030
 - DEX: 568 - 600
 - INT: 488 - 620
 - Hits: 4558 - 5599
-- Damage: 25 - 30
-- Fame/Karma: 22500 / -22500
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 50 - 70
+- Fire: 90 - 100
+- Cold: 45 - 55
+- Poison: 20 - 30
+- Energy: 50 - 70
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Dragon Ore](../items/DragonOre.html)
 
-### Random Drops
+### Potential Item Drops
 None

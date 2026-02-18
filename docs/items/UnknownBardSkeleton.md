@@ -5,8 +5,5 @@ title: Unknown Bard Skeleton
 
 # Unknown Bard Skeleton
 
-Class Name: `UnknownBardSkeleton`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [an ant lion](../monsters/an_ant_lion.html)

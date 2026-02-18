@@ -3,32 +3,28 @@ layout: default
 title: Djinn
 ---
 
-# Djinn — Unknown
-
-**No Photo Available**
+# Djinn
 
 ## Stats
 - STR: 320 - 500
 - DEX: 200 - 300
 - INT: 600 - 700
 - Hits: 2003
-- Damage: 11 - 13
-- Fame/Karma: 15000 / -15000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 50 - 60
+- Fire: 60 - 70
+- Cold: 30 - 40
+- Poison: 30 - 40
+- Energy: 80 - 90
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

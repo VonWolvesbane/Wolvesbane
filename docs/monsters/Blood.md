@@ -3,32 +3,28 @@ layout: default
 title: Blood
 ---
 
-# Blood — Unknown
-
-**No Photo Available**
+# Blood
 
 ## Stats
 - STR: 220 - 286
 - DEX: 125 - 130
 - INT: 100 - 101
 - Hits: 130
-- Damage: 8 - 18
-- Fame/Karma: 300 / -300
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 30 - 50
+- Fire: 20 - 30
+- Cold: 50 - 60
+- Poison: 20 - 30
+- Energy: 30 - 40
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

@@ -3,32 +3,28 @@ layout: default
 title: a lifestealer
 ---
 
-# a lifestealer — Unknown
-
-**No Photo Available**
+# a lifestealer
 
 ## Stats
 - STR: 200 - 240
 - DEX: 130 - 150
 - INT: 200 - 250
 - Hits: 4600 - 4650
-- Damage: 22 - 26
-- Fame/Karma: 9500 / -9500
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 45 - 55
+- Fire: 25 - 35
+- Cold: 15 - 25
+- Poison: 60 - 70
+- Energy: 40 - 50
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

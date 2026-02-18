@@ -5,8 +5,5 @@ title: Paroxysmus Corroded Stein
 
 # Paroxysmus Corroded Stein
 
-Class Name: `ParoxysmusCorrodedStein`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [a chief paroxysmus](../monsters/a_chief_paroxysmus.html)

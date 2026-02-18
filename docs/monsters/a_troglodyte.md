@@ -3,34 +3,30 @@ layout: default
 title: a troglodyte
 ---
 
-# a troglodyte — Unknown
-
-**No Photo Available**
+# a troglodyte
 
 ## Stats
 - STR: 148 - 217
 - DEX: 91 - 120
 - INT: 51 - 70
 - Hits: 302 - 340
-- Damage: 11 - 14
-- Fame/Karma: 5000 / -5000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 30 - 35
+- Fire: 20 - 30
+- Cold: 35 - 40
+- Poison: 30 - 40
+- Energy: 30 - 40
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Bandage](../items/Bandage.html)
 - [Primitive Fetish](../items/PrimitiveFetish.html)
 - [Ribs](../items/Ribs.html)
 
-### Random Drops
+### Potential Item Drops
 None

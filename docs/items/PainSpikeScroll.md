@@ -5,8 +5,7 @@ title: Pain Spike Scroll
 
 # Pain Spike Scroll
 
-Class Name: `PainSpikeScroll`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [an air elemental](../monsters/an_air_elemental.html)
+- [a gargoyle](../monsters/a_gargoyle.html)
+- [an imp](../monsters/an_imp.html)

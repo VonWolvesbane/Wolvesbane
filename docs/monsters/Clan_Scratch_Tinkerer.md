@@ -3,33 +3,29 @@ layout: default
 title: Clan Scratch Tinkerer
 ---
 
-# Clan Scratch Tinkerer — Unknown
-
-**No Photo Available**
+# Clan Scratch Tinkerer
 
 ## Stats
 - STR: 300 - 330
 - DEX: 220 - 240
 - INT: 240 - 275
 - Hits: 2025 - 2068
-- Damage: 4 - 10
-- Fame/Karma: 6500 / -6500
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 20 - 30
+- Fire: 20 - 30
+- Cold: 35 - 50
+- Poison: 10 - 20
+- Energy: 10 - 20
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Arrow](../items/Arrow.html)
 - [Bow](../items/Bow.html)
 
-### Random Drops
+### Potential Item Drops
 None

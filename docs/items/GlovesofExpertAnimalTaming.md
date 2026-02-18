@@ -5,8 +5,5 @@ title: Glovesof Expert Animal Taming
 
 # Glovesof Expert Animal Taming
 
-Class Name: `GlovesofExpertAnimalTaming`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [Von Wolvesbane](../monsters/Von_Wolvesbane.html)

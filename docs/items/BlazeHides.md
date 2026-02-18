@@ -5,8 +5,6 @@ title: Blaze Hides
 
 # Blaze Hides
 
-Class Name: `BlazeHides`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [Gargoyles Knife](../monsters/Gargoyles_Knife.html)
+- [Masters Knife](../monsters/Masters_Knife.html)

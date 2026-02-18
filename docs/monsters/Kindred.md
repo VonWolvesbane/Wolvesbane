@@ -3,34 +3,30 @@ layout: default
 title: Kindred
 ---
 
-# Kindred — the Mage
-
-**No Photo Available**
+# Kindred
 
 ## Stats
 - STR: 3386 - 3400
 - DEX: 350 - 350
 - INT: 7610 - 7775
 - Hits: 35000 - 37500
-- Damage: 55 - 70
-- Fame/Karma: 50000 / 50000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 98 - 100
+- Fire: 70 - 80
+- Cold: 70 - 80
+- Poison: 70 - 80
+- Energy: 70 - 80
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 - [Mages Revenge](../items/MagesRevenge.html)
 - [Mages Revenge Garg](../items/MagesRevengeGarg.html)
 - [Rolodex](../items/Rolodex.html)

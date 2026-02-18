@@ -5,8 +5,6 @@ title: Plate Suneate
 
 # Plate Suneate
 
-Class Name: `PlateSuneate`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [a ronin](../monsters/a_ronin.html)
+- [a young ronin](../monsters/a_young_ronin.html)

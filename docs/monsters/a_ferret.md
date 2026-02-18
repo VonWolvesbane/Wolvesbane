@@ -3,36 +3,33 @@ layout: default
 title: a ferret
 ---
 
-# a ferret — Unknown
-
-**No Photo Available**
+# a ferret
 
 ## Stats
 - STR: 41 - 48
 - DEX: 55
 - INT: 75
 - Hits: 45 - 50
-- Damage: 7 - 9
-- Fame/Karma: Unknown / Unknown
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 45 - 50
+- Fire: 10 - 14
+- Cold: 30 - 40
+- Poison: 21 - 25
+- Energy: 20 - 25
 
 ## Taming Info
 - Tamable: Yes
 - Control Slots: 1
+- AI Type: AI_Animal
 
 ## Damage Types
 - Physical: 100%
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

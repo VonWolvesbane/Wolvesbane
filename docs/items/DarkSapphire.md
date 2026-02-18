@@ -5,8 +5,5 @@ title: Dark Sapphire
 
 # Dark Sapphire
 
-Class Name: `DarkSapphire`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [Diabolical Seaweed](../monsters/Diabolical_Seaweed.html)

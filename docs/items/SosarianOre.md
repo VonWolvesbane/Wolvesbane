@@ -5,8 +5,5 @@ title: Sosarian Ore
 
 # Sosarian Ore
 
-Class Name: `SosarianOre`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [a Sorarian elemental](../monsters/a_Sorarian_elemental.html)

@@ -3,34 +3,30 @@ layout: default
 title: Noxia the Swamp Queen
 ---
 
-# Noxia the Swamp Queen — Unknown
-
-**No Photo Available**
+# Noxia the Swamp Queen
 
 ## Stats
 - STR: 180 - 225
 - DEX: 120 - 185
 - INT: 200 - 245
 - Hits: 4700 - 4850
-- Damage: 19 - 35
-- Fame/Karma: 9000 / -9000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 80 - 85
+- Fire: 80 - 80
+- Cold: 85 - 85
+- Poison: 100 - 100
+- Energy: 85 - 85
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: 2820 - 3300
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 - [Nox Arms](../items/NoxArms.html)
 - [Nox Gloves](../items/NoxGloves.html)
 - [Nox Gorget](../items/NoxGorget.html)

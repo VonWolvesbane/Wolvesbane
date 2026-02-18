@@ -5,8 +5,10 @@ title: Tamers Idol
 
 # Tamers Idol
 
-Class Name: `TamersIdol`
-
 ## Dropped By
+- [Falausmon](../monsters/Falausmon.html)
 
-(To be auto-filled in future update)
+## Skill Bonuses
+- Veterinary: +25.0
+- AnimalLore: +10.0
+- AnimalTaming: +10.0

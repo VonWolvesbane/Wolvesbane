@@ -3,33 +3,29 @@ layout: default
 title: a plague beast
 ---
 
-# a plague beast — Unknown
-
-**No Photo Available**
+# a plague beast
 
 ## Stats
 - STR: 302 - 500
 - DEX: 80
 - INT: 16 - 20
 - Hits: 318 - 404
-- Damage: 20 - 24
-- Fame/Karma: 13000 / -13000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 45 - 55
+- Fire: 40 - 50
+- Cold: 25 - 35
+- Poison: 65 - 75
+- Energy: 25 - 35
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Metal Chest](../items/MetalChest.html)
 - [Plague Beast Gland](../items/PlagueBeastGland.html)
 
-### Random Drops
+### Potential Item Drops
 None

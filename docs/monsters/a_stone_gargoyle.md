@@ -3,34 +3,30 @@ layout: default
 title: a stone gargoyle
 ---
 
-# a stone gargoyle — Unknown
-
-**No Photo Available**
+# a stone gargoyle
 
 ## Stats
 - STR: 246 - 275
 - DEX: 76 - 95
 - INT: 81 - 105
 - Hits: 148 - 165
-- Damage: 11 - 17
-- Fame/Karma: 4000 / -4000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 45 - 55
+- Fire: 20 - 30
+- Cold: 10 - 20
+- Poison: 30 - 40
+- Energy: 30 - 40
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Iron Ingot](../items/IronIngot.html)
 
-### Random Drops
+### Potential Item Drops
 - [Gargoyles Axe](../items/GargoylesAxe.html)
 - [Gargoyles Knife](../items/GargoylesKnife.html)
 - [Gargoyles Pickaxe](../items/GargoylesPickaxe.html)

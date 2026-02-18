@@ -5,8 +5,10 @@ title: Oblivion Blade
 
 # Oblivion Blade
 
-Class Name: `OblivionBlade`
-
 ## Dropped By
+- [Thoroar](../monsters/Thoroar.html)
 
-(To be auto-filled in future update)
+## Regeneration Bonuses
+- Hits: +3
+- Mana: +6
+- Stam: +12

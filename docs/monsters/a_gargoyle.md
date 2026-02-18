@@ -3,34 +3,30 @@ layout: default
 title: a gargoyle
 ---
 
-# a gargoyle — Unknown
-
-**No Photo Available**
+# a gargoyle
 
 ## Stats
 - STR: 146 - 175
 - DEX: 76 - 95
 - INT: 81 - 105
 - Hits: 88 - 105
-- Damage: 7 - 14
-- Fame/Karma: 3500 / -3500
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 30 - 35
+- Fire: 25 - 35
+- Cold: 5 - 10
+- Poison: 15 - 25
+- Energy: Unknown
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 - [Gargoyles Axe](../items/GargoylesAxe.html)
 - [Gargoyles Knife](../items/GargoylesKnife.html)
 - [Gargoyles Pickaxe](../items/GargoylesPickaxe.html)

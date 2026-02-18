@@ -5,8 +5,5 @@ title: Perfect Emerald
 
 # Perfect Emerald
 
-Class Name: `PerfectEmerald`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [Diabolical Seaweed](../monsters/Diabolical_Seaweed.html)

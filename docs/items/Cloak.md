@@ -5,8 +5,10 @@ title: Cloak
 
 # Cloak
 
-Class Name: `Cloak`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [Barracoon Jr](../monsters/Barracoon_Jr.html)
+- [Killar Ancestor](../monsters/Killar_Ancestor.html)
+- [Mondain](../monsters/Mondain.html)
+- [Rogue](../monsters/Rogue.html)
+- [Barracoon](../monsters/Barracoon.html)
+- [Lysander Gathenwale](../monsters/Lysander_Gathenwale.html)

@@ -5,8 +5,10 @@ title: Oblivion Chest
 
 # Oblivion Chest
 
-Class Name: `OblivionChest`
-
 ## Dropped By
+- [Thoroar](../monsters/Thoroar.html)
 
-(To be auto-filled in future update)
+## Regeneration Bonuses
+- Hits: +5
+- Mana: +5
+- Stam: +25

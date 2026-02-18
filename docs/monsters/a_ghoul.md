@@ -3,32 +3,28 @@ layout: default
 title: a ghoul
 ---
 
-# a ghoul — Unknown
-
-**No Photo Available**
+# a ghoul
 
 ## Stats
 - STR: 76 - 100
 - DEX: 76 - 95
 - INT: 36 - 60
 - Hits: 46 - 60
-- Damage: 7 - 9
-- Fame/Karma: 2500 / -2500
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 25 - 30
+- Fire: Unknown
+- Cold: 20 - 30
+- Poison: 5 - 10
+- Energy: 10 - 20
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

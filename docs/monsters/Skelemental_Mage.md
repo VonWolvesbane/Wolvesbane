@@ -3,32 +3,28 @@ layout: default
 title: Skelemental Mage
 ---
 
-# Skelemental Mage — Unknown
-
-**No Photo Available**
+# Skelemental Mage
 
 ## Stats
 - STR: 200 - 250
 - DEX: 70 - 100
 - INT: 100 - 130
 - Hits: 100 - 150
-- Damage: 8 - 18
-- Fame/Karma: 3000 / -3000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: Unknown
+- Fire: Unknown
+- Cold: Unknown
+- Poison: Unknown
+- Energy: Unknown
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Bone](../items/Bone.html)
 
-### Random Drops
+### Potential Item Drops
 None

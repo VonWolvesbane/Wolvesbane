@@ -3,32 +3,28 @@ layout: default
 title: an Abyssal Abomination
 ---
 
-# an Abyssal Abomination — Unknown
-
-**No Photo Available**
+# an Abyssal Abomination
 
 ## Stats
 - STR: 401 - 420
 - DEX: 81 - 90
 - INT: 401 - 420
 - Hits: 600 - 750
-- Damage: 13 - 17
-- Fame/Karma: 26000 / -26000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 30 - 35
+- Fire: Unknown
+- Cold: 50 - 55
+- Poison: 60 - 65
+- Energy: 77 - 80
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

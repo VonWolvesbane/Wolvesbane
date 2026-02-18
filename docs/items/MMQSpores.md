@@ -5,8 +5,5 @@ title: M M Q Spores
 
 # M M Q Spores
 
-Class Name: `MMQSpores`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [Fungus Eating Slime](../monsters/Fungus_Eating_Slime.html)

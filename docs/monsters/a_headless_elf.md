@@ -3,32 +3,28 @@ layout: default
 title: a headless elf
 ---
 
-# a headless elf — Unknown
-
-**No Photo Available**
+# a headless elf
 
 ## Stats
 - STR: 700 - 800
 - DEX: 90 - 100
 - INT: 450 - 500
 - Hits: 8000
-- Damage: 21 - 27
-- Fame/Karma: 12000 / -12000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 70 - 80
+- Fire: 70 - 80
+- Cold: 60 - 70
+- Poison: 60 - 70
+- Energy: 60 - 70
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

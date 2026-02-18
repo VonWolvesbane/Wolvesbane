@@ -3,32 +3,28 @@ layout: default
 title: a quagmire
 ---
 
-# a quagmire — Unknown
-
-**No Photo Available**
+# a quagmire
 
 ## Stats
 - STR: 101 - 130
 - DEX: 66 - 85
 - INT: 31 - 55
 - Hits: 91 - 105
-- Damage: 10 - 14
-- Fame/Karma: 1500 / -1500
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 50 - 60
+- Fire: 10 - 20
+- Cold: 10 - 20
+- Poison: Unknown
+- Energy: 20 - 30
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

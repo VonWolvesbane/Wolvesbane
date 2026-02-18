@@ -5,8 +5,5 @@ title: Vines
 
 # Vines
 
-Class Name: `Vines`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [a whipping vine](../monsters/a_whipping_vine.html)

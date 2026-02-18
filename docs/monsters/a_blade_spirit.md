@@ -3,32 +3,28 @@ layout: default
 title: a blade spirit
 ---
 
-# a blade spirit — Unknown
-
-**No Photo Available**
+# a blade spirit
 
 ## Stats
 - STR: Unknown
 - DEX: Unknown
 - INT: 100
 - Hits: Unknown
-- Damage: 10 - 14
-- Fame/Karma: 0 / 0
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 30 - 40
+- Fire: 40 - 50
+- Cold: 30 - 40
+- Poison: Unknown
+- Energy: 20 - 30
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

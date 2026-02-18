@@ -3,32 +3,28 @@ layout: default
 title: Clan Scratch Savage Wolf
 ---
 
-# Clan Scratch Savage Wolf — Unknown
-
-**No Photo Available**
+# Clan Scratch Savage Wolf
 
 ## Stats
 - STR: 170
 - DEX: 244
 - INT: 57
 - Hits: 65
-- Damage: 8 - 10
-- Fame/Karma: 3400 / -3400
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 30 - 35
+- Fire: Unknown
+- Cold: 40 - 45
+- Poison: 25 - 30
+- Energy: 20 - 25
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

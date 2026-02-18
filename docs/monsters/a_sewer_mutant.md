@@ -3,32 +3,28 @@ layout: default
 title: a sewer mutant
 ---
 
-# a sewer mutant — Unknown
-
-**No Photo Available**
+# a sewer mutant
 
 ## Stats
 - STR: 241 - 265
 - DEX: 201 - 225
 - INT: 156 - 180
 - Hits: 185 - 199
-- Damage: 22 - 27
-- Fame/Karma: 1500 / -1500
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 45 - 55
+- Fire: 25 - 35
+- Cold: 25 - 35
+- Poison: 10 - 20
+- Energy: 30 - 40
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

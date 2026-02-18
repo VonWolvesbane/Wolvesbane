@@ -5,8 +5,5 @@ title: sdeggs
 
 # sdeggs
 
-Class Name: `sdeggs`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [Snow Drake](../monsters/Snow_Drake.html)

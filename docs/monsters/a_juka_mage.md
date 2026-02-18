@@ -3,32 +3,28 @@ layout: default
 title: a juka mage
 ---
 
-# a juka mage — Unknown
-
-**No Photo Available**
+# a juka mage
 
 ## Stats
 - STR: 201 - 300
 - DEX: 71 - 90
 - INT: 451 - 500
 - Hits: 121 - 180
-- Damage: 4 - 10
-- Fame/Karma: 15000 / -15000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 20 - 30
+- Fire: 35 - 45
+- Cold: 30 - 40
+- Poison: 10 - 20
+- Energy: 35 - 45
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Arcane Gem](../items/ArcaneGem.html)
 
-### Random Drops
+### Potential Item Drops
 None

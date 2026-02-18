@@ -5,8 +5,5 @@ title: Void Core
 
 # Void Core
 
-Class Name: `VoidCore`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [a mud pie](../monsters/a_mud_pie.html)

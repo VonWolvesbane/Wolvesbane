@@ -3,37 +3,34 @@ layout: default
 title: a hell hound
 ---
 
-# a hell hound — Unknown
-
-**No Photo Available**
+# a hell hound
 
 ## Stats
 - STR: 100 - 350
 - DEX: 80 - 300
 - INT: 30 - 180
 - Hits: 130 - 300
-- Damage: 11 - 17
-- Fame/Karma: 3400 / -3400
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 0 - 56
+- Fire: 30 - 40
+- Cold: Unknown
+- Poison: 10 - 20
+- Energy: 10 - 20
 
 ## Taming Info
 - Tamable: Yes
 - Control Slots: 1
+- AI Type: AI_Melee
 
 ## Damage Types
 - Physical: 20%
 - Fire: 80%
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Sulfurous Ash](../items/SulfurousAsh.html)
 
-### Random Drops
+### Potential Item Drops
 None

@@ -5,8 +5,5 @@ title: Fire Horn
 
 # Fire Horn
 
-Class Name: `FireHorn`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [Grimmoch Drummel](../monsters/Grimmoch_Drummel.html)

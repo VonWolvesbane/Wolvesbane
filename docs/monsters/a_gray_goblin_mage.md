@@ -3,35 +3,31 @@ layout: default
 title: a gray goblin mage
 ---
 
-# a gray goblin mage — Unknown
-
-**No Photo Available**
+# a gray goblin mage
 
 ## Stats
 - STR: 227 - 285
 - DEX: 70 - 88
 - INT: 451 - 499
 - Hits: 129 - 151
-- Damage: 5 - 7
-- Fame/Karma: 1500 / -1500
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 40 - 50
+- Fire: 30 - 40
+- Cold: 25 - 32
+- Poison: 10 - 19
+- Energy: 10 - 20
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Bola Ball](../items/BolaBall.html)
 - [Thigh Boots](../items/ThighBoots.html)
 
-### Random Drops
+### Potential Item Drops
 - [Candle](../items/Candle.html)
 - [Katana](../items/Katana.html)
 - [Kryss](../items/Kryss.html)

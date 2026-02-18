@@ -3,34 +3,30 @@ layout: default
 title: Ihara Soko
 ---
 
-# Ihara Soko — Unknown
-
-**No Photo Available**
+# Ihara Soko
 
 ## Stats
 - STR: Unknown
 - DEX: Unknown
 - INT: Unknown
 - Hits: Unknown
-- Damage: Unknown
-- Fame/Karma: 0 / Unknown
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: Unknown
+- Fire: Unknown
+- Cold: Unknown
+- Poison: Unknown
+- Energy: Unknown
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Backpack](../items/Backpack.html)
 - [Kamishimo](../items/Kamishimo.html)
 - [Waraji](../items/Waraji.html)
 
-### Random Drops
+### Potential Item Drops
 None

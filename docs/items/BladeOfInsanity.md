@@ -5,8 +5,8 @@ title: Blade Of Insanity
 
 # Blade Of Insanity
 
-Class Name: `BladeOfInsanity`
-
 ## Dropped By
+- [Killar Ancestor](../monsters/Killar_Ancestor.html)
 
-(To be auto-filled in future update)
+## Regeneration Bonuses
+- Stam: +2

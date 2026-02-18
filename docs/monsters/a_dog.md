@@ -3,36 +3,33 @@ layout: default
 title: a dog
 ---
 
-# a dog — Unknown
-
-**No Photo Available**
+# a dog
 
 ## Stats
 - STR: 27 - 37
 - DEX: 28 - 43
 - INT: 29 - 37
 - Hits: 17 - 22
-- Damage: 4 - 7
-- Fame/Karma: 0 / 300
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 10 - 15
+- Fire: Unknown
+- Cold: Unknown
+- Poison: Unknown
+- Energy: Unknown
 
 ## Taming Info
 - Tamable: Yes
 - Control Slots: 1
+- AI Type: AI_Animal
 
 ## Damage Types
 - Physical: 100%
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

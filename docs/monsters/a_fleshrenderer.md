@@ -3,32 +3,28 @@ layout: default
 title: a fleshrenderer
 ---
 
-# a fleshrenderer — Unknown
-
-**No Photo Available**
+# a fleshrenderer
 
 ## Stats
 - STR: 401 - 460
 - DEX: 201 - 210
 - INT: 221 - 260
 - Hits: 4500
-- Damage: 16 - 20
-- Fame/Karma: 23000 / -23000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 80 - 90
+- Fire: 50 - 60
+- Cold: 50 - 60
+- Poison: Unknown
+- Energy: 70 - 80
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

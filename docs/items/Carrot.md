@@ -5,8 +5,6 @@ title: Carrot
 
 # Carrot
 
-Class Name: `Carrot`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [An Easter bunny](../monsters/An_Easter_bunny.html)
+- [a vorpal bunny](../monsters/a_vorpal_bunny.html)

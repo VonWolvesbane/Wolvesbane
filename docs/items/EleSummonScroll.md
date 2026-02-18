@@ -5,8 +5,5 @@ title: Ele Summon Scroll
 
 # Ele Summon Scroll
 
-Class Name: `EleSummonScroll`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [an earth elemental](../monsters/an_earth_elemental.html)

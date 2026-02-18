@@ -3,37 +3,34 @@ layout: default
 title: a phoenix
 ---
 
-# a phoenix — Unknown
-
-**No Photo Available**
+# a phoenix
 
 ## Stats
 - STR: 504 - 700
 - DEX: 202 - 300
 - INT: 504 - 700
 - Hits: 340 - 383
-- Damage: 20 - 25
-- Fame/Karma: 15000 / 0
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 45 - 55
+- Fire: 60 - 70
+- Cold: Unknown
+- Poison: 25 - 35
+- Energy: 40 - 50
 
 ## Taming Info
 - Tamable: Yes
 - Control Slots: 4
+- AI Type: AI_Mage
 
 ## Damage Types
 - Physical: 50%
 - Fire: 50%
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

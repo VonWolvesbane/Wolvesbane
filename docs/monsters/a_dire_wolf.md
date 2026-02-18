@@ -3,36 +3,33 @@ layout: default
 title: a dire wolf
 ---
 
-# a dire wolf — Unknown
-
-**No Photo Available**
+# a dire wolf
 
 ## Stats
 - STR: 96 - 120
 - DEX: 81 - 105
 - INT: 36 - 60
 - Hits: 58 - 72
-- Damage: 11 - 17
-- Fame/Karma: 2500 / -2500
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 20 - 25
+- Fire: 10 - 20
+- Cold: 5 - 10
+- Poison: 5 - 10
+- Energy: 10 - 15
 
 ## Taming Info
 - Tamable: Yes
 - Control Slots: 1
+- AI Type: AI_Melee
 
 ## Damage Types
 - Physical: 100%
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

@@ -5,8 +5,7 @@ title: Slith Eye
 
 # Slith Eye
 
-Class Name: `SlithEye`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [a slith](../monsters/a_slith.html)
+- [a stone slith](../monsters/a_stone_slith.html)
+- [a toxic slith](../monsters/a_toxic_slith.html)

@@ -5,8 +5,5 @@ title: Megami Chest
 
 # Megami Chest
 
-Class Name: `MegamiChest`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [Megami Tensei](../monsters/Megami_Tensei.html)

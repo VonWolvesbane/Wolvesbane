@@ -5,8 +5,11 @@ title: Steves Shirt
 
 # Steves Shirt
 
-Class Name: `StevesShirt`
-
 ## Dropped By
+- [Egg Napper](../monsters/Egg_Napper.html)
 
-(To be auto-filled in future update)
+## Skill Bonuses
+- AnimalTaming: +15
+- AnimalLore: +15
+- Healing: +15
+- Veterinary: +15

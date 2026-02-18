@@ -3,32 +3,28 @@ layout: default
 title: a trapdoor spider
 ---
 
-# a trapdoor spider — Unknown
-
-**No Photo Available**
+# a trapdoor spider
 
 ## Stats
 - STR: 100 - 104
 - DEX: 162 - 165
 - INT: 29 - 50
 - Hits: 125 - 144
-- Damage: 15 - 18
-- Fame/Karma: Unknown / Unknown
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: Unknown
+- Fire: 30 - 35
+- Cold: 30 - 35
+- Poison: 40 - 45
+- Energy: 95 - 100
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

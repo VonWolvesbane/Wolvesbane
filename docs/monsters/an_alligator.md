@@ -3,36 +3,33 @@ layout: default
 title: an alligator
 ---
 
-# an alligator — Unknown
-
-**No Photo Available**
+# an alligator
 
 ## Stats
 - STR: 76 - 100
 - DEX: 6 - 25
 - INT: 11 - 20
 - Hits: 46 - 60
-- Damage: 5 - 15
-- Fame/Karma: 600 / -600
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 25 - 35
+- Fire: 5 - 10
+- Cold: Unknown
+- Poison: 5 - 10
+- Energy: Unknown
 
 ## Taming Info
 - Tamable: Yes
 - Control Slots: 1
+- AI Type: AI_Melee
 
 ## Damage Types
 - Physical: 100%
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

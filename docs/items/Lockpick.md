@@ -5,8 +5,6 @@ title: Lockpick
 
 # Lockpick
 
-Class Name: `Lockpick`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [an orc chopper](../monsters/an_orc_chopper.html)
+- [an orcish lord](../monsters/an_orcish_lord.html)

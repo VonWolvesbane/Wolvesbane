@@ -3,27 +3,25 @@ layout: default
 title: Ossein Ram
 ---
 
-# Ossein Ram — Unknown
-
-**No Photo Available**
+# Ossein Ram
 
 ## Stats
 - STR: 300 - 400
 - DEX: 80 - 100
 - INT: 100 - 120
 - Hits: 450 - 550
-- Damage: 18 - 23
-- Fame/Karma: Unknown / Unknown
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 50 - 60
+- Fire: 10 - 20
+- Cold: 40 - 50
+- Poison: 30 - 40
+- Energy: 40 - 50
 
 ## Taming Info
 - Tamable: Yes
 - Control Slots: 2
+- AI Type: AI_Melee
 
 ## Damage Types
 - Physical: 50%
@@ -31,10 +29,9 @@ None Listed
 - Energy: 25%
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

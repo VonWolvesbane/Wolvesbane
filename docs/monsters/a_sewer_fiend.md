@@ -3,32 +3,28 @@ layout: default
 title: a sewer fiend
 ---
 
-# a sewer fiend — Unknown
-
-**No Photo Available**
+# a sewer fiend
 
 ## Stats
 - STR: 261 - 285
 - DEX: 141 - 165
 - INT: 146 - 170
 - Hits: 197 - 211
-- Damage: 25 - 31
-- Fame/Karma: 1500 / -1500
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 35 - 45
+- Fire: 25 - 35
+- Cold: 15 - 25
+- Poison: 5 - 15
+- Energy: 30 - 40
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

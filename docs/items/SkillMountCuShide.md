@@ -5,8 +5,5 @@ title: Skill Mount Cu Shide
 
 # Skill Mount Cu Shide
 
-Class Name: `SkillMountCuShide`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [Keeper Of The Skill Mount](../monsters/Keeper_Of_The_Skill_Mount.html)

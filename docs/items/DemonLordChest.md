@@ -5,8 +5,10 @@ title: Demon Lord Chest
 
 # Demon Lord Chest
 
-Class Name: `DemonLordChest`
-
 ## Dropped By
+- [Diarmaid Mainyu](../monsters/Diarmaid_Mainyu.html)
 
-(To be auto-filled in future update)
+## Regeneration Bonuses
+- Hits: +5
+- Mana: +5
+- Stam: +10

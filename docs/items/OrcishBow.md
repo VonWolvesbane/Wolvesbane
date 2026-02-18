@@ -5,8 +5,5 @@ title: Orcish Bow
 
 # Orcish Bow
 
-Class Name: `OrcishBow`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [an orc scout](../monsters/an_orc_scout.html)

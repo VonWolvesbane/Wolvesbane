@@ -3,32 +3,28 @@ layout: default
 title: an ice elemental
 ---
 
-# an ice elemental — Unknown
-
-**No Photo Available**
+# an ice elemental
 
 ## Stats
 - STR: 156 - 185
 - DEX: 96 - 115
 - INT: 171 - 192
 - Hits: 94 - 111
-- Damage: 10 - 21
-- Fame/Karma: 4000 / -4000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 35 - 45
+- Fire: 5 - 10
+- Cold: 50 - 60
+- Poison: 20 - 30
+- Energy: 20 - 30
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Black Pearl](../items/BlackPearl.html)
 
-### Random Drops
+### Potential Item Drops
 None

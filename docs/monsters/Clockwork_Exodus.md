@@ -3,32 +3,28 @@ layout: default
 title: Clockwork Exodus
 ---
 
-# Clockwork Exodus — Unknown
-
-**No Photo Available**
+# Clockwork Exodus
 
 ## Stats
 - STR: 851 - 950
 - DEX: 581 - 683
 - INT: 601 - 750
 - Hits: 50000
-- Damage: 20 - 30
-- Fame/Karma: 24000 / -24000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 75 - 90
+- Fire: 50 - 65
+- Cold: 45 - 60
+- Poison: 45 - 60
+- Energy: 45 - 60
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

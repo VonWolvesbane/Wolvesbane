@@ -5,8 +5,6 @@ title: Electrum Ore
 
 # Electrum Ore
 
-Class Name: `ElectrumOre`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [a wood elemental](../monsters/a_wood_elemental.html)
+- [a dull copper ore elemental](../monsters/a_dull_copper_ore_elemental.html)

@@ -3,29 +3,25 @@ layout: default
 title: a heartwood elemental
 ---
 
-# a heartwood elemental — Unknown
-
-**No Photo Available**
+# a heartwood elemental
 
 ## Stats
 - STR: 150 - 200
 - DEX: 100 - 120
 - INT: 50 - 60
 - Hits: 100 - 120
-- Damage: 5 - 10
-- Fame/Karma: 500 / -500
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 10 - 20
+- Fire: 5 - 10
+- Cold: 5 - 10
+- Poison: 5 - 10
+- Energy: 5 - 10
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Ash Log](../items/AshLog.html)
@@ -40,5 +36,5 @@ None Listed
 - [Redwood Log](../items/RedwoodLog.html)
 - [Yew Log](../items/YewLog.html)
 
-### Random Drops
+### Potential Item Drops
 None

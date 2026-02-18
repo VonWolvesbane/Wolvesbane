@@ -5,8 +5,6 @@ title: Horned Hides
 
 # Horned Hides
 
-Class Name: `HornedHides`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [Gargoyles Knife](../monsters/Gargoyles_Knife.html)
+- [Masters Knife](../monsters/Masters_Knife.html)

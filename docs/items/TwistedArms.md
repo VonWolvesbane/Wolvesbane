@@ -5,8 +5,10 @@ title: Twisted Arms
 
 # Twisted Arms
 
-Class Name: `TwistedArms`
-
 ## Dropped By
+- [Minion](../monsters/Minion.html)
 
-(To be auto-filled in future update)
+## Regeneration Bonuses
+- Hits: +6
+- Mana: +6
+- Stam: +6

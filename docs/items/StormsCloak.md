@@ -5,8 +5,8 @@ title: Storms Cloak
 
 # Storms Cloak
 
-Class Name: `StormsCloak`
-
 ## Dropped By
+- [Storm](../monsters/Storm.html)
 
-(To be auto-filled in future update)
+## Regeneration Bonuses
+- Mana: +25

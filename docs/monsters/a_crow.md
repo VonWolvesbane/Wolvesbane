@@ -3,37 +3,34 @@ layout: default
 title: a crow
 ---
 
-# a crow — Unknown
-
-**No Photo Available**
+# a crow
 
 ## Stats
 - STR: 10
 - DEX: 25 - 35
 - INT: 10
 - Hits: Unknown
-- Damage: 0
-- Fame/Karma: 150 / 0
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: Unknown
+- Fire: Unknown
+- Cold: Unknown
+- Poison: Unknown
+- Energy: Unknown
 
 ## Taming Info
 - Tamable: Yes
 - Control Slots: 1
+- AI Type: AI_Animal
 
 ## Damage Types
 - Physical: 100%
 - Physical: 100%
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

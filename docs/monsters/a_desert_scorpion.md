@@ -3,32 +3,28 @@ layout: default
 title: a desert scorpion
 ---
 
-# a desert scorpion — Unknown
-
-**No Photo Available**
+# a desert scorpion
 
 ## Stats
 - STR: 600 - 700
 - DEX: 120 - 128
 - INT: 150 - 200
 - Hits: 350 - 400
-- Damage: 15 - 25
-- Fame/Karma: 8100 / -8100
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 30 - 40
+- Fire: 50 - 60
+- Cold: 10 - 20
+- Poison: 70 - 80
+- Energy: 40 - 50
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

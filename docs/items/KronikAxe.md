@@ -5,8 +5,8 @@ title: Kronik Axe
 
 # Kronik Axe
 
-Class Name: `KronikAxe`
-
 ## Dropped By
+- [Kronik](../monsters/Kronik.html)
 
-(To be auto-filled in future update)
+## Regeneration Bonuses
+- Hits: +3

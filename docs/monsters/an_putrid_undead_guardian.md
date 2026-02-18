@@ -3,32 +3,28 @@ layout: default
 title: an putrid undead guardian
 ---
 
-# an putrid undead guardian — Unknown
-
-**No Photo Available**
+# an putrid undead guardian
 
 ## Stats
 - STR: 79
 - DEX: 63
 - INT: 187
 - Hits: 553
-- Damage: 3 - 7
-- Fame/Karma: 3000 / -3000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: Unknown
+- Fire: Unknown
+- Cold: Unknown
+- Poison: Unknown
+- Energy: Unknown
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

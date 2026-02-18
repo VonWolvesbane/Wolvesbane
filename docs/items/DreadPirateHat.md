@@ -5,8 +5,9 @@ title: Dread Pirate Hat
 
 # Dread Pirate Hat
 
-Class Name: `DreadPirateHat`
-
 ## Dropped By
+- [Captain Jack Sparrow](../monsters/Captain_Jack_Sparrow.html)
 
-(To be auto-filled in future update)
+## Resist Bonuses
+- Cold: +0
+- Poison: +0

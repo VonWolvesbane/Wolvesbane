@@ -3,32 +3,28 @@ layout: default
 title: a rock mite
 ---
 
-# a rock mite — Unknown
-
-**No Photo Available**
+# a rock mite
 
 ## Stats
 - STR: 733 - 754
 - DEX: 126 - 144
 - INT: 75 - 94
 - Hits: 803 - 817
-- Damage: 12 - 19
-- Fame/Karma: 3500 / -3500
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 50 - 59
+- Fire: 80 - 90
+- Cold: 52 - 59
+- Poison: 80 - 85
+- Energy: 80 - 90
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

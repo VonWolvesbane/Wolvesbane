@@ -5,8 +5,5 @@ title: Armsof Expert Animal Taming
 
 # Armsof Expert Animal Taming
 
-Class Name: `ArmsofExpertAnimalTaming`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [Von Wolvesbane](../monsters/Von_Wolvesbane.html)

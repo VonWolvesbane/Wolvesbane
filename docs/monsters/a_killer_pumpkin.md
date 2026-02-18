@@ -3,35 +3,31 @@ layout: default
 title: a killer pumpkin
 ---
 
-# a killer pumpkin — Unknown
-
-**No Photo Available**
+# a killer pumpkin
 
 ## Stats
 - STR: 350
 - DEX: 125
 - INT: 250
 - Hits: 500
-- Damage: 10 - 15
-- Fame/Karma: 5000 / -5000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: Unknown
+- Fire: Unknown
+- Cold: Unknown
+- Poison: Unknown
+- Energy: Unknown
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Twilight Lantern](../items/TwilightLantern.html)
 - [Wrapped Candy](../items/WrappedCandy.html)
 
-### Random Drops
+### Potential Item Drops
 - [Painted Daemon Mask](../items/PaintedDaemonMask.html)
 - [Painted Evil Clown Mask](../items/PaintedEvilClownMask.html)
 - [Painted Evil Jester Mask](../items/PaintedEvilJesterMask.html)

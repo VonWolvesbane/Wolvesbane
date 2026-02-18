@@ -3,32 +3,28 @@ layout: default
 title: Night Terror
 ---
 
-# Night Terror — Unknown
-
-**No Photo Available**
+# Night Terror
 
 ## Stats
 - STR: 385 - 467
 - DEX: 40 - 70
 - INT: 600 - 800
 - Hits: 50000
-- Damage: 10 - 23
-- Fame/Karma: 8000 / -8000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 60 - 70
+- Fire: Unknown
+- Cold: 80 - 90
+- Poison: Unknown
+- Energy: 70 - 80
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

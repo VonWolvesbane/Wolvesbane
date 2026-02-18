@@ -3,38 +3,35 @@ layout: default
 title: a deathwatch beetle
 ---
 
-# a deathwatch beetle — Unknown
-
-**No Photo Available**
+# a deathwatch beetle
 
 ## Stats
 - STR: 136 - 160
 - DEX: 41 - 52
 - INT: 31 - 40
 - Hits: 121 - 145
-- Damage: 5 - 10
-- Fame/Karma: 1400 / -1400
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 35 - 40
+- Fire: 15 - 30
+- Cold: 15 - 30
+- Poison: 50 - 80
+- Energy: 20 - 35
 
 ## Taming Info
 - Tamable: Yes
 - Control Slots: 1
+- AI Type: AI_Melee
 
 ## Damage Types
 - Physical: 100%
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 - [Leather Arms](../items/LeatherArms.html)
 - [Leather Cap](../items/LeatherCap.html)
 - [Leather Chest](../items/LeatherChest.html)

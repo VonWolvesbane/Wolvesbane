@@ -3,32 +3,28 @@ layout: default
 title: a flesh golem
 ---
 
-# a flesh golem — Unknown
-
-**No Photo Available**
+# a flesh golem
 
 ## Stats
 - STR: 176 - 200
 - DEX: 51 - 75
 - INT: 46 - 70
 - Hits: 106 - 120
-- Damage: 18 - 22
-- Fame/Karma: 1000 / -1800
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 50 - 60
+- Fire: 25 - 35
+- Cold: 15 - 25
+- Poison: 60 - 70
+- Energy: 30 - 40
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

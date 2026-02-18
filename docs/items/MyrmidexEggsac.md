@@ -5,8 +5,6 @@ title: Myrmidex Eggsac
 
 # Myrmidex Eggsac
 
-Class Name: `MyrmidexEggsac`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [Myrmidex Queen](../monsters/Myrmidex_Queen.html)
+- [a myrmidex drone](../monsters/a_myrmidex_drone.html)

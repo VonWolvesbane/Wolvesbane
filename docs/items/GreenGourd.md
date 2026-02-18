@@ -5,8 +5,7 @@ title: Green Gourd
 
 # Green Gourd
 
-Class Name: `GreenGourd`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [a yomotsu elder](../monsters/a_yomotsu_elder.html)
+- [a yomotsu priest](../monsters/a_yomotsu_priest.html)
+- [a yomotsu warrior](../monsters/a_yomotsu_warrior.html)

@@ -5,8 +5,5 @@ title: Earringsof Expert Animal Taming
 
 # Earringsof Expert Animal Taming
 
-Class Name: `EarringsofExpertAnimalTaming`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [Von Wolvesbane](../monsters/Von_Wolvesbane.html)

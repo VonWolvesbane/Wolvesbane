@@ -3,29 +3,25 @@ layout: default
 title: an elite ninja
 ---
 
-# an elite ninja — Unknown
-
-**No Photo Available**
+# an elite ninja
 
 ## Stats
 - STR: 126 - 225
 - DEX: 81 - 95
 - INT: 151 - 165
 - Hits: 251 - 350
-- Damage: 12 - 20
-- Fame/Karma: 8500 / -8500
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 35 - 65
+- Fire: 40 - 60
+- Cold: 25 - 45
+- Poison: 40 - 60
+- Energy: 35 - 55
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Book Of Ninjitsu](../items/BookOfNinjitsu.html)
@@ -44,5 +40,5 @@ None Listed
 - [Tessen](../items/Tessen.html)
 - [Wakizashi](../items/Wakizashi.html)
 
-### Random Drops
+### Potential Item Drops
 None

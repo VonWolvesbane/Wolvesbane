@@ -3,29 +3,25 @@ layout: default
 title: Seth
 ---
 
-# Seth — The God of Chaos
-
-**No Photo Available**
+# Seth
 
 ## Stats
 - STR: 666
 - DEX: 666
 - INT: 666
 - Hits: 7500
-- Damage: 666
-- Fame/Karma: -1000 / -1000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: Unknown
+- Fire: Unknown
+- Cold: Unknown
+- Poison: Unknown
+- Energy: Unknown
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: 5120 - 15130
 
 ### Guaranteed Drops
 - [Chaos Boots](../items/ChaosBoots.html)
@@ -34,5 +30,5 @@ None Listed
 - [Chaos Robe](../items/ChaosRobe.html)
 - [Sloth Chaos Shield](../items/SlothChaosShield.html)
 
-### Random Drops
+### Potential Item Drops
 None

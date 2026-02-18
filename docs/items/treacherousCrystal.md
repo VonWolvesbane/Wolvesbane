@@ -5,8 +5,5 @@ title: treacherous Crystal
 
 # treacherous Crystal
 
-Class Name: `treacherousCrystal`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [a skeletal mage](../monsters/a_skeletal_mage.html)

@@ -3,35 +3,31 @@ layout: default
 title: Enslaved Goblin Keeper
 ---
 
-# Enslaved Goblin Keeper — Unknown
-
-**No Photo Available**
+# Enslaved Goblin Keeper
 
 ## Stats
 - STR: 297 - 297
 - DEX: 80 - 80
 - INT: 118 - 118
 - Hits: 174 - 174
-- Damage: 5 - 7
-- Fame/Karma: 1500 / -1500
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 47 - 47
+- Fire: 37 - 37
+- Cold: 29 - 29
+- Poison: 10 - 11
+- Energy: 19 - 19
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Bola Ball](../items/BolaBall.html)
 - [Thigh Boots](../items/ThighBoots.html)
 
-### Random Drops
+### Potential Item Drops
 - [Candle](../items/Candle.html)
 - [Katana](../items/Katana.html)
 - [Kryss](../items/Kryss.html)

@@ -5,8 +5,8 @@ title: Shirt
 
 # Shirt
 
-Class Name: `Shirt`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [a chaos dragoon](../monsters/a_chaos_dragoon.html)
+- [a chaos dragoon elite](../monsters/a_chaos_dragoon_elite.html)
+- [Gregorio](../monsters/Gregorio.html)
+- [a ship key](../monsters/a_ship_key.html)

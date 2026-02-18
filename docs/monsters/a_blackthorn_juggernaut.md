@@ -3,33 +3,29 @@ layout: default
 title: a blackthorn juggernaut
 ---
 
-# a blackthorn juggernaut — Unknown
-
-**No Photo Available**
+# a blackthorn juggernaut
 
 ## Stats
 - STR: 301 - 400
 - DEX: 51 - 70
 - INT: 51 - 100
 - Hits: 181 - 240
-- Damage: 12 - 19
-- Fame/Karma: 12000 / -12000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 65 - 75
+- Fire: 35 - 45
+- Cold: 35 - 45
+- Poison: 15 - 25
+- Energy: 10 - 20
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Clockwork Assembly](../items/ClockworkAssembly.html)
 - [Power Crystal](../items/PowerCrystal.html)
 
-### Random Drops
+### Potential Item Drops
 None

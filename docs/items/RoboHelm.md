@@ -5,8 +5,8 @@ title: Robo Helm
 
 # Robo Helm
 
-Class Name: `RoboHelm`
-
 ## Dropped By
+- [Destructabo Robo](../monsters/Destructabo_Robo.html)
 
-(To be auto-filled in future update)
+## Regeneration Bonuses
+- Stam: +25

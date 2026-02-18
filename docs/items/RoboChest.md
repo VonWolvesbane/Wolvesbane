@@ -5,8 +5,8 @@ title: Robo Chest
 
 # Robo Chest
 
-Class Name: `RoboChest`
-
 ## Dropped By
+- [Destructabo Robo](../monsters/Destructabo_Robo.html)
 
-(To be auto-filled in future update)
+## Regeneration Bonuses
+- Stam: +25

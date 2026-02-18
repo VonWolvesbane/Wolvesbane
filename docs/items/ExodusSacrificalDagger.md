@@ -5,8 +5,5 @@ title: Exodus Sacrifical Dagger
 
 # Exodus Sacrifical Dagger
 
-Class Name: `ExodusSacrificalDagger`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [Exodus Minion Lord](../monsters/Exodus_Minion_Lord.html)

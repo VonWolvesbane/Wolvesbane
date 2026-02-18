@@ -3,32 +3,28 @@ layout: default
 title: Zealot of Khaldun
 ---
 
-# Zealot of Khaldun — the Knight
-
-**No Photo Available**
+# Zealot of Khaldun
 
 ## Stats
 - STR: 351 - 400
 - DEX: 151 - 165
 - INT: 76 - 100
 - Hits: 448 - 470
-- Damage: 15 - 25
-- Fame/Karma: 10000 / -10000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 35 - 45
+- Fire: 25 - 30
+- Cold: 50 - 60
+- Poison: 25 - 35
+- Energy: 25 - 35
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Boots](../items/Boots.html)
 
-### Random Drops
+### Potential Item Drops
 None

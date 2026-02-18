@@ -5,8 +5,5 @@ title: Seared Fire Ant Goo
 
 # Seared Fire Ant Goo
 
-Class Name: `SearedFireAntGoo`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [a fire ant](../monsters/a_fire_ant.html)

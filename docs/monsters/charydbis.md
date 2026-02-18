@@ -3,33 +3,29 @@ layout: default
 title: charydbis
 ---
 
-# charydbis — Unknown
-
-**No Photo Available**
+# charydbis
 
 ## Stats
 - STR: 533 - 586
 - DEX: 113 - 131
 - INT: 110 - 155
 - Hits: 105 - 113
-- Damage: 24 - 33
-- Fame/Karma: 32000 / -32000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 70 - 80
+- Fire: 70 - 80
+- Cold: 45 - 55
+- Poison: 80 - 90
+- Energy: 60 - 70
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Message In A Bottle](../items/MessageInABottle.html)
 - [Special Fishing Net](../items/SpecialFishingNet.html)
 
-### Random Drops
+### Potential Item Drops
 None

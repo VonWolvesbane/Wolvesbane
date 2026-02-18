@@ -5,8 +5,7 @@ title: Broadsword
 
 # Broadsword
 
-Class Name: `Broadsword`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [Krass Kringle](../monsters/Krass_Kringle.html)
+- [A Were Wolf](../monsters/A_Were_Wolf.html)
+- [a meer captain](../monsters/a_meer_captain.html)

@@ -5,8 +5,5 @@ title: fdeggs
 
 # fdeggs
 
-Class Name: `fdeggs`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [Fire Drake](../monsters/Fire_Drake.html)

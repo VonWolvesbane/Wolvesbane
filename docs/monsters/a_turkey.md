@@ -3,32 +3,28 @@ layout: default
 title: a turkey
 ---
 
-# a turkey — Unknown
-
-**No Photo Available**
+# a turkey
 
 ## Stats
 - STR: 5
 - DEX: 15
 - INT: 5
 - Hits: 75
-- Damage: 5
-- Fame/Karma: 150 / 0
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 1 - 5
+- Fire: Unknown
+- Cold: Unknown
+- Poison: Unknown
+- Energy: Unknown
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

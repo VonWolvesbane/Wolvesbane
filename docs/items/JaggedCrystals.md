@@ -5,8 +5,5 @@ title: Jagged Crystals
 
 # Jagged Crystals
 
-Class Name: `JaggedCrystals`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [a crystal vortex](../monsters/a_crystal_vortex.html)

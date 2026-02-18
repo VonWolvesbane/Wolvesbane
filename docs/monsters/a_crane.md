@@ -3,32 +3,28 @@ layout: default
 title: a crane
 ---
 
-# a crane — Unknown
-
-**No Photo Available**
+# a crane
 
 ## Stats
 - STR: 26 - 35
 - DEX: 16 - 25
 - INT: 11 - 15
 - Hits: 26 - 35
-- Damage: 1 - 1
-- Fame/Karma: 0 / 200
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 5 - 5
+- Fire: Unknown
+- Cold: Unknown
+- Poison: Unknown
+- Energy: Unknown
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

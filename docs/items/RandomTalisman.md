@@ -5,8 +5,7 @@ title: Random Talisman
 
 # Random Talisman
 
-Class Name: `RandomTalisman`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [Falausmon](../monsters/Falausmon.html)
+- [Ilhenir](../monsters/Ilhenir.html)
+- [Meraktus](../monsters/Meraktus.html)

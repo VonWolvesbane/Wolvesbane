@@ -3,32 +3,28 @@ layout: default
 title: an air elemental
 ---
 
-# an air elemental — Unknown
-
-**No Photo Available**
+# an air elemental
 
 ## Stats
 - STR: 200
 - DEX: 200
 - INT: 100
 - Hits: 150
-- Damage: 6 - 9
-- Fame/Karma: Unknown / Unknown
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 40 - 50
+- Fire: 30 - 40
+- Cold: 35 - 45
+- Poison: 50 - 60
+- Energy: 70 - 80
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

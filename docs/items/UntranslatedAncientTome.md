@@ -5,8 +5,5 @@ title: Untranslated Ancient Tome
 
 # Untranslated Ancient Tome
 
-Class Name: `UntranslatedAncientTome`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [Navrey Night-Eyes](../monsters/Navrey_Night-Eyes.html)

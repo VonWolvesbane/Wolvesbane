@@ -3,32 +3,28 @@ layout: default
 title: a shade
 ---
 
-# a shade — Unknown
-
-**No Photo Available**
+# a shade
 
 ## Stats
 - STR: 76 - 100
 - DEX: 76 - 95
 - INT: 36 - 60
 - Hits: 46 - 60
-- Damage: 7 - 11
-- Fame/Karma: 4000 / -4000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 25 - 30
+- Fire: Unknown
+- Cold: 15 - 25
+- Poison: 10 - 20
+- Energy: Unknown
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

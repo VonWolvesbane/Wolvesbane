@@ -5,8 +5,5 @@ title: Pristine Dread Horn
 
 # Pristine Dread Horn
 
-Class Name: `PristineDreadHorn`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [a Dread Horn](../monsters/a_Dread_Horn.html)

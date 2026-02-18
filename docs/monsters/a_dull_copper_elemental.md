@@ -3,32 +3,28 @@ layout: default
 title: a dull copper elemental
 ---
 
-# a dull copper elemental — Unknown
-
-**No Photo Available**
+# a dull copper elemental
 
 ## Stats
 - STR: 226 - 255
 - DEX: 126 - 145
 - INT: 71 - 92
 - Hits: 136 - 153
-- Damage: 9 - 16
-- Fame/Karma: 3500 / -3500
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 30 - 40
+- Fire: 30 - 40
+- Cold: 10 - 20
+- Poison: 20 - 30
+- Energy: 20 - 30
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

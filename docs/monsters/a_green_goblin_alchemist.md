@@ -3,36 +3,32 @@ layout: default
 title: a green goblin alchemist
 ---
 
-# a green goblin alchemist — Unknown
-
-**No Photo Available**
+# a green goblin alchemist
 
 ## Stats
 - STR: 282 - 331
 - DEX: 62 - 79
 - INT: 100 - 149
 - Hits: 163 - 197
-- Damage: 5 - 7
-- Fame/Karma: 1500 / -1500
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 40 - 50
+- Fire: 45 - 55
+- Cold: 30 - 40
+- Poison: 35 - 45
+- Energy: 11 - 20
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Bola Ball](../items/BolaBall.html)
 - [Lucky Coin](../items/LuckyCoin.html)
 - [Thigh Boots](../items/ThighBoots.html)
 
-### Random Drops
+### Potential Item Drops
 - [Candle](../items/Candle.html)
 - [Katana](../items/Katana.html)
 - [Kryss](../items/Kryss.html)

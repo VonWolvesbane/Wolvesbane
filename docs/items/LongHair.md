@@ -5,8 +5,9 @@ title: Long Hair
 
 # Long Hair
 
-Class Name: `LongHair`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [Hippolyte](../monsters/Hippolyte.html)
+- [Orochimaru](../monsters/Orochimaru.html)
+- [Archambeau](../monsters/Archambeau.html)
+- [Oracle](../monsters/Oracle.html)
+- [Pythie](../monsters/Pythie.html)

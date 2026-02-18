@@ -5,8 +5,6 @@ title: Necroacidus
 
 # Necroacidus
 
-Class Name: `Necroacidus`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [Von Dreadsbane](../monsters/Von_Dreadsbane.html)
+- [Necroloricatus](../monsters/Necroloricatus.html)

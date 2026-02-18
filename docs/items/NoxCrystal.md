@@ -5,8 +5,6 @@ title: Nox Crystal
 
 # Nox Crystal
 
-Class Name: `NoxCrystal`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [a toxic storm](../monsters/a_toxic_storm.html)
+- [Mardoth](../monsters/Mardoth.html)

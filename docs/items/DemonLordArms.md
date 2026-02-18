@@ -5,8 +5,10 @@ title: Demon Lord Arms
 
 # Demon Lord Arms
 
-Class Name: `DemonLordArms`
-
 ## Dropped By
+- [Diarmaid Mainyu](../monsters/Diarmaid_Mainyu.html)
 
-(To be auto-filled in future update)
+## Regeneration Bonuses
+- Hits: +5
+- Mana: +5
+- Stam: +10

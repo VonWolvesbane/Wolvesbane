@@ -5,8 +5,5 @@ title: Leggings Of Bane
 
 # Leggings Of Bane
 
-Class Name: `LeggingsOfBane`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [Killar Ancestor](../monsters/Killar_Ancestor.html)

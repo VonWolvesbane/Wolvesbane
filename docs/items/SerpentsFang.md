@@ -5,8 +5,5 @@ title: Serpents Fang
 
 # Serpents Fang
 
-Class Name: `SerpentsFang`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [Killar Ancestor](../monsters/Killar_Ancestor.html)

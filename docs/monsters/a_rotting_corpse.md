@@ -3,32 +3,28 @@ layout: default
 title: a rotting corpse
 ---
 
-# a rotting corpse — Unknown
-
-**No Photo Available**
+# a rotting corpse
 
 ## Stats
 - STR: 301 - 350
 - DEX: 75
 - INT: 151 - 200
 - Hits: 1200
-- Damage: 8 - 10
-- Fame/Karma: 6000 / -6000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 35 - 45
+- Fire: 20 - 30
+- Cold: 50 - 70
+- Poison: 40 - 50
+- Energy: 20 - 30
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

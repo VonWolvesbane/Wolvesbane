@@ -3,32 +3,28 @@ layout: default
 title: a water elemental
 ---
 
-# a water elemental — Unknown
-
-**No Photo Available**
+# a water elemental
 
 ## Stats
 - STR: 200
 - DEX: 70
 - INT: 100
 - Hits: 165
-- Damage: 12 - 16
-- Fame/Karma: Unknown / Unknown
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 50 - 60
+- Fire: 20 - 30
+- Cold: 70 - 80
+- Poison: 45 - 55
+- Energy: 40 - 50
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

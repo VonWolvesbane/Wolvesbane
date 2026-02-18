@@ -3,32 +3,28 @@ layout: default
 title: a headless one
 ---
 
-# a headless one — Unknown
-
-**No Photo Available**
+# a headless one
 
 ## Stats
 - STR: 26 - 50
 - DEX: 36 - 55
 - INT: 16 - 30
 - Hits: 16 - 30
-- Damage: 5 - 10
-- Fame/Karma: 450 / -450
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 15 - 20
+- Fire: Unknown
+- Cold: Unknown
+- Poison: Unknown
+- Energy: Unknown
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

@@ -3,36 +3,33 @@ layout: default
 title: a bull
 ---
 
-# a bull — Unknown
-
-**No Photo Available**
+# a bull
 
 ## Stats
 - STR: 77 - 111
 - DEX: 56 - 75
 - INT: 47 - 75
 - Hits: 50 - 64
-- Damage: 4 - 9
-- Fame/Karma: 600 / 0
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 25 - 30
+- Fire: Unknown
+- Cold: 10 - 15
+- Poison: Unknown
+- Energy: Unknown
 
 ## Taming Info
 - Tamable: Yes
 - Control Slots: 1
+- AI Type: AI_Animal
 
 ## Damage Types
 - Physical: 100%
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

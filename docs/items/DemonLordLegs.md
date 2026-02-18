@@ -5,8 +5,10 @@ title: Demon Lord Legs
 
 # Demon Lord Legs
 
-Class Name: `DemonLordLegs`
-
 ## Dropped By
+- [Diarmaid Mainyu](../monsters/Diarmaid_Mainyu.html)
 
-(To be auto-filled in future update)
+## Regeneration Bonuses
+- Hits: +5
+- Mana: +5
+- Stam: +10

@@ -3,32 +3,28 @@ layout: default
 title: a skeletal dragon
 ---
 
-# a skeletal dragon — Unknown
-
-**No Photo Available**
+# a skeletal dragon
 
 ## Stats
 - STR: 898 - 1030
 - DEX: 68 - 200
 - INT: 488 - 620
 - Hits: 558 - 599
-- Damage: 29 - 35
-- Fame/Karma: 22500 / -22500
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 75 - 80
+- Fire: 40 - 60
+- Cold: 40 - 60
+- Poison: 70 - 80
+- Energy: 40 - 60
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

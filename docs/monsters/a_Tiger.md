@@ -3,32 +3,28 @@ layout: default
 title: a Tiger
 ---
 
-# a Tiger — Unknown
-
-**No Photo Available**
+# a Tiger
 
 ## Stats
 - STR: 1200 - 1225
 - DEX: 350 - 370
 - INT: 250 - 285
 - Hits: 1310 - 1475
-- Damage: 25 - 35
-- Fame/Karma: 5000 / 5000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 60 - 75
+- Fire: 45 - 55
+- Cold: 75 - 85
+- Poison: 40 - 70
+- Energy: 40 - 65
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: 500 - 800
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

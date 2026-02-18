@@ -3,32 +3,28 @@ layout: default
 title: Serado
 ---
 
-# Serado — the awakened
-
-**No Photo Available**
+# Serado
 
 ## Stats
 - STR: 1000
 - DEX: 150
 - INT: 300
 - Hits: 9000
-- Damage: 29 - 35
-- Fame/Karma: 22500 / -22500
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: Unknown
+- Fire: Unknown
+- Cold: Unknown
+- Poison: Unknown
+- Energy: Unknown
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

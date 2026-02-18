@@ -5,8 +5,5 @@ title: Moonfire Brew
 
 # Moonfire Brew
 
-Class Name: `MoonfireBrew`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [Grizelda](../monsters/Grizelda.html)

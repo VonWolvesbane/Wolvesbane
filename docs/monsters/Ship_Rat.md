@@ -3,32 +3,28 @@ layout: default
 title: Ship Rat
 ---
 
-# Ship Rat — Unknown
-
-**No Photo Available**
+# Ship Rat
 
 ## Stats
 - STR: 32 - 74
 - DEX: 46 - 65
 - INT: 16 - 30
 - Hits: 26 - 39
-- Damage: 4 - 8
-- Fame/Karma: 300 / -300
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 15 - 20
+- Fire: 5 - 10
+- Cold: Unknown
+- Poison: 25 - 35
+- Energy: Unknown
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

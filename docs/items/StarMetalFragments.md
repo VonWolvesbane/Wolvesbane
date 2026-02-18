@@ -5,8 +5,5 @@ title: Star Metal Fragments
 
 # Star Metal Fragments
 
-Class Name: `StarMetalFragments`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [a Star Metal golem](../monsters/a_Star_Metal_golem.html)

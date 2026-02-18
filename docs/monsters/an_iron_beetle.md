@@ -3,37 +3,34 @@ layout: default
 title: an iron beetle
 ---
 
-# an iron beetle — Unknown
-
-**No Photo Available**
+# an iron beetle
 
 ## Stats
 - STR: 816 - 883
 - DEX: 68 - 73
 - INT: 40 - 49
 - Hits: 762 - 830
-- Damage: 15 - 20
-- Fame/Karma: 15000 / -15000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 55 - 60
+- Fire: 20 - 30
+- Cold: 20 - 30
+- Poison: 30 - 40
+- Energy: 45 - 55
 
 ## Taming Info
 - Tamable: Yes
 - Control Slots: 4
+- AI Type: AI_Melee
 
 ## Damage Types
 - Physical: 100%
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Lucky Coin](../items/LuckyCoin.html)
 - [Undamaged Iron Beetle Scale](../items/UndamagedIronBeetleScale.html)
 
-### Random Drops
+### Potential Item Drops
 None

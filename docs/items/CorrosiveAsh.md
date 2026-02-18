@@ -5,8 +5,5 @@ title: Corrosive Ash
 
 # Corrosive Ash
 
-Class Name: `CorrosiveAsh`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [a quartz elemental](../monsters/a_quartz_elemental.html)

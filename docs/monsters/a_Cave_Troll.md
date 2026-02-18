@@ -3,32 +3,28 @@ layout: default
 title: a Cave Troll
 ---
 
-# a Cave Troll — Unknown
-
-**No Photo Available**
+# a Cave Troll
 
 ## Stats
 - STR: 118 - 118
 - DEX: 58 - 58
 - INT: 65 - 65
 - Hits: 2136 - 2136
-- Damage: 8 - 14
-- Fame/Karma: 3500 / -3500
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 76 - 76
+- Fire: 55 - 55
+- Cold: 72 - 72
+- Poison: 75 - 75
+- Energy: 50 - 50
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

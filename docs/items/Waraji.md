@@ -5,8 +5,5 @@ title: Waraji
 
 # Waraji
 
-Class Name: `Waraji`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [Ihara Soko](../monsters/Ihara_Soko.html)

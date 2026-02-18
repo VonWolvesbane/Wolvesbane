@@ -5,8 +5,5 @@ title: Bottle
 
 # Bottle
 
-Class Name: `Bottle`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [an orcish lord](../monsters/an_orcish_lord.html)

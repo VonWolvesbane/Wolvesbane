@@ -3,33 +3,29 @@ layout: default
 title: Clan Chitter Assistant
 ---
 
-# Clan Chitter Assistant — Unknown
-
-**No Photo Available**
+# Clan Chitter Assistant
 
 ## Stats
 - STR: 146 - 175
 - DEX: 101 - 130
 - INT: 120 - 135
 - Hits: 120 - 145
-- Damage: 4 - 10
-- Fame/Karma: 6500 / -6500
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 23 - 35
+- Fire: 20 - 30
+- Cold: 30 - 50
+- Poison: 15 - 20
+- Energy: 10 - 20
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Arrow](../items/Arrow.html)
 - [Bow](../items/Bow.html)
 
-### Random Drops
+### Potential Item Drops
 None

@@ -3,32 +3,28 @@ layout: default
 title: a bogling
 ---
 
-# a bogling — Unknown
-
-**No Photo Available**
+# a bogling
 
 ## Stats
 - STR: 96 - 120
 - DEX: 91 - 115
 - INT: 21 - 45
 - Hits: 58 - 72
-- Damage: 5 - 7
-- Fame/Karma: 450 / -450
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 20 - 25
+- Fire: 10 - 20
+- Cold: 15 - 25
+- Poison: 15 - 25
+- Energy: 15 - 25
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Log](../items/Log.html)
 
-### Random Drops
+### Potential Item Drops
 None

@@ -5,8 +5,5 @@ title: Nether Cyclone Scroll
 
 # Nether Cyclone Scroll
 
-Class Name: `NetherCycloneScroll`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [Abyssal Infernal](../monsters/Abyssal_Infernal.html)

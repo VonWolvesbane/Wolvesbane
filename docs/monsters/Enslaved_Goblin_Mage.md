@@ -3,35 +3,31 @@ layout: default
 title: Enslaved Goblin Mage
 ---
 
-# Enslaved Goblin Mage — Unknown
-
-**No Photo Available**
+# Enslaved Goblin Mage
 
 ## Stats
 - STR: 297 - 297
 - DEX: 94 - 94
 - INT: 510 - 510
 - Hits: 174 - 174
-- Damage: 5 - 7
-- Fame/Karma: 1500 / -1500
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 22 - 22
+- Fire: 36 - 37
+- Cold: 39 - 39
+- Poison: 43 - 43
+- Energy: 14 - 14
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Bola Ball](../items/BolaBall.html)
 - [Thigh Boots](../items/ThighBoots.html)
 
-### Random Drops
+### Potential Item Drops
 - [Candle](../items/Candle.html)
 - [Katana](../items/Katana.html)
 - [Kryss](../items/Kryss.html)

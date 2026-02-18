@@ -3,32 +3,28 @@ layout: default
 title: an imp
 ---
 
-# an imp — Unknown
-
-**No Photo Available**
+# an imp
 
 ## Stats
 - STR: 55
 - DEX: 40
 - INT: 60
 - Hits: Unknown
-- Damage: 10 - 14
-- Fame/Karma: 0 / 0
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 25 - 35
+- Fire: 40 - 50
+- Cold: 20 - 30
+- Poison: 30 - 40
+- Energy: 30 - 40
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

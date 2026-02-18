@@ -3,36 +3,33 @@ layout: default
 title: A Croc
 ---
 
-# A Croc — Unknown
-
-**No Photo Available**
+# A Croc
 
 ## Stats
 - STR: 176 - 200
 - DEX: 76 - 95
 - INT: 11 - 20
 - Hits: 146 - 160
-- Damage: 15 - 20
-- Fame/Karma: 600 / 600
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 45 - 55
+- Fire: 35 - 50
+- Cold: Unknown
+- Poison: 35 - 50
+- Energy: Unknown
 
 ## Taming Info
 - Tamable: Yes
 - Control Slots: 2
+- AI Type: AI_Melee
 
 ## Damage Types
 - Physical: 100%
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

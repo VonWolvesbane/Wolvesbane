@@ -3,32 +3,28 @@ layout: default
 title: Morg Bergen
 ---
 
-# Morg Bergen — the Cursed
-
-**No Photo Available**
+# Morg Bergen
 
 ## Stats
 - STR: 111 - 120
 - DEX: 111 - 120
 - INT: 51 - 60
 - Hits: 180 - 207
-- Damage: 9 - 17
-- Fame/Karma: 5000 / -1000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 35 - 45
+- Fire: 25 - 30
+- Cold: 50 - 60
+- Poison: 25 - 35
+- Energy: 25 - 35
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Short Pants](../items/ShortPants.html)
 
-### Random Drops
+### Potential Item Drops
 None

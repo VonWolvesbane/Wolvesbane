@@ -5,8 +5,11 @@ title: Ring Of The Vile
 
 # Ring Of The Vile
 
-Class Name: `RingOfTheVile`
-
 ## Dropped By
+- [Killar Ancestor](../monsters/Killar_Ancestor.html)
 
-(To be auto-filled in future update)
+## Resist Bonuses
+- Poison: +20
+
+## Regeneration Bonuses
+- Stam: +6

@@ -5,8 +5,10 @@ title: Nox Gorget
 
 # Nox Gorget
 
-Class Name: `NoxGorget`
-
 ## Dropped By
+- [Noxia the Swamp Queen](../monsters/Noxia_the_Swamp_Queen.html)
 
-(To be auto-filled in future update)
+## Regeneration Bonuses
+- Hits: +2
+- Mana: +3
+- Stam: +2

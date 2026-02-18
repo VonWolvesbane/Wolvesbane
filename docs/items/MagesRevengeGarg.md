@@ -5,8 +5,11 @@ title: Mages Revenge Garg
 
 # Mages Revenge Garg
 
-Class Name: `MagesRevengeGarg`
-
 ## Dropped By
+- [Kindred](../monsters/Kindred.html)
 
-(To be auto-filled in future update)
+## Skill Bonuses
+- Magery: +10
+
+## Regeneration Bonuses
+- Mana: +5

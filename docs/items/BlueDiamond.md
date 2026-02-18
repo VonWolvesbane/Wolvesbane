@@ -5,8 +5,5 @@ title: Blue Diamond
 
 # Blue Diamond
 
-Class Name: `BlueDiamond`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [Diabolical Seaweed](../monsters/Diabolical_Seaweed.html)

@@ -3,32 +3,28 @@ layout: default
 title: Mistral
 ---
 
-# Mistral — Unknown
-
-**No Photo Available**
+# Mistral
 
 ## Stats
 - STR: 134 - 201
 - DEX: 226 - 238
 - INT: 126 - 134
 - Hits: 386 - 609
-- Damage: 17 - 20
-- Fame/Karma: 4500 / -4500
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 55 - 64
+- Fire: 36 - 40
+- Cold: 33 - 39
+- Poison: 30 - 39
+- Energy: 49 - 53
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

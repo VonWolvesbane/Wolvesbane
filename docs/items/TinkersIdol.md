@@ -5,8 +5,9 @@ title: Tinkers Idol
 
 # Tinkers Idol
 
-Class Name: `TinkersIdol`
-
 ## Dropped By
+- [Falausmon](../monsters/Falausmon.html)
 
-(To be auto-filled in future update)
+## Skill Bonuses
+- Tinkering: +25.0
+- Magery: +10.0

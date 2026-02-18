@@ -5,8 +5,5 @@ title: Blaster Ammo
 
 # Blaster Ammo
 
-Class Name: `BlasterAmmo`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [Destructabo Robo](../monsters/Destructabo_Robo.html)

@@ -5,8 +5,5 @@ title: Wrapped Candy
 
 # Wrapped Candy
 
-Class Name: `WrappedCandy`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [a killer pumpkin](../monsters/a_killer_pumpkin.html)

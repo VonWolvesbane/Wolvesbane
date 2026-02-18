@@ -3,32 +3,28 @@ layout: default
 title: a vollem
 ---
 
-# a vollem — Unknown
-
-**No Photo Available**
+# a vollem
 
 ## Stats
 - STR: 496 - 524
 - DEX: 88 - 105
 - INT: 94 - 117
 - Hits: 300 - 315
-- Damage: 16 - 22
-- Fame/Karma: Unknown / Unknown
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 55 - 65
+- Fire: 30 - 40
+- Cold: 30 - 40
+- Poison: 30 - 40
+- Energy: 20 - 30
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

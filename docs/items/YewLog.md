@@ -5,8 +5,7 @@ title: Yew Log
 
 # Yew Log
 
-Class Name: `YewLog`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [a YewTree](../monsters/a_YewTree.html)
+- [a wood elemental](../monsters/a_wood_elemental.html)
+- [a heartwood elemental](../monsters/a_heartwood_elemental.html)

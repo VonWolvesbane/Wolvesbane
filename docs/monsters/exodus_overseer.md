@@ -3,33 +3,29 @@ layout: default
 title: exodus overseer
 ---
 
-# exodus overseer — Unknown
-
-**No Photo Available**
+# exodus overseer
 
 ## Stats
 - STR: 561 - 650
 - DEX: 76 - 95
 - INT: 61 - 90
 - Hits: 331 - 390
-- Damage: 13 - 19
-- Fame/Karma: 10000 / -10000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 45 - 55
+- Fire: 40 - 60
+- Cold: 25 - 35
+- Poison: 25 - 35
+- Energy: 25 - 35
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Arcane Gem](../items/ArcaneGem.html)
 - [Power Crystal](../items/PowerCrystal.html)
 
-### Random Drops
+### Potential Item Drops
 None

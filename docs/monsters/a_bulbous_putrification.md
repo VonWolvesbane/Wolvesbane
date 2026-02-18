@@ -3,32 +3,28 @@ layout: default
 title: a bulbous putrification
 ---
 
-# a bulbous putrification — Unknown
-
-**No Photo Available**
+# a bulbous putrification
 
 ## Stats
 - STR: 755 - 800
 - DEX: 53 - 60
 - INT: 51 - 59
 - Hits: 1211 - 1231
-- Damage: 22 - 29
-- Fame/Karma: Unknown / Unknown
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 55 - 65
+- Fire: 40 - 50
+- Cold: 40 - 50
+- Poison: 55 - 70
+- Energy: 50 - 60
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

@@ -3,32 +3,28 @@ layout: default
 title: a stone harpy
 ---
 
-# a stone harpy — Unknown
-
-**No Photo Available**
+# a stone harpy
 
 ## Stats
 - STR: 296 - 320
 - DEX: 86 - 110
 - INT: 51 - 75
 - Hits: 178 - 192
-- Damage: 8 - 16
-- Fame/Karma: 4500 / -4500
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 45 - 55
+- Fire: 20 - 30
+- Cold: 10 - 20
+- Poison: 30 - 40
+- Energy: 30 - 40
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

@@ -5,8 +5,14 @@ title: Divine Countenance
 
 # Divine Countenance
 
-Class Name: `DivineCountenance`
-
 ## Dropped By
+- [Killar Ancestor](../monsters/Killar_Ancestor.html)
 
-(To be auto-filled in future update)
+## Resist Bonuses
+- Physical: +0
+- Fire: +0
+- Cold: +0
+- Energy: +0
+
+## Regeneration Bonuses
+- Mana: +2

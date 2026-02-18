@@ -5,8 +5,5 @@ title: Brilliant Amber
 
 # Brilliant Amber
 
-Class Name: `BrilliantAmber`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [Diabolical Seaweed](../monsters/Diabolical_Seaweed.html)

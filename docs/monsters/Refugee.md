@@ -3,34 +3,30 @@ layout: default
 title: Refugee
 ---
 
-# Refugee — Unknown
-
-**No Photo Available**
+# Refugee
 
 ## Stats
 - STR: Unknown
 - DEX: Unknown
 - INT: Unknown
 - Hits: Unknown
-- Damage: Unknown
-- Fame/Karma: Unknown / Unknown
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: Unknown
+- Fire: Unknown
+- Cold: Unknown
+- Poison: Unknown
+- Energy: Unknown
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Gargish Cloth Chest](../items/GargishClothChest.html)
 - [Gargish Cloth Kilt](../items/GargishClothKilt.html)
 - [Gargish Cloth Legs](../items/GargishClothLegs.html)
 
-### Random Drops
+### Potential Item Drops
 None

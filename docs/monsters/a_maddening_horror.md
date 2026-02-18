@@ -3,32 +3,28 @@ layout: default
 title: a maddening horror
 ---
 
-# a maddening horror — Unknown
-
-**No Photo Available**
+# a maddening horror
 
 ## Stats
 - STR: 270 - 290
 - DEX: 80 - 100
 - INT: 850
 - Hits: 660
-- Damage: 15 - 27
-- Fame/Karma: 23000 / -23000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 55 - 65
+- Fire: 20 - 30
+- Cold: 50 - 60
+- Poison: 40 - 50
+- Energy: 50 - 60
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

@@ -5,8 +5,5 @@ title: Sin Shield
 
 # Sin Shield
 
-Class Name: `SinShield`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [Septem Mactabilis Peccatus](../monsters/Septem_Mactabilis_Peccatus.html)

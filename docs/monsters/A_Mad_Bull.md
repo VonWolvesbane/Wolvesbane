@@ -3,32 +3,28 @@ layout: default
 title: A Mad Bull
 ---
 
-# A Mad Bull — Unknown
-
-**No Photo Available**
+# A Mad Bull
 
 ## Stats
 - STR: 120 - 125
 - DEX: 70 - 77
 - INT: 130 - 150
 - Hits: 3000 - 4000
-- Damage: 25 - 35
-- Fame/Karma: 0 / -20000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: Unknown
+- Fire: Unknown
+- Cold: Unknown
+- Poison: Unknown
+- Energy: Unknown
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: 2500 - 3000
 
 ### Guaranteed Drops
 - [Mad Bull Horn](../items/MadBullHorn.html)
 
-### Random Drops
+### Potential Item Drops
 None

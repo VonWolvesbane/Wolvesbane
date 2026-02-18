@@ -5,8 +5,5 @@ title: Hell Key
 
 # Hell Key
 
-Class Name: `HellKey`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [The Reaper Guy](../monsters/The_Reaper_Guy.html)

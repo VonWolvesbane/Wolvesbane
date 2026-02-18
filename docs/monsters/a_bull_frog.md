@@ -3,36 +3,33 @@ layout: default
 title: a bull frog
 ---
 
-# a bull frog — Unknown
-
-**No Photo Available**
+# a bull frog
 
 ## Stats
 - STR: 46 - 70
 - DEX: 6 - 25
 - INT: 11 - 20
 - Hits: 28 - 42
-- Damage: 1 - 2
-- Fame/Karma: 350 / 0
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 5 - 10
+- Fire: Unknown
+- Cold: Unknown
+- Poison: Unknown
+- Energy: Unknown
 
 ## Taming Info
 - Tamable: Yes
 - Control Slots: 1
+- AI Type: AI_Animal
 
 ## Damage Types
 - Physical: 100%
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

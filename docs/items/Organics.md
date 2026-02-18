@@ -5,8 +5,7 @@ title: Organics
 
 # Organics
 
-Class Name: `Organics`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [an abomination](../monsters/an_abomination.html)
+- [a dark father](../monsters/a_dark_father.html)
+- [a genetic failure](../monsters/a_genetic_failure.html)

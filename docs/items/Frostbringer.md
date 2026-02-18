@@ -5,8 +5,8 @@ title: Frostbringer
 
 # Frostbringer
 
-Class Name: `Frostbringer`
-
 ## Dropped By
+- [Killar Ancestor](../monsters/Killar_Ancestor.html)
 
-(To be auto-filled in future update)
+## Regeneration Bonuses
+- Stam: +10

@@ -5,8 +5,7 @@ title: Treasure Map
 
 # Treasure Map
 
-Class Name: `TreasureMap`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [Ancient Chest Guardian](../monsters/Ancient_Chest_Guardian.html)
+- [Grizelda](../monsters/Grizelda.html)
+- [Uzeraan](../monsters/Uzeraan.html)

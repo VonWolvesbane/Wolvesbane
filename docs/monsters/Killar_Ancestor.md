@@ -3,29 +3,25 @@ layout: default
 title: Killar Ancestor
 ---
 
-# Killar Ancestor — Unknown
-
-**No Photo Available**
+# Killar Ancestor
 
 ## Stats
 - STR: 1800
 - DEX: 1510 - 1750
 - INT: 1710 - 2200
 - Hits: 1500
-- Damage: 34 - 36
-- Fame/Karma: 0 / -20000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: Unknown
+- Fire: Unknown
+- Cold: Unknown
+- Poison: Unknown
+- Energy: Unknown
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: 4700 - 6950
 
 ### Guaranteed Drops
 - [Armor Of Fortune](../items/ArmorOfFortune.html)
@@ -69,5 +65,5 @@ None Listed
 - [Voice Of The Fallen King](../items/VoiceOfTheFallenKing.html)
 - [Zyronic Claw](../items/ZyronicClaw.html)
 
-### Random Drops
+### Potential Item Drops
 None

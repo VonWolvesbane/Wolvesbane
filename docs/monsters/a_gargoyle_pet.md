@@ -3,36 +3,33 @@ layout: default
 title: a gargoyle pet
 ---
 
-# a gargoyle pet — Unknown
-
-**No Photo Available**
+# a gargoyle pet
 
 ## Stats
 - STR: 500 - 512
 - DEX: 90 - 94
 - INT: 100 - 107
 - Hits: 300 - 313
-- Damage: 11 - 17
-- Fame/Karma: Unknown / Unknown
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: Unknown
+- Fire: Unknown
+- Cold: Unknown
+- Poison: Unknown
+- Energy: Unknown
 
 ## Taming Info
 - Tamable: Yes
 - Control Slots: 2
+- AI Type: AI_Melee
 
 ## Damage Types
 - Physical: 100%
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

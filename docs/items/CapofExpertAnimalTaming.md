@@ -5,8 +5,5 @@ title: Capof Expert Animal Taming
 
 # Capof Expert Animal Taming
 
-Class Name: `CapofExpertAnimalTaming`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [Von Wolvesbane](../monsters/Von_Wolvesbane.html)

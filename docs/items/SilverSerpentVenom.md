@@ -5,8 +5,5 @@ title: Silver Serpent Venom
 
 # Silver Serpent Venom
 
-Class Name: `SilverSerpentVenom`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [a silver serpent](../monsters/a_silver_serpent.html)

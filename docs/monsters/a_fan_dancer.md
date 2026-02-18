@@ -3,33 +3,29 @@ layout: default
 title: a fan dancer
 ---
 
-# a fan dancer — Unknown
-
-**No Photo Available**
+# a fan dancer
 
 ## Stats
 - STR: 301 - 375
 - DEX: 201 - 255
 - INT: 21 - 25
 - Hits: 351 - 430
-- Damage: 12 - 17
-- Fame/Karma: 9000 / -9000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 40 - 60
+- Fire: 50 - 70
+- Cold: 50 - 70
+- Poison: 50 - 70
+- Energy: 40 - 60
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Origami Paper](../items/OrigamiPaper.html)
 - [Tessen](../items/Tessen.html)
 
-### Random Drops
+### Potential Item Drops
 None

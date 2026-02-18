@@ -3,29 +3,25 @@ layout: default
 title: an orc brute
 ---
 
-# an orc brute — Unknown
-
-**No Photo Available**
+# an orc brute
 
 ## Stats
 - STR: 767 - 945
 - DEX: 66 - 75
 - INT: 46 - 70
 - Hits: 476 - 552
-- Damage: 20 - 25
-- Fame/Karma: 15000 / -15000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 45 - 55
+- Fire: 40 - 50
+- Cold: 25 - 35
+- Poison: 25 - 35
+- Energy: 25 - 35
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Bola Ball](../items/BolaBall.html)
@@ -33,5 +29,5 @@ None Listed
 - [Orcish Kin Mask](../items/OrcishKinMask.html)
 - [Yeast](../items/Yeast.html)
 
-### Random Drops
+### Potential Item Drops
 None

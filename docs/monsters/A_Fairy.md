@@ -3,36 +3,33 @@ layout: default
 title: A Fairy
 ---
 
-# A Fairy — Unknown
-
-**No Photo Available**
+# A Fairy
 
 ## Stats
 - STR: 321 - 330
 - DEX: 401 - 420
 - INT: 5201 - 5250
 - Hits: 500 - 750
-- Damage: 120 - 150
-- Fame/Karma: 7000 / 7000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 90 - 95
+- Fire: 80 - 95
+- Cold: 80 - 95
+- Poison: 90 - 95
+- Energy: 80 - 100
 
 ## Taming Info
 - Tamable: Yes
 - Control Slots: 2
+- AI Type: AI_Mage
 
 ## Damage Types
 - Energy: 125%
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

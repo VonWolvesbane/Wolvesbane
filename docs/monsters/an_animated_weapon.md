@@ -3,32 +3,28 @@ layout: default
 title: an animated weapon
 ---
 
-# an animated weapon — Unknown
-
-**No Photo Available**
+# an animated weapon
 
 ## Stats
 - STR: Unknown
 - DEX: Unknown
 - INT: 10
 - Hits: Unknown
-- Damage: 14 - 18
-- Fame/Karma: 0 / 0
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 40 - 50
+- Fire: 30 - 40
+- Cold: 30 - 40
+- Poison: Unknown
+- Energy: 20 - 30
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

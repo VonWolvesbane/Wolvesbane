@@ -3,32 +3,28 @@ layout: default
 title: a mantra effervescence
 ---
 
-# a mantra effervescence — Unknown
-
-**No Photo Available**
+# a mantra effervescence
 
 ## Stats
 - STR: 130 - 150
 - DEX: 120 - 130
 - INT: 150 - 230
 - Hits: 150 - 250
-- Damage: 21 - 25
-- Fame/Karma: 6500 / -6500
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 60 - 65
+- Fire: 40 - 50
+- Cold: 40 - 50
+- Poison: 50 - 60
+- Energy: Unknown
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

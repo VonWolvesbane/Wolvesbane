@@ -3,32 +3,28 @@ layout: default
 title: a Revenant Lion
 ---
 
-# a Revenant Lion — Unknown
-
-**No Photo Available**
+# a Revenant Lion
 
 ## Stats
 - STR: 276 - 325
 - DEX: 156 - 175
 - INT: 76 - 105
 - Hits: 251 - 280
-- Damage: 18 - 24
-- Fame/Karma: 4000 / -4000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 40 - 60
+- Fire: 20 - 30
+- Cold: 50 - 60
+- Poison: 55 - 65
+- Energy: 40 - 50
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

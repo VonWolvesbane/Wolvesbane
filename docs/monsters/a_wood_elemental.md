@@ -3,29 +3,25 @@ layout: default
 title: a wood elemental
 ---
 
-# a wood elemental — Unknown
-
-**No Photo Available**
+# a wood elemental
 
 ## Stats
 - STR: Unknown
 - DEX: Unknown
 - INT: Unknown
 - Hits: Unknown
-- Damage: Unknown
-- Fame/Karma: Unknown / Unknown
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: Unknown
+- Fire: Unknown
+- Cold: Unknown
+- Poison: Unknown
+- Energy: Unknown
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Agapite Ore](../items/AgapiteOre.html)
@@ -61,5 +57,5 @@ None Listed
 - [Wolvesbanian Ore](../items/WolvesbanianOre.html)
 - [Yew Log](../items/YewLog.html)
 
-### Random Drops
+### Potential Item Drops
 None

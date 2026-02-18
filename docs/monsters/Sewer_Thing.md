@@ -3,32 +3,28 @@ layout: default
 title: Sewer Thing
 ---
 
-# Sewer Thing — Unknown
-
-**No Photo Available**
+# Sewer Thing
 
 ## Stats
 - STR: 1232 - 1400
 - DEX: 76 - 82
 - INT: 76 - 85
 - Hits: 50000
-- Damage: 27 - 31
-- Fame/Karma: 25000 / -25000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 75 - 85
+- Fire: 40 - 50
+- Cold: 50 - 60
+- Poison: 55 - 65
+- Energy: 50 - 60
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

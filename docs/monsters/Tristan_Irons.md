@@ -3,29 +3,25 @@ layout: default
 title: Tristan Irons
 ---
 
-# Tristan Irons — FirstMate
-
-**No Photo Available**
+# Tristan Irons
 
 ## Stats
 - STR: 96 - 105
 - DEX: 91 - 100
 - INT: 61 - 75
 - Hits: 600 - 700
-- Damage: 11 - 23
-- Fame/Karma: 2000 / -2000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: Unknown
+- Fire: Unknown
+- Cold: Unknown
+- Poison: Unknown
+- Energy: Unknown
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Fancy Shirt](../items/FancyShirt.html)
@@ -33,6 +29,6 @@ None Listed
 - [Thigh Boots](../items/ThighBoots.html)
 - [Tricorne Hat](../items/TricorneHat.html)
 
-### Random Drops
+### Potential Item Drops
 - [Cutlass](../items/Cutlass.html)
 - [Dagger](../items/Dagger.html)

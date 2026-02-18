@@ -5,8 +5,6 @@ title: Ball Of Summoning
 
 # Ball Of Summoning
 
-Class Name: `BallOfSummoning`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [a black solen queen](../monsters/a_black_solen_queen.html)
+- [a red solen queen](../monsters/a_red_solen_queen.html)

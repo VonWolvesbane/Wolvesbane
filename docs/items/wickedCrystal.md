@@ -5,8 +5,6 @@ title: wicked Crystal
 
 # wicked Crystal
 
-Class Name: `wickedCrystal`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [a mummy magician](../monsters/a_mummy_magician.html)
+- [a mummy](../monsters/a_mummy.html)

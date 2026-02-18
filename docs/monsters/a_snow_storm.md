@@ -3,38 +3,35 @@ layout: default
 title: a snow storm
 ---
 
-# a snow storm — Unknown
-
-**No Photo Available**
+# a snow storm
 
 ## Stats
 - STR: 163 - 178
 - DEX: 83 - 93
 - INT: 36 - 48
 - Hits: 98 - 107
-- Damage: 6 - 9
-- Fame/Karma: 2500 / -2500
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 23 - 28
+- Fire: 5 - 8
+- Cold: 30 - 35
+- Poison: 13 - 17
+- Energy: 13 - 17
 
 ## Taming Info
 - Tamable: Yes
 - Control Slots: 1
+- AI Type: AI_Mage
 
 ## Damage Types
 - Physical: 20%
 - Cold: 80%
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Black Pearl](../items/BlackPearl.html)
 - [Iron Ore](../items/IronOre.html)
 
-### Random Drops
+### Potential Item Drops
 None

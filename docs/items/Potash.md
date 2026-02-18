@@ -5,8 +5,5 @@ title: Potash
 
 # Potash
 
-Class Name: `Potash`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [a mud pie](../monsters/a_mud_pie.html)

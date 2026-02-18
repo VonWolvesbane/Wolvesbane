@@ -5,8 +5,6 @@ title: Dragon Turtle Scute
 
 # Dragon Turtle Scute
 
-Class Name: `DragonTurtleScute`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [a dragon turtle](../monsters/a_dragon_turtle.html)
+- [a dragon turtle hatchling](../monsters/a_dragon_turtle_hatchling.html)

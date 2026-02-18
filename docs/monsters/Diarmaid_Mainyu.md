@@ -3,29 +3,25 @@ layout: default
 title: Diarmaid Mainyu
 ---
 
-# Diarmaid Mainyu — Lord of Demons
-
-**No Photo Available**
+# Diarmaid Mainyu
 
 ## Stats
 - STR: 2000 - 2500
 - DEX: 1500 - 2000
 - INT: 1500 - 2000
 - Hits: 200000 - 250000
-- Damage: 45 - 55
-- Fame/Karma: 40000 / -45000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: Unknown
+- Fire: Unknown
+- Cold: Unknown
+- Poison: Unknown
+- Energy: Unknown
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: 11120 - 11130
 
 ### Guaranteed Drops
 - [Demon Lord Arms](../items/DemonLordArms.html)
@@ -34,5 +30,5 @@ None Listed
 - [Demon Lord Helm](../items/DemonLordHelm.html)
 - [Demon Lord Legs](../items/DemonLordLegs.html)
 
-### Random Drops
+### Potential Item Drops
 None

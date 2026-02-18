@@ -3,36 +3,32 @@ layout: default
 title: a green goblin
 ---
 
-# a green goblin — Unknown
-
-**No Photo Available**
+# a green goblin
 
 ## Stats
 - STR: 252 - 343
 - DEX: 60 - 74
 - INT: 117 - 148
 - Hits: 162 - 208
-- Damage: 5 - 7
-- Fame/Karma: 1500 / -1500
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 40 - 50
+- Fire: 30 - 39
+- Cold: 27 - 35
+- Poison: 11 - 20
+- Energy: 10 - 20
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Bola Ball](../items/BolaBall.html)
 - [Lucky Coin](../items/LuckyCoin.html)
 - [Thigh Boots](../items/ThighBoots.html)
 
-### Random Drops
+### Potential Item Drops
 - [Candle](../items/Candle.html)
 - [Katana](../items/Katana.html)
 - [Kryss](../items/Kryss.html)

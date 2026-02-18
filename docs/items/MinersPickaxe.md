@@ -5,8 +5,9 @@ title: Miners Pickaxe
 
 # Miners Pickaxe
 
-Class Name: `MinersPickaxe`
-
 ## Dropped By
+- [Kashmir](../monsters/Kashmir.html)
 
-(To be auto-filled in future update)
+## Skill Bonuses
+- Mining: +20.0
+- Blacksmith: +20.0

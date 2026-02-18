@@ -5,8 +5,5 @@ title: The Beserkers Maul
 
 # The Beserkers Maul
 
-Class Name: `TheBeserkersMaul`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [Killar Ancestor](../monsters/Killar_Ancestor.html)

@@ -3,36 +3,33 @@ layout: default
 title: a rat
 ---
 
-# a rat — Unknown
-
-**No Photo Available**
+# a rat
 
 ## Stats
 - STR: 9
 - DEX: 35
 - INT: 5
 - Hits: 6
-- Damage: 1 - 2
-- Fame/Karma: 150 / -150
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 5 - 10
+- Fire: Unknown
+- Cold: Unknown
+- Poison: 5 - 10
+- Energy: Unknown
 
 ## Taming Info
 - Tamable: Yes
 - Control Slots: 1
+- AI Type: AI_Animal
 
 ## Damage Types
 - Physical: 100%
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

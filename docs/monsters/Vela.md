@@ -3,32 +3,28 @@ layout: default
 title: Vela
 ---
 
-# Vela — the sorceress
-
-**No Photo Available**
+# Vela
 
 ## Stats
 - STR: 110
 - DEX: 100
 - INT: 1000
 - Hits: Unknown
-- Damage: Unknown
-- Fame/Karma: Unknown / Unknown
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: Unknown
+- Fire: Unknown
+- Cold: Unknown
+- Poison: Unknown
+- Energy: Unknown
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

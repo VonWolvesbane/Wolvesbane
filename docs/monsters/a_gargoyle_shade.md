@@ -3,32 +3,28 @@ layout: default
 title: a gargoyle shade
 ---
 
-# a gargoyle shade — Unknown
-
-**No Photo Available**
+# a gargoyle shade
 
 ## Stats
 - STR: 76 - 78
 - DEX: 76 - 81
 - INT: 36 - 48
 - Hits: 60 - 64
-- Damage: 7 - 14
-- Fame/Karma: 4000 / -4000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 35 - 60
+- Fire: 40 - 50
+- Cold: 10 - 20
+- Poison: 20 - 35
+- Energy: Unknown
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

@@ -3,32 +3,28 @@ layout: default
 title: a Clan Ribbon Plague Rat
 ---
 
-# a Clan Ribbon Plague Rat — Unknown
-
-**No Photo Available**
+# a Clan Ribbon Plague Rat
 
 ## Stats
 - STR: 59
 - DEX: 51
 - INT: 17
 - Hits: 92
-- Damage: 4 - 8
-- Fame/Karma: 300 / -300
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 35 - 40
+- Fire: 20 - 25
+- Cold: 25 - 35
+- Poison: Unknown
+- Energy: 35 - 40
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

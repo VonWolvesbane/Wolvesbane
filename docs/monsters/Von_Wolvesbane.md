@@ -3,34 +3,30 @@ layout: default
 title: Von Wolvesbane
 ---
 
-# Von Wolvesbane — The Evil Shard Owner
-
-**No Photo Available**
+# Von Wolvesbane
 
 ## Stats
 - STR: 2350 - 2400
 - DEX: 2150 - 2200
 - INT: 2150 - 2200
 - Hits: 100000 - 150000
-- Damage: 25 - 45
-- Fame/Karma: 25000 / -25000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 30 - 75
+- Fire: 30 - 75
+- Cold: Unknown
+- Poison: 30 - 75
+- Energy: 30 - 75
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: 20000 - 30000
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 - [Armsof Expert Animal Taming](../items/ArmsofExpertAnimalTaming.html)
 - [Capof Expert Animal Taming](../items/CapofExpertAnimalTaming.html)
 - [Earringsof Expert Animal Taming](../items/EarringsofExpertAnimalTaming.html)

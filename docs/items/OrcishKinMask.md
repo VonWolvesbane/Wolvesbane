@@ -5,8 +5,6 @@ title: Orcish Kin Mask
 
 # Orcish Kin Mask
 
-Class Name: `OrcishKinMask`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [an orc brute](../monsters/an_orc_brute.html)
+- [an orcish mage](../monsters/an_orcish_mage.html)

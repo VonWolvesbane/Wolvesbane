@@ -3,32 +3,28 @@ layout: default
 title: a succubus
 ---
 
-# a succubus — Unknown
-
-**No Photo Available**
+# a succubus
 
 ## Stats
 - STR: 488 - 620
 - DEX: 121 - 170
 - INT: 498 - 657
 - Hits: 312 - 353
-- Damage: 18 - 28
-- Fame/Karma: 24000 / -24000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 80 - 90
+- Fire: 70 - 80
+- Cold: 40 - 50
+- Poison: 50 - 60
+- Energy: 50 - 60
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

@@ -5,8 +5,7 @@ title: Bank Check
 
 # Bank Check
 
-Class Name: `BankCheck`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [Crayma](../monsters/Crayma.html)
+- [Mardoth](../monsters/Mardoth.html)
+- [Uzeraan](../monsters/Uzeraan.html)

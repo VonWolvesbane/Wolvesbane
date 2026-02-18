@@ -3,32 +3,28 @@ layout: default
 title: a troll
 ---
 
-# a troll — Unknown
-
-**No Photo Available**
+# a troll
 
 ## Stats
 - STR: 176 - 205
 - DEX: 46 - 65
 - INT: 46 - 70
 - Hits: 106 - 123
-- Damage: 8 - 14
-- Fame/Karma: 3500 / -3500
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 35 - 45
+- Fire: 25 - 35
+- Cold: 15 - 25
+- Poison: 5 - 15
+- Energy: 5 - 15
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

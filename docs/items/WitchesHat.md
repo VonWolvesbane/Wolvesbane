@@ -5,8 +5,8 @@ title: Witches Hat
 
 # Witches Hat
 
-Class Name: `WitchesHat`
-
 ## Dropped By
+- [Kindred](../monsters/Kindred.html)
 
-(To be auto-filled in future update)
+## Skill Bonuses
+- Archery: +10

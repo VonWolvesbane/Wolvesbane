@@ -3,32 +3,28 @@ layout: default
 title: a genetic failure
 ---
 
-# a genetic failure — Unknown
-
-**No Photo Available**
+# a genetic failure
 
 ## Stats
 - STR: 18 - 30
 - DEX: 16 - 21
 - INT: 16 - 20
 - Hits: 13 - 17
-- Damage: 3 - 9
-- Fame/Karma: 450 / -450
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 15 - 20
+- Fire: Unknown
+- Cold: 40 - 50
+- Poison: 20 - 30
+- Energy: 10 - 20
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Organics](../items/Organics.html)
 
-### Random Drops
+### Potential Item Drops
 None

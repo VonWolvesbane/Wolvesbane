@@ -3,32 +3,28 @@ layout: default
 title: Selur'Ounur
 ---
 
-# Selur'Ounur — Unknown
-
-**No Photo Available**
+# Selur'Ounur
 
 ## Stats
 - STR: 1096 - 1185
 - DEX: 186 - 225
 - INT: 686 - 775
 - Hits: 9658 - 11711
-- Damage: 29 - 35
-- Fame/Karma: 22500 / -22500
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 75 - 85
+- Fire: 80 - 90
+- Cold: 80 - 90
+- Poison: 70 - 80
+- Energy: 75 - 85
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [William Soul](../items/WilliamSoul.html)
 
-### Random Drops
+### Potential Item Drops
 None

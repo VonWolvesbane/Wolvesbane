@@ -5,8 +5,7 @@ title: Oak Log
 
 # Oak Log
 
-Class Name: `OakLog`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [a OakTree](../monsters/a_OakTree.html)
+- [a wood elemental](../monsters/a_wood_elemental.html)
+- [a heartwood elemental](../monsters/a_heartwood_elemental.html)

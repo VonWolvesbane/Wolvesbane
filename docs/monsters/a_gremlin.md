@@ -3,29 +3,25 @@ layout: default
 title: a gremlin
 ---
 
-# a gremlin — Unknown
-
-**No Photo Available**
+# a gremlin
 
 ## Stats
 - STR: 106
 - DEX: 130
 - INT: 36
 - Hits: 70
-- Damage: 5 - 7
-- Fame/Karma: Unknown / Unknown
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: Unknown
+- Fire: Unknown
+- Cold: Unknown
+- Poison: Unknown
+- Energy: Unknown
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Apple](../items/Apple.html)
@@ -33,5 +29,5 @@ None Listed
 - [Bow](../items/Bow.html)
 - [Lucky Coin](../items/LuckyCoin.html)
 
-### Random Drops
+### Potential Item Drops
 None

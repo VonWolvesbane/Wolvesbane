@@ -3,32 +3,28 @@ layout: default
 title: a spined leather elemental
 ---
 
-# a spined leather elemental — Unknown
-
-**No Photo Available**
+# a spined leather elemental
 
 ## Stats
 - STR: 150 - 200
 - DEX: 100 - 120
 - INT: 50 - 60
 - Hits: 100 - 120
-- Damage: 5 - 10
-- Fame/Karma: 500 / -500
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 10 - 20
+- Fire: 5 - 10
+- Cold: 5 - 10
+- Poison: 5 - 10
+- Energy: 5 - 10
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Gold Scales](../items/GoldScales.html)
 
-### Random Drops
+### Potential Item Drops
 None

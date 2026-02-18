@@ -3,34 +3,30 @@ layout: default
 title: Necroloricatus
 ---
 
-# Necroloricatus — The Lord of Necromancy
-
-**No Photo Available**
+# Necroloricatus
 
 ## Stats
 - STR: 300 - 500
 - DEX: 500 - 500
 - INT: 200 - 250
 - Hits: 15000 - 35000
-- Damage: 300 - 500
-- Fame/Karma: 25000 / -25000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 95 - 98
+- Fire: 90 - 97
+- Cold: 95 - 98
+- Poison: 95 - 98
+- Energy: 95 - 98
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: 400 - 600
 
 ### Guaranteed Drops
 - [Hooded Shroud Of Shadows](../items/HoodedShroudOfShadows.html)
 
-### Random Drops
+### Potential Item Drops
 - [Necroacidus](../items/Necroacidus.html)
 - [Necroloricatus Boots](../items/NecroloricatusBoots.html)
 - [Necroloricatus Cap](../items/NecroloricatusCap.html)

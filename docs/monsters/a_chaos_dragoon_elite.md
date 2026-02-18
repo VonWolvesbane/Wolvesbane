@@ -3,29 +3,25 @@ layout: default
 title: a chaos dragoon elite
 ---
 
-# a chaos dragoon elite — Unknown
-
-**No Photo Available**
+# a chaos dragoon elite
 
 ## Stats
 - STR: 276 - 350
 - DEX: 66 - 90
 - INT: 126 - 150
 - Hits: 276 - 350
-- Damage: 29 - 34
-- Fame/Karma: 8000 / -8000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 45 - 55
+- Fire: 15 - 25
+- Cold: Unknown
+- Poison: 25 - 35
+- Energy: 25 - 35
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Black Scales](../items/BlackScales.html)
@@ -37,5 +33,5 @@ None Listed
 - [White Scales](../items/WhiteScales.html)
 - [Yellow Scales](../items/YellowScales.html)
 
-### Random Drops
+### Potential Item Drops
 None

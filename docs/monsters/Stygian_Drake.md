@@ -3,36 +3,33 @@ layout: default
 title: Stygian Drake
 ---
 
-# Stygian Drake — Unknown
-
-**No Photo Available**
+# Stygian Drake
 
 ## Stats
 - STR: 790 - 830
 - DEX: 85 - 125
 - INT: 400 - 450
 - Hits: 480 - 510
-- Damage: 11 - 17
-- Fame/Karma: 5500 / -5500
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 55 - 65
+- Fire: 60 - 70
+- Cold: 30 - 40
+- Poison: 30 - 40
+- Energy: 60 - 70
 
 ## Taming Info
 - Tamable: Yes
 - Control Slots: 4
+- AI Type: AI_Mage
 
 ## Damage Types
 - Physical: 100%
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

@@ -5,8 +5,6 @@ title: Raw Ribs
 
 # Raw Ribs
 
-Class Name: `RawRibs`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [a kepetch ambusher](../monsters/a_kepetch_ambusher.html)
+- [an orcish lord](../monsters/an_orcish_lord.html)

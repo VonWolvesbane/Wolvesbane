@@ -3,32 +3,28 @@ layout: default
 title: a black solen infiltrator
 ---
 
-# a black solen infiltrator — Unknown
-
-**No Photo Available**
+# a black solen infiltrator
 
 ## Stats
 - STR: 206 - 230
 - DEX: 121 - 145
 - INT: 66 - 90
 - Hits: 96 - 107
-- Damage: 5 - 15
-- Fame/Karma: 3000 / -3000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 20 - 35
+- Fire: 20 - 35
+- Cold: 10 - 25
+- Poison: 20 - 35
+- Energy: 10 - 25
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Zoogi Fungus](../items/ZoogiFungus.html)
 
-### Random Drops
+### Potential Item Drops
 None

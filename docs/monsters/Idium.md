@@ -3,29 +3,25 @@ layout: default
 title: Idium
 ---
 
-# Idium — Unknown
-
-**No Photo Available**
+# Idium
 
 ## Stats
 - STR: 2000 - 2500
 - DEX: 1500 - 2000
 - INT: 1500 - 2000
 - Hits: 200000 - 250000
-- Damage: 45 - 55
-- Fame/Karma: 40000 / -45000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: Unknown
+- Fire: Unknown
+- Cold: Unknown
+- Poison: Unknown
+- Energy: Unknown
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: 11120 - 11130
 
 ### Guaranteed Drops
 - [Dragon Arms Of Evolution](../items/DragonArmsOfEvolution.html)
@@ -36,5 +32,5 @@ None Listed
 - [Dragon Legs Of Evolution](../items/DragonLegsOfEvolution.html)
 - [Order Shield Of Evolution](../items/OrderShieldOfEvolution.html)
 
-### Random Drops
+### Potential Item Drops
 None

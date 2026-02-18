@@ -5,8 +5,8 @@ title: Board
 
 # Board
 
-Class Name: `Board`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [a bog thing](../monsters/a_bog_thing.html)
+- [a corpser](../monsters/a_corpser.html)
+- [an orc chopper](../monsters/an_orc_chopper.html)
+- [a tangling root](../monsters/a_tangling_root.html)

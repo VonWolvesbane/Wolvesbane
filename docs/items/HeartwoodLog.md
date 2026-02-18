@@ -5,8 +5,7 @@ title: Heartwood Log
 
 # Heartwood Log
 
-Class Name: `HeartwoodLog`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [a HeartwoodTree](../monsters/a_HeartwoodTree.html)
+- [a wood elemental](../monsters/a_wood_elemental.html)
+- [a heartwood elemental](../monsters/a_heartwood_elemental.html)

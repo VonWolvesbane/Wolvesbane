@@ -5,8 +5,5 @@ title: Serpent Fang Sect Badge
 
 # Serpent Fang Sect Badge
 
-Class Name: `SerpentFangSectBadge`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [Black Order Assassin](../monsters/Black_Order_Assassin.html)

@@ -5,8 +5,8 @@ title: Ornament Of The Magician
 
 # Ornament Of The Magician
 
-Class Name: `OrnamentOfTheMagician`
-
 ## Dropped By
+- [Killar Ancestor](../monsters/Killar_Ancestor.html)
 
-(To be auto-filled in future update)
+## Resist Bonuses
+- Energy: +15

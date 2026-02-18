@@ -5,8 +5,5 @@ title: Cursed Oilstone
 
 # Cursed Oilstone
 
-Class Name: `CursedOilstone`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [a quartz elemental](../monsters/a_quartz_elemental.html)

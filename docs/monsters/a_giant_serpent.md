@@ -3,29 +3,25 @@ layout: default
 title: a giant serpent
 ---
 
-# a giant serpent — Unknown
-
-**No Photo Available**
+# a giant serpent
 
 ## Stats
 - STR: 186 - 215
 - DEX: 56 - 80
 - INT: 66 - 85
 - Hits: 112 - 129
-- Damage: 7 - 17
-- Fame/Karma: 2500 / -2500
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 30 - 35
+- Fire: 5 - 10
+- Cold: 10 - 20
+- Poison: 70 - 90
+- Energy: 10 - 20
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Bone](../items/Bone.html)
@@ -34,5 +30,5 @@ None Listed
 - [Rare Serpent Egg3](../items/RareSerpentEgg3.html)
 - [Rare Serpent Egg4](../items/RareSerpentEgg4.html)
 
-### Random Drops
+### Potential Item Drops
 None

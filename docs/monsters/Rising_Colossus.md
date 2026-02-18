@@ -3,32 +3,28 @@ layout: default
 title: Rising Colossus
 ---
 
-# Rising Colossus — Unknown
-
-**No Photo Available**
+# Rising Colossus
 
 ## Stats
 - STR: 600
 - DEX: 70
 - INT: 80
 - Hits: Unknown
-- Damage: 18 - 21
-- Fame/Karma: Unknown / Unknown
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 56 - 63
+- Fire: 29 - 30
+- Cold: 53 - 54
+- Poison: 54 - 58
+- Energy: 26 - 29
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

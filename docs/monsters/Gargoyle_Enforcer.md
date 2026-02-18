@@ -3,34 +3,30 @@ layout: default
 title: Gargoyle Enforcer
 ---
 
-# Gargoyle Enforcer — Unknown
-
-**No Photo Available**
+# Gargoyle Enforcer
 
 ## Stats
 - STR: 760 - 850
 - DEX: 102 - 150
 - INT: 152 - 200
 - Hits: 482 - 485
-- Damage: 7 - 14
-- Fame/Karma: 5000 / -5000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 40 - 60
+- Fire: 50 - 60
+- Cold: 20 - 30
+- Poison: 25 - 35
+- Energy: 15 - 25
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 - [Gargoyles Axe](../items/GargoylesAxe.html)
 - [Gargoyles Knife](../items/GargoylesKnife.html)
 - [Gargoyles Pickaxe](../items/GargoylesPickaxe.html)

@@ -5,8 +5,5 @@ title: Prospectors Tool
 
 # Prospectors Tool
 
-Class Name: `ProspectorsTool`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [a master of the arts](../monsters/a_master_of_the_arts.html)

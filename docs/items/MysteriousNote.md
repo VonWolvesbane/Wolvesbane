@@ -5,8 +5,5 @@ title: Mysterious Note
 
 # Mysterious Note
 
-Class Name: `MysteriousNote`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [An Icy Creature](../monsters/An_Icy_Creature.html)

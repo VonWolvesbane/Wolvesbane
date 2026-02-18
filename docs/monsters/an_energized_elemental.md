@@ -3,32 +3,28 @@ layout: default
 title: an energized elemental
 ---
 
-# an energized elemental — Unknown
-
-**No Photo Available**
+# an energized elemental
 
 ## Stats
 - STR: 800 - 928
 - DEX: 166 - 185
 - INT: 500 - 750
 - Hits: 1516 - 1869
-- Damage: 38 - 47
-- Fame/Karma: 12500 / -12500
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 55 - 65
+- Fire: 20 - 30
+- Cold: 40 - 50
+- Poison: 50 - 60
+- Energy: 30 - 40
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 - [Energizer Crystal](../items/EnergizerCrystal.html)

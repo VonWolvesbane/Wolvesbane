@@ -3,29 +3,25 @@ layout: default
 title: a young ronin
 ---
 
-# a young ronin — Unknown
-
-**No Photo Available**
+# a young ronin
 
 ## Stats
 - STR: Unknown
 - DEX: Unknown
 - INT: Unknown
 - Hits: 10 - 20
-- Damage: Unknown
-- Fame/Karma: Unknown / Unknown
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: Unknown
+- Fire: Unknown
+- Cold: Unknown
+- Poison: Unknown
+- Energy: Unknown
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Bandana](../items/Bandana.html)
@@ -33,7 +29,7 @@ None Listed
 - [Leather Hiro Sode](../items/LeatherHiroSode.html)
 - [Samurai Tabi](../items/SamuraiTabi.html)
 
-### Random Drops
+### Potential Item Drops
 - [Lajatang](../items/Lajatang.html)
 - [Leather Suneate](../items/LeatherSuneate.html)
 - [No Dachi](../items/NoDachi.html)

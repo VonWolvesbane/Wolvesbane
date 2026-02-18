@@ -5,8 +5,5 @@ title: Kilt
 
 # Kilt
 
-Class Name: `Kilt`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [Tavara Sewel](../monsters/Tavara_Sewel.html)

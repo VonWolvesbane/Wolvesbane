@@ -3,29 +3,25 @@ layout: default
 title: a thunder wyrm
 ---
 
-# a thunder wyrm — Unknown
-
-**No Photo Available**
+# a thunder wyrm
 
 ## Stats
 - STR: 721 - 760
 - DEX: 101 - 130
 - INT: 386 - 425
 - Hits: 7200 - 7456
-- Damage: 19 - 29
-- Fame/Karma: 18000 / -18000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 70 - 80
+- Fire: 75 - 80
+- Cold: 70 - 75
+- Poison: 70 - 75
+- Energy: 80 - 90
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: 1500 - 2000
 
 ### Guaranteed Drops
 - [W Q Stonebow](../items/WQStonebow.html)
@@ -35,5 +31,5 @@ None Listed
 - [W Q Stonemace](../items/WQStonemace.html)
 - [W Q Stoneshield](../items/WQStoneshield.html)
 
-### Random Drops
+### Potential Item Drops
 None

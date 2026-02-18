@@ -5,8 +5,5 @@ title: Mad Bull Horn
 
 # Mad Bull Horn
 
-Class Name: `MadBullHorn`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [A Mad Bull](../monsters/A_Mad_Bull.html)

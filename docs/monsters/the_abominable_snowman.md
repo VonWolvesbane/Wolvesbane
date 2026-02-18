@@ -3,32 +3,28 @@ layout: default
 title: the abominable snowman
 ---
 
-# the abominable snowman — Unknown
-
-**No Photo Available**
+# the abominable snowman
 
 ## Stats
 - STR: 800
 - DEX: 150
 - INT: 1200
 - Hits: 8000
-- Damage: 21 - 27
-- Fame/Karma: 12000 / -12000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 60 - 70
+- Fire: 40 - 50
+- Cold: Unknown
+- Poison: 60 - 70
+- Energy: 60 - 70
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

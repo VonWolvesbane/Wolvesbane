@@ -5,8 +5,5 @@ title: Chaos Boots
 
 # Chaos Boots
 
-Class Name: `ChaosBoots`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [Seth](../monsters/Seth.html)

@@ -3,29 +3,25 @@ layout: default
 title: Orochimaru
 ---
 
-# Orochimaru — Unknown
-
-**No Photo Available**
+# Orochimaru
 
 ## Stats
 - STR: 500 - 1500
 - DEX: 300 - 300
 - INT: 300 - 300
 - Hits: 10000 - 12000
-- Damage: 105 - 233
-- Fame/Karma: 0 / 0
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: Unknown
+- Fire: Unknown
+- Cold: Unknown
+- Poison: Unknown
+- Energy: Unknown
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Gold](../items/Gold.html)
@@ -37,5 +33,5 @@ None Listed
 - [Orochimaru Under Shirt](../items/OrochimaruUnderShirt.html)
 - [Orochimarus Heart](../items/OrochimarusHeart.html)
 
-### Random Drops
+### Potential Item Drops
 None

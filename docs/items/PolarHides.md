@@ -5,8 +5,6 @@ title: Polar Hides
 
 # Polar Hides
 
-Class Name: `PolarHides`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [Gargoyles Knife](../monsters/Gargoyles_Knife.html)
+- [Masters Knife](../monsters/Masters_Knife.html)

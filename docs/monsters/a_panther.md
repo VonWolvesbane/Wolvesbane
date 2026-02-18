@@ -3,36 +3,33 @@ layout: default
 title: a panther
 ---
 
-# a panther — Unknown
-
-**No Photo Available**
+# a panther
 
 ## Stats
 - STR: 61 - 85
 - DEX: 86 - 105
 - INT: 26 - 50
 - Hits: 37 - 51
-- Damage: 4 - 12
-- Fame/Karma: 450 / 0
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 20 - 25
+- Fire: 5 - 10
+- Cold: 10 - 15
+- Poison: 5 - 10
+- Energy: Unknown
 
 ## Taming Info
 - Tamable: Yes
 - Control Slots: 1
+- AI Type: AI_Animal
 
 ## Damage Types
 - Physical: 100%
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

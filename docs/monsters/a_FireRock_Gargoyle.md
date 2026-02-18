@@ -3,29 +3,25 @@ layout: default
 title: a FireRock Gargoyle
 ---
 
-# a FireRock Gargoyle — Unknown
-
-**No Photo Available**
+# a FireRock Gargoyle
 
 ## Stats
 - STR: 351 - 400
 - DEX: 126 - 145
 - INT: 226 - 250
 - Hits: 211 - 240
-- Damage: 11 - 17
-- Fame/Karma: 10000 / -10000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 30 - 35
+- Fire: 70 - 80
+- Cold: 10 - 20
+- Poison: 20 - 30
+- Energy: 20 - 30
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Gargoyle Fire Pick](../items/GargoyleFirePick.html)
@@ -33,5 +29,5 @@ None Listed
 - [Large Fire Rock](../items/LargeFireRock.html)
 - [Light Source](../items/LightSource.html)
 
-### Random Drops
+### Potential Item Drops
 None

@@ -3,32 +3,28 @@ layout: default
 title: a mimic
 ---
 
-# a mimic — Unknown
-
-**No Photo Available**
+# a mimic
 
 ## Stats
 - STR: 281
 - DEX: 140
 - INT: 261
 - Hits: 543
-- Damage: 13 - 20
-- Fame/Karma: Unknown / Unknown
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: Unknown
+- Fire: Unknown
+- Cold: Unknown
+- Poison: Unknown
+- Energy: Unknown
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Lucky Coin](../items/LuckyCoin.html)
 
-### Random Drops
+### Potential Item Drops
 None

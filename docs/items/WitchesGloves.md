@@ -5,8 +5,12 @@ title: Witches Gloves
 
 # Witches Gloves
 
-Class Name: `WitchesGloves`
-
 ## Dropped By
+- [Kindred](../monsters/Kindred.html)
 
-(To be auto-filled in future update)
+## Skill Bonuses
+- EvalInt: +10
+- Inscribe: +10
+
+## Regeneration Bonuses
+- Mana: +125

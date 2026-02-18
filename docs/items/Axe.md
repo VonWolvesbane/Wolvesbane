@@ -5,8 +5,6 @@ title: Axe
 
 # Axe
 
-Class Name: `Axe`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [Krass Kringle](../monsters/Krass_Kringle.html)
+- [A Were Wolf](../monsters/A_Were_Wolf.html)

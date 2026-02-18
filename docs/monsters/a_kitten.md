@@ -3,32 +3,28 @@ layout: default
 title: a kitten
 ---
 
-# a kitten — Unknown
-
-**No Photo Available**
+# a kitten
 
 ## Stats
 - STR: 400
 - DEX: 100
 - INT: 1450 - 1555
 - Hits: 180
-- Damage: 15 - 25
-- Fame/Karma: 300 / -159
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 10 - 30
+- Fire: 10 - 50
+- Cold: 10 - 35
+- Poison: 10 - 35
+- Energy: 10 - 30
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

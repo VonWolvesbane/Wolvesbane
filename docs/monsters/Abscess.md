@@ -3,33 +3,29 @@ layout: default
 title: Abscess
 ---
 
-# Abscess — Unknown
-
-**No Photo Available**
+# Abscess
 
 ## Stats
 - STR: 845 - 871
 - DEX: 121 - 134
 - INT: 128 - 142
 - Hits: 7470 - 7540
-- Damage: 26 - 31
-- Fame/Karma: Unknown / Unknown
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 65 - 75
+- Fire: 70 - 80
+- Cold: 25 - 35
+- Poison: 35 - 45
+- Energy: 35 - 45
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Abscess Tail](../items/AbscessTail.html)
 - [Paragon Chest](../items/ParagonChest.html)
 
-### Random Drops
+### Potential Item Drops
 None

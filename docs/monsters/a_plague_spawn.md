@@ -3,32 +3,28 @@ layout: default
 title: a plague spawn
 ---
 
-# a plague spawn — Unknown
-
-**No Photo Available**
+# a plague spawn
 
 ## Stats
 - STR: 201 - 300
 - DEX: 80
 - INT: 16 - 20
 - Hits: 121 - 180
-- Damage: 11 - 17
-- Fame/Karma: 1000 / -1000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 35 - 45
+- Fire: 30 - 40
+- Cold: 25 - 35
+- Poison: 65 - 75
+- Energy: 25 - 35
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

@@ -3,32 +3,28 @@ layout: default
 title: an undead guardian
 ---
 
-# an undead guardian — Unknown
-
-**No Photo Available**
+# an undead guardian
 
 ## Stats
 - STR: 212
 - DEX: 76
 - INT: 56
 - Hits: 138
-- Damage: 8 - 18
-- Fame/Karma: Unknown / Unknown
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: Unknown
+- Fire: Unknown
+- Cold: Unknown
+- Poison: Unknown
+- Energy: Unknown
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

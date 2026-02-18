@@ -3,29 +3,25 @@ layout: default
 title: an orc chopper
 ---
 
-# an orc chopper — Unknown
-
-**No Photo Available**
+# an orc chopper
 
 ## Stats
 - STR: 147 - 245
 - DEX: 91 - 115
 - INT: 61 - 85
 - Hits: 97 - 139
-- Damage: 4 - 13
-- Fame/Karma: 4500 / -4500
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 25 - 35
+- Fire: 30 - 40
+- Cold: 15 - 25
+- Poison: 15 - 25
+- Energy: 25 - 30
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Board](../items/Board.html)
@@ -35,7 +31,7 @@ None Listed
 - [Log](../items/Log.html)
 - [Yeast](../items/Yeast.html)
 
-### Random Drops
+### Potential Item Drops
 - [Arrow](../items/Arrow.html)
 - [Bandage](../items/Bandage.html)
 - [Beverage Bottle](../items/BeverageBottle.html)

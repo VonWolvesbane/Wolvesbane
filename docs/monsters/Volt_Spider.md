@@ -3,33 +3,29 @@ layout: default
 title: Volt Spider
 ---
 
-# Volt Spider — Unknown
-
-**No Photo Available**
+# Volt Spider
 
 ## Stats
 - STR: 721 - 760
 - DEX: 101 - 130
 - INT: 386 - 425
 - Hits: 433 - 456
-- Damage: 17 - 25
-- Fame/Karma: 18000 / -18000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 55 - 70
+- Fire: 40 - 50
+- Cold: 25 - 45
+- Poison: 40 - 50
+- Energy: 80 - 90
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Gold](../items/Gold.html)
 - [vseggs](../items/vseggs.html)
 
-### Random Drops
+### Potential Item Drops
 None

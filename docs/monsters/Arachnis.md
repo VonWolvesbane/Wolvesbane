@@ -3,29 +3,25 @@ layout: default
 title: Arachnis
 ---
 
-# Arachnis — Spider of the Golden Silk
-
-**No Photo Available**
+# Arachnis
 
 ## Stats
 - STR: 5000 - 7500
 - DEX: 3000 - 5000
 - INT: 1000 - 2500
 - Hits: 150000 - 250000
-- Damage: 45 - 55
-- Fame/Karma: 40000 / -45000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: Unknown
+- Fire: Unknown
+- Cold: Unknown
+- Poison: Unknown
+- Energy: Unknown
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: 5120 - 6130
 
 ### Guaranteed Drops
 - [Bootsof Arachnis](../items/BootsofArachnis.html)
@@ -36,5 +32,5 @@ None Listed
 - [Soulof Arachnis](../items/SoulofArachnis.html)
 - [Surcoatof Arachnis](../items/SurcoatofArachnis.html)
 
-### Random Drops
+### Potential Item Drops
 None

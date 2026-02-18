@@ -5,8 +5,5 @@ title: Energizer Crystal
 
 # Energizer Crystal
 
-Class Name: `EnergizerCrystal`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [an energized elemental](../monsters/an_energized_elemental.html)

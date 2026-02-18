@@ -3,29 +3,25 @@ layout: default
 title: Grimmoch Drummel
 ---
 
-# Grimmoch Drummel — the Cursed
-
-**No Photo Available**
+# Grimmoch Drummel
 
 ## Stats
 - STR: 111 - 120
 - DEX: 151 - 160
 - INT: 41 - 50
 - Hits: 180 - 207
-- Damage: 13 - 16
-- Fame/Karma: 5000 / -1000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 35 - 45
+- Fire: 25 - 30
+- Cold: 45 - 55
+- Poison: 30 - 40
+- Energy: 20 - 25
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Arrow](../items/Arrow.html)
@@ -33,5 +29,5 @@ None Listed
 - [Boots](../items/Boots.html)
 - [Fire Horn](../items/FireHorn.html)
 
-### Random Drops
+### Potential Item Drops
 None

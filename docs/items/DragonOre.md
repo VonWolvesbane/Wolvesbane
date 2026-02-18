@@ -5,8 +5,5 @@ title: Dragon Ore
 
 # Dragon Ore
 
-Class Name: `DragonOre`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [a dragon elemental](../monsters/a_dragon_elemental.html)

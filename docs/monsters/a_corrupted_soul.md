@@ -3,32 +3,28 @@ layout: default
 title: a corrupted soul
 ---
 
-# a corrupted soul — Unknown
-
-**No Photo Available**
+# a corrupted soul
 
 ## Stats
 - STR: 102 - 115
 - DEX: 101 - 115
 - INT: 203 - 215
 - Hits: 61 - 69
-- Damage: 4 - 40
-- Fame/Karma: 5000 / -5000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 61 - 74
+- Fire: 22 - 48
+- Cold: 73 - 100
+- Poison: Unknown
+- Energy: 51 - 60
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

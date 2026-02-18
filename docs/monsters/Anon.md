@@ -3,32 +3,28 @@ layout: default
 title: Anon
 ---
 
-# Anon — the Mage
-
-**No Photo Available**
+# Anon
 
 ## Stats
 - STR: 150 - 200
 - DEX: 100 - 200
 - INT: 175 - 200
 - Hits: 9500 - 10000
-- Damage: 14 - 17
-- Fame/Karma: 32000 / -32000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 65 - 70
+- Fire: 65 - 70
+- Cold: 65 - 70
+- Poison: 65 - 70
+- Energy: 65 - 70
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Arrow](../items/Arrow.html)
 
-### Random Drops
+### Potential Item Drops
 None

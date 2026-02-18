@@ -3,29 +3,25 @@ layout: default
 title: an orc scout
 ---
 
-# an orc scout — Unknown
-
-**No Photo Available**
+# an orc scout
 
 ## Stats
 - STR: 96 - 120
 - DEX: 101 - 130
 - INT: 36 - 60
 - Hits: 58 - 72
-- Damage: 5 - 7
-- Fame/Karma: 1500 / -1500
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 25 - 35
+- Fire: 30 - 40
+- Cold: 15 - 25
+- Poison: 15 - 20
+- Energy: 25 - 30
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Apple](../items/Apple.html)
@@ -35,5 +31,5 @@ None Listed
 - [Orcish Bow](../items/OrcishBow.html)
 - [Yeast](../items/Yeast.html)
 
-### Random Drops
+### Potential Item Drops
 None

@@ -5,8 +5,5 @@ title: Robeof Rite
 
 # Robeof Rite
 
-Class Name: `RobeofRite`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [Exodus Minion Lord](../monsters/Exodus_Minion_Lord.html)

@@ -5,8 +5,5 @@ title: Gold Scales
 
 # Gold Scales
 
-Class Name: `GoldScales`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [a spined leather elemental](../monsters/a_spined_leather_elemental.html)

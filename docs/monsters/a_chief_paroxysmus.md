@@ -3,29 +3,25 @@ layout: default
 title: a chief paroxysmus
 ---
 
-# a chief paroxysmus — Unknown
-
-**No Photo Available**
+# a chief paroxysmus
 
 ## Stats
 - STR: 1232 - 1400
 - DEX: 76 - 82
 - INT: 76 - 85
 - Hits: 50000
-- Damage: 27 - 31
-- Fame/Karma: 25000 / -25000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 75 - 85
+- Fire: 40 - 50
+- Cold: 50 - 60
+- Poison: 55 - 65
+- Energy: 50 - 60
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Lard Of Paroxysmus](../items/LardOfParoxysmus.html)
@@ -34,7 +30,7 @@ None Listed
 - [Scepter Of The Chief](../items/ScepterOfTheChief.html)
 - [Sweat Of Paroxysmus](../items/SweatOfParoxysmus.html)
 
-### Random Drops
+### Potential Item Drops
 - [Paroxysmus Corroded Stein](../items/ParoxysmusCorrodedStein.html)
 - [Paroxysmus Dinner](../items/ParoxysmusDinner.html)
 - [String Of Parts Of Paroxysmus Victims](../items/StringOfPartsOfParoxysmusVictims.html)

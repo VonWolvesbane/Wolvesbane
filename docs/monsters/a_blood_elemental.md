@@ -3,32 +3,28 @@ layout: default
 title: a blood elemental
 ---
 
-# a blood elemental — Unknown
-
-**No Photo Available**
+# a blood elemental
 
 ## Stats
 - STR: 526 - 615
 - DEX: 66 - 85
 - INT: 226 - 350
 - Hits: 316 - 369
-- Damage: 17 - 27
-- Fame/Karma: 12500 / -12500
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 55 - 65
+- Fire: 20 - 30
+- Cold: 40 - 50
+- Poison: 50 - 60
+- Energy: 30 - 40
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

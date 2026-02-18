@@ -5,8 +5,5 @@ title: Legsof Expert Animal Taming
 
 # Legsof Expert Animal Taming
 
-Class Name: `LegsofExpertAnimalTaming`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [Von Wolvesbane](../monsters/Von_Wolvesbane.html)

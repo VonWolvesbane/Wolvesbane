@@ -3,29 +3,25 @@ layout: default
 title: a yomotsu warrior
 ---
 
-# a yomotsu warrior — Unknown
-
-**No Photo Available**
+# a yomotsu warrior
 
 ## Stats
 - STR: 486 - 530
 - DEX: 151 - 165
 - INT: 17 - 31
 - Hits: 486 - 530
-- Damage: 8 - 10
-- Fame/Karma: 4200 / -4200
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 65 - 85
+- Fire: 30 - 50
+- Cold: 45 - 65
+- Poison: 35 - 55
+- Energy: 25 - 50
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Executioners Axe](../items/ExecutionersAxe.html)
@@ -33,7 +29,7 @@ None Listed
 - [Long Pants](../items/LongPants.html)
 - [Short Pants](../items/ShortPants.html)
 
-### Random Drops
+### Potential Item Drops
 - [Boots](../items/Boots.html)
 - [Sandals](../items/Sandals.html)
 - [Shoes](../items/Shoes.html)

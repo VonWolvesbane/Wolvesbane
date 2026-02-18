@@ -5,8 +5,10 @@ title: F T Watch
 
 # F T Watch
 
-Class Name: `FTWatch`
-
 ## Dropped By
+- [Father Time](../monsters/Father_Time.html)
 
-(To be auto-filled in future update)
+## Regeneration Bonuses
+- Mana: +5
+- Hits: +5
+- Stam: +5

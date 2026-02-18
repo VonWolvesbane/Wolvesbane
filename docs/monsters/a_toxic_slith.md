@@ -3,34 +3,30 @@ layout: default
 title: a toxic slith
 ---
 
-# a toxic slith — Unknown
-
-**No Photo Available**
+# a toxic slith
 
 ## Stats
 - STR: 223 - 306
 - DEX: 231 - 258
 - INT: 30 - 35
 - Hits: 197 - 215
-- Damage: 6 - 24
-- Fame/Karma: Unknown / Unknown
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 35 - 45
+- Fire: 0 - 9
+- Cold: 5 - 10
+- Poison: 100 - 100
+- Energy: 5 - 7
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 - [Ancient Pottery Fragments](../items/AncientPotteryFragments.html)
 - [Slith Eye](../items/SlithEye.html)
 - [Tattered Ancient Scroll](../items/TatteredAncientScroll.html)

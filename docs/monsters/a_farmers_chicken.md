@@ -3,32 +3,28 @@ layout: default
 title: a farmers chicken
 ---
 
-# a farmers chicken — Unknown
-
-**No Photo Available**
+# a farmers chicken
 
 ## Stats
 - STR: 450
 - DEX: 350
 - INT: 5
 - Hits: 1350
-- Damage: 50
-- Fame/Karma: 150 / 0
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 1 - 5
+- Fire: Unknown
+- Cold: Unknown
+- Poison: Unknown
+- Energy: Unknown
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Pure White Feather](../items/PureWhiteFeather.html)
 
-### Random Drops
+### Potential Item Drops
 None

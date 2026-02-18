@@ -3,32 +3,28 @@ layout: default
 title: an elder gazer
 ---
 
-# an elder gazer — Unknown
-
-**No Photo Available**
+# an elder gazer
 
 ## Stats
 - STR: 296 - 325
 - DEX: 86 - 105
 - INT: 291 - 385
 - Hits: 178 - 195
-- Damage: 8 - 19
-- Fame/Karma: 12500 / -12500
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 45 - 55
+- Fire: 60 - 70
+- Cold: 40 - 50
+- Poison: 40 - 50
+- Energy: 40 - 50
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

@@ -5,8 +5,8 @@ title: Tricorne Hat
 
 # Tricorne Hat
 
-Class Name: `TricorneHat`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [Tristan Irons](../monsters/Tristan_Irons.html)
+- [a soulbound pirate captain](../monsters/a_soulbound_pirate_captain.html)
+- [a soulbound pirate raider](../monsters/a_soulbound_pirate_raider.html)
+- [Shanty](../monsters/Shanty.html)

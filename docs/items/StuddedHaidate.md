@@ -5,8 +5,6 @@ title: Studded Haidate
 
 # Studded Haidate
 
-Class Name: `StuddedHaidate`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [a ronin](../monsters/a_ronin.html)
+- [a young ronin](../monsters/a_young_ronin.html)

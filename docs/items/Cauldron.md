@@ -5,8 +5,5 @@ title: Cauldron
 
 # Cauldron
 
-Class Name: `Cauldron`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [Grizelda](../monsters/Grizelda.html)

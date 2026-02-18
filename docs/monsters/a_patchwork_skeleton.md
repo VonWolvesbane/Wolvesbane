@@ -3,32 +3,28 @@ layout: default
 title: a patchwork skeleton
 ---
 
-# a patchwork skeleton — Unknown
-
-**No Photo Available**
+# a patchwork skeleton
 
 ## Stats
 - STR: 96 - 120
 - DEX: 71 - 95
 - INT: 16 - 40
 - Hits: 58 - 72
-- Damage: 18 - 22
-- Fame/Karma: 500 / -500
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 55 - 65
+- Fire: 50 - 60
+- Cold: 70 - 80
+- Poison: Unknown
+- Energy: 40 - 50
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

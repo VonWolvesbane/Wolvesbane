@@ -5,8 +5,5 @@ title: Worm
 
 # Worm
 
-Class Name: `Worm`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [a decaying corpse](../monsters/a_decaying_corpse.html)

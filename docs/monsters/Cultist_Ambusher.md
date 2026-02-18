@@ -3,32 +3,28 @@ layout: default
 title: Cultist Ambusher
 ---
 
-# Cultist Ambusher — Unknown
-
-**No Photo Available**
+# Cultist Ambusher
 
 ## Stats
 - STR: 150 - 200
 - DEX: 150
 - INT: 25 - 44
 - Hits: 500 - 1000
-- Damage: 8 - 18
-- Fame/Karma: 8000 / -8000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 10 - 20
+- Fire: 10 - 20
+- Cold: 10 - 20
+- Poison: 10 - 20
+- Energy: 10 - 20
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

@@ -3,36 +3,33 @@ layout: default
 title: Lion
 ---
 
-# Lion — Unknown
-
-**No Photo Available**
+# Lion
 
 ## Stats
 - STR: 710 - 720
 - DEX: 200 - 220
 - INT: 120 - 140
 - Hits: 350 - 370
-- Damage: 16 - 22
-- Fame/Karma: 11000 / -11000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 40 - 50
+- Fire: 35 - 45
+- Cold: 30 - 40
+- Poison: 30 - 40
+- Energy: 20 - 40
 
 ## Taming Info
 - Tamable: Yes
 - Control Slots: 2
+- AI Type: AI_Melee
 
 ## Damage Types
 - Physical: 100%
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

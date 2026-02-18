@@ -5,8 +5,5 @@ title: Obolus
 
 # Obolus
 
-Class Name: `Obolus`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [Crockett Scarr](../monsters/Crockett_Scarr.html)

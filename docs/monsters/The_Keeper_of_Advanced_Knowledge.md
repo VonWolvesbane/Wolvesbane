@@ -3,32 +3,28 @@ layout: default
 title: The Keeper of Advanced Knowledge
 ---
 
-# The Keeper of Advanced Knowledge — Unknown
-
-**No Photo Available**
+# The Keeper of Advanced Knowledge
 
 ## Stats
 - STR: 6401 - 6420
 - DEX: 4481 - 4490
 - INT: 3201 - 3220
 - Hits: 550000 - 570000
-- Damage: 75 - 90
-- Fame/Karma: 30000 / -30000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 80 - 90
+- Fire: 75 - 80
+- Cold: 75 - 80
+- Poison: 75 - 80
+- Energy: 75 - 80
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

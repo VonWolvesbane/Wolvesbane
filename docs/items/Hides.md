@@ -5,8 +5,5 @@ title: Hides
 
 # Hides
 
-Class Name: `Hides`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [Masters Knife](../monsters/Masters_Knife.html)

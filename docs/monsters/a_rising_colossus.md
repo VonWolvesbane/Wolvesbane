@@ -3,32 +3,28 @@ layout: default
 title: a rising colossus
 ---
 
-# a rising colossus — Unknown
-
-**No Photo Available**
+# a rising colossus
 
 ## Stats
 - STR: Unknown
 - DEX: Unknown
 - INT: Unknown
 - Hits: Unknown
-- Damage: Unknown
-- Fame/Karma: Unknown / Unknown
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 65 - 70
+- Fire: 50 - 55
+- Cold: 50 - 55
+- Poison: Unknown
+- Energy: 65 - 70
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

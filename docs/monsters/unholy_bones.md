@@ -3,32 +3,28 @@ layout: default
 title: unholy bones
 ---
 
-# unholy bones — the Dark Father
-
-**No Photo Available**
+# unholy bones
 
 ## Stats
 - STR: 500
 - DEX: 100
 - INT: 1000
 - Hits: 30000
-- Damage: 17 - 21
-- Fame/Karma: 28000 / -28000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 60 - 70
+- Fire: 50 - 60
+- Cold: 70 - 80
+- Poison: 70 - 80
+- Energy: 70 - 80
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

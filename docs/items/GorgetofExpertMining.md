@@ -5,8 +5,11 @@ title: Gorgetof Expert Mining
 
 # Gorgetof Expert Mining
 
-Class Name: `GorgetofExpertMining`
-
 ## Dropped By
+- [Kashmir](../monsters/Kashmir.html)
 
-(To be auto-filled in future update)
+## Skill Bonuses
+- Mining: +10.0
+
+## Regeneration Bonuses
+- Stam: +5

@@ -5,8 +5,5 @@ title: Vile Crystal
 
 # Vile Crystal
 
-Class Name: `VileCrystal`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [a skeleton](../monsters/a_skeleton.html)

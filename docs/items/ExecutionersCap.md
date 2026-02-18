@@ -5,8 +5,6 @@ title: Executioners Cap
 
 # Executioners Cap
 
-Class Name: `ExecutionersCap`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [a whipping vine](../monsters/a_whipping_vine.html)
+- [a mud pie](../monsters/a_mud_pie.html)

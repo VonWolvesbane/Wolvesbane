@@ -5,8 +5,5 @@ title: The Head Of Sauron
 
 # The Head Of Sauron
 
-Class Name: `TheHeadOfSauron`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [The Dreaded Dark Wizard Sauron](../monsters/The_Dreaded_Dark_Wizard_Sauron.html)

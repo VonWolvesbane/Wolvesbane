@@ -3,32 +3,28 @@ layout: default
 title: an infernus
 ---
 
-# an infernus — Unknown
-
-**No Photo Available**
+# an infernus
 
 ## Stats
 - STR: 318 - 400
 - DEX: 97 - 115
 - INT: 184 - 266
 - Hits: 202 - 243
-- Damage: 11 - 14
-- Fame/Karma: 10000 / -10000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 45 - 55
+- Fire: 80 - 90
+- Cold: 25 - 35
+- Poison: 40 - 50
+- Energy: 35 - 45
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: 500 - 600
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

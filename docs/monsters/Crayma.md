@@ -3,29 +3,25 @@ layout: default
 title: Crayma
 ---
 
-# Crayma — Unknown
-
-**No Photo Available**
+# Crayma
 
 ## Stats
 - STR: 250 - 360
 - DEX: 100 - 150
 - INT: 200 - 250
 - Hits: 5000 - 6500
-- Damage: 38 - 48
-- Fame/Karma: 20000 / -20000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 55 - 60
+- Fire: 55 - 60
+- Cold: 55 - 60
+- Poison: 55 - 60
+- Energy: 55 - 60
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Bank Check](../items/BankCheck.html)
@@ -34,5 +30,5 @@ None Listed
 - [Hood Robe](../items/HoodRobe.html)
 - [Noble Sword](../items/NobleSword.html)
 
-### Random Drops
+### Potential Item Drops
 None

@@ -3,37 +3,34 @@ layout: default
 title: a frost spider
 ---
 
-# a frost spider — Unknown
-
-**No Photo Available**
+# a frost spider
 
 ## Stats
 - STR: 76 - 100
 - DEX: 126 - 145
 - INT: 36 - 60
 - Hits: 46 - 60
-- Damage: 6 - 16
-- Fame/Karma: 775 / -775
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 25 - 30
+- Fire: 5 - 10
+- Cold: 40 - 50
+- Poison: 20 - 30
+- Energy: 10 - 20
 
 ## Taming Info
 - Tamable: Yes
 - Control Slots: 1
+- AI Type: AI_Melee
 
 ## Damage Types
 - Physical: 20%
 - Cold: 80%
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Spiders Silk](../items/SpidersSilk.html)
 
-### Random Drops
+### Potential Item Drops
 None

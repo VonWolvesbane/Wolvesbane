@@ -5,8 +5,9 @@ title: Nox Legs
 
 # Nox Legs
 
-Class Name: `NoxLegs`
-
 ## Dropped By
+- [Noxia the Swamp Queen](../monsters/Noxia_the_Swamp_Queen.html)
 
-(To be auto-filled in future update)
+## Regeneration Bonuses
+- Hits: +5
+- Mana: +5

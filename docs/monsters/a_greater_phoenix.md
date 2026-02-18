@@ -3,32 +3,28 @@ layout: default
 title: a greater phoenix
 ---
 
-# a greater phoenix — Unknown
-
-**No Photo Available**
+# a greater phoenix
 
 ## Stats
 - STR: 332 - 386
 - DEX: 97 - 113
 - INT: 182 - 258
 - Hits: 119 - 240
-- Damage: 11 - 14
-- Fame/Karma: 10000 / -10000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 45 - 55
+- Fire: 70 - 80
+- Cold: 20 - 30
+- Poison: 40 - 50
+- Energy: 35 - 45
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: 500 - 700
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

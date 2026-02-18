@@ -5,8 +5,5 @@ title: Tombstone Of The Damned
 
 # Tombstone Of The Damned
 
-Class Name: `TombstoneOfTheDamned`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [a monstrous interred grizzle](../monsters/a_monstrous_interred_grizzle.html)

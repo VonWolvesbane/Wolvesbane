@@ -5,8 +5,5 @@ title: Silver Earrings
 
 # Silver Earrings
 
-Class Name: `SilverEarrings`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [a soulbound swashbuckler](../monsters/a_soulbound_swashbuckler.html)

@@ -5,8 +5,6 @@ title: Leather Do
 
 # Leather Do
 
-Class Name: `LeatherDo`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [a ronin](../monsters/a_ronin.html)
+- [a young ronin](../monsters/a_young_ronin.html)

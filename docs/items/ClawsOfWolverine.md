@@ -5,8 +5,9 @@ title: Claws Of Wolverine
 
 # Claws Of Wolverine
 
-Class Name: `ClawsOfWolverine`
-
 ## Dropped By
+- [Wolverine](../monsters/Wolverine.html)
 
-(To be auto-filled in future update)
+## Regeneration Bonuses
+- Hits: +10
+- Stam: +10

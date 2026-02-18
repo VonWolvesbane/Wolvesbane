@@ -5,8 +5,5 @@ title: Dragon Flame Sect Badge
 
 # Dragon Flame Sect Badge
 
-Class Name: `DragonFlameSectBadge`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [Black Order Mage](../monsters/Black_Order_Mage.html)

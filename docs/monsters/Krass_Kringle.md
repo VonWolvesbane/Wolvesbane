@@ -3,29 +3,25 @@ layout: default
 title: Krass Kringle
 ---
 
-# Krass Kringle — The Anti Claus
-
-**No Photo Available**
+# Krass Kringle
 
 ## Stats
 - STR: 410 - 580
 - DEX: 185 - 210
 - INT: 300 - 450
 - Hits: 5000 - 10000
-- Damage: 40 - 75
-- Fame/Karma: 1000 / -15000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 65 - 75
+- Fire: 35 - 45
+- Cold: 100 - 110
+- Poison: 75 - 90
+- Energy: 60 - 75
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Axe](../items/Axe.html)
@@ -37,5 +33,5 @@ None Listed
 - [Recipe Fragment10](../items/RecipeFragment10.html)
 - [Spear](../items/Spear.html)
 
-### Random Drops
+### Potential Item Drops
 None

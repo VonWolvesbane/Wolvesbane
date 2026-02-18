@@ -3,29 +3,25 @@ layout: default
 title: Phileon
 ---
 
-# Phileon — The Angel of Love
-
-**No Photo Available**
+# Phileon
 
 ## Stats
 - STR: 619
 - DEX: 619
 - INT: 619
 - Hits: 250000
-- Damage: 76 - 306
-- Fame/Karma: -1000 / -1000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: Unknown
+- Fire: Unknown
+- Cold: Unknown
+- Poison: Unknown
+- Energy: Unknown
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [D Love Spear](../items/DLoveSpear.html)
@@ -34,5 +30,5 @@ None Listed
 - [Love Legs](../items/LoveLegs.html)
 - [Love Skirt](../items/LoveSkirt.html)
 
-### Random Drops
+### Potential Item Drops
 None

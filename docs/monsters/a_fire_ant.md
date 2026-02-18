@@ -3,32 +3,28 @@ layout: default
 title: a fire ant
 ---
 
-# a fire ant — Unknown
-
-**No Photo Available**
+# a fire ant
 
 ## Stats
 - STR: 225
 - DEX: 108
 - INT: 25
 - Hits: 299
-- Damage: 15 - 18
-- Fame/Karma: Unknown / Unknown
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: Unknown
+- Fire: Unknown
+- Cold: Unknown
+- Poison: Unknown
+- Energy: Unknown
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Seared Fire Ant Goo](../items/SearedFireAntGoo.html)
 
-### Random Drops
+### Potential Item Drops
 None

@@ -5,8 +5,5 @@ title: Perfect Banana
 
 # Perfect Banana
 
-Class Name: `PerfectBanana`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [a silverback gorilla](../monsters/a_silverback_gorilla.html)

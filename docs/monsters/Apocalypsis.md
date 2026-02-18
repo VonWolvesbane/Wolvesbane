@@ -3,29 +3,25 @@ layout: default
 title: Apocalypsis
 ---
 
-# Apocalypsis — The Revelation
-
-**No Photo Available**
+# Apocalypsis
 
 ## Stats
 - STR: 2000 - 2500
 - DEX: 1500 - 2000
 - INT: 1500 - 2000
 - Hits: 200000 - 250000
-- Damage: 25 - 30
-- Fame/Karma: 40000 / -45000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: Unknown
+- Fire: Unknown
+- Cold: Unknown
+- Poison: Unknown
+- Energy: Unknown
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: 11120 - 11130
 
 ### Guaranteed Drops
 - [Revelation Apron](../items/RevelationApron.html)
@@ -36,5 +32,5 @@ None Listed
 - [Revelation Shirt](../items/RevelationShirt.html)
 - [Revelation Skirt](../items/RevelationSkirt.html)
 
-### Random Drops
+### Potential Item Drops
 None

@@ -3,32 +3,28 @@ layout: default
 title: Xcess
 ---
 
-# Xcess — Devil's Advocate
-
-**No Photo Available**
+# Xcess
 
 ## Stats
 - STR: 1500
 - DEX: 1500
 - INT: 8400
 - Hits: 1000000
-- Damage: 100 - 100
-- Fame/Karma: 15000 / -15000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: Unknown
+- Fire: Unknown
+- Cold: Unknown
+- Poison: Unknown
+- Energy: Unknown
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: 20000 - 30000
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

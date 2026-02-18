@@ -5,8 +5,5 @@ title: Gargoyle Fire Pick
 
 # Gargoyle Fire Pick
 
-Class Name: `GargoyleFirePick`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [a FireRock Gargoyle](../monsters/a_FireRock_Gargoyle.html)

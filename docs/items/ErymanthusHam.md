@@ -5,8 +5,5 @@ title: Erymanthus Ham
 
 # Erymanthus Ham
 
-Class Name: `ErymanthusHam`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [The Boar of Mt. Erymanthus](../monsters/The_Boar_of_Mt._Erymanthus.html)

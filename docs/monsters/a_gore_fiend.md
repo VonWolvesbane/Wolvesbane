@@ -3,32 +3,28 @@ layout: default
 title: a gore fiend
 ---
 
-# a gore fiend — Unknown
-
-**No Photo Available**
+# a gore fiend
 
 ## Stats
 - STR: 161 - 185
 - DEX: 41 - 65
 - INT: 46 - 70
 - Hits: 97 - 111
-- Damage: 15 - 21
-- Fame/Karma: 1500 / -1500
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 35 - 45
+- Fire: 25 - 35
+- Cold: 15 - 25
+- Poison: 5 - 15
+- Energy: 30 - 40
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

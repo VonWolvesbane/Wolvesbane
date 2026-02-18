@@ -5,8 +5,5 @@ title: Gibber Head
 
 # Gibber Head
 
-Class Name: `GibberHead`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [a gibberling queen](../monsters/a_gibberling_queen.html)

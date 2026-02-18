@@ -5,8 +5,5 @@ title: Gauntlets Of Nobility
 
 # Gauntlets Of Nobility
 
-Class Name: `GauntletsOfNobility`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [Killar Ancestor](../monsters/Killar_Ancestor.html)

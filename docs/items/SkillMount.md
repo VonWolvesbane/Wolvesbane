@@ -5,8 +5,5 @@ title: Skill Mount
 
 # Skill Mount
 
-Class Name: `SkillMount`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [Keeper Of The Skill Mount](../monsters/Keeper_Of_The_Skill_Mount.html)

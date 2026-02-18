@@ -3,32 +3,28 @@ layout: default
 title: Theiving Serpentine
 ---
 
-# Theiving Serpentine — Unknown
-
-**No Photo Available**
+# Theiving Serpentine
 
 ## Stats
 - STR: 500
 - DEX: 500
 - INT: 500
 - Hits: 2500
-- Damage: 1 - 50
-- Fame/Karma: 1 / -1
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: Unknown
+- Fire: Unknown
+- Cold: Unknown
+- Poison: Unknown
+- Energy: Unknown
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [F Q Golden Fish](../items/FQGoldenFish.html)
 
-### Random Drops
+### Potential Item Drops
 None

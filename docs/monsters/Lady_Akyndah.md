@@ -3,32 +3,28 @@ layout: default
 title: Lady Akyndah
 ---
 
-# Lady Akyndah — The Spider Queen
-
-**No Photo Available**
+# Lady Akyndah
 
 ## Stats
 - STR: 1230
 - DEX: 1590
 - INT: 1470
 - Hits: 80000 - 120000
-- Damage: 20 - 50
-- Fame/Karma: -1000 / -1000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: Unknown
+- Fire: Unknown
+- Cold: Unknown
+- Poison: Unknown
+- Energy: Unknown
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Akyndah Earrings](../items/AkyndahEarrings.html)
 
-### Random Drops
+### Potential Item Drops
 None

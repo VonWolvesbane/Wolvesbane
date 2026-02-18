@@ -3,36 +3,33 @@ layout: default
 title: a mongbat
 ---
 
-# a mongbat — Unknown
-
-**No Photo Available**
+# a mongbat
 
 ## Stats
 - STR: 6 - 10
 - DEX: 26 - 38
 - INT: 6 - 14
 - Hits: 4 - 6
-- Damage: 5 - 7
-- Fame/Karma: 150 / -150
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 15 - 25
+- Fire: Unknown
+- Cold: Unknown
+- Poison: Unknown
+- Energy: Unknown
 
 ## Taming Info
 - Tamable: Yes
 - Control Slots: 1
+- AI Type: AI_Melee
 
 ## Damage Types
 - Physical: 100%
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

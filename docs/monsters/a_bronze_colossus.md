@@ -3,32 +3,28 @@ layout: default
 title: a bronze colossus
 ---
 
-# a bronze colossus — Unknown
-
-**No Photo Available**
+# a bronze colossus
 
 ## Stats
 - STR: 226 - 255
 - DEX: 126 - 145
 - INT: 71 - 92
 - Hits: 236 - 353
-- Damage: 15 - 16
-- Fame/Karma: 5000 / -5000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 30 - 40
+- Fire: 30 - 40
+- Cold: 10 - 20
+- Poison: 70 - 80
+- Energy: 20 - 30
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

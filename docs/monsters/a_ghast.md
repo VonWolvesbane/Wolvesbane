@@ -3,29 +3,25 @@ layout: default
 title: a ghast
 ---
 
-# a ghast — Unknown
-
-**No Photo Available**
+# a ghast
 
 ## Stats
 - STR: Unknown
 - DEX: Unknown
 - INT: Unknown
 - Hits: Unknown
-- Damage: Unknown
-- Fame/Karma: 60 / -60
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: Unknown
+- Fire: Unknown
+- Cold: Unknown
+- Poison: Unknown
+- Energy: Unknown
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Bones](../items/Bones.html)
@@ -34,5 +30,5 @@ None Listed
 - [Torso](../items/Torso.html)
 - [perilous Crystal](../items/perilousCrystal.html)
 
-### Random Drops
+### Potential Item Drops
 None

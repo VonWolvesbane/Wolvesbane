@@ -5,8 +5,5 @@ title: Black Powder
 
 # Black Powder
 
-Class Name: `BlackPowder`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [a mud pie](../monsters/a_mud_pie.html)

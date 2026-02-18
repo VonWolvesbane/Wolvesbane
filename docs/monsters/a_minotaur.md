@@ -3,32 +3,28 @@ layout: default
 title: a minotaur
 ---
 
-# a minotaur — Unknown
-
-**No Photo Available**
+# a minotaur
 
 ## Stats
 - STR: 301 - 340
 - DEX: 91 - 110
 - INT: 31 - 50
 - Hits: 301 - 340
-- Damage: 11 - 20
-- Fame/Karma: 5000 / -5000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 55 - 65
+- Fire: 25 - 35
+- Cold: 30 - 40
+- Poison: 30 - 40
+- Energy: 30 - 40
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

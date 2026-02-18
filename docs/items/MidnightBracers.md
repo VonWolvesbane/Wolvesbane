@@ -5,8 +5,8 @@ title: Midnight Bracers
 
 # Midnight Bracers
 
-Class Name: `MidnightBracers`
-
 ## Dropped By
+- [Killar Ancestor](../monsters/Killar_Ancestor.html)
 
-(To be auto-filled in future update)
+## Skill Bonuses
+- Necromancy: +20.0

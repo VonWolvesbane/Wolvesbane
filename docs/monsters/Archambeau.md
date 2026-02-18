@@ -3,33 +3,29 @@ layout: default
 title: Archambeau
 ---
 
-# Archambeau — Guard of Knowledge
-
-**No Photo Available**
+# Archambeau
 
 ## Stats
 - STR: Unknown
 - DEX: Unknown
 - INT: Unknown
 - Hits: Unknown
-- Damage: Unknown
-- Fame/Karma: Unknown / Unknown
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: Unknown
+- Fire: Unknown
+- Cold: Unknown
+- Poison: Unknown
+- Energy: Unknown
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 - [Long Hair](../items/LongHair.html)
 - [Vandyke](../items/Vandyke.html)

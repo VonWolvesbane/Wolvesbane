@@ -3,36 +3,33 @@ layout: default
 title: a pack horse
 ---
 
-# a pack horse — Unknown
-
-**No Photo Available**
+# a pack horse
 
 ## Stats
 - STR: 44 - 120
 - DEX: 36 - 55
 - INT: 6 - 10
 - Hits: 61 - 80
-- Damage: 5 - 11
-- Fame/Karma: 0 / 200
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 20 - 25
+- Fire: 10 - 15
+- Cold: 20 - 25
+- Poison: 10 - 15
+- Energy: 10 - 15
 
 ## Taming Info
 - Tamable: Yes
 - Control Slots: 1
+- AI Type: AI_Animal
 
 ## Damage Types
 - Physical: 100%
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

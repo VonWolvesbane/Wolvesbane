@@ -3,32 +3,28 @@ layout: default
 title: Lord Oaks
 ---
 
-# Lord Oaks — Unknown
-
-**No Photo Available**
+# Lord Oaks
 
 ## Stats
 - STR: 403 - 850
 - DEX: 101 - 150
 - INT: 503 - 800
 - Hits: 12000
-- Damage: 21 - 33
-- Fame/Karma: 22500 / 22500
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 85 - 90
+- Fire: 60 - 70
+- Cold: 60 - 70
+- Poison: 80 - 90
+- Energy: 80 - 90
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

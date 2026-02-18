@@ -3,33 +3,29 @@ layout: default
 title: a meer mage
 ---
 
-# a meer mage — Unknown
-
-**No Photo Available**
+# a meer mage
 
 ## Stats
 - STR: 171 - 200
 - DEX: 126 - 145
 - INT: 276 - 305
 - Hits: 103 - 120
-- Damage: 24 - 26
-- Fame/Karma: 8000 / 8000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 45 - 55
+- Fire: 15 - 25
+- Cold: Unknown
+- Poison: 25 - 35
+- Energy: 25 - 35
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 - [Strangle Scroll](../items/StrangleScroll.html)
 - [Wither Scroll](../items/WitherScroll.html)

@@ -5,8 +5,5 @@ title: Glacial Staff
 
 # Glacial Staff
 
-Class Name: `GlacialStaff`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [a giant ice serpent](../monsters/a_giant_ice_serpent.html)

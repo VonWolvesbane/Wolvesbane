@@ -3,32 +3,28 @@ layout: default
 title: a Pit fiend
 ---
 
-# a Pit fiend — Unknown
-
-**No Photo Available**
+# a Pit fiend
 
 ## Stats
 - STR: 376 - 405
 - DEX: 176 - 195
 - INT: 201 - 225
 - Hits: 226 - 243
-- Damage: 15 - 20
-- Fame/Karma: 18000 / -18000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 55 - 65
+- Fire: 10 - 20
+- Cold: 60 - 70
+- Poison: 20 - 30
+- Energy: 30 - 40
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

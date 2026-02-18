@@ -3,27 +3,25 @@ layout: default
 title: Platinum Drake
 ---
 
-# Platinum Drake — Unknown
-
-**No Photo Available**
+# Platinum Drake
 
 ## Stats
 - STR: 400 - 430
 - DEX: 133 - 152
 - INT: 101 - 140
 - Hits: 241 - 258
-- Damage: 11 - 17
-- Fame/Karma: 5500 / -5500
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 30 - 50
+- Fire: 30 - 50
+- Cold: 30 - 50
+- Poison: 40 - 50
+- Energy: 30 - 50
 
 ## Taming Info
 - Tamable: Yes
 - Control Slots: 2
+- AI Type: AI_Melee
 
 ## Damage Types
 - Physical: 100%
@@ -37,10 +35,9 @@ None Listed
 - Energy: 100%
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

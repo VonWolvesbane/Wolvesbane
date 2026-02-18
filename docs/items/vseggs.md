@@ -5,8 +5,5 @@ title: vseggs
 
 # vseggs
 
-Class Name: `vseggs`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [Volt Spider](../monsters/Volt_Spider.html)

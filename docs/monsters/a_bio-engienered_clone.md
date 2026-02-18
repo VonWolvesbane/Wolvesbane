@@ -3,32 +3,28 @@ layout: default
 title: a bio-engienered clone
 ---
 
-# a bio-engienered clone — Unknown
-
-**No Photo Available**
+# a bio-engienered clone
 
 ## Stats
 - STR: 1
 - DEX: 1
 - INT: 1
 - Hits: Unknown
-- Damage: Unknown
-- Fame/Karma: 0 / 0
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: Unknown
+- Fire: Unknown
+- Cold: Unknown
+- Poison: Unknown
+- Energy: Unknown
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

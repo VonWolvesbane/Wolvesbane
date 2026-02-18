@@ -5,8 +5,7 @@ title: Torso
 
 # Torso
 
-Class Name: `Torso`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [a ghast](../monsters/a_ghast.html)
+- [a zombie](../monsters/a_zombie.html)
+- [Zombie Skeleton](../monsters/Zombie_Skeleton.html)

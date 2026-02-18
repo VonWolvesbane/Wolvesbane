@@ -5,8 +5,5 @@ title: Brightly Colored Eggs
 
 # Brightly Colored Eggs
 
-Class Name: `BrightlyColoredEggs`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [a vorpal bunny](../monsters/a_vorpal_bunny.html)

@@ -3,34 +3,30 @@ layout: default
 title: a kappa
 ---
 
-# a kappa — Unknown
-
-**No Photo Available**
+# a kappa
 
 ## Stats
 - STR: 186 - 230
 - DEX: 51 - 75
 - INT: 41 - 55
 - Hits: 151 - 180
-- Damage: 6 - 12
-- Fame/Karma: 1700 / -1700
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 35 - 50
+- Fire: 35 - 50
+- Cold: 25 - 50
+- Poison: 35 - 50
+- Energy: 20 - 30
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Raw Fish Steak](../items/RawFishSteak.html)
 
-### Random Drops
+### Potential Item Drops
 - [Axle](../items/Axle.html)
 - [Gears](../items/Gears.html)
 - [Hinge](../items/Hinge.html)

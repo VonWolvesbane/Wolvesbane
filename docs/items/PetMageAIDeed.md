@@ -5,8 +5,5 @@ title: Pet Mage A I Deed
 
 # Pet Mage A I Deed
 
-Class Name: `PetMageAIDeed`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [Von Wolvesbane](../monsters/Von_Wolvesbane.html)

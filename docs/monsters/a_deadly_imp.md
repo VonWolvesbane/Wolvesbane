@@ -3,32 +3,28 @@ layout: default
 title: a deadly imp
 ---
 
-# a deadly imp — Unknown
-
-**No Photo Available**
+# a deadly imp
 
 ## Stats
 - STR: 91 - 115
 - DEX: 61 - 80
 - INT: 86 - 105
 - Hits: 1000
-- Damage: 50 - 80
-- Fame/Karma: 2500 / -2500
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 95 - 98
+- Fire: 95 - 98
+- Cold: 95 - 98
+- Poison: 95 - 98
+- Energy: 95 - 98
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

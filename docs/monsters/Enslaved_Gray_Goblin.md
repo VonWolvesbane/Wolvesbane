@@ -3,35 +3,31 @@ layout: default
 title: Enslaved Gray Goblin
 ---
 
-# Enslaved Gray Goblin — Unknown
-
-**No Photo Available**
+# Enslaved Gray Goblin
 
 ## Stats
 - STR: 321 - 321
 - DEX: 64 - 64
 - INT: 147 - 147
 - Hits: 179 - 179
-- Damage: 5 - 7
-- Fame/Karma: 1500 / -1500
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 50 - 50
+- Fire: 38 - 38
+- Cold: 32 - 32
+- Poison: 12 - 12
+- Energy: 11 - 11
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Bola Ball](../items/BolaBall.html)
 - [Thigh Boots](../items/ThighBoots.html)
 
-### Random Drops
+### Potential Item Drops
 - [Candle](../items/Candle.html)
 - [Katana](../items/Katana.html)
 - [Kryss](../items/Kryss.html)

@@ -5,8 +5,6 @@ title: Jin Baori
 
 # Jin Baori
 
-Class Name: `JinBaori`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [Black Order Assassin](../monsters/Black_Order_Assassin.html)
+- [Black Order Thief](../monsters/Black_Order_Thief.html)

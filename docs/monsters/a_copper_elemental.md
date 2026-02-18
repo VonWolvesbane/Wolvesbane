@@ -3,32 +3,28 @@ layout: default
 title: a copper elemental
 ---
 
-# a copper elemental — Unknown
-
-**No Photo Available**
+# a copper elemental
 
 ## Stats
 - STR: 226 - 255
 - DEX: 126 - 145
 - INT: 71 - 92
 - Hits: 136 - 153
-- Damage: 9 - 16
-- Fame/Karma: 4800 / -4800
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 30 - 40
+- Fire: 30 - 40
+- Cold: 30 - 40
+- Poison: 20 - 30
+- Energy: 10 - 20
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

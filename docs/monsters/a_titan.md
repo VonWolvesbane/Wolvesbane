@@ -3,32 +3,28 @@ layout: default
 title: a titan
 ---
 
-# a titan — Unknown
-
-**No Photo Available**
+# a titan
 
 ## Stats
 - STR: 536 - 585
 - DEX: 126 - 145
 - INT: 281 - 305
 - Hits: 322 - 351
-- Damage: 13 - 16
-- Fame/Karma: 11500 / -11500
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 35 - 45
+- Fire: 30 - 40
+- Cold: 25 - 35
+- Poison: 30 - 40
+- Energy: 30 - 40
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

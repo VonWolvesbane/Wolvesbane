@@ -3,29 +3,25 @@ layout: default
 title: a carpenter automaton
 ---
 
-# a carpenter automaton — Unknown
-
-**No Photo Available**
+# a carpenter automaton
 
 ## Stats
 - STR: 32 - 74
 - DEX: 46 - 65
 - INT: 16 - 30
 - Hits: 26 - 39
-- Damage: 4 - 8
-- Fame/Karma: 300 / -300
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 15 - 20
+- Fire: 5 - 10
+- Cold: 5 - 10
+- Poison: 25 - 35
+- Energy: 10 - 15
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Arrow](../items/Arrow.html)
@@ -33,5 +29,5 @@ None Listed
 - [Bow](../items/Bow.html)
 - [Crossbow](../items/Crossbow.html)
 
-### Random Drops
+### Potential Item Drops
 None

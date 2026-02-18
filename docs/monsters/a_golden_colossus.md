@@ -3,32 +3,28 @@ layout: default
 title: a golden colossus
 ---
 
-# a golden colossus — Unknown
-
-**No Photo Available**
+# a golden colossus
 
 ## Stats
 - STR: 226 - 255
 - DEX: 126 - 145
 - INT: 71 - 92
 - Hits: 236 - 353
-- Damage: 14 - 19
-- Fame/Karma: 3500 / -3500
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 60 - 75
+- Fire: 10 - 20
+- Cold: 30 - 40
+- Poison: 30 - 40
+- Energy: 30 - 40
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

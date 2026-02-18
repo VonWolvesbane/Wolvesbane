@@ -5,8 +5,8 @@ title: Tokens
 
 # Tokens
 
-Class Name: `Tokens`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [Ares](../monsters/Ares.html)
+- [Killar Ancestor](../monsters/Killar_Ancestor.html)
+- [Molach](../monsters/Molach.html)
+- [Reddix](../monsters/Reddix.html)

@@ -3,32 +3,28 @@ layout: default
 title: a corporeal brume
 ---
 
-# a corporeal brume — Unknown
-
-**No Photo Available**
+# a corporeal brume
 
 ## Stats
 - STR: 400 - 450
 - DEX: 100 - 150
 - INT: 50 - 60
 - Hits: 1150 - 1250
-- Damage: 21 - 25
-- Fame/Karma: 12000 / -12000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: Unknown
+- Fire: 40 - 50
+- Cold: 40 - 50
+- Poison: 50 - 60
+- Energy: 30 - 40
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

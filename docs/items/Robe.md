@@ -5,8 +5,11 @@ title: Robe
 
 # Robe
 
-Class Name: `Robe`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [Killar Ancestor](../monsters/Killar_Ancestor.html)
+- [Mondain](../monsters/Mondain.html)
+- [a bake kitsune](../monsters/a_bake_kitsune.html)
+- [Grizelda](../monsters/Grizelda.html)
+- [Mardoth](../monsters/Mardoth.html)
+- [Uzeraan](../monsters/Uzeraan.html)
+- [a mud pie](../monsters/a_mud_pie.html)

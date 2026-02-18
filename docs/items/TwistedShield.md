@@ -5,8 +5,5 @@ title: Twisted Shield
 
 # Twisted Shield
 
-Class Name: `TwistedShield`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [Minion](../monsters/Minion.html)

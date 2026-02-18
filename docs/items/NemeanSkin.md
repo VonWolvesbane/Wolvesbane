@@ -5,8 +5,5 @@ title: Nemean Skin
 
 # Nemean Skin
 
-Class Name: `NemeanSkin`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [The Nemean Lion](../monsters/The_Nemean_Lion.html)

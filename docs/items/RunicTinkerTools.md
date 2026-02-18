@@ -5,8 +5,5 @@ title: Runic Tinker Tools
 
 # Runic Tinker Tools
 
-Class Name: `RunicTinkerTools`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [a wood elemental](../monsters/a_wood_elemental.html)

@@ -5,8 +5,5 @@ title: Quarter Staff
 
 # Quarter Staff
 
-Class Name: `QuarterStaff`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [a ship key](../monsters/a_ship_key.html)

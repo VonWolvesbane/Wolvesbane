@@ -3,32 +3,28 @@ layout: default
 title: a fierce dragon
 ---
 
-# a fierce dragon — Unknown
-
-**No Photo Available**
+# a fierce dragon
 
 ## Stats
 - STR: 6000 - 6020
 - DEX: 0
 - INT: 850 - 870
 - Hits: Unknown
-- Damage: 50 - 80
-- Fame/Karma: 15000 / 15000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 95 - 98
+- Fire: 95 - 98
+- Cold: 95 - 98
+- Poison: 95 - 98
+- Energy: 95 - 98
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

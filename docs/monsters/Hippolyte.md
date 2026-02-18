@@ -3,29 +3,25 @@ layout: default
 title: Hippolyte
 ---
 
-# Hippolyte — An Amazon Queen
-
-**No Photo Available**
+# Hippolyte
 
 ## Stats
 - STR: 600 - 700
 - DEX: 200 - 300
 - INT: 51 - 65
 - Hits: 500 - 700
-- Damage: 30 - 50
-- Fame/Karma: 1000 / -1000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: Unknown
+- Fire: Unknown
+- Cold: Unknown
+- Poison: Unknown
+- Energy: Unknown
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: 1500 - 3000
 
 ### Guaranteed Drops
 - [Bandage](../items/Bandage.html)
@@ -37,5 +33,5 @@ None Listed
 - [Long Hair](../items/LongHair.html)
 - [Skirt](../items/Skirt.html)
 
-### Random Drops
+### Potential Item Drops
 None

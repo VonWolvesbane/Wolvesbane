@@ -5,8 +5,5 @@ title: Sweat Of Paroxysmus
 
 # Sweat Of Paroxysmus
 
-Class Name: `SweatOfParoxysmus`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [a chief paroxysmus](../monsters/a_chief_paroxysmus.html)

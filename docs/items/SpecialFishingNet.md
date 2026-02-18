@@ -5,8 +5,7 @@ title: Special Fishing Net
 
 # Special Fishing Net
 
-Class Name: `SpecialFishingNet`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [charydbis](../monsters/charydbis.html)
+- [osiredon the scalis enforcer](../monsters/osiredon_the_scalis_enforcer.html)
+- [Corgul the Soulbinder](../monsters/Corgul_the_Soulbinder.html)

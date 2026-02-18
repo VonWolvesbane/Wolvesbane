@@ -5,8 +5,11 @@ title: Tunicof Expert Mining
 
 # Tunicof Expert Mining
 
-Class Name: `TunicofExpertMining`
-
 ## Dropped By
+- [Kashmir](../monsters/Kashmir.html)
 
-(To be auto-filled in future update)
+## Skill Bonuses
+- Mining: +10.0
+
+## Regeneration Bonuses
+- Stam: +5

@@ -5,8 +5,8 @@ title: Jackals Collar
 
 # Jackals Collar
 
-Class Name: `JackalsCollar`
-
 ## Dropped By
+- [Killar Ancestor](../monsters/Killar_Ancestor.html)
 
-(To be auto-filled in future update)
+## Regeneration Bonuses
+- Hits: +2

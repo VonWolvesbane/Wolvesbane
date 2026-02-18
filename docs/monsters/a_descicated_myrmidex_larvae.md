@@ -3,32 +3,28 @@ layout: default
 title: a descicated myrmidex larvae
 ---
 
-# a descicated myrmidex larvae — Unknown
-
-**No Photo Available**
+# a descicated myrmidex larvae
 
 ## Stats
 - STR: 350 - 450
 - DEX: 80 - 95
 - INT: 15 - 25
 - Hits: 446 - 588
-- Damage: 5 - 10
-- Fame/Karma: 2500 / -2500
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 20 - 25
+- Fire: 10 - 20
+- Cold: 15 - 25
+- Poison: 40 - 50
+- Energy: 10 - 20
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: 20 - 40
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

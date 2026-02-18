@@ -5,8 +5,5 @@ title: Curse Weapon Scroll
 
 # Curse Weapon Scroll
 
-Class Name: `CurseWeaponScroll`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [an imp](../monsters/an_imp.html)

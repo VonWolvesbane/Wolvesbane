@@ -3,29 +3,25 @@ layout: default
 title: a dull copper ore elemental
 ---
 
-# a dull copper ore elemental — Unknown
-
-**No Photo Available**
+# a dull copper ore elemental
 
 ## Stats
 - STR: 150 - 200
 - DEX: 100 - 120
 - INT: 50 - 60
 - Hits: 100 - 120
-- Damage: 5 - 10
-- Fame/Karma: 500 / -500
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 10 - 20
+- Fire: 5 - 10
+- Cold: 5 - 10
+- Poison: 5 - 10
+- Energy: 5 - 10
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Agapite Ore](../items/AgapiteOre.html)
@@ -43,5 +39,5 @@ None Listed
 - [Verite Ore](../items/VeriteOre.html)
 - [Wolvesbanian Ore](../items/WolvesbanianOre.html)
 
-### Random Drops
+### Potential Item Drops
 None

@@ -3,32 +3,28 @@ layout: default
 title: a Wight
 ---
 
-# a Wight — Unknown
-
-**No Photo Available**
+# a Wight
 
 ## Stats
 - STR: 150 - 200
 - DEX: 50 - 60
 - INT: 150 - 200
 - Hits: 150 - 250
-- Damage: 13 - 20
-- Fame/Karma: 1500 / -1500
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 35 - 45
+- Fire: 30 - 40
+- Cold: 50 - 60
+- Poison: 40 - 50
+- Energy: 50 - 60
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

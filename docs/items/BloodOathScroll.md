@@ -5,8 +5,5 @@ title: Blood Oath Scroll
 
 # Blood Oath Scroll
 
-Class Name: `BloodOathScroll`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [an imp](../monsters/an_imp.html)

@@ -5,8 +5,7 @@ title: Leather Ninja Pants
 
 # Leather Ninja Pants
 
-Class Name: `LeatherNinjaPants`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [an elite ninja](../monsters/an_elite_ninja.html)
+- [a young ninja](../monsters/a_young_ninja.html)
+- [a henchman](../monsters/a_henchman.html)

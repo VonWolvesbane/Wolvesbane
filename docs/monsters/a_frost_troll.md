@@ -3,32 +3,28 @@ layout: default
 title: a frost troll
 ---
 
-# a frost troll — Unknown
-
-**No Photo Available**
+# a frost troll
 
 ## Stats
 - STR: 227 - 265
 - DEX: 66 - 85
 - INT: 46 - 70
 - Hits: 140 - 156
-- Damage: 14 - 20
-- Fame/Karma: 4000 / -4000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 45 - 55
+- Fire: Unknown
+- Cold: 40 - 50
+- Poison: 5 - 10
+- Energy: 5 - 10
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Double Axe](../items/DoubleAxe.html)
 
-### Random Drops
+### Potential Item Drops
 None

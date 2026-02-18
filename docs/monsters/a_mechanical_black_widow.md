@@ -3,36 +3,33 @@ layout: default
 title: a mechanical black widow
 ---
 
-# a mechanical black widow — Unknown
-
-**No Photo Available**
+# a mechanical black widow
 
 ## Stats
 - STR: 280 - 500
 - DEX: 216 - 515
 - INT: 236 - 360
 - Hits: 1146 - 2150
-- Damage: 215 - 420
-- Fame/Karma: 12000 / -12000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 20 - 30
+- Fire: 10 - 20
+- Cold: 10 - 20
+- Poison: 60 - 70
+- Energy: 10 - 20
 
 ## Taming Info
 - Tamable: Yes
 - Control Slots: 2
+- AI Type: AI_Melee
 
 ## Damage Types
 - Physical: 100%
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

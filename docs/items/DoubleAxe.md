@@ -5,8 +5,6 @@ title: Double Axe
 
 # Double Axe
 
-Class Name: `DoubleAxe`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [a frost troll](../monsters/a_frost_troll.html)
+- [an orc chopper](../monsters/an_orc_chopper.html)

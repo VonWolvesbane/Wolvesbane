@@ -3,33 +3,29 @@ layout: default
 title: a betrayer
 ---
 
-# a betrayer — Unknown
-
-**No Photo Available**
+# a betrayer
 
 ## Stats
 - STR: 401 - 500
 - DEX: 81 - 100
 - INT: 151 - 200
 - Hits: 241 - 300
-- Damage: 16 - 22
-- Fame/Karma: 15000 / -15000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 60 - 70
+- Fire: 60 - 70
+- Cold: 60 - 70
+- Poison: 30 - 40
+- Energy: 20 - 30
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Blackthorn Welcome Book](../items/BlackthornWelcomeBook.html)
 - [Power Crystal](../items/PowerCrystal.html)
 
-### Random Drops
+### Potential Item Drops
 None

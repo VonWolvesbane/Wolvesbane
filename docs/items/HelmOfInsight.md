@@ -5,8 +5,8 @@ title: Helm Of Insight
 
 # Helm Of Insight
 
-Class Name: `HelmOfInsight`
-
 ## Dropped By
+- [Killar Ancestor](../monsters/Killar_Ancestor.html)
 
-(To be auto-filled in future update)
+## Regeneration Bonuses
+- Mana: +2

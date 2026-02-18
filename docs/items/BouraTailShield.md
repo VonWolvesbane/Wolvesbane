@@ -5,8 +5,5 @@ title: Boura Tail Shield
 
 # Boura Tail Shield
 
-Class Name: `BouraTailShield`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [a high plains boura](../monsters/a_high_plains_boura.html)

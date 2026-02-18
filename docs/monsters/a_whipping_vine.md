@@ -3,29 +3,25 @@ layout: default
 title: a whipping vine
 ---
 
-# a whipping vine — Unknown
-
-**No Photo Available**
+# a whipping vine
 
 ## Stats
 - STR: 251 - 300
 - DEX: 76 - 100
 - INT: 26 - 40
 - Hits: Unknown
-- Damage: 7 - 25
-- Fame/Karma: 1000 / -1000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 75 - 85
+- Fire: 15 - 25
+- Cold: 15 - 25
+- Poison: 75 - 85
+- Energy: 35 - 45
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Decorative Vines](../items/DecorativeVines.html)
@@ -33,5 +29,5 @@ None Listed
 - [Fertile Dirt](../items/FertileDirt.html)
 - [Vines](../items/Vines.html)
 
-### Random Drops
+### Potential Item Drops
 None

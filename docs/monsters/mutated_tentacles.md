@@ -3,32 +3,28 @@ layout: default
 title: mutated tentacles
 ---
 
-# mutated tentacles — Unknown
-
-**No Photo Available**
+# mutated tentacles
 
 ## Stats
 - STR: 196 - 220
 - DEX: 166 - 185
 - INT: 216 - 230
 - Hits: 158 - 172
-- Damage: 16 - 22
-- Fame/Karma: 3000 / -3000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 25 - 35
+- Fire: 10 - 20
+- Cold: 10 - 20
+- Poison: 60 - 80
+- Energy: 10 - 20
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

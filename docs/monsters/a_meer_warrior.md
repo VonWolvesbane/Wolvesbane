@@ -3,32 +3,28 @@ layout: default
 title: a meer warrior
 ---
 
-# a meer warrior — Unknown
-
-**No Photo Available**
+# a meer warrior
 
 ## Stats
 - STR: 86 - 100
 - DEX: 186 - 200
 - INT: 86 - 100
 - Hits: 52 - 60
-- Damage: 12 - 19
-- Fame/Karma: 2000 / 5000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 35 - 45
+- Fire: 5 - 15
+- Cold: 30 - 40
+- Poison: 25 - 35
+- Energy: 25 - 35
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

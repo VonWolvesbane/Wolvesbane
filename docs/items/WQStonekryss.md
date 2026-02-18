@@ -5,8 +5,5 @@ title: W Q Stonekryss
 
 # W Q Stonekryss
 
-Class Name: `WQStonekryss`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [a thunder wyrm](../monsters/a_thunder_wyrm.html)

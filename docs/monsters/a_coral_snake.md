@@ -3,32 +3,28 @@ layout: default
 title: a coral snake
 ---
 
-# a coral snake — Unknown
-
-**No Photo Available**
+# a coral snake
 
 ## Stats
 - STR: 205 - 340
 - DEX: 248 - 300
 - INT: 28 - 35
 - Hits: 132 - 200
-- Damage: 5 - 21
-- Fame/Karma: 300 / -300
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 42 - 50
+- Fire: 5 - 20
+- Cold: Unknown
+- Poison: Unknown
+- Energy: 5 - 20
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

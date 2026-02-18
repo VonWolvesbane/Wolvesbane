@@ -5,8 +5,5 @@ title: Tattered Book
 
 # Tattered Book
 
-Class Name: `TatteredBook`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [Broken Armor](../monsters/Broken_Armor.html)

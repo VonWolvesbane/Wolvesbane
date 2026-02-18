@@ -3,33 +3,29 @@ layout: default
 title: a lava serpent
 ---
 
-# a lava serpent — Unknown
-
-**No Photo Available**
+# a lava serpent
 
 ## Stats
 - STR: 386 - 415
 - DEX: 56 - 80
 - INT: 66 - 85
 - Hits: 232 - 249
-- Damage: 10 - 22
-- Fame/Karma: 4500 / -4500
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 35 - 45
+- Fire: 70 - 80
+- Cold: Unknown
+- Poison: 30 - 40
+- Energy: 10 - 20
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Bone](../items/Bone.html)
 - [Sulfurous Ash](../items/SulfurousAsh.html)
 
-### Random Drops
+### Potential Item Drops
 None

@@ -3,33 +3,29 @@ layout: default
 title: a giant black widow
 ---
 
-# a giant black widow — Unknown
-
-**No Photo Available**
+# a giant black widow
 
 ## Stats
 - STR: 76 - 100
 - DEX: 96 - 115
 - INT: 36 - 60
 - Hits: 46 - 60
-- Damage: 5 - 17
-- Fame/Karma: 3500 / -3500
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 20 - 30
+- Fire: 10 - 20
+- Cold: 10 - 20
+- Poison: 50 - 60
+- Energy: 10 - 20
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Lesser Poison Potion](../items/LesserPoisonPotion.html)
 - [Spiders Silk](../items/SpidersSilk.html)
 
-### Random Drops
+### Potential Item Drops
 None

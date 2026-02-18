@@ -3,32 +3,28 @@ layout: default
 title: Elandria
 ---
 
-# Elandria — Unknown
-
-**No Photo Available**
+# Elandria
 
 ## Stats
 - STR: 253 - 400
 - DEX: 157 - 850
 - INT: 503 - 800
 - Hits: 900
-- Damage: 27 - 38
-- Fame/Karma: 20000 / 20000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 55 - 65
+- Fire: 30 - 40
+- Cold: 30 - 40
+- Poison: 40 - 50
+- Energy: 40 - 50
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: 1200 - 1500
 
 ### Guaranteed Drops
 - [Pixie Swatter](../items/PixieSwatter.html)
 
-### Random Drops
+### Potential Item Drops
 None

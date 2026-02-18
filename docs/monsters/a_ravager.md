@@ -3,32 +3,28 @@ layout: default
 title: a ravager
 ---
 
-# a ravager — Unknown
-
-**No Photo Available**
+# a ravager
 
 ## Stats
 - STR: 251 - 275
 - DEX: 101 - 125
 - INT: 66 - 90
 - Hits: 161 - 175
-- Damage: 15 - 20
-- Fame/Karma: 3500 / -3500
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 50 - 60
+- Fire: 50 - 60
+- Cold: 60 - 70
+- Poison: 30 - 40
+- Energy: 20 - 30
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

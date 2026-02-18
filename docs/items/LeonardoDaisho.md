@@ -5,8 +5,9 @@ title: Leonardo Daisho
 
 # Leonardo Daisho
 
-Class Name: `LeonardoDaisho`
-
 ## Dropped By
+- [Leonardo](../monsters/Leonardo.html)
 
-(To be auto-filled in future update)
+## Skill Bonuses
+- Swords: +20.0
+- Parry: +20.0

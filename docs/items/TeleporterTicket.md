@@ -5,8 +5,6 @@ title: Teleporter Ticket
 
 # Teleporter Ticket
 
-Class Name: `TeleporterTicket`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [the harrower](../monsters/the_harrower.html)
+- [the harrower](../monsters/the_harrower.html)

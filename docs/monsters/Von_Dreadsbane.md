@@ -3,34 +3,30 @@ layout: default
 title: Von Dreadsbane
 ---
 
-# Von Dreadsbane — The Evil Shard Owner
-
-**No Photo Available**
+# Von Dreadsbane
 
 ## Stats
 - STR: 300 - 500
 - DEX: 500 - 500
 - INT: 200 - 250
 - Hits: 1000000
-- Damage: 100 - 100
-- Fame/Karma: 25000 / -25000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: Unknown
+- Fire: Unknown
+- Cold: Unknown
+- Poison: Unknown
+- Energy: Unknown
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: 400 - 600
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 - [Necroacidus](../items/Necroacidus.html)
 - [Necroloricatus Boots](../items/NecroloricatusBoots.html)
 - [Necroloricatus Cap](../items/NecroloricatusCap.html)

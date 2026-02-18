@@ -5,8 +5,5 @@ title: deceptive Crystal
 
 # deceptive Crystal
 
-Class Name: `deceptiveCrystal`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [a skeletal knight](../monsters/a_skeletal_knight.html)

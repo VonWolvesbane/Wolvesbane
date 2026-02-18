@@ -3,29 +3,25 @@ layout: default
 title: Keeper Of The Skill Mount
 ---
 
-# Keeper Of The Skill Mount — Unknown
-
-**No Photo Available**
+# Keeper Of The Skill Mount
 
 ## Stats
 - STR: 300 - 500
 - DEX: 500 - 500
 - INT: 200 - 250
 - Hits: 5000 - 5000
-- Damage: 100 - 200
-- Fame/Karma: 25000 / -25000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 50 - 100
+- Fire: 50 - 100
+- Cold: 50 - 100
+- Poison: 50 - 100
+- Energy: 50 - 100
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: 400 - 600
 
 ### Guaranteed Drops
 - [Hooded Shroud Of Shadows](../items/HoodedShroudOfShadows.html)
@@ -43,5 +39,5 @@ None Listed
 - [Skill Mount Swamp Dragon](../items/SkillMountSwampDragon.html)
 - [Skill Mount Unicorn](../items/SkillMountUnicorn.html)
 
-### Random Drops
+### Potential Item Drops
 None

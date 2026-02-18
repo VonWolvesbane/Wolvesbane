@@ -3,36 +3,33 @@ layout: default
 title: a boar
 ---
 
-# a boar — Unknown
-
-**No Photo Available**
+# a boar
 
 ## Stats
 - STR: 25
 - DEX: 15
 - INT: 5
 - Hits: 15
-- Damage: 3 - 6
-- Fame/Karma: 300 / 0
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 10 - 15
+- Fire: 5 - 10
+- Cold: Unknown
+- Poison: 5 - 10
+- Energy: Unknown
 
 ## Taming Info
 - Tamable: Yes
 - Control Slots: 1
+- AI Type: AI_Animal
 
 ## Damage Types
 - Physical: 100%
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

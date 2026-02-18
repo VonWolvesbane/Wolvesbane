@@ -3,32 +3,28 @@ layout: default
 title: Cora
 ---
 
-# Cora — the sorceress
-
-**No Photo Available**
+# Cora
 
 ## Stats
 - STR: 909 - 949
 - DEX: 901 - 948
 - INT: 903 - 947
 - Hits: 35000
-- Damage: 17 - 25
-- Fame/Karma: 32000 / -32000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 52 - 67
+- Fire: 51 - 68
+- Cold: 51 - 69
+- Poison: 51 - 70
+- Energy: 50 - 68
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

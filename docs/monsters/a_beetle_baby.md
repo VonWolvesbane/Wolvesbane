@@ -3,36 +3,33 @@ layout: default
 title: a beetle baby
 ---
 
-# a beetle baby — Unknown
-
-**No Photo Available**
+# a beetle baby
 
 ## Stats
 - STR: 95 - 115
 - DEX: 55 - 100
 - INT: 15 - 35
 - Hits: 75 - 150
-- Damage: 5 - 8
-- Fame/Karma: 300 / -300
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 15 - 20
+- Fire: Unknown
+- Cold: Unknown
+- Poison: 20 - 30
+- Energy: Unknown
 
 ## Taming Info
 - Tamable: Yes
 - Control Slots: 2
+- AI Type: AI_Melee
 
 ## Damage Types
 - Physical: 100%
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

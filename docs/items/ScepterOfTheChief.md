@@ -5,8 +5,8 @@ title: Scepter Of The Chief
 
 # Scepter Of The Chief
 
-Class Name: `ScepterOfTheChief`
-
 ## Dropped By
+- [a chief paroxysmus](../monsters/a_chief_paroxysmus.html)
 
-(To be auto-filled in future update)
+## Regeneration Bonuses
+- Hits: +2

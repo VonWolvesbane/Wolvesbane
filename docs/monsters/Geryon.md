@@ -3,32 +3,28 @@ layout: default
 title: Geryon
 ---
 
-# Geryon — Unknown
-
-**No Photo Available**
+# Geryon
 
 ## Stats
 - STR: 500 - 550
 - DEX: 320 - 350
 - INT: 310 - 360
 - Hits: 820 - 990
-- Damage: 30 - 50
-- Fame/Karma: 3000 / -3000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 35 - 40
+- Fire: 15 - 25
+- Cold: 40 - 50
+- Poison: 15 - 25
+- Energy: 15 - 25
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

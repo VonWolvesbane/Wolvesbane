@@ -5,8 +5,5 @@ title: tainted Crystal
 
 # tainted Crystal
 
-Class Name: `taintedCrystal`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [a zombie](../monsters/a_zombie.html)

@@ -3,29 +3,25 @@ layout: default
 title: Black Order Assassin
 ---
 
-# Black Order Assassin — of the Serpent's Fang Sect
-
-**No Photo Available**
+# Black Order Assassin
 
 ## Stats
 - STR: 440 - 460
 - DEX: 160 - 175
 - INT: 160 - 175
 - Hits: 440 - 500
-- Damage: 13 - 15
-- Fame/Karma: 13000 / -13000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 65 - 75
+- Fire: 50 - 60
+- Cold: 55 - 60
+- Poison: 30 - 50
+- Energy: 30 - 50
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Fancy Shirt](../items/FancyShirt.html)
@@ -34,5 +30,5 @@ None Listed
 - [Studded Mempo](../items/StuddedMempo.html)
 - [Thigh Boots](../items/ThighBoots.html)
 
-### Random Drops
+### Potential Item Drops
 None

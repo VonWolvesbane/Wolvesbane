@@ -5,8 +5,5 @@ title: Vandyke
 
 # Vandyke
 
-Class Name: `Vandyke`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [Archambeau](../monsters/Archambeau.html)

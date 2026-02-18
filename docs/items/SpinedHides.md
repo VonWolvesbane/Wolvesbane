@@ -5,8 +5,6 @@ title: Spined Hides
 
 # Spined Hides
 
-Class Name: `SpinedHides`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [Gargoyles Knife](../monsters/Gargoyles_Knife.html)
+- [Masters Knife](../monsters/Masters_Knife.html)

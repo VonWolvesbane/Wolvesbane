@@ -3,34 +3,30 @@ layout: default
 title: Molach
 ---
 
-# Molach — Unknown
-
-**No Photo Available**
+# Molach
 
 ## Stats
 - STR: 1000 - 1000
 - DEX: 300 - 300
 - INT: 15000 - 15000
 - Hits: 1500 - 2000
-- Damage: 101 - 105
-- Fame/Karma: 24000 / -24000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 65 - 80
+- Fire: 45 - 60
+- Cold: 50 - 60
+- Poison: Unknown
+- Energy: 40 - 50
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: 600 - 800
 
 ### Guaranteed Drops
 - [Head Of Molach](../items/HeadOfMolach.html)
 - [Longsword](../items/Longsword.html)
 - [Tokens](../items/Tokens.html)
 
-### Random Drops
+### Potential Item Drops
 None

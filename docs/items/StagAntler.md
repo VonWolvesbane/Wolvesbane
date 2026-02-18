@@ -5,8 +5,5 @@ title: Stag Antler
 
 # Stag Antler
 
-Class Name: `StagAntler`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [The Stag of Arcadia](../monsters/The_Stag_of_Arcadia.html)

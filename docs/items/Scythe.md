@@ -5,8 +5,5 @@ title: Scythe
 
 # Scythe
 
-Class Name: `Scythe`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [an enslaved minion](../monsters/an_enslaved_minion.html)

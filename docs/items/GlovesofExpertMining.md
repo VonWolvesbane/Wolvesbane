@@ -5,8 +5,11 @@ title: Glovesof Expert Mining
 
 # Glovesof Expert Mining
 
-Class Name: `GlovesofExpertMining`
-
 ## Dropped By
+- [Kashmir](../monsters/Kashmir.html)
 
-(To be auto-filled in future update)
+## Skill Bonuses
+- Mining: +10.0
+
+## Regeneration Bonuses
+- Stam: +5

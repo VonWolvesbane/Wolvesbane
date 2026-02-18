@@ -3,35 +3,31 @@ layout: default
 title: Green Goblin Alchemist
 ---
 
-# Green Goblin Alchemist — Unknown
-
-**No Photo Available**
+# Green Goblin Alchemist
 
 ## Stats
 - STR: 289 - 289
 - DEX: 72 - 72
 - INT: 113 - 113
 - Hits: 196 - 196
-- Damage: 5 - 7
-- Fame/Karma: 1500 / -1500
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 45 - 49
+- Fire: 50 - 53
+- Cold: 25 - 30
+- Poison: 40 - 42
+- Energy: 15 - 18
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Bola Ball](../items/BolaBall.html)
 - [Thigh Boots](../items/ThighBoots.html)
 
-### Random Drops
+### Potential Item Drops
 - [Candle](../items/Candle.html)
 - [Katana](../items/Katana.html)
 - [Kryss](../items/Kryss.html)

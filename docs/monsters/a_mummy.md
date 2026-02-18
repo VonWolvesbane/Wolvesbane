@@ -3,33 +3,29 @@ layout: default
 title: a mummy
 ---
 
-# a mummy — Unknown
-
-**No Photo Available**
+# a mummy
 
 ## Stats
 - STR: 346 - 370
 - DEX: 71 - 90
 - INT: 26 - 40
 - Hits: 208 - 222
-- Damage: 13 - 23
-- Fame/Karma: 4000 / -4000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 45 - 55
+- Fire: 10 - 20
+- Cold: 50 - 60
+- Poison: 20 - 30
+- Energy: 20 - 30
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Bandage](../items/Bandage.html)
 - [Garlic](../items/Garlic.html)
 
-### Random Drops
+### Potential Item Drops
 None

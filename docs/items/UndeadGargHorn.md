@@ -5,8 +5,5 @@ title: Undead Garg Horn
 
 # Undead Garg Horn
 
-Class Name: `UndeadGargHorn`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [Stone Monster](../monsters/Stone_Monster.html)

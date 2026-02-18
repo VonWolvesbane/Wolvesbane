@@ -5,8 +5,7 @@ title: Wizards Hat
 
 # Wizards Hat
 
-Class Name: `WizardsHat`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [Grizelda](../monsters/Grizelda.html)
+- [Mardoth](../monsters/Mardoth.html)
+- [Uzeraan](../monsters/Uzeraan.html)

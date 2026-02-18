@@ -3,33 +3,29 @@ layout: default
 title: a black solen warrior
 ---
 
-# a black solen warrior — Unknown
-
-**No Photo Available**
+# a black solen warrior
 
 ## Stats
 - STR: 196 - 220
 - DEX: 101 - 125
 - INT: 36 - 60
 - Hits: 96 - 107
-- Damage: 5 - 15
-- Fame/Karma: 3000 / -3000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 20 - 35
+- Fire: 20 - 35
+- Cold: 10 - 25
+- Poison: 20 - 35
+- Energy: 10 - 25
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Bracelet Of Binding](../items/BraceletOfBinding.html)
 - [Zoogi Fungus](../items/ZoogiFungus.html)
 
-### Random Drops
+### Potential Item Drops
 None

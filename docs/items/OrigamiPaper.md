@@ -5,8 +5,5 @@ title: Origami Paper
 
 # Origami Paper
 
-Class Name: `OrigamiPaper`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [a fan dancer](../monsters/a_fan_dancer.html)

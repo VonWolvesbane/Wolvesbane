@@ -5,8 +5,8 @@ title: Bracelet Of Health
 
 # Bracelet Of Health
 
-Class Name: `BraceletOfHealth`
-
 ## Dropped By
+- [Killar Ancestor](../monsters/Killar_Ancestor.html)
 
-(To be auto-filled in future update)
+## Regeneration Bonuses
+- Hits: +10

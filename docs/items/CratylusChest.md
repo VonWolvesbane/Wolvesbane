@@ -5,8 +5,5 @@ title: Cratylus Chest
 
 # Cratylus Chest
 
-Class Name: `CratylusChest`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [Cratylus](../monsters/Cratylus.html)

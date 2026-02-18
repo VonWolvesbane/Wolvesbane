@@ -5,8 +5,5 @@ title: Leather Ninja Mitts
 
 # Leather Ninja Mitts
 
-Class Name: `LeatherNinjaMitts`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [an elite ninja](../monsters/an_elite_ninja.html)

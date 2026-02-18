@@ -3,32 +3,28 @@ layout: default
 title: a mound of maggots
 ---
 
-# a mound of maggots — Unknown
-
-**No Photo Available**
+# a mound of maggots
 
 ## Stats
 - STR: 61 - 70
 - DEX: 61 - 70
 - INT: 10
 - Hits: Unknown
-- Damage: 3 - 9
-- Fame/Karma: 1000 / -1000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: Unknown
+- Fire: Unknown
+- Cold: Unknown
+- Poison: Unknown
+- Energy: Unknown
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

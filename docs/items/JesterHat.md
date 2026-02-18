@@ -5,8 +5,7 @@ title: Jester Hat
 
 # Jester Hat
 
-Class Name: `JesterHat`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [Barracoon Jr](../monsters/Barracoon_Jr.html)
+- [Barracoon](../monsters/Barracoon.html)
+- [Elwood McCarrin](../monsters/Elwood_McCarrin.html)

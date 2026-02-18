@@ -3,29 +3,25 @@ layout: default
 title: an ant lion
 ---
 
-# an ant lion — Unknown
-
-**No Photo Available**
+# an ant lion
 
 ## Stats
 - STR: 296 - 320
 - DEX: 81 - 105
 - INT: 36 - 60
 - Hits: 151 - 162
-- Damage: 7 - 21
-- Fame/Karma: 4500 / -4500
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 45 - 60
+- Fire: 25 - 35
+- Cold: 30 - 40
+- Poison: 40 - 50
+- Energy: 30 - 35
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Bone](../items/Bone.html)
@@ -34,5 +30,5 @@ None Listed
 - [Unknown Mage Skeleton](../items/UnknownMageSkeleton.html)
 - [Unknown Rogue Skeleton](../items/UnknownRogueSkeleton.html)
 
-### Random Drops
+### Potential Item Drops
 None

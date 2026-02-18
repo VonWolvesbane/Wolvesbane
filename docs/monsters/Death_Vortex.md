@@ -3,32 +3,28 @@ layout: default
 title: Death Vortex
 ---
 
-# Death Vortex — Unknown
-
-**No Photo Available**
+# Death Vortex
 
 ## Stats
 - STR: 50
 - DEX: 200
 - INT: 100
 - Hits: 70
-- Damage: 14 - 17
-- Fame/Karma: 0 / 0
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 60 - 70
+- Fire: 40 - 50
+- Cold: 40 - 50
+- Poison: 40 - 50
+- Energy: 90 - 100
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Light Source](../items/LightSource.html)
 
-### Random Drops
+### Potential Item Drops
 None

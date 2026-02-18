@@ -5,8 +5,5 @@ title: Obsidian
 
 # Obsidian
 
-Class Name: `Obsidian`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [Elwood McCarrin](../monsters/Elwood_McCarrin.html)

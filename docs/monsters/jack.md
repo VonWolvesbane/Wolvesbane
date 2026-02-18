@@ -3,32 +3,28 @@ layout: default
 title: jack
 ---
 
-# jack — the pumpkin king
-
-**No Photo Available**
+# jack
 
 ## Stats
 - STR: 500
 - DEX: 200
 - INT: 1200
 - Hits: 26000
-- Damage: 22 - 26
-- Fame/Karma: 12000 / -12000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 70 - 80
+- Fire: 70 - 80
+- Cold: 70 - 80
+- Poison: 60 - 70
+- Energy: 40 - 50
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

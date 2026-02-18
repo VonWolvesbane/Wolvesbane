@@ -3,32 +3,28 @@ layout: default
 title: a vampire bat
 ---
 
-# a vampire bat — Unknown
-
-**No Photo Available**
+# a vampire bat
 
 ## Stats
 - STR: 91 - 110
 - DEX: 91 - 115
 - INT: 26 - 50
 - Hits: 55 - 66
-- Damage: 7 - 9
-- Fame/Karma: 1000 / -1000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 35 - 45
+- Fire: 15 - 25
+- Cold: 15 - 25
+- Poison: 60 - 70
+- Energy: 40 - 50
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

@@ -3,32 +3,28 @@ layout: default
 title: a bloodworm
 ---
 
-# a bloodworm — Unknown
-
-**No Photo Available**
+# a bloodworm
 
 ## Stats
 - STR: 401 - 473
 - DEX: 80
 - INT: 18 - 19
 - Hits: 374 - 422
-- Damage: 11 - 17
-- Fame/Karma: Unknown / Unknown
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 52 - 55
+- Fire: 42 - 50
+- Cold: 29 - 31
+- Poison: 69 - 75
+- Energy: 26 - 27
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Lucky Coin](../items/LuckyCoin.html)
 
-### Random Drops
+### Potential Item Drops
 None

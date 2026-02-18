@@ -3,35 +3,31 @@ layout: default
 title: a skeletal knight
 ---
 
-# a skeletal knight — Unknown
-
-**No Photo Available**
+# a skeletal knight
 
 ## Stats
 - STR: 196 - 250
 - DEX: 76 - 95
 - INT: 36 - 60
 - Hits: 118 - 150
-- Damage: 8 - 18
-- Fame/Karma: 3000 / -3000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 35 - 45
+- Fire: 20 - 30
+- Cold: 50 - 60
+- Poison: 20 - 30
+- Energy: 30 - 40
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Scimitar](../items/Scimitar.html)
 - [Wooden Shield](../items/WoodenShield.html)
 
-### Random Drops
+### Potential Item Drops
 - [Plate Arms](../items/PlateArms.html)
 - [Plate Chest](../items/PlateChest.html)
 - [Plate Gloves](../items/PlateGloves.html)

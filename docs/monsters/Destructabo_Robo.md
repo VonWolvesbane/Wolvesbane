@@ -3,29 +3,25 @@ layout: default
 title: Destructabo Robo
 ---
 
-# Destructabo Robo — Unknown
-
-**No Photo Available**
+# Destructabo Robo
 
 ## Stats
 - STR: 900
 - DEX: 500
 - INT: 250
 - Hits: 10000
-- Damage: 75 - 150
-- Fame/Karma: -1000 / -1000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: Unknown
+- Fire: Unknown
+- Cold: Unknown
+- Poison: Unknown
+- Energy: Unknown
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Blaster Ammo](../items/BlasterAmmo.html)
@@ -37,5 +33,5 @@ None Listed
 - [Robo Helm](../items/RoboHelm.html)
 - [Robo Legs](../items/RoboLegs.html)
 
-### Random Drops
+### Potential Item Drops
 None

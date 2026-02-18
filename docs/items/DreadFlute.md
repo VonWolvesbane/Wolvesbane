@@ -5,8 +5,5 @@ title: Dread Flute
 
 # Dread Flute
 
-Class Name: `DreadFlute`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [a Dread Horn](../monsters/a_Dread_Horn.html)

@@ -5,8 +5,12 @@ title: Hat Of The Magi
 
 # Hat Of The Magi
 
-Class Name: `HatOfTheMagi`
-
 ## Dropped By
+- [Killar Ancestor](../monsters/Killar_Ancestor.html)
 
-(To be auto-filled in future update)
+## Resist Bonuses
+- Poison: +0
+- Energy: +0
+
+## Regeneration Bonuses
+- Mana: +4

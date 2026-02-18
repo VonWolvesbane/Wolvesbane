@@ -3,32 +3,28 @@ layout: default
 title: a silverback gorilla
 ---
 
-# a silverback gorilla — Unknown
-
-**No Photo Available**
+# a silverback gorilla
 
 ## Stats
 - STR: 79 - 106
 - DEX: 77 - 91
 - INT: 16 - 29
 - Hits: 446 - 588
-- Damage: 5 - 10
-- Fame/Karma: 5000 / -5000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: Unknown
+- Fire: 10 - 20
+- Cold: 10 - 20
+- Poison: 30 - 40
+- Energy: 10 - 20
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: 60 - 70
 
 ### Guaranteed Drops
 - [Perfect Banana](../items/PerfectBanana.html)
 
-### Random Drops
+### Potential Item Drops
 None

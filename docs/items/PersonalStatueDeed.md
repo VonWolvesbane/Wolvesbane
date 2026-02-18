@@ -5,8 +5,5 @@ title: Personal Statue Deed
 
 # Personal Statue Deed
 
-Class Name: `PersonalStatueDeed`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [a master of the arts](../monsters/a_master_of_the_arts.html)

@@ -5,8 +5,5 @@ title: Glob Of Monstreous Interred Grizzle
 
 # Glob Of Monstreous Interred Grizzle
 
-Class Name: `GlobOfMonstreousInterredGrizzle`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [a monstrous interred grizzle](../monsters/a_monstrous_interred_grizzle.html)

@@ -5,8 +5,6 @@ title: Large Fire Rock
 
 # Large Fire Rock
 
-Class Name: `LargeFireRock`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [a FireRock Elemental](../monsters/a_FireRock_Elemental.html)
+- [a FireRock Gargoyle](../monsters/a_FireRock_Gargoyle.html)

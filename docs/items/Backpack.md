@@ -5,8 +5,6 @@ title: Backpack
 
 # Backpack
 
-Class Name: `Backpack`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [Aminia](../monsters/Aminia.html)
+- [Ihara Soko](../monsters/Ihara_Soko.html)

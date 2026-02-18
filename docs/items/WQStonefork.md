@@ -5,8 +5,5 @@ title: W Q Stonefork
 
 # W Q Stonefork
 
-Class Name: `WQStonefork`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [a thunder wyrm](../monsters/a_thunder_wyrm.html)

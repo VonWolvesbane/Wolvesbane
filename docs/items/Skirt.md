@@ -5,8 +5,7 @@ title: Skirt
 
 # Skirt
 
-Class Name: `Skirt`
-
 ## Dropped By
-
-(To be auto-filled in future update)
+- [Hippolyte](../monsters/Hippolyte.html)
+- [A Were Wolf](../monsters/A_Were_Wolf.html)
+- [Aminia](../monsters/Aminia.html)

@@ -3,32 +3,28 @@ layout: default
 title: a cursed soul
 ---
 
-# a cursed soul — Unknown
-
-**No Photo Available**
+# a cursed soul
 
 ## Stats
 - STR: 20 - 40
 - DEX: 40 - 60
 - INT: 15 - 25
 - Hits: 10 - 20
-- Damage: 3 - 7
-- Fame/Karma: 200 / -200
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 15 - 20
+- Fire: 8 - 12
+- Cold: Unknown
+- Poison: Unknown
+- Energy: Unknown
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

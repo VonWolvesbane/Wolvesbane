@@ -3,32 +3,28 @@ layout: default
 title: A Mutated Elf
 ---
 
-# A Mutated Elf — Unknown
-
-**No Photo Available**
+# A Mutated Elf
 
 ## Stats
 - STR: 767 - 945
 - DEX: 206 - 275
 - INT: 456 - 470
 - Hits: 1476 - 1552
-- Damage: 20 - 25
-- Fame/Karma: 15000 / -15000
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 85 - 95
+- Fire: 30 - 40
+- Cold: 100 - 105
+- Poison: 80 - 85
+- Energy: 70 - 75
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 None
 
-### Random Drops
+### Potential Item Drops
 None

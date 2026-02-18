@@ -3,29 +3,25 @@ layout: default
 title: a ronin
 ---
 
-# a ronin — Unknown
-
-**No Photo Available**
+# a ronin
 
 ## Stats
 - STR: 326 - 375
 - DEX: 31 - 45
 - INT: 101 - 110
 - Hits: 301 - 400
-- Damage: 17 - 25
-- Fame/Karma: 8500 / -8500
 
 ## Resistances
-None Listed
-
-## Skills
-None Listed
+- Physical: 55 - 75
+- Fire: 40 - 60
+- Cold: 35 - 55
+- Poison: 50 - 70
+- Energy: 55 - 75
 
 ## Taming Info
 - Tamable: No
 
 ## Loot
-- Gold: Unknown
 
 ### Guaranteed Drops
 - [Book Of Bushido](../items/BookOfBushido.html)
@@ -44,5 +40,5 @@ None Listed
 - [Studded Haidate](../items/StuddedHaidate.html)
 - [Wakizashi](../items/Wakizashi.html)
 
-### Random Drops
+### Potential Item Drops
 None
