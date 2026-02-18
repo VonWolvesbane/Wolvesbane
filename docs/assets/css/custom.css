@@ -5,43 +5,28 @@ body {
     margin: 0;
 }
 
-/* ================= HEADER ================= */
-
-.site-header {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    background-color: #000;
-    padding: 15px 25px;
-    border-bottom: 2px solid #444;
-}
-
-.logo-container {
-    margin-right: 20px;
-}
-
-.site-logo {
-    height: 120px;   /* 🔥 Larger Logo */
-}
-
-.site-title {
-    font-size: 28px;
-    font-weight: bold;
-    color: #f0b400;
-}
-
 /* ================= BANNER ================= */
 
 .banner-container {
     width: 100%;
     text-align: center;
-    background-color: #1a1a1a;
+    background-color: #000;
 }
 
 .page-banner {
     width: 100%;
-    max-height: 260px;
+    max-height: 180px;   /* 🔥 Scaled down */
     object-fit: cover;
+}
+
+/* ================= LOGO UNDER BANNER ================= */
+
+.logo-wrapper {
+    padding: 15px 30px;
+}
+
+.site-logo {
+    height: 80px;   /* Balanced size */
 }
 
 /* ================= CONTENT ================= */
