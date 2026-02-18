@@ -21,6 +21,14 @@ None Listed
 ## Skills
 None Listed
 
+## Taming Info
+- Tamable: Yes
+- Control Slots: 1
+
+## Damage Types
+- Physical: 25%
+- Cold: 75%
+
 ## Loot
 - Gold: Unknown
 

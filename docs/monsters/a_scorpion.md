@@ -21,6 +21,14 @@ None Listed
 ## Skills
 None Listed
 
+## Taming Info
+- Tamable: Yes
+- Control Slots: 1
+
+## Damage Types
+- Physical: 60%
+- Poison: 40%
+
 ## Loot
 - Gold: Unknown
 

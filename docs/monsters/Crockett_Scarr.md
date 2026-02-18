@@ -21,6 +21,9 @@ None Listed
 ## Skills
 None Listed
 
+## Taming Info
+- Tamable: No
+
 ## Loot
 - Gold: 6500 - 7025
 
