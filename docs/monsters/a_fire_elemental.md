@@ -8,9 +8,9 @@ title: a fire elemental
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
+- STR: 200
+- DEX: 200
+- INT: 100
 - Hits: Unknown
 - Damage: 9 - 14
 - Fame/Karma: Unknown / Unknown

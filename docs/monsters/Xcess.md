@@ -8,10 +8,10 @@ title: Xcess
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
+- STR: 1500
+- DEX: 1500
+- INT: 8400
+- Hits: 1000000
 - Damage: 100 - 100
 - Fame/Karma: 15000 / -15000
 

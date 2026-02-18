@@ -8,11 +8,11 @@ title: Snow Drake
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
-- Damage: Unknown
+- STR: 721 - 760
+- DEX: 101 - 130
+- INT: 386 - 425
+- Hits: 433 - 456
+- Damage: 17 - 25
 - Fame/Karma: 18000 / -18000
 
 ## Resistances

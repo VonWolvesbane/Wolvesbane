@@ -8,11 +8,11 @@ title: a farmers chicken
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
-- Damage: Unknown
+- STR: 450
+- DEX: 350
+- INT: 5
+- Hits: 1350
+- Damage: 50
 - Fame/Karma: 150 / 0
 
 ## Resistances

@@ -9,8 +9,8 @@ title: a ferret
 
 ## Stats
 - STR: 41 - 48
-- DEX: Unknown
-- INT: Unknown
+- DEX: 55
+- INT: 75
 - Hits: 45 - 50
 - Damage: 7 - 9
 - Fame/Karma: Unknown / Unknown

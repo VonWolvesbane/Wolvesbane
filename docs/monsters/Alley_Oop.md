@@ -8,11 +8,11 @@ title: Alley Oop
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
-- Damage: Unknown
+- STR: 3000 - 6000
+- DEX: 2000 - 4000
+- INT: 1000 - 2000
+- Hits: 100000 - 300000
+- Damage: 20 - 25
 - Fame/Karma: 15000 / -15000
 
 ## Resistances

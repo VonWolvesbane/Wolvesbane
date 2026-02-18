@@ -8,10 +8,10 @@ title: a boar
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
+- STR: 25
+- DEX: 15
+- INT: 5
+- Hits: 15
 - Damage: 3 - 6
 - Fame/Karma: 300 / 0
 

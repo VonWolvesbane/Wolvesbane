@@ -11,8 +11,8 @@ title: a dragon turtle
 - STR: 750 - 800
 - DEX: 185 - 240
 - INT: 487 - 562
-- Hits: Unknown
-- Damage: Unknown
+- Hits: 60000
+- Damage: 25 - 37
 - Fame/Karma: 11000 / -11000
 
 ## Resistances

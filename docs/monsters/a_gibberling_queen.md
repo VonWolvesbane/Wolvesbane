@@ -8,11 +8,11 @@ title: a gibberling queen
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
-- Damage: Unknown
+- STR: 350
+- DEX: 120
+- INT: 120
+- Hits: 750
+- Damage: 17 - 24
 - Fame/Karma: 1500 / -1500
 
 ## Resistances

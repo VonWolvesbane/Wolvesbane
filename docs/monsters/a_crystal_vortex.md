@@ -10,7 +10,7 @@ title: a crystal vortex
 ## Stats
 - STR: 800 - 900
 - DEX: 500 - 600
-- INT: Unknown
+- INT: 200
 - Hits: 350 - 400
 - Damage: 15 - 20
 - Fame/Karma: 17000 / -17000

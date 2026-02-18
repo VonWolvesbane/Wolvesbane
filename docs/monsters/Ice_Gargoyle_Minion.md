@@ -9,10 +9,10 @@ title: Ice Gargoyle Minion
 
 ## Stats
 - STR: 420 - 625
-- DEX: Unknown
-- INT: Unknown
+- DEX: 456 - 625
+- INT: 550 - 980
 - Hits: 4000 - 6000
-- Damage: Unknown
+- Damage: 350 - 550
 - Fame/Karma: 12000 / -12000
 
 ## Resistances

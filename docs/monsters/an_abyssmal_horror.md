@@ -11,7 +11,7 @@ title: an abyssmal horror
 - STR: 401 - 420
 - DEX: 81 - 90
 - INT: 401 - 420
-- Hits: Unknown
+- Hits: 6000
 - Damage: 13 - 17
 - Fame/Karma: 26000 / -26000
 

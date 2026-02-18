@@ -9,10 +9,10 @@ title: Toxic Gargoyle Minion
 
 ## Stats
 - STR: 320 - 525
-- DEX: Unknown
-- INT: Unknown
+- DEX: 356 - 525
+- INT: 450 - 880
 - Hits: 3000 - 4000
-- Damage: Unknown
+- Damage: 300 - 500
 - Fame/Karma: 12000 / -12000
 
 ## Resistances

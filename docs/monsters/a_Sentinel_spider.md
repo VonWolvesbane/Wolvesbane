@@ -8,11 +8,11 @@ title: a Sentinel spider
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
-- Damage: Unknown
+- STR: 95 - 100
+- DEX: 140 - 145
+- INT: 40 - 45
+- Hits: 260 - 265
+- Damage: 15 - 22
 - Fame/Karma: 775 / -775
 
 ## Resistances

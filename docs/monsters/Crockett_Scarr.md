@@ -8,11 +8,11 @@ title: Crockett Scarr
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
-- Damage: Unknown
+- STR: 1250
+- DEX: 1500
+- INT: 1150
+- Hits: 55800
+- Damage: 25 - 35
 - Fame/Karma: 30000 / -30000
 
 ## Resistances

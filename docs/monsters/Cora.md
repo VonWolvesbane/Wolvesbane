@@ -11,7 +11,7 @@ title: Cora
 - STR: 909 - 949
 - DEX: 901 - 948
 - INT: 903 - 947
-- Hits: Unknown
+- Hits: 35000
 - Damage: 17 - 25
 - Fame/Karma: 32000 / -32000
 

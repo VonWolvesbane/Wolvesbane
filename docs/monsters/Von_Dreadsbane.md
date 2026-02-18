@@ -11,7 +11,7 @@ title: Von Dreadsbane
 - STR: 300 - 500
 - DEX: 500 - 500
 - INT: 200 - 250
-- Hits: Unknown
+- Hits: 1000000
 - Damage: 100 - 100
 - Fame/Karma: 25000 / -25000
 

@@ -8,10 +8,10 @@ title: a void manifestation
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
+- STR: 500
+- DEX: 150
+- INT: 105
+- Hits: 2400
 - Damage: 25 - 31
 - Fame/Karma: 15000 / -15000
 

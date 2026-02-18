@@ -8,10 +8,10 @@ title: a rat
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
+- STR: 9
+- DEX: 35
+- INT: 5
+- Hits: 6
 - Damage: 1 - 2
 - Fame/Karma: 150 / -150
 

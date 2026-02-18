@@ -8,11 +8,11 @@ title: Victor Creed
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
-- Damage: Unknown
+- STR: 3500
+- DEX: 2500
+- INT: 4500
+- Hits: 125000 - 150000
+- Damage: 45 - 65
 - Fame/Karma: 15000 / -15000
 
 ## Resistances

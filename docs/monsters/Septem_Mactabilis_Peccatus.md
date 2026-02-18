@@ -8,11 +8,11 @@ title: Septem Mactabilis Peccatus
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
-- Damage: Unknown
+- STR: 7666
+- DEX: 7666
+- INT: 7666
+- Hits: 666666
+- Damage: 150 - 200
 - Fame/Karma: -1000 / -1000
 
 ## Resistances

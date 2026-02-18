@@ -10,7 +10,7 @@ title: a blade spirit
 ## Stats
 - STR: Unknown
 - DEX: Unknown
-- INT: Unknown
+- INT: 100
 - Hits: Unknown
 - Damage: 10 - 14
 - Fame/Karma: 0 / 0

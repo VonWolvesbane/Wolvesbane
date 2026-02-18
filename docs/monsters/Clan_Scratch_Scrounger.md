@@ -11,7 +11,7 @@ title: Clan Scratch Scrounger
 - STR: 97 - 100
 - DEX: 98 - 100
 - INT: 45 - 50
-- Hits: Unknown
+- Hits: 135
 - Damage: 4 - 5
 - Fame/Karma: 6500 / -6500
 

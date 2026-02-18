@@ -8,11 +8,11 @@ title: a Dread Horn
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
-- Damage: Unknown
+- STR: 878 - 993
+- DEX: 581 - 683
+- INT: 1200 - 1300
+- Hits: 50000
+- Damage: 21 - 28
 - Fame/Karma: 32000 / -32000
 
 ## Resistances

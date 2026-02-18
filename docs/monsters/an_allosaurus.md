@@ -9,7 +9,7 @@ title: an allosaurus
 
 ## Stats
 - STR: 699 - 828
-- DEX: Unknown
+- DEX: 200
 - INT: 127 - 150
 - Hits: 940 - 1000
 - Damage: 21 - 23

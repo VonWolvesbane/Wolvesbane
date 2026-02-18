@@ -11,7 +11,7 @@ title: Rikktor
 - STR: 701 - 900
 - DEX: 201 - 350
 - INT: 51 - 100
-- Hits: Unknown
+- Hits: 15000
 - Damage: 28 - 55
 - Fame/Karma: 22500 / -22500
 

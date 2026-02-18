@@ -8,10 +8,10 @@ title: Death Vortex
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
+- STR: 50
+- DEX: 200
+- INT: 100
+- Hits: 70
 - Damage: 14 - 17
 - Fame/Karma: 0 / 0
 

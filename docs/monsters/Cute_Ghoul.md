@@ -8,10 +8,10 @@ title: Cute Ghoul
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
+- STR: 600
+- DEX: 800
 - INT: Unknown
-- Hits: Unknown
+- Hits: 40000
 - Damage: 55 - 80
 - Fame/Karma: 2500 / -2500
 

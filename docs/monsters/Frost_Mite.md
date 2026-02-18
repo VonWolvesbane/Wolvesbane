@@ -8,9 +8,9 @@ title: Frost Mite
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
+- STR: 1017
+- DEX: 164
+- INT: 283
 - Hits: 800 - 1000
 - Damage: 21 - 28
 - Fame/Karma: Unknown / Unknown

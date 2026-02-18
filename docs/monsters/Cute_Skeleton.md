@@ -8,10 +8,10 @@ title: Cute Skeleton
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
+- STR: 300
+- DEX: 300
+- INT: 100
+- Hits: 20000
 - Damage: 25 - 50
 - Fame/Karma: 1000 / 0
 

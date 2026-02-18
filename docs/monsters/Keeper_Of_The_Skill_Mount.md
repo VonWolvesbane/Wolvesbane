@@ -8,11 +8,11 @@ title: Keeper Of The Skill Mount
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
-- Damage: Unknown
+- STR: 300 - 500
+- DEX: 500 - 500
+- INT: 200 - 250
+- Hits: 5000 - 5000
+- Damage: 100 - 200
 - Fame/Karma: 25000 / -25000
 
 ## Resistances

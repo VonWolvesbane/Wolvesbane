@@ -8,11 +8,11 @@ title: Reddix
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
-- Damage: Unknown
+- STR: 500 - 700
+- DEX: 300 - 300
+- INT: 500 - 700
+- Hits: 1800 - 2000
+- Damage: 50 - 60
 - Fame/Karma: 24000 / -24000
 
 ## Resistances

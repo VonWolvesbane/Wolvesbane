@@ -11,7 +11,7 @@ title: an injured wolf
 - STR: 10 - 20
 - DEX: 45 - 65
 - INT: 10 - 15
-- Hits: Unknown
+- Hits: 1
 - Damage: 1 - 3
 - Fame/Karma: Unknown / Unknown
 

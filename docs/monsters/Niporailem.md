@@ -8,9 +8,9 @@ title: Niporailem
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
+- STR: 1000
+- DEX: 1200
+- INT: 1200
 - Hits: 10000 - 10500
 - Damage: 15 - 27
 - Fame/Karma: 15000 / -15000

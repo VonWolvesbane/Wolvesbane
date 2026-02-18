@@ -23,4 +23,4 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: , , , , , Utility.RandomNeutralHue(), 
+- Items: , , , , , Utility.RandomNeutralHue(, 

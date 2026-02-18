@@ -8,10 +8,10 @@ title: a nature's fury
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
+- STR: 150
+- DEX: 150
+- INT: 100
+- Hits: 80
 - Damage: 6 - 8
 - Fame/Karma: 0 / 0
 

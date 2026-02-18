@@ -8,10 +8,10 @@ title: Death's Kiss
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
+- STR: 1100
+- DEX: 1200
+- INT: 4000
+- Hits: 2500000
 - Damage: 75 - 110
 - Fame/Karma: 22500 / -22500
 

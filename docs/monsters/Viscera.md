@@ -10,7 +10,7 @@ title: Viscera
 ## Stats
 - STR: 250 - 293
 - DEX: 120 - 130
-- INT: Unknown
+- INT: 100
 - Hits: 200 - 230
 - Damage: 8 - 18
 - Fame/Karma: 2000 / -2000

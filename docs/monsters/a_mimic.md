@@ -8,10 +8,10 @@ title: a mimic
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
+- STR: 281
+- DEX: 140
+- INT: 261
+- Hits: 543
 - Damage: 13 - 20
 - Fame/Karma: Unknown / Unknown
 

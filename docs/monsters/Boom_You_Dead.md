@@ -8,10 +8,10 @@ title: Boom You Dead
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
+- STR: 1200
+- DEX: 500
+- INT: 900
+- Hits: 800000
 - Damage: 35 - 45
 - Fame/Karma: 25000 / -25000
 

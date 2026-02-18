@@ -8,9 +8,9 @@ title: an imp
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
+- STR: 55
+- DEX: 40
+- INT: 60
 - Hits: Unknown
 - Damage: 10 - 14
 - Fame/Karma: 0 / 0

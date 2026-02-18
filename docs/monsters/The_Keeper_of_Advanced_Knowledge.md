@@ -8,11 +8,11 @@ title: The Keeper of Advanced Knowledge
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
-- Damage: Unknown
+- STR: 6401 - 6420
+- DEX: 4481 - 4490
+- INT: 3201 - 3220
+- Hits: 550000 - 570000
+- Damage: 75 - 90
 - Fame/Karma: 30000 / -30000
 
 ## Resistances

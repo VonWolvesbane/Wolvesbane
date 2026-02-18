@@ -11,7 +11,7 @@ title: Corgul the Soulbinder
 - STR: 800 - 900
 - DEX: 121 - 165
 - INT: 300 - 400
-- Hits: Unknown
+- Hits: 65000
 - Damage: 19 - 24
 - Fame/Karma: 25000 / -25000
 

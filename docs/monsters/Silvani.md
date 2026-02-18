@@ -11,7 +11,7 @@ title: Silvani
 - STR: 253 - 400
 - DEX: 157 - 850
 - INT: 503 - 800
-- Hits: Unknown
+- Hits: 600
 - Damage: 27 - 38
 - Fame/Karma: 20000 / 20000
 

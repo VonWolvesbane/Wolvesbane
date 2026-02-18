@@ -8,11 +8,11 @@ title: a thunder storm
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
-- Damage: Unknown
+- STR: 63 - 78
+- DEX: 83 - 93
+- INT: 51 - 63
+- Hits: 38 - 47
+- Damage: 4 - 5
 - Fame/Karma: 2250 / -2250
 
 ## Resistances

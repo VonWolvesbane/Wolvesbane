@@ -11,7 +11,7 @@ title: a giant turkey
 - STR: 1200 - 1400
 - DEX: 170 - 260
 - INT: 430 - 560
-- Hits: Unknown
+- Hits: 25000
 - Damage: 20 - 30
 - Fame/Karma: Unknown / Unknown
 

@@ -11,7 +11,7 @@ title: an interred grizzle
 - STR: 451 - 500
 - DEX: 201 - 250
 - INT: 801 - 850
-- Hits: Unknown
+- Hits: 1500
 - Damage: 16 - 19
 - Fame/Karma: 3700 / -3700
 

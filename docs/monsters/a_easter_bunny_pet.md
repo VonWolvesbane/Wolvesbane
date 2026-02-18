@@ -8,11 +8,11 @@ title: a easter bunny pet
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
+- STR: 15
 - DEX: 36 - 38
 - INT: 8 - 16
 - Hits: 10 - 15
-- Damage: Unknown
+- Damage: 10
 - Fame/Karma: 150 / 0
 
 ## Resistances

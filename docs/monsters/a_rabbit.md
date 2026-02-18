@@ -12,7 +12,7 @@ title: a rabbit
 - DEX: 26 - 38
 - INT: 6 - 14
 - Hits: 4 - 6
-- Damage: Unknown
+- Damage: 1
 - Fame/Karma: 150 / 0
 
 ## Resistances

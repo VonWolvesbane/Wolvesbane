@@ -8,9 +8,9 @@ title: a pet eagle
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
+- STR: 1 - 5
+- DEX: 25 - 30
+- INT: 2
 - Hits: Unknown
 - Damage: Unknown
 - Fame/Karma: Unknown / Unknown

@@ -8,11 +8,11 @@ title: Scottie's Wolf
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
-- Damage: Unknown
+- STR: 280 - 340
+- DEX: 180 - 220
+- INT: 200 - 300
+- Hits: 800 - 1200
+- Damage: 15 - 44
 - Fame/Karma: 35000 / -35000
 
 ## Resistances

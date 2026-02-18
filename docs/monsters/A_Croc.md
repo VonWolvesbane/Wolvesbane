@@ -8,11 +8,11 @@ title: A Croc
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
-- Damage: Unknown
+- STR: 176 - 200
+- DEX: 76 - 95
+- INT: 11 - 20
+- Hits: 146 - 160
+- Damage: 15 - 20
 - Fame/Karma: 600 / 600
 
 ## Resistances

@@ -8,11 +8,11 @@ title: A Evil Elf
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
-- Damage: Unknown
+- STR: 80 - 110
+- DEX: 80 - 90
+- INT: 80 - 90
+- Hits: 200
+- Damage: 5 - 20
 - Fame/Karma: 24000 / -24000
 
 ## Resistances

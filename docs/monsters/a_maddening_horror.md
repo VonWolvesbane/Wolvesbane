@@ -10,8 +10,8 @@ title: a maddening horror
 ## Stats
 - STR: 270 - 290
 - DEX: 80 - 100
-- INT: Unknown
-- Hits: Unknown
+- INT: 850
+- Hits: 660
 - Damage: 15 - 27
 - Fame/Karma: 23000 / -23000
 

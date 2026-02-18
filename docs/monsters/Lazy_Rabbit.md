@@ -8,11 +8,11 @@ title: Lazy Rabbit
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
-- Damage: Unknown
+- STR: 496 - 525
+- DEX: 86 - 105
+- INT: 236 - 275
+- Hits: 478 - 495
+- Damage: 20 - 30
 - Fame/Karma: 4000 / 1000
 
 ## Resistances

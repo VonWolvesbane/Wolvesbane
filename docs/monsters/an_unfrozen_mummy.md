@@ -11,7 +11,7 @@ title: an unfrozen mummy
 - STR: 450 - 500
 - DEX: 200 - 250
 - INT: 800 - 850
-- Hits: Unknown
+- Hits: 1500
 - Damage: 16 - 20
 - Fame/Karma: 25000 / -25000
 

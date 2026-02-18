@@ -8,11 +8,11 @@ title: a genetic failure
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
-- Damage: Unknown
+- STR: 18 - 30
+- DEX: 16 - 21
+- INT: 16 - 20
+- Hits: 13 - 17
+- Damage: 3 - 9
 - Fame/Karma: 450 / -450
 
 ## Resistances

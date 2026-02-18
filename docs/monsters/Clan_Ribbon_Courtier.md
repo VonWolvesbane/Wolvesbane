@@ -8,9 +8,9 @@ title: Clan Ribbon Courtier
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
+- STR: 231
+- DEX: 252
+- INT: 125
 - Hits: 2054 - 2100
 - Damage: 7 - 14
 - Fame/Karma: 1500 / -1500

@@ -11,7 +11,7 @@ title: a crystal elemental
 - STR: 136 - 160
 - DEX: 51 - 65
 - INT: 86 - 110
-- Hits: Unknown
+- Hits: 150
 - Damage: 10 - 15
 - Fame/Karma: 6500 / -6500
 

@@ -8,11 +8,11 @@ title: Kronik
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
-- Damage: Unknown
+- STR: 3500
+- DEX: 2350
+- INT: 450
+- Hits: 15000
+- Damage: 45 - 65
 - Fame/Karma: 15000 / -15000
 
 ## Resistances

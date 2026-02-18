@@ -10,7 +10,7 @@ title: an energy vortex
 ## Stats
 - STR: Unknown
 - DEX: Unknown
-- INT: Unknown
+- INT: 100
 - Hits: Unknown
 - Damage: Unknown
 - Fame/Karma: 0 / 0

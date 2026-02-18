@@ -8,10 +8,10 @@ title: a sheep
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
+- STR: 19
+- DEX: 25
+- INT: 5
+- Hits: 12
 - Damage: 1 - 2
 - Fame/Karma: 300 / 0
 

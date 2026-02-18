@@ -12,7 +12,7 @@ title: Anon
 - DEX: 100 - 200
 - INT: 175 - 200
 - Hits: 9500 - 10000
-- Damage: 17 - 21
+- Damage: 14 - 17
 - Fame/Karma: 32000 / -32000
 
 ## Resistances

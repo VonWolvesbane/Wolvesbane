@@ -8,11 +8,11 @@ title: a Timed Training Elemental
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
-- Damage: Unknown
+- STR: 50 - 50
+- DEX: 350 - 350
+- INT: 71 - 92
+- Hits: 30000 - 30000
+- Damage: 0 - 0
 - Fame/Karma: 0 / 0
 
 ## Resistances

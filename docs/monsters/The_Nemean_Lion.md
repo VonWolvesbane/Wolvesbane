@@ -8,11 +8,11 @@ title: The Nemean Lion
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
-- Damage: Unknown
+- STR: 8000
+- DEX: 510 - 750
+- INT: 310 - 400
+- Hits: 5000
+- Damage: 34 - 36
 - Fame/Karma: 0 / -20000
 
 ## Resistances

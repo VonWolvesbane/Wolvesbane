@@ -8,10 +8,10 @@ title: unholy bones
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
+- STR: 500
+- DEX: 100
+- INT: 1000
+- Hits: 30000
 - Damage: 17 - 21
 - Fame/Karma: 28000 / -28000
 

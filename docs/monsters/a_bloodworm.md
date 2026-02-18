@@ -9,7 +9,7 @@ title: a bloodworm
 
 ## Stats
 - STR: 401 - 473
-- DEX: Unknown
+- DEX: 80
 - INT: 18 - 19
 - Hits: 374 - 422
 - Damage: 11 - 17

@@ -9,10 +9,10 @@ title: Electrum Gargoyle Minion
 
 ## Stats
 - STR: 320 - 525
-- DEX: Unknown
-- INT: Unknown
+- DEX: 356 - 525
+- INT: 450 - 880
 - Hits: 7000 - 10000
-- Damage: Unknown
+- Damage: 600 - 800
 - Fame/Karma: 12000 / -12000
 
 ## Resistances

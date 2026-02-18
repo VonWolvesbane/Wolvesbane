@@ -11,7 +11,7 @@ title: a deadly imp
 - STR: 91 - 115
 - DEX: 61 - 80
 - INT: 86 - 105
-- Hits: Unknown
+- Hits: 1000
 - Damage: 50 - 80
 - Fame/Karma: 2500 / -2500
 

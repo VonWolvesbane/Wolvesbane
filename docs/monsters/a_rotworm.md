@@ -9,7 +9,7 @@ title: a rotworm
 
 ## Stats
 - STR: 200 - 300
-- DEX: Unknown
+- DEX: 80
 - INT: 15 - 20
 - Hits: 200 - 250
 - Damage: 1 - 5

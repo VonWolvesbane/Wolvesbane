@@ -12,7 +12,7 @@ title: the harrower
 - DEX: 325 - 335
 - INT: 1000 - 1200
 - Hits: Unknown
-- Damage: Unknown
+- Damage: 65 - 75
 - Fame/Karma: 22500 / -22500
 
 ## Resistances

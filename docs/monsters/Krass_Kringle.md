@@ -8,9 +8,9 @@ title: Krass Kringle
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
+- STR: 410 - 580
+- DEX: 185 - 210
+- INT: 300 - 450
 - Hits: 5000 - 10000
 - Damage: 40 - 75
 - Fame/Karma: 1000 / -15000

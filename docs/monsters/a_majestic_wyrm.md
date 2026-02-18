@@ -8,10 +8,10 @@ title: a majestic wyrm
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
+- STR: 800
+- DEX: 800
+- INT: 2000
+- Hits: 120000
 - Damage: 75 - 75
 - Fame/Karma: 18000 / -18000
 

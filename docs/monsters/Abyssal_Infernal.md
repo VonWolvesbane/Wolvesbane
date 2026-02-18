@@ -11,7 +11,7 @@ title: Abyssal Infernal
 - STR: 1200 - 1300
 - DEX: 100 - 125
 - INT: 600 - 700
-- Hits: Unknown
+- Hits: 30000
 - Damage: 11 - 18
 - Fame/Karma: 28000 / -28000
 

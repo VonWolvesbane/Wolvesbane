@@ -8,11 +8,11 @@ title: a poison storm
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
-- Damage: Unknown
+- STR: 213 - 258
+- DEX: 83 - 93
+- INT: 181 - 218
+- Hits: 128 - 155
+- Damage: 6 - 9
 - Fame/Karma: 6250 / -6250
 
 ## Resistances

@@ -8,10 +8,10 @@ title: an undead guardian
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
+- STR: 212
+- DEX: 76
+- INT: 56
+- Hits: 138
 - Damage: 8 - 18
 - Fame/Karma: Unknown / Unknown
 

@@ -11,7 +11,7 @@ title: a devourer of souls
 - STR: 801 - 950
 - DEX: 126 - 175
 - INT: 201 - 250
-- Hits: Unknown
+- Hits: 650
 - Damage: 22 - 26
 - Fame/Karma: 9500 / -9500
 

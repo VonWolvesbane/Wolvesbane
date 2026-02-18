@@ -8,11 +8,11 @@ title: Phileon
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
-- Damage: Unknown
+- STR: 619
+- DEX: 619
+- INT: 619
+- Hits: 250000
+- Damage: 76 - 306
 - Fame/Karma: -1000 / -1000
 
 ## Resistances

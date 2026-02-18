@@ -8,11 +8,11 @@ title: a Sorarian elemental
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
-- Damage: Unknown
+- STR: 1260 - 1550
+- DEX: 150 - 185
+- INT: 1200 - 1392
+- Hits: 600 - 930
+- Damage: 28 - 37
 - Fame/Karma: 3500 / -3500
 
 ## Resistances

@@ -12,7 +12,7 @@ title: a valorite elemental
 - DEX: 126 - 145
 - INT: 71 - 92
 - Hits: 136 - 153
-- Damage: Unknown
+- Damage: 28
 - Fame/Karma: 3500 / -3500
 
 ## Resistances

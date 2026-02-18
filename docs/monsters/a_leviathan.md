@@ -8,10 +8,10 @@ title: a leviathan
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
+- STR: 1000
 - DEX: 501 - 520
 - INT: 501 - 515
-- Hits: Unknown
+- Hits: 1500
 - Damage: 25 - 33
 - Fame/Karma: 22500 / -22500
 

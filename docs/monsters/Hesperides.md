@@ -8,11 +8,11 @@ title: Hesperides
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
-- Damage: Unknown
+- STR: 410 - 500
+- DEX: 401 - 500
+- INT: 237 - 278
+- Hits: 500 - 550
+- Damage: 20 - 25
 - Fame/Karma: 5000 / -5000
 
 ## Resistances

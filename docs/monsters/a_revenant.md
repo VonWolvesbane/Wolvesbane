@@ -8,9 +8,9 @@ title: a revenant
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
+- STR: 200
+- DEX: 150
+- INT: 150
 - Hits: Unknown
 - Damage: 16 - 17
 - Fame/Karma: 0 / 0

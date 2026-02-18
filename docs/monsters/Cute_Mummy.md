@@ -8,10 +8,10 @@ title: Cute Mummy
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
+- STR: 600
+- DEX: 800
+- INT: 100
+- Hits: 40000
 - Damage: 55 - 80
 - Fame/Karma: 2500 / -2500
 

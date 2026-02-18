@@ -8,10 +8,10 @@ title: Clan Scratch Henchrat
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
+- STR: 227
+- DEX: 183
+- INT: 93
+- Hits: 2065
 - Damage: 5 - 7
 - Fame/Karma: 1500 / -1500
 

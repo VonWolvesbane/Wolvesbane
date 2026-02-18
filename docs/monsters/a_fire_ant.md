@@ -8,10 +8,10 @@ title: a fire ant
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
+- STR: 225
+- DEX: 108
+- INT: 25
+- Hits: 299
 - Damage: 15 - 18
 - Fame/Karma: Unknown / Unknown
 

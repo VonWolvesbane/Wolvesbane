@@ -8,11 +8,11 @@ title: a decaying corpse
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
-- Damage: Unknown
+- STR: 346 - 370
+- DEX: 71 - 90
+- INT: 26 - 40
+- Hits: 222 - 250
+- Damage: 13 - 23
 - Fame/Karma: 4000 / -4000
 
 ## Resistances

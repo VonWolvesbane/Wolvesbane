@@ -8,10 +8,10 @@ title: a prison rat
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
+- STR: 9
+- DEX: 35
 - INT: 7 - 10
-- Hits: Unknown
+- Hits: 50
 - Damage: 5 - 8
 - Fame/Karma: 150 / -150
 

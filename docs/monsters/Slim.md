@@ -8,9 +8,9 @@ title: Slim
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
+- STR: 150
+- DEX: 150
+- INT: 50
 - Hits: Unknown
 - Damage: Unknown
 - Fame/Karma: Unknown / Unknown

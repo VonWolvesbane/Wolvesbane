@@ -8,11 +8,11 @@ title: a YewTree
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
-- Damage: Unknown
+- STR: 366 - 515
+- DEX: 66 - 75
+- INT: 101 - 250
+- Hits: 40 - 129
+- Damage: 9 - 11
 - Fame/Karma: 3500 / -3500
 
 ## Resistances

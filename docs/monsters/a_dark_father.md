@@ -8,11 +8,11 @@ title: a dark father
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
-- Damage: Unknown
+- STR: 200 - 275
+- DEX: 115 - 125
+- INT: 200 - 275
+- Hits: 1900 - 2100
+- Damage: 10 - 23
 - Fame/Karma: 5000 / -5000
 
 ## Resistances

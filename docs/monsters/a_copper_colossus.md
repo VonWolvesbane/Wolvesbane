@@ -8,11 +8,11 @@ title: a copper colossus
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
-- Damage: Unknown
+- STR: 226 - 255
+- DEX: 126 - 145
+- INT: 71 - 92
+- Hits: 236 - 353
+- Damage: 12 - 18
 - Fame/Karma: 4800 / -4800
 
 ## Resistances

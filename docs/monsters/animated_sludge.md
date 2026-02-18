@@ -10,7 +10,7 @@ title: animated sludge
 ## Stats
 - STR: 161 - 170
 - DEX: 161 - 170
-- INT: Unknown
+- INT: 110
 - Hits: Unknown
 - Damage: 13 - 19
 - Fame/Karma: 1000 / -1000

@@ -8,10 +8,10 @@ title: Malacoda
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
+- STR: 8400
+- DEX: 8400
+- INT: 8400
+- Hits: 850000
 - Damage: 150 - 200
 - Fame/Karma: 15000 / -15000
 

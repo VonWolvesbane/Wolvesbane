@@ -8,10 +8,10 @@ title: an ethie wyrm
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
+- STR: 1000
+- DEX: 1000
+- INT: 4000
+- Hits: 200000
 - Damage: 150 - 150
 - Fame/Karma: 22500 / -22500
 

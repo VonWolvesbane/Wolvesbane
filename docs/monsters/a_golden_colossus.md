@@ -8,11 +8,11 @@ title: a golden colossus
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
-- Damage: Unknown
+- STR: 226 - 255
+- DEX: 126 - 145
+- INT: 71 - 92
+- Hits: 236 - 353
+- Damage: 14 - 19
 - Fame/Karma: 3500 / -3500
 
 ## Resistances

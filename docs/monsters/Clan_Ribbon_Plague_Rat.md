@@ -8,10 +8,10 @@ title: Clan Ribbon Plague Rat
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
+- STR: 59
+- DEX: 51
+- INT: 17
+- Hits: 92
 - Damage: 4 - 8
 - Fame/Karma: 150 / -150
 

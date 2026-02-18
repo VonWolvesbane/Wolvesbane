@@ -8,11 +8,11 @@ title: Hippolyte
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
-- Damage: Unknown
+- STR: 600 - 700
+- DEX: 200 - 300
+- INT: 51 - 65
+- Hits: 500 - 700
+- Damage: 30 - 50
 - Fame/Karma: 1000 / -1000
 
 ## Resistances

@@ -8,10 +8,10 @@ title: a plague beast lord
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
+- STR: 500
+- DEX: 100
+- INT: 30
+- Hits: 1800
 - Damage: 20 - 25
 - Fame/Karma: 2000 / -2000
 

@@ -8,11 +8,11 @@ title: a blood storm
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
-- Damage: Unknown
+- STR: 263 - 308
+- DEX: 33 - 43
+- INT: 113 - 175
+- Hits: 158 - 185
+- Damage: 9 - 14
 - Fame/Karma: 6250 / -6250
 
 ## Resistances

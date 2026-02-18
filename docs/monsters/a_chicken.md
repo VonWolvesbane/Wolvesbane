@@ -8,11 +8,11 @@ title: a chicken
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
-- Damage: Unknown
+- STR: 5
+- DEX: 15
+- INT: 5
+- Hits: 3
+- Damage: 1
 - Fame/Karma: 150 / 0
 
 ## Resistances

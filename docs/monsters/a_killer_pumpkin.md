@@ -8,10 +8,10 @@ title: a killer pumpkin
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
+- STR: 350
+- DEX: 125
+- INT: 250
+- Hits: 500
 - Damage: 10 - 15
 - Fame/Karma: 5000 / -5000
 

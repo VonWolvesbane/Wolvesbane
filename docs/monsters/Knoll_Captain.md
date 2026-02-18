@@ -8,10 +8,10 @@ title: Knoll Captain
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
+- STR: 10000
+- DEX: 10000
+- INT: 10000
+- Hits: 500000
 - Damage: 200 - 250
 - Fame/Karma: 15000 / -15000
 

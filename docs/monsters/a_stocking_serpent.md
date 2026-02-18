@@ -8,10 +8,10 @@ title: a stocking serpent
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
+- STR: 800
+- DEX: 150
+- INT: 1200
+- Hits: 8000
 - Damage: 22 - 29
 - Fame/Karma: 12000 / -12000
 

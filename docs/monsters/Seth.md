@@ -8,11 +8,11 @@ title: Seth
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
-- Damage: Unknown
+- STR: 666
+- DEX: 666
+- INT: 666
+- Hits: 7500
+- Damage: 666
 - Fame/Karma: -1000 / -1000
 
 ## Resistances

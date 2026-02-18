@@ -8,11 +8,11 @@ title: a mechanical black widow
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
-- Damage: Unknown
+- STR: 280 - 500
+- DEX: 216 - 515
+- INT: 236 - 360
+- Hits: 1146 - 2150
+- Damage: 215 - 420
 - Fame/Karma: 12000 / -12000
 
 ## Resistances

@@ -12,7 +12,7 @@ title: a myrmidex larvae
 - DEX: 82 - 95
 - INT: 38 - 75
 - Hits: 446 - 588
-- Damage: Unknown
+- Damage: 5 - 13
 - Fame/Karma: 2500 / -2500
 
 ## Resistances

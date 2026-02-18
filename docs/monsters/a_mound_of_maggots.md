@@ -10,7 +10,7 @@ title: a mound of maggots
 ## Stats
 - STR: 61 - 70
 - DEX: 61 - 70
-- INT: Unknown
+- INT: 10
 - Hits: Unknown
 - Damage: 3 - 9
 - Fame/Karma: 1000 / -1000

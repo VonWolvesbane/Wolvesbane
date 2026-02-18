@@ -8,10 +8,10 @@ title: Hephastos
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
+- STR: 6660
+- DEX: 6660
+- INT: 6660
+- Hits: 666666
 - Damage: 150 - 666
 - Fame/Karma: Unknown / Unknown
 

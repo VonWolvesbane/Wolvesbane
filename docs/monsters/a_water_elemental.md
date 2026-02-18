@@ -8,10 +8,10 @@ title: a water elemental
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
+- STR: 200
+- DEX: 70
+- INT: 100
+- Hits: 165
 - Damage: 12 - 16
 - Fame/Karma: Unknown / Unknown
 

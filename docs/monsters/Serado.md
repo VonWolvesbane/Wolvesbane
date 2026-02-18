@@ -8,10 +8,10 @@ title: Serado
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
+- STR: 1000
+- DEX: 150
+- INT: 300
+- Hits: 9000
 - Damage: 29 - 35
 - Fame/Karma: 22500 / -22500
 

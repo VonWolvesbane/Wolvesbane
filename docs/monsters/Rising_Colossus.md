@@ -8,9 +8,9 @@ title: Rising Colossus
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
+- STR: 600
+- DEX: 70
+- INT: 80
 - Hits: Unknown
 - Damage: 18 - 21
 - Fame/Karma: Unknown / Unknown

@@ -9,7 +9,7 @@ title: a plague spawn
 
 ## Stats
 - STR: 201 - 300
-- DEX: Unknown
+- DEX: 80
 - INT: 16 - 20
 - Hits: 121 - 180
 - Damage: 11 - 17

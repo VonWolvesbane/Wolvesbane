@@ -8,11 +8,11 @@ title: Megami Tensei
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
-- Damage: Unknown
+- STR: 6500
+- DEX: 3500
+- INT: 1500
+- Hits: 100000
+- Damage: 150
 - Fame/Karma: -1000 / -1000
 
 ## Resistances

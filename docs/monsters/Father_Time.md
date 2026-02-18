@@ -8,11 +8,11 @@ title: Father Time
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
-- Damage: Unknown
+- STR: 8000
+- DEX: 6000
+- INT: 4000
+- Hits: 750000
+- Damage: 150 - 200
 - Fame/Karma: 15000 / -15000
 
 ## Resistances

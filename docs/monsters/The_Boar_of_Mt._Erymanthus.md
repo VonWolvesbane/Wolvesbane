@@ -8,11 +8,11 @@ title: The Boar of Mt. Erymanthus
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
-- Damage: Unknown
+- STR: 250
+- DEX: 150
+- INT: 50
+- Hits: 3500
+- Damage: 30 - 60
 - Fame/Karma: 0 / -20000
 
 ## Resistances

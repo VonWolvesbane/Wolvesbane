@@ -8,11 +8,11 @@ title: A Crystal Golem
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
-- Damage: Unknown
+- STR: 500
+- DEX: 250
+- INT: 500
+- Hits: 2500
+- Damage: 1 - 50
 - Fame/Karma: 1 / 1
 
 ## Resistances

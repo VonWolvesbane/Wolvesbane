@@ -8,11 +8,11 @@ title: A Huge Snake
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
-- Damage: Unknown
+- STR: 2500 - 4500
+- DEX: 500 - 800
+- INT: 66 - 85
+- Hits: 5000 - 7000
+- Damage: 30 - 40
 - Fame/Karma: 2500 / -2500
 
 ## Resistances

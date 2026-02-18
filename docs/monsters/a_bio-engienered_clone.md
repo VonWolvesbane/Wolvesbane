@@ -8,9 +8,9 @@ title: a bio-engienered clone
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
+- STR: 1
+- DEX: 1
+- INT: 1
 - Hits: Unknown
 - Damage: Unknown
 - Fame/Karma: 0 / 0

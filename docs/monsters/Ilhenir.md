@@ -11,7 +11,7 @@ title: Ilhenir
 - STR: 1105 - 1350
 - DEX: 82 - 160
 - INT: 505 - 750
-- Hits: Unknown
+- Hits: 9000
 - Damage: 21 - 28
 - Fame/Karma: 24000 / -24000
 

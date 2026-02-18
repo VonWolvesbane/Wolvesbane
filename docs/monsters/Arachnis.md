@@ -8,11 +8,11 @@ title: Arachnis
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
-- Damage: Unknown
+- STR: 5000 - 7500
+- DEX: 3000 - 5000
+- INT: 1000 - 2500
+- Hits: 150000 - 250000
+- Damage: 45 - 55
 - Fame/Karma: 40000 / -45000
 
 ## Resistances

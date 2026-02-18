@@ -8,11 +8,11 @@ title: a sea storm
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
-- Damage: Unknown
+- STR: 63 - 78
+- DEX: 33 - 43
+- INT: 51 - 63
+- Hits: 38 - 47
+- Damage: 4 - 10
 - Fame/Karma: 2250 / -2250
 
 ## Resistances

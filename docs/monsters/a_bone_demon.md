@@ -8,10 +8,10 @@ title: a bone demon
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
+- STR: 1000
 - DEX: 151 - 175
 - INT: 171 - 220
-- Hits: Unknown
+- Hits: 3600
 - Damage: 34 - 36
 - Fame/Karma: 20000 / -20000
 

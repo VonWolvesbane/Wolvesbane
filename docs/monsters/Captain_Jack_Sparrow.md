@@ -8,11 +8,11 @@ title: Captain Jack Sparrow
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
-- Damage: Unknown
+- STR: 351 - 400
+- DEX: 151 - 165
+- INT: 76 - 100
+- Hits: 2200 - 2500
+- Damage: 15 - 25
 - Fame/Karma: 10000 / -10000
 
 ## Resistances

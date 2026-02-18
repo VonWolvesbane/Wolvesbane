@@ -9,7 +9,7 @@ title: a soulbound pirate captain
 
 ## Stats
 - STR: 150 - 200
-- DEX: Unknown
+- DEX: 150
 - INT: 95 - 110
 - Hits: 450 - 600
 - Damage: 20 - 28
@@ -23,4 +23,4 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: 1, , 1, 1, , Utility.RandomNeutralHue(), 
+- Items: 1, , 1, 1, , Utility.RandomNeutralHue(, 

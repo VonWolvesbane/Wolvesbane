@@ -11,7 +11,7 @@ title: a headless elf
 - STR: 700 - 800
 - DEX: 90 - 100
 - INT: 450 - 500
-- Hits: Unknown
+- Hits: 8000
 - Damage: 21 - 27
 - Fame/Karma: 12000 / -12000
 

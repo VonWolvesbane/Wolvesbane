@@ -8,10 +8,10 @@ title: You Scared?
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
+- STR: 2500
+- DEX: 2000
+- INT: 5000
+- Hits: 2500000
 - Damage: 150 - 200
 - Fame/Karma: 20000 / -20000
 

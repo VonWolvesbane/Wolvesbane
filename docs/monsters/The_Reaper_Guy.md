@@ -8,10 +8,10 @@ title: The Reaper Guy
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
+- STR: 380
+- DEX: 110
+- INT: 100
+- Hits: 800 - 1200
 - Damage: 12 - 25
 - Fame/Karma: 240000 / -240000
 

@@ -11,7 +11,7 @@ title: Medusa
 - STR: 1235 - 1391
 - DEX: 128 - 139
 - INT: 537 - 664
-- Hits: Unknown
+- Hits: 60000
 - Damage: 21 - 28
 - Fame/Karma: 22000 / -22000
 

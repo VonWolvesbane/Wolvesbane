@@ -11,7 +11,7 @@ title: a fleshrenderer
 - STR: 401 - 460
 - DEX: 201 - 210
 - INT: 221 - 260
-- Hits: Unknown
+- Hits: 4500
 - Damage: 16 - 20
 - Fame/Karma: 23000 / -23000
 

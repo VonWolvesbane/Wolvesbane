@@ -11,7 +11,7 @@ title: Bexil
 - STR: Unknown
 - DEX: Unknown
 - INT: Unknown
-- Hits: Unknown
+- Hits: 1000000
 - Damage: Unknown
 - Fame/Karma: Unknown / Unknown
 

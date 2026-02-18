@@ -8,10 +8,10 @@ title: a goat
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
+- STR: 19
+- DEX: 15
+- INT: 5
+- Hits: 12
 - Damage: 3 - 4
 - Fame/Karma: 150 / 0
 

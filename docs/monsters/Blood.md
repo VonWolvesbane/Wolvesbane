@@ -11,7 +11,7 @@ title: Blood
 - STR: 220 - 286
 - DEX: 125 - 130
 - INT: 100 - 101
-- Hits: Unknown
+- Hits: 130
 - Damage: 8 - 18
 - Fame/Karma: 300 / -300
 

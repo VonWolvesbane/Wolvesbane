@@ -8,10 +8,10 @@ title: a pig
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
+- STR: 20
+- DEX: 20
+- INT: 5
+- Hits: 12
 - Damage: 2 - 4
 - Fame/Karma: 150 / 0
 

@@ -11,7 +11,7 @@ title: a pack rat
 - STR: 52 - 80
 - DEX: 36 - 55
 - INT: 16 - 30
-- Hits: Unknown
+- Hits: 50
 - Damage: 2 - 6
 - Fame/Karma: 0 / 200
 

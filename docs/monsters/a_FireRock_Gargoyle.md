@@ -8,11 +8,11 @@ title: a FireRock Gargoyle
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
-- Damage: Unknown
+- STR: 351 - 400
+- DEX: 126 - 145
+- INT: 226 - 250
+- Hits: 211 - 240
+- Damage: 11 - 17
 - Fame/Karma: 10000 / -10000
 
 ## Resistances

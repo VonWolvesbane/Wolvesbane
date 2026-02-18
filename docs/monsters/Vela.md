@@ -8,9 +8,9 @@ title: Vela
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
+- STR: 110
+- DEX: 100
+- INT: 1000
 - Hits: Unknown
 - Damage: Unknown
 - Fame/Karma: Unknown / Unknown

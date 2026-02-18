@@ -8,11 +8,11 @@ title: a shadow iron colossus
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
-- Damage: Unknown
+- STR: 226 - 255
+- DEX: 126 - 145
+- INT: 71 - 92
+- Hits: 136 - 153
+- Damage: 12 - 18
 - Fame/Karma: 4500 / -4500
 
 ## Resistances

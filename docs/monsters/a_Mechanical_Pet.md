@@ -9,10 +9,10 @@ title: a Mechanical Pet
 
 ## Stats
 - STR: 496 - 525
-- DEX: Unknown
-- INT: Unknown
+- DEX: 156 - 225
+- INT: 250 - 280
 - Hits: 300 - 310
-- Damage: Unknown
+- Damage: 21 - 25
 - Fame/Karma: 14000 / -14000
 
 ## Resistances

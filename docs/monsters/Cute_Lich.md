@@ -8,10 +8,10 @@ title: Cute Lich
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
+- STR: 800
+- DEX: 900
+- INT: 900
+- Hits: 80000
 - Damage: 60 - 400
 - Fame/Karma: 4000 / -4000
 

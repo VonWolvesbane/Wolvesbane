@@ -8,11 +8,11 @@ title: a vorpal bunny
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
-- Damage: Unknown
+- STR: 15
+- DEX: 2000
+- INT: 1000
+- Hits: 2000
+- Damage: 1
 - Fame/Karma: 1000 / 0
 
 ## Resistances

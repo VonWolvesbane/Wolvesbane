@@ -12,7 +12,7 @@ title: a greater phoenix
 - DEX: 97 - 113
 - INT: 182 - 258
 - Hits: 119 - 240
-- Damage: Unknown
+- Damage: 11 - 14
 - Fame/Karma: 10000 / -10000
 
 ## Resistances

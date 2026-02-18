@@ -8,11 +8,11 @@ title: an enslaved minion
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
-- Damage: Unknown
+- STR: 90 - 110
+- DEX: 90 - 110
+- INT: 60 - 80
+- Hits: 250 - 300
+- Damage: 15 - 22
 - Fame/Karma: Unknown / Unknown
 
 ## Resistances

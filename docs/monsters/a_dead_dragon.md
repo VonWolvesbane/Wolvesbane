@@ -8,10 +8,10 @@ title: a dead dragon
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
+- STR: 1000
+- DEX: 1000
+- INT: 4000
+- Hits: 200000
 - Damage: 100 - 100
 - Fame/Karma: 22500 / -22500
 

@@ -8,11 +8,11 @@ title: a master of the arts
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
-- Damage: Unknown
+- STR: 401 - 420
+- DEX: 81 - 90
+- INT: 201 - 220
+- Hits: 1500 - 1700
+- Damage: 50 - 60
 - Fame/Karma: 30000 / -30000
 
 ## Resistances

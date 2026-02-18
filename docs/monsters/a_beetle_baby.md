@@ -8,11 +8,11 @@ title: a beetle baby
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
-- Damage: Unknown
+- STR: 95 - 115
+- DEX: 55 - 100
+- INT: 15 - 35
+- Hits: 75 - 150
+- Damage: 5 - 8
 - Fame/Karma: 300 / -300
 
 ## Resistances

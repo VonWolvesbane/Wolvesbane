@@ -8,11 +8,11 @@ title: Wildebeest
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
-- Damage: Unknown
+- STR: 500 - 600
+- DEX: 2500 - 2600
+- INT: 1500 - 1600
+- Hits: 50000
+- Damage: 100 - 500
 - Fame/Karma: 22500 / -22500
 
 ## Resistances

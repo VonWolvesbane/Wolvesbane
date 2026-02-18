@@ -11,7 +11,7 @@ title: osiredon the scalis enforcer
 - STR: 805 - 900
 - DEX: 121 - 165
 - INT: 125 - 137
-- Hits: Unknown
+- Hits: 75000
 - Damage: 19 - 26
 - Fame/Karma: 25000 / -25000
 

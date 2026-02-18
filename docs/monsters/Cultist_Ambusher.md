@@ -9,7 +9,7 @@ title: Cultist Ambusher
 
 ## Stats
 - STR: 150 - 200
-- DEX: Unknown
+- DEX: 150
 - INT: 25 - 44
 - Hits: 500 - 1000
 - Damage: 8 - 18

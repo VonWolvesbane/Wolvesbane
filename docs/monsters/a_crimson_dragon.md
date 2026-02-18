@@ -11,7 +11,7 @@ title: a crimson dragon
 - STR: 2034 - 2140
 - DEX: 215 - 256
 - INT: 1025 - 1116
-- Hits: Unknown
+- Hits: 25000
 - Damage: 8 - 10
 - Fame/Karma: 20000 / -20000
 

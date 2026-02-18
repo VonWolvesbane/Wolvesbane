@@ -11,7 +11,7 @@ title: jack in the box
 - STR: 200 - 300
 - DEX: 150 - 200
 - INT: 700 - 800
-- Hits: Unknown
+- Hits: 8000
 - Damage: 21 - 27
 - Fame/Karma: 12000 / -12000
 

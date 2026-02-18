@@ -8,10 +8,10 @@ title: a jack rabbit
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
+- STR: 15
+- DEX: 25
+- INT: 5
+- Hits: 9
 - Damage: 1 - 2
 - Fame/Karma: 150 / 0
 

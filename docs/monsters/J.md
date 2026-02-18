@@ -8,10 +8,10 @@ title: J
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
+- STR: 800
+- DEX: 1500
+- INT: 30000
+- Hits: 1000000
 - Damage: 50 - 50
 - Fame/Karma: 10000 / -10000
 

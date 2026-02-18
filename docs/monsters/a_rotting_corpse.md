@@ -9,9 +9,9 @@ title: a rotting corpse
 
 ## Stats
 - STR: 301 - 350
-- DEX: Unknown
+- DEX: 75
 - INT: 151 - 200
-- Hits: Unknown
+- Hits: 1200
 - Damage: 8 - 10
 - Fame/Karma: 6000 / -6000
 

@@ -8,10 +8,10 @@ title: Cute Bone Knight
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
+- STR: 800
+- DEX: 900
 - INT: Unknown
-- Hits: Unknown
+- Hits: 80000
 - Damage: 60 - 90
 - Fame/Karma: 3000 / -3000
 

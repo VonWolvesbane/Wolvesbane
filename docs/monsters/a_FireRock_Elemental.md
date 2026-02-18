@@ -12,7 +12,7 @@ title: a FireRock Elemental
 - DEX: 226 - 245
 - INT: 171 - 192
 - Hits: 1000 - 1150
-- Damage: Unknown
+- Damage: 28
 - Fame/Karma: 3500 / -3500
 
 ## Resistances

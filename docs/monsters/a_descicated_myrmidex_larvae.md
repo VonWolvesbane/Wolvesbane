@@ -12,7 +12,7 @@ title: a descicated myrmidex larvae
 - DEX: 80 - 95
 - INT: 15 - 25
 - Hits: 446 - 588
-- Damage: Unknown
+- Damage: 5 - 10
 - Fame/Karma: 2500 / -2500
 
 ## Resistances

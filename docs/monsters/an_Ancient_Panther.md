@@ -9,9 +9,9 @@ title: an Ancient Panther
 
 ## Stats
 - STR: 400 - 700
-- DEX: Unknown
+- DEX: 400
 - INT: 140 - 155
-- Hits: Unknown
+- Hits: 700
 - Damage: 25 - 35
 - Fame/Karma: 300 / -159
 

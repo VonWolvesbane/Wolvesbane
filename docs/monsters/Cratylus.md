@@ -8,11 +8,11 @@ title: Cratylus
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
-- Damage: Unknown
+- STR: 3000
+- DEX: 2000
+- INT: 4000
+- Hits: 60000
+- Damage: 60 - 85
 - Fame/Karma: 15000 / -15000
 
 ## Resistances

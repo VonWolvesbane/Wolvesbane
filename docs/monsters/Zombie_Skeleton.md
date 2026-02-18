@@ -8,10 +8,10 @@ title: Zombie Skeleton
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
+- STR: 500
+- DEX: 500
+- INT: 500
+- Hits: 2500
 - Damage: 8 - 18
 - Fame/Karma: 1000 / -1000
 

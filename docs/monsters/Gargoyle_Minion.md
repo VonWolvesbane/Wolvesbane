@@ -9,10 +9,10 @@ title: Gargoyle Minion
 
 ## Stats
 - STR: 300 - 500
-- DEX: Unknown
-- INT: Unknown
+- DEX: 300 - 500
+- INT: 500 - 600
 - Hits: 2000 - 3000
-- Damage: Unknown
+- Damage: 150 - 200
 - Fame/Karma: 12000 / -12000
 
 ## Resistances

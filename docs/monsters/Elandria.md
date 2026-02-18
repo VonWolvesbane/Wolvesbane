@@ -8,11 +8,11 @@ title: Elandria
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
-- Damage: Unknown
+- STR: 253 - 400
+- DEX: 157 - 850
+- INT: 503 - 800
+- Hits: 900
+- Damage: 27 - 38
 - Fame/Karma: 20000 / 20000
 
 ## Resistances

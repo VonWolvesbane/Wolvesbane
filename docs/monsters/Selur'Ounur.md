@@ -8,11 +8,11 @@ title: Selur'Ounur
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
-- Damage: Unknown
+- STR: 1096 - 1185
+- DEX: 186 - 225
+- INT: 686 - 775
+- Hits: 9658 - 11711
+- Damage: 29 - 35
 - Fame/Karma: 22500 / -22500
 
 ## Resistances

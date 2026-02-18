@@ -8,10 +8,10 @@ title: a twisted holidy tree
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
+- STR: 400
+- DEX: 150
+- INT: 1200
+- Hits: 8000
 - Damage: 21 - 27
 - Fame/Karma: 12000 / -12000
 

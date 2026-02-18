@@ -9,10 +9,10 @@ title: Platinum Gargoyle Minion
 
 ## Stats
 - STR: 700 - 1000
-- DEX: Unknown
-- INT: Unknown
+- DEX: 500 - 1000
+- INT: 800 - 1600
 - Hits: 8000 - 120000
-- Damage: Unknown
+- Damage: 400 - 800
 - Fame/Karma: 12000 / -12000
 
 ## Resistances

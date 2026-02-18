@@ -8,10 +8,10 @@ title: a white dragon
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
+- STR: 800
+- DEX: 800
+- INT: 800
+- Hits: 120000
 - Damage: 75 - 75
 - Fame/Karma: 15000 / -15000
 

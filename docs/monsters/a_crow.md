@@ -8,11 +8,11 @@ title: a crow
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
+- STR: 10
 - DEX: 25 - 35
-- INT: Unknown
+- INT: 10
 - Hits: Unknown
-- Damage: Unknown
+- Damage: 0
 - Fame/Karma: 150 / 0
 
 ## Resistances

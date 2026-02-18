@@ -9,7 +9,7 @@ title: a fierce dragon
 
 ## Stats
 - STR: 6000 - 6020
-- DEX: Unknown
+- DEX: 0
 - INT: 850 - 870
 - Hits: Unknown
 - Damage: 50 - 80

@@ -8,11 +8,11 @@ title: an ancient reaper
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
-- Damage: Unknown
+- STR: 150 - 375
+- DEX: 100 - 175
+- INT: 101 - 250
+- Hits: 1500 - 1850
+- Damage: 20 - 43
 - Fame/Karma: 3500 / -3500
 
 ## Resistances

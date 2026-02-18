@@ -8,11 +8,11 @@ title: a thunder wyrm
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
-- Damage: Unknown
+- STR: 721 - 760
+- DEX: 101 - 130
+- INT: 386 - 425
+- Hits: 7200 - 7456
+- Damage: 19 - 29
 - Fame/Karma: 18000 / -18000
 
 ## Resistances

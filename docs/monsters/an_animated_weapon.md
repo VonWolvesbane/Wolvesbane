@@ -10,7 +10,7 @@ title: an animated weapon
 ## Stats
 - STR: Unknown
 - DEX: Unknown
-- INT: Unknown
+- INT: 10
 - Hits: Unknown
 - Damage: 14 - 18
 - Fame/Karma: 0 / 0

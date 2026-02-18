@@ -8,11 +8,11 @@ title: Mondain
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
-- Damage: Unknown
+- STR: 200
+- DEX: 200
+- INT: 200
+- Hits: 15000
+- Damage: 35
 - Fame/Karma: 12000 / 12000
 
 ## Resistances

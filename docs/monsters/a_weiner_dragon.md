@@ -8,10 +8,10 @@ title: a weiner dragon
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
+- STR: 650
+- DEX: 650
+- INT: 650
+- Hits: 80000
 - Damage: 32 - 60
 - Fame/Karma: 15000 / -15000
 

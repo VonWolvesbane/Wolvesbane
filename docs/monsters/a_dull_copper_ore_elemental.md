@@ -8,11 +8,11 @@ title: a dull copper ore elemental
 **No Photo Available**
 
 ## Stats
-- STR: 270 - 320
-- DEX: 220 - 240
-- INT: 170 - 180
-- Hits: 220 - 240
-- Damage: 65 - 70
+- STR: 150 - 200
+- DEX: 100 - 120
+- INT: 50 - 60
+- Hits: 100 - 120
+- Damage: 5 - 10
 - Fame/Karma: 500 / -500
 
 ## Resistances

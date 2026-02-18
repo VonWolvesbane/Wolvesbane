@@ -8,11 +8,11 @@ title: A Mutated Elf
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
-- Damage: Unknown
+- STR: 767 - 945
+- DEX: 206 - 275
+- INT: 456 - 470
+- Hits: 1476 - 1552
+- Damage: 20 - 25
 - Fame/Karma: 15000 / -15000
 
 ## Resistances

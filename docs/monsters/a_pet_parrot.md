@@ -10,7 +10,7 @@ title: a pet parrot
 ## Stats
 - STR: 1 - 5
 - DEX: 25 - 30
-- INT: Unknown
+- INT: 2
 - Hits: Unknown
 - Damage: Unknown
 - Fame/Karma: Unknown / Unknown

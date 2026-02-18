@@ -8,11 +8,11 @@ title: an ice storm
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
-- Damage: Unknown
+- STR: 78 - 93
+- DEX: 48 - 58
+- INT: 88 - 96
+- Hits: 47 - 56
+- Damage: 5 - 11
 - Fame/Karma: 2000 / -2000
 
 ## Resistances

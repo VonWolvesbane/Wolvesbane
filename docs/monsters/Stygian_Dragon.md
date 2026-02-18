@@ -8,10 +8,10 @@ title: Stygian Dragon
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
+- STR: 702
+- DEX: 250
+- INT: 180
+- Hits: 30000
 - Damage: 33 - 55
 - Fame/Karma: 15000 / -15000
 

@@ -8,10 +8,10 @@ title: Knoll
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
+- STR: 5000
+- DEX: 5000
+- INT: 5000
+- Hits: 50000
 - Damage: 15 - 75
 - Fame/Karma: 15000 / -15000
 

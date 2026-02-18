@@ -8,11 +8,11 @@ title: A Were Wolf
 **No Photo Available**
 
 ## Stats
-- STR: 586 - 700
-- DEX: Unknown
-- INT: Unknown
+- STR: 386 - 500
+- DEX: 481 - 595
+- INT: 861 - 975
 - Hits: Unknown
-- Damage: 50 - 67
+- Damage: 25 - 43
 - Fame/Karma: 2500 / -2500
 
 ## Resistances

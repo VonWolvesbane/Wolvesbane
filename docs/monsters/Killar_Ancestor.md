@@ -8,11 +8,11 @@ title: Killar Ancestor
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
-- Damage: Unknown
+- STR: 1800
+- DEX: 1510 - 1750
+- INT: 1710 - 2200
+- Hits: 1500
+- Damage: 34 - 36
 - Fame/Karma: 0 / -20000
 
 ## Resistances

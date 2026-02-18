@@ -8,10 +8,10 @@ title: jack
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
+- STR: 500
+- DEX: 200
+- INT: 1200
+- Hits: 26000
 - Damage: 22 - 26
 - Fame/Karma: 12000 / -12000
 

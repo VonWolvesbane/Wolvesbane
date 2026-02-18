@@ -8,10 +8,10 @@ title: Cute Skeletal Knight
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
+- STR: 1000
+- DEX: 1200
+- INT: 4000
+- Hits: 250000
 - Damage: 75 - 110
 - Fame/Karma: 10000 / -10000
 

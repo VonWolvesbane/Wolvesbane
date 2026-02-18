@@ -8,11 +8,11 @@ title: a Spider Servent
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
-- Damage: Unknown
+- STR: 1750 - 2000
+- DEX: 1500 - 1750
+- INT: 1060 - 1250
+- Hits: 11000 - 16000
+- Damage: 50 - 55
 - Fame/Karma: 6000 / -6000
 
 ## Resistances

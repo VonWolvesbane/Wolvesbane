@@ -9,8 +9,8 @@ title: a squirrel
 
 ## Stats
 - STR: 44 - 50
-- DEX: Unknown
-- INT: Unknown
+- DEX: 35
+- INT: 5
 - Hits: 42 - 50
 - Damage: 1 - 2
 - Fame/Karma: Unknown / Unknown

@@ -8,10 +8,10 @@ title: a cow
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
+- STR: 30
+- DEX: 15
+- INT: 5
+- Hits: 18
 - Damage: 1 - 4
 - Fame/Karma: 300 / 0
 

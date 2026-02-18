@@ -8,10 +8,10 @@ title: The Ultra Harrower
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
+- STR: 1000
+- DEX: 150
+- INT: 1000
+- Hits: 1000000
 - Damage: 40 - 50
 - Fame/Karma: 22500 / -22500
 

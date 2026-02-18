@@ -8,11 +8,11 @@ title: a ronin
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
-- Damage: Unknown
+- STR: 326 - 375
+- DEX: 31 - 45
+- INT: 101 - 110
+- Hits: 301 - 400
+- Damage: 17 - 25
 - Fame/Karma: 8500 / -8500
 
 ## Resistances

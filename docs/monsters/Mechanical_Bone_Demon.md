@@ -9,10 +9,10 @@ title: Mechanical Bone Demon
 
 ## Stats
 - STR: 620 - 925
-- DEX: Unknown
-- INT: Unknown
+- DEX: 556 - 725
+- INT: 450 - 880
 - Hits: 3000 - 4000
-- Damage: Unknown
+- Damage: 521 - 2225
 - Fame/Karma: 12000 / -12000
 
 ## Resistances

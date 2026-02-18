@@ -8,11 +8,11 @@ title: Sataness
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
-- Damage: Unknown
+- STR: 5000
+- DEX: 3000
+- INT: 4000
+- Hits: 260000
+- Damage: 30 - 35
 - Fame/Karma: 15000 / -15000
 
 ## Resistances

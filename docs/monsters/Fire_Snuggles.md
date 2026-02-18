@@ -8,10 +8,10 @@ title: Fire Snuggles
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
+- STR: 1500
+- DEX: 2000
+- INT: 2000
+- Hits: 1500000
 - Damage: 200 - 200
 - Fame/Karma: 22500 / -22500
 

@@ -11,7 +11,7 @@ title: Night Terror
 - STR: 385 - 467
 - DEX: 40 - 70
 - INT: 600 - 800
-- Hits: Unknown
+- Hits: 50000
 - Damage: 10 - 23
 - Fame/Karma: 8000 / -8000
 

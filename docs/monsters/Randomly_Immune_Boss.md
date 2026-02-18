@@ -11,7 +11,7 @@ title: Randomly Immune Boss
 - STR: 800 - 1000
 - DEX: 150 - 200
 - INT: 300 - 400
-- Hits: Unknown
+- Hits: 5000
 - Damage: 20 - 30
 - Fame/Karma: 15000 / -15000
 

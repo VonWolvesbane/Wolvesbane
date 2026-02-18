@@ -8,11 +8,11 @@ title: An Easter bunny
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
+- STR: 450
 - DEX: 2100 - 3000
 - INT: 1000 - 2000
-- Hits: Unknown
-- Damage: Unknown
+- Hits: 300000
+- Damage: 150
 - Fame/Karma: 1000 / 0
 
 ## Resistances

@@ -8,11 +8,11 @@ title: The Stag of Arcadia
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
-- Damage: Unknown
+- STR: 120 - 125
+- DEX: 70 - 77
+- INT: 130 - 150
+- Hits: 3000 - 4000
+- Damage: 25 - 35
 - Fame/Karma: 0 / -20000
 
 ## Resistances

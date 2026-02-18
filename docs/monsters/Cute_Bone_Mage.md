@@ -8,10 +8,10 @@ title: Cute Bone Mage
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
+- STR: 800
+- DEX: 900
+- INT: 3000
+- Hits: 80000
 - Damage: 60 - 90
 - Fame/Karma: 4000 / -4000
 

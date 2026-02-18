@@ -8,11 +8,11 @@ title: an energized elemental
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
-- Damage: Unknown
+- STR: 800 - 928
+- DEX: 166 - 185
+- INT: 500 - 750
+- Hits: 1516 - 1869
+- Damage: 38 - 47
 - Fame/Karma: 12500 / -12500
 
 ## Resistances

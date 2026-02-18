@@ -11,7 +11,7 @@ title: Triceratops
 - STR: 1100 - 1300
 - DEX: 150 - 170
 - INT: 280 - 310
-- Hits: Unknown
+- Hits: 1100 - 1200
 - Damage: 21 - 28
 - Fame/Karma: Unknown / Unknown
 

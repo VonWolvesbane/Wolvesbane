@@ -8,10 +8,10 @@ title: a sewer rat
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
+- STR: 9
+- DEX: 25
 - INT: 6 - 10
-- Hits: Unknown
+- Hits: 6
 - Damage: 1 - 2
 - Fame/Karma: 300 / -300
 

@@ -8,11 +8,11 @@ title: an elite ninja
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
-- Damage: Unknown
+- STR: 126 - 225
+- DEX: 81 - 95
+- INT: 151 - 165
+- Hits: 251 - 350
+- Damage: 12 - 20
 - Fame/Karma: 8500 / -8500
 
 ## Resistances

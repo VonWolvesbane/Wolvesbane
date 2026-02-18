@@ -8,11 +8,11 @@ title: Molach
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
-- Damage: Unknown
+- STR: 1000 - 1000
+- DEX: 300 - 300
+- INT: 15000 - 15000
+- Hits: 1500 - 2000
+- Damage: 101 - 105
 - Fame/Karma: 24000 / -24000
 
 ## Resistances

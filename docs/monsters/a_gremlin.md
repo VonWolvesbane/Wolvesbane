@@ -8,10 +8,10 @@ title: a gremlin
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
+- STR: 106
+- DEX: 130
+- INT: 36
+- Hits: 70
 - Damage: 5 - 7
 - Fame/Karma: Unknown / Unknown
 

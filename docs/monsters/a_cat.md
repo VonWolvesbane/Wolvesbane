@@ -8,11 +8,11 @@ title: a cat
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
-- Damage: Unknown
+- STR: 9
+- DEX: 35
+- INT: 5
+- Hits: 6
+- Damage: 1
 - Fame/Karma: 0 / 150
 
 ## Resistances

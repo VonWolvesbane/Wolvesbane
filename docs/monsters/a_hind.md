@@ -12,7 +12,7 @@ title: a hind
 - DEX: 47 - 77
 - INT: 17 - 47
 - Hits: 15 - 29
-- Damage: Unknown
+- Damage: 4
 - Fame/Karma: 300 / 0
 
 ## Resistances

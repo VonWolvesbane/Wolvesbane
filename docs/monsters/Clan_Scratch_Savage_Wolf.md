@@ -8,10 +8,10 @@ title: Clan Scratch Savage Wolf
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
+- STR: 170
+- DEX: 244
+- INT: 57
+- Hits: 65
 - Damage: 8 - 10
 - Fame/Karma: 3400 / -3400
 

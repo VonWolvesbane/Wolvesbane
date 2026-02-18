@@ -8,10 +8,10 @@ title: a wolf pup
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
+- STR: 400
+- DEX: 100
 - INT: 1450 - 1555
-- Hits: Unknown
+- Hits: 200
 - Damage: 15 - 25
 - Fame/Karma: 300 / -159
 

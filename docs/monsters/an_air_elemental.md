@@ -8,10 +8,10 @@ title: an air elemental
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
+- STR: 200
+- DEX: 200
+- INT: 100
+- Hits: 150
 - Damage: 6 - 9
 - Fame/Karma: Unknown / Unknown
 

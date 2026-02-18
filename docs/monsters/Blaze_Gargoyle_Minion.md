@@ -9,10 +9,10 @@ title: Blaze Gargoyle Minion
 
 ## Stats
 - STR: 450 - 675
-- DEX: Unknown
-- INT: Unknown
+- DEX: 456 - 675
+- INT: 750 - 1080
 - Hits: 5000 - 7000
-- Damage: Unknown
+- Damage: 400 - 600
 - Fame/Karma: 12000 / -12000
 
 ## Resistances

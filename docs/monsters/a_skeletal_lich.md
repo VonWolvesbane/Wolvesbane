@@ -8,11 +8,11 @@ title: a skeletal lich
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
-- Damage: Unknown
+- STR: 301 - 350
+- DEX: 75
+- INT: 151 - 200
+- Hits: 1200
+- Damage: 8 - 10
 - Fame/Karma: 6000 / -6000
 
 ## Resistances

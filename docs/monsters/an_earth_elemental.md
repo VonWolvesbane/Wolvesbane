@@ -8,10 +8,10 @@ title: an earth elemental
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
+- STR: 200
+- DEX: 70
+- INT: 70
+- Hits: 180
 - Damage: 14 - 21
 - Fame/Karma: Unknown / Unknown
 

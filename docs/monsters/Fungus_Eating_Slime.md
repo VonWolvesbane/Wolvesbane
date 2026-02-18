@@ -8,11 +8,11 @@ title: Fungus Eating Slime
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
-- Damage: Unknown
+- STR: 500
+- DEX: 500
+- INT: 500
+- Hits: 4500
+- Damage: 30 - 40
 - Fame/Karma: 1 / -1
 
 ## Resistances

@@ -11,7 +11,7 @@ title: a serpentine dragon
 - STR: 111 - 140
 - DEX: 201 - 220
 - INT: 1001 - 1040
-- Hits: Unknown
+- Hits: 480
 - Damage: 5 - 12
 - Fame/Karma: 15000 / 15000
 

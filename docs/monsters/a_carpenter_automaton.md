@@ -8,11 +8,11 @@ title: a carpenter automaton
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
-- Damage: Unknown
+- STR: 32 - 74
+- DEX: 46 - 65
+- INT: 16 - 30
+- Hits: 26 - 39
+- Damage: 4 - 8
 - Fame/Karma: 300 / -300
 
 ## Resistances

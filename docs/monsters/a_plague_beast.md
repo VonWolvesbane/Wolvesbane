@@ -9,7 +9,7 @@ title: a plague beast
 
 ## Stats
 - STR: 302 - 500
-- DEX: Unknown
+- DEX: 80
 - INT: 16 - 20
 - Hits: 318 - 404
 - Damage: 20 - 24

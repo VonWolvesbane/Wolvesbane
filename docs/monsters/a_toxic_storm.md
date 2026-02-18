@@ -8,11 +8,11 @@ title: a toxic storm
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
-- Damage: Unknown
+- STR: 163 - 178
+- DEX: 33 - 43
+- INT: 136 - 148
+- Hits: 98 - 107
+- Damage: 5 - 8
 - Fame/Karma: 5000 / -5000
 
 ## Resistances

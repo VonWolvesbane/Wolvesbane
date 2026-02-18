@@ -8,10 +8,10 @@ title: a gray goblin keeper
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
+- STR: 326
+- DEX: 79
+- INT: 114
+- Hits: 186
 - Damage: 5 - 7
 - Fame/Karma: 1500 / -1500
 

@@ -8,9 +8,9 @@ title: a putrid undead gargoyle
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
+- STR: 525
 - DEX: 120 - 125
-- INT: Unknown
+- INT: 1145
 - Hits: 660 - 665
 - Damage: 21 - 30
 - Fame/Karma: 3500 / -3500

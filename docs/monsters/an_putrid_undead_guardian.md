@@ -8,10 +8,10 @@ title: an putrid undead guardian
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
+- STR: 79
+- DEX: 63
+- INT: 187
+- Hits: 553
 - Damage: 3 - 7
 - Fame/Karma: 3000 / -3000
 

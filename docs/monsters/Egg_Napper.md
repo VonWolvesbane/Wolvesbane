@@ -8,11 +8,11 @@ title: Egg Napper
 **No Photo Available**
 
 ## Stats
-- STR: Unknown
-- DEX: Unknown
-- INT: Unknown
-- Hits: Unknown
-- Damage: Unknown
+- STR: 280 - 360
+- DEX: 150 - 200
+- INT: 200 - 250
+- Hits: 950 - 1600
+- Damage: 15 - 25
 - Fame/Karma: 20000 / -20000
 
 ## Resistances
