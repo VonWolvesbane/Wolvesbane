@@ -6,6 +6,8 @@ banner: /images/default_banner.png
 
 # Tamables
 
+- [A Fairy](A_Fairy.html)
+- [A Leprechaun](A_Leprechaun.html)
 - [A Palomino Pony](A_Palomino_Pony.html)
 - [Aztec Bio Engineer](Aztec_Bio_Engineer.html)
 - [Braveheart](Braveheart.html)
@@ -25,10 +27,12 @@ banner: /images/default_banner.png
 - [Platinum Dragon](Platinum_Dragon.html)
 - [Protector](Protector.html)
 - [Sabertooth Tiger](Sabertooth_Tiger.html)
+- [Scarlet Nimh](Scarlet_Nimh.html)
 - [Sister Lady Medusa](Sister_Lady_Medusa.html)
 - [The Cowardly Lion](The_Cowardly_Lion.html)
 - [The Dragon Lord](The_Dragon_Lord.html)
 - [The Grim Shadow Lord](The_Grim_Shadow_Lord.html)
+- [The Skull Crusher](The_Skull_Crusher.html)
 - [The Tribal Chief](The_Tribal_Chief.html)
 - [The Twister](The_Twister.html)
 - [Undead Skeletal White Tiger](Undead_Skeletal_White_Tiger.html)
