@@ -8,26 +8,16 @@
 
 <body>
 
-    <!-- Top Header Bar -->
-    <header class="site-header">
-
-        <!-- Logo Left -->
-        <div class="logo-container">
-            <a href="{{ '/' | relative_url }}">
-                <img src="{{ '/images/site_logo.png' | relative_url }}" class="site-logo">
-            </a>
-        </div>
-
-        <!-- Site Title (optional) -->
-        <div class="site-title">
-            Wolvesbane Wiki
-        </div>
-
-    </header>
-
-    <!-- Page Banner -->
+    <!-- Banner -->
     <div class="banner-container">
         <img src="{{ page.banner | relative_url }}" class="page-banner">
+    </div>
+
+    <!-- Logo under banner (top-left) -->
+    <div class="logo-wrapper">
+        <a href="{{ '/' | relative_url }}">
+            <img src="{{ '/images/site_logo.png' | relative_url }}" class="site-logo">
+        </a>
     </div>
 
     <div class="page-content">
