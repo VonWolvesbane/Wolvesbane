@@ -1,0 +1,26 @@
+---
+layout: default
+title: a giant turkey
+---
+
+# a giant turkey — Unknown
+
+**No Photo Available**
+
+## Stats
+- STR: 1200 - 1400
+- DEX: 170 - 260
+- INT: 430 - 560
+- Hits: Unknown
+- Damage: 20 - 30
+- Fame/Karma: Unknown / Unknown
+
+## Resistances
+None Listed
+
+## Skills
+None Listed
+
+## Loot
+- Gold: Unknown
+- Items: None Listed

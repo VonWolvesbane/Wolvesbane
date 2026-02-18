@@ -1,0 +1,26 @@
+---
+layout: default
+title: a bloodworm
+---
+
+# a bloodworm — Unknown
+
+**No Photo Available**
+
+## Stats
+- STR: 401 - 473
+- DEX: Unknown
+- INT: 18 - 19
+- Hits: 374 - 422
+- Damage: 11 - 17
+- Fame/Karma: Unknown / Unknown
+
+## Resistances
+None Listed
+
+## Skills
+None Listed
+
+## Loot
+- Gold: Unknown
+- Items: None Listed

@@ -1,0 +1,26 @@
+---
+layout: default
+title: Clan Scratch Scrounger
+---
+
+# Clan Scratch Scrounger — Unknown
+
+**No Photo Available**
+
+## Stats
+- STR: 97 - 100
+- DEX: 98 - 100
+- INT: 45 - 50
+- Hits: Unknown
+- Damage: 4 - 5
+- Fame/Karma: 6500 / -6500
+
+## Resistances
+None Listed
+
+## Skills
+None Listed
+
+## Loot
+- Gold: Unknown
+- Items: 
