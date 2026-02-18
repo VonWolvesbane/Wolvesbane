@@ -23,4 +23,4 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: , , , , Utility.RandomNondyedHue(, , , 
+- Items: Bandana, Kama, Lajatang, LeatherNinjaBelt, LeatherNinjaJacket, LeatherNinjaPants, NinjaTabi, Tessen

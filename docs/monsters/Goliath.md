@@ -23,4 +23,4 @@ None Listed
 
 ## Loot
 - Gold: 11120 - 11130
-- Items: None Listed
+- Items: GargishArmsOfEvolution, GargishChestOfEvolution, GargishKiltOfEvolution, GargishLegsOfEvolution, GargishShieldOfEvolution, GargishWingArmorOfEvolution

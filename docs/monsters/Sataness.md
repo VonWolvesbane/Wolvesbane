@@ -23,4 +23,4 @@ None Listed
 
 ## Loot
 - Gold: 5000 - 15000
-- Items: None Listed
+- Items: SSSash, SSShirt, SSSkirt, SSStaff

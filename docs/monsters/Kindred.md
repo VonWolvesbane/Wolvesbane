@@ -23,4 +23,4 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: None Listed
+- Items: MagesRevenge, MagesRevengeGarg, Rolodex, WitchesArms, WitchesChest, WitchesGloves, WitchesGorget, WitchesHat, WitchesLegs, WitchesSkirt

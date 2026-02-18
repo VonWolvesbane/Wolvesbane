@@ -23,4 +23,4 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items:  500, 1000 
+- Items: GargoylesAxe, GargoylesKnife, GargoylesPickaxe, Gold, LumberjackingProspectorsTool, PersonalStatueDeed, ProspectorsTool

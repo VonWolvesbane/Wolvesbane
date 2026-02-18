@@ -23,4 +23,4 @@ None Listed
 
 ## Loot
 - Gold: 1500 - 3000
-- Items: None Listed
+- Items: Bandage, Boots, FancyShirt, FlowerGarland, HippolytesGirdle, Katana, LongHair, Skirt

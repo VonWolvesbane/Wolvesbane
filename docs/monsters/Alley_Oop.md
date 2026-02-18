@@ -23,4 +23,4 @@ None Listed
 
 ## Loot
 - Gold: 5120 - 5130
-- Items: None Listed
+- Items: CavemanClub, CavemanLoincloth, CavemanNeck, CavemanShirt, Flyswatter

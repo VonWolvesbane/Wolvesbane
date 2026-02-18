@@ -23,4 +23,4 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: 0x599, 0x96F
+- Items: Boots, Cloak

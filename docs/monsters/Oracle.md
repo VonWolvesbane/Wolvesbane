@@ -23,4 +23,4 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: hairHue, 1153, 1153, 1153, 1153
+- Items: LongHair

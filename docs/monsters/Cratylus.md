@@ -23,4 +23,4 @@ None Listed
 
 ## Loot
 - Gold: 5000 - 15000
-- Items: None Listed
+- Items: CratylusArms, CratylusChest, CratylusGloves, CratylusGorget, CratylusLegs

@@ -23,4 +23,4 @@ None Listed
 
 ## Loot
 - Gold: 5000 - 20000
-- Items: None Listed
+- Items: Cloak

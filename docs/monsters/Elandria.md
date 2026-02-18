@@ -23,4 +23,4 @@ None Listed
 
 ## Loot
 - Gold: 1200 - 1500
-- Items: None Listed
+- Items: PixieSwatter

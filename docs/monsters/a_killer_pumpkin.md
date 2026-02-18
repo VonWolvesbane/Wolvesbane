@@ -23,4 +23,4 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: None Listed
+- Items: PaintedDaemonMask, PaintedEvilClownMask, PaintedEvilJesterMask, PaintedPlagueMask, PaintedPorcelainMask, TwilightLantern, WrappedCandy

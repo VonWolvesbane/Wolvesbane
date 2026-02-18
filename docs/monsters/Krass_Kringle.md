@@ -23,4 +23,4 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: None Listed
+- Items: Axe, Broadsword, Club, Cutlass, Dagger, Longsword, RecipeFragment10, Spear

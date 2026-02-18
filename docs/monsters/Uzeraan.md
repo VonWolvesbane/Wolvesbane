@@ -23,4 +23,4 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: 0x4DD, 0x8A5, 0x8A5
+- Items: Robe, Shoes, WizardsHat

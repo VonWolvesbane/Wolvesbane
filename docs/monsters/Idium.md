@@ -23,4 +23,4 @@ None Listed
 
 ## Loot
 - Gold: 11120 - 11130
-- Items: None Listed
+- Items: DragonArmsOfEvolution, DragonChestOfEvolution, DragonGlovesOfEvolution, DragonGorgetOfEvolution, DragonHelmOfEvolution, DragonLegsOfEvolution, OrderShieldOfEvolution

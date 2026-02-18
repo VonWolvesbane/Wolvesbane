@@ -23,4 +23,4 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: 0x51D, 0x51D, , 0x2A
+- Items: FancyShirt, JinBaori, StuddedMempo, ThighBoots

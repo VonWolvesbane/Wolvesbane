@@ -23,4 +23,4 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: , 
+- Items: Apple, Arrow, Bandage, Bow, OrcishBow, Yeast

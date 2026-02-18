@@ -23,4 +23,4 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: , 0x75B, 0x4BF, 0x8FD
+- Items: Backpack, Sandals, Skirt, Tunic

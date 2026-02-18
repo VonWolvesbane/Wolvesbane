@@ -23,4 +23,4 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: 0x711, , 0x483
+- Items: Backpack, Kamishimo, Waraji

@@ -23,4 +23,4 @@ None Listed
 
 ## Loot
 - Gold: 600 - 800
-- Items: None Listed
+- Items: HeadOfMolach, Longsword, Tokens

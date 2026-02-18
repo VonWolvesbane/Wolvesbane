@@ -23,4 +23,4 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: , , , , 
+- Items: ChainHatsuburi, DecorativePlateKabuto, Halberd, LeatherDo, LeatherHiroSode, LeatherJingasa, LeatherSuneate, LightPlateJingasa, Longsword, NoDachi, PlateSuneate, SamuraiTabi, StuddedHaidate, Wakizashi

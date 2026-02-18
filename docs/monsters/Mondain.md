@@ -23,4 +23,4 @@ None Listed
 
 ## Loot
 - Gold: 15000 - 16000
-- Items: None Listed
+- Items: Cloak, Doublet, FancyShirt, HeadOfMondain, PaladinSword, Robe, Sandals

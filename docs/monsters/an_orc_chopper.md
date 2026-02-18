@@ -23,4 +23,4 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: None Listed
+- Items: Arrow, Bandage, BeverageBottle, Board, ExecutionersAxe, Jug, Lockpick, Log, Ribs, Shaft, Yeast

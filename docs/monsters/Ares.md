@@ -23,4 +23,4 @@ None Listed
 
 ## Loot
 - Gold: 1000 - 2000
-- Items: None Listed
+- Items: HeadOfAres, Longsword, Tokens

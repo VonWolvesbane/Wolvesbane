@@ -23,4 +23,4 @@ None Listed
 
 ## Loot
 - Gold: 4700 - 6950
-- Items: None Listed
+- Items: ArmorOfFortune, AxeOfTheHeavens, BladeOfInsanity, BladeOfTheRighteous, BoneCrusher, BraceletOfHealth, BreathOfTheDead, Cloak, DivineCountenance, Doublet, FancyShirt, Frostbringer, GauntletsOfNobility, HatOfKillar, HatOfTheMagi, HelmOfInsight, HolyKnightsBreastplate, HuntersHeaddress, InquisitorsResolution, JackalsCollar, LegacyOfTheDreadLord, LeggingsOfBane, MidnightBracers, OrnamentOfTheMagician, OrnateCrownOfTheHarrower, RingOfTheElements, RingOfTheVile, Robe, Sandals, SerpentsFang, SpiritOfTheTotem, StaffOfTheMagi, TheBeserkersMaul, TheDragonSlayer, TheTaskmaster, TitansHammer, Tokens, TunicOfFire, VoiceOfTheFallenKing, ZyronicClaw

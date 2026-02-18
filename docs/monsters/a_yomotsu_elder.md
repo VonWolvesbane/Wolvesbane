@@ -23,4 +23,4 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: None Listed
+- Items: Boots, ExecutionersAxe, GreenGourd, LongPants, Sandals, Shoes, ShortPants, ThighBoots

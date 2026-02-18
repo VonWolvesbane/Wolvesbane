@@ -23,4 +23,4 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: 0x455, Utility.RandomMetalHue(, amount, amount, amount, amount, amount, amount
+- Items: BlackScales, BlueScales, Boots, GreenScales, RedScales, Shirt, WhiteScales, YellowScales

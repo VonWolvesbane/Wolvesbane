@@ -23,4 +23,4 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: , 0x544, 0x454, 0x4D2, 0x4D2
+- Items: FancyShirt, FullApron, JesterHat, LongPants, Shoes

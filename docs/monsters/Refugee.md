@@ -23,4 +23,4 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: , Utility.RandomNeutralHue(, , , Utility.RandomNeutralHue(
+- Items: GargishClothChest, GargishClothKilt, GargishClothLegs

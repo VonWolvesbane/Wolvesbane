@@ -23,4 +23,4 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: 0x59C, 0x599
+- Items: Kilt, Sandals

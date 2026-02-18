@@ -23,4 +23,4 @@ None Listed
 
 ## Loot
 - Gold: 2000 - 3000
-- Items: None Listed
+- Items: ManiacTailorArms, ManiacTailorChest, ManiacTailorGloves, ManiacTailorGorget, ManiacTailorHelm, ManiacTailorKnife, ManiacTailorLegs

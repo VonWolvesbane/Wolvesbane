@@ -23,4 +23,4 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: None Listed
+- Items: GnarledStaff, LichFormScroll, PoisonStrikeScroll, StrangleScroll, VengefulSpiritScroll, WitherScroll

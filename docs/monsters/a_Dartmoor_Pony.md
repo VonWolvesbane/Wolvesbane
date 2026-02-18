@@ -23,4 +23,4 @@ None Listed
 
 ## Loot
 - Gold: 100 - 250
-- Items: None Listed
+- Items: GraniteStone

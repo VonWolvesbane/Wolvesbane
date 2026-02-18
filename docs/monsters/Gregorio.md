@@ -23,4 +23,4 @@ None Listed
 
 ## Loot
 - Gold: 50 - 150
-- Items: 0x75E, , 0x66C, 0x649, 
+- Items: Pitchfork, Sandals, Shirt, ShortPants, SkullCap

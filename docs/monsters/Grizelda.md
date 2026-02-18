@@ -23,4 +23,4 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: 0x1, , 0x1, 
+- Items: GoldBracelet, Robe, Sandals, WizardsHat

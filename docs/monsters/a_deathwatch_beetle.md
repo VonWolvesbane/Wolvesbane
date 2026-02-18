@@ -23,4 +23,4 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: None Listed
+- Items: LeatherArms, LeatherCap, LeatherChest, LeatherGloves, LeatherGorget, LeatherLegs

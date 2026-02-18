@@ -23,4 +23,4 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: 2000, 2500
+- Items: Gold, RandomTalisman

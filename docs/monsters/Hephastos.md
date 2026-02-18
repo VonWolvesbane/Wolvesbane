@@ -23,4 +23,4 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: None Listed
+- Items: CrusaderArms, CrusaderBelt, CrusaderBoots, CrusaderChest, CrusaderGloves, CrusaderHelm, CrusaderLegs, CrusaderSash, CrusaderWings, HolyAvengersWrath

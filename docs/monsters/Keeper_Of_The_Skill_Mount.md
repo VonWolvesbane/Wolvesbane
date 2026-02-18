@@ -23,4 +23,4 @@ None Listed
 
 ## Loot
 - Gold: 400 - 600
-- Items: None Listed
+- Items: HoodedShroudOfShadows

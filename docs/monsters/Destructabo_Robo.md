@@ -23,4 +23,4 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: None Listed
+- Items: BlasterAmmo, DRoboBlaster, RoboArms, RoboChest, RoboGloves, RoboGorget, RoboHelm, RoboLegs

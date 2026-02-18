@@ -23,4 +23,4 @@ None Listed
 
 ## Loot
 - Gold: 1500 - 2000
-- Items: None Listed
+- Items: WQStonebow, WQStonefork, WQStonekatana, WQStonekryss, WQStonemace, WQStoneshield

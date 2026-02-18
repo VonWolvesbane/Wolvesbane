@@ -23,4 +23,4 @@ None Listed
 
 ## Loot
 - Gold: 11120 - 11130
-- Items: None Listed
+- Items: OblivionArms, OblivionBlade, OblivionCap, OblivionChest, OblivionGloves, OblivionGorget, OblivionLegs, OblivionShield

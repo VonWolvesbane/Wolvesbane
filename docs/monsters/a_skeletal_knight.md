@@ -23,4 +23,4 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: None Listed
+- Items: PlateArms, PlateChest, PlateGloves, PlateGorget, PlateHelm, PlateLegs, Scimitar, WoodenShield

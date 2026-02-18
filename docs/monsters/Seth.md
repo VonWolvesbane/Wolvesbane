@@ -23,4 +23,4 @@ None Listed
 
 ## Loot
 - Gold: 5120 - 15130
-- Items: None Listed
+- Items: ChaosBoots, ChaosCloak, ChaosGloves, ChaosRobe, SlothChaosShield

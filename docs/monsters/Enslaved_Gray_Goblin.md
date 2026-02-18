@@ -23,4 +23,4 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: None Listed
+- Items: BolaBall, Candle, Katana, Kryss, Pitchfork, Ribs, Scimitar, Shaft, ThighBoots, WarHammer, WarMace

@@ -23,4 +23,4 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: , , , , , Utility.RandomNeutralHue(, 
+- Items: Arrow, Bolt, Boots, Cutlass, FancyShirt, GoldEarrings, LeatherArms, ShortPants, TricorneHat

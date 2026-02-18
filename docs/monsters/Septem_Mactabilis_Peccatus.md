@@ -23,4 +23,4 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: None Listed
+- Items: SinArms, SinBlade, SinChest, SinGloves, SinHelm, SinLegs, SinShield

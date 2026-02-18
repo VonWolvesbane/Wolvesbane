@@ -23,4 +23,4 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: None Listed
+- Items: AgapiteOre, BlazeOre, BronzeOre, CopperOre, DullCopperOre, ElectrumOre, GoldOre, IceOre, PlatinumOre, ShadowIronOre, ToxicOre, ValoriteOre, VeriteOre, WolvesbanianOre

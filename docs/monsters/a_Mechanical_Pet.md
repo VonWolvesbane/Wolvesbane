@@ -23,4 +23,4 @@ None Listed
 
 ## Loot
 - Gold: 250 - 350
-- Items: None Listed
+- Items: SulfurousAsh

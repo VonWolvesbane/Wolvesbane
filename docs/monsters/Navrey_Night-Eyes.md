@@ -23,4 +23,4 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: , 30, 30, 
+- Items: TatteredAncientScroll, UntranslatedAncientTome

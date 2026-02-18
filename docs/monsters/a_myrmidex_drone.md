@@ -23,4 +23,4 @@ None Listed
 
 ## Loot
 - Gold: 50 - 70
-- Items: None Listed
+- Items: MyrmidexEggsac

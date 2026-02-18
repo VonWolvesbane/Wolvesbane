@@ -23,4 +23,4 @@ None Listed
 
 ## Loot
 - Gold: 2500 - 3000
-- Items: None Listed
+- Items: StagAntler

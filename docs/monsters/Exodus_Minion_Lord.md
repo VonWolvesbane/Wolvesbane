@@ -23,4 +23,4 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: None Listed
+- Items: ArcaneGem, ClockworkAssembly, ExodusSacrificalDagger, ExodusSummoningAlter, ExodusSummoningRite, PowerCrystal, RobeofRite

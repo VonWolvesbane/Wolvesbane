@@ -23,4 +23,4 @@ None Listed
 
 ## Loot
 - Gold: 100 - 200
-- Items: None Listed
+- Items: eggeaster

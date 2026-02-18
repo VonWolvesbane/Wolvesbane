@@ -23,4 +23,4 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: , 
+- Items: Axe, Bandana, Boots, Broadsword, Club, Cutlass, Dagger, FancyShirt, Longsword, PawsOfTheWereWolf, ShortPants, Skirt, Spear

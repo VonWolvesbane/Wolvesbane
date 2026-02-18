@@ -23,4 +23,4 @@ None Listed
 
 ## Loot
 - Gold: 2820 - 3300
-- Items: None Listed
+- Items: NoxArms, NoxGloves, NoxGorget, NoxHelm, NoxKatana, NoxLegs, NoxRobe, NoxShield, NoxTunic

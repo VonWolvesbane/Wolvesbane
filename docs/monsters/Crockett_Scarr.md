@@ -23,4 +23,4 @@ None Listed
 
 ## Loot
 - Gold: 6500 - 7025
-- Items: None Listed
+- Items: Obolus

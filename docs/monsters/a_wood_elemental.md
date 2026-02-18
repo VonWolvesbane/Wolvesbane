@@ -23,4 +23,4 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: None Listed
+- Items: AgapiteOre, AshLog, BambooLog, BlazeOre, BloodwoodLog, BronzeOre, CopperOre, DullCopperOre, EbonyLog, ElectrumOre, FrostwoodLog, GoldOre, HeartwoodLog, IceOre, IronOre, Log, OakLog, PetrifiedLog, PlatinumOre, PurpleHeartLog, RedwoodLog, ResourceRecipe, RunicFletcherTools, RunicHammer, RunicSewingKit, RunicTinkerTools, ShadowIronOre, ToxicOre, ValoriteOre, VeriteOre, WolvesbanianOre, YewLog

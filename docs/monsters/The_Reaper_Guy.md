@@ -23,4 +23,4 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: 0x1
+- Items: HellKey, HoodedShroudOfShadows

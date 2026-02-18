@@ -23,4 +23,4 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: 1156, , 1157, 
+- Items: BlackPowder, Charcoal, ExecutionersCap, FertileDirt, Potash, Robe, Saltpeter, Sandals, SulfurousAsh

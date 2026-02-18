@@ -23,4 +23,4 @@ None Listed
 
 ## Loot
 - Gold: 5120 - 6130
-- Items: None Listed
+- Items: BootsofArachnis, CloakofArachnis, ShirtofArachnis, ShroudofArachnis, SkirtofArachnis, SoulofArachnis, SurcoatofArachnis

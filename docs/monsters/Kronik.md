@@ -23,4 +23,4 @@ None Listed
 
 ## Loot
 - Gold: 11120 - 31130
-- Items: None Listed
+- Items: KronikAxe, KronikTome

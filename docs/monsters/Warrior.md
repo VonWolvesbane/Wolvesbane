@@ -23,4 +23,4 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: , , , , , , , , , , , 
+- Items: FemaleGargishPlateArms, FemaleGargishPlateChest, FemaleGargishPlateKilt, FemaleGargishPlateLegs, GargishPlateArms, GargishPlateChest, GargishPlateKilt, GargishPlateLegs, GlassSword, PlateTalons

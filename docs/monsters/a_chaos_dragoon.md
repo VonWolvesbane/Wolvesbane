@@ -23,4 +23,4 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: , , amount, amount, amount, amount, amount, amount
+- Items: BlackScales, BlueScales, Boots, GreenScales, RedScales, Shirt, WhiteScales, YellowScales

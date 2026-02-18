@@ -23,4 +23,4 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: 0x8A4, 0x8A4
+- Items: Arrow, BodySash, Boots, FireHorn

@@ -23,4 +23,4 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: Utility.RandomGreenHue(, Utility.RandomYellowHue(, Utility.RandomPinkHue(, Utility.RandomPinkHue(, 
+- Items: Cloak, FancyShirt, JesterHat, LongPants, Sandals

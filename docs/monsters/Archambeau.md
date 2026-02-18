@@ -23,4 +23,4 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: hairHue, hairHue, 1882, 1530, 1530
+- Items: LongHair, Vandyke

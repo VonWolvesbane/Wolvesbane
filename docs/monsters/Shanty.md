@@ -23,4 +23,4 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: , Utility.RandomNeutralHue(, , , , 728
+- Items: Boots, ExecutionersAxe, FancyShirt, HalfApron, ShortPants, TricorneHat

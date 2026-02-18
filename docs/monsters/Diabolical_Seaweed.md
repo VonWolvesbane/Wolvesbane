@@ -23,4 +23,4 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: None Listed
+- Items: BlueDiamond, BrilliantAmber, DarkSapphire, EcruCitrine, FireRuby, LuminescentFungi, ParasiticPlant, PerfectEmerald, Turquoise, WhitePearl

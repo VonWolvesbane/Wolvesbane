@@ -23,4 +23,4 @@ None Listed
 
 ## Loot
 - Gold: 4500 - 7000
-- Items: None Listed
+- Items: NemeanSkin, NemeanTooth

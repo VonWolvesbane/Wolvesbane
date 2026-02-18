@@ -23,4 +23,4 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: None Listed
+- Items: DaemonArms, DaemonChest, DaemonGloves, DaemonHelm, DaemonLegs

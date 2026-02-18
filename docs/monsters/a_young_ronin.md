@@ -23,4 +23,4 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: , , , , , , Utility.RandomNondyedHue(, , , 
+- Items: Bandana, Lajatang, LeatherDo, LeatherHiroSode, LeatherSuneate, NoDachi, PlateSuneate, SamuraiTabi, StuddedHaidate, Wakizashi

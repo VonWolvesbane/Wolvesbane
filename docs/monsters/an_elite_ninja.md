@@ -23,4 +23,4 @@ None Listed
 
 ## Loot
 - Gold: Unknown
-- Items: , , , 
+- Items: Daisho, Kama, Katana, LeatherNinjaHood, LeatherNinjaJacket, LeatherNinjaMitts, LeatherNinjaPants, NinjaTabi, Nunchaku, Sai, SmokeBomb, Tekagi, Tessen, Wakizashi
