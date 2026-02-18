@@ -1,16 +1,15 @@
 ---
-layout: default
+layout: custom
 title: Unassigned Staff Orb
+banner: /images/default_banner.jpg
 ---
 
 # Unassigned Staff Orb
 
-No Photo Available
-
 ## Loot
 
 ### Guaranteed Drops
-None
+- [Auto Res Timer](../items/AutoResTimer.html)
+- [Go Home Entry](../items/GoHomeEntry.html)
+- [Set Home Entry](../items/SetHomeEntry.html)
 
-### Random Drops
-None

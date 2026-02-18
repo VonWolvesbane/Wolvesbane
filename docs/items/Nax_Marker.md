@@ -1,16 +1,8 @@
 ---
-layout: default
+layout: custom
 title: Nax Marker
+banner: /images/default_banner.jpg
 ---
 
 # Nax Marker
 
-No Photo Available
-
-## Loot
-
-### Guaranteed Drops
-None
-
-### Random Drops
-None

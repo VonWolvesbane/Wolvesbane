@@ -1,16 +1,15 @@
 ---
-layout: default
+layout: custom
 title: PotteryWheelAddon
+banner: /images/default_banner.jpg
 ---
 
 # PotteryWheelAddon
 
-No Photo Available
-
 ## Loot
 
 ### Guaranteed Drops
-None
+- [Addon Component](../items/AddonComponent.html)
+- [Pottery Wheel Addon](../items/PotteryWheelAddon.html)
+- [Pottery Wheel Addon Deed](../items/PotteryWheelAddonDeed.html)
 
-### Random Drops
-None

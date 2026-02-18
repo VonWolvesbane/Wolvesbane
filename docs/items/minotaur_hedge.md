@@ -1,16 +1,8 @@
 ---
-layout: default
+layout: custom
 title: minotaur hedge
+banner: /images/default_banner.jpg
 ---
 
 # minotaur hedge
 
-No Photo Available
-
-## Loot
-
-### Guaranteed Drops
-None
-
-### Random Drops
-None

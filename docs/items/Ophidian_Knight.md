@@ -1,16 +1,8 @@
 ---
-layout: default
+layout: custom
 title: Ophidian Knight
+banner: /images/default_banner.jpg
 ---
 
 # Ophidian Knight
 
-No Photo Available
-
-## Loot
-
-### Guaranteed Drops
-None
-
-### Random Drops
-None

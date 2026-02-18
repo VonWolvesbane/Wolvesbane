@@ -1,16 +1,8 @@
 ---
-layout: default
+layout: custom
 title: Red Scales
+banner: /images/default_banner.jpg
 ---
 
 # Red Scales
 
-No Photo Available
-
-## Loot
-
-### Guaranteed Drops
-None
-
-### Random Drops
-None

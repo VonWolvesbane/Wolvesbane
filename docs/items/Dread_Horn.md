@@ -1,16 +1,8 @@
 ---
-layout: default
+layout: custom
 title: Dread Horn
+banner: /images/default_banner.jpg
 ---
 
 # Dread Horn
 
-No Photo Available
-
-## Loot
-
-### Guaranteed Drops
-None
-
-### Random Drops
-None

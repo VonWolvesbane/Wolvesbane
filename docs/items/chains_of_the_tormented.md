@@ -1,16 +1,8 @@
 ---
-layout: default
+layout: custom
 title: chains of the tormented
+banner: /images/default_banner.jpg
 ---
 
 # chains of the tormented
 
-No Photo Available
-
-## Loot
-
-### Guaranteed Drops
-None
-
-### Random Drops
-None

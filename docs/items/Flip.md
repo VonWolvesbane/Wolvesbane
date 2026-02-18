@@ -1,16 +1,8 @@
 ---
-layout: default
+layout: custom
 title: Flip
+banner: /images/default_banner.jpg
 ---
 
 # Flip
 
-No Photo Available
-
-## Loot
-
-### Guaranteed Drops
-None
-
-### Random Drops
-None

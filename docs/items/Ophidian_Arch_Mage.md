@@ -1,16 +1,8 @@
 ---
-layout: default
+layout: custom
 title: Ophidian Arch Mage
+banner: /images/default_banner.jpg
 ---
 
 # Ophidian Arch Mage
 
-No Photo Available
-
-## Loot
-
-### Guaranteed Drops
-None
-
-### Random Drops
-None

@@ -1,16 +1,13 @@
 ---
-layout: default
+layout: custom
 title: Haochi's katana generator
+banner: /images/default_banner.jpg
 ---
 
 # Haochi's katana generator
 
-No Photo Available
-
 ## Loot
 
 ### Guaranteed Drops
-None
+- [Haochis Katana](../items/HaochisKatana.html)
 
-### Random Drops
-None

@@ -1,16 +1,8 @@
 ---
-layout: default
+layout: custom
 title: vines
+banner: /images/default_banner.jpg
 ---
 
 # vines
 
-No Photo Available
-
-## Loot
-
-### Guaranteed Drops
-None
-
-### Random Drops
-None

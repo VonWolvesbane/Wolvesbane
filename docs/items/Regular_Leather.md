@@ -1,16 +1,13 @@
 ---
-layout: default
+layout: custom
 title: Regular Leather
+banner: /images/default_banner.jpg
 ---
 
 # Regular Leather
 
-No Photo Available
-
 ## Loot
 
 ### Guaranteed Drops
-None
+- [Ore Info](../items/OreInfo.html)
 
-### Random Drops
-None

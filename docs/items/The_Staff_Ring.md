@@ -1,16 +1,8 @@
 ---
-layout: default
+layout: custom
 title: The Staff Ring
+banner: /images/default_banner.jpg
 ---
 
 # The Staff Ring
 
-No Photo Available
-
-## Loot
-
-### Guaranteed Drops
-None
-
-### Random Drops
-None

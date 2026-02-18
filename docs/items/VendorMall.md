@@ -1,16 +1,15 @@
 ---
-layout: default
+layout: custom
 title: VendorMall
+banner: /images/default_banner.jpg
 ---
 
 # VendorMall
 
-No Photo Available
-
 ## Loot
 
 ### Guaranteed Drops
-None
+- [Addon Component](../items/AddonComponent.html)
+- [Vendor Mall Addon](../items/VendorMallAddon.html)
+- [Vendor Mall Addon Deed](../items/VendorMallAddonDeed.html)
 
-### Random Drops
-None

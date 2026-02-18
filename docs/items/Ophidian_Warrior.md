@@ -1,16 +1,8 @@
 ---
-layout: default
+layout: custom
 title: Ophidian Warrior
+banner: /images/default_banner.jpg
 ---
 
 # Ophidian Warrior
 
-No Photo Available
-
-## Loot
-
-### Guaranteed Drops
-None
-
-### Random Drops
-None

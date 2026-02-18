@@ -1,16 +1,13 @@
 ---
-layout: default
+layout: custom
 title: a map of the known world
+banner: /images/default_banner.jpg
 ---
 
 # a map of the known world
 
-No Photo Available
-
 ## Loot
 
 ### Guaranteed Drops
-None
+- [Internal Gump](../items/InternalGump.html)
 
-### Random Drops
-None

@@ -1,16 +1,8 @@
 ---
-layout: default
+layout: custom
 title: Dread Spider
+banner: /images/default_banner.jpg
 ---
 
 # Dread Spider
 
-No Photo Available
-
-## Loot
-
-### Guaranteed Drops
-None
-
-### Random Drops
-None

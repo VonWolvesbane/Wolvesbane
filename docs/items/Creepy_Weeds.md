@@ -1,16 +1,18 @@
 ---
-layout: default
+layout: custom
 title: Creepy Weeds
+banner: /images/default_banner.jpg
 ---
 
 # Creepy Weeds
 
-No Photo Available
-
 ## Loot
 
-### Guaranteed Drops
-None
-
 ### Random Drops
-None
+- [Ballem](../items/Ballem.html)
+- [F N Pitchfork](../items/FNPitchfork.html)
+- [Mongbat](../items/Mongbat.html)
+- [Raptor](../items/Raptor.html)
+- [Silver Serpent](../items/SilverSerpent.html)
+- [Snake](../items/Snake.html)
+

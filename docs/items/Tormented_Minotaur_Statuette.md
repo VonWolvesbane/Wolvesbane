@@ -1,16 +1,8 @@
 ---
-layout: default
+layout: custom
 title: Tormented Minotaur Statuette
+banner: /images/default_banner.jpg
 ---
 
 # Tormented Minotaur Statuette
 
-No Photo Available
-
-## Loot
-
-### Guaranteed Drops
-None
-
-### Random Drops
-None

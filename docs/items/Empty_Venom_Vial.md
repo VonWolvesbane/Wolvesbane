@@ -1,16 +1,14 @@
 ---
-layout: default
+layout: custom
 title: Empty Venom Vial
+banner: /images/default_banner.jpg
 ---
 
 # Empty Venom Vial
 
-No Photo Available
-
 ## Loot
 
 ### Guaranteed Drops
-None
+- [Silver Serpent Venom](../items/SilverSerpentVenom.html)
+- [Venom Target](../items/VenomTarget.html)
 
-### Random Drops
-None

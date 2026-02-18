@@ -1,16 +1,8 @@
 ---
-layout: default
+layout: custom
 title: an elder robe
+banner: /images/default_banner.jpg
 ---
 
 # an elder robe
 
-No Photo Available
-
-## Loot
-
-### Guaranteed Drops
-None
-
-### Random Drops
-None

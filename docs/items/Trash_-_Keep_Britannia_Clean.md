@@ -1,16 +1,8 @@
 ---
-layout: default
+layout: custom
 title: Trash - Keep Britannia Clean
+banner: /images/default_banner.jpg
 ---
 
 # Trash - Keep Britannia Clean
 
-No Photo Available
-
-## Loot
-
-### Guaranteed Drops
-None
-
-### Random Drops
-None

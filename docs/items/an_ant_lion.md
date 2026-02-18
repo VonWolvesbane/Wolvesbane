@@ -1,11 +1,10 @@
 ---
-layout: default
+layout: custom
 title: an ant lion
+banner: /images/default_banner.jpg
 ---
 
 # an ant lion
-
-No Photo Available
 
 ## Stats
 - STR: 296 - 320
@@ -16,7 +15,7 @@ No Photo Available
 ## Loot
 
 ### Guaranteed Drops
-None
+- [Point2 D](../items/Point2D.html)
+- [Point3 D](../items/Point3D.html)
+- [Talisman Release Entry](../items/TalismanReleaseEntry.html)
 
-### Random Drops
-None

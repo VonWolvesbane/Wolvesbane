@@ -1,11 +1,10 @@
 ---
-layout: default
+layout: custom
 title: Chompers
+banner: /images/default_banner.jpg
 ---
 
 # Chompers
-
-No Photo Available
 
 ## Stats
 - STR: 496 - 525
@@ -13,20 +12,3 @@ No Photo Available
 - INT: 86 - 125
 - Hits: 298 - 315
 
-## Taming Info
-- Control Slots: 2
-
-## Damage Types
-- Poison: 40%
-- Cold: 40%
-- Physical: 40%
-- Fire: 40%
-- Energy: 20%
-
-## Loot
-
-### Guaranteed Drops
-None
-
-### Random Drops
-None

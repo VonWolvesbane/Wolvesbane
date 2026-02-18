@@ -1,16 +1,13 @@
 ---
-layout: default
+layout: custom
 title: a ferret imprisoned in a crystal
+banner: /images/default_banner.jpg
 ---
 
 # a ferret imprisoned in a crystal
 
-No Photo Available
-
 ## Loot
 
 ### Guaranteed Drops
-None
+- [Shimmering Ferret](../items/ShimmeringFerret.html)
 
-### Random Drops
-None

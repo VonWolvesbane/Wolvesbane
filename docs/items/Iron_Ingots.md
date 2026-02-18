@@ -1,16 +1,8 @@
 ---
-layout: default
+layout: custom
 title: Iron Ingots
+banner: /images/default_banner.jpg
 ---
 
 # Iron Ingots
 
-No Photo Available
-
-## Loot
-
-### Guaranteed Drops
-None
-
-### Random Drops
-None

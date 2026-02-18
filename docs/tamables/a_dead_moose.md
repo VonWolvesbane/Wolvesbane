@@ -1,11 +1,10 @@
 ---
-layout: default
+layout: custom
 title: a dead moose
+banner: /images/default_banner.jpg
 ---
 
 # a dead moose
-
-No Photo Available
 
 ## Stats
 - STR: 451 - 500
@@ -13,17 +12,8 @@ No Photo Available
 - INT: 801 - 850
 - Hits: 1500
 
-## Taming Info
-- Control Slots: 4
-
-## Damage Types
-- Physical: 30%
-- Fire: 70%
-
 ## Loot
 
 ### Guaranteed Drops
 - [Essence Singularity](../items/EssenceSingularity.html)
 
-### Random Drops
-None

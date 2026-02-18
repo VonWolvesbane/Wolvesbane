@@ -1,16 +1,8 @@
 ---
-layout: default
+layout: custom
 title: Slime Statuette
+banner: /images/default_banner.jpg
 ---
 
 # Slime Statuette
 
-No Photo Available
-
-## Loot
-
-### Guaranteed Drops
-None
-
-### Random Drops
-None

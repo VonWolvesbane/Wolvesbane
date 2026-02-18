@@ -1,16 +1,17 @@
 ---
-layout: default
+layout: custom
 title: a golem
+banner: /images/default_banner.jpg
 ---
 
 # a golem
 
-No Photo Available
-
 ## Loot
 
 ### Guaranteed Drops
-None
+- [Addon Option Gump](../items/AddonOptionGump.html)
+- [Gadgetry Table Addon](../items/GadgetryTableAddon.html)
+- [Gadgetry Table Addon Deed](../items/GadgetryTableAddonDeed.html)
+- [Gadgetry Table Component](../items/GadgetryTableComponent.html)
+- [Gadgetry Table Golem](../items/GadgetryTableGolem.html)
 
-### Random Drops
-None

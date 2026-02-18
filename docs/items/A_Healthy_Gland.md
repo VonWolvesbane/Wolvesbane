@@ -1,16 +1,8 @@
 ---
-layout: default
+layout: custom
 title: A Healthy Gland
+banner: /images/default_banner.jpg
 ---
 
 # A Healthy Gland
 
-No Photo Available
-
-## Loot
-
-### Guaranteed Drops
-None
-
-### Random Drops
-None

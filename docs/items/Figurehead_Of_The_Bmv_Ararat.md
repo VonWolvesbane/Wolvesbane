@@ -1,16 +1,8 @@
 ---
-layout: default
+layout: custom
 title: Figurehead Of The Bmv Ararat
+banner: /images/default_banner.jpg
 ---
 
 # Figurehead Of The Bmv Ararat
 
-No Photo Available
-
-## Loot
-
-### Guaranteed Drops
-None
-
-### Random Drops
-None

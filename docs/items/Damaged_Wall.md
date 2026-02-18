@@ -1,16 +1,8 @@
 ---
-layout: default
+layout: custom
 title: Damaged Wall
+banner: /images/default_banner.jpg
 ---
 
 # Damaged Wall
 
-No Photo Available
-
-## Loot
-
-### Guaranteed Drops
-None
-
-### Random Drops
-None

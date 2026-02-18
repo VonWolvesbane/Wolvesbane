@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ page.title }}</title>
+
+    <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
+</head>
+
+<body>
+
+    <!-- Site Logo -->
+    <div class="site-header">
+        <img src="{{ '/images/site_logo.png' | relative_url }}" class="site-logo">
+    </div>
+
+    <!-- Page Banner -->
+    <div class="banner-container">
+        <img src="{{ page.banner | relative_url }}" class="page-banner">
+    </div>
+
+    <div class="page-content">
+        {{ content }}
+    </div>
+
+</body>
+</html>

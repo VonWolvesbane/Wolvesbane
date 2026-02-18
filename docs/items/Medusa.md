@@ -1,16 +1,8 @@
 ---
-layout: default
+layout: custom
 title: Medusa
+banner: /images/default_banner.jpg
 ---
 
 # Medusa
 
-No Photo Available
-
-## Loot
-
-### Guaranteed Drops
-None
-
-### Random Drops
-None

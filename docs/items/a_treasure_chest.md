@@ -1,16 +1,14 @@
 ---
-layout: default
+layout: custom
 title: a treasure chest
+banner: /images/default_banner.jpg
 ---
 
 # a treasure chest
 
-No Photo Available
-
 ## Loot
 
 ### Guaranteed Drops
-None
+- [Chest Timer](../items/ChestTimer.html)
+- [Rectangle2 D](../items/Rectangle2D.html)
 
-### Random Drops
-None

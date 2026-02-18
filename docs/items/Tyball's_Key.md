@@ -1,16 +1,13 @@
 ---
-layout: default
+layout: custom
 title: Tyball's Key
+banner: /images/default_banner.jpg
 ---
 
 # Tyball's Key
 
-No Photo Available
-
 ## Loot
 
 ### Guaranteed Drops
-None
+- [Tripartite Key](../items/TripartiteKey.html)
 
-### Random Drops
-None

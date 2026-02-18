@@ -1,16 +1,13 @@
 ---
-layout: default
+layout: custom
 title: jack-o-lantern
+banner: /images/default_banner.jpg
 ---
 
 # jack-o-lantern
 
-No Photo Available
-
 ## Loot
 
 ### Guaranteed Drops
-None
+- [Addon Component](../items/AddonComponent.html)
 
-### Random Drops
-None

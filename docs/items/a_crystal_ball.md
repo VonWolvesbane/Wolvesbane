@@ -1,16 +1,8 @@
 ---
-layout: default
+layout: custom
 title: a crystal ball
+banner: /images/default_banner.jpg
 ---
 
 # a crystal ball
 
-No Photo Available
-
-## Loot
-
-### Guaranteed Drops
-None
-
-### Random Drops
-None

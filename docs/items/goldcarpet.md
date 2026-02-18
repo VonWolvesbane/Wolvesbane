@@ -1,16 +1,15 @@
 ---
-layout: default
+layout: custom
 title: goldcarpet
+banner: /images/default_banner.jpg
 ---
 
 # goldcarpet
 
-No Photo Available
-
 ## Loot
 
 ### Guaranteed Drops
-None
+- [Addon Component](../items/AddonComponent.html)
+- [Gold Carpet Addon](../items/GoldCarpetAddon.html)
+- [goldcarpet Addon Deed](../items/goldcarpetAddonDeed.html)
 
-### Random Drops
-None

@@ -1,16 +1,8 @@
 ---
-layout: default
+layout: custom
 title: Minotaur Statuette
+banner: /images/default_banner.jpg
 ---
 
 # Minotaur Statuette
 
-No Photo Available
-
-## Loot
-
-### Guaranteed Drops
-None
-
-### Random Drops
-None

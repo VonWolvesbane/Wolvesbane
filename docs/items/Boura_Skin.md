@@ -1,16 +1,8 @@
 ---
-layout: default
+layout: custom
 title: Boura Skin
+banner: /images/default_banner.jpg
 ---
 
 # Boura Skin
 
-No Photo Available
-
-## Loot
-
-### Guaranteed Drops
-None
-
-### Random Drops
-None

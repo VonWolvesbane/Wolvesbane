@@ -1,16 +1,8 @@
 ---
-layout: default
+layout: custom
 title: Pile of Inspected Agapite Ingots
+banner: /images/default_banner.jpg
 ---
 
 # Pile of Inspected Agapite Ingots
 
-No Photo Available
-
-## Loot
-
-### Guaranteed Drops
-None
-
-### Random Drops
-None

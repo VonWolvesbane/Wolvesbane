@@ -1,11 +1,10 @@
 ---
-layout: default
+layout: custom
 title: King Turtle
+banner: /images/default_banner.jpg
 ---
 
 # King Turtle
-
-No Photo Available
 
 ## Stats
 - STR: 2096 - 3185
@@ -13,10 +12,3 @@ No Photo Available
 - INT: 686 - 775
 - Hits: 2500 - 3000
 
-## Loot
-
-### Guaranteed Drops
-None
-
-### Random Drops
-None

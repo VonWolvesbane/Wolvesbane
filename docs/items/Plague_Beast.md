@@ -1,16 +1,8 @@
 ---
-layout: default
+layout: custom
 title: Plague Beast
+banner: /images/default_banner.jpg
 ---
 
 # Plague Beast
 
-No Photo Available
-
-## Loot
-
-### Guaranteed Drops
-None
-
-### Random Drops
-None

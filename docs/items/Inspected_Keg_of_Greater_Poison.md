@@ -1,16 +1,8 @@
 ---
-layout: default
+layout: custom
 title: Inspected Keg of Greater Poison
+banner: /images/default_banner.jpg
 ---
 
 # Inspected Keg of Greater Poison
 
-No Photo Available
-
-## Loot
-
-### Guaranteed Drops
-None
-
-### Random Drops
-None

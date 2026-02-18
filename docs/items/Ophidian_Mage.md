@@ -1,16 +1,8 @@
 ---
-layout: default
+layout: custom
 title: Ophidian Mage
+banner: /images/default_banner.jpg
 ---
 
 # Ophidian Mage
 
-No Photo Available
-
-## Loot
-
-### Guaranteed Drops
-None
-
-### Random Drops
-None

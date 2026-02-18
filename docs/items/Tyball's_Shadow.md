@@ -1,11 +1,10 @@
 ---
-layout: default
+layout: custom
 title: Tyball's Shadow
+banner: /images/default_banner.jpg
 ---
 
 # Tyball's Shadow
-
-No Photo Available
 
 ## Stats
 - STR: 400 - 450
@@ -16,7 +15,6 @@ No Photo Available
 ## Loot
 
 ### Guaranteed Drops
-None
+- [Shroud Of The Condemned](../items/ShroudOfTheCondemned.html)
+- [Yellow Key1](../items/YellowKey1.html)
 
-### Random Drops
-None

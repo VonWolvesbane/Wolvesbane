@@ -1,11 +1,10 @@
 ---
-layout: default
+layout: custom
 title: Keep on Rollin
+banner: /images/default_banner.jpg
 ---
 
 # Keep on Rollin
-
-No Photo Available
 
 ## Stats
 - STR: 1096 - 1185
@@ -13,10 +12,3 @@ No Photo Available
 - INT: 686 - 775
 - Hits: 2500 - 3000
 
-## Loot
-
-### Guaranteed Drops
-None
-
-### Random Drops
-None

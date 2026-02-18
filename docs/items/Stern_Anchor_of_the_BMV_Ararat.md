@@ -1,16 +1,8 @@
 ---
-layout: default
+layout: custom
 title: Stern Anchor of the BMV Ararat
+banner: /images/default_banner.jpg
 ---
 
 # Stern Anchor of the BMV Ararat
 
-No Photo Available
-
-## Loot
-
-### Guaranteed Drops
-None
-
-### Random Drops
-None

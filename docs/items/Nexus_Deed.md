@@ -1,16 +1,15 @@
 ---
-layout: default
+layout: custom
 title: Nexus Deed
+banner: /images/default_banner.jpg
 ---
 
 # Nexus Deed
 
-No Photo Available
-
 ## Loot
 
 ### Guaranteed Drops
-None
+- [Nexus Addon](../items/NexusAddon.html)
+- [Nexus Addon Deed](../items/NexusAddonDeed.html)
+- [Nexus Component](../items/NexusComponent.html)
 
-### Random Drops
-None

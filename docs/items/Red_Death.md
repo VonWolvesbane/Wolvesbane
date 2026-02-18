@@ -1,16 +1,8 @@
 ---
-layout: default
+layout: custom
 title: Red Death
+banner: /images/default_banner.jpg
 ---
 
 # Red Death
 
-No Photo Available
-
-## Loot
-
-### Guaranteed Drops
-None
-
-### Random Drops
-None

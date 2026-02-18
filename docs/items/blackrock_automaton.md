@@ -1,11 +1,10 @@
 ---
-layout: default
+layout: custom
 title: blackrock automaton
+banner: /images/default_banner.jpg
 ---
 
 # blackrock automaton
-
-No Photo Available
 
 ## Stats
 - STR: 800 - 900
@@ -13,10 +12,3 @@ No Photo Available
 - INT: 255 - 263
 - Hits: 774 - 876
 
-## Loot
-
-### Guaranteed Drops
-None
-
-### Random Drops
-None

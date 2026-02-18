@@ -1,16 +1,8 @@
 ---
-layout: default
+layout: custom
 title: Inspected Keg of Total Refreshment
+banner: /images/default_banner.jpg
 ---
 
 # Inspected Keg of Total Refreshment
 
-No Photo Available
-
-## Loot
-
-### Guaranteed Drops
-None
-
-### Random Drops
-None

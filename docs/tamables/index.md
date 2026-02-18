@@ -1,6 +1,7 @@
 ---
-layout: default
+layout: custom
 title: Tamables
+banner: /images/default_banner.jpg
 ---
 
 # Tamables

@@ -1,11 +1,10 @@
 ---
-layout: default
+layout: custom
 title: An Unknown Bard's Skeleton
+banner: /images/default_banner.jpg
 ---
 
 # An Unknown Bard's Skeleton
-
-No Photo Available
 
 ## Loot
 
@@ -32,3 +31,4 @@ No Photo Available
 - [Beverage Bottle](../items/BeverageBottle.html)
 - [Kilt](../items/Kilt.html)
 - [Short Pants](../items/ShortPants.html)
+

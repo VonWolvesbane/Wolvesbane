@@ -1,11 +1,10 @@
 ---
-layout: default
+layout: custom
 title: kotl automaton
+banner: /images/default_banner.jpg
 ---
 
 # kotl automaton
-
-No Photo Available
 
 ## Stats
 - STR: 793 - 875
@@ -16,7 +15,5 @@ No Photo Available
 ## Loot
 
 ### Guaranteed Drops
-None
+- [Broken Automaton Head](../items/BrokenAutomatonHead.html)
 
-### Random Drops
-None

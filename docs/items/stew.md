@@ -1,16 +1,15 @@
 ---
-layout: default
+layout: custom
 title: stew
+banner: /images/default_banner.jpg
 ---
 
 # stew
 
-No Photo Available
-
 ## Loot
 
 ### Guaranteed Drops
-None
+- [Addon Component](../items/AddonComponent.html)
+- [Bread Loaf](../items/BreadLoaf.html)
+- [Show Stew](../items/ShowStew.html)
 
-### Random Drops
-None

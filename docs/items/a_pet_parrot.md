@@ -1,21 +1,13 @@
 ---
-layout: default
+layout: custom
 title: a pet parrot
+banner: /images/default_banner.jpg
 ---
 
 # a pet parrot
-
-No Photo Available
 
 ## Stats
 - STR: 1 - 5
 - DEX: 25 - 30
 - INT: 2
 
-## Loot
-
-### Guaranteed Drops
-None
-
-### Random Drops
-None
