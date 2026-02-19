@@ -6,7 +6,7 @@ html, body {
   font-family: Verdana, Arial, sans-serif;
 
   /* Dark stone texture */
-  background-image: url("/Wolvesbane/doc/assets/img/stone.jpg");
+  background-image: url("/Wolvesbane/assets/img/stone.jpg");
   background-repeat: repeat;
   background-size: 600px auto;
   background-attachment: fixed;
