@@ -1,14 +1,14 @@
 ---
 layout: custom
 title: Tamer's Idol
-banner: /images/default_banner.jpg
 ---
 
 # Tamer's Idol
 
-## Loot
+## Dropped By
+- [Falausmon](../monsters/Falausmon.html)
 
-### Guaranteed Drops
-- [Entity](../items/Entity.html)
-- [Point3 D](../items/Point3D.html)
-
+## Skill Bonuses
+- Veterinary: +25.0
+- AnimalLore: +10.0
+- AnimalTaming: +10.0

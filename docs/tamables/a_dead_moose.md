@@ -1,7 +1,6 @@
 ---
 layout: custom
 title: a dead moose
-banner: /images/default_banner.jpg
 ---
 
 # a dead moose
@@ -12,8 +11,15 @@ banner: /images/default_banner.jpg
 - INT: 801 - 850
 - Hits: 1500
 
+## Taming Info
+- Control Slots: 4
+- AI Type: AI_Mage
+
+## Damage Types
+- Physical: 30%
+- Fire: 70%
+
 ## Loot
 
 ### Guaranteed Drops
 - [Essence Singularity](../items/EssenceSingularity.html)
-

@@ -1,7 +1,6 @@
 ---
 layout: custom
 title: Jack-In-The-Box
-banner: /images/default_banner.jpg
 ---
 
 # Jack-In-The-Box
@@ -12,3 +11,8 @@ banner: /images/default_banner.jpg
 - INT: 475 - 675
 - Hits: 1000 - 2000
 
+## Taming Info
+- Control Slots: 3
+
+## Damage Types
+- Physical: 100%

@@ -1,8 +1,13 @@
 ---
 layout: custom
 title: Tinker's Idol
-banner: /images/default_banner.jpg
 ---
 
 # Tinker's Idol
 
+## Dropped By
+- [Falausmon](../monsters/Falausmon.html)
+
+## Skill Bonuses
+- Tinkering: +25.0
+- Magery: +10.0

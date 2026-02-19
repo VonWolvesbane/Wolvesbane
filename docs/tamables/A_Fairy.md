@@ -1,7 +1,6 @@
 ---
 layout: custom
 title: A Fairy
-banner: /images/default_banner.jpg
 ---
 
 # A Fairy
@@ -12,3 +11,9 @@ banner: /images/default_banner.jpg
 - INT: 5201 - 5250
 - Hits: 500 - 750
 
+## Taming Info
+- Control Slots: 2
+- AI Type: AI_Mage
+
+## Damage Types
+- Energy: 125%

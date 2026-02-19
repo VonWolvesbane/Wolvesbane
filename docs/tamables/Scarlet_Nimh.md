@@ -1,7 +1,6 @@
 ---
 layout: custom
 title: Scarlet Nimh
-banner: /images/default_banner.jpg
 ---
 
 # Scarlet Nimh
@@ -12,3 +11,9 @@ banner: /images/default_banner.jpg
 - INT: 401 - 500
 - Hits: 2880 - 3300
 
+## Taming Info
+- Control Slots: 4
+
+## Damage Types
+- Physical: 100%
+- Poison: 150%

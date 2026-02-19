@@ -1,7 +1,6 @@
 ---
 layout: custom
 title: Gambit
-banner: /images/default_banner.jpg
 ---
 
 # Gambit
@@ -14,15 +13,5 @@ banner: /images/default_banner.jpg
 
 ## Loot
 
-### Guaranteed Drops
-- [Armsof X Men Uniform](../items/ArmsofXMenUniform.html)
-- [Bootsof X Men Uniform](../items/BootsofXMenUniform.html)
-- [Circletof X Men Uniform](../items/CircletofXMenUniform.html)
-- [Glovesof X Men Uniform](../items/GlovesofXMenUniform.html)
-- [Gorgetof X Men Uniform](../items/GorgetofXMenUniform.html)
-- [Legsof X Men Uniform](../items/LegsofXMenUniform.html)
-- [Tunicof X Men Uniform](../items/TunicofXMenUniform.html)
-
-### Random Drops
+### Potential Item Drops
 - [Staffof Gambit](../items/StaffofGambit.html)
-

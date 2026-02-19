@@ -1,15 +1,25 @@
 ---
 layout: custom
 title: Storm's Cloak
-banner: /images/default_banner.jpg
 ---
 
 # Storm's Cloak
 
-## Resistances
-- Physical: 10
-- Cold: 35
-- Fire: 10
-- Energy: 35
-- Poison: 10
+## Dropped By
+- [Storm](../monsters/Storm.html)
 
+## Resist Bonuses
+- Physical: +10
+- Cold: +35
+- Fire: +10
+- Energy: +35
+- Poison: +10
+
+## Attributes
+- NightSight: 1
+- BonusStr: 5
+- BonusDex: 5
+- RegenMana: 25
+
+## Regeneration Bonuses
+- Mana: +25

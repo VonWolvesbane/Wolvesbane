@@ -1,8 +1,14 @@
 ---
 layout: custom
 title: Uber Robe
-banner: /images/default_banner.jpg
 ---
 
 # Uber Robe
 
+## Attributes
+- NightSight: 1
+
+## Skill Bonuses
+- Veterinary: +10.0
+- AnimalTaming: +10.0
+- AnimalLore: +10.0

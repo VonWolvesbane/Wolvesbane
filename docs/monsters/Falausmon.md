@@ -1,7 +1,6 @@
 ---
 layout: custom
 title: Falausmon
-banner: /images/default_banner.jpg
 ---
 
 # Falausmon
@@ -14,13 +13,9 @@ banner: /images/default_banner.jpg
 
 ## Loot
 
-### Guaranteed Drops
-- [Teleport Timer](../items/TeleportTimer.html)
-
-### Random Drops
+### Potential Item Drops
 - [Archers Idol](../items/ArchersIdol.html)
 - [Random Talisman](../items/RandomTalisman.html)
 - [Swordsmans Idol](../items/SwordsmansIdol.html)
 - [Tamers Idol](../items/TamersIdol.html)
 - [Tinkers Idol](../items/TinkersIdol.html)
-

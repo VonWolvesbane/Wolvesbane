@@ -1,15 +1,22 @@
 ---
 layout: custom
 title: Gorget of X-Men Uniform
-banner: /images/default_banner.jpg
 ---
 
 # Gorget of X-Men Uniform
 
-## Resistances
-- Physical: 15
-- Cold: 15
-- Fire: 15
-- Energy: 15
-- Poison: 15
+## Resist Bonuses
+- Physical: +15
+- Cold: +15
+- Fire: +15
+- Energy: +15
+- Poison: +15
 
+## Attributes
+- NightSight: 1
+- BonusStr: 5
+- BonusDex: 5
+- RegenStam: 5
+
+## Regeneration Bonuses
+- Stam: +5

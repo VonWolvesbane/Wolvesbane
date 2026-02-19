@@ -1,7 +1,6 @@
 ---
 layout: custom
 title: Storm
-banner: /images/default_banner.jpg
 ---
 
 # Storm
@@ -14,17 +13,5 @@ banner: /images/default_banner.jpg
 
 ## Loot
 
-### Guaranteed Drops
-- [Armsof X Men Uniform](../items/ArmsofXMenUniform.html)
-- [Bootsof X Men Uniform](../items/BootsofXMenUniform.html)
-- [Glovesof X Men Uniform](../items/GlovesofXMenUniform.html)
-- [Legsof X Men Uniform](../items/LegsofXMenUniform.html)
-- [Point3 D](../items/Point3D.html)
-- [Tunicof X Men Uniform](../items/TunicofXMenUniform.html)
-
-### Random Drops
-- [Ice Storm](../items/IceStorm.html)
-- [Snow Storm](../items/SnowStorm.html)
+### Potential Item Drops
 - [Storms Cloak](../items/StormsCloak.html)
-- [Thunder Storm](../items/ThunderStorm.html)
-

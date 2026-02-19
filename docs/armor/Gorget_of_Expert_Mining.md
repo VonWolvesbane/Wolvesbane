@@ -1,15 +1,28 @@
 ---
 layout: custom
 title: Gorget of Expert Mining
-banner: /images/default_banner.jpg
 ---
 
 # Gorget of Expert Mining
 
-## Resistances
-- Physical: 5
-- Cold: 5
-- Fire: 5
-- Energy: 5
-- Poison: 5
+## Dropped By
+- [Kashmir](../monsters/Kashmir.html)
 
+## Resist Bonuses
+- Physical: +5
+- Cold: +5
+- Fire: +5
+- Energy: +5
+- Poison: +5
+
+## Attributes
+- NightSight: 1
+- BonusStr: 5
+- BonusDex: 5
+- RegenStam: 5
+
+## Skill Bonuses
+- Mining: +10.0
+
+## Regeneration Bonuses
+- Stam: +5

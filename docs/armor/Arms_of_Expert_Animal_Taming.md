@@ -1,15 +1,28 @@
 ---
 layout: custom
 title: Arms of Expert Animal Taming
-banner: /images/default_banner.jpg
 ---
 
 # Arms of Expert Animal Taming
 
-## Resistances
-- Physical: 15
-- Cold: 15
-- Fire: 15
-- Energy: 15
-- Poison: 15
+## Dropped By
+- [Von Wolvesbane](../monsters/Von_Wolvesbane.html)
 
+## Resist Bonuses
+- Physical: +15
+- Cold: +15
+- Fire: +15
+- Energy: +15
+- Poison: +15
+
+## Attributes
+- NightSight: 1
+- BonusStr: 5
+- BonusDex: 5
+- RegenStam: 5
+
+## Skill Bonuses
+- AnimalTaming: +10.0
+
+## Regeneration Bonuses
+- Stam: +5

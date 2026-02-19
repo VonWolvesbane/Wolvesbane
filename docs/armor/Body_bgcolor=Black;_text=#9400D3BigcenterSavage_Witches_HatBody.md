@@ -1,8 +1,21 @@
 ---
 layout: custom
 title: <Body bgcolor=Black; text=#9400D3><Big><center>Savage Witches Hat</Body>
-banner: /images/default_banner.jpg
 ---
 
 # <Body bgcolor=Black; text=#9400D3><Big><center>Savage Witches Hat</Body>
 
+## Dropped By
+- [Kindred](../monsters/Kindred.html)
+
+## Attributes
+- SpellDamage: 100
+- WeaponDamage: 10
+- DefendChance: 10
+- CastRecovery: 3
+- CastSpeed: 3
+- LowerManaCost: 20
+- LowerRegCost: 30
+
+## Skill Bonuses
+- Archery: +10

@@ -1,7 +1,6 @@
 ---
 layout: custom
 title: Rogue
-banner: /images/default_banner.jpg
 ---
 
 # Rogue
@@ -14,15 +13,5 @@ banner: /images/default_banner.jpg
 
 ## Loot
 
-### Guaranteed Drops
-- [Armsof X Men Uniform](../items/ArmsofXMenUniform.html)
-- [Beltof X Men Uniform](../items/BeltofXMenUniform.html)
-- [Bootsof X Men Uniform](../items/BootsofXMenUniform.html)
-- [Circletof X Men Uniform](../items/CircletofXMenUniform.html)
-- [Glovesof X Men Uniform](../items/GlovesofXMenUniform.html)
-- [Legsof X Men Uniform](../items/LegsofXMenUniform.html)
-- [Tunicof X Men Uniform](../items/TunicofXMenUniform.html)
-
-### Random Drops
+### Potential Item Drops
 - [Cloak](../items/Cloak.html)
-

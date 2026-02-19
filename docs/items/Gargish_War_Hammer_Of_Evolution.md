@@ -1,8 +1,15 @@
 ---
 layout: custom
 title: Gargish War Hammer Of Evolution
-banner: /images/default_banner.jpg
 ---
 
 # Gargish War Hammer Of Evolution
 
+## Attributes
+- Luck: 100
+- WeaponDamage: 1
+- WeaponSpeed: 10
+- SpellChanneling: 1
+- WeaponDamage: ex
+- CastRecovery: ex
+- CastSpeed: ex

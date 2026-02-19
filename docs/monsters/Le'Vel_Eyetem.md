@@ -1,7 +1,6 @@
 ---
 layout: custom
 title: Le'Vel Eyetem
-banner: /images/default_banner.jpg
 ---
 
 # Le'Vel Eyetem
@@ -14,9 +13,5 @@ banner: /images/default_banner.jpg
 
 ## Loot
 
-### Guaranteed Drops
-- [Level Up Scroll](../items/LevelUpScroll.html)
-
-### Random Drops
+### Potential Item Drops
 - [Level Item Deed](../items/LevelItemDeed.html)
-

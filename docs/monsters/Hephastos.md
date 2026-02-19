@@ -1,7 +1,6 @@
 ---
 layout: custom
 title: Hephastos
-banner: /images/default_banner.jpg
 ---
 
 # Hephastos
@@ -14,7 +13,7 @@ banner: /images/default_banner.jpg
 
 ## Loot
 
-### Random Drops
+### Potential Item Drops
 - [Crusader Arms](../items/CrusaderArms.html)
 - [Crusader Belt](../items/CrusaderBelt.html)
 - [Crusader Boots](../items/CrusaderBoots.html)
@@ -25,4 +24,3 @@ banner: /images/default_banner.jpg
 - [Crusader Sash](../items/CrusaderSash.html)
 - [Crusader Wings](../items/CrusaderWings.html)
 - [Holy Avengers Wrath](../items/HolyAvengersWrath.html)
-

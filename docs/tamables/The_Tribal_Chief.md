@@ -1,7 +1,6 @@
 ---
 layout: custom
 title: The Tribal Chief
-banner: /images/default_banner.jpg
 ---
 
 # The Tribal Chief
@@ -11,4 +10,3 @@ banner: /images/default_banner.jpg
 - DEX: 155 - 175
 - INT: 686 - 775
 - Hits: 2500 - 3000
-

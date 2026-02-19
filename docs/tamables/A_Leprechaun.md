@@ -1,7 +1,6 @@
 ---
 layout: custom
 title: A Leprechaun
-banner: /images/default_banner.jpg
 ---
 
 # A Leprechaun
@@ -12,9 +11,14 @@ banner: /images/default_banner.jpg
 - INT: 136 - 150
 - Hits: 500 - 750
 
+## Taming Info
+- Control Slots: 3
+
+## Damage Types
+- Physical: 100%
+- Energy: 100%
+
 ## Loot
 
 ### Guaranteed Drops
 - [Gold](../items/Gold.html)
-- [Lucky Charm](../items/LuckyCharm.html)
-

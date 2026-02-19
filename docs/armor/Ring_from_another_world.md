@@ -1,8 +1,108 @@
 ---
 layout: custom
 title: Ring from another world
-banner: /images/default_banner.jpg
 ---
 
 # Ring from another world
 
+## Attributes
+- NightSight: 1
+- Brittle: 1
+
+## Skill Bonuses
+- Alchemy: +15.0
+- Anatomy: +15.0
+- AnimalLore: +15.0
+- ItemID: +15.0
+- ArmsLore: +15.0
+- Parry: +15.0
+- Begging: +15.0
+- Blacksmith: +15.0
+- Fletching: +15.0
+- Peacemaking: +15.0
+- Camping: +15.0
+- Carpentry: +15.0
+- Cartography: +15.0
+- Cooking: +15.0
+- DetectHidden: +15.0
+- Discordance: +15.0
+- EvalInt: +15.0
+- Healing: +15.0
+- Fishing: +15.0
+- Forensics: +15.0
+- Herding: +15.0
+- Hiding: +15.0
+- Provocation: +15.0
+- Inscribe: +15.0
+- Lockpicking: +15.0
+- Magery: +15.0
+- MagicResist: +15.0
+- Tactics: +15.0
+- Snooping: +15.0
+- Musicianship: +15.0
+- Poisoning: +15.0
+- Archery: +15.0
+- SpiritSpeak: +15.0
+- Stealing: +15.0
+- Tailoring: +15.0
+- AnimalTaming: +15.0
+- TasteID: +15.0
+- Tinkering: +15.0
+- Tracking: +15.0
+- Veterinary: +15.0
+- Swords: +15.0
+- Macing: +15.0
+- Fencing: +15.0
+- Wrestling: +15.0
+- Lumberjacking: +15.0
+- Mining: +15.0
+- Meditation: +15.0
+- Stealth: +15.0
+- RemoveTrap: +15.0
+- Necromancy: +15.0
+- Focus: +15.0
+- Chivalry: +15.0
+- Bushido: +15.0
+- Ninjitsu: +15.0
+- Anatomy: +10.0
+- AnimalLore: +10.0
+- ArmsLore: +10.0
+- Parry: +10.0
+- Blacksmith: +10.0
+- Fletching: +10.0
+- Peacemaking: +10.0
+- Carpentry: +10.0
+- Cartography: +10.0
+- Discordance: +10.0
+- EvalInt: +10.0
+- Healing: +10.0
+- Fishing: +10.0
+- Hiding: +10.0
+- Provocation: +10.0
+- Inscribe: +10.0
+- Lockpicking: +10.0
+- Magery: +10.0
+- MagicResist: +10.0
+- Tactics: +10.0
+- Musicianship: +10.0
+- Poisoning: +10.0
+- Archery: +10.0
+- SpiritSpeak: +10.0
+- Stealing: +10.0
+- Tailoring: +10.0
+- AnimalTaming: +10.0
+- Tinkering: +10.0
+- Veterinary: +10.0
+- Swords: +10.0
+- Macing: +10.0
+- Fencing: +10.0
+- Wrestling: +10.0
+- Lumberjacking: +10.0
+- Mining: +10.0
+- Meditation: +10.0
+- Stealth: +10.0
+- Necromancy: +10.0
+- Focus: +10.0
+- Chivalry: +10.0
+- Bushido: +10.0
+- Ninjitsu: +10.0

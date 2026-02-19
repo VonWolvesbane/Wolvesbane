@@ -1,7 +1,6 @@
 ---
 layout: custom
 title: The Skull Crusher
-banner: /images/default_banner.jpg
 ---
 
 # The Skull Crusher
@@ -12,3 +11,13 @@ banner: /images/default_banner.jpg
 - INT: 350 - 370
 - Hits: 5000 - 5000
 
+## Taming Info
+- Control Slots: 7
+- AI Type: AI_Melee
+
+## Damage Types
+- Physical: 110%
+- Fire: 0%
+- Cold: 0%
+- Poison: 0%
+- Energy: 0%

@@ -1,7 +1,6 @@
 ---
 layout: custom
 title: Dr Geekazoid
-banner: /images/default_banner.jpg
 ---
 
 # Dr Geekazoid
@@ -12,3 +11,9 @@ banner: /images/default_banner.jpg
 - INT: 386 - 425
 - Hits: 2433 - 4456
 
+## Taming Info
+- Control Slots: 3
+
+## Damage Types
+- Physical: 50%
+- Cold: 50%

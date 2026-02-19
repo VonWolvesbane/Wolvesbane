@@ -1,15 +1,19 @@
 ---
 layout: custom
 title: Visor of Cyclops
-banner: /images/default_banner.jpg
 ---
 
 # Visor of Cyclops
 
-## Resistances
-- Physical: 15
-- Cold: 15
-- Fire: 15
-- Energy: 15
-- Poison: 15
+## Weapon Info
+- Script Class: CyclopsVisor
+- Base Type: Glasses
 
+## Core Stats
+- Durability: 50 - 100
+
+## Attributes
+- NightSight: 1
+- BonusStr: 5
+- BonusDex: 5
+- RegenStam: 5
