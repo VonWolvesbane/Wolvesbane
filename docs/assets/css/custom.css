@@ -1,12 +1,22 @@
+/* ================= GLOBAL BACKGROUND ================= */
+
 html, body {
-  html, body {
   background: linear-gradient(to bottom, #0b0b0b, #141414);
+  color: #e6e6e6;
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Arial, sans-serif;
 }
 
-
- 
+/* Force readable text everywhere */
+body,
+.page-content,
+.page-content p,
+.page-content li,
+.page-content span,
+.page-content div {
+  color: #e6e6e6;
 }
-
 
 /* ================= HEADER ROW ================= */
 
@@ -32,10 +42,10 @@ html, body {
 }
 
 .header-banner {
-  max-height: 260px;   /* Adjust if needed */
+  max-height: 260px;
   width: auto;
   max-width: 200%;
-  object-fit: contain; /* SHOW ENTIRE BANNER */
+  object-fit: contain;
 }
 
 /* ================= NAVIGATION ================= */
@@ -59,6 +69,7 @@ html, body {
 .nav-bar a:hover {
   color: #ffffff;
 }
+
 /* ================= CONTENT ================= */
 
 .page-content {
@@ -67,10 +78,12 @@ html, body {
   margin: auto;
 }
 
-h1, h2, h3 {
+/* Headings */
+h1, h2, h3, h4 {
   color: #f0b400;
 }
 
+/* Links */
 a {
   color: #4db8ff;
   text-decoration: none;
@@ -78,4 +91,13 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+/* Optional: tables if you use them */
+table {
+  color: #e6e6e6;
+}
+
+th {
+  color: #f0b400;
 }
