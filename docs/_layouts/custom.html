@@ -32,12 +32,13 @@
 
   <!-- ================= NAVIGATION ================= -->
   <nav class="nav-bar">
-    <a href="{{ '/monsters/' | relative_url }}">Monsters</a>
-    <a href="{{ '/tamables/' | relative_url }}">Tamables</a>
-    <a href="{{ '/items/' | relative_url }}">Items</a>
-    <a href="{{ '/armor/' | relative_url }}">Armor</a>
-    <a href="{{ '/weapons/' | relative_url }}">Weapons</a>
-  </nav>
+  <a class="{% if page.url contains '/monsters/' %}active{% endif %}" href="{{ '/monsters/' | relative_url }}">Monsters</a>
+  <a class="{% if page.url contains '/tamables/' %}active{% endif %}" href="{{ '/tamables/' | relative_url }}">Tamables</a>
+  <a class="{% if page.url contains '/items/' %}active{% endif %}" href="{{ '/items/' | relative_url }}">Items</a>
+  <a class="{% if page.url contains '/armor/' %}active{% endif %}" href="{{ '/armor/' | relative_url }}">Armor</a>
+  <a class="{% if page.url contains '/weapons/' %}active{% endif %}" href="{{ '/weapons/' | relative_url }}">Weapons</a>
+</nav>
+
 
   <!-- ================= PAGE CONTENT ================= -->
   <div class="page-content">
