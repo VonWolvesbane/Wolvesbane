@@ -1,0 +1,94 @@
+--- Daat99 Holder.cs.Phase6
++++ Daat99 Holder.cs.Phase14
+@@ -11,6 +11,7 @@
+ */
+ using System;
+ using System.Collections;
++using System.Diagnostics;
+ using daat99;
+ using Server.Engines.Craft;
+ using Server.Gumps;
+@@ -446,6 +447,41 @@
+ 				writer.Write( (int) alResources[i] );
+ 		}
+ 
++		// Wolvesbane Phase 14: temporary compact-holder serialization profiling.
++		private static long wbProfileBitsetBuildTicks;
++		private static long wbProfileBitsetWriteTicks;
++		private static long wbProfileResourceWriteTicks;
++		private static long wbProfileHolderCalls;
++		private static long wbProfileRecipeMembershipChecks;
++		private static long wbProfileResourceValues;
++
++		public static void WBResetSerializeProfile()
++		{
++			wbProfileBitsetBuildTicks = 0;
++			wbProfileBitsetWriteTicks = 0;
++			wbProfileResourceWriteTicks = 0;
++			wbProfileHolderCalls = 0;
++			wbProfileRecipeMembershipChecks = 0;
++			wbProfileResourceValues = 0;
++		}
++
++		private static double WBTicksToMs(long ticks)
++		{
++			return ticks * 1000.0 / Stopwatch.Frequency;
++		}
++
++		public static string WBGetSerializeProfile()
++		{
++			return String.Format(
++				"holders={0:N0}, recipeChecks={1:N0}, resourceValues={2:N0}, bitsetBuild={3:0.000}ms, bitsetWrite={4:0.000}ms, resourcesWrite={5:0.000}ms",
++				wbProfileHolderCalls,
++				wbProfileRecipeMembershipChecks,
++				wbProfileResourceValues,
++				WBTicksToMs(wbProfileBitsetBuildTicks),
++				WBTicksToMs(wbProfileBitsetWriteTicks),
++				WBTicksToMs(wbProfileResourceWriteTicks));
++		}
++
+ 		// Wolvesbane Phase 6:
+ 		// Compact holder serialization used by Daat99OWLTR format version 1.
+ 		// Recipe membership is stored as a bit-set against one shared type catalog.
+@@ -455,6 +491,8 @@
+ 			writer.Write( (TimeSpan) NextReward );
+ 			writer.Write( (int) iItemsCrafted );
+ 
++			long start = Stopwatch.GetTimestamp();
++
+ 			int wordCount = (catalogCount + 31) / 32;
+ 			int[] words = new int[wordCount];
+ 
+@@ -464,6 +502,8 @@
+ 				if ( type == null )
+ 					continue;
+ 
++				wbProfileRecipeMembershipChecks++;
++
+ 				object indexObject = typeIndex[type.ToString()];
+ 				if ( indexObject == null )
+ 					continue;
+@@ -475,13 +515,22 @@
+ 				words[index >> 5] |= (1 << (index & 31));
+ 			}
+ 
++			wbProfileBitsetBuildTicks += Stopwatch.GetTimestamp() - start;
++
++			start = Stopwatch.GetTimestamp();
+ 			writer.Write( wordCount );
+ 			for ( int i = 0; i < wordCount; ++i )
+ 				writer.Write( words[i] );
+-
++			wbProfileBitsetWriteTicks += Stopwatch.GetTimestamp() - start;
++
++			start = Stopwatch.GetTimestamp();
+ 			writer.Write( alResources.Count );
+ 			for ( int i = 0; i < alResources.Count; ++i )
+ 				writer.Write( (int) alResources[i] );
++			wbProfileResourceWriteTicks += Stopwatch.GetTimestamp() - start;
++
++			wbProfileHolderCalls++;
++			wbProfileResourceValues += alResources.Count;
+ 		}
+ 
+ 		public NewDaat99Holder( GenericReader reader, Type[] typeCatalog ) // compact deserialize

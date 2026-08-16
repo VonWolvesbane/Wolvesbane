@@ -11,7 +11,6 @@ ____/_ \____       888                   888    d88P  Y88b d88P  Y88b
 */
 using System;
 using System.Collections;
-using System.Collections.Generic;
 using Server;
 using Server.Items;
 using Server.Mobiles;
@@ -161,172 +160,6 @@ namespace daat99
 		{ 
 		} 
 
-		// Wolvesbane Phase 15:
-		// Cache the shared recipe catalog between saves. The save format itself is unchanged.
-		// The cache is validated against every holder before anything is written. If a new
-		// recipe Type appears, the catalog is rebuilt in stable sorted order first.
-		private static ArrayList wbRecipeCatalogCache;
-		private static Hashtable wbRecipeTypeIndexCache;
-
-		private class WBPreparedHolder
-		{
-			public Mobile Mobile;
-			public NewDaat99Holder Holder;
-			public int[] Words;
-
-			public WBPreparedHolder(Mobile mobile, NewDaat99Holder holder, int[] words)
-			{
-				Mobile = mobile;
-				Holder = holder;
-				Words = words;
-			}
-		}
-
-		private static void WBRebuildRecipeCatalog( Hashtable serialTable )
-		{
-			Hashtable uniqueByName = new Hashtable();
-			ArrayList catalog = new ArrayList();
-
-			foreach ( DictionaryEntry de in serialTable )
-			{
-				NewDaat99Holder holder = de.Value as NewDaat99Holder;
-				if ( holder == null || holder.ItemTypeList == null )
-					continue;
-
-				for ( int i = 0; i < holder.ItemTypeList.Count; ++i )
-				{
-					Type type = holder.ItemTypeList[i] as Type;
-					if ( type == null )
-						continue;
-
-					string name = type.ToString();
-					if ( name == null || uniqueByName.Contains(name) )
-						continue;
-
-					uniqueByName.Add(name, type);
-					catalog.Add(name);
-				}
-			}
-
-			catalog.Sort();
-
-			Hashtable typeIndex = new Hashtable();
-
-			for ( int i = 0; i < catalog.Count; ++i )
-			{
-				string name = catalog[i] as string;
-				Type type = uniqueByName[name] as Type;
-
-				if ( type != null )
-					typeIndex[type] = i;
-			}
-
-			wbRecipeCatalogCache = catalog;
-			wbRecipeTypeIndexCache = typeIndex;
-		}
-
-		// Phase 15B warm-save fast path:
-		// Validate the cached catalog and build holder bitsets during the SAME traversal.
-		// Returns false immediately if an unknown recipe Type is encountered. In that rare
-		// case the caller rebuilds the catalog and prepares holders again using the new map.
-		private static bool WBTryPrepareHoldersWithCachedCatalog( Hashtable serialTable, ArrayList catalog, Hashtable typeIndex, out ArrayList prepared )
-		{
-			prepared = new ArrayList();
-
-			if ( catalog == null || typeIndex == null )
-				return false;
-
-			int catalogCount = catalog.Count;
-			int wordCount = (catalogCount + 31) / 32;
-
-			foreach ( DictionaryEntry de in serialTable )
-			{
-				Mobile mobile = de.Key as Mobile;
-				NewDaat99Holder holder = de.Value as NewDaat99Holder;
-
-				if ( mobile == null || holder == null )
-					continue;
-
-				int[] words = new int[wordCount];
-				ArrayList types = holder.ItemTypeList;
-
-				if ( types != null )
-				{
-					for ( int i = 0; i < types.Count; ++i )
-					{
-						Type type = types[i] as Type;
-						if ( type == null )
-							continue;
-
-						object indexObject = typeIndex[type];
-
-						// Unknown recipe Type means the cached catalog is stale.
-						// Do not write partial/prepared data against the old catalog.
-						if ( indexObject == null )
-						{
-							prepared = null;
-							return false;
-						}
-
-						int index = (int)indexObject;
-
-						if ( index < 0 || index >= catalogCount )
-						{
-							prepared = null;
-							return false;
-						}
-
-						words[index >> 5] |= (1 << (index & 31));
-					}
-				}
-
-				prepared.Add(new WBPreparedHolder(mobile, holder, words));
-			}
-
-			return true;
-		}
-
-		private static ArrayList WBPrepareHolders( Hashtable serialTable, Hashtable typeIndex, int catalogCount )
-		{
-			ArrayList prepared = new ArrayList();
-			int wordCount = (catalogCount + 31) / 32;
-
-			foreach ( DictionaryEntry de in serialTable )
-			{
-				Mobile mobile = de.Key as Mobile;
-				NewDaat99Holder holder = de.Value as NewDaat99Holder;
-
-				if ( mobile == null || holder == null )
-					continue;
-
-				int[] words = new int[wordCount];
-				ArrayList types = holder.ItemTypeList;
-
-				if ( types != null )
-				{
-					for ( int i = 0; i < types.Count; ++i )
-					{
-						Type type = types[i] as Type;
-						if ( type == null )
-							continue;
-
-						object indexObject = typeIndex[type];
-						if ( indexObject == null )
-							continue;
-
-						int index = (int)indexObject;
-
-						if ( index >= 0 && index < catalogCount )
-							words[index >> 5] |= (1 << (index & 31));
-					}
-				}
-
-				prepared.Add(new WBPreparedHolder(mobile, holder, words));
-			}
-
-			return prepared;
-		}
-
 		private static Hashtable BuildSerializableHolderTable()
 		{
 			Hashtable serialTable = new Hashtable();
@@ -381,67 +214,38 @@ namespace daat99
 
 		public override void Serialize( GenericWriter writer ) 
 		{ 
-
 			base.Serialize( writer ); 
 
 			writer.Write( (int) 1 ); // Wolvesbane compact OWLTR serialization
+
 			writer.Write( (bool) Deletable ); //must be written first
 
 			if (!Deletable)
 			{
 				OWLTROptionsManager.Manager.Serialize(writer);
+
 				foreach (DictionaryEntry de in htTempHolders) //update the static hashtable before save
 				{
 					Mobile mobile = de.Key as Mobile;
 					if ( mobile != null && htStaticHolders.Contains(mobile) )
-					{
 						htStaticHolders[mobile] = de.Value;
-					}
 				}
 
 				Hashtable serialTable = BuildSerializableHolderTable();
+				Hashtable typeIndex = new Hashtable();
+				ArrayList recipeCatalog = BuildRecipeCatalog(serialTable, typeIndex);
 
-				// Warm save: validate the cached catalog and build the bitsets in ONE traversal.
-				// Cold/stale cache: rebuild, then prepare once against the rebuilt catalog.
-				ArrayList preparedHolders;
-
-				ArrayList recipeCatalog = wbRecipeCatalogCache;
-				Hashtable typeIndex = wbRecipeTypeIndexCache;
-
-				bool preparedFromCache = WBTryPrepareHoldersWithCachedCatalog(
-					serialTable, recipeCatalog, typeIndex, out preparedHolders);
-
-
-
-				if ( !preparedFromCache )
-				{
-
-					WBRebuildRecipeCatalog(serialTable);
-					//catalogRebuildMs = sw.Elapsed.TotalMilliseconds;
-
-					recipeCatalog = wbRecipeCatalogCache;
-					typeIndex = wbRecipeTypeIndexCache;
-
-					preparedHolders = WBPrepareHolders(serialTable, typeIndex, recipeCatalog.Count);
-					//holderPrepareAfterRebuildMs = sw.Elapsed.TotalMilliseconds;
-				}
-
+				// Write each recipe type name ONCE for the whole shard.
 				writer.Write( recipeCatalog.Count );
 				for ( int i = 0; i < recipeCatalog.Count; ++i )
+					writer.Write( (string)recipeCatalog[i] );
+
+				// Each holder now writes a compact bit-set against the shared catalog.
+				writer.Write( serialTable.Count );
+				foreach ( DictionaryEntry de in serialTable )
 				{
-					string name = (string)recipeCatalog[i];
-					writer.Write( name );
-				}
-
-				NewDaat99Holder.WBResetSerializeProfile();
-				writer.Write( preparedHolders.Count );
-
-				for ( int i = 0; i < preparedHolders.Count; ++i )
-				{
-					WBPreparedHolder prepared = (WBPreparedHolder)preparedHolders[i];
-					writer.Write( prepared.Mobile );
-
-					prepared.Holder.SerializeCompactPrepared( writer, prepared.Words );
+					writer.Write( (Mobile)de.Key );
+					((NewDaat99Holder)de.Value).SerializeCompact( writer, typeIndex, recipeCatalog.Count );
 				}
 			}
 		}

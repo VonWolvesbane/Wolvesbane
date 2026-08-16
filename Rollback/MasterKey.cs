@@ -63,7 +63,6 @@ namespace Server.Items
             Hue = 1153;
             Weight = 5;
             Name = "Master Keys";
-            LootType = LootType.Blessed;
         }
 
         //serial constructor
@@ -287,46 +286,13 @@ namespace Server.Items
 
             writer.Write(0);
 
-            int storeCount = Stores.Count;
-            int typeCount = KeyTypes.Count;
-
-            if (storeCount != typeCount)
+            writer.Write(Stores.Count);
+            int index = 0;
+            foreach (ItemStore store in Stores)
             {
-                Console.WriteLine(
-                    "WB MASTERKEY ERROR: Serial {0} has Stores={1} but KeyTypes={2}. Save may fail; no automatic repair was attempted.",
-                    Serial, storeCount, typeCount);
-            }
-
-            writer.Write(storeCount);
-
-            for (int index = 0; index < storeCount; index++)
-            {
-                ItemStore store = Stores[index];
-
-                if (store == null)
-                {
-                    Console.WriteLine(
-                        "WB MASTERKEY ERROR: Serial {0} store index {1} is NULL. Save may fail; no automatic repair was attempted.",
-                        Serial, index);
-
-                    throw new InvalidOperationException(
-                        String.Format("MasterItemStoreKey {0} has a null ItemStore at index {1}.", Serial, index));
-                }
-
-                Type keyType = index < typeCount ? KeyTypes[index] : null;
-
-                if (keyType == null)
-                {
-                    Console.WriteLine(
-                        "WB MASTERKEY ERROR: Serial {0} key type index {1} is NULL/missing. Save stopped before silently corrupting the master key.",
-                        Serial, index);
-
-                    throw new InvalidOperationException(
-                        String.Format("MasterItemStoreKey {0} has a null/missing key type at index {1}.", Serial, index));
-                }
-
                 store.Serialize(writer);
-                writer.Write(keyType.Name);
+
+                writer.Write(KeyTypes[index++].Name);
             }
         }
 
@@ -350,111 +316,28 @@ namespace Server.Items
 
                             store.Owner = this;
 
-                            string keyTypeName = reader.ReadString();
-                            Type keytype = ScriptCompiler.FindTypeByName(keyTypeName);
+                            //TODO: handle exceptions
+                            Type keytype = ScriptCompiler.FindTypeByName(reader.ReadString());
                             KeyTypes.Add(keytype);
 
-                            if (keytype == null)
-                            {
-                                Console.WriteLine(
-                                    "WB MASTERKEY LOAD ERROR: Serial {0}, index {1}: key type '{2}' could not be resolved. The old code silently ignored this.",
-                                    Serial, i, keyTypeName);
-                                continue;
-                            }
-
-                            // Synchronize the stored entry definition with the current child-key script.
-                            // Unlike the old code, failures are reported instead of silently swallowed.
-                            BaseStoreKey synchkey = null;
-
+                            //handle synchronization between store and entry listing within the KeyType
                             try
                             {
-                                synchkey = (BaseStoreKey)Activator.CreateInstance(keytype);
+                                BaseStoreKey synchkey = (BaseStoreKey)Activator.CreateInstance(keytype);
 
                                 store.SynchronizeStore(synchkey.EntryStructure);
                                 store.DisplayColumns = synchkey.DisplayColumns;
+
+                                synchkey.Delete();
                             }
-                            catch (Exception ex)
+                            catch
                             {
-                                Console.WriteLine(
-                                    "WB MASTERKEY LOAD ERROR: Serial {0}, index {1}, type {2}: {3}: {4}",
-                                    Serial, i, keytype.FullName, ex.GetType().Name, ex.Message);
-                            }
-                            finally
-                            {
-                                if (synchkey != null && !synchkey.Deleted)
-                                    synchkey.Delete();
                             }
                         }
 
-                        // Master keys aggregate and replace the physical child keys added to them.
-                        // Keep the master object intrinsically death-safe after loading old saves.
-                        LootType = LootType.Blessed;
-
-                        ValidateDiagnosticIntegrity("Deserialize");
                         break;
                     }
             }
-        }
-
-        private string GetDiagnosticOwner()
-        {
-            object root = RootParent;
-
-            Mobile mobile = root as Mobile;
-            if (mobile != null)
-                return String.Format("{0}({1})", mobile.Name, mobile.Serial);
-
-            return root != null ? root.GetType().FullName : "(none)";
-        }
-
-        public int ValidateDiagnosticIntegrity(string source)
-        {
-            int problems = 0;
-
-            int storeCount = _Stores != null ? _Stores.Count : 0;
-            int typeCount = _KeyTypes != null ? _KeyTypes.Count : 0;
-
-            if (storeCount != typeCount)
-            {
-                problems++;
-                Console.WriteLine(
-                    "WB MASTERKEY INTEGRITY: Serial {0} [{1}] Stores={2}, KeyTypes={3} (MISMATCH)",
-                    Serial, source, storeCount, typeCount);
-            }
-
-            int max = Math.Max(storeCount, typeCount);
-
-            for (int i = 0; i < max; i++)
-            {
-                ItemStore store = i < storeCount ? _Stores[i] : null;
-                Type keyType = i < typeCount ? _KeyTypes[i] : null;
-
-                if (store == null)
-                {
-                    problems++;
-                    Console.WriteLine(
-                        "WB MASTERKEY INTEGRITY: Serial {0} [{1}] store index {2} is NULL.",
-                        Serial, source, i);
-                }
-                else if (store.Owner != this)
-                {
-                    problems++;
-                    Console.WriteLine(
-                        "WB MASTERKEY INTEGRITY: Serial {0} [{1}] store index {2} Owner is {3}, expected this master key.",
-                        Serial, source, i,
-                        store.Owner != null ? store.Owner.GetType().FullName : "NULL");
-                }
-
-                if (keyType == null)
-                {
-                    problems++;
-                    Console.WriteLine(
-                        "WB MASTERKEY INTEGRITY: Serial {0} [{1}] key type index {2} is NULL/missing.",
-                        Serial, source, i);
-                }
-            }
-
-            return problems;
         }
 
         //targeting to select a keyring to add to master keys

@@ -227,8 +227,11 @@ namespace daat99
 					player.SendMessage(1173, "Unable to find your Master Storage, please make sure it's in your backpack.");
 				return false;
 			}
-			List<Item> items = backpack.TryExtractType(type, amount);
-			if (items.Count == 0)
+			// Wolvesbane fix: this method is a CONSUME operation.
+			// The original code called TryExtractType(), which materialized real Item
+			// objects into World.Items and then discarded the returned list. Those
+			// parentless Map.Internal objects accumulated forever (especially tokens).
+			if (!backpack.TryConsume(type, amount))
 			{
 				if (informPlayer)
 					player.SendMessage(1173, "You don't have enough " + type.Name + " in your Master Storage.");
@@ -375,10 +378,11 @@ namespace daat99
 			List<Item> items = new List<Item>();
 			try
 			{
-				Item item = Activator.CreateInstance(type) as Item;
+				// Wolvesbane fix: do not create a throwaway probe Item here.
+				// Item constructors immediately register with World.Items; the old probe
+				// was never returned or deleted, leaking one world object per extraction.
+				Item item = null;
 
-				if (item == null)
-					return null;
 				while (amount > 0)
 				{
 					item = Activator.CreateInstance(type) as Item;

@@ -1,0 +1,122 @@
+--- Daat99 OWLTR Control Center.cs.Phase6
++++ Daat99 OWLTR Control Center.cs.Phase14
+@@ -11,6 +11,8 @@
+ */
+ using System;
+ using System.Collections;
++using System.Collections.Generic;
++using System.Diagnostics;
+ using Server;
+ using Server.Items;
+ using Server.Mobiles;
+@@ -214,39 +216,98 @@
+ 
+ 		public override void Serialize( GenericWriter writer ) 
+ 		{ 
++			Stopwatch total = Stopwatch.StartNew();
++			Stopwatch sw = Stopwatch.StartNew();
++
+ 			base.Serialize( writer ); 
+-
++			double baseMs = sw.Elapsed.TotalMilliseconds;
++
++			sw.Restart();
+ 			writer.Write( (int) 1 ); // Wolvesbane compact OWLTR serialization
+-
+ 			writer.Write( (bool) Deletable ); //must be written first
++			double headerMs = sw.Elapsed.TotalMilliseconds;
+ 
+ 			if (!Deletable)
+ 			{
++				sw.Restart();
+ 				OWLTROptionsManager.Manager.Serialize(writer);
+-
++				double optionsMs = sw.Elapsed.TotalMilliseconds;
++
++				sw.Restart();
++				int tempSeen = 0;
++				int tempUpdated = 0;
+ 				foreach (DictionaryEntry de in htTempHolders) //update the static hashtable before save
+ 				{
++					tempSeen++;
+ 					Mobile mobile = de.Key as Mobile;
+ 					if ( mobile != null && htStaticHolders.Contains(mobile) )
++					{
+ 						htStaticHolders[mobile] = de.Value;
+-				}
+-
++						tempUpdated++;
++					}
++				}
++				double tempSyncMs = sw.Elapsed.TotalMilliseconds;
++
++				sw.Restart();
+ 				Hashtable serialTable = BuildSerializableHolderTable();
++				double serialTableMs = sw.Elapsed.TotalMilliseconds;
++
++				sw.Restart();
+ 				Hashtable typeIndex = new Hashtable();
+ 				ArrayList recipeCatalog = BuildRecipeCatalog(serialTable, typeIndex);
+-
+-				// Write each recipe type name ONCE for the whole shard.
++				double catalogBuildMs = sw.Elapsed.TotalMilliseconds;
++
++				sw.Restart();
+ 				writer.Write( recipeCatalog.Count );
++				long catalogChars = 0;
+ 				for ( int i = 0; i < recipeCatalog.Count; ++i )
+-					writer.Write( (string)recipeCatalog[i] );
+-
+-				// Each holder now writes a compact bit-set against the shared catalog.
++				{
++					string name = (string)recipeCatalog[i];
++					if (name != null) catalogChars += name.Length;
++					writer.Write( name );
++				}
++				double catalogWriteMs = sw.Elapsed.TotalMilliseconds;
++
++				NewDaat99Holder.WBResetSerializeProfile();
++				sw.Restart();
+ 				writer.Write( serialTable.Count );
++				double slowestHolderMs = 0.0;
++				Serial slowestHolderSerial = Serial.MinusOne;
++
+ 				foreach ( DictionaryEntry de in serialTable )
+ 				{
+-					writer.Write( (Mobile)de.Key );
++					Mobile mobile = de.Key as Mobile;
++					writer.Write( mobile );
++
++					long holderStart = Stopwatch.GetTimestamp();
+ 					((NewDaat99Holder)de.Value).SerializeCompact( writer, typeIndex, recipeCatalog.Count );
+-				}
++					double holderMs = (Stopwatch.GetTimestamp() - holderStart) * 1000.0 / Stopwatch.Frequency;
++
++					if (holderMs > slowestHolderMs)
++					{
++						slowestHolderMs = holderMs;
++						slowestHolderSerial = mobile != null ? mobile.Serial : Serial.MinusOne;
++					}
++				}
++				double holdersMs = sw.Elapsed.TotalMilliseconds;
++
++				total.Stop();
++
++				Console.WriteLine(
++					"WB OWLTR PROFILE: total={0:0.000}ms base={1:0.000} header={2:0.000} options={3:0.000} tempSync={4:0.000} serialTable={5:0.000} catalogBuild={6:0.000} catalogWrite={7:0.000} holders={8:0.000}",
++					total.Elapsed.TotalMilliseconds, baseMs, headerMs, optionsMs, tempSyncMs, serialTableMs, catalogBuildMs, catalogWriteMs, holdersMs);
++
++				Console.WriteLine(
++					"WB OWLTR COUNTS: static={0:N0} temp={1:N0} tempSeen={2:N0} tempUpdated={3:N0} serializable={4:N0} catalog={5:N0} catalogChars={6:N0} slowestHolder={7} {8:0.000}ms",
++					htStaticHolders != null ? htStaticHolders.Count : 0,
++					htTempHolders != null ? htTempHolders.Count : 0,
++					tempSeen, tempUpdated, serialTable.Count, recipeCatalog.Count, catalogChars, slowestHolderSerial, slowestHolderMs);
++
++				Console.WriteLine("WB OWLTR HOLDERS: " + NewDaat99Holder.WBGetSerializeProfile());
++			}
++			else
++			{
++				total.Stop();
+ 			}
+ 		}
+ 

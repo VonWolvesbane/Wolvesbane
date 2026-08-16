@@ -533,37 +533,6 @@ namespace Server.Items
 			wbProfileResourceValues += alResources.Count;
 		}
 
-
-		// Wolvesbane Phase 15:
-		// Writes the exact same holder format as SerializeCompact(), but accepts the
-		// already-built recipe bitset so recipe membership is not recalculated here.
-		public void SerializeCompactPrepared( GenericWriter writer, int[] words )
-		{
-			writer.Write( (int) 1 ); // compact holder version
-			writer.Write( (TimeSpan) NextReward );
-			writer.Write( (int) iItemsCrafted );
-
-			long start = Stopwatch.GetTimestamp();
-
-			int wordCount = words != null ? words.Length : 0;
-			writer.Write( wordCount );
-
-			for ( int i = 0; i < wordCount; ++i )
-				writer.Write( words[i] );
-
-			wbProfileBitsetWriteTicks += Stopwatch.GetTimestamp() - start;
-
-			start = Stopwatch.GetTimestamp();
-
-			writer.Write( alResources.Count );
-			for ( int i = 0; i < alResources.Count; ++i )
-				writer.Write( (int) alResources[i] );
-
-			wbProfileResourceWriteTicks += Stopwatch.GetTimestamp() - start;
-			wbProfileHolderCalls++;
-			wbProfileResourceValues += alResources.Count;
-		}
-
 		public NewDaat99Holder( GenericReader reader, Type[] typeCatalog ) // compact deserialize
 		{
 			int version = reader.ReadInt();

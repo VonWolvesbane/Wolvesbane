@@ -110,7 +110,7 @@ namespace Server.Gumps
 
 			if ( info.ButtonID == 1 )
 			{
-				Mobile breeder = new Mobile();
+				Mobile breeder = null;
 
 				foreach ( Mobile m in from.GetMobilesInRange( 5 ) )
 				{
@@ -170,8 +170,8 @@ namespace Server.Gumps
 
 				Type targettype = bc.GetType();
 				Type pettype = m_Pet.GetType();
-				Mobile breeder = new Mobile();
-				Mobile owner = new Mobile();
+				Mobile breeder = null;
+				Mobile owner = null;
 
 				foreach ( Mobile m in bc.GetMobilesInRange( 5 ) )
 				{

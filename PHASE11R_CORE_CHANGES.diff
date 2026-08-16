@@ -1,0 +1,262 @@
+--- Server/World.cs.original
++++ Server/World.cs.Phase11R
+@@ -1092,6 +1092,83 @@
+ 			}
+ 		}
+ 
++		// Wolvesbane save profiling (Phase 11)
++		public static bool WBSaveProfileEnabled = true;
++
++		private static readonly object m_WBSaveProfileSync = new object();
++		private static Dictionary<string, double> m_WBSaveProfileStages = new Dictionary<string, double>();
++
++		internal static void WBResetSaveProfile()
++		{
++			lock (m_WBSaveProfileSync)
++			{
++				m_WBSaveProfileStages.Clear();
++			}
++		}
++
++		internal static void WBReportSaveStage(string name, TimeSpan elapsed)
++		{
++			if (!WBSaveProfileEnabled)
++				return;
++
++			lock (m_WBSaveProfileSync)
++			{
++				double existing;
++
++				if (!m_WBSaveProfileStages.TryGetValue(name, out existing))
++					existing = 0.0;
++
++				m_WBSaveProfileStages[name] = existing + elapsed.TotalMilliseconds;
++			}
++		}
++
++		private static double WBGetSaveStage(string name)
++		{
++			lock (m_WBSaveProfileSync)
++			{
++				double value;
++				return m_WBSaveProfileStages.TryGetValue(name, out value) ? value : 0.0;
++			}
++		}
++
++		private static void WBPrintSaveProfile(string strategyName, double displayedSaveMilliseconds)
++		{
++			if (!WBSaveProfileEnabled)
++				return;
++
++			double strategy = WBGetSaveStage("Strategy");
++			double mobiles = WBGetSaveStage("Mobiles");
++			double items = WBGetSaveStage("Items");
++			double guilds = WBGetSaveStage("Guilds");
++			double data = WBGetSaveStage("CustomData");
++			double worldSaveEvent = WBGetSaveStage("WorldSaveEvent");
++			double before = WBGetSaveStage("BeforeWorldSave");
++			double flushPause = WBGetSaveStage("NetFlushPause");
++			double wait = WBGetSaveStage("WaitForWriteCompletion");
++
++			Console.WriteLine("WB SAVE PROFILE: strategy={0}, displayed={1:F1}ms, strategy={2:F1}ms, WorldSaveEvent={3:F1}ms",
++				strategyName, displayedSaveMilliseconds, strategy, worldSaveEvent);
++			Console.WriteLine("WB SAVE PROFILE: Items={0:F1}ms, Mobiles={1:F1}ms, Guilds={2:F1}ms, CustomData={3:F1}ms",
++				items, mobiles, guilds, data);
++			Console.WriteLine("WB SAVE PROFILE: BeforeWorldSave={0:F1}ms, NetFlushPause={1:F1}ms, PreviousWriteWait={2:F1}ms",
++				before, flushPause, wait);
++
++			Broadcast(0x3F, true, AccessLevel.Administrator,
++				"WB Profile [{0}] Displayed {1:F1}ms | Strategy {2:F1}ms | WorldSave event {3:F1}ms",
++				strategyName, displayedSaveMilliseconds, strategy, worldSaveEvent);
++
++			if (items > 0.0 || mobiles > 0.0 || guilds > 0.0 || data > 0.0)
++			{
++				Broadcast(0x3F, true, AccessLevel.Administrator,
++					"WB Stages: Items {0:F1}ms | Mobiles {1:F1}ms | Guilds {2:F1}ms | Customs {3:F1}ms",
++					items, mobiles, guilds, data);
++			}
++
++			Broadcast(0x3F, true, AccessLevel.Administrator,
++				"WB Outside displayed timer: BeforeHook {0:F1}ms | NetFlush/Pause {1:F1}ms | PriorWriteWait {2:F1}ms",
++				before, flushPause, wait);
++		}
++
+ 		internal static int m_Saves;
+ 
+ 		public static void Save()
+@@ -1106,14 +1183,42 @@
+ 				return;
+ 			}
+             
++			if (WBSaveProfileEnabled)
++				WBResetSaveProfile();
++
++			Stopwatch wbStageWatch = null;
++
++			if (WBSaveProfileEnabled)
++				wbStageWatch = Stopwatch.StartNew();
++
+ 			EventSink.InvokeBeforeWorldSave(new BeforeWorldSaveEventArgs());
++
++			if (WBSaveProfileEnabled)
++			{
++				wbStageWatch.Stop();
++				WBReportSaveStage("BeforeWorldSave", wbStageWatch.Elapsed);
++				wbStageWatch = Stopwatch.StartNew();
++			}
+ 
+             ++m_Saves;
+ 
+ 			NetState.FlushAll();
+ 			NetState.Pause();
+ 
++			if (WBSaveProfileEnabled)
++			{
++				wbStageWatch.Stop();
++				WBReportSaveStage("NetFlushPause", wbStageWatch.Elapsed);
++				wbStageWatch = Stopwatch.StartNew();
++			}
++
+ 			WaitForWriteCompletion(); //Blocks Save until current disk flush is done.
++
++			if (WBSaveProfileEnabled)
++			{
++				wbStageWatch.Stop();
++				WBReportSaveStage("WaitForWriteCompletion", wbStageWatch.Elapsed);
++			}
+ 
+ 			m_Saving = true;
+ 
+@@ -1148,6 +1253,11 @@
+ 				Directory.CreateDirectory("Saves/Customs/");
+ 			}
+ 
++			Stopwatch wbStrategyWatch = null;
++
++			if (WBSaveProfileEnabled)
++				wbStrategyWatch = Stopwatch.StartNew();
++
+ 			if (m_Metrics)
+ 			{
+ 				using ( SaveMetrics metrics = new SaveMetrics() ) {
+@@ -1159,6 +1269,17 @@
+ 				strategy.Save(null, permitBackgroundWrite);
+ 			}
+ 
++			if (WBSaveProfileEnabled)
++			{
++				wbStrategyWatch.Stop();
++				WBReportSaveStage("Strategy", wbStrategyWatch.Elapsed);
++			}
++
++			Stopwatch wbWorldSaveEventWatch = null;
++
++			if (WBSaveProfileEnabled)
++				wbWorldSaveEventWatch = Stopwatch.StartNew();
++
+ 			try
+ 			{
+ 				EventSink.InvokeWorldSave(new WorldSaveEventArgs(message));
+@@ -1168,7 +1289,16 @@
+ 				throw new Exception("World Save event threw an exception.  Save failed!", e);
+ 			}
+ 
++			if (WBSaveProfileEnabled)
++			{
++				wbWorldSaveEventWatch.Stop();
++				WBReportSaveStage("WorldSaveEvent", wbWorldSaveEventWatch.Elapsed);
++			}
++
+ 			watch.Stop();
++
++			if (WBSaveProfileEnabled)
++				WBPrintSaveProfile(strategy.Name, watch.Elapsed.TotalMilliseconds);
+ 
+ 			m_Saving = false;
+ 
+
+--- Server/Persistence/StandardSaveStrategy.cs.original
++++ Server/Persistence/StandardSaveStrategy.cs.Phase11R
+@@ -1,5 +1,6 @@
+ using System;
+ using System.Collections.Generic;
++using System.Diagnostics;
+ using CustomsFramework;
+ using Server.Guilds;
+ 
+@@ -73,6 +74,8 @@
+ 
+         protected void SaveMobiles(SaveMetrics metrics)
+         {
++            Stopwatch wbWatch = World.WBSaveProfileEnabled ? Stopwatch.StartNew() : null;
++
+             Dictionary<Serial, Mobile> mobiles = World.Mobiles;
+ 
+             GenericWriter idx;
+@@ -121,10 +124,17 @@
+             idx.Close();
+             tdb.Close();
+             bin.Close();
++            if (wbWatch != null)
++            {
++                wbWatch.Stop();
++                World.WBReportSaveStage("Mobiles", wbWatch.Elapsed);
++            }
+         }
+ 
+         protected void SaveItems(SaveMetrics metrics)
+         {
++            Stopwatch wbWatch = World.WBSaveProfileEnabled ? Stopwatch.StartNew() : null;
++
+             Dictionary<Serial, Item> items = World.Items;
+ 
+             GenericWriter idx;
+@@ -177,10 +187,17 @@
+             idx.Close();
+             tdb.Close();
+             bin.Close();
++            if (wbWatch != null)
++            {
++                wbWatch.Stop();
++                World.WBReportSaveStage("Items", wbWatch.Elapsed);
++            }
+         }
+ 
+         protected void SaveGuilds(SaveMetrics metrics)
+         {
++            Stopwatch wbWatch = World.WBSaveProfileEnabled ? Stopwatch.StartNew() : null;
++
+             GenericWriter idx;
+             GenericWriter bin;
+ 
+@@ -216,10 +233,17 @@
+ 
+             idx.Close();
+             bin.Close();
++            if (wbWatch != null)
++            {
++                wbWatch.Stop();
++                World.WBReportSaveStage("Guilds", wbWatch.Elapsed);
++            }
+         }
+ 
+         protected void SaveData(SaveMetrics metrics)
+         {
++            Stopwatch wbWatch = World.WBSaveProfileEnabled ? Stopwatch.StartNew() : null;
++
+             Dictionary<CustomSerial, SaveData> data = World.Data;
+ 
+             GenericWriter indexWriter;
+@@ -265,6 +289,12 @@
+             indexWriter.Close();
+             typeWriter.Close();
+             dataWriter.Close();
++
++            if (wbWatch != null)
++            {
++                wbWatch.Stop();
++                World.WBReportSaveStage("CustomData", wbWatch.Elapsed);
++            }
+         }
+     }
+ }

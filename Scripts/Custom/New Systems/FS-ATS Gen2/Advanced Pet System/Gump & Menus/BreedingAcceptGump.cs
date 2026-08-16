@@ -73,9 +73,9 @@ namespace Server.Gumps
 			//Accept
 			if ( info.ButtonID == 2 )
 			{
-				Mobile breeder = new Mobile();
+				Mobile breeder = null;
 
-				Mobile owner = new Mobile();
+				Mobile owner = null;
 
 				int ai = 0;
 

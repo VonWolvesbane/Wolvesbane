@@ -2335,7 +2335,7 @@
     <Compile Include="Custom\Reapers Uploads\Quests\Titan Quest\TitanGump.cs" />
     <Compile Include="Custom\Reapers Uploads\Quests\Titan Quest\TitanWarriorSandals.cs" />
     <Compile Include="Custom\Reapers Uploads\ShardBreaker.cs" />
-    <Compile Include="Custom\Wolvesbane Written\Addon2Static.cs" />
+   
     <Compile Include="Custom\Wolvesbane Written\AI Written\SkillKatana.cs" />
     <Compile Include="Custom\Reapers Uploads\SlasherOfVeilsTame.cs" />
     <Compile Include="Custom\Reapers Uploads\Talkingsigns.cs" />
@@ -2397,7 +2397,7 @@
     <Compile Include="Custom\Wolvesbane Written\AI Written\EvoQuiver.cs" />
     <Compile Include="Custom\Wolvesbane Written\AI Written\Griffin.cs" />
     <Compile Include="Custom\Wolvesbane Written\AI Written\PlayerCount.cs" />
-    <Compile Include="Custom\Wolvesbane Written\CopyStatics.cs" />
+    
     <Compile Include="Custom\Wolvesbane Written\Crusader Gear\Hephastos.cs" />
     <Compile Include="Custom\Wolvesbane Written\Crusader Gear\CrusaderBelt.cs" />
     <Compile Include="Custom\Wolvesbane Written\Crusader Gear\CrusaderBoots.cs" />
@@ -3997,6 +3997,12 @@
     <Compile Include="Custom\Wolvesbane Written\X-Men\StormXmen.cs" />
     <Compile Include="Custom\Wolvesbane Written\X-Men\TunicofXMenUniform.cs" />
     <Compile Include="Custom\Wolvesbane Written\X-Men\Wolverine.cs" />
+    <Compile Include="Custom\Wolvesbane\WBGoldAudit.cs" />
+    <Compile Include="Custom\Wolvesbane\WBGoldCleanup.cs" />
+    <Compile Include="Custom\Wolvesbane\WBMountAudit.cs" />
+    <Compile Include="Custom\Wolvesbane\WBOWLTRAudit.cs" />
+    <Compile Include="Custom\Wolvesbane\WBWorldAudit.cs" />
+    <Compile Include="Custom\Wolvesbane\WorldCleanup\WBTokenCleanup.cs" />
     <Compile Include="Custom\X-Mas Deco\BoatXmasTreeAddon.cs" />
     <Compile Include="Custom\X-Mas Deco\ClassicTreeAddon.cs" />
     <Compile Include="Custom\X-Mas Deco\DeerTreeAddon.cs" />
@@ -16489,6 +16495,8 @@
     <Content Include="Custom\Tested\Universal Storage Keys Version 2.0.6\Server Modifications\Mark.cs.txt" />
     <Content Include="Custom\Tested\Universal Storage Keys Version 2.0.6\Server Modifications\Spell.cs.txt" />
     <Content Include="Custom\Tested\XmlLevelItem\XmlLevelItem Install NEW.txt" />
+    <Content Include="Output\Scripts.CS.dll" />
+    <Content Include="Output\Scripts.CS.pdb" />
     <Content Include="Services\New Magincia\ReadMe.txt" />
     <Content Include="Services\Revamped Dungeons\DespiseRevamped\Read Me.txt" />
     <Content Include="Services\Revamped Dungeons\Shame Revamped\Read Me.txt" />
@@ -16542,6 +16550,7 @@
     <None Include="Custom\Town Houses\Read.doc" />
     <None Include="Custom\Wolvesbane Written\X-Men\Wolverine.rar" />
     <None Include="LICENSE" />
+    <None Include="Output\Scripts.CS.hash" />
     <None Include="packages.config" />
     <None Include="VERSION" />
     <None Include="Vita Nex\LICENSE.md" />
@@ -16554,6 +16563,11 @@
     <Folder Include="Custom\ACC Systems\Complete Spell System\-=+ 02 Changing\Reagents\" />
     <Folder Include="Custom\ACC Systems\Complete Spell System\-=+ 02 Changing\searchplugins\" />
     <Folder Include="Custom\ACC Systems\Complete Spell System\-=+ 03 Systems\Ancient\searchplugins\" />
+    <Folder Include="Custom\New Systems\Instance Dungeons\Dungeons\Destard\Boss\" />
+    <Folder Include="Custom\New Systems\Instance Dungeons\Dungeons\Destard\Mobiles\Humanoid\Magic\" />
+    <Folder Include="Custom\New Systems\Instance Dungeons\Dungeons\Destard\Mobiles\Humanoid\Melee\" />
+    <Folder Include="Custom\New Systems\Instance Dungeons\Dungeons\Destard\Mobiles\Magic\" />
+    <Folder Include="Custom\New Systems\Instance Dungeons\Dungeons\Destard\Mobiles\Melee\" />
     <Folder Include="Custom\Wolvesbane Written\AI Written\Quests\" />
     <Folder Include="Custom\Wolvesbane Written\From Kat\Deco\Deco\Buildings\" />
     <Folder Include="Custom\Wolvesbane Written\From Kat\Deco\Deco\Fireplaces\" />

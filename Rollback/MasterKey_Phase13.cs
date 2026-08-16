@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using Server;
 using Server.Targeting;
 using Server.Gumps;
@@ -63,7 +64,6 @@ namespace Server.Items
             Hue = 1153;
             Weight = 5;
             Name = "Master Keys";
-            LootType = LootType.Blessed;
         }
 
         //serial constructor
@@ -299,6 +299,9 @@ namespace Server.Items
 
             writer.Write(storeCount);
 
+            Stopwatch totalTimer = Stopwatch.StartNew();
+            List<string> slowStores = new List<string>();
+
             for (int index = 0; index < storeCount; index++)
             {
                 ItemStore store = Stores[index];
@@ -325,8 +328,37 @@ namespace Server.Items
                         String.Format("MasterItemStoreKey {0} has a null/missing key type at index {1}.", Serial, index));
                 }
 
+                Stopwatch storeTimer = Stopwatch.StartNew();
                 store.Serialize(writer);
+                storeTimer.Stop();
+
                 writer.Write(keyType.Name);
+
+                if (storeTimer.Elapsed.TotalMilliseconds >= 1.0)
+                {
+                    slowStores.Add(String.Format(
+                        "{0}={1:0.000}ms entries={2}",
+                        keyType.Name,
+                        storeTimer.Elapsed.TotalMilliseconds,
+                        store.StoreEntries != null ? store.StoreEntries.Count : 0));
+                }
+            }
+
+            totalTimer.Stop();
+
+            // Keep console output useful: only report master keys that are materially slow.
+            if (totalTimer.Elapsed.TotalMilliseconds >= 2.0)
+            {
+                string owner = GetDiagnosticOwner();
+                Console.WriteLine(
+                    "WB MASTERKEY PROFILE: Serial={0} Owner={1} Stores={2} Total={3:0.000}ms Parent={4} LootType={5} Insured={6}",
+                    Serial, owner, storeCount, totalTimer.Elapsed.TotalMilliseconds,
+                    Parent != null ? Parent.GetType().FullName : "(none)",
+                    LootType, Insured);
+
+                int shown = Math.Min(8, slowStores.Count);
+                for (int i = 0; i < shown; i++)
+                    Console.WriteLine("  WB MASTERKEY STORE: " + slowStores[i]);
             }
         }
 
@@ -385,10 +417,6 @@ namespace Server.Items
                                     synchkey.Delete();
                             }
                         }
-
-                        // Master keys aggregate and replace the physical child keys added to them.
-                        // Keep the master object intrinsically death-safe after loading old saves.
-                        LootType = LootType.Blessed;
 
                         ValidateDiagnosticIntegrity("Deserialize");
                         break;

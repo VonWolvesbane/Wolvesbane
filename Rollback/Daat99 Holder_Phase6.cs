@@ -11,7 +11,6 @@ ____/_ \____       888                   888    d88P  Y88b d88P  Y88b
 */
 using System;
 using System.Collections;
-using System.Diagnostics;
 using daat99;
 using Server.Engines.Craft;
 using Server.Gumps;
@@ -447,41 +446,6 @@ namespace Server.Items
 				writer.Write( (int) alResources[i] );
 		}
 
-		// Wolvesbane Phase 14: temporary compact-holder serialization profiling.
-		private static long wbProfileBitsetBuildTicks;
-		private static long wbProfileBitsetWriteTicks;
-		private static long wbProfileResourceWriteTicks;
-		private static long wbProfileHolderCalls;
-		private static long wbProfileRecipeMembershipChecks;
-		private static long wbProfileResourceValues;
-
-		public static void WBResetSerializeProfile()
-		{
-			wbProfileBitsetBuildTicks = 0;
-			wbProfileBitsetWriteTicks = 0;
-			wbProfileResourceWriteTicks = 0;
-			wbProfileHolderCalls = 0;
-			wbProfileRecipeMembershipChecks = 0;
-			wbProfileResourceValues = 0;
-		}
-
-		private static double WBTicksToMs(long ticks)
-		{
-			return ticks * 1000.0 / Stopwatch.Frequency;
-		}
-
-		public static string WBGetSerializeProfile()
-		{
-			return String.Format(
-				"holders={0:N0}, recipeChecks={1:N0}, resourceValues={2:N0}, bitsetBuild={3:0.000}ms, bitsetWrite={4:0.000}ms, resourcesWrite={5:0.000}ms",
-				wbProfileHolderCalls,
-				wbProfileRecipeMembershipChecks,
-				wbProfileResourceValues,
-				WBTicksToMs(wbProfileBitsetBuildTicks),
-				WBTicksToMs(wbProfileBitsetWriteTicks),
-				WBTicksToMs(wbProfileResourceWriteTicks));
-		}
-
 		// Wolvesbane Phase 6:
 		// Compact holder serialization used by Daat99OWLTR format version 1.
 		// Recipe membership is stored as a bit-set against one shared type catalog.
@@ -491,8 +455,6 @@ namespace Server.Items
 			writer.Write( (TimeSpan) NextReward );
 			writer.Write( (int) iItemsCrafted );
 
-			long start = Stopwatch.GetTimestamp();
-
 			int wordCount = (catalogCount + 31) / 32;
 			int[] words = new int[wordCount];
 
@@ -501,8 +463,6 @@ namespace Server.Items
 				Type type = alItemTypeList[i] as Type;
 				if ( type == null )
 					continue;
-
-				wbProfileRecipeMembershipChecks++;
 
 				object indexObject = typeIndex[type.ToString()];
 				if ( indexObject == null )
@@ -515,53 +475,13 @@ namespace Server.Items
 				words[index >> 5] |= (1 << (index & 31));
 			}
 
-			wbProfileBitsetBuildTicks += Stopwatch.GetTimestamp() - start;
-
-			start = Stopwatch.GetTimestamp();
 			writer.Write( wordCount );
 			for ( int i = 0; i < wordCount; ++i )
 				writer.Write( words[i] );
-			wbProfileBitsetWriteTicks += Stopwatch.GetTimestamp() - start;
-
-			start = Stopwatch.GetTimestamp();
-			writer.Write( alResources.Count );
-			for ( int i = 0; i < alResources.Count; ++i )
-				writer.Write( (int) alResources[i] );
-			wbProfileResourceWriteTicks += Stopwatch.GetTimestamp() - start;
-
-			wbProfileHolderCalls++;
-			wbProfileResourceValues += alResources.Count;
-		}
-
-
-		// Wolvesbane Phase 15:
-		// Writes the exact same holder format as SerializeCompact(), but accepts the
-		// already-built recipe bitset so recipe membership is not recalculated here.
-		public void SerializeCompactPrepared( GenericWriter writer, int[] words )
-		{
-			writer.Write( (int) 1 ); // compact holder version
-			writer.Write( (TimeSpan) NextReward );
-			writer.Write( (int) iItemsCrafted );
-
-			long start = Stopwatch.GetTimestamp();
-
-			int wordCount = words != null ? words.Length : 0;
-			writer.Write( wordCount );
-
-			for ( int i = 0; i < wordCount; ++i )
-				writer.Write( words[i] );
-
-			wbProfileBitsetWriteTicks += Stopwatch.GetTimestamp() - start;
-
-			start = Stopwatch.GetTimestamp();
 
 			writer.Write( alResources.Count );
 			for ( int i = 0; i < alResources.Count; ++i )
 				writer.Write( (int) alResources[i] );
-
-			wbProfileResourceWriteTicks += Stopwatch.GetTimestamp() - start;
-			wbProfileHolderCalls++;
-			wbProfileResourceValues += alResources.Count;
 		}
 
 		public NewDaat99Holder( GenericReader reader, Type[] typeCatalog ) // compact deserialize
