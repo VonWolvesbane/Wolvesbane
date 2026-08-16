@@ -18,6 +18,7 @@ namespace Server.Commands
         private static bool m_BackupRunning;
 
         private const string BackupRoot = "Backups/Wolvesbane";
+        private const int BackupRetentionDays = 7;
 
         public static void Initialize()
         {
@@ -163,6 +164,9 @@ namespace Server.Commands
 
                 CopyDirectory(source, destination);
 
+                // Prune only after the new backup has completed successfully.
+                PruneExpiredBackups(destination);
+
                 lock (m_Sync)
                 {
                     m_LastBackup = DateTime.Now;
@@ -201,6 +205,80 @@ namespace Server.Commands
             }
 
             return path + "_" + Guid.NewGuid().ToString("N");
+        }
+
+        private static void PruneExpiredBackups(string currentBackupPath)
+        {
+            string root = Path.GetFullPath(BackupRoot);
+
+            if (!Directory.Exists(root))
+                return;
+
+            DateTime cutoff = DateTime.Now.AddDays(-BackupRetentionDays);
+            string[] directories = Directory.GetDirectories(root);
+
+            for (int i = 0; i < directories.Length; ++i)
+            {
+                string directory = Path.GetFullPath(directories[i]);
+
+                if (String.Equals(directory, currentBackupPath, StringComparison.OrdinalIgnoreCase))
+                    continue;
+
+                DateTime backupStamp;
+
+                // Only our exact yyyy-MM-dd_HH-mm-ss folder names are eligible.
+                if (!TryParseBackupDirectoryName(Path.GetFileName(directory), out backupStamp))
+                    continue;
+
+                if (backupStamp >= cutoff)
+                    continue;
+
+                try
+                {
+                    Directory.Delete(directory, true);
+                    Console.WriteLine("WB Backup: deleted expired backup {0} (older than {1} days).",
+                        directory, BackupRetentionDays);
+                }
+                catch (Exception ex)
+                {
+                    // A retention problem must not invalidate the successful new backup.
+                    Console.WriteLine("WB Backup retention WARNING: could not delete {0}: {1}: {2}",
+                        directory, ex.GetType().Name, ex.Message);
+                }
+            }
+        }
+
+        private static bool TryParseBackupDirectoryName(string name, out DateTime stamp)
+        {
+            stamp = DateTime.MinValue;
+
+            if (String.IsNullOrEmpty(name) || name.Length != 19)
+                return false;
+
+            int year, month, day, hour, minute, second;
+
+            if (!Int32.TryParse(name.Substring(0, 4), out year) ||
+                name[4] != '-' ||
+                !Int32.TryParse(name.Substring(5, 2), out month) ||
+                name[7] != '-' ||
+                !Int32.TryParse(name.Substring(8, 2), out day) ||
+                name[10] != '_' ||
+                !Int32.TryParse(name.Substring(11, 2), out hour) ||
+                name[13] != '-' ||
+                !Int32.TryParse(name.Substring(14, 2), out minute) ||
+                name[16] != '-' ||
+                !Int32.TryParse(name.Substring(17, 2), out second))
+                return false;
+
+            try
+            {
+                stamp = new DateTime(year, month, day, hour, minute, second);
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
         }
 
         private static void CopyDirectory(string source, string destination)
