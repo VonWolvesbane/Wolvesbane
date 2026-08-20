@@ -1,0 +1,89 @@
+WOLVESBANE INVASIONS - PRODUCTION-SAFE END REWARD PROCESSING
+=============================================================
+
+Primary symptom addressed:
+When an invasion ends, the shard appears to freeze while prizes are processed.
+
+CAUSE IN ORIGINAL CODE
+----------------------
+Invasion.Stop() performed all of the following synchronously on the ServUO
+main thread:
+
+- sort all defenders
+- open an InvasionDetailsUI for every defender
+- send rank announcements
+- calculate score-pool rewards
+- create/deliver every rank prize Item
+- InvokeFinished
+
+The original GivePrizes() method also used:
+    while (amount > 0)
+
+For a non-stackable prize, that means Amount=5000 creates and delivers 5,000
+individual Item objects without yielding back to the shard.
+
+FIX
+---
+Invasion.Stop() now marks the invasion Finished and performs normal invasion
+cleanup immediately, but end rewards are processed in small timer batches.
+
+Defaults:
+    3 defenders staged per tick
+    25 prize Item objects created/delivered per tick
+    50 ms between batches
+
+Therefore a very large non-stackable prize is spread over many short ticks
+instead of locking the game loop in one giant item-creation loop.
+
+PRESERVED
+---------
+- defender ranking order
+- top-3 announcements
+- InvasionDetailsUI opening
+- rank prize configuration and amounts
+- stackable prize chunking at 60,000
+- PackFeetDelete delivery behavior
+- score-based GoldPool allocation
+- InvasionService.InvokeFinished, now called after payout processing completes
+
+ADDITIONAL SAFETY
+-----------------
+- Cannot start the same invasion again while previous rewards are processing.
+- Defender list is snapshotted before delayed payout.
+- PrizeEntry configuration is cloned before delayed payout.
+- Zero-total score is handled safely (no NaN division).
+- Deleted/invalid defenders are skipped.
+- Prize CreateInstance failures are logged instead of stalling payout.
+- Exceptions release the payout lock so the invasion is not permanently stuck.
+- Deleting the invasion invalidates any pending payout callbacks.
+
+CONSOLE OUTPUT
+--------------
+At finish:
+    Invasion 'NAME': processing end rewards for N defender(s) in batches.
+
+At completion:
+    Invasion 'NAME': end reward processing completed in X.XX seconds.
+
+INSTALL
+-------
+Replace:
+    Invasions\Objects\Invasion.cs
+
+with the patched copy supplied in this package.
+
+No other invasion files were changed.
+
+RECOMMENDED TEST
+----------------
+Use a test invasion with several defenders and a prize that previously caused
+a noticeable pause. During payout, players should remain responsive while the
+server distributes rewards over successive ticks.
+
+If desired, tune these constants near the private timer fields:
+    FinishDefendersPerTick = 3
+    FinishPrizeItemsPerTick = 25
+    FinishBatchDelay = 50 ms
+
+The supplied values deliberately favor shard responsiveness over fastest
+possible payout.

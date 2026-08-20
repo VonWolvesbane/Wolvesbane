@@ -318,10 +318,53 @@ namespace Wolvesbane.HousingReclamation
             Hue = 0x83EA;
             Blessed = true;
             CantWalk = true;
+
+            EnsureAppearance();
         }
 
         public AbandonedPropertyReclamationOfficer(Serial serial) : base(serial)
         {
+        }
+
+        private void EnsureAppearance()
+        {
+            // Give the officer a tidy administrative / clerk appearance.
+            // Layer checks make this safe to call again after every restart.
+
+            if (FindItemOnLayer(Layer.Hair) == null)
+                AddItem(new ShortHair(Utility.RandomHairHue()));
+
+            if (FindItemOnLayer(Layer.Shirt) == null)
+            {
+                FancyShirt shirt = new FancyShirt();
+                shirt.Hue = 0x47E;
+                shirt.Movable = false;
+                AddItem(shirt);
+            }
+
+            if (FindItemOnLayer(Layer.Pants) == null)
+            {
+                LongPants pants = new LongPants();
+                pants.Hue = 0x3E9;
+                pants.Movable = false;
+                AddItem(pants);
+            }
+
+            if (FindItemOnLayer(Layer.Shoes) == null)
+            {
+                Boots boots = new Boots();
+                boots.Hue = 0x455;
+                boots.Movable = false;
+                AddItem(boots);
+            }
+
+            if (FindItemOnLayer(Layer.Waist) == null)
+            {
+                HalfApron apron = new HalfApron();
+                apron.Hue = 0x47E;
+                apron.Movable = false;
+                AddItem(apron);
+            }
         }
 
         public override void OnDoubleClick(Mobile from)
@@ -355,8 +398,13 @@ namespace Wolvesbane.HousingReclamation
         {
             base.Deserialize(reader);
             int version = reader.ReadInt();
+
             Blessed = true;
             CantWalk = true;
+
+            // Existing officers placed before this update will automatically
+            // receive any missing clothing/hair when the world loads.
+            EnsureAppearance();
         }
     }
 

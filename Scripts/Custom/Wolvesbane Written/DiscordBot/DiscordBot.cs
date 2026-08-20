@@ -47,6 +47,14 @@ namespace VitaNex.Modules.Discord
 	
 		private static void OnWorldBroadcast(WorldBroadcastEventArgs e)
 		{
+			// Discord -> ServUO bridge messages use this prefix.
+			// Never send them back to Discord or they can echo/loop.
+			if (!String.IsNullOrEmpty(e.Text) &&
+				e.Text.StartsWith("[Discord]", StringComparison.OrdinalIgnoreCase))
+			{
+				return;
+			}
+
 			// only broadcast to discord VIP and player access level msgs
 			if (e.Access < AccessLevel.Counselor)
 			{

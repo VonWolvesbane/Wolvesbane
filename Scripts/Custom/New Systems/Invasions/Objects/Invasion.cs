@@ -1,4 +1,4 @@
-#region Header
+﻿#region Header
 //   Vorspire    _,-'/-'/  Invasion.cs
 //   .      __,-; ,'( '/
 //    \.    `-.__`-._`:_,-._       _ , . ``
@@ -383,6 +383,67 @@ namespace Server.Invasions
 		private int _CoreTicks;
 		private PollTimer _CoreTimer;
 
+		// Wolvesbane production-safety patch:
+		// End-of-invasion reward work is deliberately spread across timer ticks.
+		// This prevents large prize configurations from blocking the ServUO main loop.
+		private const int FinishCleanupObjectsPerTick = 10;
+		private const int FinishDefendersPerTick = 3;
+		private const int FinishPrizeItemsPerTick = 25;
+		private static readonly TimeSpan FinishBatchDelay = TimeSpan.FromMilliseconds(50.0);
+
+		private FinishRewardState _FinishRewards;
+		private bool _FinishCancel;
+
+		private sealed class PrizeAwardJob
+		{
+			public Mobile Mobile;
+			public PrizeEntry Entry;
+			public int Remaining;
+
+			public PrizeAwardJob(Mobile mobile, PrizeEntry entry)
+			{
+				Mobile = mobile;
+				Entry = entry;
+				Remaining = entry != null ? Math.Max(0, entry.Amount) : 0;
+			}
+		}
+
+		private sealed class FinishRewardState
+		{
+			public readonly List<Defender> Defenders;
+			public readonly Queue<PrizeAwardJob> PrizeJobs;
+			public readonly Queue<BaseCreature> Invaders;
+			public readonly Queue<InvasionPortal> Portals;
+			public readonly Queue<Moongate> Gates;
+			public readonly double TotalScore;
+			public readonly DateTime StartedUtc;
+
+			public int DefenderIndex;
+			public bool RegionFinalized;
+
+			public FinishRewardState(
+				List<Defender> defenders,
+				IEnumerable<BaseCreature> invaders,
+				IEnumerable<InvasionPortal> portals,
+				IEnumerable<Moongate> gates)
+			{
+				Defenders = defenders ?? new List<Defender>();
+				PrizeJobs = new Queue<PrizeAwardJob>();
+				Invaders = new Queue<BaseCreature>(invaders ?? Enumerable.Empty<BaseCreature>());
+				Portals = new Queue<InvasionPortal>(portals ?? Enumerable.Empty<InvasionPortal>());
+				Gates = new Queue<Moongate>(gates ?? Enumerable.Empty<Moongate>());
+				TotalScore = Defenders.Sum(o => o != null ? o.Score : 0.0);
+				StartedUtc = DateTime.UtcNow;
+				DefenderIndex = 0;
+				RegionFinalized = false;
+			}
+
+			public bool CleanupComplete
+			{
+				get { return Invaders.Count == 0 && Portals.Count == 0 && Gates.Count == 0; }
+			}
+		}
+
 		private Region _Region;
 		private bool _RegionWasGuarded;
 		private string _Name;
@@ -751,6 +812,12 @@ namespace Server.Invasions
 				return false;
 			}
 
+			if (_FinishRewards != null)
+			{
+				status = "Previous invasion rewards are still being processed.";
+				return false;
+			}
+
 			if (String.IsNullOrWhiteSpace(Name))
 			{
 				status = "Invasion Name is invalid or empty.";
@@ -853,32 +920,169 @@ namespace Server.Invasions
 
 			Status = InvasionStatus.Finished;
 
-			DeleteInvaders();
-			DeletePortals();
-
-			InvalidateGuards(true);
-			InvalidateGates();
-
 			Defenders.Sort();
 
 			World.Broadcast(33, false, "[Invasion]: The {0} assault at {1} has been halted!", Name, Region);
 
 			RefreshUI();
 
-			if (!cancel)
+			BeginFinishRewards(cancel);
+
+			status = String.Empty;
+			return true;
+		}
+
+		private void BeginFinishRewards(bool cancel)
+		{
+			if (_FinishRewards != null)
 			{
-				var i = 0;
+				return;
+			}
 
-				const string format =
-					"[Invasion]: {0} has achieved rank #{1:#,0} with {2:#,0} point{3}, {4:#,0} kill{5} and {6:#,0} damage done.";
+			// Snapshot everything before clearing the live lists. This makes the invasion
+			// immediately "finished" from the rest of the system's perspective, while
+			// actual object deletion is spread across later ticks.
+			var defenders = Defenders.Where(o => o != null && o.Mobile != null).ToList();
+			var invaders = Invaders.Where(o => o != null && !o.Deleted).ToList();
+			var portals = Portals.Where(o => o != null && !o.Deleted).ToList();
+			var gates = TownGates.Where(o => o != null && !o.Deleted).ToList();
 
-				foreach (var o in Defenders)
+			Invaders.Clear();
+			Portals.Clear();
+			TownGates.Clear();
+
+			_FinishRewards = new FinishRewardState(defenders, invaders, portals, gates);
+
+			Console.WriteLine(
+				"Invasion '{0}': beginning batched shutdown. Invaders={1:#,0}, Portals={2:#,0}, Gates={3:#,0}, Defenders={4:#,0}.",
+				Name,
+				invaders.Count,
+				portals.Count,
+				gates.Count,
+				defenders.Count);
+
+			// Cancelled invasions do not award rank prizes, but still retain the legacy
+			// score-pool reward behavior after cleanup completes.
+			_FinishCancel = cancel;
+
+			ScheduleFinishRewardBatch(_FinishRewards);
+		}
+
+		private void ScheduleFinishRewardBatch(FinishRewardState state)
+		{
+			if (state == null || state != _FinishRewards)
+			{
+				return;
+			}
+
+			Timer.DelayCall(
+				FinishBatchDelay,
+				() => ProcessFinishRewardBatch(state));
+		}
+
+		private void ProcessFinishRewardBatch(FinishRewardState state)
+		{
+			if (state == null || state != _FinishRewards)
+			{
+				return;
+			}
+
+			try
+			{
+				// FIRST: remove remaining invasion world objects in tiny batches.
+				// BaseCreature.Delete() can be expensive because it cascades through
+				// region, combatant, pet, item, event, and world bookkeeping.
+				var cleanupBudget = FinishCleanupObjectsPerTick;
+
+				while (cleanupBudget > 0 && state.Invaders.Count > 0)
 				{
+					var o = state.Invaders.Dequeue();
+
+					if (o != null && !o.Deleted)
+					{
+						o.SetPropertyValue("Invasion", null);
+						o.Delete();
+					}
+
+					--cleanupBudget;
+				}
+
+				while (cleanupBudget > 0 && state.Portals.Count > 0)
+				{
+					var o = state.Portals.Dequeue();
+
+					if (o != null && !o.Deleted)
+					{
+						o.SetPropertyValue("Invasion", null);
+						o.Delete();
+					}
+
+					--cleanupBudget;
+				}
+
+				while (cleanupBudget > 0 && state.Gates.Count > 0)
+				{
+					var o = state.Gates.Dequeue();
+
+					if (o != null && !o.Deleted)
+					{
+						o.Delete();
+					}
+
+					--cleanupBudget;
+				}
+
+				if (!state.CleanupComplete)
+				{
+					ScheduleFinishRewardBatch(state);
+					return;
+				}
+
+				if (!state.RegionFinalized)
+				{
+					state.RegionFinalized = true;
+					InvalidateGuards(true);
+				}
+
+				if (_FinishCancel)
+				{
+					GiveScoreRewards();
+
+					var cancelElapsed = DateTime.UtcNow - state.StartedUtc;
+					_FinishRewards = null;
+					_FinishCancel = false;
+
+					Console.WriteLine(
+						"Invasion '{0}': cancelled shutdown completed in {1:F2} seconds.",
+						Name,
+						cancelElapsed.TotalSeconds);
+
+					InvasionService.InvokeFinished(this);
+					return;
+				}
+
+				// SECOND: stage a small number of defenders per tick. This includes details UI,
+				// placement announcements, score-pool rewards, and creation of light-
+				// weight prize jobs. Actual prize Item objects are created later.
+				var defenderBudget = FinishDefendersPerTick;
+
+				while (defenderBudget-- > 0 && state.DefenderIndex < state.Defenders.Count)
+				{
+					var o = state.Defenders[state.DefenderIndex];
+					var place = state.DefenderIndex + 1;
+
+					++state.DefenderIndex;
+
+					if (o == null || o.Mobile == null || o.Mobile.Deleted)
+					{
+						continue;
+					}
+
 					OpenDetailsUI(o.Mobile);
 
-					if (++i <= 3)
+					if (place <= 3)
 					{
-						switch (i)
+						switch (place)
 						{
 							case 1:
 								o.Mobile.SendMessage("You have achieved first place in defending the invasion!");
@@ -891,12 +1095,15 @@ namespace Server.Invasions
 								break;
 						}
 
+						const string format =
+							"[Invasion]: {0} has achieved rank #{1:#,0} with {2:#,0} point{3}, {4:#,0} kill{5} and {6:#,0} damage done.";
+
 						World.Broadcast(
 							33,
 							false,
 							format,
 							o.Mobile.RawName,
-							i,
+							place,
 							o.Score,
 							o.Score != 1 ? "s" : String.Empty,
 							o.Kills,
@@ -906,20 +1113,124 @@ namespace Server.Invasions
 
 					if (RankPrizes)
 					{
-						foreach (var rank in Ranks.Where(r => r.IsValid && r.Enabled && r.Place == i))
+						foreach (var rank in Ranks.Where(r => r.IsValid && r.Enabled && r.Place == place))
 						{
-							GivePrizes(o.Mobile, rank.Prizes);
+							foreach (var prize in rank.Prizes)
+							{
+								if (prize == null || !prize.IsValid || prize.Amount <= 0)
+								{
+									continue;
+								}
+
+								// Clone the configuration now so staff editing ranks while the
+								// delayed payout is running cannot change an already-earned prize.
+								state.PrizeJobs.Enqueue(new PrizeAwardJob(o.Mobile, prize.Clone()));
+							}
 						}
 					}
+
+					if (state.TotalScore > 0.0 && o.Score > 0.0)
+					{
+						GiveScoreRewards(o.Mobile, o.Score / state.TotalScore);
+					}
+				}
+
+				// Do not start constructing prize Items until all defenders have been
+				// staged. Then limit Item construction/delivery to a small fixed budget
+				// per tick. A non-stackable Amount=5000 now takes many tiny batches
+				// instead of freezing the shard in one giant loop.
+				if (state.DefenderIndex >= state.Defenders.Count)
+				{
+					ProcessPrizeJobs(state, FinishPrizeItemsPerTick);
+				}
+
+				if (state.DefenderIndex < state.Defenders.Count || state.PrizeJobs.Count > 0)
+				{
+					ScheduleFinishRewardBatch(state);
+					return;
+				}
+
+				var elapsed = DateTime.UtcNow - state.StartedUtc;
+
+				_FinishRewards = null;
+				_FinishCancel = false;
+
+				Console.WriteLine(
+					"Invasion '{0}': end reward processing completed in {1:F2} seconds.",
+					Name,
+					elapsed.TotalSeconds);
+
+				InvasionService.InvokeFinished(this);
+			}
+			catch (Exception e)
+			{
+				Console.WriteLine(
+					"Invasion '{0}': ERROR during batched end reward processing:\n{1}",
+					Name,
+					e);
+
+				// Do not leave the invasion permanently locked from future starts.
+				_FinishRewards = null;
+				_FinishCancel = false;
+
+				InvasionService.InvokeFinished(this);
+			}
+		}
+
+		private static void ProcessPrizeJobs(FinishRewardState state, int itemBudget)
+		{
+			while (itemBudget > 0 && state.PrizeJobs.Count > 0)
+			{
+				var job = state.PrizeJobs.Peek();
+
+				if (job == null ||
+					job.Entry == null ||
+					!job.Entry.IsValid ||
+					job.Remaining <= 0 ||
+					job.Mobile == null ||
+					job.Mobile.Deleted ||
+					!job.Mobile.Player)
+				{
+					state.PrizeJobs.Dequeue();
+					continue;
+				}
+
+				var item = job.Entry.CreateInstance();
+
+				if (item == null)
+				{
+					Console.WriteLine(
+						"Invasion reward WARNING: could not create prize type '{0}'.",
+						job.Entry.Type);
+
+					state.PrizeJobs.Dequeue();
+					continue;
+				}
+
+				var deliveredAmount = Math.Max(1, item.Amount);
+
+				if (item.Stackable)
+				{
+					deliveredAmount = Math.Max(1, Math.Min(60000, job.Remaining));
+					item.Amount = deliveredAmount;
+				}
+
+				job.Remaining -= deliveredAmount;
+
+				// PackFeetDelete preserves the original delivery behavior: try pack,
+				// then feet, and delete the item if it cannot be delivered.
+				item.GiveTo(
+					job.Mobile,
+					GiveFlags.PackFeetDelete,
+					job.Remaining <= 0);
+
+				--itemBudget;
+
+				if (job.Remaining <= 0)
+				{
+					state.PrizeJobs.Dequeue();
 				}
 			}
-
-			GiveScoreRewards();
-
-			InvasionService.InvokeFinished(this);
-
-			status = String.Empty;
-			return true;
 		}
 
 		private void GiveScoreRewards()
@@ -931,8 +1242,19 @@ namespace Server.Invasions
 
 			var total = Defenders.Sum(o => o.Score);
 
+			// Prevent NaN/Infinity factors when an invasion has defenders but no score.
+			if (total <= 0.0 || Double.IsNaN(total) || Double.IsInfinity(total))
+			{
+				return;
+			}
+
 			foreach (var d in Defenders)
 			{
+				if (d == null || d.Mobile == null || d.Mobile.Deleted || d.Score <= 0.0)
+				{
+					continue;
+				}
+
 				GiveScoreRewards(d.Mobile, d.Score / total);
 			}
 		}
@@ -940,6 +1262,11 @@ namespace Server.Invasions
 		private void GiveScoreRewards(Mobile m, double factor)
 		{
 			// factor: % contributed towards score total for all defenders
+
+			if (m == null || m.Deleted || factor <= 0.0 || Double.IsNaN(factor) || Double.IsInfinity(factor))
+			{
+				return;
+			}
 
 			if (GoldPool > 0)
 			{
@@ -972,6 +1299,10 @@ namespace Server.Invasions
 			{
 				return;
 			}
+
+			// Any already-scheduled callback checks state identity and will become a no-op.
+			_FinishRewards = null;
+			_FinishCancel = false;
 
 			Status = InvasionStatus.Waiting;
 
