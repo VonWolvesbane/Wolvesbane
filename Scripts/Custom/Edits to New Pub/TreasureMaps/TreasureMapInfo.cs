@@ -1,4 +1,4 @@
-using Server.Engines.Craft;
+﻿using Server.Engines.Craft;
 using Server.Engines.PartySystem;
 using Server.Mobiles;
 using Server.SkillHandlers;
@@ -35,7 +35,8 @@ namespace Server.Items
         Malas,
         Tokuno,
         TerMur,
-        Eodon
+        Eodon,
+        NewWolvesbane
     }
 
     public enum ChestQuality
@@ -71,6 +72,24 @@ namespace Server.Items
             }
         }
 
+        /// <summary>
+        /// Creates a treasure map from a legacy pre-revamp level (0-7).
+        /// Use this for old creature/NPC/container systems that still express
+        /// treasure difficulty using the classic numeric levels.
+        ///
+        /// Do NOT use this for the new system's own Stash/Supply/Cache/Hoard/Trove
+        /// upgrades, because those values are already canonical 0-4 tiers.
+        /// </summary>
+        public static TreasureMap CreateLegacyMap(int legacyLevel, Map map)
+        {
+            return CreateLegacyMap(legacyLevel, map, false);
+        }
+
+        public static TreasureMap CreateLegacyMap(int legacyLevel, Map map, bool eodon)
+        {
+            return new TreasureMap(ConvertLevel(legacyLevel), map, eodon);
+        }
+
         public static TreasureFacet GetFacet(IEntity e)
         {
             return GetFacet(e.Location, e.Map);
@@ -92,6 +111,11 @@ namespace Server.Items
 
         public static TreasureFacet GetFacet(IPoint2D p, Map map)
         {
+            if (map == Map.NewWolvesbane)
+            {
+                return TreasureFacet.NewWolvesbane;
+            }
+
             if (map == Map.TerMur)
             {
                 if (SpellHelper.IsEodon(map, new Point3D(p.X, p.Y, 0)))
@@ -134,14 +158,22 @@ namespace Server.Items
 
             for (int i = 0; i < amount; i++)
             {
-                switch (Utility.Random(5))
+                // Wolvesbane Phase 7G:
+                // Keep jewelry desirable without letting it dominate treasure chests.
+                // 30% weapons / 50% armor / 20% jewelry.
+                switch (Utility.Random(10))
                 {
                     default:
-                    case 0: list = weapons; break;
+                    case 0:
                     case 1:
-                    case 2: list = armor; break;
+                    case 2: list = weapons; break;
                     case 3:
-                    case 4: list = jewels; break;
+                    case 4:
+                    case 5:
+                    case 6:
+                    case 7: list = armor; break;
+                    case 8:
+                    case 9: list = jewels; break;
                 }
 
                 yield return list[Utility.Random(list.Length)];
@@ -155,7 +187,8 @@ namespace Server.Items
             switch (facet)
             {
                 case TreasureFacet.Trammel:
-                case TreasureFacet.Felucca: list = _WeaponTable[(int)package][0]; break;
+                case TreasureFacet.Felucca:
+                case TreasureFacet.NewWolvesbane: list = _WeaponTable[(int)package][0]; break;
                 case TreasureFacet.Ilshenar: list = _WeaponTable[(int)package][1]; break;
                 case TreasureFacet.Malas: list = _WeaponTable[(int)package][2]; break;
                 case TreasureFacet.Tokuno: list = _WeaponTable[(int)package][3]; break;
@@ -179,7 +212,8 @@ namespace Server.Items
             switch (facet)
             {
                 case TreasureFacet.Trammel:
-                case TreasureFacet.Felucca: list = _ArmorTable[(int)package][0]; break;
+                case TreasureFacet.Felucca:
+                case TreasureFacet.NewWolvesbane: list = _ArmorTable[(int)package][0]; break;
                 case TreasureFacet.Ilshenar: list = _ArmorTable[(int)package][1]; break;
                 case TreasureFacet.Malas: list = _ArmorTable[(int)package][2]; break;
                 case TreasureFacet.Tokuno: list = _ArmorTable[(int)package][3]; break;
@@ -255,7 +289,16 @@ namespace Server.Items
         {
             if (package == TreasurePackage.Artisan && level == TreasureLevel.Supply)
             {
-                return _SpecialMaterialTable[(int)facet];
+                // NewWolvesbane uses the classic Trammel material profile. Do not
+                // index the stock seven-entry table with the custom enum value.
+                int index = facet == TreasureFacet.NewWolvesbane ? 0 : (int)facet;
+
+                if (_SpecialMaterialTable != null &&
+                    index >= 0 &&
+                    index < _SpecialMaterialTable.Length)
+                {
+                    return _SpecialMaterialTable[index];
+                }
             }
 
             return null;
@@ -267,11 +310,13 @@ namespace Server.Items
 
             if (level >= TreasureLevel.Cache)
             {
-                //list = _DecorativeTable[(int)package];
-
+                // The stock decorative package table is intentionally disabled on
+                // Wolvesbane, but Malas still has its facet-specific CoffinPiece.
+                // The previous code called list.Concat(...) while list was null,
+                // which could throw during Cache/Hoard/Trove chest generation.
                 if (facet == TreasureFacet.Malas)
                 {
-                    list.Concat(new Type[] { typeof(CoffinPiece) });
+                    list = new Type[] { typeof(CoffinPiece) };
                 }
             }
             else if (level == TreasureLevel.Supply)
@@ -290,7 +335,8 @@ namespace Server.Items
             switch (facet)
             {
                 case TreasureFacet.Felucca:
-                case TreasureFacet.Trammel: return Loot.RegTypes;
+                case TreasureFacet.Trammel:
+                case TreasureFacet.NewWolvesbane: return Loot.RegTypes;
                 case TreasureFacet.Malas: return Loot.NecroRegTypes;
                 case TreasureFacet.TerMur: return Loot.MysticRegTypes;
             }
@@ -313,23 +359,314 @@ namespace Server.Items
             if (level == TreasureLevel.Stash)
                 return null;
 
-            Type[] list;
+            Type[] list = null;
 
             if (level == TreasureLevel.Supply)
             {
-                list = _SpecialSupplyLoot[(int)package];
+                int index = (int)package;
+
+                if (_SpecialSupplyLoot != null &&
+                    index >= 0 &&
+                    index < _SpecialSupplyLoot.Length)
+                {
+                    list = _SpecialSupplyLoot[index];
+                }
             }
             else
             {
-               list = _SpecialCacheHordeAndTrove;
+                list = _SpecialCacheHordeAndTrove;
             }
 
-            if (package > TreasurePackage.Artisan)
+            Type[] professionPool = GetProfessionArtifactPool(package);
+
+            if (professionPool != null && professionPool.Length > 0)
             {
-                list.Concat(_FunctionalMinorArtifacts);
+                if (list == null || list.Length == 0)
+                    list = professionPool;
+                else
+                    list = list.Concat(professionPool).ToArray();
             }
 
-			return list;
+            return list != null && list.Length > 0 ? list : null;
+        }
+
+        /// <summary>
+        /// Wolvesbane Phase 7G profession identity.
+        /// Uses only artifact classes already referenced by this script so this
+        /// balance pass does not introduce compile-time dependencies on unknown types.
+        /// </summary>
+        public static Type[] GetProfessionArtifactPool(TreasurePackage package)
+        {
+            switch (package)
+            {
+                case TreasurePackage.Artisan:
+                    return _DecorativeMinorArtifacts;
+
+                case TreasurePackage.Assassin:
+                    return new Type[]
+                    {
+                        typeof(BurglarsBandana), typeof(NightsKiss), typeof(ColdBlood),
+                        typeof(CaptainQuacklebushsCutlass), typeof(DreadPirateHat)
+                    };
+
+                case TreasurePackage.Mage:
+                    return new Type[]
+                    {
+                        typeof(AlchemistsBauble), typeof(GwennosHarp), typeof(IolosLute),
+                        typeof(EnchantedTitanLegBone)
+                    };
+
+                case TreasurePackage.Ranger:
+                    return new Type[]
+                    {
+                        typeof(NoxRangersHeavyCrossbow), typeof(PolarBearMask),
+                        typeof(ArcticDeathDealer), typeof(BlazeOfDeath)
+                    };
+
+                case TreasurePackage.Warrior:
+                    return new Type[]
+                    {
+                        typeof(LunaLance), typeof(HeartOfTheLion), typeof(VioletCourage),
+                        typeof(ShieldOfInvulnerability), typeof(CavortingClub)
+                    };
+            }
+
+            return null;
+        }
+
+        /// <summary>
+        /// Independent jackpot roll for rare/custom-feeling equipment.
+        /// This is deliberately tiny and is NOT affected by the normal special-loot roll.
+        /// Cache 0.25%, Hoard 0.75%, Trove 1.50%.
+        /// Supply/Stash never roll this jackpot.
+        /// </summary>
+        public static double GetCustomGearChance(TreasureLevel level)
+        {
+            switch (level)
+            {
+                case TreasureLevel.Cache: return 0.0025;
+                case TreasureLevel.Hoard: return 0.0075;
+                case TreasureLevel.Trove: return 0.0150;
+            }
+
+            return 0.0;
+        }
+
+        public static Type GetRandomCustomGear(TreasurePackage package)
+        {
+            Type[] pool = GetProfessionArtifactPool(package);
+
+            if (pool == null || pool.Length == 0)
+                return null;
+
+            return pool[Utility.Random(pool.Length)];
+        }
+
+        // Wolvesbane Phase 7H ultra-rare custom treasure rewards.
+        // Each reward rolls independently. WDollar is Trove-only at exactly 1 in 750.
+        private static readonly Type[] _EvoWeaponJackpot = new Type[]
+        {
+                typeof(AssassinSpikeOfEvolution),
+                typeof(AxeOfEvolution),
+                typeof(BardicheOfEvolution),
+                typeof(BattleAxeOfEvolution),
+                typeof(BladedStaffOfEvolution),
+                typeof(BloodBladeOfEvolution),
+                typeof(BokutoOfEvolution),
+                typeof(BoneHarvesterOfEvolution),
+                typeof(BoomerangOfEvolution),
+                typeof(BowOfEvolution),
+                typeof(BroadswordOfEvolution),
+                typeof(ButcherKnifeOfEvolution),
+                typeof(CleaverOfEvolution),
+                typeof(ClubOfEvolution),
+                typeof(CompositeBowOfEvolution),
+                typeof(CrossbowOfEvolution),
+                typeof(CutlassOfEvolution),
+                typeof(CycloneOfEvolution),
+                typeof(DaggerOfEvolution),
+                typeof(DaishoOfEvolution),
+                typeof(DiamondMaceOfEvolution),
+                typeof(DiscMaceOfEvolution),
+                typeof(DoubleAxeOfEvolution),
+                typeof(DoubleBladedStaffOfEvolution),
+                typeof(DreadSwordOfEvolution),
+                typeof(DualPointedSpearOfEvolution),
+                typeof(DualShortAxesOfEvolution),
+                typeof(ElvenCompositeLongbowOfEvolution),
+                typeof(ElvenMacheteOfEvolution),
+                typeof(ElvenSpellbladeOfEvolution),
+                typeof(ExecutionersAxeOfEvolution),
+                typeof(GargishAxeOfEvolution),
+                typeof(GargishBardicheOfEvolution),
+                typeof(GargishBattleAxeOfEvolution),
+                typeof(GargishBoneHarvesterOfEvolution),
+                typeof(GargishButcherKnifeOfEvolution),
+                typeof(GargishCleaverOfEvolution),
+                typeof(GargishDaggerOfEvolution),
+                typeof(GargishDaishoOfEvolution),
+                typeof(GargishGnarledStaffOfEvolution),
+                typeof(GargishKatanaOfEvolution),
+                typeof(GargishKryssOfEvolution),
+                typeof(GargishLanceOfEvolution),
+                typeof(GargishMaulOfEvolution),
+                typeof(GargishPikeOfEvolution),
+                typeof(GargishScytheOfEvolution),
+                typeof(GargishTalwarOfEvolution),
+                typeof(GargishTekagiOfEvolution),
+                typeof(GargishTessenOfEvolution),
+                typeof(GargishWarForkOfEvolution),
+                typeof(GargishWarHammerOfEvolution),
+                typeof(GlassStaffOfEvolution),
+                typeof(GlassSwordOfEvolution),
+                typeof(GnarledStaffOfEvolution),
+                typeof(HalberdOfEvolution),
+                typeof(HammerPickOfEvolution),
+                typeof(HatchetOfEvolution),
+                typeof(HeavyCrossbowOfEvolution),
+                typeof(KamaOfEvolution),
+                typeof(KatanaOfEvolution),
+                typeof(KryssOfEvolution),
+                typeof(LajatangOfEvolution),
+                typeof(LanceOfEvolution),
+                typeof(LargeBattleAxeOfEvolution),
+                typeof(LeafbladeOfEvolution),
+                typeof(LongswordOfEvolution),
+                typeof(MaceOfEvolution),
+                typeof(MaulOfEvolution),
+                typeof(NoDachiOfEvolution),
+                typeof(NunchakuOfEvolution),
+                typeof(OrnateAxeOfEvolution),
+                typeof(PaladinSwordOfEvolution),
+                typeof(PickaxeOfEvolution),
+                typeof(PikeOfEvolution),
+                typeof(PitchforkOfEvolution),
+                typeof(QuarterStaffOfEvolution),
+                typeof(RadiantScimitarOfEvolution),
+                typeof(RepeatingCrossbowOfEvolution),
+                typeof(SaiOfEvolution),
+                typeof(ScepterOfEvolution),
+                typeof(ScimitarOfEvolution),
+                typeof(ScytheOfEvolution),
+                typeof(ShepherdsCrookOfEvolution),
+                typeof(ShortSpearOfEvolution),
+                typeof(ShortbladeOfEvolution),
+                typeof(SkinningKnifeOfEvolution),
+                typeof(SoulGlaiveOfEvolution),
+                typeof(SpearOfEvolution),
+                typeof(TekagiOfEvolution),
+                typeof(TessenOfEvolution),
+                typeof(TetsuboOfEvolution),
+                typeof(TwoHandedAxeOfEvolution),
+                typeof(VikingSwordOfEvolution),
+                typeof(WakizashiOfEvolution),
+                typeof(WarAxeOfEvolution),
+                typeof(WarCleaverOfEvolution),
+                typeof(WarForkOfEvolution),
+                typeof(WarHammerOfEvolution),
+                typeof(WarMaceOfEvolution),
+                typeof(WildStaffOfEvolution),
+                typeof(YumiOfEvolution)
+        };
+
+        private static double GetEvoWeaponChance(TreasureLevel level)
+        {
+            switch (level)
+            {
+                case TreasureLevel.Cache: return 1.0 / 1000.0;
+                case TreasureLevel.Hoard: return 1.0 / 500.0;
+                case TreasureLevel.Trove: return 1.0 / 250.0;
+            }
+            return 0.0;
+        }
+
+        private static double GetBankHiveChance(TreasureLevel level)
+        {
+            switch (level)
+            {
+                case TreasureLevel.Cache: return 1.0 / 2000.0;
+                case TreasureLevel.Hoard: return 1.0 / 1000.0;
+                case TreasureLevel.Trove: return 1.0 / 500.0;
+            }
+            return 0.0;
+        }
+
+        private static double GetMobileForgeChance(TreasureLevel level)
+        {
+            switch (level)
+            {
+                case TreasureLevel.Cache: return 1.0 / 1500.0;
+                case TreasureLevel.Hoard: return 1.0 / 750.0;
+                case TreasureLevel.Trove: return 1.0 / 375.0;
+            }
+            return 0.0;
+        }
+
+        private static double GetCellarDeedChance(TreasureLevel level)
+        {
+            switch (level)
+            {
+                case TreasureLevel.Cache: return 1.0 / 2000.0;
+                case TreasureLevel.Hoard: return 1.0 / 1000.0;
+                case TreasureLevel.Trove: return 1.0 / 500.0;
+            }
+            return 0.0;
+        }
+
+        private static void DropUltraRareCustomRewards(TreasureMapChest chest, TreasureLevel level)
+        {
+            if (chest == null)
+                return;
+
+            double chance = GetEvoWeaponChance(level);
+            if (chance > 0.0 && Utility.RandomDouble() < chance && _EvoWeaponJackpot.Length > 0)
+            {
+                Item evo = Loot.Construct(_EvoWeaponJackpot[Utility.Random(_EvoWeaponJackpot.Length)]);
+                if (evo != null)
+                    chest.DropItem(evo);
+            }
+
+            chance = GetBankHiveChance(level);
+            if (chance > 0.0 && Utility.RandomDouble() < chance)
+                chest.DropItem(new BankHive());
+
+            chance = GetMobileForgeChance(level);
+            if (chance > 0.0 && Utility.RandomDouble() < chance)
+                chest.DropItem(new MobileForge());
+
+            chance = GetCellarDeedChance(level);
+            if (chance > 0.0 && Utility.RandomDouble() < chance)
+                chest.DropItem(new CellarDeed());
+
+            // Requested special case: Wolvesbane Dollar only comes from Troves, 1 in 750.
+            if (level == TreasureLevel.Trove && Utility.RandomDouble() < (1.0 / 750.0))
+                chest.DropItem(new WDollar());
+        }
+
+        public static void DropArtisanHighTierBonus(TreasureMapChest chest, TreasureLevel level, ChestQuality quality)
+        {
+            if (chest == null || level < TreasureLevel.Cache)
+                return;
+
+            // One compact material reward rather than dumping every resource type.
+            Type[] materials = _MaterialTable[Math.Max(0, Math.Min(_MaterialTable.Length - 1, (int)quality - 1))];
+
+            if (materials == null || materials.Length == 0)
+                return;
+
+            Item resource = Loot.Construct(materials[Utility.Random(materials.Length)]);
+
+            if (resource == null)
+                return;
+
+            switch (level)
+            {
+                case TreasureLevel.Cache: resource.Amount = 50; break;
+                case TreasureLevel.Hoard: resource.Amount = 75; break;
+                case TreasureLevel.Trove: resource.Amount = 100; break;
+            }
+
+            chest.DropItem(resource);
         }
 
         public static int GetGemCount(ChestQuality quality, TreasureLevel level)
@@ -355,7 +692,7 @@ namespace Server.Items
                 case TreasureLevel.Supply: return Utility.RandomMinMax(20000, 50000);
                 case TreasureLevel.Cache: return Utility.RandomMinMax(30000, 60000);
                 case TreasureLevel.Hoard: return Utility.RandomMinMax(40000, 70000);
-                case TreasureLevel.Trove: return Utility.RandomMinMax(50000, 70000);
+                case TreasureLevel.Trove: return Utility.RandomMinMax(60000, 90000);
             }
         }
 
@@ -412,9 +749,20 @@ namespace Server.Items
                 default:
                 case TreasureLevel.Stash: amount = 6; break;
                 case TreasureLevel.Supply: amount = 8; break;
-                case TreasureLevel.Cache: amount = package == TreasurePackage.Assassin ? 24 : 12; break;
-                case TreasureLevel.Hoard: amount = 18; break;
-                case TreasureLevel.Trove: amount = 36; break;
+                case TreasureLevel.Cache:
+                    amount = package == TreasurePackage.Assassin ? 18 : 12;
+                    break;
+
+                // Wolvesbane Phase 7G:
+                // High tiers improve quality instead of flooding the chest.
+                // Artisan maps intentionally trade some combat gear volume for
+                // crafting/decorative reward identity.
+                case TreasureLevel.Hoard:
+                    amount = package == TreasurePackage.Artisan ? 10 : 14;
+                    break;
+                case TreasureLevel.Trove:
+                    amount = package == TreasurePackage.Artisan ? 12 : 18;
+                    break;
             }
 
             Party p = Party.Get(from);
@@ -435,17 +783,32 @@ namespace Server.Items
 
         public static void GetMinMaxBudget(TreasureLevel level, Item item, out int min, out int max)
         {
-            int preArtifact = Imbuing.GetMaxWeight(item) + 100;
+            int preArtifact = item != null ? Imbuing.GetMaxWeight(item) + 100 : 250;
             min = max = 0;
 
             switch (level)
             {
                 default:
                 case TreasureLevel.Stash:
-                case TreasureLevel.Supply: min = 250; max = preArtifact; break;
+                case TreasureLevel.Supply:
+                    min = 250;
+                    max = preArtifact;
+                    break;
+
                 case TreasureLevel.Cache:
+                    min = 500;
+                    max = 900;
+                    break;
+
                 case TreasureLevel.Hoard:
-                case TreasureLevel.Trove: min = 500; max = 1300; break;
+                    min = 650;
+                    max = 1150;
+                    break;
+
+                case TreasureLevel.Trove:
+                    min = 800;
+                    max = 1300;
+                    break;
             }
         }
 
@@ -920,51 +1283,76 @@ namespace Server.Items
                 {
                     if (list.Length > 0)
                     {
-                        /*Type type = MutateType(list[Utility.Random(list.Length)], facet);
-                        Item deco;
+                        // The original Publish-era reward block was commented out
+                        // because several of its newer item types were not present in
+                        // this older/custom Wolvesbane tree. Restore the reward roll
+                        // using ONLY types already active in Wolvesbane's compiled
+                        // artifact arrays.
+                        Type type = list[Utility.Random(list.Length)];
+                        Item reward = type != null ? Loot.Construct(type) : null;
 
-                        if (type == null)
+                        if (reward != null)
                         {
-                            deco = TreasureMapChest.GetRandomRecipe();
-                        }
-                        else
-                        {
-                            deco = Loot.Construct(type);
-                        }
+                            bool artifactBag =
+                                (_FunctionalMinorArtifacts != null &&
+                                 _FunctionalMinorArtifacts.Any(t => t == type)) ||
+                                (_DecorativeMinorArtifacts != null &&
+                                 _DecorativeMinorArtifacts.Any(t => t == type));
 
-                        if (deco is SkullGnarledStaff || deco is SkullLongsword)
-                        {
-                            if (package == TreasurePackage.Artisan)
+                            if (artifactBag)
                             {
-                                ((IQuality)deco).Quality = ItemQuality.Exceptional;
+                                Container pack = new Backpack
+                                {
+                                    Hue = 1278
+                                };
+
+                                pack.DropItem(reward);
+                                chest.DropItem(pack);
                             }
                             else
                             {
-                                int min, max;
-                                GetMinMaxBudget(level, deco, out min, out max);
-                                RunicReforging.GenerateRandomItem(deco, from is PlayerMobile ? ((PlayerMobile)from).RealLuck : from.Luck, min, max, chest.Map);
+                                chest.DropItem(reward);
                             }
                         }
-
-                        if (_FunctionalMinorArtifacts.Any(t => t == type))
-                        {
-                            Container pack = new Backpack
-                            {
-                                Hue = 1278
-                            };
-
-                            pack.DropItem(deco);
-                            chest.DropItem(pack);
-                        }
-                        else
-                        {
-                            chest.DropItem(deco);
-                        }*/
                     }
 
                     list = null;
                 }
             }
+            #endregion
+
+            #region Wolvesbane Artisan High-Tier Bonus
+            if (package == TreasurePackage.Artisan)
+            {
+                DropArtisanHighTierBonus(chest, level, quality);
+            }
+            #endregion
+
+            #region Wolvesbane Rare Custom Gear Jackpot
+            double customGearChance = GetCustomGearChance(level);
+
+            if (customGearChance > 0.0 && Utility.RandomDouble() < customGearChance)
+            {
+                Type customGearType = GetRandomCustomGear(package);
+                Item customGear = customGearType != null ? Loot.Construct(customGearType) : null;
+
+                if (customGear != null)
+                {
+                    // Put jackpot gear in the same distinctive artifact backpack used
+                    // by the existing treasure-map special rewards.
+                    Container jackpotPack = new Backpack
+                    {
+                        Hue = 1278
+                    };
+
+                    jackpotPack.DropItem(customGear);
+                    chest.DropItem(jackpotPack);
+                }
+            }
+            #endregion
+
+            #region Wolvesbane Ultra-Rare Custom Rewards
+            DropUltraRareCustomRewards(chest, level);
             #endregion
 
             #region Magic Equipment

@@ -43,7 +43,7 @@ namespace Server.Commands
 			Dictionary<UInt64, int> stats = new Dictionary<ulong, int>();
 			for(int i = 0; i < 10000; ++i)
 			{
-				TreasureMap tmap = new TreasureMap(
+				TreasureMap tmap = TreasureMapInfo.CreateLegacyMap(
 					Utility.Random(7),
 					Map.Felucca
 				);

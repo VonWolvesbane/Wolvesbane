@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.IO;
 using System.Collections;
 using System.Collections.Generic;
@@ -400,19 +400,17 @@ namespace Server.Items
                 m_Stream.Write((short)map.Width);
                 m_Stream.Write((short)map.Height);
 
+                // Packet 0xF5 tells the client which facet artwork to render.
+                // The old implementation hard-coded only facets 0-5. Any custom
+                // facet therefore silently remained 0 (Felucca), even when the
+                // MapItem.Facet was NewWolvesbane.
+                //
+                // NewWolvesbane is registered with MapID 6, so send the actual
+                // client-facing MapID instead of deriving it from six stock maps.
                 short mapValue = 0x00;
-                if (map.Facet == Map.Felucca)
-                    mapValue = 0x00;
-                else if (map.Facet == Map.Trammel)
-                    mapValue = 0x01;
-                else if (map.Facet == Map.Ilshenar)
-                    mapValue = 0x02;
-                else if (map.Facet == Map.Malas)
-                    mapValue = 0x03;
-                else if (map.Facet == Map.Tokuno)
-                    mapValue = 0x04;
-                else if (map.Facet == Map.TerMur)
-                    mapValue = 0x05;
+
+                if (map.Facet != null && map.Facet != Map.Internal)
+                    mapValue = (short)map.Facet.MapID;
 
                 m_Stream.Write(mapValue);
             }

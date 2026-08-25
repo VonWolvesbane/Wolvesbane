@@ -1,4 +1,4 @@
-using Server.Engines.Quests;
+﻿using Server.Engines.Quests;
 using Server.Engines.Quests.Collector;
 using Server.Items;
 using Server.Mobiles;
@@ -318,7 +318,7 @@ namespace Server.Engines.Harvest
 
             if (type == typeof(TreasureMap))
             {
-                return new TreasureMap(0, from.Map == Map.Felucca ? Map.Felucca : Map.Trammel);
+                return TreasureMapInfo.CreateLegacyMap(0, from.Map == Map.Felucca ? Map.Felucca : Map.Trammel);
             }
             else if (type == typeof(MessageInABottle))
             {

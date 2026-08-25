@@ -1,4 +1,4 @@
-using Server.ContextMenus;
+﻿using Server.ContextMenus;
 using Server.Engines.PartySystem;
 using Server.Gumps;
 using Server.Mobiles;
@@ -159,7 +159,7 @@ namespace Server.Items
                 cont.DropItem(new Gold(Utility.RandomMinMax(50, 100)));
 
                 if (Utility.RandomDouble() < 0.75)
-                    cont.DropItem(new TreasureMap(0, Map.Trammel));
+                    cont.DropItem(TreasureMapInfo.CreateLegacyMap(0, Map.Trammel));
             }
             else
             {
@@ -377,7 +377,7 @@ namespace Server.Items
                 if (0.006 * level > Utility.RandomDouble())
                     special = Loot.Construct(m_SOSDecor);
                 else if (0.009 * level > Utility.RandomDouble())
-                    special = new TreasureMap(Utility.RandomMinMax(level, Math.Min(7, level + 1)), cont.Map);
+                    special = TreasureMapInfo.CreateLegacyMap(Utility.RandomMinMax(level, Math.Min(7, level + 1)), cont.Map);
 
                 if (level >= 4)
                 {
@@ -462,7 +462,7 @@ namespace Server.Items
                 case 2: special = new ScrollOfAlacrity(PowerScroll.Skills[Utility.Random(PowerScroll.Skills.Count)]); break;
                 case 3: special = new Skeletonkey(); break;
                 case 4: special = new TastyTreat(5); break;
-                case 5: special = new TreasureMap(Utility.RandomMinMax(level, Math.Min(7, level + 1)), map); break;
+                case 5: special = TreasureMapInfo.CreateLegacyMap(Utility.RandomMinMax(level, Math.Min(7, level + 1)), map); break;
                 case 6: special = GetRandomRecipe(); break;
                 case 7: special = ScrollOfTranscendence.CreateRandom(1, 5); break;
             }

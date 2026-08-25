@@ -1,4 +1,4 @@
-#region References
+﻿#region References
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -6994,7 +6994,7 @@ namespace Server.Mobiles
                         if (map == Map.Trammel && Siege.SiegeShard)
                             map = Map.Felucca;
 
-                        PackItem(new TreasureMap(treasureLevel, map));
+                        PackItem(TreasureMapInfo.CreateLegacyMap(treasureLevel, map, map == Map.TerMur && SpellHelper.IsEodon(map, Location)));
                     }
                 }
 

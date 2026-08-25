@@ -1,0 +1,7 @@
+Direct new TreasureMap(...) calls remaining after compatibility patch.
+These are intentionally reviewed separately; notably TreasureMapInfo's
+Level+1 call is canonical new-system tier progression and MUST remain direct.
+
+Services/VeteranRewards/DaviesLocker.cs:705: map = new TreasureMap();
+Custom/Edits to New Pub/TreasureMaps/TreasureMapInfo.cs:89: return new TreasureMap(ConvertLevel(legacyLevel), map, eodon);
+Custom/Edits to New Pub/TreasureMaps/TreasureMapInfo.cs:736: chest.DropItem(new TreasureMap(tMap.Level + 1, chest.Map));

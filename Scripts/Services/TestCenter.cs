@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Text;
 using Server.Commands;
 using Server.Factions;
@@ -279,19 +279,19 @@ namespace Server.Misc
             cont = new Bag();
             cont.Name = "Bag Of Treasure Maps";
 
-            PlaceItemIn(cont, 30, 35, new TreasureMap(1, Map.Trammel));
-            PlaceItemIn(cont, 45, 35, new TreasureMap(2, Map.Trammel));
-            PlaceItemIn(cont, 60, 35, new TreasureMap(3, Map.Trammel));
-            PlaceItemIn(cont, 75, 35, new TreasureMap(4, Map.Trammel));
-            PlaceItemIn(cont, 90, 35, new TreasureMap(5, Map.Trammel));
-            PlaceItemIn(cont, 90, 35, new TreasureMap(6, Map.Trammel));
+            PlaceItemIn(cont, 30, 35, TreasureMapInfo.CreateLegacyMap(1, Map.Trammel));
+            PlaceItemIn(cont, 45, 35, TreasureMapInfo.CreateLegacyMap(2, Map.Trammel));
+            PlaceItemIn(cont, 60, 35, TreasureMapInfo.CreateLegacyMap(3, Map.Trammel));
+            PlaceItemIn(cont, 75, 35, TreasureMapInfo.CreateLegacyMap(4, Map.Trammel));
+            PlaceItemIn(cont, 90, 35, TreasureMapInfo.CreateLegacyMap(5, Map.Trammel));
+            PlaceItemIn(cont, 90, 35, TreasureMapInfo.CreateLegacyMap(6, Map.Trammel));
 
-            PlaceItemIn(cont, 30, 50, new TreasureMap(1, Map.Trammel));
-            PlaceItemIn(cont, 45, 50, new TreasureMap(2, Map.Trammel));
-            PlaceItemIn(cont, 60, 50, new TreasureMap(3, Map.Trammel));
-            PlaceItemIn(cont, 75, 50, new TreasureMap(4, Map.Trammel));
-            PlaceItemIn(cont, 90, 50, new TreasureMap(5, Map.Trammel));
-            PlaceItemIn(cont, 90, 50, new TreasureMap(6, Map.Trammel));
+            PlaceItemIn(cont, 30, 50, TreasureMapInfo.CreateLegacyMap(1, Map.Trammel));
+            PlaceItemIn(cont, 45, 50, TreasureMapInfo.CreateLegacyMap(2, Map.Trammel));
+            PlaceItemIn(cont, 60, 50, TreasureMapInfo.CreateLegacyMap(3, Map.Trammel));
+            PlaceItemIn(cont, 75, 50, TreasureMapInfo.CreateLegacyMap(4, Map.Trammel));
+            PlaceItemIn(cont, 90, 50, TreasureMapInfo.CreateLegacyMap(5, Map.Trammel));
+            PlaceItemIn(cont, 90, 50, TreasureMapInfo.CreateLegacyMap(6, Map.Trammel));
 
             PlaceItemIn(cont, 55, 100, new Lockpick(30));
             PlaceItemIn(cont, 60, 100, new Pickaxe());
@@ -573,11 +573,11 @@ namespace Server.Misc
             bank.DropItem(bag);
 
             // Treasure maps
-            bank.DropItem(new TreasureMap(1, Map.Trammel));
-            bank.DropItem(new TreasureMap(2, Map.Trammel));
-            bank.DropItem(new TreasureMap(3, Map.Trammel));
-            bank.DropItem(new TreasureMap(4, Map.Trammel));
-            bank.DropItem(new TreasureMap(5, Map.Trammel));
+            bank.DropItem(TreasureMapInfo.CreateLegacyMap(1, Map.Trammel));
+            bank.DropItem(TreasureMapInfo.CreateLegacyMap(2, Map.Trammel));
+            bank.DropItem(TreasureMapInfo.CreateLegacyMap(3, Map.Trammel));
+            bank.DropItem(TreasureMapInfo.CreateLegacyMap(4, Map.Trammel));
+            bank.DropItem(TreasureMapInfo.CreateLegacyMap(5, Map.Trammel));
 
             // Bag containing 50 of each reagent
             bank.DropItem(new BagOfAllReagents(50));

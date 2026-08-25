@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using Server;
 using Server.Engines.VeteranRewards;
 using Server.Gumps;
@@ -163,7 +163,7 @@ namespace Server.Items
                         case 5: facet = Map.TerMur; break;
                     }
 
-                    TreasureMap map = new TreasureMap(level, facet);
+                    TreasureMap map = TreasureMapInfo.CreateLegacyMap(level, facet);
 
                     if (cont == null || !cont.TryDropItem(from, map, false))
                     {

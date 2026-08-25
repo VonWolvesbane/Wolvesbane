@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using Server.Factions;
 using Server.Items;
 using Server.Network;
@@ -62,7 +62,54 @@ namespace Server.SkillHandlers
 
                     from.PlaySound(0x241);
 					
-                    if (from.CheckTargetSkill(SkillName.RemoveTrap, targ, targ.TrapPower, targ.TrapPower + 10))
+                    double minSkill = targ.TrapPower;
+                    double maxSkill = targ.TrapPower + 10;
+
+                    // Wolvesbane treasure-map compatibility:
+                    //
+                    // The newer treasure system uses TrapPower primarily as trap
+                    // strength/damage. Trove chests are assigned TrapPower 170.
+                    // The classic Remove Trap handler also used TrapPower directly
+                    // as the skill-check minimum, which makes a Trove literally
+                    // impossible even at the shard's 120.0 Remove Trap cap.
+                    //
+                    // Keep the stronger trap power/damage intact, but give treasure
+                    // chests their own progressive disarm difficulty.
+                    TreasureMapChest treasureChest = targ as TreasureMapChest;
+
+                    if (treasureChest != null && TreasureMapInfo.NewSystem)
+                    {
+                        switch (treasureChest.Level)
+                        {
+                            default:
+                            case 0: // Stash
+                                minSkill = 20.0;
+                                maxSkill = 50.0;
+                                break;
+
+                            case 1: // Supply
+                                minSkill = 40.0;
+                                maxSkill = 70.0;
+                                break;
+
+                            case 2: // Cache
+                                minSkill = 65.0;
+                                maxSkill = 95.0;
+                                break;
+
+                            case 3: // Hoard
+                                minSkill = 85.0;
+                                maxSkill = 115.0;
+                                break;
+
+                            case 4: // Trove
+                                minSkill = 105.0;
+                                maxSkill = 125.0;
+                                break;
+                        }
+                    }
+
+                    if (from.CheckTargetSkill(SkillName.RemoveTrap, targ, minSkill, maxSkill))
                     {
                         targ.TrapPower = 0;
                         targ.TrapLevel = 0;

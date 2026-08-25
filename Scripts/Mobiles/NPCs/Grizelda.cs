@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using Server.Items;
 using Server.Mobiles;
 using Server.Services.Virtues;
@@ -116,7 +116,7 @@ namespace Server.Engines.Quests.Hag
 
                                 cont.DropItem(new Cauldron());
                                 cont.DropItem(new MoonfireBrew());
-                                cont.DropItem(new TreasureMap(Utility.RandomMinMax(1, 4), this.Map));
+                                cont.DropItem(TreasureMapInfo.CreateLegacyMap(Utility.RandomMinMax(1, 4), this.Map));
                                 cont.DropItem(new Gold(2000, 2200));
 
                                 if (Utility.RandomBool())

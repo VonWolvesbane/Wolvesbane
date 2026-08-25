@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 
 namespace Server.Items
 {
@@ -256,7 +256,7 @@ namespace Server.Items
                 DropItem(item);
             }
 
-            DropItem(new TreasureMap(level + 1, (Siege.SiegeShard ?  Map.Felucca : Utility.RandomBool() ? Map.Felucca : Map.Trammel)));
+            DropItem(TreasureMapInfo.CreateLegacyMap(level + 1, (Siege.SiegeShard ? Map.Felucca : Utility.RandomBool() ? Map.Felucca : Map.Trammel)));
         }
     }
 }

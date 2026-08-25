@@ -1,7 +1,8 @@
-#region References
+﻿#region References
 using Server.ContextMenus;
 using Server.Engines.CannedEvil;
 using Server.Engines.Harvest;
+using Server.Gumps;
 using Server.Mobiles;
 using Server.Multis;
 using Server.Network;
@@ -94,6 +95,19 @@ namespace Server.Items
 			new Type[]{ typeof( LichLord ), typeof( Daemon ), typeof( ElderGazer ), typeof( PoisonElemental ), typeof( BloodElemental ) },
 			new Type[]{ typeof( AncientWyrm ), typeof( Balron ), typeof( BloodElemental ), typeof( PoisonElemental ), typeof( Titan ) },
 			new Type[]{ typeof( BloodElemental), typeof(ColdDrake), typeof(FrostDragon), typeof(FrostDrake), typeof(GreaterDragon), typeof(PoisonElemental)}
+		};
+
+		// NewWolvesbane-specific guardian progression.
+		private static readonly Type[][] m_NewWolvesbaneSpawnTypes = new Type[][]
+		{
+			new Type[]{ typeof( HeadlessOne ), typeof( Skeleton ) },
+			new Type[]{ typeof( Mongbat ), typeof( Ratman ), typeof( HeadlessOne ), typeof( Skeleton ), typeof( Zombie ) },
+			new Type[]{ typeof( OrcishMage ), typeof( Gargoyle ), typeof( Gazer ), typeof( HellHound ), typeof( EarthElemental ) },
+			new Type[]{ typeof( Lich ), typeof( OgreLord ), typeof( DreadSpider ), typeof( AirElemental ), typeof( FireElemental ) },
+			new Type[]{ typeof( DreadSpider ), typeof( LichLord ), typeof( Daemon ), typeof( ElderGazer ), typeof( OgreLord ) },
+			new Type[]{ typeof( LichLord ), typeof( Daemon ), typeof( ElderGazer ), typeof( PoisonElemental ), typeof( BloodElemental ) },
+			new Type[]{ typeof( AncientWyrm ), typeof( Balron ), typeof( BloodElemental ), typeof( PoisonElemental ), typeof( Titan ), typeof( Griffin ), typeof( Moose ), typeof( Panda ), typeof( WolvesbanianImp ) },
+			new Type[]{ typeof( BloodElemental ), typeof( ColdDrake ), typeof( FrostDragon ), typeof( FrostDrake ), typeof( GreaterDragon ), typeof( PoisonElemental ), typeof( Griffin ), typeof( Moose ), typeof( Panda ), typeof( WolvesbanianImp ) }
 		};
 
 		private static readonly Type[][] m_TokunoSpawnTypes = new Type[][]
@@ -347,6 +361,35 @@ namespace Server.Items
 		{
 		}
 
+		// Wolvesbane treasure-map facet whitelist.
+		// Eodon is NOT a separate server Map; it is an internal TreasureFacet
+		// classification for part of Map.TerMur.
+		public static bool IsAllowedTreasureMap(Map map)
+		{
+			return map == Map.Trammel ||
+				map == Map.Felucca ||
+				map == Map.Ilshenar ||
+				map == Map.Malas ||
+				map == Map.Tokuno ||
+				map == Map.TerMur ||
+				map == Map.NewWolvesbane;
+		}
+
+		private static Map NormalizeTreasureMap(Map map)
+		{
+			if (IsAllowedTreasureMap(map))
+				return map;
+
+			if (map != null && map != Map.Internal)
+			{
+				Console.WriteLine(
+					"[TreasureMap] Unsupported facet '{0}' requested. Redirecting treasure map to Trammel.",
+					map);
+			}
+
+			return Map.Trammel;
+		}
+
 		[Constructable]
 		public TreasureMap(int level, Map map)
 			: this(level, map, false)
@@ -364,11 +407,21 @@ namespace Server.Items
 				AssignRandomPackage();
 			}
 
-			if ((!newSystem && level == 7) || map == Map.Internal)
+			if ((!newSystem && level == 7) || map == null || map == Map.Internal)
 				map = GetRandomMap();
+			else
+				map = NormalizeTreasureMap(map);
 
 			Facet = map;
 			ChestLocation = GetRandomLocation(map, eodon);
+
+			if (ChestLocation == Point2D.Zero)
+			{
+				Console.WriteLine(
+					"[TreasureMap] WARNING: map {0} was created without a valid treasure location on {1}.",
+					Serial,
+					map);
+			}
 
 			Width = 300;
 			Height = 300;
@@ -403,17 +456,21 @@ namespace Server.Items
 
 		public Map GetRandomMap()
 		{
-			switch (Utility.Random(8))
+			switch (Utility.Random(7))
 			{
 				default:
 				case 0: return Map.Trammel;
 				case 1: return Map.Felucca;
-				case 2:
-				case 3: return Map.Ilshenar;
-				case 4:
-				case 5: return Map.Malas;
+				case 2: return Map.Ilshenar;
+				case 3: return Map.Malas;
+				case 4: return Map.Tokuno;
+				case 5: return Map.TerMur;
 				case 6:
-				case 7: return Map.Tokuno;
+					// Do not randomly create a NewWolvesbane map until staff have
+					// configured at least one approved treasure area.
+					return Wolvesbane.TreasureMaps.WBTreasureMapAreas.GetAreas().Length > 0
+						? Map.NewWolvesbane
+						: Map.Trammel;
 			}
 		}
 
@@ -424,29 +481,123 @@ namespace Server.Items
 
 		private static Point2D GetRandomLocation(Map map, bool eodon)
 		{
-			if (map == null || map == Map.Internal)
+			if (!IsAllowedTreasureMap(map))
 				return Point2D.Zero;
 
-			int x, y;
-			int maxAttempts = 10; // Prevent infinite loops
-			int attempts = 0;
+			Rectangle2D[] areas = GetTreasureAreas(map, eodon);
 
-			do
+			// The script already contains carefully selected facet-specific treasure
+			// regions. The previous implementation ignored them and sampled the
+			// entire facet, which frequently selected void/water/invalid areas.
+			if (areas != null && areas.Length > 0)
 			{
-				x = Utility.Random(map.Width);
-				y = Utility.Random(map.Height);
+				const int attempts = 100;
+
+				for (int i = 0; i < attempts; ++i)
+				{
+					Rectangle2D area = areas[Utility.Random(areas.Length)];
+
+					if (area.Width <= 0 || area.Height <= 0)
+						continue;
+
+					int x = area.X + Utility.Random(area.Width);
+					int y = area.Y + Utility.Random(area.Height);
+
+					if (ValidateLocation(x, y, map))
+						return new Point2D(x, y);
+				}
+
+				// A deterministic second pass prevents random bad luck from causing
+				// a false failure. Probe a grid inside every configured treasure area.
+				for (int a = 0; a < areas.Length; ++a)
+				{
+					Rectangle2D area = areas[a];
+
+					if (area.Width <= 0 || area.Height <= 0)
+						continue;
+
+					int stepX = Math.Max(1, area.Width / 12);
+					int stepY = Math.Max(1, area.Height / 12);
+
+					for (int x = area.X + (stepX / 2); x < area.X + area.Width; x += stepX)
+					{
+						for (int y = area.Y + (stepY / 2); y < area.Y + area.Height; y += stepY)
+						{
+							if (ValidateLocation(x, y, map))
+								return new Point2D(x, y);
+						}
+					}
+				}
+			}
+
+			// NewWolvesbane is a custom map. Its Scripts define the dimensions, but
+			// the uploaded source does not contain enough terrain/travel information
+			// to prove which parts of the facet are player-accessible. For this facet
+			// we therefore REQUIRE staff-approved treasure areas instead of falling
+			// back to random coordinates across the whole map.
+			if (map == Map.NewWolvesbane)
+			{
+				Console.WriteLine(
+					"[TreasureMap] NewWolvesbane has no usable approved treasure area. Use [WBTMapAreaAdd <radius> while standing in a safe hunting area.");
+
+				return Point2D.Zero;
+			}
+
+			// Last-resort fallback: sample the stock facet itself. Do not silently return
+			// map center unless it is actually a valid dig location.
+			const int fallbackAttempts = 250;
+
+			for (int i = 0; i < fallbackAttempts; ++i)
+			{
+				int x = Utility.Random(map.Width);
+				int y = Utility.Random(map.Height);
 
 				if (ValidateLocation(x, y, map))
 					return new Point2D(x, y);
+			}
 
-				attempts++;
+			Point2D center = new Point2D(map.Width / 2, map.Height / 2);
 
-			} while (attempts < maxAttempts);
+			if (ValidateLocation(center.X, center.Y, map))
+			{
+				Console.WriteLine(
+					"[TreasureMap] WARNING: no configured treasure-area location was valid for {0}; using validated map center {1},{2}.",
+					map,
+					center.X,
+					center.Y);
 
-			// Failsafe: return a default safe location
-			Console.WriteLine($"[TreasureMap] Failed to find valid location after {maxAttempts} attempts. Returning map center.");
+				return center;
+			}
 
-			return new Point2D(map.Width / 2, map.Height / 2);
+			Console.WriteLine(
+				"[TreasureMap] ERROR: unable to find any valid treasure location for facet {0} (Eodon={1}).",
+				map,
+				eodon);
+
+			return Point2D.Zero;
+		}
+
+		private static Rectangle2D[] GetTreasureAreas(Map map, bool eodon)
+		{
+			if (map == Map.NewWolvesbane)
+				return Wolvesbane.TreasureMaps.WBTreasureMapAreas.GetAreas();
+
+			if (map == Map.Trammel || map == Map.Felucca)
+				return m_FelTramWrap;
+
+			if (map == Map.Ilshenar)
+				return m_IlshenarWrap;
+
+			if (map == Map.Malas)
+				return m_MalasWrap;
+
+			if (map == Map.Tokuno)
+				return m_TokunoWrap;
+
+			if (map == Map.TerMur)
+				return eodon ? m_EodonWrap : m_TerMurWrap;
+
+			return null;
 		}
 
 
@@ -457,30 +608,62 @@ namespace Server.Items
 
 			try
 			{
+				if (x < 0 || y < 0 || x >= map.Width || y >= map.Height)
+					return false;
+
 				LandTile landTile = map.Tiles.GetLandTile(x, y);
 
 				if (landTile.ID <= 2)
 					return false;
 
-				TileFlag flags = TileData.LandTable[landTile.ID & TileData.MaxLandValue].Flags;
+				int landID = landTile.ID & TileData.MaxLandValue;
+
+				if (landID < 0 || landID >= TileData.LandTable.Length)
+					return false;
+
+				TileFlag flags = TileData.LandTable[landID].Flags;
 
 				if ((flags & TileFlag.Impassable) != 0 || (flags & TileFlag.Wet) != 0)
+					return false;
+
+				// VitaNex knows the classic UO water/coastline tile IDs in addition
+				// to the generic Wet flag. Custom facets often use water graphics
+				// whose TileData flags alone are insufficient.
+				if (landTile.IsWater() || landTile.IsCoastline())
 					return false;
 
 				StaticTile[] items = map.Tiles.GetStaticTiles(x, y, true);
 
 				for (int i = 0; i < items.Length; ++i)
 				{
-					int id = items[i].ID & TileData.MaxItemValue;
+					StaticTile tile = items[i];
+					int id = tile.ID & TileData.MaxItemValue;
 
-					if (id >= TileData.ItemTable.Length)
+					if (id < 0 || id >= TileData.ItemTable.Length)
 						continue;
 
 					TileFlag f = TileData.ItemTable[id].Flags;
 
-					if ((f & TileFlag.Impassable) != 0)
+					if ((f & TileFlag.Impassable) != 0 ||
+						(f & TileFlag.Wet) != 0 ||
+						tile.IsWater())
+					{
 						return false;
+					}
 				}
+
+				int z = map.GetAverageZ(x, y);
+
+				// The chest and guardians need an actual standable tile, not merely
+				// a non-wet land graphic.
+				if (!map.CanSpawnMobile(x, y, z))
+					return false;
+
+				// NewWolvesbane gets an intentionally stronger dry-land test.
+				// Reject shorelines, tiny islands, docks, and water-edge tiles by
+				// requiring a dry/standable buffer around the treasure location.
+				if (map == Map.NewWolvesbane && !HasDryTreasureBuffer(x, y, map, 5))
+					return false;
 
 				return true;
 			}
@@ -490,15 +673,69 @@ namespace Server.Items
 			}
 		}
 
+		private static bool HasDryTreasureBuffer(int x, int y, Map map, int radius)
+		{
+			for (int dx = -radius; dx <= radius; ++dx)
+			{
+				for (int dy = -radius; dy <= radius; ++dy)
+				{
+					// Check a diamond-shaped neighborhood. This gives a meaningful
+					// shoreline buffer without making every candidate excessively
+					// expensive to validate.
+					if (Math.Abs(dx) + Math.Abs(dy) > radius)
+						continue;
+
+					int px = x + dx;
+					int py = y + dy;
+
+					if (px < 0 || py < 0 || px >= map.Width || py >= map.Height)
+						return false;
+
+					LandTile land = map.Tiles.GetLandTile(px, py);
+
+					if (land.ID <= 2 || land.IsWater() || land.IsCoastline())
+						return false;
+
+					int landID = land.ID & TileData.MaxLandValue;
+
+					if (landID < 0 || landID >= TileData.LandTable.Length)
+						return false;
+
+					TileFlag flags = TileData.LandTable[landID].Flags;
+
+					if ((flags & TileFlag.Wet) != 0 || (flags & TileFlag.Impassable) != 0)
+						return false;
+
+					StaticTile[] statics = map.Tiles.GetStaticTiles(px, py, true);
+
+					for (int i = 0; i < statics.Length; ++i)
+					{
+						StaticTile tile = statics[i];
+						int id = tile.ID & TileData.MaxItemValue;
+
+						if (id < 0 || id >= TileData.ItemTable.Length)
+							continue;
+
+						TileFlag f = TileData.ItemTable[id].Flags;
+
+						if ((f & TileFlag.Wet) != 0 || tile.IsWater())
+							return false;
+					}
+				}
+			}
+
+			return true;
+		}
+
 
 		public void GetWidthAndHeight(Map map, out int width, out int height)
 		{
-			if (map == Map.Trammel || map == Map.Felucca)
+			if (map == Map.Trammel || map == Map.Felucca || map == Map.NewWolvesbane)
 			{
 				width = 600;
 				height = 600;
 			}
-			if (map == Map.TerMur)
+			else if (map == Map.TerMur)
 			{
 				width = 200;
 				height = 200;
@@ -520,7 +757,21 @@ namespace Server.Items
 			x2 = x1 + width;
 			y2 = y1 + height;
 
-			if (map == Map.Trammel || map == Map.Felucca)
+			if (map == Map.NewWolvesbane)
+			{
+				if (x2 >= map.Width)
+					x2 = map.Width - 1;
+
+				if (y2 >= map.Height)
+					y2 = map.Height - 1;
+
+				if (x2 < width)
+					x2 = width;
+
+				if (y2 < height)
+					y2 = height;
+			}
+			else if (map == Map.Trammel || map == Map.Felucca)
 			{
 				if (x2 >= 5120)
 					x2 = 5119;
@@ -617,9 +868,19 @@ namespace Server.Items
 
 		public static BaseCreature Spawn(int level, Point3D p, bool guardian, Map map)
 		{
+			if (!IsAllowedTreasureMap(map))
+			{
+				Console.WriteLine(
+					"[TreasureMap] Refusing guardian spawn on unsupported facet '{0}'.",
+					map == null ? "(null)" : map.ToString());
+				return null;
+			}
+
 			Type[][] spawns;
 
-			if (map == Map.Trammel || map == Map.Felucca)
+			if (map == Map.NewWolvesbane)
+				spawns = m_NewWolvesbaneSpawnTypes;
+			else if (map == Map.Trammel || map == Map.Felucca)
 				spawns = m_SpawnTypes;
 			else if (map == Map.Tokuno)
 				spawns = m_TokunoSpawnTypes;
@@ -627,16 +888,12 @@ namespace Server.Items
 				spawns = m_IlshenarSpawnTypes;
 			else if (map == Map.Malas)
 				spawns = m_MalasSpawnTypes;
-			else
+			else // Map.TerMur (including the Eodon subregion)
 			{
 				if (SpellHelper.IsEodon(map, p))
-				{
 					spawns = m_EodonSpawnTypes;
-				}
 				else
-				{
 					spawns = m_TerMurSpawnTypes;
-				}
 			}
 
 			if (level >= 0 && level < spawns.Length)
@@ -892,10 +1149,61 @@ namespace Server.Items
 				ClearPins();
 				LootType = LootType.Regular;
 				m_Decoder = null;
-				GetRandomLocation(Facet, TreasureMapInfo.NewSystem ? TreasureFacet == TreasureFacet.Eodon : false);
+
+				// The previous implementation called GetRandomLocation(...) but discarded
+				// its return value. That reset the decoder without actually moving the
+				// treasure. Rebuild both ChestLocation and the displayed map bounds.
+				ResetTreasureLocation(
+					TreasureMapInfo.NewSystem && TreasureFacet == TreasureFacet.Eodon);
+
 				InvalidateProperties();
 				NextReset = DateTime.UtcNow + ResetTime;
 			}
+		}
+
+		private void ResetTreasureLocation(bool eodon)
+		{
+			Map map = Facet;
+
+			if (!IsAllowedTreasureMap(map))
+				map = GetRandomMap();
+
+			Facet = map;
+
+			Point2D location = GetRandomLocation(map, eodon);
+
+			if (location == Point2D.Zero)
+			{
+				Console.WriteLine(
+					"[TreasureMap] Reset aborted for map {0}: no valid location could be selected on {1}.",
+					Serial,
+					map);
+
+				NextReset = DateTime.UtcNow + TimeSpan.FromHours(6.0);
+				return;
+			}
+
+			ChestLocation = location;
+
+			int width, height;
+			GetWidthAndHeight(map, out width, out height);
+
+			int x1 = ChestLocation.X - Utility.RandomMinMax(width / 4, (width / 4) * 3);
+			int y1 = ChestLocation.Y - Utility.RandomMinMax(height / 4, (height / 4) * 3);
+
+			if (x1 < 0)
+				x1 = 0;
+
+			if (y1 < 0)
+				y1 = 0;
+
+			int x2, y2;
+			AdjustMap(map, out x2, out y2, x1, y1, width, height, eodon);
+
+			x1 = x2 - width;
+			y1 = y2 - height;
+
+			Bounds = new Rectangle2D(x1, y1, width, height);
 		}
 
 		public override void DisplayTo(Mobile from)
@@ -925,6 +1233,17 @@ namespace Server.Items
 			}
 
 			from.PlaySound(0x249);
+
+			// Custom facet 6 does not have reliable stock cartography artwork in the
+			// client. Keep the real ChestLocation/dig mechanics, but use a server-side
+			// chart for NewWolvesbane instead of opening a blank client MapDisplay.
+			if (Facet == Map.NewWolvesbane)
+			{
+				from.CloseGump(typeof(Wolvesbane.TreasureMaps.WBNewWolvesbaneTreasureChartGump));
+				from.SendGump(new Wolvesbane.TreasureMaps.WBNewWolvesbaneTreasureChartGump(from, this));
+				return;
+			}
+
 			base.DisplayTo(from);
 		}
 
@@ -975,6 +1294,7 @@ namespace Server.Items
 				case TreasureFacet.Tokuno: list.Add(1115645); break;
 				case TreasureFacet.TerMur: list.Add(1115646); break;
 				case TreasureFacet.Eodon: list.Add(1158985); break;
+				case TreasureFacet.NewWolvesbane: list.Add("For Somewhere In New Wolvesbane"); break;
 			}
 
 			if (m_Completed)
@@ -1001,8 +1321,9 @@ namespace Server.Items
 
 			writer.Write(ChestLocation);
 
-			if (!Completed && NextReset != DateTime.MinValue && NextReset < DateTime.UtcNow)
-				Timer.DelayCall(TimeSpan.FromSeconds(30), ResetLocation);
+			// Never schedule gameplay work from Serialize().
+			// World saves may occur repeatedly; the old code created a new reset timer
+			// on every save for every expired map, causing reset storms.
 		}
 
 		public override void Deserialize(GenericReader reader)
@@ -1049,10 +1370,26 @@ namespace Server.Items
 					}
 			}
 
-			if (version == 2 && TreasureMapInfo.NewSystem)
+			if (version < 3 && TreasureMapInfo.NewSystem)
 			{
+				// Versions prior to the package-aware v3 format came from the legacy
+				// level model. Convert old saved maps once as they are loaded.
 				Level = TreasureMapInfo.ConvertLevel(m_Level);
 				AssignRandomPackage();
+			}
+
+			if (!IsAllowedTreasureMap(Facet))
+			{
+				Map oldFacet = Facet;
+				Facet = Map.Trammel;
+
+				Console.WriteLine(
+					"[TreasureMap] Saved map {0} referenced unsupported facet '{1}'. Migrating it to Trammel.",
+					Serial,
+					oldFacet == null ? "(null)" : oldFacet.ToString());
+
+				if (!Completed)
+					ResetTreasureLocation(false);
 			}
 
 			if (m_Decoder != null && LootType == LootType.Regular)
@@ -1063,6 +1400,15 @@ namespace Server.Items
 			if (NextReset == DateTime.MinValue)
 			{
 				NextReset = DateTime.UtcNow + ResetTime;
+			}
+
+			if (!Completed && NextReset < DateTime.UtcNow)
+			{
+				// Schedule exactly once for this load and stagger old maps so a shard
+				// with many expired maps does not relocate all of them in one tick.
+				Timer.DelayCall(
+					TimeSpan.FromSeconds(Utility.RandomMinMax(15, 180)),
+					ResetLocation);
 			}
 		}
 

@@ -83,7 +83,7 @@ namespace Server.Items
             else
                 DropItem(Loot.RandomWeapon());
 
-            DropItem(new TreasureMap(Utility.RandomMinMax(3, 5), Map.Felucca));
+            DropItem(TreasureMapInfo.CreateLegacyMap(Utility.RandomMinMax(3, 5), Map.Felucca));
         }
 
         public UnknownRogueSkeleton(Serial serial)
