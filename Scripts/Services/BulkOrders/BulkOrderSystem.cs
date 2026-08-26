@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.IO;
 using System.Linq;
 using System.Collections.Generic;
@@ -170,26 +170,23 @@ namespace Server.Engines.BulkOrders
 
             if (context != null && context.Entries.ContainsKey(type))
             {
-                var entry = context.Entries[type];
+                BODEntry entry = context.Entries[type];
 
                 if (entry != null)
                 {
-                    //entry.LastBulkOrder();
+                    // Bring the cache current before deciding eligibility.
+                    entry.CheckNextBulkOrder();
 
-                    if (entry.LastBulkOrder + TimeSpan.FromHours(Delay) < DateTime.UtcNow)
+                    if (entry.CachedDeeds > 0)
                     {
+                        bool wasFull = entry.CachedDeeds >= MaxCachedDeeds;
+
                         entry.CachedDeeds--;
 
-                        return true;
-                    }
-                    else if (entry.LastBulkOrder + TimeSpan.FromHours(Delay) < DateTime.UtcNow)
-                    {
-                        if (entry.LastBulkOrder == DateTime.MinValue)
-                        {
-                            entry.LastBulkOrder = DateTime.UtcNow - TimeSpan.FromHours(Delay);
-                        }
-
-                        entry.LastBulkOrder = entry.LastBulkOrder + TimeSpan.FromHours(Delay);
+                        // A full cache has no meaningful running regeneration timer.
+                        // Start one only when the first deed is consumed.
+                        if (wasFull || entry.LastBulkOrder == DateTime.MinValue)
+                            entry.LastBulkOrder = DateTime.UtcNow;
 
                         return true;
                     }
@@ -203,22 +200,34 @@ namespace Server.Engines.BulkOrders
         {
             BODContext context = GetContext(pm);
 
-            if (context != null)
+            if (context != null && context.Entries.ContainsKey(type))
             {
                 if (NewSystemEnabled)
                 {
-                    DateTime last = context.Entries[type].LastBulkOrder;
+                    BODEntry entry = context.Entries[type];
 
-                    return (last + TimeSpan.FromHours(Delay)) - DateTime.UtcNow;
+                    entry.CheckNextBulkOrder();
+
+                    // Cached deeds are immediately available.  This is the key
+                    // compatibility behavior expected by OWLTR/vendor code.
+                    if (entry.CachedDeeds > 0)
+                        return TimeSpan.Zero;
+
+                    DateTime next = entry.LastBulkOrder + TimeSpan.FromHours(Delay);
+
+                    if (next <= DateTime.UtcNow)
+                        return TimeSpan.Zero;
+
+                    return next - DateTime.UtcNow;
                 }
-                else if (context.Entries.ContainsKey(type))
+                else
                 {
                     DateTime dt = context.Entries[type].NextBulkOrder;
 
-                    if (dt < DateTime.UtcNow)
+                    if (dt <= DateTime.UtcNow)
                         return TimeSpan.Zero;
 
-                    return DateTime.UtcNow - dt;
+                    return dt - DateTime.UtcNow;
                 }
             }
 
@@ -229,19 +238,45 @@ namespace Server.Engines.BulkOrders
         {
             BODContext context = GetContext(pm);
 
-            if (context != null)
+            if (context != null && context.Entries.ContainsKey(type))
             {
                 if (NewSystemEnabled)
                 {
-                    if (context.Entries.ContainsKey(type))
+                    BODEntry entry = context.Entries[type];
+
+                    entry.CheckNextBulkOrder();
+
+                    if (ts <= TimeSpan.Zero)
                     {
-                        if (context.Entries[type].LastBulkOrder < DateTime.UtcNow - TimeSpan.FromHours(Delay * MaxCachedDeeds))
-                            context.Entries[type].LastBulkOrder = DateTime.UtcNow - TimeSpan.FromHours(Delay * MaxCachedDeeds);
-                        else
-                            context.Entries[type].LastBulkOrder = (context.Entries[type].LastBulkOrder + ts) - TimeSpan.FromHours(Delay);
+                        // Admin/legacy reset means "eligible now".
+                        // Guarantee one deed without manufacturing a future cooldown.
+                        if (entry.CachedDeeds < 1)
+                            entry.CachedDeeds = 1;
+
+                        return;
+                    }
+
+                    // Legacy OWLTR code sets Next*BulkOrder after handing out a deed.
+                    // In the cached system that means consume one cached deed.
+                    if (entry.CachedDeeds > 0)
+                    {
+                        bool wasFull = entry.CachedDeeds >= MaxCachedDeeds;
+
+                        entry.CachedDeeds--;
+
+                        if (wasFull || entry.LastBulkOrder == DateTime.MinValue)
+                            entry.LastBulkOrder = DateTime.UtcNow;
+                    }
+                    else
+                    {
+                        // No cache remains: start/retain the normal regeneration timer.
+                        DateTime proposed = DateTime.UtcNow + ts - TimeSpan.FromHours(Delay);
+
+                        if (entry.LastBulkOrder == DateTime.MinValue || proposed > entry.LastBulkOrder)
+                            entry.LastBulkOrder = proposed;
                     }
                 }
-                else if (context.Entries.ContainsKey(type))
+                else
                 {
                     context.Entries[type].NextBulkOrder = DateTime.UtcNow + ts;
                 }
@@ -869,35 +904,38 @@ namespace Server.Engines.BulkOrders
 
         public void CheckNextBulkOrder()
         {
+            // A full cache is already eligible.  Never move LastBulkOrder forward
+            // merely because somebody checked status; doing so created the
+            // recurring six-hour lockout seen on Wolvesbane.
             if (_CachedDeeds >= BulkOrderSystem.MaxCachedDeeds)
-            {
-                // cache is full, resets
-                if (LastBulkOrder + TimeSpan.FromHours(BulkOrderSystem.Delay) < DateTime.UtcNow)
-                {
-                    LastBulkOrder = DateTime.UtcNow;
-                }
+                return;
 
+            if (LastBulkOrder == DateTime.MinValue)
+            {
+                // Existing/new records with an empty timestamp should be eligible,
+                // not forced to wait six hours.
+                CachedDeeds = BulkOrderSystem.MaxCachedDeeds;
                 return;
             }
 
-            int deeds = Math.Min(BulkOrderSystem.MaxCachedDeeds, (int)((DateTime.UtcNow - LastBulkOrder).TotalHours / (double)BulkOrderSystem.Delay));
+            TimeSpan elapsed = DateTime.UtcNow - LastBulkOrder;
 
-            if (deeds > 0)
-            {
-                // cache is not full, gives proper amount and resets
-                for (int i = 0; i < deeds; i++)
-                {
-                    CachedDeeds++;
+            if (elapsed < TimeSpan.FromHours(BulkOrderSystem.Delay))
+                return;
 
-                    // this auto-corrects, in the event a bone-head shard owner sets it to min value, or on new server
-                    if (LastBulkOrder == DateTime.MinValue)
-                    {
-                        LastBulkOrder = DateTime.UtcNow - TimeSpan.FromHours(BulkOrderSystem.Delay * deeds);
-                    }
+            int deeds = (int)(elapsed.TotalHours / (double)BulkOrderSystem.Delay);
 
-                    LastBulkOrder = LastBulkOrder + TimeSpan.FromHours(BulkOrderSystem.Delay);
-                }
-            }
+            if (deeds <= 0)
+                return;
+
+            int room = BulkOrderSystem.MaxCachedDeeds - _CachedDeeds;
+            int toAdd = Math.Min(room, deeds);
+
+            CachedDeeds += toAdd;
+            LastBulkOrder = LastBulkOrder + TimeSpan.FromHours(BulkOrderSystem.Delay * toAdd);
+
+            // Once full, the exact timestamp is irrelevant until a deed is consumed.
+            // It is intentionally NOT reset to DateTime.UtcNow here.
         }
 
         public BODEntry(GenericReader reader)

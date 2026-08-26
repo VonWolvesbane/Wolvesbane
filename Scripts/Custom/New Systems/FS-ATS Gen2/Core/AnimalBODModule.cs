@@ -27,9 +27,18 @@ namespace CustomsFramework.Systems.AnimalBODSystem
 			}
 			set
 			{
-				try{ m_NextTamingBulkOrder = DateTime.UtcNow + value; }
-				catch{}
-			}
+				try
+                {
+                    // Wolvesbane alignment: the legacy Animal BOD vendor may ask
+                    // this module for a 60-minute cooldown. Normalize every
+                    // positive delay shorter than the shard-wide BOD cadence
+                    // to six hours. TimeSpan.Zero remains an immediate/admin reset.
+                    if ( value > TimeSpan.Zero && value < TimeSpan.FromHours( 6.0 ) )
+                        value = TimeSpan.FromHours( 6.0 );
+
+                    m_NextTamingBulkOrder = DateTime.UtcNow + value;
+                }
+                catch{}}
 		}
         
         public AnimalBODModule(Mobile from) : base()
@@ -85,9 +94,10 @@ namespace CustomsFramework.Systems.AnimalBODSystem
         {
             base.Serialize(writer);
 
-            Utilities.WriteVersion(writer, 0);
+            Utilities.WriteVersion(writer, 1);
             
             m_TamingBOBFilter.Serialize( writer );
+            writer.Write( m_NextTamingBulkOrder );
         }
 
         public override void Deserialize(GenericReader reader)
@@ -98,8 +108,15 @@ namespace CustomsFramework.Systems.AnimalBODSystem
 
             switch (version)
             {
+                case 1:
+                    m_TamingBOBFilter = new Server.Engines.BulkOrders.TamingBOBFilter( reader );
+                    m_NextTamingBulkOrder = reader.ReadDateTime();
+                    break;
+
                 case 0:
-            		m_TamingBOBFilter = new Server.Engines.BulkOrders.TamingBOBFilter( reader );
+                    m_TamingBOBFilter = new Server.Engines.BulkOrders.TamingBOBFilter( reader );
+                    // Version 0 never persisted this timer.
+                    m_NextTamingBulkOrder = DateTime.MinValue;
                     break;
             }
             

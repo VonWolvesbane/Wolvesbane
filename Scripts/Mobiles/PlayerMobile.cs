@@ -1,4 +1,4 @@
-#region References
+﻿#region References
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -155,7 +155,19 @@ namespace Server.Mobiles
             }
             set
             {
-                try { m_NextTamingBulkOrder = DateTime.UtcNow + value; }
+                try
+                {
+                    // Wolvesbane BOD alignment:
+                    // The legacy taming vendor requests a 60-minute cooldown,
+                    // while the shard's other BOD professions now use a 6-hour
+                    // regeneration interval.  Preserve explicit admin resets
+                    // (TimeSpan.Zero), but normalize any positive taming delay
+                    // shorter than six hours to the shared six-hour cadence.
+                    if (value > TimeSpan.Zero && value < TimeSpan.FromHours(6.0))
+                        value = TimeSpan.FromHours(6.0);
+
+                    m_NextTamingBulkOrder = DateTime.UtcNow + value;
+                }
                 catch { }
             }
         }

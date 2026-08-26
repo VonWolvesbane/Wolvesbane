@@ -1,28 +1,31 @@
-Wolvesbane Save Optimization - Phase 3: Token / OWLTR Read-Only Audit
-=====================================================================
+Wolvesbane BOD Diagnostics
 
-PURPOSE
-This phase does NOT delete, merge, move, or alter any object.
-It measures the live Daat99 token population and inspects the Daat99OWLTR
-control object's collection sizes so we can design the next optimization safely.
+Install:
+Scripts/Custom/Wolvesbane/Commands/WBBODDiagnostics.cs
 
-INSTALL
-Copy:
-  Scripts/Custom/Wolvesbane Written/AI Written/World Cleanup/WBTokenAudit.cs
-into the matching location under your TEST server Scripts folder.
+Commands:
+[BODStatus  (GM)
+  Target a player. Read-only. Shows DateTime fields/properties whose names look
+  like BOD/Bulk Order cooldowns.
 
-Restart/recompile the TEST server.
+[BODReset   (Administrator)
+  Target a player. Resets ONLY these recognized Smith/Tailor timer names:
+    m_NextSmithBulkOrder
+    m_NextTailorBulkOrder
+    NextSmithBulkOrder
+    NextTailorBulkOrder
 
-COMMANDS
-  [WBTokenAudit
-      Basic read-only audit.
+It deliberately does NOT reset arbitrary DateTime members.
 
-  [WBTokenAudit verbose
-      Adds the largest immediate parents containing token objects and displays
-      smaller OWLTR collection fields as well.
+Test flow:
+1. [BODStatus -> target your character.
+2. Screenshot/copy the output.
+3. [BODReset -> target your character.
+4. Run [OWLTRBOD. Expected Smith/Tailor timer should show available/expired.
+5. Visit a Blacksmith and Tailor NPC and request/trigger a BOD.
 
-IMPORTANT
-Please run the basic command first and send the complete output/screenshots.
-Then run verbose and send those screenshots too.
-
-Nothing is deleted or modified by this script.
+Interpretation:
+- If [OWLTRBOD becomes eligible AND NPC gives a BOD: cooldown was the blocker.
+- If [OWLTRBOD becomes eligible but NPC still gives nothing: vendor handoff is broken.
+- If [BODReset finds no recognized timers: OWLTR stores cooldowns in its own holder,
+  and the [BODStatus output tells us what to trace next.
