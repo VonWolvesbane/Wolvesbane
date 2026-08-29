@@ -275,6 +275,15 @@ namespace Solaris.ItemStore
 
             Item item = WithdrawItem(index);
 
+            if (item == null)
+            {
+                from.SendMessage(
+                    0x22,
+                    "That stored item has invalid legacy data and cannot be safely withdrawn. Please page a GM.");
+
+                return;
+            }
+
             if (item != null)
             {
                 from.AddToBackpack(item);

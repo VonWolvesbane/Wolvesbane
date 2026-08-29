@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections;
 using System.Collections.Generic;
 using Server;
@@ -224,7 +224,10 @@ namespace Solaris.ItemStore
                     List<ItemListEntryColumn> columns = base.Columns;
 
                     //add in specifics for this list type here
-                    columns.Add(new ItemListEntryColumn(150,"Map",_ChestMap.ToString()));
+                    columns.Add(new ItemListEntryColumn(
+                        150,
+                        "Map",
+                        (_ChestMap == null ? "Unknown / Legacy" : _ChestMap.ToString())));
                     columns.Add(new ItemListEntryColumn(240,"Decoded?",(_Decoder == null ? "no" : "yes")));
 
                     return columns;
@@ -312,6 +315,19 @@ namespace Solaris.ItemStore
         //this generates an item from what is stored in the entry.  Note no exception handling
         public override Item GenerateItem()
         {
+            // Wolvesbane safety:
+            // Legacy/corrupt key entries can contain a null treasure-map facet.
+            // Do not silently rebuild those onto a random/wrong facet.
+            if (_ChestMap == null)
+            {
+                Console.WriteLine(
+                    "[Universal Storage Keys] Refused to withdraw TreasureMapListEntry with null facet. Level={0}, Location={1}",
+                    _Level,
+                    _ChestLocation);
+
+                return null;
+            }
+
             TreasureMap map = (TreasureMap)Activator.CreateInstance(_Type,new object[] { _Level,_ChestMap });
 
             map.ChestLocation = _ChestLocation;
@@ -405,7 +421,7 @@ namespace Solaris.ItemStore
                     List<ItemListEntryColumn> columns = base.Columns;
 
                     //add in specifics for this list type here
-                    columns.Add(new ItemListEntryColumn(150,"Map",_TargetMap.ToString()));
+                    columns.Add(new ItemListEntryColumn(150,"Map",(_TargetMap == null ? "Unknown / Legacy" : _TargetMap.ToString())));
                     columns.Add(new ItemListEntryColumn(240,"Location",GetCoordsText(_TargetLocation,_TargetMap)));
 
                     return columns;
