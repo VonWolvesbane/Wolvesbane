@@ -39,6 +39,20 @@ namespace daat99
 
 		}
 		
+		// Wolvesbane: allow players to select immovable/inaccessible display items
+		// for loot-list configuration only. This does NOT move or loot the targeted item;
+		// OnTarget only records its Type in the Master Storage loot list.
+		protected override void OnTargetNotAccessible(Mobile from, object targeted)
+		{
+			if (targeted is Item)
+			{
+				OnTarget(from, targeted);
+				return;
+			}
+
+			base.OnTargetNotAccessible(from, targeted);
+		}
+
 		protected override void OnTarget(Mobile from, object targeted )
 		{
 			if ( from as PlayerMobile == null || backpack == null || backpack.Deleted )

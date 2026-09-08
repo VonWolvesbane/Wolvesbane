@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using Server;
 using Server.Gumps;
@@ -53,7 +53,7 @@ namespace Server.ACC.PG
 			if( CStart < 0 )
 				CStart = 0;
 
-			AddBackground( 0, CStart, 230, 100+Cats*25, 2600 );
+			AddBackground( 0, CStart, 230, 125+Cats*25, 2600 );
             AddHtml(0, CStart + 15, 230, 20, "<BASEFONT COLOR=#58D3F7 SIZE=8><CENTER>Traveler's Traverse</CENTER></BASEFONT>", false, false);
 
 			int CurC = 0;
@@ -92,6 +92,15 @@ namespace Server.ACC.PG
 				AddButton(  50, CStart+65+Cats*25, 208, 209, 2, GumpButtonType.Reply, 0 );
 				AddLabel(  125, CStart+65+Cats*25, 0, "Edit" );
 				AddButton( 160, CStart+65+Cats*25, 208, 209, 3, GumpButtonType.Reply, 0 );
+
+				// Wolvesbane: category reorder controls.
+				// The current page is the selected category, so these move that
+				// category within PGSystem.CategoryList. List order is serialized,
+				// therefore the new order persists across saves/restarts.
+				AddButton(  50, CStart+88+Cats*25, 208, 209, 7, GumpButtonType.Reply, 0 );
+				AddLabel(   75, CStart+88+Cats*25, 0, "Up" );
+				AddButton( 135, CStart+88+Cats*25, 208, 209, 8, GumpButtonType.Reply, 0 );
+				AddLabel(  160, CStart+88+Cats*25, 0, "Down" );
 			}
 			#endregion //Categories
 
@@ -104,7 +113,7 @@ namespace Server.ACC.PG
 			if( LStart < 20 )
 				LStart = 20;
 
-			AddBackground( 230, LStart, 300, 100+Locs*25, 2600 );
+			AddBackground( 230, LStart, 300, 125+Locs*25, 2600 );
 
 			int CurL = 0;
 			PGCategory PGCL = PGSystem.CategoryList[m_Page];
@@ -153,6 +162,13 @@ namespace Server.ACC.PG
 
 				AddLabel( 430, LStart+65+Locs*25, 0, "Edit" );
 				AddButton( 460, LStart+65+Locs*25, 208, 209, 5, GumpButtonType.Reply, 0);
+
+				// Wolvesbane: selected location reorder controls.
+				// Select a location with the radio button, then press Up or Down.
+				AddButton( 280, LStart+88+Locs*25, 208, 209, 9, GumpButtonType.Reply, 0 );
+				AddLabel( 305, LStart+88+Locs*25, 0, "Up" );
+				AddButton( 405, LStart+88+Locs*25, 208, 209, 10, GumpButtonType.Reply, 0 );
+				AddLabel( 430, LStart+88+Locs*25, 0, "Down" );
 			}
 			#endregion //Locations
 		}
@@ -321,6 +337,63 @@ namespace Server.ACC.PG
 					Effects.PlaySound( PGL.Location, PGL.Map, 0x1FE );
 					from.SendMessage( "You have been teleported to: " + PGL.Name );
 				}
+			}
+
+			// Wolvesbane: reorder the currently selected category.
+			else if( BID == 7 && from.AccessLevel >= PGSystem.PGAccessLevel )
+			{
+				if( m_Page > 0 && m_Page < PGSystem.CategoryList.Count )
+				{
+					PGCategory temp = PGSystem.CategoryList[m_Page - 1];
+					PGSystem.CategoryList[m_Page - 1] = PGSystem.CategoryList[m_Page];
+					PGSystem.CategoryList[m_Page] = temp;
+
+					m_Page--;
+					from.SendMessage( "Moved category up." );
+				}
+
+				from.SendGump( new PGGump( from, m_Page, m_Gate ) );
+			}
+
+			else if( BID == 8 && from.AccessLevel >= PGSystem.PGAccessLevel )
+			{
+				if( m_Page >= 0 && m_Page < PGSystem.CategoryList.Count - 1 )
+				{
+					PGCategory temp = PGSystem.CategoryList[m_Page + 1];
+					PGSystem.CategoryList[m_Page + 1] = PGSystem.CategoryList[m_Page];
+					PGSystem.CategoryList[m_Page] = temp;
+
+					m_Page++;
+					from.SendMessage( "Moved category down." );
+				}
+
+				from.SendGump( new PGGump( from, m_Page, m_Gate ) );
+			}
+
+			// Wolvesbane: reorder the radio-selected location inside this category.
+			else if( (BID == 9 || BID == 10) && from.AccessLevel >= PGSystem.PGAccessLevel )
+			{
+				if( Loc < 0 )
+				{
+					from.SendMessage( "You must select a location first." );
+					from.SendGump( new PGGump( from, m_Page, m_Gate ) );
+					return;
+				}
+
+				PGCategory category = PGSystem.CategoryList[m_Page];
+				if( category == null || category.Locations == null || Loc >= category.Locations.Count )
+					return;
+
+				int newIndex = BID == 9 ? Loc - 1 : Loc + 1;
+				if( newIndex >= 0 && newIndex < category.Locations.Count )
+				{
+					PGLocation temp = category.Locations[newIndex];
+					category.Locations[newIndex] = category.Locations[Loc];
+					category.Locations[Loc] = temp;
+					from.SendMessage( BID == 9 ? "Moved location up." : "Moved location down." );
+				}
+
+				from.SendGump( new PGGump( from, m_Page, m_Gate ) );
 			}
 
 			else if( BID >= 100 )

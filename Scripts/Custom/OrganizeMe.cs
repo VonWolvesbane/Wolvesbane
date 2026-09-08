@@ -22,6 +22,45 @@ namespace Server.Commands
             CommandSystem.Register("OrganizeMe", AccessLevel.Player, OrganizeMe_OnCommand);
         }
 
+        private static OrganizePouch FindOrCreatePouch(
+            Mobile from,
+            Backpack bp,
+            string name,
+            int hue,
+            List<OrganizePouch> createdPouches)
+        {
+            OrganizePouch pouch = bp.Items
+                .OfType<OrganizePouch>()
+                .FirstOrDefault(p => p.Name == name);
+
+            if (pouch != null)
+            {
+                return pouch;
+            }
+
+            pouch = new OrganizePouch
+            {
+                Name = name,
+                Hue = hue
+            };
+
+            // SAFETY:
+            // Check whether the backpack can accept another top-level item
+            // BEFORE putting the new organizer pouch into it.  This catches
+            // backpack item-count limits (and any other normal container hold
+            // restriction) before any player items are moved.
+            if (!bp.CheckHold(from, pouch, false, true))
+            {
+                pouch.Delete();
+                return null;
+            }
+
+            bp.DropItem(pouch);
+            createdPouches.Add(pouch);
+
+            return pouch;
+        }
+
         //This command will not move spellbooks, runebooks, blessed, or insured items.
         [Usage("OrganizeMe")]
         [Description("Organize the items in your backpack into pouches.")]
@@ -37,7 +76,6 @@ namespace Server.Commands
 
             var backpackitems = new List<Item>(bp.Items);
             var subcontaineritems = new List<Item>();
-            var oldpouches = new List<OrganizePouch>();
 
             foreach (BaseContainer item in backpackitems.OfType<BaseContainer>())
             {
@@ -46,16 +84,40 @@ namespace Server.Commands
 
             backpackitems.AddRange(subcontaineritems);
 
-            OrganizePouch weaponpouch = new OrganizePouch {Name = "Weapons", Hue = Utility.RandomMetalHue()};
-            OrganizePouch armorpouch = new OrganizePouch {Name = "Armor", Hue = Utility.RandomMetalHue()};
-            OrganizePouch clothingpouch = new OrganizePouch {Name = "Clothing", Hue = Utility.RandomBrightHue()};
-            OrganizePouch jewelpouch = new OrganizePouch {Name = "Jewelry", Hue = Utility.RandomPinkHue()};
-            OrganizePouch potionpouch = new OrganizePouch {Name = "Potions", Hue = Utility.RandomOrangeHue()};
-            OrganizePouch currencypouch = new OrganizePouch {Name = "Currency", Hue = Utility.RandomYellowHue()};
-            OrganizePouch resourcepouch = new OrganizePouch {Name = "Resources", Hue = Utility.RandomNondyedHue()};
-            OrganizePouch toolpouch = new OrganizePouch { Name = "Tools", Hue = Utility.RandomMetalHue() };
-            OrganizePouch regspouch = new OrganizePouch {Name = "Reagents", Hue = Utility.RandomGreenHue()};
-            OrganizePouch miscpouch = new OrganizePouch {Name = "Misc"};
+            // Reuse existing organization pouches whenever possible.
+            // Track any pouches created during this run so they can be cleaned
+            // up safely if the backpack reaches its item-count limit.
+            var createdPouches = new List<OrganizePouch>();
+
+            OrganizePouch weaponpouch = FindOrCreatePouch(from, bp, "Weapons", Utility.RandomMetalHue(), createdPouches);
+            OrganizePouch armorpouch = FindOrCreatePouch(from, bp, "Armor", Utility.RandomMetalHue(), createdPouches);
+            OrganizePouch clothingpouch = FindOrCreatePouch(from, bp, "Clothing", Utility.RandomBrightHue(), createdPouches);
+            OrganizePouch jewelpouch = FindOrCreatePouch(from, bp, "Jewelry", Utility.RandomPinkHue(), createdPouches);
+            OrganizePouch potionpouch = FindOrCreatePouch(from, bp, "Potions", Utility.RandomOrangeHue(), createdPouches);
+            OrganizePouch currencypouch = FindOrCreatePouch(from, bp, "Currency", Utility.RandomYellowHue(), createdPouches);
+            OrganizePouch resourcepouch = FindOrCreatePouch(from, bp, "Resources", Utility.RandomNondyedHue(), createdPouches);
+            OrganizePouch toolpouch = FindOrCreatePouch(from, bp, "Tools", Utility.RandomMetalHue(), createdPouches);
+            OrganizePouch regspouch = FindOrCreatePouch(from, bp, "Reagents", Utility.RandomGreenHue(), createdPouches);
+            OrganizePouch miscpouch = FindOrCreatePouch(from, bp, "Misc", 0, createdPouches);
+
+            if (weaponpouch == null || armorpouch == null || clothingpouch == null ||
+                jewelpouch == null || potionpouch == null || currencypouch == null ||
+                resourcepouch == null || toolpouch == null || regspouch == null ||
+                miscpouch == null)
+            {
+                // No player items have been moved yet. Remove only the empty
+                // pouches that were created during this attempted run.
+                foreach (OrganizePouch created in createdPouches)
+                {
+                    if (created != null && !created.Deleted && created.Items.Count == 0)
+                    {
+                        created.Delete();
+                    }
+                }
+
+                from.SendMessage("Please check your backpack item count, as you are currently over the limit");
+                return;
+            }
 
             var pouches = new List<OrganizePouch>
             {
@@ -70,6 +132,16 @@ namespace Server.Commands
                 regspouch,
                 miscpouch
             };
+
+            // Keep the organizer pouches neatly positioned.
+            int pouchX = 45;
+
+            foreach (OrganizePouch pouch in pouches)
+            {
+                pouch.X = pouchX;
+                pouch.Y = 65;
+                pouchX += 10;
+            }
 
             foreach (
                 Item item in
@@ -117,7 +189,7 @@ namespace Server.Commands
                 }
                 else if (item is OrganizePouch)
                 {
-                    oldpouches.Add((OrganizePouch) item);
+                    // Never move organizer pouches into another organizer pouch.
                 }
                 else
                 {
@@ -125,27 +197,14 @@ namespace Server.Commands
                 }
             }
 
-            int x = 45;
-
-            foreach (OrganizePouch pouch in pouches)
-            {
-                from.AddToBackpack(pouch);
-                pouch.X = x;
-                pouch.Y = 65;
-
-                x += 10;
-            }
-
+            // Only remove organization pouches that are truly empty.
+            // Never delete a pouch simply because it existed before this run;
+            // it may still contain an item that the organizer intentionally
+            // skipped (blessed, insured, runebook, spellbook, immovable, etc.).
             var todelete =
                 @from.Backpack.Items.OfType<OrganizePouch>()
-                    .Select(item => item)
                     .Where(emptypouch => emptypouch.Items.Count <= 0)
                     .ToList();
-
-            foreach (OrganizePouch oldpouch in oldpouches)
-            {
-                oldpouch.Delete();
-            }
 
             foreach (OrganizePouch packtodelete in todelete)
             {

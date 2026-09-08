@@ -881,8 +881,17 @@ namespace Server.Engines.Craft
             AddRes(index, typeof(SpinedLeather), "Spined Leather", 100, "You need more Spined Leather");
             AddRes(index, typeof(PetrifiedBoard), "Petrified Boards", 20, "You need more Petrified Boards");
 
-            // Ingot Key
-            index = AddCraft(typeof(IngotKey), "Customs", "Ingot Key", 110.0, 150.0, typeof(KeyRing), "KeyRing", 2, "You need more Key Rings");
+			// Imbue Key
+			index = AddCraft(typeof(ImbuingKey), "Customs", "Imbue Key", 110.0, 150.0, typeof(KeyRing), "KeyRing", 2, "You need more Key Rings");
+			AddSkill(index, SkillName.Alchemy, 110.0, 150.0);
+			AddSkill(index, SkillName.Carpentry, 110.0, 150.0);
+			AddSkill(index, SkillName.ItemID, 110.0, 150.0);
+			AddRes(index, typeof(PlatinumIngot), "Platinum Ingots", 100, "You need more Platinum Ingots");
+			AddRes(index, typeof(SpinedLeather), "Spined Leather", 100, "You need more Spined Leather");
+			AddRes(index, typeof(PetrifiedBoard), "Petrified Boards", 20, "You need more Petrified Boards");
+
+			// Ingot Key
+			index = AddCraft(typeof(IngotKey), "Customs", "Ingot Key", 110.0, 150.0, typeof(KeyRing), "KeyRing", 2, "You need more Key Rings");
             AddSkill(index, SkillName.Alchemy, 110.0, 150.0);
             AddSkill(index, SkillName.Carpentry, 110.0, 150.0);
             AddSkill(index, SkillName.ItemID, 110.0, 150.0);
