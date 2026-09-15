@@ -1,4 +1,4 @@
-﻿#region References
+#region References
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -4398,6 +4398,38 @@ namespace Server.Mobiles
         [CommandProperty(AccessLevel.GameMaster)]
         public double PassiveSpeed { get { return m_dPassiveSpeed; } set { m_dPassiveSpeed = value; } }
 
+        // Wolvesbane pet follow-speed boost.
+        // Smaller movement-delay values are faster.
+        // This affects controlled pets only while they are following/coming to/guarding
+        // their owner. Combat/attack movement continues to use the creature's normal speed.
+        private const double TamedOwnerFollowSpeed = 0.15;
+        private const double BondedOwnerFollowSpeed = 0.10;
+
+        private bool UseOwnerFollowSpeed
+        {
+            get
+            {
+                if (!Controlled || ControlMaster == null || Combatant != null)
+                {
+                    return false;
+                }
+
+                switch (ControlOrder)
+                {
+                    case OrderType.Come:
+                        return true;
+
+                    case OrderType.Follow:
+                        return ControlTarget == ControlMaster;
+
+                    case OrderType.Guard:
+                        return true;
+                }
+
+                return false;
+            }
+        }
+
         [CommandProperty(AccessLevel.GameMaster)]
         public double CurrentSpeed
         {
@@ -4406,6 +4438,11 @@ namespace Server.Mobiles
                 if (m_TargetLocation != null)
                 {
                     return 0.3;
+                }
+
+                if (UseOwnerFollowSpeed)
+                {
+                    return IsBonded ? BondedOwnerFollowSpeed : TamedOwnerFollowSpeed;
                 }
 
                 return m_dCurrentSpeed;

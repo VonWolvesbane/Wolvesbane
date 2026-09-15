@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -68,13 +68,16 @@ namespace Server.Items
 		public override bool OnBeforeVote(Mobile from)
 		{ return base.OnBeforeVote(from); }
 
-		public override void OnVote( Mobile m, VoteStatus status )
-                {
-                        base.OnVote( m, status );
+		// Vote Stones now open the same voting hub as the [vote command.
+		// Tokens are NOT awarded merely for opening a voting website.
+		public override void OnDoubleClick(Mobile from)
+		{
+			if (from == null || from.Deleted)
+				return;
 
-                        if( status == VoteStatus.Success )
-                        m.AddToBackpack( new VoteToken() );
-                } 
+			from.CloseGump(typeof(Server.Voting.VoteGump));
+			from.SendGump(new Server.Voting.VoteGump(from));
+		}
 
 		public override void OnAfterVote(Mobile from, VoteStatus status)
 		{ base.OnAfterVote(from, status); }

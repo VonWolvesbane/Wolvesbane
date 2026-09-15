@@ -1,4 +1,4 @@
-#region References
+﻿#region References
 using System;
 using System.Collections.Generic;
 using System.Collections;
@@ -1206,11 +1206,19 @@ namespace Server.Engines.Craft
 					}
 				}
 
-				if (consumeExtra == null)
-				{
-					message = 1044253; // You don't have the components needed to make that.
-					return false;
-				}
+                if (consumeExtra == null)
+                {
+                    // UNIVERSAL STORAGE KEYS: automatically pull a blank rune from a carried key.
+                    if (BaseStoreKey.CraftWithdraw(ourPack, new Type[] { typeof(RecallRune) }, 1))
+                    {
+                        consumeExtra = BaseStoreKey.LastWithdrawn;
+                    }
+                    else
+                    {
+                        message = 1044253; // You don't have the components needed to make that.
+                        return false;
+                    }
+                }
 			}
 
 			int index = 0;
@@ -1319,17 +1327,25 @@ namespace Server.Engines.Craft
 			{
 				index = -1;
 
-				if (IsQuantityType(types))
-				{
-					for (int i = 0; i < types.Length; i++)
-					{
-						if (GetQuantity(ourPack, types[i]) < amounts[i])
-						{
-							index = i;
-							break;
-						}
-					}
-				}
+                if (IsQuantityType(types))
+                {
+                    for (int i = 0; i < types.Length; i++)
+                    {
+                        int backpackAmount = GetQuantity(ourPack, types[i]);
+
+                        if (backpackAmount < amounts[i])
+                        {
+                            // UNIVERSAL STORAGE KEYS: pull only the missing amount.
+                            int needed = amounts[i] - backpackAmount;
+
+                            if (BaseStoreKey.CraftWithdraw(ourPack, types[i], needed))
+                                continue;
+
+                            index = i;
+                            break;
+                        }
+                    }
+                }
                 else if (IsPlantHueType(types))
                 {
                     CraftContext c = craftSystem.GetContext(from);
@@ -1357,11 +1373,22 @@ namespace Server.Engines.Craft
                             continue;
                         //daat99 OWLTR end - craft from storage
 					
-						if (ourPack.GetBestGroupAmount(types[i], true, CheckHueGrouping) < amounts[i])
-						{
-							index = i;
-							break;
-						}
+                        int backpackAmount = ourPack.GetBestGroupAmount(types[i], true, CheckHueGrouping);
+
+                        if (backpackAmount < amounts[i])
+                        {
+                            // UNIVERSAL STORAGE KEYS: automatically pull only the missing
+                            // resource amount from a BaseStoreKey or MasterItemStoreKey.
+                            // The normal craft engine then consumes the resulting resource,
+                            // preserving its existing hue/grouping and failure-consumption logic.
+                            int needed = amounts[i] - backpackAmount;
+
+                            if (BaseStoreKey.CraftWithdraw(ourPack, types[i], needed))
+                                continue;
+
+                            index = i;
+                            break;
+                        }
 					}
 				}
 			}

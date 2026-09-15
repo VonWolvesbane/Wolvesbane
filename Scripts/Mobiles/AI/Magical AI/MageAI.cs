@@ -1281,6 +1281,13 @@ namespace Server.Mobiles
 			if (targ == null)
 				return false;
 
+			// Wolvesbane: MageTrainingWolf may use MageAI, but must never teleport.
+			if (m_Mobile is MageTrainingWolf && targ is TeleportSpell.InternalTarget)
+			{
+				targ.Cancel(m_Mobile, TargetCancelType.Canceled);
+				return true;
+			}
+
 			var harmful = (targ.Flags & TargetFlags.Harmful) != 0 || targ is HailStormSpell.InternalTarget ||
 						  targ is WildfireSpell.InternalTarget;
 			var beneficial = (targ.Flags & TargetFlags.Beneficial) != 0 || targ is ArchCureSpell.InternalTarget;

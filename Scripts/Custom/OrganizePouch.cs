@@ -12,7 +12,7 @@ namespace Server.Items
         public OrganizePouch()
             : base(0xE79)
         {
-            Weight = 1.0;
+            Weight = 0.0;
             Name = "Organization Pouch";
         }
 

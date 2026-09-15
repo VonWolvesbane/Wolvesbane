@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using Server;
 using Server.Gumps;
@@ -53,8 +53,8 @@ namespace Server.ACC.PG
 			if( CStart < 0 )
 				CStart = 0;
 
-			AddBackground( 0, CStart, 230, 100+Cats*25, 2600 );
-            AddHtml(0, CStart + 15, 230, 20, "<BASEFONT COLOR=#58D3F7 SIZE=8><CENTER>Traveler's Traverse</CENTER></BASEFONT>", false, false);
+			AddBackground( 0, CStart, 300, 125+Cats*25, 2600 );
+            AddHtml(0, CStart + 15, 300, 20, "<BASEFONT COLOR=#58D3F7 SIZE=8><CENTER>Traveler's Traverse</CENTER></BASEFONT>", false, false);
 
 			int CurC = 0;
 			for( int i = 0; i < PGSystem.CategoryList.Count; i++ )
@@ -65,7 +65,7 @@ namespace Server.ACC.PG
 					if( from.AccessLevel >= PGSystem.PGAccessLevel )
 					{
 						AddButton( 20, CStart+53+CurC*25, (Page == i ? 209 : 208), (Page == i ? 208 : 209), 100+i, GumpButtonType.Reply, 0);
-						AddLabel( 50, CStart+53+CurC*25, (Page == i ? 69 : 0), PGC.Name );
+						AddHtml( 50, CStart+51+CurC*25, 235, 22, "<BASEFONT COLOR=" + (Page == i ? "#FFD57A" : "#FFFFFF") + ">" + PGC.Name + "</BASEFONT>", false, false );
 						CurC++;
 						continue;
 					}
@@ -81,17 +81,26 @@ namespace Server.ACC.PG
 					}
 
 					AddButton( 20, CStart+53+CurC*25, (Page == i ? 209 : 208), (Page == i ? 208 : 209), 100+i, GumpButtonType.Reply, 0);
-					AddLabel( 50, CStart+53+CurC*25, (Page == i ? 69 : 0), PGC.Name );
+					AddHtml( 50, CStart+51+CurC*25, 235, 22, "<BASEFONT COLOR=" + (Page == i ? "#FFD57A" : "#FFFFFF") + ">" + PGC.Name + "</BASEFONT>", false, false );
 					CurC++;
 				}
 			}
 
 			if( from.AccessLevel >= PGSystem.PGAccessLevel )
 			{
-				AddLabel(   75, CStart+65+Cats*25, 0, "Add" );
+				AddLabel(   75, CStart+65+Cats*25, 1152, "Add" );
 				AddButton(  50, CStart+65+Cats*25, 208, 209, 2, GumpButtonType.Reply, 0 );
-				AddLabel(  125, CStart+65+Cats*25, 0, "Edit" );
-				AddButton( 160, CStart+65+Cats*25, 208, 209, 3, GumpButtonType.Reply, 0 );
+				AddLabel(  175, CStart+65+Cats*25, 1152, "Edit" );
+				AddButton( 150, CStart+65+Cats*25, 208, 209, 3, GumpButtonType.Reply, 0 );
+
+				// Wolvesbane: category reorder controls.
+				// The current page is the selected category, so these move that
+				// category within PGSystem.CategoryList. List order is serialized,
+				// therefore the new order persists across saves/restarts.
+				AddButton(  50, CStart+88+Cats*25, 208, 209, 7, GumpButtonType.Reply, 0 );
+				AddLabel(   75, CStart+88+Cats*25, 1152, "Up" );
+				AddButton( 150, CStart+88+Cats*25, 208, 209, 8, GumpButtonType.Reply, 0 );
+				AddLabel(  175, CStart+88+Cats*25, 1152, "Down" );
 			}
 			#endregion //Categories
 
@@ -104,7 +113,7 @@ namespace Server.ACC.PG
 			if( LStart < 20 )
 				LStart = 20;
 
-			AddBackground( 230, LStart, 300, 100+Locs*25, 2600 );
+			AddBackground( 300, LStart, 460, 125+Locs*25, 2600 );
 
 			int CurL = 0;
 			PGCategory PGCL = PGSystem.CategoryList[m_Page];
@@ -117,8 +126,8 @@ namespace Server.ACC.PG
 					{
 						if( from.AccessLevel >= PGSystem.PGAccessLevel )
 						{
-							AddRadio( 250, LStart+53+CurL*25, 208, 209, false, 200+i );
-							AddLabel( 280, LStart+53+CurL*25, 0, PGL.Name );
+							AddRadio( 320, LStart+53+CurL*25, 208, 209, false, 200+i );
+							AddHtml( 350, LStart+51+CurL*25, 350, 22, "<BASEFONT COLOR=#FFFFFF>" + PGL.Name + "</BASEFONT>", false, false );
 							CurL++;
 							continue;
 						}
@@ -133,26 +142,33 @@ namespace Server.ACC.PG
 								continue;
 						}
 
-						AddRadio( 250, LStart+53+CurL*25, 208, 209, false, 200+i );
-						AddLabel( 280, LStart+53+CurL*25, 0, PGL.Name );
+						AddRadio( 320, LStart+53+CurL*25, 208, 209, false, 200+i );
+						AddHtml( 350, LStart+51+CurL*25, 350, 22, "<BASEFONT COLOR=#FFFFFF>" + PGL.Name + "</BASEFONT>", false, false );
 						CurL++;
 					}
 				}
 			}
 
-			AddButton( 465, LStart-20, 1417, 1417, 1, GumpButtonType.Reply, 0);
-            AddHtml(485, LStart + 10, 40, 40, "<BODY><BASEFONT SIZE=7 COLOR=#2E64FE><CENTER><I><B>GO</B></I></CENTER></BASEFONT></BODY>", false, false);
+			AddButton( 695, LStart-20, 1417, 1417, 1, GumpButtonType.Reply, 0);
+            AddHtml(715, LStart + 10, 40, 40, "<BODY><BASEFONT SIZE=7 COLOR=#2E64FE><CENTER><I><B>GO</B></I></CENTER></BASEFONT></BODY>", false, false);
 
 			if( from.AccessLevel >= PGSystem.PGAccessLevel )
 			{
-				AddLabel( 305, LStart+15, 0, "Add Current Gate" );
-				AddButton( 280, LStart+15, 208, 209, 6, GumpButtonType.Reply, 0 );
+				AddLabel( 375, LStart+15, 1152, "Add Current Gate" );
+				AddButton( 350, LStart+15, 208, 209, 6, GumpButtonType.Reply, 0 );
 
-				AddLabel( 305, LStart+65+Locs*25, 0, "Add" );
-				AddButton( 280, LStart+65+Locs*25, 208, 209, 4, GumpButtonType.Reply, 0 );
+				AddLabel( 375, LStart+65+Locs*25, 1152, "Add" );
+				AddButton( 350, LStart+65+Locs*25, 208, 209, 4, GumpButtonType.Reply, 0 );
 
-				AddLabel( 430, LStart+65+Locs*25, 0, "Edit" );
-				AddButton( 460, LStart+65+Locs*25, 208, 209, 5, GumpButtonType.Reply, 0);
+				AddLabel( 525, LStart+65+Locs*25, 1152, "Edit" );
+				AddButton( 500, LStart+65+Locs*25, 208, 209, 5, GumpButtonType.Reply, 0);
+
+				// Wolvesbane: selected location reorder controls.
+				// Select a location with the radio button, then press Up or Down.
+				AddButton( 350, LStart+88+Locs*25, 208, 209, 9, GumpButtonType.Reply, 0 );
+				AddLabel( 375, LStart+88+Locs*25, 1152, "Up" );
+				AddButton( 500, LStart+88+Locs*25, 208, 209, 10, GumpButtonType.Reply, 0 );
+				AddLabel( 525, LStart+88+Locs*25, 1152, "Down" );
 			}
 			#endregion //Locations
 		}
@@ -321,6 +337,63 @@ namespace Server.ACC.PG
 					Effects.PlaySound( PGL.Location, PGL.Map, 0x1FE );
 					from.SendMessage( "You have been teleported to: " + PGL.Name );
 				}
+			}
+
+			// Wolvesbane: reorder the currently selected category.
+			else if( BID == 7 && from.AccessLevel >= PGSystem.PGAccessLevel )
+			{
+				if( m_Page > 0 && m_Page < PGSystem.CategoryList.Count )
+				{
+					PGCategory temp = PGSystem.CategoryList[m_Page - 1];
+					PGSystem.CategoryList[m_Page - 1] = PGSystem.CategoryList[m_Page];
+					PGSystem.CategoryList[m_Page] = temp;
+
+					m_Page--;
+					from.SendMessage( "Moved category up." );
+				}
+
+				from.SendGump( new PGGump( from, m_Page, m_Gate ) );
+			}
+
+			else if( BID == 8 && from.AccessLevel >= PGSystem.PGAccessLevel )
+			{
+				if( m_Page >= 0 && m_Page < PGSystem.CategoryList.Count - 1 )
+				{
+					PGCategory temp = PGSystem.CategoryList[m_Page + 1];
+					PGSystem.CategoryList[m_Page + 1] = PGSystem.CategoryList[m_Page];
+					PGSystem.CategoryList[m_Page] = temp;
+
+					m_Page++;
+					from.SendMessage( "Moved category down." );
+				}
+
+				from.SendGump( new PGGump( from, m_Page, m_Gate ) );
+			}
+
+			// Wolvesbane: reorder the radio-selected location inside this category.
+			else if( (BID == 9 || BID == 10) && from.AccessLevel >= PGSystem.PGAccessLevel )
+			{
+				if( Loc < 0 )
+				{
+					from.SendMessage( "You must select a location first." );
+					from.SendGump( new PGGump( from, m_Page, m_Gate ) );
+					return;
+				}
+
+				PGCategory category = PGSystem.CategoryList[m_Page];
+				if( category == null || category.Locations == null || Loc >= category.Locations.Count )
+					return;
+
+				int newIndex = BID == 9 ? Loc - 1 : Loc + 1;
+				if( newIndex >= 0 && newIndex < category.Locations.Count )
+				{
+					PGLocation temp = category.Locations[newIndex];
+					category.Locations[newIndex] = category.Locations[Loc];
+					category.Locations[Loc] = temp;
+					from.SendMessage( BID == 9 ? "Moved location up." : "Moved location down." );
+				}
+
+				from.SendGump( new PGGump( from, m_Page, m_Gate ) );
 			}
 
 			else if( BID >= 100 )

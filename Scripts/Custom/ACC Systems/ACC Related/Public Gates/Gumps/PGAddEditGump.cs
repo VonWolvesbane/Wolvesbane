@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using Server;
 using Server.Gumps;
 using Server.Network;
@@ -86,79 +86,79 @@ namespace Server.ACC.PG
 
 			AddPage(0);
 
-			AddBackground( 530, 100, 230, 410, 2600 );
-			AddLabel( 602, 120, 0, string.Format("{0} {1}", (GetFlag(Conditions.Adding) ? "Add" : "Edit"), (GetFlag(Conditions.Category) ? "Category" : "Location")) );
+			// Wolvesbane: widened, higher-contrast editor for long category/location names.
+			AddBackground( 100, 70, 620, 500, 2600 );
+			AddHtml( 120, 88, 580, 28, "<BASEFONT COLOR=#58D3F7 SIZE=6><CENTER><B>" +
+				string.Format("{0} {1}", (GetFlag(Conditions.Adding) ? "Add" : "Edit"), (GetFlag(Conditions.Category) ? "Category" : "Location")) +
+				"</B></CENTER></BASEFONT>", false, false );
 
-			AddLabel( 625, 145, 0, "Name :" );
-			AddImage( 555, 170, 2446 );
-			AddTextEntry( 565, 170, 160, 20, 0, 2, Name );
+			AddLabel( 125, 130, 1152, "Name:" );
+			AddImageTiled( 185, 127, 500, 26, 9274 );
+			AddTextEntry( 192, 131, 485, 20, 1152, 2, Name );
 
-			AddLabel( 715, 235, 0, ": C" );
-			AddImage( 650, 235, 2443 );
-			AddTextEntry( 655, 235, 55, 20, 0, 15, Cost.ToString() );
+			AddLabel( 500, 180, 1152, "Cost:" );
+			AddImageTiled( 555, 177, 125, 26, 9274 );
+			AddTextEntry( 562, 181, 110, 20, 1152, 15, Cost.ToString() );
 
 			if( !GetFlag(Conditions.Category) )
 			{
+				AddHtml( 125, 170, 320, 22, "<BASEFONT COLOR=#FFD57A><B>Destination</B></BASEFONT>", false, false );
 
-				AddLabel( 560, 210, 0, "X :" );
-				AddImage( 580, 210, 2443 );
-				AddTextEntry( 585, 210, 55, 20, 0, 3, Loc.X.ToString() );
+				AddLabel( 125, 205, 1152, "X:" );
+				AddImageTiled( 155, 202, 115, 26, 9274 );
+				AddTextEntry( 162, 206, 100, 20, 1152, 3, Loc.X.ToString() );
 
-				AddLabel( 560, 235, 0, "Y :" );
-				AddImage( 580, 235, 2443 );
-				AddTextEntry( 585, 235, 55, 20, 0, 4, Loc.Y.ToString() );
+				AddLabel( 290, 205, 1152, "Y:" );
+				AddImageTiled( 320, 202, 115, 26, 9274 );
+				AddTextEntry( 327, 206, 100, 20, 1152, 4, Loc.Y.ToString() );
 
-				AddLabel( 560, 260, 0, "Z :" );
-				AddImage( 580, 260, 2443 );
-				AddTextEntry( 585, 260, 55, 20, 0, 5, Loc.Z.ToString() );
+				AddLabel( 455, 205, 1152, "Z:" );
+				AddImageTiled( 485, 202, 90, 26, 9274 );
+				AddTextEntry( 492, 206, 75, 20, 1152, 5, Loc.Z.ToString() );
 
-				AddLabel( 715, 210, 0, ": H" );
-				AddImage( 650, 210, 2443 );
-				AddTextEntry( 655, 210, 55, 20, 0, 14, Hue.ToString() );
+				AddLabel( 590, 205, 1152, "Hue:" );
+				AddImageTiled( 630, 202, 55, 26, 9274 );
+				AddTextEntry( 635, 206, 45, 20, 1152, 14, Hue.ToString() );
 
-				AddLabel( 585, 315, 0, "Trammel" );
-				AddRadio( 555, 315, 208, 209, (Map == Map.Trammel ? true : false), 6 );
+				AddHtml( 125, 250, 320, 22, "<BASEFONT COLOR=#FFD57A><B>Facet</B></BASEFONT>", false, false );
 
-				AddLabel( 585, 340, 0, "Felucca" );
-				AddRadio( 555, 340, 208, 209, (Map == Map.Felucca ? true : false), 7 );
+				AddRadio( 125, 280, 208, 209, (Map == Map.Trammel), 6 );
+				AddLabel( 155, 280, 1152, "Trammel" );
+				AddRadio( 265, 280, 208, 209, (Map == Map.Felucca), 7 );
+				AddLabel( 295, 280, 1152, "Felucca" );
+				AddRadio( 405, 280, 208, 209, (Map == Map.Malas), 8 );
+				AddLabel( 435, 280, 1152, "Malas" );
+				AddRadio( 535, 280, 208, 209, (Map == Map.Ilshenar), 9 );
+				AddLabel( 565, 280, 1152, "Ilshenar" );
 
-				AddLabel( 685, 315, 0, "Malas" );
-				AddRadio( 655, 315, 208, 209, (Map == Map.Malas ? true : false), 8 );
-
-				AddLabel( 685, 345, 0, "Ilshenar" );
-				AddRadio( 655, 340, 208, 209, (Map == Map.Ilshenar ? true : false), 9 );
-
-				AddLabel( 585, 365, 0, "Tokuno" );
-				AddRadio( 555, 370, 208, 209, (Map == Map.Tokuno ? true : false), 10 );
-
-				AddLabel( 685, 365, 0, "TerMur" );
-				AddRadio( 655, 370, 208, 209, (Map == Map.TerMur ? true : false), 20 );
-
-                AddLabel(685, 290, 0, "Wolvesbane");
-                AddRadio(655, 290, 208, 209, (Map == Map.Wolvesbane ? true : false), 25);
-
-				AddLabel(585, 290, 0, "New WB");
-				AddRadio(555, 290, 208, 209, (Map == Map.NewWolvesbane ? true : false), 26);
+				AddRadio( 125, 315, 208, 209, (Map == Map.Tokuno), 10 );
+				AddLabel( 155, 315, 1152, "Tokuno" );
+				AddRadio( 265, 315, 208, 209, (Map == Map.TerMur), 20 );
+				AddLabel( 295, 315, 1152, "TerMur" );
+				AddRadio( 405, 315, 208, 209, (Map == Map.Wolvesbane), 25 );
+				AddLabel( 435, 315, 1152, "Wolvesbane" );
+				AddRadio( 535, 315, 208, 209, (Map == Map.NewWolvesbane), 26 );
+				AddLabel( 565, 315, 1152, "New WB" );
 			}
 
+			AddHtml( 125, 365, 320, 22, "<BASEFONT COLOR=#FFD57A><B>Options</B></BASEFONT>", false, false );
 
-			AddLabel( 585, 395, 0, "Generate?" );
-			AddCheck( 555, 395, 210, 211, Gen, 11 );
+			AddCheck( 125, 400, 210, 211, Gen, 11 );
+			AddLabel( 155, 400, 1152, "Generate" );
+			AddCheck( 265, 400, 210, 211, Young, 16 );
+			AddLabel( 295, 400, 1152, "Young" );
+			AddCheck( 405, 400, 210, 211, Reds, 13 );
+			AddLabel( 435, 400, 1152, "Reds" );
+			AddCheck( 535, 400, 210, 211, Charge, 17 );
+			AddLabel( 565, 400, 1152, "Charge" );
 
-			AddLabel( 665, 395, 0, "Young?" );
-			AddCheck( 715, 395, 210, 211, Young, 16 );
+			AddCheck( 125, 435, 210, 211, Staff, 12 );
+			AddLabel( 155, 435, 1152, "Staff Only" );
 
-			AddLabel( 585, 420, 0, "Reds?" );
-			AddCheck( 555, 420, 210, 211, Reds, 13 );
-
-			AddLabel( 658, 420, 0, "Charge?" );
-			AddCheck( 715, 420, 210, 211, Charge, 17 );
-
-			AddLabel( 585, 445, 0, "Staff Only?" );
-			AddCheck( 555, 445, 210, 211, Staff, 12 );
-
-			AddButton( 700, 450, 1417, 1417, 1, GumpButtonType.Reply, 0 );
-			AddLabel( 728, 481, 69, "Apply" );
+			AddButton( 565, 500, 4005, 4007, 1, GumpButtonType.Reply, 0 );
+			AddLabel( 600, 502, 69, "Apply" );
+			AddButton( 125, 500, 4017, 4019, 0, GumpButtonType.Reply, 0 );
+			AddLabel( 160, 502, 1152, "Cancel" );
 		}
 
 		private EntryFlag Flags;
