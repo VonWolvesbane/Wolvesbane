@@ -341,7 +341,12 @@ namespace Server.Items
 
                                 BaseGalleon g = FindValidBoatTarget(newPoint, map, ammo);
 
-                                if (g != null && g != m_Galleon && g.IsEnemy(m_Galleon))
+                                // Wolvesbane fix:
+                                // Determine hostility from the actual cannoneer's perspective.
+                                // The stock g.IsEnemy(m_Galleon) check asks the TARGET ship's
+                                // owner whether the ATTACKING ship's owner can be harmed, which
+                                // can make player -> NPC ship combat fail while NPC -> player works.
+                                if (g != null && g != m_Galleon && CanDamageShip(shooter, g))
                                     list.Add(g);
 
                                 mobs.AddRange(FindMobiles(shooter, newPoint, map, false, false, false, true));
@@ -406,6 +411,37 @@ namespace Server.Items
 
             if (shooter != null && shooter.HasGump(typeof(CannonGump)))
                 ResendGump(shooter);
+        }
+
+        // Wolvesbane: ship hostility needs to be evaluated from the shooter's
+        // perspective, not only from the target ship owner's perspective.
+        private bool CanDamageShip(Mobile shooter, BaseGalleon target)
+        {
+            if (target == null || target == m_Galleon)
+                return false;
+
+            // Preserve unrestricted ship combat on Felucca-rules maps.
+            if (target.Map != null && target.Map.Rules == MapRules.FeluccaRules)
+                return true;
+
+            Mobile targetOwner = target.Owner;
+
+            // Ownerless encounter ships remain valid cannon targets.
+            if (targetOwner == null)
+                return true;
+
+            // NPC-controlled ships (pirates, merchants, encounter captains, etc.)
+            // are valid targets for player cannons.
+            if (targetOwner is BaseCreature)
+                return true;
+
+            // Player-owned ships continue to obey the normal harmful/PvP rules
+            // from the actual cannoneer's perspective.
+            if (shooter != null)
+                return shooter.CanBeHarmful(targetOwner, false);
+
+            // Fallback for any automated/null-cannoneer use.
+            return target.IsEnemy(m_Galleon);
         }
 
         private BaseGalleon FindValidBoatTarget(Point3D newPoint, Map map, AmmoInfo info)

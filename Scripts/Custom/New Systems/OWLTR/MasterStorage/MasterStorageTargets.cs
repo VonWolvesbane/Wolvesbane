@@ -30,6 +30,11 @@ namespace daat99
 			this.backpack = backpack;
 			this.previousType = previousType;
 			this.selection = selection;
+
+			// Wolvesbane: the Boss Drop displays can hold equipment on a mannequin/mobile.
+			// We only need to inspect the item's Type while editing the loot list, so
+			// allow those non-local targets. Actual Master Storage looting rules are unchanged.
+			AllowNonlocal = true;
 			if ( selection == SELECTION.ITEM_SELECTION ) 
 				from.SendMessage("Please select an item to loot.");
 			else if ( selection == SELECTION.TYPE_SELECTION && previousType == null ) 
@@ -39,9 +44,9 @@ namespace daat99
 
 		}
 		
-		// Wolvesbane: allow players to select immovable/inaccessible display items
-		// for loot-list configuration only. This does NOT move or loot the targeted item;
-		// OnTarget only records its Type in the Master Storage loot list.
+		// Wolvesbane: allow inaccessible/immovable display items to be targeted
+		// when configuring the Master Storage loot list. This only records
+		// the item Type; it does not move or loot the display item itself.
 		protected override void OnTargetNotAccessible(Mobile from, object targeted)
 		{
 			if (targeted is Item)
@@ -51,6 +56,32 @@ namespace daat99
 			}
 
 			base.OnTargetNotAccessible(from, targeted);
+		}
+
+		// Some display items are flagged as untargetable by the normal item checks.
+		// For loot-list setup we still only record their Type, so accept Item targets here too.
+		protected override void OnTargetUntargetable(Mobile from, object targeted)
+		{
+			if (targeted is Item)
+			{
+				OnTarget(from, targeted);
+				return;
+			}
+
+			base.OnTargetUntargetable(from, targeted);
+		}
+
+		// Compatibility fallback for ServUO builds where non-local equipment is rejected
+		// through the callback instead of AllowNonlocal alone.
+		protected override void OnNonlocalTarget(Mobile from, object targeted)
+		{
+			if (targeted is Item)
+			{
+				OnTarget(from, targeted);
+				return;
+			}
+
+			base.OnNonlocalTarget(from, targeted);
 		}
 
 		protected override void OnTarget(Mobile from, object targeted )
@@ -122,6 +153,7 @@ namespace daat99
 			this.backpack = backpack;
 		}
 		
+
 		protected override void OnTarget(Mobile from, object targeted )
 		{
 			if ( !(from is PlayerMobile) )
