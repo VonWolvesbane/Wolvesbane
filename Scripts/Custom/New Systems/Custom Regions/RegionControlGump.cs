@@ -1,6 +1,7 @@
 #region References
 
 using Server.Items;
+using Server.Custom.Wolvesbane;
 using Server.Network;
 
 #endregion
@@ -21,8 +22,8 @@ namespace Server.Gumps
 
             AddPage(0);
 
-            AddBackground(23, 32, 412, 256, 9270);
-            AddAlphaRegion(19, 29, 418, 263);
+            AddBackground(23, 32, 412, 326, 9270);
+            AddAlphaRegion(19, 29, 418, 333);
             AddButton(55, 46, 5569, 5570, (int) Buttons.SpellButton, GumpButtonType.Reply, 0);
             AddButton(55, 128, 5581, 5582, (int) Buttons.SkillButton, GumpButtonType.Reply, 0);
             AddButton(50, 205, 7006, 7006, (int) Buttons.AreaButton, GumpButtonType.Reply, 0);
@@ -30,6 +31,8 @@ namespace Server.Gumps
             AddLabel(152, 70, 1152, "Edit Restricted Spells");
             AddLabel(152, 153, 1152, "Edit Restricted Skills");
             AddLabel(152, 234, 1152, "Add Region Area");
+            AddButton(50, 275, 4005, 4007, (int) Buttons.MusicButton, GumpButtonType.Reply, 0);
+            AddLabel(152, 279, 68, "Wolvesbane Region Music");
             AddImage(353, 54, 3953);
             AddImage(353, 180, 3955);
         }
@@ -38,7 +41,8 @@ namespace Server.Gumps
         {
             SpellButton = 1,
             SkillButton,
-            AreaButton
+            AreaButton,
+            MusicButton
         }
 
         public override void OnResponse(NetState sender, RelayInfo info)
@@ -83,6 +87,11 @@ namespace Server.Gumps
                     m.SendGump(new RemoveAreaGump(m_Controller));
 
                     m_Controller.ChooseArea(m);
+                    break;
+                }
+                case 4:
+                {
+                    WolvesbaneRegionMusicManager.Open(m, m_Controller, 0);
                     break;
                 }
             }

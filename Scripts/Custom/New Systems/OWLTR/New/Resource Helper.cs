@@ -39,6 +39,11 @@ namespace daat99
 
 		public static Type GetDaat99HarvestedType(Type originalType, bool prospected, double skill)
 		{
+			// Wolvesbane crash guard: CraftResources.GetFromType uses a Hashtable
+			// and throws ArgumentNullException if a null Type is passed in.
+			if (originalType == null)
+				return null;
+
 			double MAX_SKILL = 200.0;
 			if (skill > MAX_SKILL)
 				skill = MAX_SKILL;

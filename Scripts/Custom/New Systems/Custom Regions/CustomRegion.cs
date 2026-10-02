@@ -4,6 +4,7 @@ using System;
 using System.Collections;
 using System.Linq;
 using Server.Items;
+using Server.Custom.Wolvesbane;
 using Server.Mobiles;
 using Server.Spells;
 
@@ -316,6 +317,7 @@ namespace Server.Regions
             }
 
             base.OnExit(m);
+            WolvesbaneRegionMusicManager.OnExit(m, this);
         }
 
         public override void OnEnter(Mobile m)
@@ -326,6 +328,7 @@ namespace Server.Regions
             }
 
             base.OnEnter(m);
+            WolvesbaneRegionMusicManager.OnEnter(m, this);
         }
 
         public override bool OnMoveInto(Mobile m, Direction d, Point3D newLocation, Point3D oldLocation)

@@ -164,19 +164,25 @@ namespace Server.Engines.Harvest
             Type type = null;
 
 			//daat99 OWLTR start - daat99 harvesting
+			// Wolvesbane crash fix: determine the resource type ONCE.
+			// Mining.GetResourceType() contains random/StoneOnly logic and may return null.
+			// Calling it twice could make the first call return Granite (setting daatHarvesting)
+			// and the second call return null, which then crashed CraftResources.GetFromType(null).
 			type = GetResourceType(from, tool, def, map, loc, resource);
 			bool daatHarvesting = false;
 			if (type != null && daat99.OWLTROptionsManager.IsEnabled(daat99.OWLTROptionsManager.OPTIONS_ENUM.DAAT99_MINING) && (type.IsSubclassOf(typeof(BaseOre)) || type.IsSubclassOf(typeof(BaseGranite))))
 				daatHarvesting = true;
 			else if (type != null && daat99.OWLTROptionsManager.IsEnabled(daat99.OWLTROptionsManager.OPTIONS_ENUM.DAAT99_LUMBERJACKING) && type.IsSubclassOf(typeof(BaseLog)))
 				daatHarvesting = true;
+
 			if ( daatHarvesting || (skillValue >= resource.ReqSkill && from.CheckSkill( def.Skill, resource.MinSkill, resource.MaxSkill )) )
 			{
-				type = GetResourceType( from, tool, def, map, loc, resource );
-
+				// Reuse the type selected above; do NOT call GetResourceType() a second time.
 				if ( type != null )
 					type = MutateType( type, from, tool, def, map, loc, resource );
-				if (daatHarvesting)
+
+				// Region mutation can also return null, so never pass a null Type into OWLTR.
+				if (daatHarvesting && type != null)
 				{
 					type = ResourceHelper.GetDaat99HarvestedType(type, bank.Vein.IsProspected, skillValue);
 					from.CheckSkill(def.Skill, 0.0, from.Skills[def.Skill].Cap + (vein.IsProspected?10.0:0.0));
